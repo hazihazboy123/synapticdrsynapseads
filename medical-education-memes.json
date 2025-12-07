@@ -1,0 +1,634 @@
+{
+  "title": "Medical Education Video Memes Collection",
+  "description": "50 high-quality meme images perfect for medical education videos with dramatic narration",
+  "total_count": 50,
+  "categories": {
+    "disaster_shock": {
+      "name": "Disaster/Shock Reactions",
+      "description": "For when patients die, organs fail, catastrophic outcomes",
+      "count": 15,
+      "memes": [
+        {
+          "id": 1,
+          "name": "Surprised Pikachu",
+          "category": "disaster_shock",
+          "tags": ["shocked", "surprised", "disbelief", "reaction"],
+          "use_case": "When unexpected patient death occurs, organ failure despite treatment, or catastrophic lab results",
+          "image_url": "https://i.kym-cdn.com/entries/icons/original/000/027/475/Screen_Shot_2018-10-25_at_11.02.15_AM.png",
+          "source": "Know Your Meme",
+          "format": "png",
+          "notes": "High quality 1354x784px version"
+        },
+        {
+          "id": 2,
+          "name": "Dramatic Chipmunk",
+          "category": "disaster_shock",
+          "tags": ["dramatic", "shock", "surprise", "reaction"],
+          "use_case": "For dramatic reveals of diagnosis, sudden patient deterioration",
+          "image_url": "https://media.tenor.com/images/dramatic-chipmunk.gif",
+          "source": "Tenor/GIPHY",
+          "format": "gif",
+          "notes": "Famous prairie dog meme, available on Tenor and GIPHY"
+        },
+        {
+          "id": 3,
+          "name": "Shocked/Wide-Eyed Cat",
+          "category": "disaster_shock",
+          "tags": ["shocked", "cat", "wide eyes", "surprised"],
+          "use_case": "When test results are unexpectedly bad, sudden cardiac arrest",
+          "image_url": "https://www.freepik.com/free-photos-vectors/shocked-cat",
+          "source": "Freepik/Stock Photos",
+          "format": "jpg",
+          "notes": "Scottish Fold or British Shorthair cats with shocked expressions"
+        },
+        {
+          "id": 4,
+          "name": "Unsettled Tom",
+          "category": "disaster_shock",
+          "tags": ["concerned", "worried", "cat", "tom and jerry"],
+          "use_case": "When imaging shows concerning findings, abnormal ECG patterns",
+          "image_url": "https://imgflip.com/memetemplate/Unsettled-Tom",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Tom and Jerry meme showing Tom's concerned face"
+        },
+        {
+          "id": 5,
+          "name": "Scared Hamster",
+          "category": "disaster_shock",
+          "tags": ["screaming", "scared", "hamster", "panic"],
+          "use_case": "For anaphylactic shock, severe allergic reactions, medical emergencies",
+          "image_url": "https://knowyourmeme.com/memes/scared-hamster",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Hamster with mouth agape screaming"
+        },
+        {
+          "id": 6,
+          "name": "Disaster Girl",
+          "category": "disaster_shock",
+          "tags": ["evil", "fire", "disaster", "smirk"],
+          "use_case": "For complications caused by medical errors, iatrogenic harm",
+          "image_url": "https://imgflip.com/memetemplate/Disaster-Girl",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Girl smirking with fire in background"
+        },
+        {
+          "id": 7,
+          "name": "Blinking White Guy (Drew Scanlon)",
+          "category": "disaster_shock",
+          "tags": ["confused", "blinking", "disbelief", "what"],
+          "use_case": "When patient symptoms don't match diagnosis, confusing lab results",
+          "image_url": "https://giphy.com/explore/drew-scanlon",
+          "source": "GIPHY",
+          "format": "gif",
+          "notes": "Drew Scanlon's incredulous blinking reaction"
+        },
+        {
+          "id": 8,
+          "name": "Michael Jordan Crying",
+          "category": "disaster_shock",
+          "tags": ["crying", "sad", "grief", "loss"],
+          "use_case": "Terminal diagnosis, patient death, treatment failure",
+          "image_url": "https://www.stickpng.com/img/memes/mixed-memes/michael-jordan-crying-face",
+          "source": "StickPNG",
+          "format": "png",
+          "notes": "Transparent PNG of crying Jordan face"
+        },
+        {
+          "id": 9,
+          "name": "Woman Yelling at Cat",
+          "category": "disaster_shock",
+          "tags": ["yelling", "arguing", "confused", "conflict"],
+          "use_case": "Conflicting medical opinions, misdiagnosis arguments",
+          "image_url": "https://knowyourmeme.com/memes/woman-yelling-at-a-cat",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Taylor Armstrong yelling + confused cat Smudge meme"
+        },
+        {
+          "id": 10,
+          "name": "Monkey Puppet Looking Away",
+          "category": "disaster_shock",
+          "tags": ["awkward", "side-eye", "uncomfortable", "avoiding"],
+          "use_case": "Awkward medical errors, avoiding difficult conversations with patients",
+          "image_url": "https://knowyourmeme.com/memes/awkward-look-monkey-puppet",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Kenta the monkey puppet from Japanese TV"
+        },
+        {
+          "id": 11,
+          "name": "Pepe Sad/Crying",
+          "category": "disaster_shock",
+          "tags": ["sad", "crying", "depressed", "feels bad"],
+          "use_case": "Poor prognosis, chronic illness diagnosis, treatment side effects",
+          "image_url": "https://www.stickpng.com/img/memes/pepe-the-frog/crying-pepe",
+          "source": "StickPNG",
+          "format": "png",
+          "notes": "Transparent PNG of crying Pepe"
+        },
+        {
+          "id": 12,
+          "name": "Press F to Pay Respects",
+          "category": "disaster_shock",
+          "tags": ["death", "respect", "mourning", "rip"],
+          "use_case": "Patient death, organ death, cell death",
+          "image_url": "https://knowyourmeme.com/memes/press-f-to-pay-respects",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Call of Duty Advanced Warfare funeral scene"
+        },
+        {
+          "id": 13,
+          "name": "Coffin Dance Pallbearers",
+          "category": "disaster_shock",
+          "tags": ["death", "funeral", "dancing", "ghana"],
+          "use_case": "Patient death, end of life, failed resuscitation",
+          "image_url": "https://tenor.com/view/coffin-dance-dancing-pallbearers-meme-funeral-dancers-gif-17562712",
+          "source": "Tenor",
+          "format": "gif",
+          "notes": "Ghanaian pallbearers dancing with coffin + Astronomia song"
+        },
+        {
+          "id": 14,
+          "name": "Arthur's Fist",
+          "category": "disaster_shock",
+          "tags": ["angry", "frustrated", "clenched", "rage"],
+          "use_case": "Frustration with non-compliant patients, treatment resistance",
+          "image_url": "https://knowyourmeme.com/memes/arthurs-fist",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Arthur clenching fist in anger"
+        },
+        {
+          "id": 15,
+          "name": "Head Exploding/Mind Blown",
+          "category": "disaster_shock",
+          "tags": ["mind blown", "exploding", "shock", "revelation"],
+          "use_case": "Shocking diagnosis, unexpected mechanism of disease",
+          "image_url": "https://gifdb.com/gif/mind-blown-head-exploding-k16gdm06d43k9sol.html",
+          "source": "GIFDB",
+          "format": "gif",
+          "notes": "Head exploding animation GIF"
+        }
+      ]
+    },
+    "leaving_quitting": {
+      "name": "Leaving/Quitting",
+      "description": "For when organs fail, systems shut down",
+      "count": 8,
+      "memes": [
+        {
+          "id": 16,
+          "name": "SpongeBob Ight Imma Head Out",
+          "category": "leaving_quitting",
+          "tags": ["leaving", "quitting", "done", "exit"],
+          "use_case": "Organ failure, cell death, system shutdown",
+          "image_url": "https://imgflip.com/memetemplate/Spongebob-Ight-Imma-Head-Out",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "SpongeBob getting up to leave, 822x960px"
+        },
+        {
+          "id": 17,
+          "name": "Homer Simpson Backing Into Bushes",
+          "category": "leaving_quitting",
+          "tags": ["leaving", "retreating", "hiding", "exit"],
+          "use_case": "Immune system retreat, organ failure, cell apoptosis",
+          "image_url": "https://tenor.com/search/homer-backing-into-bushes-gifs",
+          "source": "Tenor",
+          "format": "gif",
+          "notes": "Homer disappearing into hedge"
+        },
+        {
+          "id": 18,
+          "name": "Elmo Fire Shrug",
+          "category": "leaving_quitting",
+          "tags": ["fire", "shrug", "chaos", "giving up"],
+          "use_case": "Multi-organ failure, cascading system failure",
+          "image_url": "https://tenor.com/search/elmo-shrug-gifs",
+          "source": "Tenor",
+          "format": "gif",
+          "notes": "Elmo shrugging with fire background"
+        },
+        {
+          "id": 19,
+          "name": "Peace Out/I'm Out",
+          "category": "leaving_quitting",
+          "tags": ["leaving", "peace", "exit", "done"],
+          "use_case": "Organ shutdown, cellular necrosis",
+          "image_url": "https://giphy.com/explore/im-out",
+          "source": "GIPHY",
+          "format": "gif",
+          "notes": "Various 'I'm out' reaction GIFs"
+        },
+        {
+          "id": 20,
+          "name": "This Little Maneuver Cost Us 51 Years",
+          "category": "leaving_quitting",
+          "tags": ["cost", "consequences", "interstellar", "time"],
+          "use_case": "Long-term complications, years lost to disease",
+          "image_url": "https://knowyourmeme.com/memes/this-little-maneuvers-gonna-cost-us-51-years",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Matthew McConaughey from Interstellar"
+        },
+        {
+          "id": 21,
+          "name": "Patrick Push It Somewhere Else",
+          "category": "leaving_quitting",
+          "tags": ["relocation", "moving", "patrick", "spongebob"],
+          "use_case": "Metastasis, cancer spreading to other organs",
+          "image_url": "https://imgflip.com/memetemplate/Put-It-Somewhere-Else-Patrick",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Patrick Star suggesting to move things"
+        },
+        {
+          "id": 22,
+          "name": "Pablo Escobar Waiting Alone",
+          "category": "leaving_quitting",
+          "tags": ["waiting", "alone", "sad", "abandoned"],
+          "use_case": "Waiting for organ transplant, treatment delays",
+          "image_url": "https://gifdb.com/gif/waiting-alone-pablo-escobar-meme-59plbd99bd7kqbt1.html",
+          "source": "GIFDB",
+          "format": "gif",
+          "notes": "Pablo Escobar from Narcos waiting montage"
+        },
+        {
+          "id": 23,
+          "name": "Waiting Skeleton on Bench",
+          "category": "leaving_quitting",
+          "tags": ["waiting", "skeleton", "death", "time"],
+          "use_case": "Long wait times for treatment, organ transplant waitlist",
+          "image_url": "https://imgflip.com/memetemplate/Waiting-Skeleton",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Skeleton sitting on bench waiting"
+        }
+      ]
+    },
+    "confusion_thinking": {
+      "name": "Confusion/Thinking",
+      "description": "For counterintuitive mechanisms, paradoxes",
+      "count": 10,
+      "memes": [
+        {
+          "id": 24,
+          "name": "Confused Math Lady (Nazaré Tedesco)",
+          "category": "confusion_thinking",
+          "tags": ["confused", "math", "calculating", "thinking"],
+          "use_case": "Complex pathophysiology, confusing lab values, paradoxical reactions",
+          "image_url": "https://knowyourmeme.com/memes/math-lady-confused-lady",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Brazilian actress with math equations overlay"
+        },
+        {
+          "id": 25,
+          "name": "Roll Safe Thinking (Tapping Head)",
+          "category": "confusion_thinking",
+          "tags": ["thinking", "smart", "clever", "tapping head"],
+          "use_case": "Counterintuitive treatments, paradoxical medical logic",
+          "image_url": "https://imgflip.com/memetemplate/Roll-Safe-Think-About-It",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Kayode Ewumi tapping head"
+        },
+        {
+          "id": 26,
+          "name": "Is This a Pigeon?",
+          "category": "confusion_thinking",
+          "tags": ["confused", "misidentification", "anime", "butterfly"],
+          "use_case": "Misdiagnosis, confusing symptoms for different disease",
+          "image_url": "https://imgflip.com/memetemplate/Is-This-A-Pigeon",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Anime character misidentifying butterfly as pigeon"
+        },
+        {
+          "id": 27,
+          "name": "Confused Nick Young",
+          "category": "confusion_thinking",
+          "tags": ["confused", "question marks", "what", "nba"],
+          "use_case": "Unexpected patient response, confusing symptoms",
+          "image_url": "https://knowyourmeme.com/memes/confused-nick-young-swaggy-p",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Nick Young with question marks"
+        },
+        {
+          "id": 28,
+          "name": "Squinting Fry (Not Sure If)",
+          "category": "confusion_thinking",
+          "tags": ["suspicious", "squinting", "not sure", "futurama"],
+          "use_case": "Differential diagnosis, uncertain findings",
+          "image_url": "https://imgflip.com/memetemplate/Futurama-Fry",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Fry from Futurama squinting suspiciously"
+        },
+        {
+          "id": 29,
+          "name": "Galaxy Brain/Expanding Brain",
+          "category": "confusion_thinking",
+          "tags": ["brain", "enlightened", "smart", "evolution"],
+          "use_case": "Increasingly complex medical reasoning, treatment escalation",
+          "image_url": "https://imgflip.com/memegenerator/Expanding-Brain",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "4-panel progressive brain meme"
+        },
+        {
+          "id": 30,
+          "name": "Two Buttons Daily Struggle",
+          "category": "confusion_thinking",
+          "tags": ["choice", "struggle", "buttons", "sweating"],
+          "use_case": "Treatment dilemmas, choosing between two bad options",
+          "image_url": "https://imgflip.com/memetemplate/Two-Buttons",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Man sweating choosing between two buttons"
+        },
+        {
+          "id": 31,
+          "name": "Change My Mind",
+          "category": "confusion_thinking",
+          "tags": ["debate", "opinion", "convince", "table"],
+          "use_case": "Controversial medical opinions, evidence-based challenges",
+          "image_url": "https://knowyourmeme.com/memes/steven-crowders-change-my-mind-campus-sign",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Steven Crowder at table with sign"
+        },
+        {
+          "id": 32,
+          "name": "American Chopper Argument",
+          "category": "confusion_thinking",
+          "tags": ["argument", "yelling", "debate", "conflict"],
+          "use_case": "Medical team disagreements, conflicting treatment approaches",
+          "image_url": "https://imgflip.com/memetemplate/American-Chopper-Argument",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Paul Teutul Sr. and Jr. arguing"
+        },
+        {
+          "id": 33,
+          "name": "They're the Same Picture",
+          "category": "confusion_thinking",
+          "tags": ["same", "identical", "office", "pam"],
+          "use_case": "Similar looking conditions, differential diagnosis confusion",
+          "image_url": "https://imgflip.com/memetemplate/Theyre-The-Same-Picture",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Pam from The Office, 1363x1524px"
+        }
+      ]
+    },
+    "success_obvious": {
+      "name": "Success/Obvious Answer",
+      "description": "For answer reveals, 'of course it's...'",
+      "count": 8,
+      "memes": [
+        {
+          "id": 34,
+          "name": "Drake Yes/No (Hotline Bling)",
+          "category": "success_obvious",
+          "tags": ["drake", "yes", "no", "approval", "rejection"],
+          "use_case": "Correct vs incorrect diagnosis, effective vs ineffective treatment",
+          "image_url": "https://imgflip.com/memetemplate/Drake-Hotline-Bling",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Drake rejecting vs approving"
+        },
+        {
+          "id": 35,
+          "name": "Winnie the Pooh Tuxedo",
+          "category": "success_obvious",
+          "tags": ["fancy", "sophisticated", "winnie", "upgrade"],
+          "use_case": "Basic vs advanced treatment, proper medical terminology",
+          "image_url": "https://imgflip.com/memetemplate/Tuxedo-Winnie-The-Pooh",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Regular Pooh vs fancy tuxedo Pooh"
+        },
+        {
+          "id": 36,
+          "name": "Well Yes, But Actually No",
+          "category": "success_obvious",
+          "tags": ["pirate", "yes", "no", "contradiction"],
+          "use_case": "Technically correct but clinically wrong, paradoxical answers",
+          "image_url": "https://imgflip.com/memetemplate/Well-Yes-But-Actually-No",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Pirate Captain from Aardman short film"
+        },
+        {
+          "id": 37,
+          "name": "Success Kid",
+          "category": "success_obvious",
+          "tags": ["success", "win", "fist pump", "baby"],
+          "use_case": "Treatment success, positive outcomes, patient recovery",
+          "image_url": "https://imgflip.com/memetemplate/Success-Kid-Original",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Baby on beach with fist pump"
+        },
+        {
+          "id": 38,
+          "name": "Leonardo DiCaprio Cheers",
+          "category": "success_obvious",
+          "tags": ["cheers", "toast", "gatsby", "celebration"],
+          "use_case": "Successful diagnosis, treatment milestone achieved",
+          "image_url": "https://imgflip.com/memetemplate/Leonardo-Dicaprio-Cheers",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "DiCaprio as Gatsby raising glass"
+        },
+        {
+          "id": 39,
+          "name": "One Does Not Simply",
+          "category": "success_obvious",
+          "tags": ["boromir", "lotr", "simply", "impossible"],
+          "use_case": "Medical impossibilities, things that cannot be done",
+          "image_url": "https://imgflip.com/memetemplate/One-Does-Not-Simply",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Boromir from Lord of the Rings"
+        },
+        {
+          "id": 40,
+          "name": "Doge (Much Wow)",
+          "category": "success_obvious",
+          "tags": ["doge", "wow", "shiba", "amazement"],
+          "use_case": "Amazing treatment results, impressive recovery",
+          "image_url": "https://knowyourmeme.com/memes/doge",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Kabosu the Shiba Inu with Comic Sans text"
+        },
+        {
+          "id": 41,
+          "name": "Anakin Padmé (For the Better, Right?)",
+          "category": "success_obvious",
+          "tags": ["star wars", "anakin", "padme", "concern"],
+          "use_case": "Good intentions with bad outcomes, treatment complications",
+          "image_url": "https://imgflip.com/memegenerator/322712059/anakin-padme-for-the-better",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "4-panel Star Wars meme"
+        }
+      ]
+    },
+    "suffering_chronic": {
+      "name": "Suffering/Chronic",
+      "description": "For chronic diseases, ongoing problems",
+      "count": 5,
+      "memes": [
+        {
+          "id": 42,
+          "name": "Hide the Pain Harold",
+          "category": "suffering_chronic",
+          "tags": ["harold", "pain", "suffering", "forced smile"],
+          "use_case": "Chronic pain, long-term suffering, managing symptoms",
+          "image_url": "https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "András Arató stock photo model"
+        },
+        {
+          "id": 43,
+          "name": "This Is Fine Dog",
+          "category": "suffering_chronic",
+          "tags": ["fire", "fine", "denial", "dog"],
+          "use_case": "Ignoring symptoms, denial of disease progression",
+          "image_url": "https://i.kym-cdn.com/entries/icons/original/000/018/012/this_is_fine.jpeg",
+          "source": "Know Your Meme",
+          "format": "jpeg",
+          "notes": "KC Green webcomic character"
+        },
+        {
+          "id": 44,
+          "name": "SpongeBob Tired/Exhausted",
+          "category": "suffering_chronic",
+          "tags": ["tired", "exhausted", "bags", "sleep deprived"],
+          "use_case": "Chronic fatigue, sleep disorders, exhaustion from illness",
+          "image_url": "https://imgflip.com/memetemplate/325818664/Spongebob-Tired-Eyes",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "SpongeBob with bloodshot eyes and bags"
+        },
+        {
+          "id": 45,
+          "name": "Kermit Sipping Tea (But That's None of My Business)",
+          "category": "suffering_chronic",
+          "tags": ["kermit", "tea", "passive aggressive", "sarcasm"],
+          "use_case": "Passive comments about patient non-compliance, obvious causes",
+          "image_url": "https://knowyourmeme.com/memes/but-thats-none-of-my-business",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Kermit sipping Lipton tea"
+        },
+        {
+          "id": 46,
+          "name": "Evil Kermit",
+          "category": "suffering_chronic",
+          "tags": ["evil", "dark side", "temptation", "kermit"],
+          "use_case": "Temptation to skip medication, non-compliance thoughts",
+          "image_url": "https://knowyourmeme.com/memes/evil-kermit",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Kermit vs hooded Constantine from Muppets Most Wanted"
+        }
+      ]
+    },
+    "comparison_choice": {
+      "name": "Comparison/Choice",
+      "description": "For comparing wrong vs right diagnosis",
+      "count": 4,
+      "memes": [
+        {
+          "id": 47,
+          "name": "Distracted Boyfriend",
+          "category": "comparison_choice",
+          "tags": ["distracted", "choice", "comparison", "cheating"],
+          "use_case": "Choosing wrong diagnosis over correct one, distracted by zebras",
+          "image_url": "https://i.kym-cdn.com/entries/icons/original/000/023/732/damngina.jpg",
+          "source": "Know Your Meme",
+          "format": "jpg",
+          "notes": "Stock photo by Antonio Guillem, 782x440px"
+        },
+        {
+          "id": 48,
+          "name": "Left Exit 12 Off Ramp",
+          "category": "comparison_choice",
+          "tags": ["exit", "choice", "highway", "direction"],
+          "use_case": "Choosing between treatment paths, correct vs incorrect approach",
+          "image_url": "https://imgflip.com/memetemplate/Left-Exit-12-Off-Ramp",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Car drifting to exit ramp"
+        },
+        {
+          "id": 49,
+          "name": "Buff Doge vs Cheems",
+          "category": "comparison_choice",
+          "tags": ["strong", "weak", "comparison", "doge"],
+          "use_case": "Past vs present health, strong vs weak immune response",
+          "image_url": "https://imgflip.com/memetemplate/Buff-Doge-vs-Cheems",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "Swole doge vs crying cheems comparison"
+        },
+        {
+          "id": 50,
+          "name": "Spider-Man Pointing at Spider-Man",
+          "category": "comparison_choice",
+          "tags": ["identical", "same", "pointing", "spiderman"],
+          "use_case": "Similar looking diseases, identical symptoms different causes",
+          "image_url": "https://imgflip.com/memegenerator/110133729/spiderman-pointing-at-spiderman",
+          "source": "Imgflip",
+          "format": "jpg",
+          "notes": "1967 Spider-Man animated series"
+        }
+      ]
+    }
+  },
+  "download_instructions": {
+    "note": "Some URLs point to meme template pages rather than direct image files. To download:",
+    "steps": [
+      "1. Visit the source URL provided",
+      "2. Look for 'Download' or 'Save Image' options",
+      "3. For Imgflip templates: Right-click the template image and select 'Save image as'",
+      "4. For Know Your Meme: Navigate to the photo gallery and download high-res versions",
+      "5. For GIPHY/Tenor: Click the download button and select your preferred resolution",
+      "6. For stock photo sites: May require free account for downloads"
+    ]
+  },
+  "usage_tips": [
+    "Use disaster/shock memes for dramatic reveals and catastrophic outcomes",
+    "Use leaving/quitting memes when describing organ failure or system shutdown",
+    "Use confusion/thinking memes for complex pathophysiology explanations",
+    "Use success memes for correct diagnosis reveals and treatment successes",
+    "Use chronic/suffering memes for ongoing health problems and patient struggles",
+    "Use comparison memes for differential diagnosis and treatment choices"
+  ],
+  "sources": [
+    "Know Your Meme - https://knowyourmeme.com",
+    "Imgflip - https://imgflip.com",
+    "GIPHY - https://giphy.com",
+    "Tenor - https://tenor.com",
+    "GIFDB - https://gifdb.com",
+    "Kapwing - https://kapwing.com",
+    "StickPNG - https://www.stickpng.com",
+    "Freepik - https://www.freepik.com"
+  ],
+  "metadata": {
+    "created": "2025-11-23",
+    "format": "JSON",
+    "version": "1.0",
+    "purpose": "Medical education video meme reference library"
+  }
+}

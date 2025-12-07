@@ -1,0 +1,80 @@
+{
+  "topic": "bph-5-alpha-reductase",
+  "script": "Good gravy, here we go again. Seventy-year-old man's been pissin' like a CLOGGED garden hose for months. Wife's ready to BOOT him to the couch 'cause he's up five times a night makin' MORE RACKET than a freight train. Doc feels his prostate and LORD ALMIGHTY it's the size of a BASEBALL. Thing's SIXTY-FIVE grams, SWOLE UP like a TICK on a hound dog. Just sittin' there CHOKIN' his pipes. PSA's seven point two. Now think REAL careful here. What medication CLASS is gonna actually SHRINK this BLOATED gland so he don't end up with a ROTO-ROOTER up his business? A? B? C? D? E? Choose wrong and this man's marriage AND his plumbin' are BOTH goin' down the crapper... It's C, you BAMBOOZLED youngsters. Five-alpha-reductase inhibitor. That's finasteride or dutasteride. Half you picked B like a bunch of GREENHORNS. Now pipe down and I'll learn you somethin'. Five-alpha-reductase inhibitors STARVE that prostate by BLOCKIN' the enzyme that makes DHT. Without DHT, that ORNERY gland DEFLATES like a punctured tire. SHRINKS twenty to thirty percent in six months. PLUMB miraculous. Sure, some fellas can't get their ENGINE started if you catch my drift, but better LIMP than CARVED UP like a Thanksgivin' turkey. Alpha blockers just LOOSEN things up, don't shrink SQUAT. Now SKEDADDLE.",
+
+  "questionData": {
+    "card_id": 1,
+    "topic": "bph-5-alpha-reductase",
+    "vignette": "A 70-year-old man presents with severe urinary hesitancy and nocturia 5 times per night. His wife reports his symptoms are affecting their sleep quality. Digital rectal exam reveals a firm, symmetrically enlarged prostate estimated at 65 grams (size of a baseball). Urinalysis is normal. PSA is 7.2 ng/mL.",
+    "lab_values": [
+      { "name": "Prostate Size", "value": "65 grams", "reference": "(Normal: ~20g)" },
+      { "name": "PSA", "value": "7.2 ng/mL", "reference": "(Normal: <4.0)" }
+    ],
+    "question_text": "What is the BEST medication class to reduce prostate volume and prevent surgical intervention?",
+    "options": [
+      { "letter": "A", "text": "Anticholinergic agents" },
+      { "letter": "B", "text": "Alpha-1 blockers" },
+      { "letter": "C", "text": "5-alpha reductase inhibitor" },
+      { "letter": "D", "text": "PDE-5 inhibitors" },
+      { "letter": "E", "text": "Immediate TURP referral" }
+    ],
+    "correct_answer": "C"
+  },
+
+  "vignetteHighlights": [
+    { "phrase": "5 times per night", "triggerWord": "five", "shouldShake": false },
+    { "phrase": "affecting their sleep", "triggerWord": "BOOT", "shouldShake": false },
+    { "phrase": "65 grams", "triggerWord": "SIXTY", "shouldShake": true },
+    { "phrase": "size of a baseball", "triggerWord": "BASEBALL", "shouldShake": false },
+    { "phrase": "7.2 ng/mL", "triggerWord": "seven", "shouldShake": false }
+  ],
+
+  "teachingPhases": [
+    {
+      "title": "MECHANISM OF ACTION",
+      "startTrigger": "pipe",
+      "layout": "flow-diagram",
+      "bullets": [
+        { "text": "Blocks 5-alpha-reductase enzyme", "triggerWord": "BLOCKIN" },
+        { "text": "Stops testosterone → DHT conversion", "triggerWord": "DHT" },
+        { "text": "Prostate SHRINKS 20-30% in 6 months", "triggerWord": "SHRINKS" },
+        { "text": "Reduces bleeding risk", "triggerWord": "miraculous" }
+      ]
+    },
+    {
+      "title": "SIDE EFFECTS VS BENEFITS",
+      "startTrigger": "fellas",
+      "layout": "flow-diagram",
+      "bullets": [
+        { "text": "Prevents surgery (TURP)", "triggerWord": "CARVED" },
+        { "text": "Better than surgical complications", "triggerWord": "better" },
+        { "text": "Erectile dysfunction possible", "triggerWord": "ENGINE" },
+        { "text": "But worth avoiding surgery", "triggerWord": "LIMP" }
+      ]
+    },
+    {
+      "title": "BOARDS PEARL - KEY CONTRAST",
+      "startTrigger": "Alpha",
+      "layout": "pearl-card",
+      "formula": [
+        { "text": "Alpha blockers", "triggerWord": "Alpha" },
+        { "text": "=", "triggerWord": "just" },
+        { "text": "RELAX smooth muscle", "triggerWord": "LOOSEN" },
+        { "text": "+", "triggerWord": "don't" },
+        { "text": "NO SIZE REDUCTION", "triggerWord": "SQUAT" }
+      ]
+    }
+  ],
+
+  "memes": {
+    "answerReveal": "roll-safe",
+    "contextual": {
+      "memeId": "michael-jordan-crying",
+      "triggerWord": "ENGINE"
+    }
+  },
+
+  "criticalMoments": {
+    "answerReveal": "Five-alpha-reductase inhibitor"
+  }
+}

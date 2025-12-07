@@ -1,0 +1,775 @@
+{
+  "script": "Oh for cryin' out loud. Sixty-five-year-old guy. Kidney transplant patient.\n\nGets cipro for a UTI. Day 4, he's walkin' around and—POP. Ankle's done. Can't move his foot.\n\nWhat happened?\n\nLet's see here. Thompson test? Positive. That means squeeze the calf, foot don't move.\n\nOh, and he's on tacrolimus, prednisone, AND ciprofloxacin. What could POSSIBLY go wrong?\n\nHis labs? Fine. WBC normal. Creatinine's fine. This ain't about the labs—it's about what that DRUG did.\n\nSo which mechanism explains it? A? B? C? D? E?\n\nThink about it. I'll wait.\n\n...Still waitin'. Ticktock.\n\nYou're overthinkin' this.\n\nIt's A. Of COURSE it's A. Fluoroquinolone-induced collagen degradation.\n\nAlright, LISTEN. Fluoroquinolones—cipro, levofloxacin, all of 'em—they MESS UP collagen in your tendons. Achilles tendon ruptures. Black-box warning.\n\nRisk goes UP if you're old, on steroids, or a transplant patient like this guy.\n\nBoards test this EVERY year 'cause students miss it.\n\nNow go study. I got a nap to take.",
+  "words": [
+    {
+      "word": "Oh",
+      "start": 0,
+      "end": 0.325
+    },
+    {
+      "word": "for",
+      "start": 0.395,
+      "end": 0.546
+    },
+    {
+      "word": "cryin'",
+      "start": 0.615,
+      "end": 0.987
+    },
+    {
+      "word": "out",
+      "start": 1.033,
+      "end": 1.196
+    },
+    {
+      "word": "loud.",
+      "start": 1.289,
+      "end": 1.916
+    },
+    {
+      "word": "Sixty-five-year-old",
+      "start": 2.403,
+      "end": 3.541
+    },
+    {
+      "word": "guy.",
+      "start": 3.611,
+      "end": 4.319
+    },
+    {
+      "word": "Kidney",
+      "start": 4.737,
+      "end": 5.166
+    },
+    {
+      "word": "transplant",
+      "start": 5.224,
+      "end": 5.956
+    },
+    {
+      "word": "patient.",
+      "start": 6.014,
+      "end": 6.594
+    },
+    {
+      "word": "Gets",
+      "start": 6.711,
+      "end": 6.978
+    },
+    {
+      "word": "cipro",
+      "start": 6.989,
+      "end": 7.407
+    },
+    {
+      "word": "for",
+      "start": 7.5,
+      "end": 7.651
+    },
+    {
+      "word": "a",
+      "start": 7.686,
+      "end": 7.721
+    },
+    {
+      "word": "UTI.",
+      "start": 7.837,
+      "end": 8.835
+    },
+    {
+      "word": "Day",
+      "start": 9.265,
+      "end": 9.485
+    },
+    {
+      "word": "4,",
+      "start": 9.601,
+      "end": 9.961
+    },
+    {
+      "word": "he's",
+      "start": 9.996,
+      "end": 10.194
+    },
+    {
+      "word": "walkin'",
+      "start": 10.263,
+      "end": 10.646
+    },
+    {
+      "word": "around",
+      "start": 10.67,
+      "end": 11.076
+    },
+    {
+      "word": "and—POP.",
+      "start": 11.146,
+      "end": 12.19
+    },
+    {
+      "word": "Ankle's",
+      "start": 12.307,
+      "end": 12.748
+    },
+    {
+      "word": "done.",
+      "start": 12.806,
+      "end": 13.259
+    },
+    {
+      "word": "Can't",
+      "start": 13.398,
+      "end": 13.642
+    },
+    {
+      "word": "move",
+      "start": 13.688,
+      "end": 13.886
+    },
+    {
+      "word": "his",
+      "start": 13.909,
+      "end": 14.013
+    },
+    {
+      "word": "foot.",
+      "start": 14.06,
+      "end": 14.501
+    },
+    {
+      "word": "What",
+      "start": 14.71,
+      "end": 14.907
+    },
+    {
+      "word": "happened?",
+      "start": 14.954,
+      "end": 15.464
+    },
+    {
+      "word": "Let's",
+      "start": 15.778,
+      "end": 15.999
+    },
+    {
+      "word": "see",
+      "start": 16.01,
+      "end": 16.138
+    },
+    {
+      "word": "here.",
+      "start": 16.196,
+      "end": 16.602
+    },
+    {
+      "word": "Thompson",
+      "start": 17.032,
+      "end": 17.554
+    },
+    {
+      "word": "test?",
+      "start": 17.624,
+      "end": 18.239
+    },
+    {
+      "word": "Positive.",
+      "start": 18.344,
+      "end": 19.063
+    },
+    {
+      "word": "That",
+      "start": 19.202,
+      "end": 19.365
+    },
+    {
+      "word": "means",
+      "start": 19.423,
+      "end": 19.644
+    },
+    {
+      "word": "squeeze",
+      "start": 19.667,
+      "end": 20.038
+    },
+    {
+      "word": "the",
+      "start": 20.062,
+      "end": 20.131
+    },
+    {
+      "word": "calf,",
+      "start": 20.201,
+      "end": 20.526
+    },
+    {
+      "word": "foot",
+      "start": 20.561,
+      "end": 20.758
+    },
+    {
+      "word": "don't",
+      "start": 20.805,
+      "end": 21.002
+    },
+    {
+      "word": "move.",
+      "start": 21.06,
+      "end": 21.42
+    },
+    {
+      "word": "Oh,",
+      "start": 21.838,
+      "end": 22.326
+    },
+    {
+      "word": "and",
+      "start": 22.372,
+      "end": 22.604
+    },
+    {
+      "word": "he's",
+      "start": 22.685,
+      "end": 22.918
+    },
+    {
+      "word": "on",
+      "start": 22.999,
+      "end": 23.103
+    },
+    {
+      "word": "tacrolimus,",
+      "start": 23.173,
+      "end": 23.939
+    },
+    {
+      "word": "prednisone,",
+      "start": 23.986,
+      "end": 24.706
+    },
+    {
+      "word": "AND",
+      "start": 24.764,
+      "end": 25.089
+    },
+    {
+      "word": "ciprofloxacin.",
+      "start": 25.147,
+      "end": 26.099
+    },
+    {
+      "word": "What",
+      "start": 26.122,
+      "end": 26.273
+    },
+    {
+      "word": "could",
+      "start": 26.331,
+      "end": 26.482
+    },
+    {
+      "word": "POSSIBLY",
+      "start": 26.563,
+      "end": 27.132
+    },
+    {
+      "word": "go",
+      "start": 27.178,
+      "end": 27.341
+    },
+    {
+      "word": "wrong?",
+      "start": 27.399,
+      "end": 27.805
+    },
+    {
+      "word": "His",
+      "start": 28.072,
+      "end": 28.305
+    },
+    {
+      "word": "labs?",
+      "start": 28.398,
+      "end": 29.036
+    },
+    {
+      "word": "Fine.",
+      "start": 29.268,
+      "end": 29.884
+    },
+    {
+      "word": "WBC",
+      "start": 30.151,
+      "end": 30.778
+    },
+    {
+      "word": "normal.",
+      "start": 30.94,
+      "end": 31.416
+    },
+    {
+      "word": "Creatinine's",
+      "start": 31.474,
+      "end": 32.217
+    },
+    {
+      "word": "fine.",
+      "start": 32.287,
+      "end": 32.914
+    },
+    {
+      "word": "This",
+      "start": 33.227,
+      "end": 33.413
+    },
+    {
+      "word": "ain't",
+      "start": 33.471,
+      "end": 33.657
+    },
+    {
+      "word": "about",
+      "start": 33.668,
+      "end": 33.912
+    },
+    {
+      "word": "the",
+      "start": 33.947,
+      "end": 34.017
+    },
+    {
+      "word": "labs—it's",
+      "start": 34.075,
+      "end": 34.829
+    },
+    {
+      "word": "about",
+      "start": 34.864,
+      "end": 35.166
+    },
+    {
+      "word": "what",
+      "start": 35.201,
+      "end": 35.375
+    },
+    {
+      "word": "that",
+      "start": 35.422,
+      "end": 35.596
+    },
+    {
+      "word": "DRUG",
+      "start": 35.654,
+      "end": 35.944
+    },
+    {
+      "word": "did.",
+      "start": 36.026,
+      "end": 36.571
+    },
+    {
+      "word": "So",
+      "start": 37.047,
+      "end": 37.21
+    },
+    {
+      "word": "which",
+      "start": 37.256,
+      "end": 37.454
+    },
+    {
+      "word": "mechanism",
+      "start": 37.616,
+      "end": 38.231
+    },
+    {
+      "word": "explains",
+      "start": 38.29,
+      "end": 38.777
+    },
+    {
+      "word": "it?",
+      "start": 38.824,
+      "end": 38.986
+    },
+    {
+      "word": "A?",
+      "start": 39.276,
+      "end": 39.555
+    },
+    {
+      "word": "B?",
+      "start": 39.671,
+      "end": 40.043
+    },
+    {
+      "word": "C?",
+      "start": 40.077,
+      "end": 40.553
+    },
+    {
+      "word": "D?",
+      "start": 40.635,
+      "end": 41.029
+    },
+    {
+      "word": "E?",
+      "start": 41.076,
+      "end": 41.54
+    },
+    {
+      "word": "Think",
+      "start": 41.831,
+      "end": 42.028
+    },
+    {
+      "word": "about",
+      "start": 42.074,
+      "end": 42.307
+    },
+    {
+      "word": "it.",
+      "start": 42.341,
+      "end": 42.481
+    },
+    {
+      "word": "I'll",
+      "start": 42.504,
+      "end": 42.678
+    },
+    {
+      "word": "wait.",
+      "start": 42.736,
+      "end": 43.084
+    },
+    {
+      "word": "...Still",
+      "start": 43.131,
+      "end": 43.7
+    },
+    {
+      "word": "waitin'.",
+      "start": 43.758,
+      "end": 44.292
+    },
+    {
+      "word": "Ticktock.",
+      "start": 44.675,
+      "end": 45.325
+    },
+    {
+      "word": "You're",
+      "start": 45.662,
+      "end": 45.836
+    },
+    {
+      "word": "overthinkin'",
+      "start": 45.848,
+      "end": 46.289
+    },
+    {
+      "word": "this.",
+      "start": 46.312,
+      "end": 46.579
+    },
+    {
+      "word": "It's",
+      "start": 46.684,
+      "end": 46.893
+    },
+    {
+      "word": "A.",
+      "start": 47.009,
+      "end": 47.403
+    },
+    {
+      "word": "Of",
+      "start": 47.856,
+      "end": 47.972
+    },
+    {
+      "word": "COURSE",
+      "start": 48.1,
+      "end": 48.425
+    },
+    {
+      "word": "it's",
+      "start": 48.46,
+      "end": 48.634
+    },
+    {
+      "word": "A.",
+      "start": 48.727,
+      "end": 49.261
+    },
+    {
+      "word": "Fluoroquinolone-induced",
+      "start": 49.598,
+      "end": 51.002
+    },
+    {
+      "word": "collagen",
+      "start": 51.072,
+      "end": 51.548
+    },
+    {
+      "word": "degradation.",
+      "start": 51.618,
+      "end": 52.338
+    },
+    {
+      "word": "Alright,",
+      "start": 52.465,
+      "end": 52.802
+    },
+    {
+      "word": "LISTEN.",
+      "start": 52.837,
+      "end": 53.301
+    },
+    {
+      "word": "Fluoroquinolones—cipro,",
+      "start": 54.009,
+      "end": 55.902
+    },
+    {
+      "word": "levofloxacin,",
+      "start": 56.006,
+      "end": 56.958
+    },
+    {
+      "word": "all",
+      "start": 56.982,
+      "end": 57.144
+    },
+    {
+      "word": "of",
+      "start": 57.191,
+      "end": 57.237
+    },
+    {
+      "word": "'em—they",
+      "start": 57.283,
+      "end": 57.585
+    },
+    {
+      "word": "MESS",
+      "start": 57.806,
+      "end": 58.224
+    },
+    {
+      "word": "UP",
+      "start": 58.398,
+      "end": 58.584
+    },
+    {
+      "word": "collagen",
+      "start": 58.758,
+      "end": 59.396
+    },
+    {
+      "word": "in",
+      "start": 59.571,
+      "end": 59.722
+    },
+    {
+      "word": "your",
+      "start": 59.78,
+      "end": 59.907
+    },
+    {
+      "word": "tendons.",
+      "start": 59.954,
+      "end": 60.72
+    },
+    {
+      "word": "Achilles",
+      "start": 60.836,
+      "end": 61.602
+    },
+    {
+      "word": "tendon",
+      "start": 61.718,
+      "end": 62.206
+    },
+    {
+      "word": "ruptures.",
+      "start": 62.322,
+      "end": 63.077
+    },
+    {
+      "word": "Black-box",
+      "start": 63.518,
+      "end": 64.249
+    },
+    {
+      "word": "warning.",
+      "start": 64.342,
+      "end": 64.865
+    },
+    {
+      "word": "Risk",
+      "start": 65.085,
+      "end": 65.376
+    },
+    {
+      "word": "goes",
+      "start": 65.631,
+      "end": 66.061
+    },
+    {
+      "word": "UP",
+      "start": 66.281,
+      "end": 66.513
+    },
+    {
+      "word": "if",
+      "start": 66.606,
+      "end": 66.711
+    },
+    {
+      "word": "you're",
+      "start": 66.769,
+      "end": 66.966
+    },
+    {
+      "word": "old,",
+      "start": 67.036,
+      "end": 67.384
+    },
+    {
+      "word": "on",
+      "start": 67.407,
+      "end": 67.512
+    },
+    {
+      "word": "steroids,",
+      "start": 67.605,
+      "end": 68.325
+    },
+    {
+      "word": "or",
+      "start": 68.452,
+      "end": 68.592
+    },
+    {
+      "word": "a",
+      "start": 68.638,
+      "end": 68.661
+    },
+    {
+      "word": "transplant",
+      "start": 68.696,
+      "end": 69.253
+    },
+    {
+      "word": "patient",
+      "start": 69.311,
+      "end": 69.625
+    },
+    {
+      "word": "like",
+      "start": 69.66,
+      "end": 69.811
+    },
+    {
+      "word": "this",
+      "start": 69.834,
+      "end": 69.962
+    },
+    {
+      "word": "guy.",
+      "start": 70.043,
+      "end": 70.449
+    },
+    {
+      "word": "Boards",
+      "start": 70.832,
+      "end": 71.285
+    },
+    {
+      "word": "test",
+      "start": 71.366,
+      "end": 71.796
+    },
+    {
+      "word": "this",
+      "start": 71.842,
+      "end": 72.121
+    },
+    {
+      "word": "EVERY",
+      "start": 72.341,
+      "end": 72.69
+    },
+    {
+      "word": "year",
+      "start": 72.759,
+      "end": 72.992
+    },
+    {
+      "word": "'cause",
+      "start": 73.015,
+      "end": 73.468
+    },
+    {
+      "word": "students",
+      "start": 73.642,
+      "end": 74.245
+    },
+    {
+      "word": "miss",
+      "start": 74.338,
+      "end": 74.617
+    },
+    {
+      "word": "it.",
+      "start": 74.675,
+      "end": 74.942
+    },
+    {
+      "word": "Now",
+      "start": 75.279,
+      "end": 75.418
+    },
+    {
+      "word": "go",
+      "start": 75.465,
+      "end": 75.592
+    },
+    {
+      "word": "study.",
+      "start": 75.662,
+      "end": 76.254
+    },
+    {
+      "word": "I",
+      "start": 76.707,
+      "end": 76.765
+    },
+    {
+      "word": "got",
+      "start": 76.881,
+      "end": 77.055
+    },
+    {
+      "word": "a",
+      "start": 77.09,
+      "end": 77.113
+    },
+    {
+      "word": "nap",
+      "start": 77.183,
+      "end": 77.415
+    },
+    {
+      "word": "to",
+      "start": 77.461,
+      "end": 77.531
+    },
+    {
+      "word": "take.",
+      "start": 77.589,
+      "end": 78.297
+    }
+  ]
+}

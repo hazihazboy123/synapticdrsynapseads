@@ -1,0 +1,1102 @@
+{
+  "topic": "pyrazinamide",
+  "audio_file": "pyrazinamide-narration.mp3",
+  "script": "What in tarnation? 32 year old woman. Pulmonary TB. Started on RIPE therapy. Three weeks later she's YELLOW as a dandelion, VEXED by nausea, and so FATIGUED she can't get out of bed.\n\nLabs come back. ALT 850. AST 720. Uric acid 9.2. Bilirubin through the roof. Somebody's liver is gettin' TORCHED and everyone's BEFUDDLED about which drug did it.\n\nSo which medication is most likely causin' this CATASTROPHE? A? B? C? D? E? Think on it... One of these drugs is downright ORNERY to the liver. I'll wait.\n\nThe answer? D. Pyrazinamide. And I RECKON half you got BAMBOOZLED by A rifampin. That's HOGWASH.\n\nAlright, FINE. Here's how PZA WRECKS havoc. It's a prodrug. Needs an enzyme called pyrazinamidase to CONVERT it into pyrazinoic acid. That's the active form that DISRUPTS bacterial membrane transport and DROPS the pH inside the bug till it can't survive. Works PECULIAR well in acidic environments like abscesses.\n\nBut here's the PITIFUL part. PZA OBLITERATES hepatocytes. Dose dependent hepatotoxicity happens in 15 percent of folks. Also CRANKS UP uric acid by blockin' renal excretion. That's why she's got hyperuricemia.\n\nIf the liver enzymes go above three times normal, you YANK the drug. Don't be FLUMMOXED by this one on boards. Yellow patient plus hyperuricemia plus recent TB treatment equals PZA toxicity.\n\nNow skedaddle.",
+  "words": [
+    {
+      "word": "What",
+      "start": 0,
+      "end": 0.372
+    },
+    {
+      "word": "in",
+      "start": 0.441,
+      "end": 0.592
+    },
+    {
+      "word": "tarnation?",
+      "start": 0.673,
+      "end": 1.602
+    },
+    {
+      "word": "32",
+      "start": 1.997,
+      "end": 2.589
+    },
+    {
+      "word": "year",
+      "start": 2.67,
+      "end": 2.833
+    },
+    {
+      "word": "old",
+      "start": 2.902,
+      "end": 3.053
+    },
+    {
+      "word": "woman.",
+      "start": 3.123,
+      "end": 3.483
+    },
+    {
+      "word": "Pulmonary",
+      "start": 3.564,
+      "end": 4.122
+    },
+    {
+      "word": "TB.",
+      "start": 4.18,
+      "end": 4.632
+    },
+    {
+      "word": "Started",
+      "start": 4.923,
+      "end": 5.364
+    },
+    {
+      "word": "on",
+      "start": 5.422,
+      "end": 5.526
+    },
+    {
+      "word": "RIPE",
+      "start": 5.619,
+      "end": 5.886
+    },
+    {
+      "word": "therapy.",
+      "start": 5.921,
+      "end": 6.525
+    },
+    {
+      "word": "Three",
+      "start": 6.78,
+      "end": 7.024
+    },
+    {
+      "word": "weeks",
+      "start": 7.059,
+      "end": 7.291
+    },
+    {
+      "word": "later",
+      "start": 7.349,
+      "end": 7.616
+    },
+    {
+      "word": "she's",
+      "start": 7.674,
+      "end": 7.93
+    },
+    {
+      "word": "YELLOW",
+      "start": 8.034,
+      "end": 8.394
+    },
+    {
+      "word": "as",
+      "start": 8.452,
+      "end": 8.557
+    },
+    {
+      "word": "a",
+      "start": 8.603,
+      "end": 8.626
+    },
+    {
+      "word": "dandelion,",
+      "start": 8.684,
+      "end": 9.242
+    },
+    {
+      "word": "VEXED",
+      "start": 9.288,
+      "end": 9.613
+    },
+    {
+      "word": "by",
+      "start": 9.683,
+      "end": 9.822
+    },
+    {
+      "word": "nausea,",
+      "start": 9.903,
+      "end": 10.449
+    },
+    {
+      "word": "and",
+      "start": 10.635,
+      "end": 10.786
+    },
+    {
+      "word": "so",
+      "start": 10.855,
+      "end": 11.006
+    },
+    {
+      "word": "FATIGUED",
+      "start": 11.088,
+      "end": 11.703
+    },
+    {
+      "word": "she",
+      "start": 11.923,
+      "end": 12.086
+    },
+    {
+      "word": "can't",
+      "start": 12.156,
+      "end": 12.388
+    },
+    {
+      "word": "get",
+      "start": 12.434,
+      "end": 12.55
+    },
+    {
+      "word": "out",
+      "start": 12.574,
+      "end": 12.678
+    },
+    {
+      "word": "of",
+      "start": 12.713,
+      "end": 12.759
+    },
+    {
+      "word": "bed.",
+      "start": 12.806,
+      "end": 13.177
+    },
+    {
+      "word": "Labs",
+      "start": 13.572,
+      "end": 13.862
+    },
+    {
+      "word": "come",
+      "start": 13.909,
+      "end": 14.048
+    },
+    {
+      "word": "back.",
+      "start": 14.071,
+      "end": 14.385
+    },
+    {
+      "word": "ALT",
+      "start": 14.582,
+      "end": 14.942
+    },
+    {
+      "word": "850.",
+      "start": 15,
+      "end": 15.697
+    },
+    {
+      "word": "AST",
+      "start": 15.848,
+      "end": 16.37
+    },
+    {
+      "word": "720.",
+      "start": 16.591,
+      "end": 17.38
+    },
+    {
+      "word": "Uric",
+      "start": 17.624,
+      "end": 17.914
+    },
+    {
+      "word": "acid",
+      "start": 18.019,
+      "end": 18.471
+    },
+    {
+      "word": "9.2.",
+      "start": 18.622,
+      "end": 19.563
+    },
+    {
+      "word": "Bilirubin",
+      "start": 19.749,
+      "end": 20.294
+    },
+    {
+      "word": "through",
+      "start": 20.329,
+      "end": 20.55
+    },
+    {
+      "word": "the",
+      "start": 20.585,
+      "end": 20.643
+    },
+    {
+      "word": "roof.",
+      "start": 20.689,
+      "end": 21.084
+    },
+    {
+      "word": "Somebody's",
+      "start": 21.618,
+      "end": 22.105
+    },
+    {
+      "word": "liver",
+      "start": 22.187,
+      "end": 22.454
+    },
+    {
+      "word": "is",
+      "start": 22.5,
+      "end": 22.547
+    },
+    {
+      "word": "gettin'",
+      "start": 22.605,
+      "end": 22.848
+    },
+    {
+      "word": "TORCHED",
+      "start": 22.883,
+      "end": 23.278
+    },
+    {
+      "word": "and",
+      "start": 23.313,
+      "end": 23.394
+    },
+    {
+      "word": "everyone's",
+      "start": 23.429,
+      "end": 23.87
+    },
+    {
+      "word": "BEFUDDLED",
+      "start": 23.94,
+      "end": 24.613
+    },
+    {
+      "word": "about",
+      "start": 24.66,
+      "end": 24.869
+    },
+    {
+      "word": "which",
+      "start": 24.915,
+      "end": 25.089
+    },
+    {
+      "word": "drug",
+      "start": 25.159,
+      "end": 25.414
+    },
+    {
+      "word": "did",
+      "start": 25.484,
+      "end": 25.635
+    },
+    {
+      "word": "it.",
+      "start": 25.681,
+      "end": 25.867
+    },
+    {
+      "word": "So",
+      "start": 26.041,
+      "end": 26.157
+    },
+    {
+      "word": "which",
+      "start": 26.215,
+      "end": 26.366
+    },
+    {
+      "word": "medication",
+      "start": 26.436,
+      "end": 27.074
+    },
+    {
+      "word": "is",
+      "start": 27.121,
+      "end": 27.191
+    },
+    {
+      "word": "most",
+      "start": 27.272,
+      "end": 27.469
+    },
+    {
+      "word": "likely",
+      "start": 27.527,
+      "end": 27.852
+    },
+    {
+      "word": "causin'",
+      "start": 27.922,
+      "end": 28.294
+    },
+    {
+      "word": "this",
+      "start": 28.317,
+      "end": 28.456
+    },
+    {
+      "word": "CATASTROPHE?",
+      "start": 28.886,
+      "end": 30.279
+    },
+    {
+      "word": "A?",
+      "start": 30.523,
+      "end": 30.987
+    },
+    {
+      "word": "B?",
+      "start": 31.196,
+      "end": 31.904
+    },
+    {
+      "word": "C?",
+      "start": 32.055,
+      "end": 32.729
+    },
+    {
+      "word": "D?",
+      "start": 32.903,
+      "end": 33.576
+    },
+    {
+      "word": "E?",
+      "start": 34.273,
+      "end": 34.702
+    },
+    {
+      "word": "Think",
+      "start": 34.911,
+      "end": 35.155
+    },
+    {
+      "word": "on",
+      "start": 35.225,
+      "end": 35.352
+    },
+    {
+      "word": "it...",
+      "start": 35.399,
+      "end": 35.817
+    },
+    {
+      "word": "One",
+      "start": 36.095,
+      "end": 36.293
+    },
+    {
+      "word": "of",
+      "start": 36.328,
+      "end": 36.374
+    },
+    {
+      "word": "these",
+      "start": 36.421,
+      "end": 36.606
+    },
+    {
+      "word": "drugs",
+      "start": 36.653,
+      "end": 36.978
+    },
+    {
+      "word": "is",
+      "start": 37.024,
+      "end": 37.14
+    },
+    {
+      "word": "downright",
+      "start": 37.245,
+      "end": 37.895
+    },
+    {
+      "word": "ORNERY",
+      "start": 38.011,
+      "end": 38.534
+    },
+    {
+      "word": "to",
+      "start": 38.58,
+      "end": 38.65
+    },
+    {
+      "word": "the",
+      "start": 38.719,
+      "end": 38.789
+    },
+    {
+      "word": "liver.",
+      "start": 38.835,
+      "end": 39.265
+    },
+    {
+      "word": "I'll",
+      "start": 39.3,
+      "end": 39.486
+    },
+    {
+      "word": "wait.",
+      "start": 39.544,
+      "end": 39.973
+    },
+    {
+      "word": "The",
+      "start": 40.275,
+      "end": 40.38
+    },
+    {
+      "word": "answer?",
+      "start": 40.438,
+      "end": 40.798
+    },
+    {
+      "word": "D.",
+      "start": 41.018,
+      "end": 41.506
+    },
+    {
+      "word": "Pyrazinamide.",
+      "start": 41.761,
+      "end": 43.108
+    },
+    {
+      "word": "And",
+      "start": 43.363,
+      "end": 43.596
+    },
+    {
+      "word": "I",
+      "start": 43.7,
+      "end": 43.746
+    },
+    {
+      "word": "RECKON",
+      "start": 43.909,
+      "end": 44.269
+    },
+    {
+      "word": "half",
+      "start": 44.524,
+      "end": 44.757
+    },
+    {
+      "word": "you",
+      "start": 44.815,
+      "end": 44.884
+    },
+    {
+      "word": "got",
+      "start": 44.965,
+      "end": 45.128
+    },
+    {
+      "word": "BAMBOOZLED",
+      "start": 45.198,
+      "end": 45.906
+    },
+    {
+      "word": "by",
+      "start": 45.929,
+      "end": 46.068
+    },
+    {
+      "word": "A",
+      "start": 46.126,
+      "end": 46.15
+    },
+    {
+      "word": "rifampin.",
+      "start": 46.219,
+      "end": 46.8
+    },
+    {
+      "word": "That's",
+      "start": 46.846,
+      "end": 47.09
+    },
+    {
+      "word": "HOGWASH.",
+      "start": 47.137,
+      "end": 48.123
+    },
+    {
+      "word": "Alright,",
+      "start": 48.681,
+      "end": 49.064
+    },
+    {
+      "word": "FINE.",
+      "start": 49.087,
+      "end": 49.517
+    },
+    {
+      "word": "Here's",
+      "start": 49.865,
+      "end": 50.12
+    },
+    {
+      "word": "how",
+      "start": 50.144,
+      "end": 50.306
+    },
+    {
+      "word": "PZA",
+      "start": 50.457,
+      "end": 51.107
+    },
+    {
+      "word": "WRECKS",
+      "start": 51.212,
+      "end": 51.56
+    },
+    {
+      "word": "havoc.",
+      "start": 51.781,
+      "end": 52.175
+    },
+    {
+      "word": "It's",
+      "start": 52.21,
+      "end": 52.431
+    },
+    {
+      "word": "a",
+      "start": 52.5,
+      "end": 52.593
+    },
+    {
+      "word": "prodrug.",
+      "start": 52.756,
+      "end": 53.418
+    },
+    {
+      "word": "Needs",
+      "start": 53.615,
+      "end": 53.847
+    },
+    {
+      "word": "an",
+      "start": 53.859,
+      "end": 53.917
+    },
+    {
+      "word": "enzyme",
+      "start": 53.963,
+      "end": 54.323
+    },
+    {
+      "word": "called",
+      "start": 54.358,
+      "end": 54.648
+    },
+    {
+      "word": "pyrazinamidase",
+      "start": 54.799,
+      "end": 56.39
+    },
+    {
+      "word": "to",
+      "start": 56.587,
+      "end": 56.692
+    },
+    {
+      "word": "CONVERT",
+      "start": 56.773,
+      "end": 57.179
+    },
+    {
+      "word": "it",
+      "start": 57.214,
+      "end": 57.284
+    },
+    {
+      "word": "into",
+      "start": 57.33,
+      "end": 57.504
+    },
+    {
+      "word": "pyrazinoic",
+      "start": 57.586,
+      "end": 58.224
+    },
+    {
+      "word": "acid.",
+      "start": 58.306,
+      "end": 58.84
+    },
+    {
+      "word": "That's",
+      "start": 59.374,
+      "end": 59.652
+    },
+    {
+      "word": "the",
+      "start": 59.71,
+      "end": 59.826
+    },
+    {
+      "word": "active",
+      "start": 59.919,
+      "end": 60.337
+    },
+    {
+      "word": "form",
+      "start": 60.384,
+      "end": 60.744
+    },
+    {
+      "word": "that",
+      "start": 60.987,
+      "end": 61.185
+    },
+    {
+      "word": "DISRUPTS",
+      "start": 61.266,
+      "end": 62.148
+    },
+    {
+      "word": "bacterial",
+      "start": 62.276,
+      "end": 62.996
+    },
+    {
+      "word": "membrane",
+      "start": 63.135,
+      "end": 63.565
+    },
+    {
+      "word": "transport",
+      "start": 63.6,
+      "end": 64.134
+    },
+    {
+      "word": "and",
+      "start": 64.32,
+      "end": 64.61
+    },
+    {
+      "word": "DROPS",
+      "start": 64.714,
+      "end": 65.109
+    },
+    {
+      "word": "the",
+      "start": 65.179,
+      "end": 65.26
+    },
+    {
+      "word": "pH",
+      "start": 65.341,
+      "end": 65.782
+    },
+    {
+      "word": "inside",
+      "start": 65.84,
+      "end": 66.177
+    },
+    {
+      "word": "the",
+      "start": 66.2,
+      "end": 66.258
+    },
+    {
+      "word": "bug",
+      "start": 66.305,
+      "end": 66.572
+    },
+    {
+      "word": "till",
+      "start": 66.816,
+      "end": 67.036
+    },
+    {
+      "word": "it",
+      "start": 67.083,
+      "end": 67.152
+    },
+    {
+      "word": "can't",
+      "start": 67.222,
+      "end": 67.512
+    },
+    {
+      "word": "survive.",
+      "start": 67.582,
+      "end": 68.302
+    },
+    {
+      "word": "Works",
+      "start": 69.149,
+      "end": 69.405
+    },
+    {
+      "word": "PECULIAR",
+      "start": 69.463,
+      "end": 70.02
+    },
+    {
+      "word": "well",
+      "start": 70.09,
+      "end": 70.334
+    },
+    {
+      "word": "in",
+      "start": 70.392,
+      "end": 70.45
+    },
+    {
+      "word": "acidic",
+      "start": 70.519,
+      "end": 70.879
+    },
+    {
+      "word": "environments",
+      "start": 70.937,
+      "end": 71.413
+    },
+    {
+      "word": "like",
+      "start": 71.448,
+      "end": 71.633
+    },
+    {
+      "word": "abscesses.",
+      "start": 71.703,
+      "end": 72.655
+    },
+    {
+      "word": "But",
+      "start": 73.27,
+      "end": 73.433
+    },
+    {
+      "word": "here's",
+      "start": 73.479,
+      "end": 73.746
+    },
+    {
+      "word": "the",
+      "start": 73.793,
+      "end": 73.897
+    },
+    {
+      "word": "PITIFUL",
+      "start": 74.037,
+      "end": 74.513
+    },
+    {
+      "word": "part.",
+      "start": 74.594,
+      "end": 75.093
+    },
+    {
+      "word": "PZA",
+      "start": 75.558,
+      "end": 76.568
+    },
+    {
+      "word": "OBLITERATES",
+      "start": 76.637,
+      "end": 77.462
+    },
+    {
+      "word": "hepatocytes.",
+      "start": 77.496,
+      "end": 78.657
+    },
+    {
+      "word": "Dose",
+      "start": 78.808,
+      "end": 79.133
+    },
+    {
+      "word": "dependent",
+      "start": 79.18,
+      "end": 79.668
+    },
+    {
+      "word": "hepatotoxicity",
+      "start": 79.702,
+      "end": 80.817
+    },
+    {
+      "word": "happens",
+      "start": 80.875,
+      "end": 81.2
+    },
+    {
+      "word": "in",
+      "start": 81.247,
+      "end": 81.316
+    },
+    {
+      "word": "15",
+      "start": 81.363,
+      "end": 81.827
+    },
+    {
+      "word": "percent",
+      "start": 81.908,
+      "end": 82.396
+    },
+    {
+      "word": "of",
+      "start": 82.454,
+      "end": 82.5
+    },
+    {
+      "word": "folks.",
+      "start": 82.558,
+      "end": 83.081
+    },
+    {
+      "word": "Also",
+      "start": 83.638,
+      "end": 84.103
+    },
+    {
+      "word": "CRANKS",
+      "start": 84.393,
+      "end": 84.822
+    },
+    {
+      "word": "UP",
+      "start": 84.88,
+      "end": 85.031
+    },
+    {
+      "word": "uric",
+      "start": 85.113,
+      "end": 85.391
+    },
+    {
+      "word": "acid",
+      "start": 85.496,
+      "end": 85.844
+    },
+    {
+      "word": "by",
+      "start": 85.902,
+      "end": 85.995
+    },
+    {
+      "word": "blockin'",
+      "start": 86.088,
+      "end": 86.587
+    },
+    {
+      "word": "renal",
+      "start": 86.668,
+      "end": 87.028
+    },
+    {
+      "word": "excretion.",
+      "start": 87.086,
+      "end": 87.795
+    },
+    {
+      "word": "That's",
+      "start": 87.992,
+      "end": 88.247
+    },
+    {
+      "word": "why",
+      "start": 88.271,
+      "end": 88.421
+    },
+    {
+      "word": "she's",
+      "start": 88.48,
+      "end": 88.689
+    },
+    {
+      "word": "got",
+      "start": 88.747,
+      "end": 88.944
+    },
+    {
+      "word": "hyperuricemia.",
+      "start": 89.014,
+      "end": 90.36
+    },
+    {
+      "word": "If",
+      "start": 90.755,
+      "end": 90.918
+    },
+    {
+      "word": "the",
+      "start": 90.964,
+      "end": 91.034
+    },
+    {
+      "word": "liver",
+      "start": 91.092,
+      "end": 91.312
+    },
+    {
+      "word": "enzymes",
+      "start": 91.382,
+      "end": 91.777
+    },
+    {
+      "word": "go",
+      "start": 91.823,
+      "end": 91.939
+    },
+    {
+      "word": "above",
+      "start": 91.997,
+      "end": 92.23
+    },
+    {
+      "word": "three",
+      "start": 92.276,
+      "end": 92.485
+    },
+    {
+      "word": "times",
+      "start": 92.543,
+      "end": 92.822
+    },
+    {
+      "word": "normal,",
+      "start": 92.903,
+      "end": 93.356
+    },
+    {
+      "word": "you",
+      "start": 93.53,
+      "end": 93.704
+    },
+    {
+      "word": "YANK",
+      "start": 94.099,
+      "end": 94.807
+    },
+    {
+      "word": "the",
+      "start": 94.923,
+      "end": 95.039
+    },
+    {
+      "word": "drug.",
+      "start": 95.132,
+      "end": 95.701
+    },
+    {
+      "word": "Don't",
+      "start": 95.956,
+      "end": 96.212
+    },
+    {
+      "word": "be",
+      "start": 96.258,
+      "end": 96.386
+    },
+    {
+      "word": "FLUMMOXED",
+      "start": 96.502,
+      "end": 97.152
+    },
+    {
+      "word": "by",
+      "start": 97.21,
+      "end": 97.338
+    },
+    {
+      "word": "this",
+      "start": 97.384,
+      "end": 97.547
+    },
+    {
+      "word": "one",
+      "start": 97.628,
+      "end": 97.802
+    },
+    {
+      "word": "on",
+      "start": 97.849,
+      "end": 97.942
+    },
+    {
+      "word": "boards.",
+      "start": 98.011,
+      "end": 98.604
+    },
+    {
+      "word": "Yellow",
+      "start": 98.859,
+      "end": 99.161
+    },
+    {
+      "word": "patient",
+      "start": 99.23,
+      "end": 99.602
+    },
+    {
+      "word": "plus",
+      "start": 99.672,
+      "end": 99.985
+    },
+    {
+      "word": "hyperuricemia",
+      "start": 100.055,
+      "end": 101.413
+    },
+    {
+      "word": "plus",
+      "start": 101.634,
+      "end": 101.936
+    },
+    {
+      "word": "recent",
+      "start": 102.087,
+      "end": 102.493
+    },
+    {
+      "word": "TB",
+      "start": 102.551,
+      "end": 102.841
+    },
+    {
+      "word": "treatment",
+      "start": 102.992,
+      "end": 103.422
+    },
+    {
+      "word": "equals",
+      "start": 103.758,
+      "end": 104.304
+    },
+    {
+      "word": "PZA",
+      "start": 104.559,
+      "end": 105.871
+    },
+    {
+      "word": "toxicity.",
+      "start": 106.092,
+      "end": 107.23
+    },
+    {
+      "word": "Now",
+      "start": 107.485,
+      "end": 107.764
+    },
+    {
+      "word": "skedaddle.",
+      "start": 108.019,
+      "end": 109.505
+    }
+  ]
+}

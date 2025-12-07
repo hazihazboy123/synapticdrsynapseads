@@ -1,0 +1,12 @@
+node_modules/
+.env
+dist/
+out/
+*.mp4
+*.mp3
+*.wav
+.DS_Store
+src/assets/memes/*
+src/assets/audio/*
+!src/assets/memes/.gitkeep
+!src/assets/audio/.gitkeep

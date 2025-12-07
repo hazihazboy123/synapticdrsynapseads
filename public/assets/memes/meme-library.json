@@ -1,0 +1,402 @@
+{
+  "surprised-pikachu": {
+    "name": "Surprised Pikachu",
+    "category": "disaster_shock",
+    "tags": ["shocked", "surprised", "disbelief", "reaction"],
+    "use_case": "When unexpected patient death occurs, organ failure despite treatment, or catastrophic lab results",
+    "local_path": "memes/surprised-pikachu.png",
+    "downloaded": true
+  },
+  "dramatic-chipmunk": {
+    "name": "Dramatic Chipmunk",
+    "category": "disaster_shock",
+    "tags": ["dramatic", "shock", "surprise", "reaction"],
+    "use_case": "For dramatic reveals of diagnosis, sudden patient deterioration",
+    "local_path": "memes/dramatic-chipmunk.gif",
+    "downloaded": true
+  },
+  "shocked-cat": {
+    "name": "Shocked/Wide-Eyed Cat",
+    "category": "disaster_shock",
+    "tags": ["shocked", "cat", "wide eyes", "surprised"],
+    "use_case": "When test results are unexpectedly bad, sudden cardiac arrest",
+    "local_path": "memes/shocked-cat.jpg",
+    "downloaded": true
+  },
+  "unsettled-tom": {
+    "name": "Unsettled Tom",
+    "category": "disaster_shock",
+    "tags": ["concerned", "worried", "cat", "tom and jerry"],
+    "use_case": "When imaging shows concerning findings, abnormal ECG patterns",
+    "local_path": "memes/unsettled-tom.jpg",
+    "downloaded": true
+  },
+  "scared-hamster": {
+    "name": "Scared Hamster",
+    "category": "disaster_shock",
+    "tags": ["screaming", "scared", "hamster", "panic"],
+    "use_case": "For anaphylactic shock, severe allergic reactions, medical emergencies",
+    "local_path": "memes/scared-hamster.jpg",
+    "downloaded": true
+  },
+  "disaster-girl": {
+    "name": "Disaster Girl",
+    "category": "disaster_shock",
+    "tags": ["evil", "fire", "disaster", "smirk"],
+    "use_case": "For complications caused by medical errors, iatrogenic harm",
+    "local_path": "memes/disaster-girl.jpg",
+    "downloaded": true
+  },
+  "blinking-white-guy": {
+    "name": "Blinking White Guy (Drew Scanlon)",
+    "category": "disaster_shock",
+    "tags": ["confused", "blinking", "disbelief", "what"],
+    "use_case": "When patient symptoms don't match diagnosis, confusing lab results",
+    "local_path": "memes/blinking-white-guy.gif",
+    "downloaded": true
+  },
+  "michael-jordan-crying": {
+    "name": "Michael Jordan Crying",
+    "category": "disaster_shock",
+    "tags": ["crying", "sad", "grief", "loss"],
+    "use_case": "Terminal diagnosis, patient death, treatment failure",
+    "local_path": "memes/michael-jordan-crying.jpg",
+    "downloaded": true
+  },
+  "woman-yelling-at-cat": {
+    "name": "Woman Yelling at Cat",
+    "category": "disaster_shock",
+    "tags": ["yelling", "arguing", "confused", "conflict"],
+    "use_case": "Conflicting medical opinions, misdiagnosis arguments",
+    "local_path": "memes/woman-yelling-at-cat.jpg",
+    "downloaded": true
+  },
+  "monkey-puppet": {
+    "name": "Monkey Puppet Looking Away",
+    "category": "disaster_shock",
+    "tags": ["awkward", "side-eye", "uncomfortable", "avoiding"],
+    "use_case": "Awkward medical errors, avoiding difficult conversations with patients",
+    "local_path": "memes/monkey-puppet.jpg",
+    "downloaded": true
+  },
+  "pepe-sad": {
+    "name": "Pepe Sad/Crying",
+    "category": "disaster_shock",
+    "tags": ["sad", "crying", "depressed", "feels bad"],
+    "use_case": "Poor prognosis, chronic illness diagnosis, treatment side effects",
+    "local_path": "memes/pepe-sad.png",
+    "downloaded": true
+  },
+  "press-f": {
+    "name": "Press F to Pay Respects",
+    "category": "disaster_shock",
+    "tags": ["death", "respect", "mourning", "rip"],
+    "use_case": "Patient death, organ death, cell death",
+    "local_path": "memes/press-f.jpg",
+    "downloaded": true
+  },
+  "coffin-dance": {
+    "name": "Coffin Dance Pallbearers",
+    "category": "disaster_shock",
+    "tags": ["death", "funeral", "dancing", "ghana"],
+    "use_case": "Patient death, end of life, failed resuscitation",
+    "local_path": "memes/coffin-dance.gif",
+    "downloaded": true
+  },
+  "arthurs-fist": {
+    "name": "Arthur's Fist",
+    "category": "disaster_shock",
+    "tags": ["angry", "frustrated", "clenched", "rage"],
+    "use_case": "Frustration with non-compliant patients, treatment resistance",
+    "local_path": "memes/arthurs-fist.jpg",
+    "downloaded": true
+  },
+  "mind-blown": {
+    "name": "Head Exploding/Mind Blown",
+    "category": "disaster_shock",
+    "tags": ["mind blown", "exploding", "shock", "revelation"],
+    "use_case": "Shocking diagnosis, unexpected mechanism of disease",
+    "local_path": "memes/mind-blown.gif",
+    "downloaded": true
+  },
+  "spongebob-head-out": {
+    "name": "SpongeBob Ight Imma Head Out",
+    "category": "leaving_quitting",
+    "tags": ["leaving", "quitting", "done", "exit"],
+    "use_case": "Organ failure, cell death, system shutdown",
+    "local_path": "memes/spongebob-head-out.jpg",
+    "downloaded": true
+  },
+  "homer-bushes": {
+    "name": "Homer Simpson Backing Into Bushes",
+    "category": "leaving_quitting",
+    "tags": ["leaving", "retreating", "hiding", "exit"],
+    "use_case": "Immune system retreat, organ failure, cell apoptosis",
+    "local_path": "memes/homer-bushes.gif",
+    "downloaded": true
+  },
+  "elmo-fire": {
+    "name": "Elmo Fire Shrug",
+    "category": "leaving_quitting",
+    "tags": ["fire", "shrug", "chaos", "giving up"],
+    "use_case": "Multi-organ failure, cascading system failure",
+    "local_path": "memes/elmo-fire.gif",
+    "downloaded": true
+  },
+  "im-out": {
+    "name": "Peace Out/I'm Out",
+    "category": "leaving_quitting",
+    "tags": ["leaving", "peace", "exit", "done"],
+    "use_case": "Organ shutdown, cellular necrosis",
+    "local_path": "memes/im-out.gif",
+    "downloaded": true
+  },
+  "interstellar-51-years": {
+    "name": "This Little Maneuver Cost Us 51 Years",
+    "category": "leaving_quitting",
+    "tags": ["cost", "consequences", "interstellar", "time"],
+    "use_case": "Long-term complications, years lost to disease",
+    "local_path": "memes/interstellar-51-years.jpg",
+    "downloaded": true
+  },
+  "patrick-push-it": {
+    "name": "Patrick Push It Somewhere Else",
+    "category": "leaving_quitting",
+    "tags": ["relocation", "moving", "patrick", "spongebob"],
+    "use_case": "Metastasis, cancer spreading to other organs",
+    "local_path": "memes/patrick-push-it.jpg",
+    "downloaded": true
+  },
+  "pablo-escobar": {
+    "name": "Pablo Escobar Waiting Alone",
+    "category": "leaving_quitting",
+    "tags": ["waiting", "alone", "sad", "abandoned"],
+    "use_case": "Waiting for organ transplant, treatment delays",
+    "local_path": "memes/pablo-escobar.gif",
+    "downloaded": true
+  },
+  "waiting-skeleton": {
+    "name": "Waiting Skeleton on Bench",
+    "category": "leaving_quitting",
+    "tags": ["waiting", "skeleton", "death", "time"],
+    "use_case": "Long wait times for treatment, organ transplant waitlist",
+    "local_path": "memes/waiting-skeleton.jpg",
+    "downloaded": true
+  },
+  "confused-math-lady": {
+    "name": "Confused Math Lady (Nazaré Tedesco)",
+    "category": "confusion_thinking",
+    "tags": ["confused", "math", "calculating", "thinking"],
+    "use_case": "Complex pathophysiology, confusing lab values, paradoxical reactions",
+    "local_path": "memes/confused-math-lady.jpg",
+    "downloaded": true
+  },
+  "roll-safe": {
+    "name": "Roll Safe Thinking (Tapping Head)",
+    "category": "confusion_thinking",
+    "tags": ["thinking", "smart", "clever", "tapping head"],
+    "use_case": "Counterintuitive treatments, paradoxical medical logic",
+    "local_path": "memes/roll-safe.jpg",
+    "downloaded": true
+  },
+  "is-this-a-pigeon": {
+    "name": "Is This a Pigeon?",
+    "category": "confusion_thinking",
+    "tags": ["confused", "misidentification", "anime", "butterfly"],
+    "use_case": "Misdiagnosis, confusing symptoms for different disease",
+    "local_path": "memes/is-this-a-pigeon.jpg",
+    "downloaded": true
+  },
+  "confused-nick-young": {
+    "name": "Confused Nick Young",
+    "category": "confusion_thinking",
+    "tags": ["confused", "question marks", "what", "nba"],
+    "use_case": "Unexpected patient response, confusing symptoms",
+    "local_path": "memes/confused-nick-young.jpg",
+    "downloaded": true
+  },
+  "futurama-fry": {
+    "name": "Squinting Fry (Not Sure If)",
+    "category": "confusion_thinking",
+    "tags": ["suspicious", "squinting", "not sure", "futurama"],
+    "use_case": "Differential diagnosis, uncertain findings",
+    "local_path": "memes/futurama-fry.jpg",
+    "downloaded": true
+  },
+  "expanding-brain": {
+    "name": "Galaxy Brain/Expanding Brain",
+    "category": "confusion_thinking",
+    "tags": ["brain", "enlightened", "smart", "evolution"],
+    "use_case": "Increasingly complex medical reasoning, treatment escalation",
+    "local_path": "memes/expanding-brain.png",
+    "downloaded": true
+  },
+  "two-buttons": {
+    "name": "Two Buttons Daily Struggle",
+    "category": "confusion_thinking",
+    "tags": ["choice", "struggle", "buttons", "sweating"],
+    "use_case": "Treatment dilemmas, choosing between two bad options",
+    "local_path": "memes/two-buttons.jpg",
+    "downloaded": true
+  },
+  "change-my-mind": {
+    "name": "Change My Mind",
+    "category": "confusion_thinking",
+    "tags": ["debate", "opinion", "convince", "table"],
+    "use_case": "Controversial medical opinions, evidence-based challenges",
+    "local_path": "memes/change-my-mind.jpg",
+    "downloaded": true
+  },
+  "american-chopper-argument": {
+    "name": "American Chopper Argument",
+    "category": "confusion_thinking",
+    "tags": ["argument", "yelling", "debate", "conflict"],
+    "use_case": "Medical team disagreements, conflicting treatment approaches",
+    "local_path": "memes/american-chopper-argument.jpg",
+    "downloaded": true
+  },
+  "same-picture": {
+    "name": "They're the Same Picture",
+    "category": "confusion_thinking",
+    "tags": ["same", "identical", "office", "pam"],
+    "use_case": "Similar looking conditions, differential diagnosis confusion",
+    "local_path": "memes/same-picture.jpg",
+    "downloaded": true
+  },
+  "drake-hotline-bling": {
+    "name": "Drake Yes/No (Hotline Bling)",
+    "category": "success_obvious",
+    "tags": ["drake", "yes", "no", "approval", "rejection"],
+    "use_case": "Correct vs incorrect diagnosis, effective vs ineffective treatment",
+    "local_path": "memes/drake-hotline-bling.jpg",
+    "downloaded": true
+  },
+  "tuxedo-winnie-pooh": {
+    "name": "Winnie the Pooh Tuxedo",
+    "category": "success_obvious",
+    "tags": ["fancy", "sophisticated", "winnie", "upgrade"],
+    "use_case": "Basic vs advanced treatment, proper medical terminology",
+    "local_path": "memes/tuxedo-winnie-pooh.jpg",
+    "downloaded": true
+  },
+  "well-yes-but-no": {
+    "name": "Well Yes, But Actually No",
+    "category": "success_obvious",
+    "tags": ["pirate", "yes", "no", "contradiction"],
+    "use_case": "Technically correct but clinically wrong, paradoxical answers",
+    "local_path": "memes/well-yes-but-no.jpg",
+    "downloaded": true
+  },
+  "success-kid": {
+    "name": "Success Kid",
+    "category": "success_obvious",
+    "tags": ["success", "win", "fist pump", "baby"],
+    "use_case": "Treatment success, positive outcomes, patient recovery",
+    "local_path": "memes/success-kid.jpg",
+    "downloaded": true
+  },
+  "leonardo-dicaprio-cheers": {
+    "name": "Leonardo DiCaprio Cheers",
+    "category": "success_obvious",
+    "tags": ["cheers", "toast", "gatsby", "celebration"],
+    "use_case": "Successful diagnosis, treatment milestone achieved",
+    "local_path": "memes/leonardo-dicaprio-cheers.jpg",
+    "downloaded": true
+  },
+  "one-does-not-simply": {
+    "name": "One Does Not Simply",
+    "category": "success_obvious",
+    "tags": ["boromir", "lotr", "simply", "impossible"],
+    "use_case": "Medical impossibilities, things that cannot be done",
+    "local_path": "memes/one-does-not-simply.jpg",
+    "downloaded": true
+  },
+  "doge": {
+    "name": "Doge (Much Wow)",
+    "category": "success_obvious",
+    "tags": ["doge", "wow", "shiba", "amazement"],
+    "use_case": "Amazing treatment results, impressive recovery",
+    "local_path": "memes/doge.jpg",
+    "downloaded": true
+  },
+  "anakin-padme": {
+    "name": "Anakin Padmé (For the Better, Right?)",
+    "category": "success_obvious",
+    "tags": ["star wars", "anakin", "padme", "concern"],
+    "use_case": "Good intentions with bad outcomes, treatment complications",
+    "local_path": "memes/anakin-padme.jpg",
+    "downloaded": true
+  },
+  "hide-the-pain-harold": {
+    "name": "Hide the Pain Harold",
+    "category": "suffering_chronic",
+    "tags": ["harold", "pain", "suffering", "forced smile"],
+    "use_case": "Chronic pain, long-term suffering, managing symptoms",
+    "local_path": "memes/hide-the-pain-harold.jpg",
+    "downloaded": true
+  },
+  "this-is-fine": {
+    "name": "This Is Fine Dog",
+    "category": "suffering_chronic",
+    "tags": ["fire", "fine", "denial", "dog"],
+    "use_case": "Ignoring symptoms, denial of disease progression",
+    "local_path": "memes/this-is-fine.jpg",
+    "downloaded": true
+  },
+  "spongebob-tired": {
+    "name": "SpongeBob Tired/Exhausted",
+    "category": "suffering_chronic",
+    "tags": ["tired", "exhausted", "bags", "sleep deprived"],
+    "use_case": "Chronic fatigue, sleep disorders, exhaustion from illness",
+    "local_path": "memes/spongebob-tired.jpg",
+    "downloaded": true
+  },
+  "kermit-tea": {
+    "name": "Kermit Sipping Tea (But That's None of My Business)",
+    "category": "suffering_chronic",
+    "tags": ["kermit", "tea", "passive aggressive", "sarcasm"],
+    "use_case": "Passive comments about patient non-compliance, obvious causes",
+    "local_path": "memes/kermit-tea.jpg",
+    "downloaded": true
+  },
+  "evil-kermit": {
+    "name": "Evil Kermit",
+    "category": "suffering_chronic",
+    "tags": ["evil", "dark side", "temptation", "kermit"],
+    "use_case": "Temptation to skip medication, non-compliance thoughts",
+    "local_path": "memes/evil-kermit.jpg",
+    "downloaded": true
+  },
+  "distracted-boyfriend": {
+    "name": "Distracted Boyfriend",
+    "category": "comparison_choice",
+    "tags": ["distracted", "choice", "comparison", "cheating"],
+    "use_case": "Choosing wrong diagnosis over correct one, distracted by zebras",
+    "local_path": "memes/distracted-boyfriend.jpg",
+    "downloaded": true
+  },
+  "left-exit-12": {
+    "name": "Left Exit 12 Off Ramp",
+    "category": "comparison_choice",
+    "tags": ["exit", "choice", "highway", "direction"],
+    "use_case": "Choosing between treatment paths, correct vs incorrect approach",
+    "local_path": "memes/left-exit-12.jpg",
+    "downloaded": true
+  },
+  "buff-doge-vs-cheems": {
+    "name": "Buff Doge vs Cheems",
+    "category": "comparison_choice",
+    "tags": ["strong", "weak", "comparison", "doge"],
+    "use_case": "Past vs present health, strong vs weak immune response",
+    "local_path": "memes/buff-doge-vs-cheems.jpg",
+    "downloaded": true
+  },
+  "spiderman-pointing": {
+    "name": "Spider-Man Pointing at Spider-Man",
+    "category": "comparison_choice",
+    "tags": ["identical", "same", "pointing", "spiderman"],
+    "use_case": "Similar looking diseases, identical symptoms different causes",
+    "local_path": "memes/spiderman-pointing.jpg",
+    "downloaded": true
+  }
+}

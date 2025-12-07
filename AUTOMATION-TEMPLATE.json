@@ -1,0 +1,132 @@
+{
+  "template_version": "1.0",
+  "description": "Template for automated medical question video generation",
+
+  "video_config": {
+    "playback_rate": 1.5,
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "duration_calculation": "audio_duration_seconds / playback_rate * fps = durationInFrames"
+  },
+
+  "elevenlabs_config": {
+    "voice_id": "NOpBlnGInO9m6vDvFkFC",
+    "model_id": "eleven_turbo_v2_5",
+    "voice_settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.78,
+      "style": 0.50,
+      "use_speaker_boost": true
+    }
+  },
+
+  "question_data_structure": {
+    "card_id": 1,
+    "vignette": "A 65-year-old man with a history of renal transplant is treated with ciprofloxacin for a UTI. On day 4 of therapy, he develops sudden sharp pain in his right ankle while walking. He reports a \"popping\" sensation and cannot plantarflex his foot.",
+
+    "lab_values": [
+      {
+        "label": "WBC:",
+        "value": "7,800/μL",
+        "status": "normal",
+        "color": "#10b981",
+        "note": "(normal: 4,000-11,000)"
+      },
+      {
+        "label": "Creatinine:",
+        "value": "1.3 mg/dL",
+        "status": "normal",
+        "color": "#10b981",
+        "note": "(normal: 0.7-1.3)"
+      },
+      {
+        "label": "Thompson test:",
+        "value": "Positive",
+        "status": "critical",
+        "color": "#ef4444",
+        "note": "(abnormal)"
+      },
+      {
+        "label": "Current meds:",
+        "value": "Tacrolimus, ciprofloxacin, prednisone",
+        "status": "elevated",
+        "color": "#fbbf24",
+        "note": ""
+      }
+    ],
+
+    "question_text": "Which mechanism best explains this patient's injury?",
+
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fluoroquinolone-induced collagen degradation in tendon tissue",
+        "is_correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Hyperuricemia causing gouty arthritis",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Hypocalcemia from renal insufficiency",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Septic joint from hematogenous spread",
+        "is_correct": false
+      },
+      {
+        "letter": "E",
+        "text": "Steroid-induced avascular necrosis",
+        "is_correct": false
+      }
+    ],
+
+    "correct_answer": "A"
+  },
+
+  "narration_script_structure": {
+    "description": "Clean text script with NO SSML tags for perfect timestamp alignment",
+    "example_script": "Oh for cryin' out loud. Sixty-five-year-old guy. Kidney transplant patient.\n\nGets cipro for a UTI. Day 4, he's walkin' around and—POP. Ankle's done. Can't move his foot.\n\nWhat happened?\n\nLet's see here. Thompson test? Positive. That means squeeze the calf, foot don't move.\n\nOh, and he's on tacrolimus, prednisone, AND ciprofloxacin. What could POSSIBLY go wrong?\n\nHis labs? Fine. WBC normal. Creatinine's fine. This ain't about the labs—it's about what that DRUG did.\n\nSo which mechanism explains it? A? B? C? D? E?\n\nThink about it. I'll wait.\n\n...Still waitin'. Ticktock.\n\nYou're overthinkin' this.\n\nIt's A. Of COURSE it's A. Fluoroquinolone-induced collagen degradation.\n\nAlright, LISTEN. Fluoroquinolones—cipro, levofloxacin, all of 'em—they MESS UP collagen in your tendons. Achilles tendon ruptures. Black-box warning.\n\nRisk goes UP if you're old, on steroids, or a transplant patient like this guy.\n\nBoards test this EVERY year 'cause students miss it.\n\nNow go study. I got a nap to take.",
+    "script_guidelines": [
+      "Use conversational, grumpy old doctor tone",
+      "Present case details first",
+      "Ask the multiple choice question",
+      "Add suspense/waiting period",
+      "Reveal correct answer",
+      "Explain mechanism thoroughly",
+      "End with study reminder"
+    ]
+  },
+
+  "status_color_codes": {
+    "normal": "#10b981",
+    "elevated": "#fbbf24",
+    "critical": "#ef4444"
+  },
+
+  "rendering_config": {
+    "video_image_format": "png",
+    "scale": 2,
+    "codec": "h264",
+    "crf": 15,
+    "preset": "slow",
+    "pixel_format": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "audio_bitrate": "256k"
+  },
+
+  "automation_workflow": [
+    "1. Generate question JSON from input data (following question_data_structure)",
+    "2. Generate narration script following script_guidelines",
+    "3. Call ElevenLabs API with script to generate audio + timestamps",
+    "4. Calculate video duration: audio_duration / playback_rate * fps",
+    "5. Create composition in Root.jsx with calculated duration",
+    "6. Render video with perfect sync"
+  ]
+}

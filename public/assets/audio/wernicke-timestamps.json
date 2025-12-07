@@ -1,0 +1,787 @@
+[
+  {
+    "word": "What",
+    "start": 0,
+    "end": 0.279
+  },
+  {
+    "word": "in",
+    "start": 0.337,
+    "end": 0.441
+  },
+  {
+    "word": "tarnation.",
+    "start": 0.499,
+    "end": 1.196
+  },
+  {
+    "word": "54",
+    "start": 1.242,
+    "end": 1.776
+  },
+  {
+    "word": "year",
+    "start": 1.811,
+    "end": 1.939
+  },
+  {
+    "word": "old",
+    "start": 1.997,
+    "end": 2.136
+  },
+  {
+    "word": "guy.",
+    "start": 2.183,
+    "end": 2.601
+  },
+  {
+    "word": "Drank",
+    "start": 2.821,
+    "end": 3.042
+  },
+  {
+    "word": "a",
+    "start": 3.077,
+    "end": 3.1
+  },
+  {
+    "word": "fifth",
+    "start": 3.193,
+    "end": 3.448
+  },
+  {
+    "word": "of",
+    "start": 3.483,
+    "end": 3.529
+  },
+  {
+    "word": "vodka",
+    "start": 3.587,
+    "end": 3.959
+  },
+  {
+    "word": "every",
+    "start": 4.029,
+    "end": 4.284
+  },
+  {
+    "word": "single",
+    "start": 4.354,
+    "end": 4.644
+  },
+  {
+    "word": "day",
+    "start": 4.679,
+    "end": 4.83
+  },
+  {
+    "word": "for",
+    "start": 4.876,
+    "end": 4.981
+  },
+  {
+    "word": "20",
+    "start": 5.05,
+    "end": 5.306
+  },
+  {
+    "word": "years.",
+    "start": 5.375,
+    "end": 5.886
+  },
+  {
+    "word": "Now",
+    "start": 6.42,
+    "end": 6.594
+  },
+  {
+    "word": "he's",
+    "start": 6.653,
+    "end": 6.815
+  },
+  {
+    "word": "confused,",
+    "start": 6.861,
+    "end": 7.57
+  },
+  {
+    "word": "stumbling",
+    "start": 7.593,
+    "end": 8.034
+  },
+  {
+    "word": "around,",
+    "start": 8.081,
+    "end": 8.452
+  },
+  {
+    "word": "eyes",
+    "start": 8.499,
+    "end": 8.766
+  },
+  {
+    "word": "doing",
+    "start": 8.824,
+    "end": 9.056
+  },
+  {
+    "word": "some",
+    "start": 9.102,
+    "end": 9.276
+  },
+  {
+    "word": "weird",
+    "start": 9.323,
+    "end": 9.648
+  },
+  {
+    "word": "dance.",
+    "start": 9.694,
+    "end": 10.252
+  },
+  {
+    "word": "Mental",
+    "start": 10.786,
+    "end": 11.099
+  },
+  {
+    "word": "status?",
+    "start": 11.169,
+    "end": 12.04
+  },
+  {
+    "word": "TANKED.",
+    "start": 12.318,
+    "end": 12.922
+  },
+  {
+    "word": "ER",
+    "start": 13.456,
+    "end": 14.036
+  },
+  {
+    "word": "doc's",
+    "start": 14.095,
+    "end": 14.396
+  },
+  {
+    "word": "already",
+    "start": 14.443,
+    "end": 14.745
+  },
+  {
+    "word": "reaching",
+    "start": 14.803,
+    "end": 15.058
+  },
+  {
+    "word": "for",
+    "start": 15.105,
+    "end": 15.197
+  },
+  {
+    "word": "the",
+    "start": 15.221,
+    "end": 15.279
+  },
+  {
+    "word": "dextrose.",
+    "start": 15.337,
+    "end": 15.987
+  },
+  {
+    "word": "I'm",
+    "start": 16.057,
+    "end": 16.195
+  },
+  {
+    "word": "SURE",
+    "start": 16.265,
+    "end": 16.497
+  },
+  {
+    "word": "that's",
+    "start": 16.532,
+    "end": 16.706
+  },
+  {
+    "word": "a",
+    "start": 16.741,
+    "end": 16.764
+  },
+  {
+    "word": "brilliant",
+    "start": 16.811,
+    "end": 17.124
+  },
+  {
+    "word": "idea.",
+    "start": 17.159,
+    "end": 17.682
+  },
+  {
+    "word": "What",
+    "start": 18.297,
+    "end": 18.459
+  },
+  {
+    "word": "do",
+    "start": 18.483,
+    "end": 18.541
+  },
+  {
+    "word": "you",
+    "start": 18.564,
+    "end": 18.622
+  },
+  {
+    "word": "give",
+    "start": 18.68,
+    "end": 18.843
+  },
+  {
+    "word": "FIRST?",
+    "start": 18.889,
+    "end": 19.597
+  },
+  {
+    "word": "A?",
+    "start": 19.806,
+    "end": 20.096
+  },
+  {
+    "word": "B?",
+    "start": 20.166,
+    "end": 20.7
+  },
+  {
+    "word": "C?",
+    "start": 20.723,
+    "end": 21.373
+  },
+  {
+    "word": "D?",
+    "start": 21.977,
+    "end": 22.511
+  },
+  {
+    "word": "E?",
+    "start": 22.674,
+    "end": 23.034
+  },
+  {
+    "word": "Think",
+    "start": 23.103,
+    "end": 23.301
+  },
+  {
+    "word": "about",
+    "start": 23.347,
+    "end": 23.545
+  },
+  {
+    "word": "it...",
+    "start": 23.579,
+    "end": 24.079
+  },
+  {
+    "word": "Give",
+    "start": 24.404,
+    "end": 24.659
+  },
+  {
+    "word": "the",
+    "start": 24.706,
+    "end": 24.787
+  },
+  {
+    "word": "wrong",
+    "start": 24.856,
+    "end": 25.182
+  },
+  {
+    "word": "thing",
+    "start": 25.263,
+    "end": 25.576
+  },
+  {
+    "word": "and",
+    "start": 25.901,
+    "end": 26.203
+  },
+  {
+    "word": "his",
+    "start": 26.285,
+    "end": 26.459
+  },
+  {
+    "word": "brain's",
+    "start": 26.563,
+    "end": 27.062
+  },
+  {
+    "word": "a",
+    "start": 27.132,
+    "end": 27.167
+  },
+  {
+    "word": "goner.",
+    "start": 27.318,
+    "end": 27.945
+  },
+  {
+    "word": "It's",
+    "start": 28.119,
+    "end": 28.339
+  },
+  {
+    "word": "D.",
+    "start": 28.421,
+    "end": 29.129
+  },
+  {
+    "word": "Course",
+    "start": 29.628,
+    "end": 29.93
+  },
+  {
+    "word": "it",
+    "start": 29.965,
+    "end": 30.035
+  },
+  {
+    "word": "is.",
+    "start": 30.104,
+    "end": 30.476
+  },
+  {
+    "word": "Thiamine",
+    "start": 30.603,
+    "end": 31.207
+  },
+  {
+    "word": "first.",
+    "start": 31.254,
+    "end": 31.544
+  },
+  {
+    "word": "Always",
+    "start": 31.555,
+    "end": 31.857
+  },
+  {
+    "word": "thiamine",
+    "start": 31.904,
+    "end": 32.322
+  },
+  {
+    "word": "first.",
+    "start": 32.357,
+    "end": 32.705
+  },
+  {
+    "word": "And",
+    "start": 32.786,
+    "end": 32.949
+  },
+  {
+    "word": "I",
+    "start": 32.995,
+    "end": 33.018
+  },
+  {
+    "word": "KNOW",
+    "start": 33.088,
+    "end": 33.227
+  },
+  {
+    "word": "half",
+    "start": 33.297,
+    "end": 33.506
+  },
+  {
+    "word": "of",
+    "start": 33.529,
+    "end": 33.576
+  },
+  {
+    "word": "y'all",
+    "start": 33.622,
+    "end": 33.819
+  },
+  {
+    "word": "just",
+    "start": 33.877,
+    "end": 34.063
+  },
+  {
+    "word": "killed",
+    "start": 34.098,
+    "end": 34.365
+  },
+  {
+    "word": "this",
+    "start": 34.389,
+    "end": 34.516
+  },
+  {
+    "word": "man",
+    "start": 34.597,
+    "end": 34.76
+  },
+  {
+    "word": "with",
+    "start": 34.818,
+    "end": 34.934
+  },
+  {
+    "word": "sugar",
+    "start": 34.992,
+    "end": 35.248
+  },
+  {
+    "word": "water.",
+    "start": 35.294,
+    "end": 35.677
+  },
+  {
+    "word": "Alright",
+    "start": 35.817,
+    "end": 36.142
+  },
+  {
+    "word": "FINE.",
+    "start": 36.2,
+    "end": 36.78
+  },
+  {
+    "word": "This",
+    "start": 37.105,
+    "end": 37.361
+  },
+  {
+    "word": "is",
+    "start": 37.43,
+    "end": 37.546
+  },
+  {
+    "word": "Wernicke",
+    "start": 37.604,
+    "end": 38.115
+  },
+  {
+    "word": "encephalopathy.",
+    "start": 38.197,
+    "end": 39.404
+  },
+  {
+    "word": "Classic",
+    "start": 39.729,
+    "end": 40.194
+  },
+  {
+    "word": "triad.",
+    "start": 40.252,
+    "end": 40.844
+  },
+  {
+    "word": "Confusion.",
+    "start": 40.855,
+    "end": 41.668
+  },
+  {
+    "word": "Ataxia.",
+    "start": 41.923,
+    "end": 42.794
+  },
+  {
+    "word": "Ophthalmoplegia.",
+    "start": 43.038,
+    "end": 44.408
+  },
+  {
+    "word": "His",
+    "start": 44.849,
+    "end": 45.046
+  },
+  {
+    "word": "brain",
+    "start": 45.163,
+    "end": 45.488
+  },
+  {
+    "word": "is",
+    "start": 45.557,
+    "end": 45.673
+  },
+  {
+    "word": "STARVING",
+    "start": 45.79,
+    "end": 46.486
+  },
+  {
+    "word": "for",
+    "start": 46.556,
+    "end": 46.66
+  },
+  {
+    "word": "thiamine.",
+    "start": 46.718,
+    "end": 47.38
+  },
+  {
+    "word": "Here's",
+    "start": 47.45,
+    "end": 47.752
+  },
+  {
+    "word": "the",
+    "start": 47.775,
+    "end": 47.856
+  },
+  {
+    "word": "thing.",
+    "start": 47.926,
+    "end": 48.32
+  },
+  {
+    "word": "Glucose",
+    "start": 48.529,
+    "end": 49.18
+  },
+  {
+    "word": "needs",
+    "start": 49.214,
+    "end": 49.516
+  },
+  {
+    "word": "thiamine",
+    "start": 49.621,
+    "end": 50.294
+  },
+  {
+    "word": "to",
+    "start": 50.341,
+    "end": 50.422
+  },
+  {
+    "word": "do",
+    "start": 50.573,
+    "end": 50.77
+  },
+  {
+    "word": "its",
+    "start": 50.886,
+    "end": 51.037
+  },
+  {
+    "word": "job.",
+    "start": 51.153,
+    "end": 51.769
+  },
+  {
+    "word": "You",
+    "start": 52.152,
+    "end": 52.325
+  },
+  {
+    "word": "slam",
+    "start": 52.465,
+    "end": 52.976
+  },
+  {
+    "word": "dextrose",
+    "start": 53.15,
+    "end": 53.951
+  },
+  {
+    "word": "first?",
+    "start": 54.009,
+    "end": 54.52
+  },
+  {
+    "word": "You",
+    "start": 54.798,
+    "end": 54.961
+  },
+  {
+    "word": "BURN",
+    "start": 55.1,
+    "end": 55.565
+  },
+  {
+    "word": "through",
+    "start": 55.681,
+    "end": 55.925
+  },
+  {
+    "word": "whatever",
+    "start": 55.959,
+    "end": 56.284
+  },
+  {
+    "word": "thiamine",
+    "start": 56.354,
+    "end": 56.958
+  },
+  {
+    "word": "he's",
+    "start": 56.993,
+    "end": 57.155
+  },
+  {
+    "word": "got",
+    "start": 57.202,
+    "end": 57.411
+  },
+  {
+    "word": "left.",
+    "start": 57.492,
+    "end": 57.968
+  },
+  {
+    "word": "Brain",
+    "start": 58.595,
+    "end": 58.932
+  },
+  {
+    "word": "CRASHES.",
+    "start": 59.024,
+    "end": 59.744
+  },
+  {
+    "word": "Permanent",
+    "start": 60.034,
+    "end": 60.522
+  },
+  {
+    "word": "damage.",
+    "start": 60.58,
+    "end": 61.056
+  },
+  {
+    "word": "Korsakoff",
+    "start": 61.184,
+    "end": 61.973
+  },
+  {
+    "word": "syndrome.",
+    "start": 62.055,
+    "end": 62.647
+  },
+  {
+    "word": "He'll",
+    "start": 62.867,
+    "end": 63.099
+  },
+  {
+    "word": "be",
+    "start": 63.146,
+    "end": 63.239
+  },
+  {
+    "word": "confabulating",
+    "start": 63.308,
+    "end": 64.272
+  },
+  {
+    "word": "stories",
+    "start": 64.33,
+    "end": 64.76
+  },
+  {
+    "word": "til",
+    "start": 64.795,
+    "end": 64.969
+  },
+  {
+    "word": "the",
+    "start": 65.015,
+    "end": 65.085
+  },
+  {
+    "word": "day",
+    "start": 65.143,
+    "end": 65.329
+  },
+  {
+    "word": "he",
+    "start": 65.398,
+    "end": 65.503
+  },
+  {
+    "word": "dies.",
+    "start": 65.619,
+    "end": 66.374
+  },
+  {
+    "word": "Thiamine",
+    "start": 67.093,
+    "end": 67.778
+  },
+  {
+    "word": "first.",
+    "start": 67.86,
+    "end": 68.394
+  },
+  {
+    "word": "Then",
+    "start": 68.614,
+    "end": 68.858
+  },
+  {
+    "word": "the",
+    "start": 68.904,
+    "end": 68.986
+  },
+  {
+    "word": "sugar.",
+    "start": 69.055,
+    "end": 69.531
+  },
+  {
+    "word": "Now",
+    "start": 69.752,
+    "end": 69.915
+  },
+  {
+    "word": "get",
+    "start": 69.973,
+    "end": 70.112
+  },
+  {
+    "word": "outta",
+    "start": 70.158,
+    "end": 70.356
+  },
+  {
+    "word": "here.",
+    "start": 70.425,
+    "end": 70.692
+  },
+  {
+    "word": "And",
+    "start": 70.716,
+    "end": 70.878
+  },
+  {
+    "word": "put",
+    "start": 70.948,
+    "end": 71.134
+  },
+  {
+    "word": "down",
+    "start": 71.18,
+    "end": 71.354
+  },
+  {
+    "word": "the",
+    "start": 71.377,
+    "end": 71.447
+  },
+  {
+    "word": "bottle.",
+    "start": 71.505,
+    "end": 72.167
+  }
+]

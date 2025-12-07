@@ -1,0 +1,74 @@
+{
+  "topic": "streptococcus-pneumoniae-lobar-pneumonia",
+  "script": "GOOD LORD ALMIGHTY, this man's COUGHING UP RUST! Sixty-two-year-old fella, fever of ONE-OH-FOUR, shaking like a dog passing razor blades. Been hacking up GUNK that looks like he swallowed a handful of RUSTY NAILS. Right lung's WHITE as a GHOST on chest X-ray, solid as a BRICK of concrete. Got a productive cough spewing RUST-COLORED sputum, temperature COOKING him at one-hundred-four Fahrenheit, and his right lower lobe's completely CONSOLIDATED. Looks like someone poured CEMENT into his lung. Sputum gram stain shows gram-positive LANCET-SHAPED diplococci, lined up like little TORPEDOES ready to WRECK more tissue. Now here's your question: What pathogen's TURNING this man's lung to STONE? A) Klebsiella pneumoniae. B) Mycoplasma pneumoniae. C) Streptococcus pneumoniae. D) Haemophilus influenzae. E) Legionella pneumophila. Well SLAP MY KNEE, it's C, Streptococcus pneumoniae. That RUSTY sputum's your dead giveaway. Most you BAMBOOZLED youngsters went with A? HOGWASH. Now pipe down and I'll learn you somethin'. That RUST you're seeing? That's red blood cells getting CHEWED UP in the alveoli and SPIT OUT as degraded hemoglobin. Strep pneumo LOVES to cause LOBAR pneumonia, fills ONE WHOLE LOBE with inflammatory GUNK until it's solid as a ROCK. This bug's the NUMBER ONE cause of community-acquired pneumonia, and that rusty sputum's PATHOGNOMONIC. Treat with a beta-lactam like ceftriaxone or amoxicillin, and for Pete's sake, don't DILLY-DALLY. Man's lung's already turned to CONCRETE.",
+  "questionData": {
+    "card_id": 1,
+    "topic": "streptococcus-pneumoniae-lobar-pneumonia",
+    "vignette": "62-year-old man presents to the emergency department with 3 days of productive cough, fever, and shortness of breath. He reports coughing up rust-colored sputum. Vital signs show temperature 104°F (40°C), heart rate 110 bpm, respiratory rate 28/min, blood pressure 128/82 mmHg, and oxygen saturation 88% on room air. Physical examination reveals decreased breath sounds and dullness to percussion over the right lower lobe. Chest X-ray demonstrates right lower lobe consolidation with air bronchograms. Sputum gram stain reveals gram-positive lancet-shaped diplococci.",
+    "lab_values": [
+      { "name": "Temperature", "value": "104°F (40°C)", "reference": "(Normal: 98.6°F)" },
+      { "name": "WBC", "value": "18,500/μL", "reference": "(Normal: 4,500-11,000/μL)" },
+      { "name": "Oxygen saturation", "value": "88% on room air", "reference": "(Normal: >95%)" }
+    ],
+    "question_text": "What is the most likely causative organism?",
+    "options": [
+      { "letter": "A", "text": "Klebsiella pneumoniae" },
+      { "letter": "B", "text": "Mycoplasma pneumoniae" },
+      { "letter": "C", "text": "Streptococcus pneumoniae" },
+      { "letter": "D", "text": "Haemophilus influenzae" },
+      { "letter": "E", "text": "Legionella pneumophila" }
+    ],
+    "correct_answer": "C"
+  },
+  "vignetteHighlights": [
+    { "phrase": "62-year-old man", "triggerWord": "Sixty-two-year-old", "shouldShake": false },
+    { "phrase": "104°F", "triggerWord": "ONE-OH-FOUR", "shouldShake": true },
+    { "phrase": "rust-colored sputum", "triggerWord": "RUST-COLORED", "shouldShake": false },
+    { "phrase": "right lower lobe consolidation", "triggerWord": "CONSOLIDATED", "shouldShake": false },
+    { "phrase": "gram-positive lancet-shaped diplococci", "triggerWord": "LANCET-SHAPED", "shouldShake": true }
+  ],
+  "teachingPhases": [
+    {
+      "title": "WHY RUSTY SPUTUM?",
+      "startTrigger": "somethin",
+      "layout": "flow-diagram",
+      "bullets": [
+        { "text": "RBCs get CHEWED UP in alveoli", "triggerWord": "CHEWED" },
+        { "text": "Hemoglobin breaks down into rust color", "triggerWord": "degraded" },
+        { "text": "PATHOGNOMONIC for Strep pneumo", "triggerWord": "PATHOGNOMONIC" }
+      ]
+    },
+    {
+      "title": "LOBAR PNEUMONIA",
+      "startTrigger": "LOBAR",
+      "layout": "flow-diagram",
+      "bullets": [
+        { "text": "Fills ONE WHOLE LOBE with inflammatory GUNK", "triggerWord": "LOBE" },
+        { "text": "Lung becomes solid as a ROCK", "triggerWord": "ROCK" },
+        { "text": "NUMBER ONE cause of CAP", "triggerWord": "NUMBER" }
+      ]
+    },
+    {
+      "title": "TREATMENT PEARL",
+      "startTrigger": "beta-lactam",
+      "layout": "pearl-card",
+      "formula": [
+        { "text": "Beta-lactam", "triggerWord": "beta-lactam" },
+        { "text": "+", "triggerWord": "amoxicillin" },
+        { "text": "Don't delay", "triggerWord": "DILLY-DALLY" },
+        { "text": "=", "triggerWord": "Man's" },
+        { "text": "Saves lives", "triggerWord": "turned" }
+      ]
+    }
+  ],
+  "memes": {
+    "answerReveal": "roll-safe.jpg",
+    "contextual": {
+      "triggerWord": "dog",
+      "memeId": "dogs-eyes-closed.jpg"
+    }
+  },
+  "criticalMoments": {
+    "answerReveal": "Streptococcus pneumoniae"
+  }
+}

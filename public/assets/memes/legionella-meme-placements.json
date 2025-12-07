@@ -1,0 +1,52 @@
+{
+  "topic": "legionella",
+  "playback_rate": 1.85,
+  "memes": [
+    {
+      "id": "surprised-pikachu",
+      "trigger_word": "TANKED",
+      "timestamp": 13.862,
+      "duration_frames": 45,
+      "position": "center",
+      "scale": 0.55,
+      "animation": "fade-in-out",
+      "sound_effect": "cartoon-slip.mp3",
+      "sound_volume": 0.45,
+      "reasoning": "Sodium crashing down = cartoon slip is contextually perfect"
+    },
+    {
+      "id": "drake-hotline-bling",
+      "trigger_word": "Course",
+      "timestamp": 47.671,
+      "duration_frames": 50,
+      "position": "center",
+      "scale": 0.55,
+      "animation": "fade-in-out",
+      "sound_effect": null,
+      "sound_volume": null,
+      "reasoning": "Answer reveal with overlay: ❌ Cold agglutinins / ✅ Urinary antigen",
+      "overlayText": {
+        "reject": "Cold agglutinins",
+        "approve": "Urinary antigen"
+      }
+    }
+  ],
+  "standalone_sounds": [
+    {
+      "trigger_word": "Genius",
+      "timestamp": 16.451,
+      "sound_effect": "RIMSHOT.mp3",
+      "sound_volume": 0.4,
+      "reasoning": "Sarcastic punchline after \"Genius immune system\""
+    },
+    {
+      "trigger_word": "HIDES",
+      "timestamp": 70.345,
+      "sound_effect": "MEANWHILE.mp3",
+      "sound_volume": 0.35,
+      "reasoning": "Transition into teaching, bacteria lurking"
+    }
+  ],
+  "missing_assets": [],
+  "generated_at": "2025-11-24T15:55:29.824Z"
+}

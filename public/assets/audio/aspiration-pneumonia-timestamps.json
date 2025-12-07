@@ -1,0 +1,1212 @@
+{
+  "topic": "aspiration-pneumonia",
+  "audio_file": "aspiration-pneumonia-narration.mp3",
+  "script": "Lord have mercy, this fella coughs up somethin' that smells so PUTRID it'd make a carrion crow KEEL OVER. 55 year old man. Chronic drunk. Passed out at home three sheets to the wind. Wakes up BEFUDDLED with fever and a cough that sounds like a gravel truck.\n\nER does a chest x ray. Right lower lobe infiltrate. Sputum culture shows mixed flora that's got everyone FLUMMOXED. Back in my day this pattern would VEXED nobody, but nowadays you youngsters are CONFOUNDED by the simplest clues.\n\nSo what's causin' all this RUCKUS? A? B? C? D? E? Think about it... Bet you a sawbuck you get BAMBOOZLED. It ain't like his lung is turnin' into a cesspool or nothin'.\n\nWell I'll be HORNSWOGGLED if it ain't C. Aspiration pneumonia. And I reckon half you picked A and got yourselves HOODWINKED.\n\nAlright, FINE. Here's the whole CATASTROPHE. Fella drinks himself ORNERY as a wet cat. Gag reflex? PLUMB GONE. He RETCHES while unconscious. Then CHOKES on his own vomit and SUCKS it straight down into his lungs. Now here's the PECULIAR part. Right main bronchus is more vertical than the left, so gravity DUMPS all that FETID mess into the right lower lobe. Oral anaerobes FEAST on it like hogs at a trough and make it REEK somethin' FIERCE. Boards love this cause y'all get DISCOMBOBULATED every time. Foul sputum plus aspiration risk equals right lower lobe infection. Pay attention.\n\nNow skedaddle.",
+  "words": [
+    {
+      "word": "Lord",
+      "start": 0,
+      "end": 0.302
+    },
+    {
+      "word": "have",
+      "start": 0.348,
+      "end": 0.499
+    },
+    {
+      "word": "mercy,",
+      "start": 0.557,
+      "end": 1.033
+    },
+    {
+      "word": "this",
+      "start": 1.149,
+      "end": 1.335
+    },
+    {
+      "word": "fella",
+      "start": 1.405,
+      "end": 1.649
+    },
+    {
+      "word": "coughs",
+      "start": 1.718,
+      "end": 1.985
+    },
+    {
+      "word": "up",
+      "start": 2.043,
+      "end": 2.148
+    },
+    {
+      "word": "somethin'",
+      "start": 2.229,
+      "end": 2.566
+    },
+    {
+      "word": "that",
+      "start": 2.589,
+      "end": 2.717
+    },
+    {
+      "word": "smells",
+      "start": 2.786,
+      "end": 3.1
+    },
+    {
+      "word": "so",
+      "start": 3.123,
+      "end": 3.262
+    },
+    {
+      "word": "PUTRID",
+      "start": 3.402,
+      "end": 3.913
+    },
+    {
+      "word": "it'd",
+      "start": 4.075,
+      "end": 4.377
+    },
+    {
+      "word": "make",
+      "start": 4.412,
+      "end": 4.574
+    },
+    {
+      "word": "a",
+      "start": 4.586,
+      "end": 4.621
+    },
+    {
+      "word": "carrion",
+      "start": 4.714,
+      "end": 5.132
+    },
+    {
+      "word": "crow",
+      "start": 5.248,
+      "end": 5.584
+    },
+    {
+      "word": "KEEL",
+      "start": 5.689,
+      "end": 6.107
+    },
+    {
+      "word": "OVER.",
+      "start": 6.2,
+      "end": 6.745
+    },
+    {
+      "word": "55",
+      "start": 7.419,
+      "end": 8.371
+    },
+    {
+      "word": "year",
+      "start": 8.429,
+      "end": 8.557
+    },
+    {
+      "word": "old",
+      "start": 8.603,
+      "end": 8.742
+    },
+    {
+      "word": "man.",
+      "start": 8.8,
+      "end": 9.323
+    },
+    {
+      "word": "Chronic",
+      "start": 10.112,
+      "end": 10.519
+    },
+    {
+      "word": "drunk.",
+      "start": 10.577,
+      "end": 11.099
+    },
+    {
+      "word": "Passed",
+      "start": 11.598,
+      "end": 11.947
+    },
+    {
+      "word": "out",
+      "start": 12.005,
+      "end": 12.167
+    },
+    {
+      "word": "at",
+      "start": 12.214,
+      "end": 12.283
+    },
+    {
+      "word": "home",
+      "start": 12.341,
+      "end": 12.69
+    },
+    {
+      "word": "three",
+      "start": 12.934,
+      "end": 13.235
+    },
+    {
+      "word": "sheets",
+      "start": 13.293,
+      "end": 13.63
+    },
+    {
+      "word": "to",
+      "start": 13.688,
+      "end": 13.781
+    },
+    {
+      "word": "the",
+      "start": 13.851,
+      "end": 13.909
+    },
+    {
+      "word": "wind.",
+      "start": 13.955,
+      "end": 14.431
+    },
+    {
+      "word": "Wakes",
+      "start": 15.012,
+      "end": 15.348
+    },
+    {
+      "word": "up",
+      "start": 15.418,
+      "end": 15.546
+    },
+    {
+      "word": "BEFUDDLED",
+      "start": 15.708,
+      "end": 16.498
+    },
+    {
+      "word": "with",
+      "start": 16.533,
+      "end": 16.684
+    },
+    {
+      "word": "fever",
+      "start": 16.73,
+      "end": 17.101
+    },
+    {
+      "word": "and",
+      "start": 17.427,
+      "end": 17.612
+    },
+    {
+      "word": "a",
+      "start": 17.67,
+      "end": 17.705
+    },
+    {
+      "word": "cough",
+      "start": 17.786,
+      "end": 18.03
+    },
+    {
+      "word": "that",
+      "start": 18.076,
+      "end": 18.204
+    },
+    {
+      "word": "sounds",
+      "start": 18.274,
+      "end": 18.552
+    },
+    {
+      "word": "like",
+      "start": 18.564,
+      "end": 18.703
+    },
+    {
+      "word": "a",
+      "start": 18.738,
+      "end": 18.761
+    },
+    {
+      "word": "gravel",
+      "start": 18.854,
+      "end": 19.237
+    },
+    {
+      "word": "truck.",
+      "start": 19.307,
+      "end": 19.771
+    },
+    {
+      "word": "ER",
+      "start": 20.561,
+      "end": 21.106
+    },
+    {
+      "word": "does",
+      "start": 21.141,
+      "end": 21.339
+    },
+    {
+      "word": "a",
+      "start": 21.385,
+      "end": 21.432
+    },
+    {
+      "word": "chest",
+      "start": 21.513,
+      "end": 21.896
+    },
+    {
+      "word": "x",
+      "start": 22.058,
+      "end": 22.163
+    },
+    {
+      "word": "ray.",
+      "start": 22.279,
+      "end": 22.732
+    },
+    {
+      "word": "Right",
+      "start": 23.045,
+      "end": 23.289
+    },
+    {
+      "word": "lower",
+      "start": 23.382,
+      "end": 23.672
+    },
+    {
+      "word": "lobe",
+      "start": 23.742,
+      "end": 24.044
+    },
+    {
+      "word": "infiltrate.",
+      "start": 24.067,
+      "end": 24.845
+    },
+    {
+      "word": "Sputum",
+      "start": 25.216,
+      "end": 25.716
+    },
+    {
+      "word": "culture",
+      "start": 25.82,
+      "end": 26.447
+    },
+    {
+      "word": "shows",
+      "start": 26.517,
+      "end": 26.83
+    },
+    {
+      "word": "mixed",
+      "start": 26.935,
+      "end": 27.225
+    },
+    {
+      "word": "flora",
+      "start": 27.26,
+      "end": 27.678
+    },
+    {
+      "word": "that's",
+      "start": 27.91,
+      "end": 28.154
+    },
+    {
+      "word": "got",
+      "start": 28.2,
+      "end": 28.398
+    },
+    {
+      "word": "everyone",
+      "start": 28.432,
+      "end": 28.815
+    },
+    {
+      "word": "FLUMMOXED.",
+      "start": 28.92,
+      "end": 29.605
+    },
+    {
+      "word": "Back",
+      "start": 30.383,
+      "end": 30.627
+    },
+    {
+      "word": "in",
+      "start": 30.685,
+      "end": 30.72
+    },
+    {
+      "word": "my",
+      "start": 30.789,
+      "end": 30.963
+    },
+    {
+      "word": "day",
+      "start": 31.021,
+      "end": 31.219
+    },
+    {
+      "word": "this",
+      "start": 31.277,
+      "end": 31.428
+    },
+    {
+      "word": "pattern",
+      "start": 31.497,
+      "end": 31.822
+    },
+    {
+      "word": "would",
+      "start": 31.869,
+      "end": 32.008
+    },
+    {
+      "word": "VEXED",
+      "start": 32.055,
+      "end": 32.415
+    },
+    {
+      "word": "nobody,",
+      "start": 32.577,
+      "end": 33.285
+    },
+    {
+      "word": "but",
+      "start": 33.599,
+      "end": 33.75
+    },
+    {
+      "word": "nowadays",
+      "start": 33.831,
+      "end": 34.62
+    },
+    {
+      "word": "you",
+      "start": 35.038,
+      "end": 35.224
+    },
+    {
+      "word": "youngsters",
+      "start": 35.387,
+      "end": 35.956
+    },
+    {
+      "word": "are",
+      "start": 36.223,
+      "end": 36.443
+    },
+    {
+      "word": "CONFOUNDED",
+      "start": 36.501,
+      "end": 37.348
+    },
+    {
+      "word": "by",
+      "start": 37.43,
+      "end": 37.523
+    },
+    {
+      "word": "the",
+      "start": 37.581,
+      "end": 37.65
+    },
+    {
+      "word": "simplest",
+      "start": 37.685,
+      "end": 38.103
+    },
+    {
+      "word": "clues.",
+      "start": 38.149,
+      "end": 38.823
+    },
+    {
+      "word": "So",
+      "start": 39.194,
+      "end": 39.334
+    },
+    {
+      "word": "what's",
+      "start": 39.38,
+      "end": 39.566
+    },
+    {
+      "word": "causin'",
+      "start": 39.636,
+      "end": 40.054
+    },
+    {
+      "word": "all",
+      "start": 40.088,
+      "end": 40.216
+    },
+    {
+      "word": "this",
+      "start": 40.263,
+      "end": 40.413
+    },
+    {
+      "word": "RUCKUS?",
+      "start": 40.518,
+      "end": 41.168
+    },
+    {
+      "word": "A?",
+      "start": 41.273,
+      "end": 41.783
+    },
+    {
+      "word": "B?",
+      "start": 41.853,
+      "end": 42.155
+    },
+    {
+      "word": "C?",
+      "start": 42.178,
+      "end": 42.643
+    },
+    {
+      "word": "D?",
+      "start": 42.677,
+      "end": 43.095
+    },
+    {
+      "word": "E?",
+      "start": 43.119,
+      "end": 43.734
+    },
+    {
+      "word": "Think",
+      "start": 43.896,
+      "end": 44.117
+    },
+    {
+      "word": "about",
+      "start": 44.152,
+      "end": 44.396
+    },
+    {
+      "word": "it...",
+      "start": 44.419,
+      "end": 44.744
+    },
+    {
+      "word": "Bet",
+      "start": 44.907,
+      "end": 45.069
+    },
+    {
+      "word": "you",
+      "start": 45.15,
+      "end": 45.232
+    },
+    {
+      "word": "a",
+      "start": 45.266,
+      "end": 45.29
+    },
+    {
+      "word": "sawbuck",
+      "start": 45.348,
+      "end": 45.8
+    },
+    {
+      "word": "you",
+      "start": 45.847,
+      "end": 45.94
+    },
+    {
+      "word": "get",
+      "start": 46.009,
+      "end": 46.149
+    },
+    {
+      "word": "BAMBOOZLED.",
+      "start": 46.218,
+      "end": 47.043
+    },
+    {
+      "word": "It",
+      "start": 47.461,
+      "end": 47.577
+    },
+    {
+      "word": "ain't",
+      "start": 47.6,
+      "end": 47.774
+    },
+    {
+      "word": "like",
+      "start": 47.809,
+      "end": 48.03
+    },
+    {
+      "word": "his",
+      "start": 48.064,
+      "end": 48.262
+    },
+    {
+      "word": "lung",
+      "start": 48.343,
+      "end": 48.622
+    },
+    {
+      "word": "is",
+      "start": 48.68,
+      "end": 48.784
+    },
+    {
+      "word": "turnin'",
+      "start": 48.842,
+      "end": 49.191
+    },
+    {
+      "word": "into",
+      "start": 49.225,
+      "end": 49.376
+    },
+    {
+      "word": "a",
+      "start": 49.446,
+      "end": 49.469
+    },
+    {
+      "word": "cesspool",
+      "start": 49.562,
+      "end": 50.224
+    },
+    {
+      "word": "or",
+      "start": 50.259,
+      "end": 50.317
+    },
+    {
+      "word": "nothin'.",
+      "start": 50.363,
+      "end": 50.828
+    },
+    {
+      "word": "Well",
+      "start": 51.304,
+      "end": 51.513
+    },
+    {
+      "word": "I'll",
+      "start": 51.768,
+      "end": 52.058
+    },
+    {
+      "word": "be",
+      "start": 52.105,
+      "end": 52.186
+    },
+    {
+      "word": "HORNSWOGGLED",
+      "start": 52.232,
+      "end": 53.126
+    },
+    {
+      "word": "if",
+      "start": 53.486,
+      "end": 53.66
+    },
+    {
+      "word": "it",
+      "start": 53.706,
+      "end": 53.776
+    },
+    {
+      "word": "ain't",
+      "start": 53.799,
+      "end": 53.974
+    },
+    {
+      "word": "C.",
+      "start": 54.032,
+      "end": 54.496
+    },
+    {
+      "word": "Aspiration",
+      "start": 54.867,
+      "end": 55.866
+    },
+    {
+      "word": "pneumonia.",
+      "start": 55.889,
+      "end": 56.655
+    },
+    {
+      "word": "And",
+      "start": 56.981,
+      "end": 57.166
+    },
+    {
+      "word": "I",
+      "start": 57.236,
+      "end": 57.259
+    },
+    {
+      "word": "reckon",
+      "start": 57.364,
+      "end": 57.596
+    },
+    {
+      "word": "half",
+      "start": 57.666,
+      "end": 57.863
+    },
+    {
+      "word": "you",
+      "start": 57.933,
+      "end": 58.025
+    },
+    {
+      "word": "picked",
+      "start": 58.13,
+      "end": 58.374
+    },
+    {
+      "word": "A",
+      "start": 58.467,
+      "end": 58.652
+    },
+    {
+      "word": "and",
+      "start": 58.722,
+      "end": 58.792
+    },
+    {
+      "word": "got",
+      "start": 58.85,
+      "end": 59.035
+    },
+    {
+      "word": "yourselves",
+      "start": 59.094,
+      "end": 59.628
+    },
+    {
+      "word": "HOODWINKED.",
+      "start": 59.674,
+      "end": 60.452
+    },
+    {
+      "word": "Alright,",
+      "start": 60.638,
+      "end": 61.183
+    },
+    {
+      "word": "FINE.",
+      "start": 61.52,
+      "end": 62.124
+    },
+    {
+      "word": "Here's",
+      "start": 62.507,
+      "end": 62.797
+    },
+    {
+      "word": "the",
+      "start": 62.832,
+      "end": 62.89
+    },
+    {
+      "word": "whole",
+      "start": 62.948,
+      "end": 63.343
+    },
+    {
+      "word": "CATASTROPHE.",
+      "start": 63.436,
+      "end": 64.69
+    },
+    {
+      "word": "Fella",
+      "start": 65.073,
+      "end": 65.328
+    },
+    {
+      "word": "drinks",
+      "start": 65.386,
+      "end": 65.688
+    },
+    {
+      "word": "himself",
+      "start": 65.734,
+      "end": 66.187
+    },
+    {
+      "word": "ORNERY",
+      "start": 66.373,
+      "end": 66.884
+    },
+    {
+      "word": "as",
+      "start": 66.953,
+      "end": 67.174
+    },
+    {
+      "word": "a",
+      "start": 67.232,
+      "end": 67.279
+    },
+    {
+      "word": "wet",
+      "start": 67.464,
+      "end": 67.708
+    },
+    {
+      "word": "cat.",
+      "start": 67.778,
+      "end": 68.3
+    },
+    {
+      "word": "Gag",
+      "start": 68.683,
+      "end": 68.974
+    },
+    {
+      "word": "reflex?",
+      "start": 69.02,
+      "end": 69.682
+    },
+    {
+      "word": "PLUMB",
+      "start": 70.065,
+      "end": 70.436
+    },
+    {
+      "word": "GONE.",
+      "start": 70.495,
+      "end": 71.063
+    },
+    {
+      "word": "He",
+      "start": 71.319,
+      "end": 71.423
+    },
+    {
+      "word": "RETCHES",
+      "start": 71.493,
+      "end": 71.888
+    },
+    {
+      "word": "while",
+      "start": 72.097,
+      "end": 72.364
+    },
+    {
+      "word": "unconscious.",
+      "start": 72.411,
+      "end": 73.165
+    },
+    {
+      "word": "Then",
+      "start": 73.351,
+      "end": 73.514
+    },
+    {
+      "word": "CHOKES",
+      "start": 73.595,
+      "end": 73.92
+    },
+    {
+      "word": "on",
+      "start": 73.978,
+      "end": 74.071
+    },
+    {
+      "word": "his",
+      "start": 74.106,
+      "end": 74.187
+    },
+    {
+      "word": "own",
+      "start": 74.245,
+      "end": 74.384
+    },
+    {
+      "word": "vomit",
+      "start": 74.431,
+      "end": 74.814
+    },
+    {
+      "word": "and",
+      "start": 74.942,
+      "end": 75.162
+    },
+    {
+      "word": "SUCKS",
+      "start": 75.255,
+      "end": 75.58
+    },
+    {
+      "word": "it",
+      "start": 75.627,
+      "end": 75.708
+    },
+    {
+      "word": "straight",
+      "start": 75.801,
+      "end": 76.172
+    },
+    {
+      "word": "down",
+      "start": 76.219,
+      "end": 76.451
+    },
+    {
+      "word": "into",
+      "start": 76.509,
+      "end": 76.672
+    },
+    {
+      "word": "his",
+      "start": 76.753,
+      "end": 76.857
+    },
+    {
+      "word": "lungs.",
+      "start": 76.927,
+      "end": 77.496
+    },
+    {
+      "word": "Now",
+      "start": 77.891,
+      "end": 78.088
+    },
+    {
+      "word": "here's",
+      "start": 78.181,
+      "end": 78.448
+    },
+    {
+      "word": "the",
+      "start": 78.494,
+      "end": 78.61
+    },
+    {
+      "word": "PECULIAR",
+      "start": 78.866,
+      "end": 79.934
+    },
+    {
+      "word": "part.",
+      "start": 80.085,
+      "end": 80.689
+    },
+    {
+      "word": "Right",
+      "start": 81.316,
+      "end": 81.548
+    },
+    {
+      "word": "main",
+      "start": 81.606,
+      "end": 81.838
+    },
+    {
+      "word": "bronchus",
+      "start": 81.908,
+      "end": 82.349
+    },
+    {
+      "word": "is",
+      "start": 82.418,
+      "end": 82.511
+    },
+    {
+      "word": "more",
+      "start": 82.593,
+      "end": 82.79
+    },
+    {
+      "word": "vertical",
+      "start": 82.848,
+      "end": 83.336
+    },
+    {
+      "word": "than",
+      "start": 83.394,
+      "end": 83.521
+    },
+    {
+      "word": "the",
+      "start": 83.579,
+      "end": 83.649
+    },
+    {
+      "word": "left,",
+      "start": 83.707,
+      "end": 84.218
+    },
+    {
+      "word": "so",
+      "start": 84.671,
+      "end": 84.833
+    },
+    {
+      "word": "gravity",
+      "start": 84.903,
+      "end": 85.333
+    },
+    {
+      "word": "DUMPS",
+      "start": 85.449,
+      "end": 85.867
+    },
+    {
+      "word": "all",
+      "start": 85.948,
+      "end": 86.215
+    },
+    {
+      "word": "that",
+      "start": 86.273,
+      "end": 86.447
+    },
+    {
+      "word": "FETID",
+      "start": 86.563,
+      "end": 86.97
+    },
+    {
+      "word": "mess",
+      "start": 87.062,
+      "end": 87.376
+    },
+    {
+      "word": "into",
+      "start": 87.434,
+      "end": 87.597
+    },
+    {
+      "word": "the",
+      "start": 87.666,
+      "end": 87.736
+    },
+    {
+      "word": "right",
+      "start": 87.829,
+      "end": 88.096
+    },
+    {
+      "word": "lower",
+      "start": 88.27,
+      "end": 88.583
+    },
+    {
+      "word": "lobe.",
+      "start": 88.641,
+      "end": 89.14
+    },
+    {
+      "word": "Oral",
+      "start": 89.535,
+      "end": 90
+    },
+    {
+      "word": "anaerobes",
+      "start": 90.081,
+      "end": 90.801
+    },
+    {
+      "word": "FEAST",
+      "start": 91.091,
+      "end": 91.648
+    },
+    {
+      "word": "on",
+      "start": 91.73,
+      "end": 91.927
+    },
+    {
+      "word": "it",
+      "start": 91.985,
+      "end": 92.147
+    },
+    {
+      "word": "like",
+      "start": 92.484,
+      "end": 92.716
+    },
+    {
+      "word": "hogs",
+      "start": 92.786,
+      "end": 93.332
+    },
+    {
+      "word": "at",
+      "start": 93.378,
+      "end": 93.483
+    },
+    {
+      "word": "a",
+      "start": 93.541,
+      "end": 93.576
+    },
+    {
+      "word": "trough",
+      "start": 93.657,
+      "end": 94.237
+    },
+    {
+      "word": "and",
+      "start": 94.446,
+      "end": 94.678
+    },
+    {
+      "word": "make",
+      "start": 94.748,
+      "end": 94.934
+    },
+    {
+      "word": "it",
+      "start": 94.969,
+      "end": 95.096
+    },
+    {
+      "word": "REEK",
+      "start": 95.375,
+      "end": 95.735
+    },
+    {
+      "word": "somethin'",
+      "start": 95.828,
+      "end": 96.223
+    },
+    {
+      "word": "FIERCE.",
+      "start": 96.374,
+      "end": 97.105
+    },
+    {
+      "word": "Boards",
+      "start": 97.546,
+      "end": 97.999
+    },
+    {
+      "word": "love",
+      "start": 98.15,
+      "end": 98.498
+    },
+    {
+      "word": "this",
+      "start": 98.545,
+      "end": 98.707
+    },
+    {
+      "word": "cause",
+      "start": 98.788,
+      "end": 99.369
+    },
+    {
+      "word": "y'all",
+      "start": 99.589,
+      "end": 99.926
+    },
+    {
+      "word": "get",
+      "start": 99.996,
+      "end": 100.17
+    },
+    {
+      "word": "DISCOMBOBULATED",
+      "start": 100.24,
+      "end": 101.888
+    },
+    {
+      "word": "every",
+      "start": 101.97,
+      "end": 102.202
+    },
+    {
+      "word": "time.",
+      "start": 102.271,
+      "end": 102.898
+    },
+    {
+      "word": "Foul",
+      "start": 103.328,
+      "end": 103.816
+    },
+    {
+      "word": "sputum",
+      "start": 103.932,
+      "end": 104.593
+    },
+    {
+      "word": "plus",
+      "start": 104.709,
+      "end": 105.058
+    },
+    {
+      "word": "aspiration",
+      "start": 105.151,
+      "end": 106.172
+    },
+    {
+      "word": "risk",
+      "start": 106.265,
+      "end": 106.625
+    },
+    {
+      "word": "equals",
+      "start": 106.95,
+      "end": 107.531
+    },
+    {
+      "word": "right",
+      "start": 107.647,
+      "end": 107.891
+    },
+    {
+      "word": "lower",
+      "start": 108.007,
+      "end": 108.332
+    },
+    {
+      "word": "lobe",
+      "start": 108.413,
+      "end": 108.75
+    },
+    {
+      "word": "infection.",
+      "start": 108.785,
+      "end": 109.516
+    },
+    {
+      "word": "Pay",
+      "start": 109.841,
+      "end": 110.038
+    },
+    {
+      "word": "attention.",
+      "start": 110.085,
+      "end": 110.642
+    },
+    {
+      "word": "Now",
+      "start": 110.851,
+      "end": 111.049
+    },
+    {
+      "word": "skedaddle.",
+      "start": 111.13,
+      "end": 112.244
+    }
+  ]
+}

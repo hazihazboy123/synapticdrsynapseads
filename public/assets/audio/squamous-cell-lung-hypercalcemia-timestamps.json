@@ -1,0 +1,1132 @@
+{
+  "topic": "squamous-cell-lung-hypercalcemia",
+  "audio_file": "squamous-cell-lung-hypercalcemia-narration.mp3",
+  "script": "MISS THIS and your patient DIES. Sixty two year old man. WEAK. PATHETIC. Can barely walk to the mailbox.\nForty pack years of smoking. That's two packs a day for twenty years for you youngsters who can't do math. Coughing up BLOOD for three months. Chest x-ray shows a big CRUSTY white mass. Right in the MIDDLE of his lung. Central location. FLAKY like old paint.\nBut wait. Gets BETTER. Calcium is fifteen point eight. Should be eight to ten. Kidneys working fine. Parathyroid hormone is LOW. Now that's PECULIAR as all get out.\nSo let's see what you got. A? Adenocarcinoma with bone mets. B? Small cell with SIADH. C? Hyperparathyroidism. D? Squamous cell with PTHrP. E? Large cell carcinoma. Clock's ticking...\nWell SLAP MY KNEE, it's D. Squamous cell carcinoma. I bet you BAMBOOZLED fools picked adenocarcinoma. WRONG. Dead wrong. Adenocarcinomas hide in the CORNERS. This beast is DEAD CENTER.\nHere's what you missed. Squamous cells DUMP out this ORNERY protein called PTHrP. Parathyroid hormone related peptide. This WRETCHED thing HIJACKS your bone cells. RIPS calcium straight out. FLOODS the bloodstream like a burst pipe. Patient gets weak, confused, constipated as a brick.\nRemember this. Central mass plus high calcium equals squamous cell. Might save a life one day if you pay attention.\nNow get out of here before I lose my temper.",
+  "words": [
+    {
+      "word": "MISS",
+      "start": 0,
+      "end": 0.395
+    },
+    {
+      "word": "THIS",
+      "start": 0.476,
+      "end": 0.882
+    },
+    {
+      "word": "and",
+      "start": 1.289,
+      "end": 1.591
+    },
+    {
+      "word": "your",
+      "start": 1.672,
+      "end": 1.811
+    },
+    {
+      "word": "patient",
+      "start": 1.869,
+      "end": 2.264
+    },
+    {
+      "word": "DIES.",
+      "start": 2.368,
+      "end": 3.309
+    },
+    {
+      "word": "Sixty",
+      "start": 3.611,
+      "end": 4.04
+    },
+    {
+      "word": "two",
+      "start": 4.11,
+      "end": 4.272
+    },
+    {
+      "word": "year",
+      "start": 4.365,
+      "end": 4.516
+    },
+    {
+      "word": "old",
+      "start": 4.563,
+      "end": 4.725
+    },
+    {
+      "word": "man.",
+      "start": 4.795,
+      "end": 5.224
+    },
+    {
+      "word": "WEAK.",
+      "start": 5.387,
+      "end": 6.107
+    },
+    {
+      "word": "PATHETIC.",
+      "start": 6.304,
+      "end": 7.349
+    },
+    {
+      "word": "Can",
+      "start": 7.825,
+      "end": 8.034
+    },
+    {
+      "word": "barely",
+      "start": 8.115,
+      "end": 8.464
+    },
+    {
+      "word": "walk",
+      "start": 8.51,
+      "end": 8.696
+    },
+    {
+      "word": "to",
+      "start": 8.742,
+      "end": 8.8
+    },
+    {
+      "word": "the",
+      "start": 8.858,
+      "end": 8.916
+    },
+    {
+      "word": "mailbox.",
+      "start": 8.975,
+      "end": 9.764
+    },
+    {
+      "word": "Forty",
+      "start": 10.031,
+      "end": 10.414
+    },
+    {
+      "word": "pack",
+      "start": 10.495,
+      "end": 10.774
+    },
+    {
+      "word": "years",
+      "start": 10.855,
+      "end": 11.146
+    },
+    {
+      "word": "of",
+      "start": 11.204,
+      "end": 11.273
+    },
+    {
+      "word": "smoking.",
+      "start": 11.331,
+      "end": 11.993
+    },
+    {
+      "word": "That's",
+      "start": 12.307,
+      "end": 12.597
+    },
+    {
+      "word": "two",
+      "start": 12.678,
+      "end": 12.968
+    },
+    {
+      "word": "packs",
+      "start": 13.073,
+      "end": 13.433
+    },
+    {
+      "word": "a",
+      "start": 13.468,
+      "end": 13.502
+    },
+    {
+      "word": "day",
+      "start": 13.607,
+      "end": 13.816
+    },
+    {
+      "word": "for",
+      "start": 13.886,
+      "end": 14.013
+    },
+    {
+      "word": "twenty",
+      "start": 14.071,
+      "end": 14.408
+    },
+    {
+      "word": "years",
+      "start": 14.466,
+      "end": 14.721
+    },
+    {
+      "word": "for",
+      "start": 14.791,
+      "end": 14.907
+    },
+    {
+      "word": "you",
+      "start": 14.954,
+      "end": 15.07
+    },
+    {
+      "word": "youngsters",
+      "start": 15.174,
+      "end": 15.627
+    },
+    {
+      "word": "who",
+      "start": 15.778,
+      "end": 15.952
+    },
+    {
+      "word": "can't",
+      "start": 16.022,
+      "end": 16.266
+    },
+    {
+      "word": "do",
+      "start": 16.312,
+      "end": 16.44
+    },
+    {
+      "word": "math.",
+      "start": 16.533,
+      "end": 17.264
+    },
+    {
+      "word": "Coughing",
+      "start": 17.636,
+      "end": 18.019
+    },
+    {
+      "word": "up",
+      "start": 18.065,
+      "end": 18.193
+    },
+    {
+      "word": "BLOOD",
+      "start": 18.298,
+      "end": 18.704
+    },
+    {
+      "word": "for",
+      "start": 18.785,
+      "end": 18.913
+    },
+    {
+      "word": "three",
+      "start": 18.983,
+      "end": 19.238
+    },
+    {
+      "word": "months.",
+      "start": 19.284,
+      "end": 19.83
+    },
+    {
+      "word": "Chest",
+      "start": 20.202,
+      "end": 20.573
+    },
+    {
+      "word": "x-ray",
+      "start": 20.736,
+      "end": 21.037
+    },
+    {
+      "word": "shows",
+      "start": 21.096,
+      "end": 21.281
+    },
+    {
+      "word": "a",
+      "start": 21.328,
+      "end": 21.339
+    },
+    {
+      "word": "big",
+      "start": 21.432,
+      "end": 21.583
+    },
+    {
+      "word": "CRUSTY",
+      "start": 21.664,
+      "end": 22.071
+    },
+    {
+      "word": "white",
+      "start": 22.117,
+      "end": 22.361
+    },
+    {
+      "word": "mass.",
+      "start": 22.431,
+      "end": 22.849
+    },
+    {
+      "word": "Right",
+      "start": 22.988,
+      "end": 23.22
+    },
+    {
+      "word": "in",
+      "start": 23.243,
+      "end": 23.29
+    },
+    {
+      "word": "the",
+      "start": 23.325,
+      "end": 23.383
+    },
+    {
+      "word": "MIDDLE",
+      "start": 23.429,
+      "end": 23.673
+    },
+    {
+      "word": "of",
+      "start": 23.708,
+      "end": 23.754
+    },
+    {
+      "word": "his",
+      "start": 23.812,
+      "end": 23.917
+    },
+    {
+      "word": "lung.",
+      "start": 23.998,
+      "end": 24.439
+    },
+    {
+      "word": "Central",
+      "start": 24.637,
+      "end": 24.985
+    },
+    {
+      "word": "location.",
+      "start": 25.031,
+      "end": 25.67
+    },
+    {
+      "word": "FLAKY",
+      "start": 25.983,
+      "end": 26.401
+    },
+    {
+      "word": "like",
+      "start": 26.471,
+      "end": 26.634
+    },
+    {
+      "word": "old",
+      "start": 26.668,
+      "end": 26.866
+    },
+    {
+      "word": "paint.",
+      "start": 26.935,
+      "end": 27.388
+    },
+    {
+      "word": "But",
+      "start": 27.748,
+      "end": 27.899
+    },
+    {
+      "word": "wait.",
+      "start": 27.945,
+      "end": 28.305
+    },
+    {
+      "word": "Gets",
+      "start": 28.665,
+      "end": 28.897
+    },
+    {
+      "word": "BETTER.",
+      "start": 29.025,
+      "end": 29.536
+    },
+    {
+      "word": "Calcium",
+      "start": 29.884,
+      "end": 30.43
+    },
+    {
+      "word": "is",
+      "start": 30.488,
+      "end": 30.639
+    },
+    {
+      "word": "fifteen",
+      "start": 30.871,
+      "end": 31.498
+    },
+    {
+      "word": "point",
+      "start": 31.603,
+      "end": 31.893
+    },
+    {
+      "word": "eight.",
+      "start": 31.974,
+      "end": 32.438
+    },
+    {
+      "word": "Should",
+      "start": 33.089,
+      "end": 33.298
+    },
+    {
+      "word": "be",
+      "start": 33.332,
+      "end": 33.391
+    },
+    {
+      "word": "eight",
+      "start": 33.437,
+      "end": 33.611
+    },
+    {
+      "word": "to",
+      "start": 33.646,
+      "end": 33.692
+    },
+    {
+      "word": "ten.",
+      "start": 33.762,
+      "end": 34.25
+    },
+    {
+      "word": "Kidneys",
+      "start": 34.482,
+      "end": 35.004
+    },
+    {
+      "word": "working",
+      "start": 35.167,
+      "end": 35.492
+    },
+    {
+      "word": "fine.",
+      "start": 35.55,
+      "end": 36.026
+    },
+    {
+      "word": "Parathyroid",
+      "start": 36.258,
+      "end": 37.152
+    },
+    {
+      "word": "hormone",
+      "start": 37.199,
+      "end": 37.617
+    },
+    {
+      "word": "is",
+      "start": 37.651,
+      "end": 37.744
+    },
+    {
+      "word": "LOW.",
+      "start": 37.825,
+      "end": 38.29
+    },
+    {
+      "word": "Now",
+      "start": 38.383,
+      "end": 38.487
+    },
+    {
+      "word": "that's",
+      "start": 38.51,
+      "end": 38.673
+    },
+    {
+      "word": "PECULIAR",
+      "start": 38.708,
+      "end": 39.23
+    },
+    {
+      "word": "as",
+      "start": 39.312,
+      "end": 39.451
+    },
+    {
+      "word": "all",
+      "start": 39.497,
+      "end": 39.625
+    },
+    {
+      "word": "get",
+      "start": 39.671,
+      "end": 39.788
+    },
+    {
+      "word": "out.",
+      "start": 39.834,
+      "end": 40.055
+    },
+    {
+      "word": "So",
+      "start": 40.252,
+      "end": 40.345
+    },
+    {
+      "word": "let's",
+      "start": 40.391,
+      "end": 40.519
+    },
+    {
+      "word": "see",
+      "start": 40.531,
+      "end": 40.623
+    },
+    {
+      "word": "what",
+      "start": 40.635,
+      "end": 40.74
+    },
+    {
+      "word": "you",
+      "start": 40.763,
+      "end": 40.809
+    },
+    {
+      "word": "got.",
+      "start": 40.844,
+      "end": 41.146
+    },
+    {
+      "word": "A?",
+      "start": 41.889,
+      "end": 42.237
+    },
+    {
+      "word": "Adenocarcinoma",
+      "start": 42.539,
+      "end": 43.619
+    },
+    {
+      "word": "with",
+      "start": 43.665,
+      "end": 43.77
+    },
+    {
+      "word": "bone",
+      "start": 43.828,
+      "end": 44.072
+    },
+    {
+      "word": "mets.",
+      "start": 44.106,
+      "end": 44.629
+    },
+    {
+      "word": "B?",
+      "start": 44.803,
+      "end": 45.267
+    },
+    {
+      "word": "Small",
+      "start": 45.558,
+      "end": 45.836
+    },
+    {
+      "word": "cell",
+      "start": 45.871,
+      "end": 46.08
+    },
+    {
+      "word": "with",
+      "start": 46.127,
+      "end": 46.231
+    },
+    {
+      "word": "SIADH.",
+      "start": 46.266,
+      "end": 47.322
+    },
+    {
+      "word": "C?",
+      "start": 47.45,
+      "end": 47.88
+    },
+    {
+      "word": "Hyperparathyroidism.",
+      "start": 48.182,
+      "end": 49.586
+    },
+    {
+      "word": "D?",
+      "start": 49.935,
+      "end": 50.399
+    },
+    {
+      "word": "Squamous",
+      "start": 50.573,
+      "end": 50.98
+    },
+    {
+      "word": "cell",
+      "start": 51.003,
+      "end": 51.235
+    },
+    {
+      "word": "with",
+      "start": 51.293,
+      "end": 51.421
+    },
+    {
+      "word": "PTHrP.",
+      "start": 51.467,
+      "end": 52.802
+    },
+    {
+      "word": "E?",
+      "start": 53.104,
+      "end": 53.569
+    },
+    {
+      "word": "Large",
+      "start": 53.859,
+      "end": 54.23
+    },
+    {
+      "word": "cell",
+      "start": 54.288,
+      "end": 54.602
+    },
+    {
+      "word": "carcinoma.",
+      "start": 54.706,
+      "end": 55.682
+    },
+    {
+      "word": "Clock's",
+      "start": 55.925,
+      "end": 56.216
+    },
+    {
+      "word": "ticking...",
+      "start": 56.251,
+      "end": 56.68
+    },
+    {
+      "word": "Well",
+      "start": 56.831,
+      "end": 57.075
+    },
+    {
+      "word": "SLAP",
+      "start": 57.319,
+      "end": 57.597
+    },
+    {
+      "word": "MY",
+      "start": 57.655,
+      "end": 57.737
+    },
+    {
+      "word": "KNEE,",
+      "start": 57.76,
+      "end": 58.108
+    },
+    {
+      "word": "it's",
+      "start": 58.247,
+      "end": 58.445
+    },
+    {
+      "word": "D.",
+      "start": 58.503,
+      "end": 58.828
+    },
+    {
+      "word": "Squamous",
+      "start": 58.967,
+      "end": 59.536
+    },
+    {
+      "word": "cell",
+      "start": 59.629,
+      "end": 59.931
+    },
+    {
+      "word": "carcinoma.",
+      "start": 60.001,
+      "end": 60.709
+    },
+    {
+      "word": "I",
+      "start": 60.953,
+      "end": 61.022
+    },
+    {
+      "word": "bet",
+      "start": 61.127,
+      "end": 61.289
+    },
+    {
+      "word": "you",
+      "start": 61.336,
+      "end": 61.452
+    },
+    {
+      "word": "BAMBOOZLED",
+      "start": 61.614,
+      "end": 62.683
+    },
+    {
+      "word": "fools",
+      "start": 62.799,
+      "end": 63.228
+    },
+    {
+      "word": "picked",
+      "start": 63.298,
+      "end": 63.553
+    },
+    {
+      "word": "adenocarcinoma.",
+      "start": 63.6,
+      "end": 65.004
+    },
+    {
+      "word": "WRONG.",
+      "start": 65.283,
+      "end": 65.968
+    },
+    {
+      "word": "Dead",
+      "start": 66.107,
+      "end": 66.398
+    },
+    {
+      "word": "wrong.",
+      "start": 66.421,
+      "end": 66.839
+    },
+    {
+      "word": "Adenocarcinomas",
+      "start": 67.164,
+      "end": 68.546
+    },
+    {
+      "word": "hide",
+      "start": 68.824,
+      "end": 69.277
+    },
+    {
+      "word": "in",
+      "start": 69.312,
+      "end": 69.37
+    },
+    {
+      "word": "the",
+      "start": 69.405,
+      "end": 69.474
+    },
+    {
+      "word": "CORNERS.",
+      "start": 69.544,
+      "end": 70.194
+    },
+    {
+      "word": "This",
+      "start": 70.438,
+      "end": 70.682
+    },
+    {
+      "word": "beast",
+      "start": 70.751,
+      "end": 71.042
+    },
+    {
+      "word": "is",
+      "start": 71.123,
+      "end": 71.32
+    },
+    {
+      "word": "DEAD",
+      "start": 71.564,
+      "end": 71.97
+    },
+    {
+      "word": "CENTER.",
+      "start": 72.075,
+      "end": 72.597
+    },
+    {
+      "word": "Here's",
+      "start": 72.806,
+      "end": 73.062
+    },
+    {
+      "word": "what",
+      "start": 73.096,
+      "end": 73.213
+    },
+    {
+      "word": "you",
+      "start": 73.259,
+      "end": 73.329
+    },
+    {
+      "word": "missed.",
+      "start": 73.375,
+      "end": 73.758
+    },
+    {
+      "word": "Squamous",
+      "start": 73.921,
+      "end": 74.374
+    },
+    {
+      "word": "cells",
+      "start": 74.397,
+      "end": 74.768
+    },
+    {
+      "word": "DUMP",
+      "start": 75.012,
+      "end": 75.372
+    },
+    {
+      "word": "out",
+      "start": 75.43,
+      "end": 75.651
+    },
+    {
+      "word": "this",
+      "start": 75.709,
+      "end": 75.883
+    },
+    {
+      "word": "ORNERY",
+      "start": 75.964,
+      "end": 76.382
+    },
+    {
+      "word": "protein",
+      "start": 76.463,
+      "end": 76.905
+    },
+    {
+      "word": "called",
+      "start": 76.974,
+      "end": 77.299
+    },
+    {
+      "word": "PTHrP.",
+      "start": 77.555,
+      "end": 79.227
+    },
+    {
+      "word": "Parathyroid",
+      "start": 79.552,
+      "end": 80.701
+    },
+    {
+      "word": "hormone",
+      "start": 80.747,
+      "end": 81.305
+    },
+    {
+      "word": "related",
+      "start": 81.398,
+      "end": 82.036
+    },
+    {
+      "word": "peptide.",
+      "start": 82.106,
+      "end": 82.837
+    },
+    {
+      "word": "This",
+      "start": 83.058,
+      "end": 83.336
+    },
+    {
+      "word": "WRETCHED",
+      "start": 83.453,
+      "end": 84.021
+    },
+    {
+      "word": "thing",
+      "start": 84.091,
+      "end": 84.428
+    },
+    {
+      "word": "HIJACKS",
+      "start": 84.823,
+      "end": 85.589
+    },
+    {
+      "word": "your",
+      "start": 85.635,
+      "end": 85.775
+    },
+    {
+      "word": "bone",
+      "start": 85.856,
+      "end": 86.181
+    },
+    {
+      "word": "cells.",
+      "start": 86.204,
+      "end": 86.785
+    },
+    {
+      "word": "RIPS",
+      "start": 87.121,
+      "end": 87.435
+    },
+    {
+      "word": "calcium",
+      "start": 87.504,
+      "end": 88.015
+    },
+    {
+      "word": "straight",
+      "start": 88.073,
+      "end": 88.387
+    },
+    {
+      "word": "out.",
+      "start": 88.445,
+      "end": 88.723
+    },
+    {
+      "word": "FLOODS",
+      "start": 89.014,
+      "end": 89.385
+    },
+    {
+      "word": "the",
+      "start": 89.455,
+      "end": 89.548
+    },
+    {
+      "word": "bloodstream",
+      "start": 89.629,
+      "end": 90.233
+    },
+    {
+      "word": "like",
+      "start": 90.291,
+      "end": 90.453
+    },
+    {
+      "word": "a",
+      "start": 90.488,
+      "end": 90.523
+    },
+    {
+      "word": "burst",
+      "start": 90.697,
+      "end": 91.022
+    },
+    {
+      "word": "pipe.",
+      "start": 91.08,
+      "end": 91.521
+    },
+    {
+      "word": "Patient",
+      "start": 91.916,
+      "end": 92.369
+    },
+    {
+      "word": "gets",
+      "start": 92.427,
+      "end": 92.624
+    },
+    {
+      "word": "weak,",
+      "start": 92.705,
+      "end": 93.03
+    },
+    {
+      "word": "confused,",
+      "start": 93.112,
+      "end": 93.855
+    },
+    {
+      "word": "constipated",
+      "start": 93.901,
+      "end": 94.749
+    },
+    {
+      "word": "as",
+      "start": 94.795,
+      "end": 94.888
+    },
+    {
+      "word": "a",
+      "start": 94.946,
+      "end": 94.969
+    },
+    {
+      "word": "brick.",
+      "start": 95.016,
+      "end": 95.492
+    },
+    {
+      "word": "Remember",
+      "start": 95.666,
+      "end": 96.072
+    },
+    {
+      "word": "this.",
+      "start": 96.13,
+      "end": 96.629
+    },
+    {
+      "word": "Central",
+      "start": 96.85,
+      "end": 97.349
+    },
+    {
+      "word": "mass",
+      "start": 97.431,
+      "end": 97.79
+    },
+    {
+      "word": "plus",
+      "start": 97.872,
+      "end": 98.174
+    },
+    {
+      "word": "high",
+      "start": 98.255,
+      "end": 98.499
+    },
+    {
+      "word": "calcium",
+      "start": 98.557,
+      "end": 99.126
+    },
+    {
+      "word": "equals",
+      "start": 99.52,
+      "end": 100.054
+    },
+    {
+      "word": "squamous",
+      "start": 100.078,
+      "end": 100.681
+    },
+    {
+      "word": "cell.",
+      "start": 100.716,
+      "end": 101.285
+    },
+    {
+      "word": "Might",
+      "start": 101.807,
+      "end": 102.063
+    },
+    {
+      "word": "save",
+      "start": 102.133,
+      "end": 102.434
+    },
+    {
+      "word": "a",
+      "start": 102.469,
+      "end": 102.492
+    },
+    {
+      "word": "life",
+      "start": 102.574,
+      "end": 102.864
+    },
+    {
+      "word": "one",
+      "start": 102.91,
+      "end": 103.096
+    },
+    {
+      "word": "day",
+      "start": 103.131,
+      "end": 103.305
+    },
+    {
+      "word": "if",
+      "start": 103.34,
+      "end": 103.41
+    },
+    {
+      "word": "you",
+      "start": 103.444,
+      "end": 103.526
+    },
+    {
+      "word": "pay",
+      "start": 103.572,
+      "end": 103.723
+    },
+    {
+      "word": "attention.",
+      "start": 103.758,
+      "end": 104.478
+    },
+    {
+      "word": "Now",
+      "start": 105.198,
+      "end": 105.372
+    },
+    {
+      "word": "get",
+      "start": 105.441,
+      "end": 105.627
+    },
+    {
+      "word": "out",
+      "start": 105.674,
+      "end": 105.825
+    },
+    {
+      "word": "of",
+      "start": 105.848,
+      "end": 105.906
+    },
+    {
+      "word": "here",
+      "start": 105.964,
+      "end": 106.15
+    },
+    {
+      "word": "before",
+      "start": 106.208,
+      "end": 106.579
+    },
+    {
+      "word": "I",
+      "start": 106.637,
+      "end": 106.672
+    },
+    {
+      "word": "lose",
+      "start": 106.8,
+      "end": 107.044
+    },
+    {
+      "word": "my",
+      "start": 107.078,
+      "end": 107.206
+    },
+    {
+      "word": "temper.",
+      "start": 107.287,
+      "end": 107.972
+    }
+  ]
+}
