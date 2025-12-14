@@ -15,6 +15,39 @@ import { NephroticSyndromeMinimalChangeAd } from './components/NephroticSyndrome
 import { PseudomonasEcthymaGangrenosumAd } from './components/PseudomonasEcthymaGangrenosumAd';
 import { BphFiveAlphaReductaseAd } from './components/BphFiveAlphaReductaseAd';
 import { StreptococcusPneumoniaeLobarPneumoniaAd } from './components/StreptococcusPneumoniaeLobarPneumoniaAd';
+import { EpiduralHematomaAd } from './components/EpiduralHematomaAd';
+import { EpiduralHematomaAdTypewriter } from './components/EpiduralHematomaAdTypewriter';
+import { DkaPotassiumManagementAd } from './components/DkaPotassiumManagementAd';
+import { DkaPotassiumManagementAdV2 } from './components/DkaPotassiumManagementAdV2';
+import { BetaBlockerOverdoseAd } from './components/BetaBlockerOverdoseAd';
+import { BetaBlockerOverdoseBrainrot } from './components/BetaBlockerOverdoseBrainrot';
+import { ZoomTypewriter } from './components/ZoomTypewriter';
+
+// Test wrapper for ZoomTypewriter
+const ZoomTypewriterTest = () => {
+  return (
+    <div style={{
+      position: 'absolute',
+      inset: 0,
+      backgroundColor: '#0a0a0a',
+    }}>
+      <ZoomTypewriter
+        fullText="A 28-year-old woman presents after intentional propranolol overdose. She is lethargic with severely decreased heart rate and blood pressure."
+        startTimestamp={0.5}
+        playbackRate={1}
+        wordsPerSecond={3}
+        zoomOutDelay={15}
+        zoomOutDuration={30}
+        highlightPhrases={[
+          { phrase: "intentional propranolol overdose", color: "#ef4444", bold: true },
+          { phrase: "lethargic", color: "#fbbf24", bold: true },
+          { phrase: "heart rate", color: "#ef4444", bold: true },
+          { phrase: "blood pressure", color: "#ef4444", bold: true },
+        ]}
+      />
+    </div>
+  );
+};
 
 export const RemotionRoot = () => {
   return (
@@ -318,6 +351,76 @@ export const RemotionRoot = () => {
         id="StreptococcusPneumoniaeLobarPneumonia"
         component={StreptococcusPneumoniaeLobarPneumoniaAd}
         durationInFrames={1821}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* NEW: Epidural Hematoma - "Talk and Die" Syndrome! */}
+      <Composition
+        id="epidural-hematoma"
+        component={EpiduralHematomaAd}
+        durationInFrames={2313}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* Epidural Hematoma - TYPEWRITER VERSION! */}
+      <Composition
+        id="epidural-hematoma-typewriter"
+        component={EpiduralHematomaAdTypewriter}
+        durationInFrames={2313}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* NEW: DKA Potassium Management - Check K+ Before Insulin! */}
+      <Composition
+        id="dka-potassium-management"
+        component={DkaPotassiumManagementAd}
+        durationInFrames={1678}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* V2: DKA with Dynamic Vignette System! */}
+      <Composition
+        id="dka-potassium-management-v2"
+        component={DkaPotassiumManagementAdV2}
+        durationInFrames={1678}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* NEW: Beta-Blocker Overdose - FULL SCREEN ZOOM + TYPEWRITER! */}
+      <Composition
+        id="beta-blocker-overdose"
+        component={BetaBlockerOverdoseAd}
+        durationInFrames={2159}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* BRAINROT: Beta-Blocker with Subway Surfers at bottom! */}
+      <Composition
+        id="beta-blocker-brainrot"
+        component={BetaBlockerOverdoseBrainrot}
+        durationInFrames={2159}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* TEST: Zoom Typewriter Prototype */}
+      <Composition
+        id="zoom-typewriter-test"
+        component={ZoomTypewriterTest}
+        durationInFrames={300}
         fps={30}
         width={1080}
         height={1920}

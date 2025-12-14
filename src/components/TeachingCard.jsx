@@ -97,6 +97,45 @@ const ICON_MAP = {
   'pill': PillIcon,
 };
 
+// ===== TYPEWRITER TEXT COMPONENT =====
+const TypewriterText = ({ text, framesVisible, fps, fontSize = 24, color = '#e5e7eb', fontWeight = 600, charsPerSecond = 50 }) => {
+  const framesPerChar = fps / charsPerSecond;
+
+  // Start typing after a brief delay for the icon to pop
+  const typingDelay = 5;
+  const framesIntoTyping = Math.max(0, framesVisible - typingDelay);
+  const charsToShow = Math.floor(framesIntoTyping / framesPerChar);
+  const visibleText = text.slice(0, Math.min(charsToShow, text.length));
+  const isComplete = charsToShow >= text.length;
+
+  // Cursor blink
+  const cursorVisible = !isComplete && Math.floor(framesVisible / 8) % 2 === 0;
+
+  return (
+    <span style={{
+      fontSize,
+      color,
+      fontWeight,
+      fontFamily: 'Inter, -apple-system, sans-serif',
+      letterSpacing: '0.1px',
+    }}>
+      {visibleText}
+      {!isComplete && framesVisible > typingDelay && (
+        <span style={{
+          display: 'inline-block',
+          width: 2,
+          height: fontSize * 0.75,
+          marginLeft: 2,
+          background: 'linear-gradient(180deg, #c084fc, #ec4899)',
+          borderRadius: 1,
+          opacity: cursorVisible ? 1 : 0,
+          verticalAlign: 'middle',
+        }} />
+      )}
+    </span>
+  );
+};
+
 /**
  * TeachingCard - Post-answer teaching moment with synced visual explanations
  */
@@ -323,17 +362,21 @@ const FlowDiagram = ({ elements, colorScheme, adjustedFrame, frameOffset, fps, p
               boxShadow: isHighlighted
                 ? '0 2px 6px rgba(147, 51, 234, 0.12)'
                 : '0 1px 3px rgba(0, 0, 0, 0.2)',
+              minHeight: 44,
             }}>
               <div style={{
-                fontSize: element.fontSize || 20,
-                fontWeight: 700,
-                color: isHighlighted ? '#c4b5fd' : colorScheme.text,
-                fontFamily: 'Inter, -apple-system, sans-serif',
-                letterSpacing: '0.2px',
                 lineHeight: 1.2,
                 textShadow: '0 1px 2px rgba(0, 0, 0, 0.4)',
               }}>
-                {element.text}
+                <TypewriterText
+                  text={element.text}
+                  framesVisible={framesVisible}
+                  fps={fps}
+                  fontSize={element.fontSize || 20}
+                  color={isHighlighted ? '#c4b5fd' : colorScheme.text}
+                  fontWeight={700}
+                  charsPerSecond={45}
+                />
               </div>
               {element.subtext && (
                 <div style={{
@@ -355,6 +398,12 @@ const FlowDiagram = ({ elements, colorScheme, adjustedFrame, frameOffset, fps, p
         if (element.type === 'bullet') {
           const IconComponent = ICON_MAP[element.iconName] || BoltIcon;
 
+          // Icon pop animation
+          const iconScale = interpolate(framesVisible, [0, 8], [0.5, 1], {
+            extrapolateRight: 'clamp',
+            extrapolateLeft: 'clamp',
+          });
+
           return (
             <div key={idx} style={{
               display: 'flex',
@@ -365,22 +414,28 @@ const FlowDiagram = ({ elements, colorScheme, adjustedFrame, frameOffset, fps, p
               opacity: opacity,
               transform: `translateY(${translateY}px)`,
               maxWidth: '700px',
+              minHeight: 48,
             }}>
               <div style={{
                 flexShrink: 0,
+                transform: `scale(${iconScale})`,
               }}>
                 <IconComponent size={element.fontSize ? element.fontSize * 0.9 : 24} color={element.iconColor || '#fbbf24'} />
               </div>
               <div style={{
-                fontSize: element.fontSize || 24,
-                color: colorScheme.text,
-                fontFamily: 'Inter, -apple-system, sans-serif',
-                fontWeight: 600,
                 lineHeight: 1.4,
                 textAlign: 'left',
-                letterSpacing: '0.1px',
+                flex: 1,
               }}>
-                {element.text}
+                <TypewriterText
+                  text={element.text}
+                  framesVisible={framesVisible}
+                  fps={fps}
+                  fontSize={element.fontSize || 24}
+                  color={colorScheme.text}
+                  fontWeight={600}
+                  charsPerSecond={45}
+                />
               </div>
             </div>
           );
@@ -453,6 +508,12 @@ const SplitView = ({ elements, colorScheme, adjustedFrame, frameOffset, fps, pla
           const IconComponent = ICON_MAP[element.iconName] || CheckCircleIcon;
           const iconColor = element.iconColor || '#c4b5fd';
 
+          // Icon pop animation
+          const iconScale = interpolate(framesVisible, [0, 8], [0.5, 1], {
+            extrapolateRight: 'clamp',
+            extrapolateLeft: 'clamp',
+          });
+
           return (
             <div key={idx} style={{
               display: 'flex',
@@ -463,21 +524,26 @@ const SplitView = ({ elements, colorScheme, adjustedFrame, frameOffset, fps, pla
               transform: `translate(${shakeX}px, ${translateY}px)`,
               transition: 'none',
               width: '100%',
+              minHeight: 48,
             }}>
               <div style={{
                 flexShrink: 0,
+                transform: `scale(${iconScale})`,
               }}>
                 <IconComponent size={26} color={iconColor} />
               </div>
               <div style={{
-                fontSize: 24,
-                color: colorScheme.text,
-                fontFamily: 'Inter, -apple-system, sans-serif',
                 lineHeight: 1.4,
-                fontWeight: 600,
-                letterSpacing: '0.3px',
               }}>
-                {element.text}
+                <TypewriterText
+                  text={element.text}
+                  framesVisible={framesVisible}
+                  fps={fps}
+                  fontSize={24}
+                  color={colorScheme.text}
+                  fontWeight={600}
+                  charsPerSecond={45}
+                />
               </div>
             </div>
           );
@@ -518,22 +584,26 @@ const PearlCard = ({ elements, colorScheme, adjustedFrame, frameOffset, fps, pla
 
         return (
           <div key={idx} style={{
-            fontSize: element.fontSize || 32,
-            fontWeight: element.isEquals ? 800 : 600,
-            color: element.isEquals ? '#f0abfc' : colorScheme.text,
             textAlign: 'center',
             opacity: opacity,
             transform: `translateY(${translateY}px)`,
             transition: 'none',
-            fontFamily: 'Inter, -apple-system, sans-serif',
-            letterSpacing: element.isEquals ? '1px' : '0.4px',
             textShadow: element.isEquals
               ? '0 2px 12px rgba(240, 171, 252, 0.4), 0 1px 4px rgba(0, 0, 0, 0.7)'
               : '0 1px 4px rgba(0, 0, 0, 0.5)',
             lineHeight: 1.4,
             padding: '8px 16px',
+            minHeight: 40,
           }}>
-            {element.text}
+            <TypewriterText
+              text={element.text}
+              framesVisible={framesVisible}
+              fps={fps}
+              fontSize={element.fontSize || 32}
+              color={element.isEquals ? '#f0abfc' : colorScheme.text}
+              fontWeight={element.isEquals ? 800 : 600}
+              charsPerSecond={40}
+            />
           </div>
         );
       })}

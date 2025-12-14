@@ -1,6 +1,9 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring, Audio, staticFile } from 'remotion';
 import { HighlightedVignette } from './HighlightedVignette';
+import { TypewriterVignette } from './TypewriterVignette';
+import { ContinuousTypewriter } from './ContinuousTypewriter';
+import { LabTypewriter } from './LabTypewriter';
 
 // Sleek SVG Checkmark
 const Checkmark = ({ scale = 1 }) => (
@@ -34,11 +37,22 @@ export const MedicalQuestionCard = ({
   playbackRate = 1.85,
   frameOffset = 0,
   vignetteHighlights = [], // Array of { phrase: "fever", timestamp: 16.73 }
+  vignetteSegments = null, // Array of { text, timestamp, effect?, isCritical? } for typewriter mode
   highlightSoundVolume = 10.0, // Volume for highlight swipe sounds (MAXIMUM BOOST)
-  optionTimestamps = null, // NEW: { A: 30.523, B: 31.196, C: 32.055, D: 32.903, E: 34.273 }
-  zoomMode = false, // NEW: Enable zoomed/focused view before options appear
-  cursorHoverOption = null, // NEW: Which option the cursor is currently hovering over (A, B, C, D, or E)
-  onOptionPositionMeasured = null, // NEW: Callback to report actual option positions to parent
+  optionTimestamps = null, // { A: 30.523, B: 31.196, C: 32.055, D: 32.903, E: 34.273 }
+  zoomMode = false, // Enable zoomed/focused view before options appear
+  cursorHoverOption = null, // Which option the cursor is currently hovering over (A, B, C, D, or E)
+  onOptionPositionMeasured = null, // Callback to report actual option positions to parent
+  // Progressive reveal timestamps (raw audio seconds)
+  labTimestamps = null, // { "Glucose": 25.878, "pH": 28.758, "Ketones": 34.435 }
+  questionTimestamp = null, // When the question box appears
+  clinicalFindingsTimestamp = null, // When Clinical Findings header appears
+  // NEW: Continuous typewriter mode
+  fullVignetteText = null, // Full text for continuous typewriter
+  vignetteStartTimestamp = 1.0, // When to start typing vignette
+  highlightPhrases = [], // { phrase, color, bold, underline } for styling while typing
+  // Layout customization
+  cardTopOffset = 450, // Top position of the card container
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -68,7 +82,7 @@ export const MedicalQuestionCard = ({
   // NEW: No zoom/repositioning - just keep card at normal position
   // Options will fly in when their timestamp hits
   const containerScale = 1.0;
-  const containerTopOffset = 450; // Always at normal position
+  const containerTopOffset = cardTopOffset; // Use prop for positioning
 
   // Pop-in animation for checkmark/X
   const revealProgress = isRevealed ? Math.min(1, (adjustedFrame - answerRevealFrame) / 8) : 0;
@@ -115,7 +129,8 @@ export const MedicalQuestionCard = ({
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 1 }}>
           {/* Header */}
-          <div style={{ textAlign: 'center', marginBottom: 24 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
+            {/* Question title centered */}
             <h3 style={{
               fontSize: 22,
               fontWeight: 700,
@@ -126,13 +141,30 @@ export const MedicalQuestionCard = ({
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
               margin: 0,
+              textAlign: 'center',
             }}>
               🩺 Practice Question #{questionData.card_id}
             </h3>
           </div>
 
-          {/* Vignette with highlights */}
-          {vignetteHighlights.length > 0 ? (
+          {/* Vignette with highlights or typewriter */}
+          {fullVignetteText ? (
+            <ContinuousTypewriter
+              fullText={fullVignetteText}
+              startTimestamp={vignetteStartTimestamp}
+              playbackRate={playbackRate}
+              frameOffset={frameOffset}
+              highlightPhrases={highlightPhrases}
+              charsPerSecond={20}
+              fontSize={24}
+            />
+          ) : vignetteSegments ? (
+            <TypewriterVignette
+              segments={vignetteSegments}
+              playbackRate={playbackRate}
+              frameOffset={frameOffset}
+            />
+          ) : vignetteHighlights.length > 0 ? (
             <HighlightedVignette
               text={questionData.vignette}
               highlights={vignetteHighlights}
@@ -152,197 +184,74 @@ export const MedicalQuestionCard = ({
             </div>
           )}
 
-          {/* Lab Values */}
-          <div style={{
-            marginTop: 16,
-            padding: 16,
-            background: 'rgba(147, 51, 234, 0.05)',
-            borderRadius: 12,
-            backdropFilter: 'blur(10px)',
-            borderLeft: '3px solid rgba(147, 51, 234, 0.3)',
-          }}>
-            <div style={{
-              fontSize: 18,
-              color: '#c084fc',
-              fontWeight: 600,
-              marginBottom: 12,
-              display: 'flex',
-              alignItems: 'center',
-              gap: 6,
-            }}>
-              <span style={{
-                display: 'inline-block',
-                width: 18,
-                height: 18,
-                background: 'linear-gradient(135deg, #9333ea, #db2777)',
-                borderRadius: '50%',
-              }}></span>
-              Clinical Findings
-            </div>
-            <div style={{
-              display: 'grid',
-              gap: 10,
-              fontFamily: 'Monaco, Consolas, monospace',
-              fontSize: 20,
-            }}>
-              {questionData.lab_values.map((lab, i) => {
-                // Check if this lab value should be highlighted
-                const labHighlight = vignetteHighlights.find(h =>
-                  lab.value.includes(h.phrase) || h.phrase.includes(lab.value)
-                );
+          {/* Lab Values - Typewriter Style */}
+          {(() => {
+            // Calculate if Clinical Findings section should be visible
+            const cfTimestamp = clinicalFindingsTimestamp || (labTimestamps ? Math.min(...Object.values(labTimestamps)) - 1 : 0);
+            const cfAppearFrame = Math.floor((cfTimestamp / playbackRate) * fps);
+            const showClinicalFindings = !clinicalFindingsTimestamp || adjustedFrame >= cfAppearFrame;
 
-                let isHighlighted = false;
-                let highlightProgress = 0;
-                let framesSinceHighlight = 0;
+            if (!showClinicalFindings) return null;
 
-                if (labHighlight) {
-                  const highlightTime = labHighlight.timestamp;
-                  const highlightFrame = Math.floor((highlightTime / playbackRate) * fps) + frameOffset;
-                  const currentTime = (adjustedFrame / fps) * playbackRate;
-                  const timeSinceHighlight = currentTime - highlightTime;
+            // Entrance animation for Clinical Findings header
+            const cfFramesVisible = adjustedFrame - cfAppearFrame;
+            const cfOpacity = interpolate(cfFramesVisible, [0, 10], [0, 1], { extrapolateRight: 'clamp' });
 
-                  if (timeSinceHighlight >= 0) {
-                    isHighlighted = true;
-                    framesSinceHighlight = adjustedFrame - highlightFrame;
-                    const drawDurationFrames = 35; // 1.16 seconds at 30fps (slower)
-                    highlightProgress = Math.min(1, framesSinceHighlight / drawDurationFrames);
-                  }
-                }
+            return (
+              <div style={{
+                marginTop: 16,
+                padding: '12px 0',
+                opacity: cfOpacity,
+              }}>
+                <div style={{
+                  fontSize: 18,
+                  color: '#c084fc',
+                  fontWeight: 600,
+                  marginBottom: 8,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 6,
+                }}>
+                  <span style={{
+                    display: 'inline-block',
+                    width: 12,
+                    height: 12,
+                    background: 'linear-gradient(135deg, #9333ea, #db2777)',
+                    borderRadius: '50%',
+                  }}></span>
+                  Clinical Findings
+                </div>
+                <LabTypewriter
+                  labValues={questionData.lab_values}
+                  labTimestamps={labTimestamps}
+                  playbackRate={playbackRate}
+                  frameOffset={frameOffset}
+                  charsPerSecond={35}
+                  fontSize={20}
+                />
+              </div>
+            );
+          })()}
 
-                // NEW: DANGER PULSE for critical values - pulse the VALUE text only (SUBTLE)
-                const isCritical = lab.status === 'critical';
-                const isElevated = lab.status === 'elevated';
-                let valuePulseScale = 1;
-                let valueGlowIntensity = 0;
+          {/* Question - Progressive Reveal */}
+          {(() => {
+            const qTimestamp = questionTimestamp || (optionTimestamps ? optionTimestamps.A - 3 : 0);
+            const qAppearFrame = Math.floor((qTimestamp / playbackRate) * fps);
+            const showQuestion = !questionTimestamp || adjustedFrame >= qAppearFrame;
 
-                if (isCritical && isHighlighted) {
-                  // CRITICAL: Very subtle pulse between 1.0 and 1.03
-                  valuePulseScale = 1 + Math.sin(frame * 0.2) * 0.015;
-                  // Subtle pulsing text shadow
-                  valueGlowIntensity = 4 + Math.sin(frame * 0.2) * 2; // 2-6px range
-                } else if (isElevated && isHighlighted) {
-                  // ELEVATED: Even more subtle
-                  valuePulseScale = 1 + Math.sin(frame * 0.2) * 0.01;
-                  valueGlowIntensity = 2 + Math.sin(frame * 0.2) * 1; // 1-3px range
-                }
+            if (!showQuestion) return null;
 
-                const borderOpacity = isHighlighted ? interpolate(highlightProgress, [0, 1], [0, 1]) : 0;
-                const boxScale = isHighlighted
-                  ? interpolate(highlightProgress, [0, 0.5, 1], [1, 1.05, 1])
-                  : 1; // Box does NOT pulse continuously
+            const qFramesVisible = adjustedFrame - qAppearFrame;
+            const qOpacity = interpolate(qFramesVisible, [0, 12], [0, 1], { extrapolateRight: 'clamp' });
+            const qScale = interpolate(qFramesVisible, [0, 12], [0.9, 1], { extrapolateRight: 'clamp' });
 
-                // Animated border drawing - 4 sides draw in sequence
-                const borderColor = `rgba(251, 191, 36, ${borderOpacity})`;
-                const sideDuration = 0.25; // Each side takes 0.25 of total animation
-
-                // Top border (0-25%)
-                const topProgress = Math.min(1, Math.max(0, (highlightProgress - 0) / sideDuration));
-                // Right border (25-50%)
-                const rightProgress = Math.min(1, Math.max(0, (highlightProgress - 0.25) / sideDuration));
-                // Bottom border (50-75%)
-                const bottomProgress = Math.min(1, Math.max(0, (highlightProgress - 0.5) / sideDuration));
-                // Left border (75-100%)
-                const leftProgress = Math.min(1, Math.max(0, (highlightProgress - 0.75) / sideDuration));
-
-                return (
-                  <div key={i} style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 14,
-                    padding: isHighlighted ? 8 : 0,
-                    borderRadius: 8,
-                    border: '3px solid transparent',
-                    boxShadow: isHighlighted
-                      ? `0 0 20px rgba(251, 191, 36, ${borderOpacity * 0.4})`
-                      : 'none',
-                    transform: `scale(${boxScale})`,
-                    transition: 'none',
-                    position: 'relative',
-                    overflow: 'hidden',
-                  }}>
-                    {/* Animated borders - each side draws in sequence */}
-                    {isHighlighted && topProgress > 0 && (
-                      <div style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: `${topProgress * 100}%`,
-                        height: 3,
-                        background: borderColor,
-                        boxShadow: `0 0 8px ${borderColor}`,
-                      }} />
-                    )}
-                    {isHighlighted && rightProgress > 0 && (
-                      <div style={{
-                        position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        width: 3,
-                        height: `${rightProgress * 100}%`,
-                        background: borderColor,
-                        boxShadow: `0 0 8px ${borderColor}`,
-                      }} />
-                    )}
-                    {isHighlighted && bottomProgress > 0 && (
-                      <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        right: 0,
-                        width: `${bottomProgress * 100}%`,
-                        height: 3,
-                        background: borderColor,
-                        boxShadow: `0 0 8px ${borderColor}`,
-                      }} />
-                    )}
-                    {isHighlighted && leftProgress > 0 && (
-                      <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        left: 0,
-                        width: 3,
-                        height: `${leftProgress * 100}%`,
-                        background: borderColor,
-                        boxShadow: `0 0 8px ${borderColor}`,
-                      }} />
-                    )}
-
-                    <span style={{
-                      color: '#a78bfa',
-                      minWidth: 180,
-                    }}>
-                      {lab.label}
-                    </span>
-                    <span style={{
-                      color: lab.color,
-                      fontWeight: 600,
-                      transform: `scale(${valuePulseScale})`,
-                      display: 'inline-block',
-                      textShadow: (isCritical || isElevated) && isHighlighted && valueGlowIntensity > 0
-                        ? `0 0 ${valueGlowIntensity}px rgba(239, 68, 68, ${isCritical ? 0.6 : 0.4})`
-                        : 'none',
-                      transition: 'none',
-                    }}>
-                      {lab.value}
-                    </span>
-                    {lab.note && (
-                      <span style={{
-                        color: lab.status === 'critical' ? '#fca5a5' : '#fbbf24',
-                        fontSize: 17,
-                      }}>
-                        {lab.status === 'critical' ? '⚠️' : lab.status === 'elevated' ? '↑' : '✅'} {lab.note}
-                      </span>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Question */}
+            return (
           <div style={{
             background: 'linear-gradient(135deg, #9333ea, #db2777)',
             padding: 22,
             borderRadius: 12,
+            opacity: qOpacity,
+            transform: `scale(${qScale})`,
             margin: '24px 0',
             boxShadow: '0 10px 40px rgba(147, 51, 234, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.1)',
           }}>
@@ -356,42 +265,57 @@ export const MedicalQuestionCard = ({
               ❓ {questionData.question_text}
             </div>
           </div>
+            );
+          })()}
 
-          {/* Options with Checkmark/X */}
+          {/* Options with Typewriter Effect */}
           <div style={{
             color: '#e5e7eb',
             fontSize: 22,
             lineHeight: 1.8,
-            paddingLeft: 0, // Align with question box
+            paddingLeft: 0,
           }}>
             {questionData.options.map((option, i) => {
               const isCorrect = option.is_correct;
-              const isCursorHovering = cursorHoverOption === option.letter; // NEW: Audio-synced highlight
+              const isCursorHovering = cursorHoverOption === option.letter;
 
-              // Pulsing scale animation when highlighted (audio-synced)
+              // Pulsing scale animation when highlighted
               const pulseScale = isCursorHovering && !isRevealed
-                ? 1 + Math.sin(adjustedFrame * 0.3) * 0.03 // Pulse between 1.0 and 1.06
+                ? 1 + Math.sin(adjustedFrame * 0.3) * 0.03
                 : 1;
 
-              // NEW: Option fly-in animation logic
+              // Option timing
               const optionFrame = optionFrames ? optionFrames[option.letter] : 0;
               const isOptionVisible = !optionFrames || adjustedFrame >= optionFrame;
-              const flyInDuration = 10; // 10 frames for fly-in animation
-              const framesIntoFlyIn = optionFrames ? Math.max(0, Math.min(flyInDuration, adjustedFrame - optionFrame)) : flyInDuration;
-              const flyInProgress = optionFrames ? framesIntoFlyIn / flyInDuration : 1;
+              const framesIntoOption = optionFrames ? Math.max(0, adjustedFrame - optionFrame) : 999;
 
-              // Fly-in: slide from right + scale pop
-              const translateX = optionFrames ? interpolate(flyInProgress, [0, 1], [100, 0]) : 0;
-              const flyInScale = optionFrames ? interpolate(flyInProgress, [0, 0.5, 1], [0.8, 1.05, 1.0]) : 1;
-              const flyInOpacity = optionFrames ? interpolate(flyInProgress, [0, 0.3, 1], [0, 1, 1]) : 1;
+              // Typewriter settings
+              const charsPerSecond = 40; // Fast typing
+              const framesPerChar = fps / charsPerSecond;
 
-              // Strikethrough animation for wrong answers (12 frames)
+              // Letter "A." pops in first (5 frames), then text types
+              const letterPopDuration = 5;
+              const letterProgress = Math.min(1, framesIntoOption / letterPopDuration);
+              const letterScale = interpolate(letterProgress, [0, 0.5, 1], [0.5, 1.15, 1.0], { extrapolateRight: 'clamp' });
+              const letterOpacity = interpolate(letterProgress, [0, 0.3], [0, 1], { extrapolateRight: 'clamp' });
+
+              // Text starts typing after letter pops in
+              const textStartFrame = letterPopDuration;
+              const framesIntoTyping = Math.max(0, framesIntoOption - textStartFrame);
+              const charsToShow = Math.floor(framesIntoTyping / framesPerChar);
+              const visibleText = option.text.slice(0, Math.min(charsToShow, option.text.length));
+              const isTypingComplete = charsToShow >= option.text.length;
+
+              // Cursor blink (only while typing)
+              const cursorVisible = !isTypingComplete && Math.floor(adjustedFrame / 8) % 2 === 0;
+
+              // Strikethrough animation for wrong answers
               const strikethroughDuration = 12;
               const strikeProgress = isRevealed && !isCorrect
                 ? Math.min(1, (adjustedFrame - answerRevealFrame) / strikethroughDuration)
                 : 0;
 
-              // Don't render option until it's time to fly in
+              // Don't render until timestamp
               if (!isOptionVisible) return null;
 
               return (
@@ -406,41 +330,53 @@ export const MedicalQuestionCard = ({
                     background: isRevealed && isCorrect
                       ? 'rgba(34, 197, 94, 0.15)'
                       : isCursorHovering && !isRevealed
-                        ? 'rgba(147, 51, 234, 0.35)' // AUDIO-SYNC HIGHLIGHT - brighter purple
+                        ? 'rgba(147, 51, 234, 0.35)'
                         : 'rgba(147, 51, 234, 0.05)',
                     borderLeft: isRevealed && isCorrect
                       ? '3px solid #22c55e'
                       : isCursorHovering && !isRevealed
-                        ? '4px solid #c084fc' // AUDIO-SYNC HIGHLIGHT - thicker, brighter border
+                        ? '4px solid #c084fc'
                         : '3px solid transparent',
                     boxShadow: 'none',
                     transition: 'none',
                     display: 'flex',
                     alignItems: 'center',
                     gap: 8,
-                    transform: `translateX(${translateX}%) scale(${(isCursorHovering && !isRevealed ? flyInScale * 1.08 : flyInScale) * pulseScale})`, // AUDIO-SYNC HIGHLIGHT - bigger scale + pulse
-                    opacity: flyInOpacity,
+                    transform: `scale(${(isCursorHovering && !isRevealed ? 1.08 : 1) * pulseScale})`,
+                    minHeight: 48,
                   }}
                 >
-                    {optionFrames && adjustedFrame === optionFrame && (
-                      <Audio src={staticFile('assets/sfx/highlight-pop.mp3')} volume={0.5} />
-                    )}
+                    {/* Option letter with pop animation */}
+                    <strong style={{
+                      color: isRevealed && isCorrect ? '#22c55e' : '#c084fc',
+                      transform: `scale(${letterScale})`,
+                      opacity: letterOpacity,
+                      display: 'inline-block',
+                    }}>
+                      {option.letter}.
+                    </strong>
 
-                    {/* Option text */}
-                    <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}>
-                      <span>
-                        <strong style={{
-                          color: isRevealed && isCorrect ? '#22c55e' : '#c084fc',
-                        }}>
-                          {option.letter}.
-                        </strong>{' '}
-                        <span style={{
-                          color: isRevealed && isCorrect ? '#22c55e' : '#e5e7eb',
-                          fontWeight: isRevealed && isCorrect ? 600 : 400,
-                          opacity: isRevealed && !isCorrect ? 0.5 : 1,
-                        }}>
-                          {option.text}
-                        </span>
+                    {/* Option text with typewriter */}
+                    <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', flex: 1 }}>
+                      <span style={{
+                        color: isRevealed && isCorrect ? '#22c55e' : '#e5e7eb',
+                        fontWeight: isRevealed && isCorrect ? 600 : 400,
+                        opacity: isRevealed && !isCorrect ? 0.5 : 1,
+                      }}>
+                        {visibleText}
+                        {/* Blinking cursor while typing */}
+                        {!isTypingComplete && framesIntoOption > letterPopDuration && (
+                          <span style={{
+                            display: 'inline-block',
+                            width: 2,
+                            height: 18,
+                            marginLeft: 1,
+                            background: 'linear-gradient(180deg, #c084fc, #ec4899)',
+                            borderRadius: 1,
+                            opacity: cursorVisible ? 1 : 0,
+                            verticalAlign: 'middle',
+                          }} />
+                        )}
                       </span>
 
                       {/* Strikethrough line for wrong answers */}
@@ -458,7 +394,7 @@ export const MedicalQuestionCard = ({
                       )}
                     </div>
 
-                    {/* Checkmark or X indicator - RIGHT side after text */}
+                    {/* Checkmark or X indicator */}
                     <div style={{
                       display: 'inline-flex',
                       alignItems: 'center',

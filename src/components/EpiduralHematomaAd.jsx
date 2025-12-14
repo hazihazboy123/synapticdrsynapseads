@@ -16,30 +16,29 @@ import StaticMemeOverlay from './StaticMemeOverlay';
 import VideoMemeOverlay from './VideoMemeOverlay';
 import { TeachingCard } from './TeachingCard';
 
-const timestampsData = require('../../public/assets/audio/streptococcus-pneumoniae-lobar-pneumonia-timestamps.json');
+const timestampsData = require('../../public/assets/audio/epidural-hematoma-timestamps.json');
 
 /**
- * StreptococcusPneumoniaeLobarPneumoniaAd - Lobar Pneumonia with Strep Pneumo
+ * EpiduralHematomaAd - "Talk and Die" Epidural Hematoma
  *
- * Production features:
- * - Audio-synced option highlighting (no ThinkingCursor)
- * - Static overlay: roll-safe at answer reveal
- * - Contextual meme: dogs-eyes-closed at 8.94s
+ * Production features (v11.0):
+ * - FloatingHighlight with spring animations
+ * - Double-take option highlighting (adapts to answer C)
+ * - Medical CT scan overlay at LENS moment
+ * - Enhanced panic mode with breathing layer
  * - 5 vignette highlights with 2 critical shakes
  * - All standard features enabled
  */
-export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
+export const EpiduralHematomaAd = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const PLAYBACK_RATE = 1.9;
-  const audioPath = staticFile('assets/audio/streptococcus-pneumoniae-lobar-pneumonia-narration.mp3');
-
-  // ===== NO MEME CUTAWAY - frameOffset = 0 throughout =====
+  const PLAYBACK_RATE = 2.1;
+  const audioPath = staticFile('assets/audio/epidural-hematoma-narration.mp3');
 
   // ===== KEY TIMESTAMPS =====
-  const questionStartTimeRaw = 53.929;  // First option "A)" - timer starts here
-  const answerRevealTimeRaw = 69.068;   // Answer reveal
+  const questionStartTimeRaw = 57.644;  // First option "A)" - timer starts here
+  const answerRevealTimeRaw = 70.287;   // Answer reveal "C."
 
   const questionStartFrame = Math.floor((questionStartTimeRaw / PLAYBACK_RATE) * fps);
   const answerRevealFrame = Math.floor((answerRevealTimeRaw / PLAYBACK_RATE) * fps);
@@ -47,11 +46,11 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
 
   // ===== OPTION TIMESTAMPS (auto-detected) =====
   const optionTimestamps = {
-    A: 53.929,
-    B: 56.483,
-    C: 58.677,
-    D: 61.15,
-    E: 63.669,
+    A: 57.644,
+    B: 59.641,
+    C: 61.347,
+    D: 63.484,
+    E: 65.887,
   };
 
   // ===== DOUBLE-TAKE OPTION HIGHLIGHTING =====
@@ -92,66 +91,92 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
 
   // ===== VIGNETTE HIGHLIGHTS =====
   const vignetteHighlights = [
-    { phrase: "62-year-old man", timestamp: 4.272, isCritical: false },
-    { phrase: "104°F", timestamp: 6.629, isCritical: true },            // "ONE-OH-FOUR" - CRITICAL SHAKE (Brain shock here)
-    { phrase: "rust-colored sputum", timestamp: 24.973, isCritical: false },
-    { phrase: "right lower lobe consolidation", timestamp: 33.565, isCritical: false },
-    { phrase: "gram-positive lancet-shaped diplococci", timestamp: 41.912, isCritical: true },  // "LANCET-SHAPED" - CRITICAL SHAKE
+    { phrase: "unconscious for approximately 30 seconds", timestamp: 10.159, isCritical: false },
+    { phrase: "alert and oriented, GCS 15", timestamp: 13.526, isCritical: false },
+    { phrase: "Two hours after being discharged", timestamp: 27.574, isCritical: false },
+    { phrase: "lethargic with slurred speech", timestamp: 29.304, isCritical: true },  // CRITICAL SHAKE
+    { phrase: "tonic-clonic seizure", timestamp: 32.45, isCritical: true },  // CRITICAL SHAKE
+    // Lab value highlights (triggers boxes in Clinical Findings)
+    { phrase: "6mm", timestamp: 33.925, isCritical: true },  // "BLOWN" - dilated pupil
+    { phrase: "52 bpm", timestamp: 38.848, isCritical: true },  // "SLOW" - bradycardia
+    { phrase: "180/100", timestamp: 40.194, isCritical: true },  // "pressure" - hypertension
+    { phrase: "Lens-shaped", timestamp: 45.709, isCritical: true },  // "LENS" - epidural hematoma
   ];
 
   // ===== QUESTION DATA =====
   const questionData = {
     card_id: 1,
-    topic: "streptococcus-pneumoniae-lobar-pneumonia",
-    vignette: "62-year-old man presents to the emergency department with 3 days of productive cough, fever, and shortness of breath. He reports coughing up rust-colored sputum. Vital signs show temperature 104°F (40°C), heart rate 110 bpm, respiratory rate 28/min, blood pressure 128/82 mmHg, and oxygen saturation 88% on room air. Physical examination reveals decreased breath sounds and dullness to percussion over the right lower lobe. Chest X-ray demonstrates right lower lobe consolidation with air bronchograms. Sputum gram stain reveals gram-positive lancet-shaped diplococci.",
+    topic: "epidural-hematoma",
+    vignette: "A 17-year-old boy is brought to the emergency department following a motorcycle accident. He was not wearing a helmet and struck his head on the pavement. Witnesses report he was unconscious for approximately 30 seconds before regaining consciousness. On arrival, he is alert and oriented, GCS 15, with only a mild headache. His parents request to take him home. Two hours after being discharged against medical advice, paramedics are called to his home. He is now lethargic with slurred speech. He has a tonic-clonic seizure en route to the hospital.",
     lab_values: [
       {
-        label: "Temperature",
-        value: "104°F (40°C)",
+        label: "Heart rate",
+        value: "52 bpm",
         status: "critical",
         color: "#ef4444",
-        note: "(Normal: 98.6°F)"
+        note: "(bradycardia)"
       },
       {
-        label: "WBC",
-        value: "18,500/μL",
-        status: "elevated",
-        color: "#fbbf24",
-        note: "(Normal: 4,500-11,000/μL)"
-      },
-      {
-        label: "Oxygen saturation",
-        value: "88% on room air",
+        label: "Blood pressure",
+        value: "180/100",
         status: "critical",
         color: "#ef4444",
-        note: "(Normal: >95%)"
+        note: "(hypertensive)"
+      },
+      {
+        label: "Left pupil",
+        value: "6mm",
+        status: "critical",
+        color: "#ef4444",
+        note: "(dilated, non-reactive)"
+      },
+      {
+        label: "Right pupil",
+        value: "3mm",
+        status: "normal",
+        color: "#10b981",
+        note: "(normal)"
+      },
+      {
+        label: "CT skull",
+        value: "Temporal bone fracture",
+        status: "critical",
+        color: "#ef4444",
+        note: ""
+      },
+      {
+        label: "CT brain",
+        value: "Lens-shaped hyperdensity",
+        status: "critical",
+        color: "#ef4444",
+        note: "(epidural)"
       }
     ],
-    question_text: "What is the most likely causative organism?",
+    question_text: "Which artery was most likely injured in this patient?",
     options: [
       {
         letter: "A",
-        text: "Klebsiella pneumoniae",
+        text: "Anterior cerebral artery",
         is_correct: false
       },
       {
         letter: "B",
-        text: "Mycoplasma pneumoniae",
+        text: "Middle cerebral artery",
         is_correct: false
       },
       {
         letter: "C",
-        text: "Streptococcus pneumoniae",
+        text: "Middle meningeal artery",
         is_correct: true
       },
       {
         letter: "D",
-        text: "Haemophilus influenzae",
+        text: "Posterior cerebral artery",
         is_correct: false
       },
       {
         letter: "E",
-        text: "Legionella pneumophila",
+        text: "Vertebral artery",
         is_correct: false
       }
     ],
@@ -161,107 +186,114 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
   // ===== TEACHING PHASES =====
   const teachingPhases = [
     {
-      titleText: "WHY RUSTY SPUTUM?",
-      startTime: 77.589, // "somethin"
+      titleText: "THE LUCID INTERVAL TRAP",
+      startTime: 93.5,
       layout: 'flow-diagram',
       elements: [
         {
           type: 'bullet',
-          iconName: 'microscope',
-          iconColor: '#9333ea',
-          text: 'RBCs get CHEWED UP in alveoli',
-          timestamp: 81.711, // "CHEWED"
+          iconName: 'warning',
+          iconColor: '#ef4444',
+          text: 'Skull fracture CRACKS temporal bone',
+          timestamp: 95.284, // "CRACKED"
         },
         {
           type: 'bullet',
           iconName: 'microscope',
           iconColor: '#9333ea',
-          text: 'Hemoglobin breaks down into rust color',
-          timestamp: 85.24, // "degraded"
+          text: 'Middle meningeal artery runs in GROOVES inside bone',
+          timestamp: 100.833, // "GROOVES"
+        },
+        {
+          type: 'bullet',
+          iconName: 'warning',
+          iconColor: '#ef4444',
+          text: 'Fracture TEARS artery → High-pressure arterial spray',
+          timestamp: 105.593, // "TEARS"
         }
       ]
     },
     {
-      titleText: 'LOBAR PNEUMONIA',
-      startTime: 88.724, // "LOBAR"
+      titleText: 'WHY THIS KILLS SO FAST',
+      startTime: 108.217,
       layout: 'flow-diagram',
       elements: [
         {
           type: 'bullet',
-          iconName: 'microscope',
-          iconColor: '#9333ea',
-          text: 'Fills ONE WHOLE LOBE with inflammatory GUNK',
-          timestamp: 91.208, // "LOBE"
+          iconName: 'warning',
+          iconColor: '#ef4444',
+          text: 'HIGH PRESSURE arterial blood = rapid accumulation',
+          timestamp: 109.03, // "high pressure"
         },
         {
           type: 'bullet',
-          iconName: 'bolt',
+          iconName: 'clock',
           iconColor: '#fbbf24',
-          text: 'Lung becomes solid as a ROCK',
-          timestamp: 94.691, // "ROCK"
+          text: 'Lucid interval = Kid seems fine while dying',
+          timestamp: 111.491, // "lucid interval"
         },
         {
           type: 'bullet',
           iconName: 'chart',
-          iconColor: '#10b981',
-          text: 'NUMBER ONE cause of CAP',
-          timestamp: 96.317, // "NUMBER"
+          iconColor: '#ef4444',
+          text: 'Brain getting PANCAKED against skull',
+          timestamp: 114.672, // "PANCAKED"
         },
         {
           type: 'bullet',
-          iconName: 'virus',
-          iconColor: '#9333ea',
-          text: 'PATHOGNOMONIC for Strep pneumo',
-          timestamp: 100.88, // "PATHOGNOMONIC"
+          iconName: 'warning',
+          iconColor: '#ef4444',
+          text: 'MINUTES before brainstem HERNIATES → GAME OVER',
+          timestamp: 119.432, // "MINUTES"
         }
       ]
     },
     {
-      titleText: 'TREATMENT PEARL',
-      startTime: 103.898, // "beta-lactam"
+      titleText: 'BOARDS PEARL',
+      startTime: 132.0,
       layout: 'pearl-card',
       elements: [
         {
           type: 'text',
-          text: 'Beta-lactam',
-          timestamp: 103.898, // "beta-lactam"
-          fontSize: 38,
-          isEquals: false
-        },
-        {
-          type: 'text',
-          text: '+',
-          timestamp: 107.265, // "amoxicillin"
-          fontSize: 38,
-          isEquals: false
-        },
-        {
-          type: 'text',
-          text: "Don't delay",
-          timestamp: 111.12, // "DILLY-DALLY"
-          fontSize: 38,
+          text: 'Lucid Interval + Lens-Shaped Bleed',
+          timestamp: 132.5,
+          fontSize: 34,
           isEquals: false
         },
         {
           type: 'text',
           text: '=',
-          timestamp: 112.71, // "Man's"
+          timestamp: 134.0,
           fontSize: 38,
           isEquals: true
         },
         {
           type: 'text',
-          text: 'Saves lives',
-          timestamp: 113.953, // "turned"
-          fontSize: 38,
+          text: 'EPIDURAL',
+          timestamp: 135.0,
+          fontSize: 40,
           isEquals: true
+        },
+        {
+          type: 'text',
+          text: 'Middle meningeal = 99% of cases',
+          timestamp: 98.987,
+          fontSize: 32,
+          isEquals: false
+        },
+        {
+          type: 'text',
+          text: 'NEVER discharge without CT',
+          timestamp: 139.007,
+          fontSize: 32,
+          isEquals: false
         }
       ]
     }
   ];
 
   // ===== MEME TIMING =====
-  const contextualMemeTimestamp = 8.94;  // "dog" - dogs-eyes-closed.jpg
+  const contextualMemeTimestamp = 45.709;  // "LENS" - CT scan showing lens-shaped hematoma
 
   // ===== SCREEN SHAKE SYSTEM =====
   const getScreenShake = () => {
@@ -444,9 +476,9 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         audioPath={audioPath}
         position="top-center"
         size={350}
-        timestampsSource="streptococcus-pneumoniae-lobar-pneumonia"
+        timestampsSource="epidural-hematoma"
         playbackRate={PLAYBACK_RATE}
-        shockMoment={Math.floor((6.629 / PLAYBACK_RATE) * fps)}
+        shockMoment={Math.floor((29.304 / PLAYBACK_RATE) * fps)}
         thinkingPeriod={{ start: questionStartFrame, end: answerRevealFrame }}
         celebrationMoment={answerRevealFrame}
       />
@@ -470,28 +502,17 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         words={timestampsData.words}
         playbackRate={PLAYBACK_RATE}
         frameOffset={0}
-        bottomOffset={200}
+        bottomOffset={140}
+        fontSize={36}
       />
 
-      {/* ===== CONTEXTUAL MEME OVERLAY ===== */}
+      {/* ===== MEDICAL IMAGE: CT SCAN SHOWING LENS-SHAPED HEMATOMA ===== */}
       <StaticMemeOverlay
-        imagePath="assets/memes/dogs-eyes-closed.jpg"
+        imagePath="assets/memes/epidural-hematoma-ct.png"
         timestamp={contextualMemeTimestamp}
-        durationInFrames={50}
+        durationInFrames={70}
         position="center"
-        scale={0.55}
-        playbackRate={PLAYBACK_RATE}
-        soundEffect={null}
-        frameOffset={0}
-      />
-
-      {/* ===== CHEST X-RAY OVERLAY ===== */}
-      <StaticMemeOverlay
-        imagePath="assets/memes/strep-pneumo-lung.jpg"
-        timestamp={18.785}
-        durationInFrames={60}
-        position="center"
-        scale={0.65}
+        scale={0.75}
         playbackRate={PLAYBACK_RATE}
         soundEffect={null}
         frameOffset={0}
@@ -529,8 +550,8 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
       <Sequence from={questionStartFrame} durationInFrames={timerDuration}>
         <div style={{
           position: 'absolute',
-          top: 16,
-          right: 16,
+          top: 240,
+          right: 60,
           zIndex: 150,
         }}>
           {(() => {
@@ -664,10 +685,8 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         }} />
       </Sequence>
 
-      {/* ===== SYNAPTIC RECALL BRANDING ===== */}
-
     </AbsoluteFill>
   );
 };
 
-export default StreptococcusPneumoniaeLobarPneumoniaAd;
+export default EpiduralHematomaAd;

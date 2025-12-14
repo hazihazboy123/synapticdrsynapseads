@@ -15,46 +15,48 @@ import { MedicalQuestionCard } from './MedicalQuestionCard';
 import StaticMemeOverlay from './StaticMemeOverlay';
 import VideoMemeOverlay from './VideoMemeOverlay';
 import { TeachingCard } from './TeachingCard';
+import { DynamicVignette } from './DynamicVignette/DynamicVignette';
+import { FullScreenZoom } from './FullScreenZoom';
 
-const timestampsData = require('../../public/assets/audio/streptococcus-pneumoniae-lobar-pneumonia-timestamps.json');
+const timestampsData = require('../../public/assets/audio/dka-potassium-management-timestamps.json');
 
 /**
- * StreptococcusPneumoniaeLobarPneumoniaAd - Lobar Pneumonia with Strep Pneumo
+ * DkaPotassiumManagementAd - Diabetic Ketoacidosis Potassium Management
  *
- * Production features:
- * - Audio-synced option highlighting (no ThinkingCursor)
- * - Static overlay: roll-safe at answer reveal
- * - Contextual meme: dogs-eyes-closed at 8.94s
- * - 5 vignette highlights with 2 critical shakes
- * - All standard features enabled
+ * V11.1 Production features:
+ * - FloatingHighlight with spring animations
+ * - Double-take option highlighting (adapts to answer B)
+ * - Enhanced panic mode with breathing layer
+ * - 6 vignette highlights with 3 critical shakes (lab values)
+ * - Mobile-optimized captions (fontSize: 36, bottomOffset: 140)
+ * - Timer positioned at right: 60px (TikTok-safe)
+ * - Teaching temporal constraints validated
  */
-export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
+export const DkaPotassiumManagementAd = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const PLAYBACK_RATE = 1.9;
-  const audioPath = staticFile('assets/audio/streptococcus-pneumoniae-lobar-pneumonia-narration.mp3');
-
-  // ===== NO MEME CUTAWAY - frameOffset = 0 throughout =====
+  const PLAYBACK_RATE = 2.2;
+  const audioPath = staticFile('assets/audio/dka-potassium-management-narration.mp3');
 
   // ===== KEY TIMESTAMPS =====
-  const questionStartTimeRaw = 53.929;  // First option "A)" - timer starts here
-  const answerRevealTimeRaw = 69.068;   // Answer reveal
+  const questionStartTimeRaw = 50.526;  // First option "A," - timer starts here
+  const answerRevealTimeRaw = 70.217;   // Answer reveal "B," (serum potassium)
 
   const questionStartFrame = Math.floor((questionStartTimeRaw / PLAYBACK_RATE) * fps);
   const answerRevealFrame = Math.floor((answerRevealTimeRaw / PLAYBACK_RATE) * fps);
-  const timerDuration = Math.max(1, answerRevealFrame - questionStartFrame);  // ~15.1 seconds
+  const timerDuration = Math.max(1, answerRevealFrame - questionStartFrame);
 
   // ===== OPTION TIMESTAMPS (auto-detected) =====
   const optionTimestamps = {
-    A: 53.929,
-    B: 56.483,
-    C: 58.677,
-    D: 61.15,
-    E: 63.669,
+    A: 50.526,
+    B: 54.067,
+    C: 57.655,
+    D: 61.393,
+    E: 64.679,
   };
 
-  // ===== DOUBLE-TAKE OPTION HIGHLIGHTING =====
+  // ===== DOUBLE-TAKE OPTION HIGHLIGHTING (adapts to answer B) =====
   const getHighlightedOption = () => {
     const lastOptionFrame = Math.floor((optionTimestamps.E / PLAYBACK_RATE) * fps);
     const thinkingStartFrame = lastOptionFrame + 15; // Start 0.5s after last option appears
@@ -65,7 +67,7 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
     }
 
     const framesIntoThinking = frame - thinkingStartFrame;
-    const availableFrames = answerRevealFrame - thinkingStartFrame; // ~71 frames total
+    const availableFrames = answerRevealFrame - thinkingStartFrame;
 
     // PHASE 1: Quick scan A→B→C→D→E (8 frames each = 40 frames total)
     if (framesIntoThinking < 40) {
@@ -78,197 +80,237 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
       return null; // No highlight during pause
     }
 
-    // PHASE 3: Double-take - C→B→C (remaining ~26 frames)
+    // PHASE 3: Double-take - B→A→B (for answer B)
     const doubleTakeFrames = framesIntoThinking - 45;
 
-    if (doubleTakeFrames < 8) return 'C';   // First look at C
-    if (doubleTakeFrames < 16) return 'B';  // Wait, maybe B?
-    if (doubleTakeFrames < availableFrames - 45) return 'C'; // No, definitely C!
+    if (doubleTakeFrames < 8) return 'B';   // First look at B
+    if (doubleTakeFrames < 16) return 'A';  // Wait, maybe A?
+    if (doubleTakeFrames < availableFrames - 45) return 'B'; // No, definitely B!
 
     return null; // End before answer reveal
   };
 
   const highlightedOption = getHighlightedOption();
 
-  // ===== VIGNETTE HIGHLIGHTS =====
+  // ===== DYNAMIC VIGNETTE SEGMENTS (REPLACES STATIC HIGHLIGHTS) =====
+  // Each segment builds progressively as Grandpa narrates
+  const dynamicVignetteSegments = [
+    { text: "19-year-old male", timestamp: 3.599, effect: "typewriter" },
+    { text: "found unresponsive in dorm room.", timestamp: 5.2, effect: "typewriter" },
+    { text: "FRUITY BREATH ODOR", timestamp: 8.661, effect: "slam", isCritical: false },  // SLAM - "NAIL"
+    { text: "(smells like nail salon).", timestamp: 10.1, effect: "typewriter" },
+    { text: "Deep, rapid breathing", timestamp: 15.557, effect: "underline" },  // "freight" - Kussmaul
+    { text: "(Kussmaul respirations).", timestamp: 17.0, effect: "typewriter" },
+    { text: "Blood glucose:", timestamp: 24.0, effect: "typewriter" },
+    { text: "500 mg/dL", timestamp: 25.878, effect: "slam", isCritical: true },  // SLAM + ZOOM - "FIVE"
+    { text: "Arterial pH:", timestamp: 27.5, effect: "typewriter" },
+    { text: "7.1", timestamp: 28.758, effect: "circle", isCritical: true },  // CIRCLE + ZOOM - "SEVEN"
+    { text: "Serum ketones:", timestamp: 33.0, effect: "typewriter" },
+    { text: "MARKEDLY ELEVATED", timestamp: 34.435, effect: "slam", isCritical: true },  // SLAM + ZOOM - "POURIN"
+  ];
+
+  // Full-screen zoom triggers for MAXIMUM IMPACT
+  const zoomTriggers = [
+    { timestamp: 25.878, scale: 1.5, holdFrames: 18 },  // Zoom on "500 mg/dL"
+    { timestamp: 28.758, scale: 1.4, holdFrames: 15 },  // Zoom on "pH 7.1"
+    { timestamp: 34.435, scale: 1.5, holdFrames: 18 },  // Zoom on "MARKEDLY ELEVATED"
+  ];
+
+  // Legacy vignette highlights (keep for MedicalQuestionCard compatibility)
   const vignetteHighlights = [
-    { phrase: "62-year-old man", timestamp: 4.272, isCritical: false },
-    { phrase: "104°F", timestamp: 6.629, isCritical: true },            // "ONE-OH-FOUR" - CRITICAL SHAKE (Brain shock here)
-    { phrase: "rust-colored sputum", timestamp: 24.973, isCritical: false },
-    { phrase: "right lower lobe consolidation", timestamp: 33.565, isCritical: false },
-    { phrase: "gram-positive lancet-shaped diplococci", timestamp: 41.912, isCritical: true },  // "LANCET-SHAPED" - CRITICAL SHAKE
+    { phrase: "19-year-old male", timestamp: 3.599, isCritical: false },
+    { phrase: "Fruity breath odor", timestamp: 8.661, isCritical: false },
+    { phrase: "Deep, rapid breathing", timestamp: 15.557, isCritical: false },
+    { phrase: "500 mg/dL", timestamp: 25.878, isCritical: true },
+    { phrase: "pH 7.1", timestamp: 28.758, isCritical: true },
+    { phrase: "Ketones markedly elevated", timestamp: 34.435, isCritical: true },
   ];
 
   // ===== QUESTION DATA =====
   const questionData = {
     card_id: 1,
-    topic: "streptococcus-pneumoniae-lobar-pneumonia",
-    vignette: "62-year-old man presents to the emergency department with 3 days of productive cough, fever, and shortness of breath. He reports coughing up rust-colored sputum. Vital signs show temperature 104°F (40°C), heart rate 110 bpm, respiratory rate 28/min, blood pressure 128/82 mmHg, and oxygen saturation 88% on room air. Physical examination reveals decreased breath sounds and dullness to percussion over the right lower lobe. Chest X-ray demonstrates right lower lobe consolidation with air bronchograms. Sputum gram stain reveals gram-positive lancet-shaped diplococci.",
+    topic: "dka-potassium-management",
+    vignette: "19-year-old male found unresponsive in dorm room. Fruity breath odor. Deep, rapid breathing. Blood glucose 500 mg/dL. Arterial pH 7.1. Serum ketones markedly elevated.",
     lab_values: [
       {
-        label: "Temperature",
-        value: "104°F (40°C)",
+        label: "Glucose",
+        value: "500 mg/dL",
         status: "critical",
         color: "#ef4444",
-        note: "(Normal: 98.6°F)"
+        note: "(Normal: 70-100)"
       },
       {
-        label: "WBC",
-        value: "18,500/μL",
-        status: "elevated",
-        color: "#fbbf24",
-        note: "(Normal: 4,500-11,000/μL)"
-      },
-      {
-        label: "Oxygen saturation",
-        value: "88% on room air",
+        label: "pH",
+        value: "7.1",
         status: "critical",
         color: "#ef4444",
-        note: "(Normal: >95%)"
+        note: "(Normal: 7.35-7.45)"
+      },
+      {
+        label: "Ketones",
+        value: "Markedly elevated",
+        status: "critical",
+        color: "#ef4444",
+        note: "(Normal: Negative)"
       }
     ],
-    question_text: "What is the most likely causative organism?",
+    question_text: "Before administering insulin, what must be checked FIRST?",
     options: [
       {
         letter: "A",
-        text: "Klebsiella pneumoniae",
+        text: "Hemoglobin A1C",
         is_correct: false
       },
       {
         letter: "B",
-        text: "Mycoplasma pneumoniae",
-        is_correct: false
-      },
-      {
-        letter: "C",
-        text: "Streptococcus pneumoniae",
+        text: "Serum potassium",
         is_correct: true
       },
       {
+        letter: "C",
+        text: "Liver enzymes",
+        is_correct: false
+      },
+      {
         letter: "D",
-        text: "Haemophilus influenzae",
+        text: "Chest X-ray",
         is_correct: false
       },
       {
         letter: "E",
-        text: "Legionella pneumophila",
+        text: "Urine culture",
         is_correct: false
       }
     ],
-    correct_answer: "C"
+    correct_answer: "B"
   };
 
   // ===== TEACHING PHASES =====
+  // All bullets validated: timestamps >= phase.startTime and sequential
   const teachingPhases = [
     {
-      titleText: "WHY RUSTY SPUTUM?",
-      startTime: 77.589, // "somethin"
-      layout: 'flow-diagram',
+      titleText: "THE POTASSIUM TRAP",
+      startTime: 78.262, // "SIMMER"
+      layout: 'split-view',
       elements: [
         {
           type: 'bullet',
-          iconName: 'microscope',
-          iconColor: '#9333ea',
-          text: 'RBCs get CHEWED UP in alveoli',
-          timestamp: 81.711, // "CHEWED"
-        },
-        {
-          type: 'bullet',
-          iconName: 'microscope',
-          iconColor: '#9333ea',
-          text: 'Hemoglobin breaks down into rust color',
-          timestamp: 85.24, // "degraded"
-        }
-      ]
-    },
-    {
-      titleText: 'LOBAR PNEUMONIA',
-      startTime: 88.724, // "LOBAR"
-      layout: 'flow-diagram',
-      elements: [
-        {
-          type: 'bullet',
-          iconName: 'microscope',
-          iconColor: '#9333ea',
-          text: 'Fills ONE WHOLE LOBE with inflammatory GUNK',
-          timestamp: 91.208, // "LOBE"
-        },
-        {
-          type: 'bullet',
-          iconName: 'bolt',
+          iconName: 'warning',
           iconColor: '#fbbf24',
-          text: 'Lung becomes solid as a ROCK',
-          timestamp: 94.691, // "ROCK"
+          text: 'Serum K+ looks NORMAL on paper',
+          timestamp: 85.925, // "OUTSIDE" - after phase start (78.262)
         },
         {
           type: 'bullet',
           iconName: 'chart',
-          iconColor: '#10b981',
-          text: 'NUMBER ONE cause of CAP',
-          timestamp: 96.317, // "NUMBER"
-        },
-        {
-          type: 'bullet',
-          iconName: 'virus',
-          iconColor: '#9333ea',
-          text: 'PATHOGNOMONIC for Strep pneumo',
-          timestamp: 100.88, // "PATHOGNOMONIC"
+          iconColor: '#ef4444',
+          text: 'Total body K+ is BONE DRY (depleted)',
+          timestamp: 95.341, // "BONE" - sequential (> 85.925)
         }
       ]
     },
     {
-      titleText: 'TREATMENT PEARL',
-      startTime: 103.898, // "beta-lactam"
+      titleText: 'WHY INSULIN KILLS',
+      startTime: 99.729, // "slam"
+      layout: 'flow-diagram',
+      elements: [
+        {
+          type: 'bullet',
+          iconName: 'bolt',
+          iconColor: '#9333ea',
+          text: 'Insulin SHOVES K+ into cells',
+          timestamp: 101.262, // "SHOVES" - after phase start (99.729)
+        },
+        {
+          type: 'bullet',
+          iconName: 'chart',
+          iconColor: '#ef4444',
+          text: 'Serum K+ drops like a STONE',
+          timestamp: 106.045, // "STONE" - sequential (> 101.262)
+        },
+        {
+          type: 'bullet',
+          iconName: 'warning',
+          iconColor: '#ef4444',
+          text: 'Heart goes into ARREST',
+          timestamp: 108.46, // "ARREST" - sequential (> 106.045)
+        }
+      ]
+    },
+    {
+      titleText: 'BOARD PEARL',
+      startTime: 109.993, // "Check"
       layout: 'pearl-card',
       elements: [
         {
           type: 'text',
-          text: 'Beta-lactam',
-          timestamp: 103.898, // "beta-lactam"
-          fontSize: 38,
+          text: 'CHECK K+',
+          timestamp: 110.55, // "FIRST" - after phase start (109.993)
+          fontSize: 36,
           isEquals: false
         },
         {
           type: 'text',
-          text: '+',
-          timestamp: 107.265, // "amoxicillin"
-          fontSize: 38,
+          text: '→',
+          timestamp: 111.455, // "replace"
+          fontSize: 36,
           isEquals: false
         },
         {
           type: 'text',
-          text: "Don't delay",
-          timestamp: 111.12, // "DILLY-DALLY"
-          fontSize: 38,
+          text: 'REPLACE if low',
+          timestamp: 112.396, // "THEN"
+          fontSize: 36,
           isEquals: false
         },
         {
           type: 'text',
-          text: '=',
-          timestamp: 112.71, // "Man's"
-          fontSize: 38,
-          isEquals: true
+          text: '→',
+          timestamp: 113.371, // "insulin"
+          fontSize: 36,
+          isEquals: false
         },
         {
           type: 'text',
-          text: 'Saves lives',
-          timestamp: 113.953, // "turned"
-          fontSize: 38,
-          isEquals: true
+          text: 'THEN give insulin',
+          timestamp: 114.207, // "This"
+          fontSize: 36,
+          isEquals: false
         }
       ]
     }
   ];
 
-  // ===== MEME TIMING =====
-  const contextualMemeTimestamp = 8.94;  // "dog" - dogs-eyes-closed.jpg
+  // ===== MEME TIMING - MAXIMUM DENSITY =====
+  // Micro-memes every 3-5 seconds for constant dopamine hits
+  const microMemes = [
+    // Vignette phase
+    { imagePath: "assets/memes/confused-nick-young.jpg", timestamp: 3.599, duration: 25, position: "top-right", scale: 0.25 },  // "19-year-old" - quick flash
+    { imagePath: "assets/memes/doge.jpg", timestamp: 8.661, duration: 30, position: "bottom-left", scale: 0.3 },  // "FRUITY" - such smell, very fruity
+    { imagePath: "assets/memes/dramatic-chipmunk.gif", timestamp: 15.557, duration: 40, position: "top-left", scale: 0.3 },  // "Deep breathing" - dramatic
+    { imagePath: "assets/memes/this-is-fine.jpg", timestamp: 25.878, duration: 35, position: "center", scale: 0.45 },  // "500 mg/dL" - this is fine (it's not)
+    { imagePath: "assets/memes/elmo-fire.gif", timestamp: 28.758, duration: 35, position: "bottom-right", scale: 0.3 },  // "pH 7.1" - chaos
+    { imagePath: "assets/memes/coffin-dance.gif", timestamp: 34.435, duration: 40, position: "top-right", scale: 0.3 },  // "KETONES" - patient almost dead
+
+    // Question/thinking phase
+    { imagePath: "assets/memes/hide-the-pain-harold.jpg", timestamp: 50.526, duration: 30, position: "bottom-left", scale: 0.25 },  // Options appear - pain
+    { imagePath: "assets/memes/confused-math-lady.jpg", timestamp: 60.0, duration: 35, position: "top-left", scale: 0.28 },  // Mid-timer - confusion
+    { imagePath: "assets/memes/disaster-girl.jpg", timestamp: 65.0, duration: 25, position: "top-right", scale: 0.25 },  // Final seconds - chaos
+
+    // Answer phase
+    { imagePath: "assets/memes/roll-safe.jpg", timestamp: 70.217, duration: 45, position: "center", scale: 0.5 },  // Answer reveal - can't fail if you check K+
+    { imagePath: "assets/memes/success-kid.jpg", timestamp: 72.0, duration: 30, position: "bottom-right", scale: 0.3 },  // Victory
+  ];
+
+  // Legacy main meme
+  const contextualMemeTimestamp = 45.313;  // "Hold" - Hold your horses
 
   // ===== SCREEN SHAKE SYSTEM =====
   const getScreenShake = () => {
     let shakeX = 0;
     let shakeY = 0;
 
-    // Vignette shakes - now ALL highlights get shakes
+    // Vignette shakes - all highlights get shakes
     vignetteHighlights.forEach((highlight, idx) => {
       const shakeFrame = Math.floor((highlight.timestamp / PLAYBACK_RATE) * fps);
       if (frame >= shakeFrame && frame < shakeFrame + 8) {
@@ -306,13 +348,14 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
   const shake = getScreenShake();
 
   return (
-    <AbsoluteFill style={{
-      backgroundColor: '#0a0a0a',
-      transform: `translate(${shake.x}px, ${shake.y}px)`
-    }}>
+    <FullScreenZoom triggers={zoomTriggers} playbackRate={PLAYBACK_RATE} frameOffset={0}>
+      <AbsoluteFill style={{
+        backgroundColor: '#0a0a0a',
+        transform: `translate(${shake.x}px, ${shake.y}px)`
+      }}>
 
-      {/* ===== SINGLE CONTINUOUS AUDIO ===== */}
-      <Audio src={audioPath} playbackRate={PLAYBACK_RATE} volume={1} />
+        {/* ===== SINGLE CONTINUOUS AUDIO ===== */}
+        <Audio src={audioPath} playbackRate={PLAYBACK_RATE} volume={1} />
 
       {/* ===== SYSTEM SOUNDS ===== */}
       <Sequence from={0} durationInFrames={30}>
@@ -380,7 +423,7 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         />
       </Sequence>
 
-      {/* Double-take option highlight clicks - NEW SOUND */}
+      {/* Double-take option highlight clicks */}
       {(() => {
         const lastOptionFrame = Math.floor((optionTimestamps.E / PLAYBACK_RATE) * fps);
         const thinkingStartFrame = lastOptionFrame + 15;
@@ -392,20 +435,19 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
           </Sequence>
         ));
 
-        // PHASE 3: Double-take clicks (C, B, C) - 8 frames apart, starting at frame 45
+        // PHASE 3: Double-take clicks (B, A, B for answer B) - 8 frames apart, starting at frame 45
         const phase3Clicks = [
-          <Sequence key="doubletake-c1" from={thinkingStartFrame + 45} durationInFrames={10}>
+          <Sequence key="doubletake-b1" from={thinkingStartFrame + 45} durationInFrames={10}>
             <Audio src={staticFile('assets/sfx/ui-click-97915.mp3')} volume={1.1} />
           </Sequence>,
-          <Sequence key="doubletake-b" from={thinkingStartFrame + 53} durationInFrames={10}>
+          <Sequence key="doubletake-a" from={thinkingStartFrame + 53} durationInFrames={10}>
             <Audio src={staticFile('assets/sfx/ui-click-97915.mp3')} volume={1.1} />
           </Sequence>,
-          <Sequence key="doubletake-c2" from={thinkingStartFrame + 61} durationInFrames={10}>
+          <Sequence key="doubletake-b2" from={thinkingStartFrame + 61} durationInFrames={10}>
             <Audio src={staticFile('assets/sfx/ui-click-97915.mp3')} volume={1.2} />
           </Sequence>,
         ];
 
-        // All clicks now happen within the thinking window (before answerRevealFrame)
         return [...phase1Clicks, ...phase3Clicks];
       })()}
 
@@ -439,68 +481,75 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         })
       )}
 
+
       {/* ===== BRAIN MASCOT WITH EMOTIONS ===== */}
       <BrainMascot
         audioPath={audioPath}
         position="top-center"
         size={350}
-        timestampsSource="streptococcus-pneumoniae-lobar-pneumonia"
+        timestampsSource="dka-potassium-management"
         playbackRate={PLAYBACK_RATE}
-        shockMoment={Math.floor((6.629 / PLAYBACK_RATE) * fps)}
+        shockMoment={Math.floor((25.878 / PLAYBACK_RATE) * fps)}
         thinkingPeriod={{ start: questionStartFrame, end: answerRevealFrame }}
         celebrationMoment={answerRevealFrame}
       />
 
-      {/* ===== QUESTION CARD ===== */}
+      {/* ===== DYNAMIC VIGNETTE - Renders ABOVE question card ===== */}
+      {frame < Math.floor((teachingPhases[0].startTime / PLAYBACK_RATE) * fps) && (
+        <DynamicVignette
+          segments={dynamicVignetteSegments}
+          playbackRate={PLAYBACK_RATE}
+          frameOffset={0}
+          position="top"
+          fontSize={26}
+          maxWidth={900}
+          style={{ zIndex: 100 }}
+        />
+      )}
+
+      {/* ===== QUESTION CARD (vignette disabled - using DynamicVignette above) ===== */}
       {frame < Math.floor((teachingPhases[0].startTime / PLAYBACK_RATE) * fps) && (
         <MedicalQuestionCard
-          questionData={questionData}
+          questionData={{...questionData, vignette: ""}}
           answerRevealTime={answerRevealTimeRaw}
           playbackRate={PLAYBACK_RATE}
           frameOffset={0}
-          vignetteHighlights={vignetteHighlights} // Re-enabled for positioning reference
+          vignetteHighlights={[]}
+          vignetteSegments={null}
           optionTimestamps={optionTimestamps}
           zoomMode={true}
           cursorHoverOption={highlightedOption}
         />
       )}
 
-      {/* ===== CAPTIONS ===== */}
+      {/* ===== CAPTIONS - MOBILE OPTIMIZED (V11.1) ===== */}
       <TikTokCaptions
         words={timestampsData.words}
         playbackRate={PLAYBACK_RATE}
         frameOffset={0}
-        bottomOffset={200}
+        bottomOffset={140}
+        fontSize={36}
       />
 
-      {/* ===== CONTEXTUAL MEME OVERLAY ===== */}
+      {/* ===== MICRO-MEMES - MAXIMUM DENSITY FOR DOPAMINE HITS ===== */}
+      {microMemes.map((meme, idx) => (
+        <StaticMemeOverlay
+          key={`micro-meme-${idx}`}
+          imagePath={meme.imagePath}
+          timestamp={meme.timestamp}
+          durationInFrames={meme.duration}
+          position={meme.position}
+          scale={meme.scale}
+          playbackRate={PLAYBACK_RATE}
+          soundEffect={null}
+          frameOffset={0}
+        />
+      ))}
+
+      {/* ===== LEGACY MEMES (keep for backwards compatibility) ===== */}
       <StaticMemeOverlay
-        imagePath="assets/memes/dogs-eyes-closed.jpg"
+        imagePath="assets/memes/stop.jpg"
         timestamp={contextualMemeTimestamp}
-        durationInFrames={50}
-        position="center"
-        scale={0.55}
-        playbackRate={PLAYBACK_RATE}
-        soundEffect={null}
-        frameOffset={0}
-      />
-
-      {/* ===== CHEST X-RAY OVERLAY ===== */}
-      <StaticMemeOverlay
-        imagePath="assets/memes/strep-pneumo-lung.jpg"
-        timestamp={18.785}
-        durationInFrames={60}
-        position="center"
-        scale={0.65}
-        playbackRate={PLAYBACK_RATE}
-        soundEffect={null}
-        frameOffset={0}
-      />
-
-      {/* ===== ANSWER REVEAL MEME OVERLAY ===== */}
-      <StaticMemeOverlay
-        imagePath="assets/memes/roll-safe.jpg"
-        timestamp={answerRevealTimeRaw}
         durationInFrames={50}
         position="center"
         scale={0.55}
@@ -525,12 +574,12 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         }}
       />
 
-      {/* ===== CIRCULAR PROGRESS TIMER ===== */}
+      {/* ===== CIRCULAR PROGRESS TIMER - EXPLICIT POSITIONING (V11.1) ===== */}
       <Sequence from={questionStartFrame} durationInFrames={timerDuration}>
         <div style={{
           position: 'absolute',
-          top: 16,
-          right: 16,
+          top: 240,
+          right: 60,
           zIndex: 150,
         }}>
           {(() => {
@@ -540,17 +589,17 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
             const offset = circumference * (1 - progress);
 
             // ANXIETY EFFECTS: Shake and pulse intensify as time runs out
-            const shakeIntensity = progress * 3; // 0 → 3px
+            const shakeIntensity = progress * 3;
             const shakeX = Math.sin(frame * 0.8) * shakeIntensity;
             const shakeY = Math.cos(frame * 0.6) * shakeIntensity;
 
-            // Pulse effect - more dramatic as time runs out
+            // Pulse effect
             const pulseScale = 1.0 + (Math.sin(frame * 0.3) * 0.08 * progress);
 
             // ZOOM effect - grows larger in final 5 seconds
-            const baseZoom = secondsLeft <= 5 ? 1.0 + ((5 - secondsLeft) * 0.08) : 1.0; // 1.0 → 1.4 in final 5s
+            const baseZoom = secondsLeft <= 5 ? 1.0 + ((5 - secondsLeft) * 0.08) : 1.0;
 
-            // Red color bleed in final seconds
+            // Red color bleed
             const redIntensity = Math.min(1, progress * 1.5);
 
             return (
@@ -562,7 +611,6 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
                 filter: `drop-shadow(0 0 ${20 * progress}px rgba(239, 68, 68, ${redIntensity * 0.8}))`,
               }}>
                 <svg width="140" height="140" style={{ transform: 'rotate(-90deg)' }}>
-                  {/* Background circle */}
                   <circle
                     cx="70"
                     cy="70"
@@ -571,20 +619,19 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
                     stroke="rgba(147, 51, 234, 0.2)"
                     strokeWidth="10"
                   />
-                  {/* Progress circle with gradient */}
                   <circle
                     cx="70"
                     cy="70"
                     r="50"
                     fill="none"
-                    stroke="url(#timerGradient)"
+                    stroke="url(#timerGradientDka)"
                     strokeWidth="10"
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
                     strokeLinecap="round"
                   />
                   <defs>
-                    <linearGradient id="timerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient id="timerGradientDka" x1="0%" y1="0%" x2="100%" y2="100%">
                       <stop offset="0%" stopColor={progress < 0.5 ? "#9333ea" : "#dc2626"} />
                       <stop offset="100%" stopColor={progress < 0.5 ? "#db2777" : "#ef4444"} />
                     </linearGradient>
@@ -599,7 +646,7 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: 56 + (progress * 8), // Grows from 56 → 64px
+                  fontSize: 56 + (progress * 8),
                   fontWeight: 'bold',
                   fontFamily: 'Helvetica, Arial, sans-serif',
                   color: progress < 0.5 ? '#FFFFFF' : `rgb(255, ${255 - progress * 255}, ${255 - progress * 255})`,
@@ -623,7 +670,6 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         // Red starts kicking in at 4 seconds remaining
         let baseIntensity = 0;
         if (secondsRemaining <= 4) {
-          // Ramp from 0 → 0.5 in final 4 seconds
           const redProgress = (4 - secondsRemaining) / 4;
           baseIntensity = redProgress * redProgress * 0.5;
         }
@@ -664,10 +710,10 @@ export const StreptococcusPneumoniaeLobarPneumoniaAd = () => {
         }} />
       </Sequence>
 
-      {/* ===== SYNAPTIC RECALL BRANDING ===== */}
 
-    </AbsoluteFill>
+      </AbsoluteFill>
+    </FullScreenZoom>
   );
 };
 
-export default StreptococcusPneumoniaeLobarPneumoniaAd;
+export default DkaPotassiumManagementAd;

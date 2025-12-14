@@ -15,6 +15,9 @@ import nephroticSyndromeMinimalChangeTimestamps from '../../../public/assets/aud
 import pseudomonasEcthymaGangrenosumTimestamps from '../../../public/assets/audio/pseudomonas-ecthyma-gangrenosum-timestamps.json';
 import bphFiveAlphaReductaseTimestamps from '../../../public/assets/audio/bph-5-alpha-reductase-timestamps.json';
 import streptococcusPneumoniaeLobarPneumoniaTimestamps from '../../../public/assets/audio/streptococcus-pneumoniae-lobar-pneumonia-timestamps.json';
+import epiduralHematomaTimestamps from '../../../public/assets/audio/epidural-hematoma-timestamps.json';
+import dkaPotassiumManagementTimestamps from '../../../public/assets/audio/dka-potassium-management-timestamps.json';
+import betaBlockerOverdoseTimestamps from '../../../public/assets/audio/beta-blocker-overdose-timestamps.json';
 
 export const BrainMascot = ({
   audioPath,
@@ -26,6 +29,9 @@ export const BrainMascot = ({
   shockMoment = null, // Frame when brain should react with shock (e.g., critical value)
   thinkingPeriod = null, // { start: frame, end: frame } for thinking animation
   celebrationMoment = null, // Frame when brain should celebrate (answer reveal)
+  // Custom positioning (overrides position preset)
+  customTop = null, // Custom top value in pixels
+  customLeft = null, // Custom left value in pixels or string like '50%'
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -35,7 +41,13 @@ export const BrainMascot = ({
 
   // Select the correct timestamps based on which ad is playing
   const timestampsData =
-    timestampsSource === 'streptococcus-pneumoniae-lobar-pneumonia'
+    timestampsSource === 'beta-blocker-overdose'
+      ? betaBlockerOverdoseTimestamps
+      : timestampsSource === 'dka-potassium-management'
+      ? dkaPotassiumManagementTimestamps
+      : timestampsSource === 'epidural-hematoma'
+      ? epiduralHematomaTimestamps
+      : timestampsSource === 'streptococcus-pneumoniae-lobar-pneumonia'
       ? streptococcusPneumoniaeLobarPneumoniaTimestamps
       : timestampsSource === 'bph-5-alpha-reductase'
       ? bphFiveAlphaReductaseTimestamps
@@ -227,6 +239,16 @@ export const BrainMascot = ({
       alignItems: 'center',
       justifyContent: 'center',
     };
+
+    // Custom positioning overrides presets
+    if (customTop !== null || customLeft !== null) {
+      return {
+        ...base,
+        top: customTop ?? 80,
+        left: customLeft ?? 40,
+        transform: typeof customLeft === 'string' && customLeft.includes('%') ? 'translateX(-50%)' : 'none',
+      };
+    }
 
     switch(position) {
       case 'top-center':

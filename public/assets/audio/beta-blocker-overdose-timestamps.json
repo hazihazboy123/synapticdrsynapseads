@@ -1,0 +1,1505 @@
+{
+  "script": "GOOD LORD, this woman just CHUGGED a whole BOTTLE of propranolol trying to end it all, and I GUARANTEE half you MORONS are about to pick the WRONG drug and finish the job for her. Heart rate? THIRTY-TWO. Might as well be DEAD. Blood pressure? SEVENTY over FORTY. She's got one foot in the GRAVE and the other on a BANANA PEEL. Lethargic as HELL, glucose is SIXTY-TWO, and her ticker's about to QUIT entirely. So what're you gonna give her, hotshot? A) Atropine. B) Calcium gluconate. C) Glucagon. D) Epinephrine. E) Sodium bicarbonate. Better choose quick 'cause she ain't got TIME for you to google it. Well I'll be DAMNED, it's C, glucagon! And LOOK AT THAT, three-quarters of you absolute JACKASSES picked atropine like I KNEW you would. Gonna waltz into the ICU, give atropine, stand there scratchin' your head wonderin' why your patient's FLATLINING. BRILLIANT. Now SHUT UP and I'll learn you why you're WRONG before you kill somebody's daughter. Beta-blockers CHOKE OUT the heart by BLOCKIN' beta receptors. Now here's where you IDIOTS mess up - atropine works through muscarinic receptors, which is a COMPLETELY DIFFERENT SYSTEM that don't mean SQUAT when beta receptors are BLOCKED. Might as well be pissin' in the wind. But glucagon? That beautiful SON OF A GUN bypasses the WHOLE MESS. Activates its OWN receptor, cAMP ROCKETS up, calcium FLOODS into cardiac cells through a BACK DOOR that propranolol can't TOUCH. Heart rate climbs back from the DEAD, blood pressure follows, glucose gets a BOOST. It's PERFECT. Five to ten milligrams IV push, then start a DRIP. This is STEP 1 material, folks, and half you are gonna FAIL because you were too busy scrollin' TikTok to learn your ANTIDOTES. Now get OUT of here before you kill MY patients too.",
+  "words": [
+    {
+      "word": "GOOD",
+      "start": 0,
+      "end": 0.325
+    },
+    {
+      "word": "LORD,",
+      "start": 0.406,
+      "end": 0.964
+    },
+    {
+      "word": "this",
+      "start": 1.254,
+      "end": 1.474
+    },
+    {
+      "word": "woman",
+      "start": 1.544,
+      "end": 1.858
+    },
+    {
+      "word": "just",
+      "start": 1.939,
+      "end": 2.159
+    },
+    {
+      "word": "CHUGGED",
+      "start": 2.276,
+      "end": 2.647
+    },
+    {
+      "word": "a",
+      "start": 2.694,
+      "end": 2.728
+    },
+    {
+      "word": "whole",
+      "start": 2.798,
+      "end": 3.111
+    },
+    {
+      "word": "BOTTLE",
+      "start": 3.158,
+      "end": 3.425
+    },
+    {
+      "word": "of",
+      "start": 3.448,
+      "end": 3.495
+    },
+    {
+      "word": "propranolol",
+      "start": 3.553,
+      "end": 4.435
+    },
+    {
+      "word": "trying",
+      "start": 4.505,
+      "end": 4.772
+    },
+    {
+      "word": "to",
+      "start": 4.795,
+      "end": 4.841
+    },
+    {
+      "word": "end",
+      "start": 4.923,
+      "end": 5.097
+    },
+    {
+      "word": "it",
+      "start": 5.143,
+      "end": 5.213
+    },
+    {
+      "word": "all,",
+      "start": 5.271,
+      "end": 5.584
+    },
+    {
+      "word": "and",
+      "start": 5.921,
+      "end": 6.049
+    },
+    {
+      "word": "I",
+      "start": 6.118,
+      "end": 6.153
+    },
+    {
+      "word": "GUARANTEE",
+      "start": 6.327,
+      "end": 7.047
+    },
+    {
+      "word": "half",
+      "start": 7.117,
+      "end": 7.338
+    },
+    {
+      "word": "you",
+      "start": 7.454,
+      "end": 7.581
+    },
+    {
+      "word": "MORONS",
+      "start": 7.686,
+      "end": 8.29
+    },
+    {
+      "word": "are",
+      "start": 8.58,
+      "end": 8.789
+    },
+    {
+      "word": "about",
+      "start": 8.812,
+      "end": 9.033
+    },
+    {
+      "word": "to",
+      "start": 9.067,
+      "end": 9.125
+    },
+    {
+      "word": "pick",
+      "start": 9.242,
+      "end": 9.474
+    },
+    {
+      "word": "the",
+      "start": 9.555,
+      "end": 9.659
+    },
+    {
+      "word": "WRONG",
+      "start": 9.741,
+      "end": 10.101
+    },
+    {
+      "word": "drug",
+      "start": 10.182,
+      "end": 10.484
+    },
+    {
+      "word": "and",
+      "start": 10.53,
+      "end": 10.6
+    },
+    {
+      "word": "finish",
+      "start": 10.658,
+      "end": 10.948
+    },
+    {
+      "word": "the",
+      "start": 10.995,
+      "end": 11.064
+    },
+    {
+      "word": "job",
+      "start": 11.146,
+      "end": 11.401
+    },
+    {
+      "word": "for",
+      "start": 11.471,
+      "end": 11.598
+    },
+    {
+      "word": "her.",
+      "start": 11.656,
+      "end": 12.04
+    },
+    {
+      "word": "Heart",
+      "start": 12.666,
+      "end": 12.91
+    },
+    {
+      "word": "rate?",
+      "start": 12.98,
+      "end": 13.351
+    },
+    {
+      "word": "THIRTY-TWO.",
+      "start": 13.874,
+      "end": 14.814
+    },
+    {
+      "word": "Might",
+      "start": 15.151,
+      "end": 15.348
+    },
+    {
+      "word": "as",
+      "start": 15.383,
+      "end": 15.453
+    },
+    {
+      "word": "well",
+      "start": 15.499,
+      "end": 15.685
+    },
+    {
+      "word": "be",
+      "start": 15.755,
+      "end": 15.871
+    },
+    {
+      "word": "DEAD.",
+      "start": 15.94,
+      "end": 16.498
+    },
+    {
+      "word": "Blood",
+      "start": 17.02,
+      "end": 17.287
+    },
+    {
+      "word": "pressure?",
+      "start": 17.345,
+      "end": 17.903
+    },
+    {
+      "word": "SEVENTY",
+      "start": 18.425,
+      "end": 19.052
+    },
+    {
+      "word": "over",
+      "start": 19.76,
+      "end": 20.051
+    },
+    {
+      "word": "FORTY.",
+      "start": 20.167,
+      "end": 20.805
+    },
+    {
+      "word": "She's",
+      "start": 21.223,
+      "end": 21.444
+    },
+    {
+      "word": "got",
+      "start": 21.479,
+      "end": 21.664
+    },
+    {
+      "word": "one",
+      "start": 21.734,
+      "end": 21.931
+    },
+    {
+      "word": "foot",
+      "start": 22.001,
+      "end": 22.21
+    },
+    {
+      "word": "in",
+      "start": 22.233,
+      "end": 22.291
+    },
+    {
+      "word": "the",
+      "start": 22.326,
+      "end": 22.384
+    },
+    {
+      "word": "GRAVE",
+      "start": 22.442,
+      "end": 22.86
+    },
+    {
+      "word": "and",
+      "start": 22.883,
+      "end": 23.011
+    },
+    {
+      "word": "the",
+      "start": 23.116,
+      "end": 23.232
+    },
+    {
+      "word": "other",
+      "start": 23.29,
+      "end": 23.487
+    },
+    {
+      "word": "on",
+      "start": 23.557,
+      "end": 23.673
+    },
+    {
+      "word": "a",
+      "start": 23.719,
+      "end": 23.754
+    },
+    {
+      "word": "BANANA",
+      "start": 23.812,
+      "end": 24.277
+    },
+    {
+      "word": "PEEL.",
+      "start": 24.358,
+      "end": 24.962
+    },
+    {
+      "word": "Lethargic",
+      "start": 25.519,
+      "end": 26.146
+    },
+    {
+      "word": "as",
+      "start": 26.204,
+      "end": 26.274
+    },
+    {
+      "word": "HELL,",
+      "start": 26.32,
+      "end": 26.645
+    },
+    {
+      "word": "glucose",
+      "start": 26.715,
+      "end": 27.191
+    },
+    {
+      "word": "is",
+      "start": 27.226,
+      "end": 27.318
+    },
+    {
+      "word": "SIXTY-TWO,",
+      "start": 27.376,
+      "end": 28.294
+    },
+    {
+      "word": "and",
+      "start": 28.41,
+      "end": 28.596
+    },
+    {
+      "word": "her",
+      "start": 28.665,
+      "end": 28.723
+    },
+    {
+      "word": "ticker's",
+      "start": 28.781,
+      "end": 29.095
+    },
+    {
+      "word": "about",
+      "start": 29.13,
+      "end": 29.35
+    },
+    {
+      "word": "to",
+      "start": 29.373,
+      "end": 29.431
+    },
+    {
+      "word": "QUIT",
+      "start": 29.513,
+      "end": 29.791
+    },
+    {
+      "word": "entirely.",
+      "start": 29.838,
+      "end": 30.349
+    },
+    {
+      "word": "So",
+      "start": 30.395,
+      "end": 30.511
+    },
+    {
+      "word": "what're",
+      "start": 30.558,
+      "end": 30.72
+    },
+    {
+      "word": "you",
+      "start": 30.743,
+      "end": 30.801
+    },
+    {
+      "word": "gonna",
+      "start": 30.825,
+      "end": 30.976
+    },
+    {
+      "word": "give",
+      "start": 31.022,
+      "end": 31.15
+    },
+    {
+      "word": "her,",
+      "start": 31.185,
+      "end": 31.324
+    },
+    {
+      "word": "hotshot?",
+      "start": 31.359,
+      "end": 31.962
+    },
+    {
+      "word": "A)",
+      "start": 32.322,
+      "end": 32.624
+    },
+    {
+      "word": "Atropine.",
+      "start": 32.741,
+      "end": 33.542
+    },
+    {
+      "word": "B)",
+      "start": 33.6,
+      "end": 34.064
+    },
+    {
+      "word": "Calcium",
+      "start": 34.32,
+      "end": 34.854
+    },
+    {
+      "word": "gluconate.",
+      "start": 34.958,
+      "end": 35.527
+    },
+    {
+      "word": "C)",
+      "start": 35.62,
+      "end": 36.096
+    },
+    {
+      "word": "Glucagon.",
+      "start": 36.316,
+      "end": 37.152
+    },
+    {
+      "word": "D)",
+      "start": 37.28,
+      "end": 37.907
+    },
+    {
+      "word": "Epinephrine.",
+      "start": 38.162,
+      "end": 38.975
+    },
+    {
+      "word": "E)",
+      "start": 39.149,
+      "end": 39.637
+    },
+    {
+      "word": "Sodium",
+      "start": 39.811,
+      "end": 40.31
+    },
+    {
+      "word": "bicarbonate.",
+      "start": 40.38,
+      "end": 41.251
+    },
+    {
+      "word": "Better",
+      "start": 41.587,
+      "end": 41.843
+    },
+    {
+      "word": "choose",
+      "start": 41.878,
+      "end": 42.145
+    },
+    {
+      "word": "quick",
+      "start": 42.191,
+      "end": 42.447
+    },
+    {
+      "word": "'cause",
+      "start": 42.505,
+      "end": 42.806
+    },
+    {
+      "word": "she",
+      "start": 42.83,
+      "end": 42.923
+    },
+    {
+      "word": "ain't",
+      "start": 42.969,
+      "end": 43.155
+    },
+    {
+      "word": "got",
+      "start": 43.19,
+      "end": 43.399
+    },
+    {
+      "word": "TIME",
+      "start": 43.468,
+      "end": 43.782
+    },
+    {
+      "word": "for",
+      "start": 43.816,
+      "end": 43.921
+    },
+    {
+      "word": "you",
+      "start": 43.991,
+      "end": 44.072
+    },
+    {
+      "word": "to",
+      "start": 44.13,
+      "end": 44.188
+    },
+    {
+      "word": "google",
+      "start": 44.281,
+      "end": 44.664
+    },
+    {
+      "word": "it.",
+      "start": 44.687,
+      "end": 44.838
+    },
+    {
+      "word": "Well",
+      "start": 44.989,
+      "end": 45.175
+    },
+    {
+      "word": "I'll",
+      "start": 45.221,
+      "end": 45.372
+    },
+    {
+      "word": "be",
+      "start": 45.419,
+      "end": 45.535
+    },
+    {
+      "word": "DAMNED,",
+      "start": 45.604,
+      "end": 46.127
+    },
+    {
+      "word": "it's",
+      "start": 46.15,
+      "end": 46.301
+    },
+    {
+      "word": "C,",
+      "start": 46.324,
+      "end": 46.835
+    },
+    {
+      "word": "glucagon!",
+      "start": 47.091,
+      "end": 47.95
+    },
+    {
+      "word": "And",
+      "start": 48.101,
+      "end": 48.263
+    },
+    {
+      "word": "LOOK",
+      "start": 48.31,
+      "end": 48.472
+    },
+    {
+      "word": "AT",
+      "start": 48.507,
+      "end": 48.565
+    },
+    {
+      "word": "THAT,",
+      "start": 48.611,
+      "end": 49.157
+    },
+    {
+      "word": "three-quarters",
+      "start": 49.447,
+      "end": 50.167
+    },
+    {
+      "word": "of",
+      "start": 50.214,
+      "end": 50.272
+    },
+    {
+      "word": "you",
+      "start": 50.318,
+      "end": 50.423
+    },
+    {
+      "word": "absolute",
+      "start": 50.539,
+      "end": 51.177
+    },
+    {
+      "word": "JACKASSES",
+      "start": 51.27,
+      "end": 52.118
+    },
+    {
+      "word": "picked",
+      "start": 52.211,
+      "end": 52.489
+    },
+    {
+      "word": "atropine",
+      "start": 52.559,
+      "end": 53.128
+    },
+    {
+      "word": "like",
+      "start": 53.151,
+      "end": 53.348
+    },
+    {
+      "word": "I",
+      "start": 53.395,
+      "end": 53.43
+    },
+    {
+      "word": "KNEW",
+      "start": 53.523,
+      "end": 53.732
+    },
+    {
+      "word": "you",
+      "start": 53.778,
+      "end": 53.883
+    },
+    {
+      "word": "would.",
+      "start": 53.964,
+      "end": 54.451
+    },
+    {
+      "word": "Gonna",
+      "start": 55.276,
+      "end": 55.531
+    },
+    {
+      "word": "waltz",
+      "start": 55.612,
+      "end": 55.996
+    },
+    {
+      "word": "into",
+      "start": 56.065,
+      "end": 56.263
+    },
+    {
+      "word": "the",
+      "start": 56.332,
+      "end": 56.402
+    },
+    {
+      "word": "ICU,",
+      "start": 56.46,
+      "end": 57.354
+    },
+    {
+      "word": "give",
+      "start": 57.876,
+      "end": 58.155
+    },
+    {
+      "word": "atropine,",
+      "start": 58.225,
+      "end": 59.119
+    },
+    {
+      "word": "stand",
+      "start": 59.571,
+      "end": 59.943
+    },
+    {
+      "word": "there",
+      "start": 59.989,
+      "end": 60.21
+    },
+    {
+      "word": "scratchin'",
+      "start": 60.268,
+      "end": 60.941
+    },
+    {
+      "word": "your",
+      "start": 60.976,
+      "end": 61.127
+    },
+    {
+      "word": "head",
+      "start": 61.197,
+      "end": 61.522
+    },
+    {
+      "word": "wonderin'",
+      "start": 61.905,
+      "end": 62.439
+    },
+    {
+      "word": "why",
+      "start": 62.474,
+      "end": 62.683
+    },
+    {
+      "word": "your",
+      "start": 62.741,
+      "end": 62.903
+    },
+    {
+      "word": "patient's",
+      "start": 62.985,
+      "end": 63.53
+    },
+    {
+      "word": "FLATLINING.",
+      "start": 63.658,
+      "end": 64.912
+    },
+    {
+      "word": "BRILLIANT.",
+      "start": 65.736,
+      "end": 66.503
+    },
+    {
+      "word": "Now",
+      "start": 66.746,
+      "end": 66.944
+    },
+    {
+      "word": "SHUT",
+      "start": 67.06,
+      "end": 67.455
+    },
+    {
+      "word": "UP",
+      "start": 67.536,
+      "end": 67.664
+    },
+    {
+      "word": "and",
+      "start": 67.919,
+      "end": 68.082
+    },
+    {
+      "word": "I'll",
+      "start": 68.151,
+      "end": 68.291
+    },
+    {
+      "word": "learn",
+      "start": 68.325,
+      "end": 68.511
+    },
+    {
+      "word": "you",
+      "start": 68.569,
+      "end": 68.662
+    },
+    {
+      "word": "why",
+      "start": 68.72,
+      "end": 68.906
+    },
+    {
+      "word": "you're",
+      "start": 68.964,
+      "end": 69.173
+    },
+    {
+      "word": "WRONG",
+      "start": 69.231,
+      "end": 69.835
+    },
+    {
+      "word": "before",
+      "start": 70.114,
+      "end": 70.532
+    },
+    {
+      "word": "you",
+      "start": 70.59,
+      "end": 70.694
+    },
+    {
+      "word": "kill",
+      "start": 70.81,
+      "end": 71.054
+    },
+    {
+      "word": "somebody's",
+      "start": 71.135,
+      "end": 71.681
+    },
+    {
+      "word": "daughter.",
+      "start": 71.774,
+      "end": 72.389
+    },
+    {
+      "word": "Beta-blockers",
+      "start": 72.877,
+      "end": 73.794
+    },
+    {
+      "word": "CHOKE",
+      "start": 74.108,
+      "end": 74.491
+    },
+    {
+      "word": "OUT",
+      "start": 74.525,
+      "end": 74.711
+    },
+    {
+      "word": "the",
+      "start": 74.746,
+      "end": 74.862
+    },
+    {
+      "word": "heart",
+      "start": 74.932,
+      "end": 75.245
+    },
+    {
+      "word": "by",
+      "start": 75.617,
+      "end": 75.826
+    },
+    {
+      "word": "BLOCKIN'",
+      "start": 75.942,
+      "end": 76.453
+    },
+    {
+      "word": "beta",
+      "start": 76.522,
+      "end": 76.952
+    },
+    {
+      "word": "receptors.",
+      "start": 77.033,
+      "end": 77.95
+    },
+    {
+      "word": "Now",
+      "start": 78.74,
+      "end": 78.949
+    },
+    {
+      "word": "here's",
+      "start": 79.019,
+      "end": 79.297
+    },
+    {
+      "word": "where",
+      "start": 79.332,
+      "end": 79.529
+    },
+    {
+      "word": "you",
+      "start": 79.599,
+      "end": 79.704
+    },
+    {
+      "word": "IDIOTS",
+      "start": 79.866,
+      "end": 80.389
+    },
+    {
+      "word": "mess",
+      "start": 80.505,
+      "end": 80.76
+    },
+    {
+      "word": "up",
+      "start": 80.853,
+      "end": 80.992
+    },
+    {
+      "word": "-",
+      "start": 81.306,
+      "end": 81.329
+    },
+    {
+      "word": "atropine",
+      "start": 81.7,
+      "end": 82.432
+    },
+    {
+      "word": "works",
+      "start": 82.49,
+      "end": 82.734
+    },
+    {
+      "word": "through",
+      "start": 82.769,
+      "end": 83.024
+    },
+    {
+      "word": "muscarinic",
+      "start": 83.082,
+      "end": 83.86
+    },
+    {
+      "word": "receptors,",
+      "start": 83.941,
+      "end": 84.719
+    },
+    {
+      "word": "which",
+      "start": 85.207,
+      "end": 85.45
+    },
+    {
+      "word": "is",
+      "start": 85.52,
+      "end": 85.625
+    },
+    {
+      "word": "a",
+      "start": 85.694,
+      "end": 85.718
+    },
+    {
+      "word": "COMPLETELY",
+      "start": 85.799,
+      "end": 86.658
+    },
+    {
+      "word": "DIFFERENT",
+      "start": 86.774,
+      "end": 87.169
+    },
+    {
+      "word": "SYSTEM",
+      "start": 87.227,
+      "end": 87.668
+    },
+    {
+      "word": "that",
+      "start": 88.04,
+      "end": 88.237
+    },
+    {
+      "word": "don't",
+      "start": 88.295,
+      "end": 88.504
+    },
+    {
+      "word": "mean",
+      "start": 88.562,
+      "end": 88.736
+    },
+    {
+      "word": "SQUAT",
+      "start": 88.852,
+      "end": 89.375
+    },
+    {
+      "word": "when",
+      "start": 89.804,
+      "end": 90.013
+    },
+    {
+      "word": "beta",
+      "start": 90.083,
+      "end": 90.339
+    },
+    {
+      "word": "receptors",
+      "start": 90.397,
+      "end": 90.884
+    },
+    {
+      "word": "are",
+      "start": 90.919,
+      "end": 91.024
+    },
+    {
+      "word": "BLOCKED.",
+      "start": 91.058,
+      "end": 91.604
+    },
+    {
+      "word": "Might",
+      "start": 92.126,
+      "end": 92.382
+    },
+    {
+      "word": "as",
+      "start": 92.417,
+      "end": 92.521
+    },
+    {
+      "word": "well",
+      "start": 92.602,
+      "end": 92.811
+    },
+    {
+      "word": "be",
+      "start": 92.881,
+      "end": 93.044
+    },
+    {
+      "word": "pissin'",
+      "start": 93.218,
+      "end": 93.763
+    },
+    {
+      "word": "in",
+      "start": 93.798,
+      "end": 93.88
+    },
+    {
+      "word": "the",
+      "start": 93.926,
+      "end": 93.996
+    },
+    {
+      "word": "wind.",
+      "start": 94.089,
+      "end": 94.634
+    },
+    {
+      "word": "But",
+      "start": 95.261,
+      "end": 95.47
+    },
+    {
+      "word": "glucagon?",
+      "start": 95.54,
+      "end": 96.422
+    },
+    {
+      "word": "That",
+      "start": 96.875,
+      "end": 97.154
+    },
+    {
+      "word": "beautiful",
+      "start": 97.235,
+      "end": 97.688
+    },
+    {
+      "word": "SON",
+      "start": 97.839,
+      "end": 98.152
+    },
+    {
+      "word": "OF",
+      "start": 98.21,
+      "end": 98.268
+    },
+    {
+      "word": "A",
+      "start": 98.326,
+      "end": 98.349
+    },
+    {
+      "word": "GUN",
+      "start": 98.442,
+      "end": 98.698
+    },
+    {
+      "word": "bypasses",
+      "start": 98.767,
+      "end": 99.429
+    },
+    {
+      "word": "the",
+      "start": 99.476,
+      "end": 99.545
+    },
+    {
+      "word": "WHOLE",
+      "start": 99.58,
+      "end": 99.835
+    },
+    {
+      "word": "MESS.",
+      "start": 99.894,
+      "end": 100.509
+    },
+    {
+      "word": "Activates",
+      "start": 101.031,
+      "end": 101.728
+    },
+    {
+      "word": "its",
+      "start": 101.786,
+      "end": 101.937
+    },
+    {
+      "word": "OWN",
+      "start": 102.007,
+      "end": 102.25
+    },
+    {
+      "word": "receptor,",
+      "start": 102.308,
+      "end": 102.924
+    },
+    {
+      "word": "cAMP",
+      "start": 103.005,
+      "end": 103.388
+    },
+    {
+      "word": "ROCKETS",
+      "start": 103.481,
+      "end": 103.957
+    },
+    {
+      "word": "up,",
+      "start": 104.015,
+      "end": 104.375
+    },
+    {
+      "word": "calcium",
+      "start": 104.63,
+      "end": 105.176
+    },
+    {
+      "word": "FLOODS",
+      "start": 105.257,
+      "end": 105.64
+    },
+    {
+      "word": "into",
+      "start": 105.675,
+      "end": 105.838
+    },
+    {
+      "word": "cardiac",
+      "start": 105.919,
+      "end": 106.442
+    },
+    {
+      "word": "cells",
+      "start": 106.511,
+      "end": 106.813
+    },
+    {
+      "word": "through",
+      "start": 106.848,
+      "end": 107.034
+    },
+    {
+      "word": "a",
+      "start": 107.057,
+      "end": 107.08
+    },
+    {
+      "word": "BACK",
+      "start": 107.173,
+      "end": 107.428
+    },
+    {
+      "word": "DOOR",
+      "start": 107.51,
+      "end": 107.742
+    },
+    {
+      "word": "that",
+      "start": 107.8,
+      "end": 107.928
+    },
+    {
+      "word": "propranolol",
+      "start": 108.009,
+      "end": 108.938
+    },
+    {
+      "word": "can't",
+      "start": 109.019,
+      "end": 109.344
+    },
+    {
+      "word": "TOUCH.",
+      "start": 109.402,
+      "end": 110.087
+    },
+    {
+      "word": "Heart",
+      "start": 110.702,
+      "end": 110.935
+    },
+    {
+      "word": "rate",
+      "start": 111.004,
+      "end": 111.19
+    },
+    {
+      "word": "climbs",
+      "start": 111.225,
+      "end": 111.608
+    },
+    {
+      "word": "back",
+      "start": 111.678,
+      "end": 111.921
+    },
+    {
+      "word": "from",
+      "start": 111.979,
+      "end": 112.142
+    },
+    {
+      "word": "the",
+      "start": 112.177,
+      "end": 112.247
+    },
+    {
+      "word": "DEAD,",
+      "start": 112.328,
+      "end": 112.955
+    },
+    {
+      "word": "blood",
+      "start": 113.291,
+      "end": 113.57
+    },
+    {
+      "word": "pressure",
+      "start": 113.628,
+      "end": 113.988
+    },
+    {
+      "word": "follows,",
+      "start": 114.058,
+      "end": 114.65
+    },
+    {
+      "word": "glucose",
+      "start": 114.87,
+      "end": 115.602
+    },
+    {
+      "word": "gets",
+      "start": 115.648,
+      "end": 115.892
+    },
+    {
+      "word": "a",
+      "start": 115.95,
+      "end": 115.985
+    },
+    {
+      "word": "BOOST.",
+      "start": 116.206,
+      "end": 117.099
+    },
+    {
+      "word": "It's",
+      "start": 117.494,
+      "end": 117.819
+    },
+    {
+      "word": "PERFECT.",
+      "start": 117.993,
+      "end": 119.062
+    },
+    {
+      "word": "Five",
+      "start": 119.514,
+      "end": 119.909
+    },
+    {
+      "word": "to",
+      "start": 119.956,
+      "end": 120.025
+    },
+    {
+      "word": "ten",
+      "start": 120.106,
+      "end": 120.339
+    },
+    {
+      "word": "milligrams",
+      "start": 120.432,
+      "end": 121.082
+    },
+    {
+      "word": "IV",
+      "start": 121.163,
+      "end": 121.5
+    },
+    {
+      "word": "push,",
+      "start": 121.72,
+      "end": 122.347
+    },
+    {
+      "word": "then",
+      "start": 122.684,
+      "end": 122.881
+    },
+    {
+      "word": "start",
+      "start": 122.963,
+      "end": 123.264
+    },
+    {
+      "word": "a",
+      "start": 123.311,
+      "end": 123.334
+    },
+    {
+      "word": "DRIP.",
+      "start": 123.392,
+      "end": 123.891
+    },
+    {
+      "word": "This",
+      "start": 124.344,
+      "end": 124.565
+    },
+    {
+      "word": "is",
+      "start": 124.634,
+      "end": 124.715
+    },
+    {
+      "word": "STEP",
+      "start": 124.762,
+      "end": 125.052
+    },
+    {
+      "word": "1",
+      "start": 125.133,
+      "end": 125.261
+    },
+    {
+      "word": "material,",
+      "start": 125.319,
+      "end": 125.807
+    },
+    {
+      "word": "folks,",
+      "start": 125.841,
+      "end": 126.143
+    },
+    {
+      "word": "and",
+      "start": 126.166,
+      "end": 126.283
+    },
+    {
+      "word": "half",
+      "start": 126.503,
+      "end": 126.735
+    },
+    {
+      "word": "you",
+      "start": 126.805,
+      "end": 126.898
+    },
+    {
+      "word": "are",
+      "start": 126.933,
+      "end": 127.026
+    },
+    {
+      "word": "gonna",
+      "start": 127.049,
+      "end": 127.246
+    },
+    {
+      "word": "FAIL",
+      "start": 127.339,
+      "end": 127.664
+    },
+    {
+      "word": "because",
+      "start": 127.745,
+      "end": 128.187
+    },
+    {
+      "word": "you",
+      "start": 128.407,
+      "end": 128.523
+    },
+    {
+      "word": "were",
+      "start": 128.57,
+      "end": 128.709
+    },
+    {
+      "word": "too",
+      "start": 128.767,
+      "end": 128.941
+    },
+    {
+      "word": "busy",
+      "start": 129.034,
+      "end": 129.359
+    },
+    {
+      "word": "scrollin'",
+      "start": 129.452,
+      "end": 130.067
+    },
+    {
+      "word": "TikTok",
+      "start": 130.125,
+      "end": 130.741
+    },
+    {
+      "word": "to",
+      "start": 130.81,
+      "end": 130.88
+    },
+    {
+      "word": "learn",
+      "start": 130.961,
+      "end": 131.182
+    },
+    {
+      "word": "your",
+      "start": 131.228,
+      "end": 131.368
+    },
+    {
+      "word": "ANTIDOTES.",
+      "start": 131.519,
+      "end": 132.738
+    },
+    {
+      "word": "Now",
+      "start": 133.26,
+      "end": 133.434
+    },
+    {
+      "word": "get",
+      "start": 133.585,
+      "end": 133.817
+    },
+    {
+      "word": "OUT",
+      "start": 133.887,
+      "end": 134.119
+    },
+    {
+      "word": "of",
+      "start": 134.154,
+      "end": 134.212
+    },
+    {
+      "word": "here",
+      "start": 134.27,
+      "end": 134.456
+    },
+    {
+      "word": "before",
+      "start": 134.514,
+      "end": 134.804
+    },
+    {
+      "word": "you",
+      "start": 134.851,
+      "end": 134.932
+    },
+    {
+      "word": "kill",
+      "start": 134.99,
+      "end": 135.176
+    },
+    {
+      "word": "MY",
+      "start": 135.257,
+      "end": 135.42
+    },
+    {
+      "word": "patients",
+      "start": 135.501,
+      "end": 135.954
+    },
+    {
+      "word": "too.",
+      "start": 136.012,
+      "end": 136.72
+    }
+  ]
+}
