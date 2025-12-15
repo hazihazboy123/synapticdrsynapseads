@@ -1,0 +1,17 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014212">
+<path id="gag (MA)" d="M7.9805 15.961C12.388 15.961 15.961 12.388 15.961 7.9805C15.961 3.57299 12.388 0 7.9805 0C3.57299 0 0 3.57299 0 7.9805C0 12.388 3.57299 15.961 7.9805 15.961Z" fill="url(#paint0_radial_938_24264)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24264" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.98191 7.97511) scale(7.98018)">
+<stop stop-color="#BBC8EF"/>
+<stop offset="0.2678" stop-color="#B8C6EE"/>
+<stop offset="0.4407" stop-color="#B0BEEA"/>
+<stop offset="0.5868" stop-color="#A1B2E4"/>
+<stop offset="0.718" stop-color="#8CA0DB"/>
+<stop offset="0.8391" stop-color="#7188CF"/>
+<stop offset="0.9514" stop-color="#506CC1"/>
+<stop offset="1" stop-color="#3F5EBA"/>
+</radialGradient>
+</defs>
+</svg>

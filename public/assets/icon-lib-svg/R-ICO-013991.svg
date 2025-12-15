@@ -1,0 +1,30 @@
+<svg width="110" height="63" viewBox="0 0 110 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013991">
+<g id="Group">
+<path id="Vector" d="M52.1025 62.52C60.3868 62.52 67.1025 55.8043 67.1025 47.52C67.1025 39.2357 60.3868 32.52 52.1025 32.52C43.8183 32.52 37.1025 39.2357 37.1025 47.52C37.1025 55.8043 43.8183 62.52 52.1025 62.52Z" fill="url(#paint0_radial_938_25012)"/>
+<path id="Vector_2" d="M47.0996 48.1875V46.6465H57.1055V48.1875H47.0996Z" fill="white"/>
+</g>
+<g id="Group_2">
+<path id="Vector_3" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="url(#paint1_radial_938_25012)"/>
+<path id="Vector_4" d="M9.99707 15.6675V14.1265H20.003V15.6675H9.99707Z" fill="white"/>
+</g>
+<g id="Group_3">
+<path id="Vector_5" d="M94.8301 33.5774C103.114 33.5774 109.83 26.8617 109.83 18.5774C109.83 10.2931 103.114 3.57739 94.8301 3.57739C86.5458 3.57739 79.8301 10.2931 79.8301 18.5774C79.8301 26.8617 86.5458 33.5774 94.8301 33.5774Z" fill="url(#paint2_radial_938_25012)"/>
+<path id="Vector_6" d="M89.8271 19.2449V17.7039H99.833V19.2449H89.8271Z" fill="white"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25012" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.1025 47.52) scale(15)">
+<stop stop-color="#D82777"/>
+<stop offset="1" stop-color="#661238"/>
+</radialGradient>
+<radialGradient id="paint1_radial_938_25012" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15 15) scale(15)">
+<stop stop-color="#D82777"/>
+<stop offset="1" stop-color="#661238"/>
+</radialGradient>
+<radialGradient id="paint2_radial_938_25012" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(94.8301 18.5774) scale(15)">
+<stop stop-color="#D82777"/>
+<stop offset="1" stop-color="#661238"/>
+</radialGradient>
+</defs>
+</svg>

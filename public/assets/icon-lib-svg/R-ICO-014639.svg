@@ -1,0 +1,46 @@
+<svg width="36" height="57" viewBox="0 0 36 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014639">
+<g id="Group">
+<path id="Vector" d="M10.4759 6.47461H5.46936V25.3319H10.4759V6.47461Z" fill="url(#paint0_linear_938_23059)"/>
+<path id="Tyrosine_x5F_Kinase_3_" d="M10.9451 56.7054H5C2.2386 56.7054 0 54.4668 0 51.7054V30.332C0 27.5706 2.2386 25.332 5 25.332H10.9451C13.7065 25.332 15.9451 27.5706 15.9451 30.332V51.7054C15.9451 54.4668 13.7066 56.7054 10.9451 56.7054Z" fill="url(#paint1_linear_938_23059)"/>
+<path id="TM_3_" d="M12.1742 15.0474H3.77087V23.4507H12.1742V15.0474Z" fill="#790091"/>
+<path id="Glycine-rich_3_" d="M10.9451 13.1658H5C2.2386 13.1658 0 10.9272 0 8.1658V5C0 2.2386 2.2386 0 5 0H10.9451C13.7065 0 15.9451 2.2386 15.9451 5V8.1658C15.9451 10.9272 13.7066 13.1658 10.9451 13.1658Z" fill="url(#paint2_linear_938_23059)"/>
+</g>
+<g id="Group_2">
+<path id="Vector_2" d="M30.4757 6.47461H25.4692V25.3319H30.4757V6.47461Z" fill="url(#paint3_linear_938_23059)"/>
+<path id="Tyrosine_x5F_Kinase_2_" d="M30.9451 56.7054H25C22.2386 56.7054 20 54.4668 20 51.7054V30.332C20 27.5706 22.2386 25.332 25 25.332H30.9451C33.7065 25.332 35.9451 27.5706 35.9451 30.332V51.7054C35.9451 54.4668 33.7066 56.7054 30.9451 56.7054Z" fill="url(#paint4_linear_938_23059)"/>
+<path id="TM_2_" d="M32.1742 15.0474H23.7709V23.4507H32.1742V15.0474Z" fill="#790091"/>
+<path id="Glycine-rich_2_" d="M30.9451 13.1658H25C22.2386 13.1658 20 10.9272 20 8.1658V5C20 2.2386 22.2386 0 25 0H30.9451C33.7065 0 35.9451 2.2386 35.9451 5V8.1658C35.9451 10.9272 33.7066 13.1658 30.9451 13.1658Z" fill="url(#paint5_linear_938_23059)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_23059" x1="5.46936" y1="15.9033" x2="10.4759" y2="15.9033" gradientUnits="userSpaceOnUse">
+<stop stop-color="#790091"/>
+<stop offset="0.4" stop-color="#B100D4"/>
+<stop offset="1" stop-color="#790091"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_23059" x1="7.9726" y1="56.7054" x2="7.9726" y2="25.332" gradientUnits="userSpaceOnUse">
+<stop stop-color="#450652"/>
+<stop offset="1" stop-color="#790091"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_23059" x1="7.9726" y1="13.1658" x2="7.9726" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AF0ECF"/>
+<stop offset="0.5" stop-color="#790091"/>
+<stop offset="1" stop-color="#C000E6"/>
+</linearGradient>
+<linearGradient id="paint3_linear_938_23059" x1="25.4692" y1="15.9033" x2="30.4757" y2="15.9033" gradientUnits="userSpaceOnUse">
+<stop stop-color="#790091"/>
+<stop offset="0.4" stop-color="#B100D4"/>
+<stop offset="1" stop-color="#790091"/>
+</linearGradient>
+<linearGradient id="paint4_linear_938_23059" x1="27.9726" y1="56.7054" x2="27.9726" y2="25.332" gradientUnits="userSpaceOnUse">
+<stop stop-color="#450652"/>
+<stop offset="1" stop-color="#790091"/>
+</linearGradient>
+<linearGradient id="paint5_linear_938_23059" x1="27.9726" y1="13.1658" x2="27.9726" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AF0ECF"/>
+<stop offset="0.5" stop-color="#790091"/>
+<stop offset="1" stop-color="#C000E6"/>
+</linearGradient>
+</defs>
+</svg>

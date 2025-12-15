@@ -1,0 +1,17 @@
+<svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013919">
+<g id="AFB1" clip-path="url(#clip0_938_24674)">
+<path id="Vector" d="M0 8.75L21 0L42 8.75V21.25L21 30L0 21.25V8.75Z" fill="url(#paint0_linear_938_24674)"/>
+<text id="T" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.32031" y="19.1602">AFB1</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24674" x1="21" y1="0" x2="21" y2="30" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4AB7DE"/>
+<stop offset="1" stop-color="#3F5C74"/>
+</linearGradient>
+<clipPath id="clip0_938_24674">
+<rect width="42" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

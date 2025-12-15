@@ -1,0 +1,26 @@
+<svg width="13" height="120" viewBox="0 0 13 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013585">
+<path id="Vector" d="M12.3372 0H0V119.075H12.3372V0Z" fill="url(#paint0_linear_938_24386)"/>
+<g id="LAT">
+<text id="L" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="1.62524" y="74.9185">L</tspan></text>
+<text id="A" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="1.62524" y="87.9185">A</tspan></text>
+<text id="T" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="1.62524" y="100.918">T</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24386" x1="0" y1="59.5375" x2="12.3372" y2="59.5375" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6B4E22"/>
+<stop offset="0.0555" stop-color="#715223"/>
+<stop offset="0.1308" stop-color="#825E26"/>
+<stop offset="0.2174" stop-color="#9F712B"/>
+<stop offset="0.3118" stop-color="#C68B33"/>
+<stop offset="0.3513" stop-color="#D99836"/>
+<stop offset="0.3965" stop-color="#BD8531"/>
+<stop offset="0.4559" stop-color="#9F712C"/>
+<stop offset="0.519" stop-color="#886227"/>
+<stop offset="0.5864" stop-color="#785724"/>
+<stop offset="0.6613" stop-color="#6E5023"/>
+<stop offset="0.7585" stop-color="#6B4E22"/>
+</linearGradient>
+</defs>
+</svg>

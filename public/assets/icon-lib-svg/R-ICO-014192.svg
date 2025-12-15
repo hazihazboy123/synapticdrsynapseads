@@ -1,0 +1,17 @@
+<svg width="90" height="48" viewBox="0 0 90 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014192">
+<g id="Abstract" clip-path="url(#clip0_938_24912)">
+<path id="bg" d="M45 0.5C57.361 0.5 68.5273 3.17331 76.585 7.4707C84.6638 11.7795 89.5 17.6472 89.5 24C89.5 30.3528 84.6638 36.2205 76.585 40.5293C68.5273 44.8267 57.361 47.5 45 47.5C32.639 47.5 21.4727 44.8267 13.415 40.5293C5.33617 36.2205 0.5 30.3528 0.5 24C0.5 17.6472 5.33617 11.7795 13.415 7.4707C21.4727 3.17331 32.639 0.5 45 0.5Z" fill="url(#paint0_radial_938_24912)" stroke="#683417"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="2.33594" y="28.1484">METABOLITES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24912" cx="0" cy="0" r="1" gradientTransform="matrix(29.0136 20.4256 -38.2979 15.4739 31.1251 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C5B9B2"/>
+<stop offset="1" stop-color="#BF5415"/>
+</radialGradient>
+<clipPath id="clip0_938_24912">
+<rect width="90" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

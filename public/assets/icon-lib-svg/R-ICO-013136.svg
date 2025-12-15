@@ -1,0 +1,17 @@
+<svg width="70" height="48" viewBox="0 0 70 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013136">
+<g id="Abstract" clip-path="url(#clip0_938_24955)">
+<path id="bg" d="M35 0.5C44.577 0.5 53.2255 3.16245 59.4658 7.44141C65.7084 11.7221 69.5 17.5852 69.5 24C69.5 30.4148 65.7084 36.2779 59.4658 40.5586C53.2255 44.8375 44.577 47.5 35 47.5C25.423 47.5 16.7745 44.8375 10.5342 40.5586C4.29156 36.2779 0.5 30.4148 0.5 24C0.5 17.5852 4.29156 11.7221 10.5342 7.44141C16.7745 3.16245 25.423 0.5 35 0.5Z" fill="url(#paint0_radial_938_24955)" stroke="#331672"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="7.05664" y="21.1483">ORGANIC&#10;</tspan><tspan x="12.0605" y="35.1483">ANIONS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24955" cx="0" cy="0" r="1" gradientTransform="matrix(22.5661 20.4256 -29.7873 15.4739 24.2084 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B2C5B3"/>
+<stop offset="1" stop-color="#333478"/>
+</radialGradient>
+<clipPath id="clip0_938_24955">
+<rect width="70" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

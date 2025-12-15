@@ -1,0 +1,25 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012866">
+<g id="BG">
+<mask id="path-1-outside-1_938_24239" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34" fill="black">
+<rect fill="white" width="34" height="34"/>
+<path d="M16.6076 1C25.2129 1 32.2142 8.0014 32.2142 16.6076C32.2142 25.2138 25.2128 32.2142 16.6076 32.2142C8.0013 32.2142 1 25.2128 1 16.6076C1 8.0024 8.0013 1 16.6076 1Z"/>
+</mask>
+<path d="M16.6076 1C25.2129 1 32.2142 8.0014 32.2142 16.6076C32.2142 25.2138 25.2128 32.2142 16.6076 32.2142C8.0013 32.2142 1 25.2128 1 16.6076C1 8.0024 8.0013 1 16.6076 1Z" fill="url(#paint0_radial_938_24239)"/>
+<path d="M16.6076 1C25.2129 1 32.2142 8.0014 32.2142 16.6076C32.2142 25.2138 25.2128 32.2142 16.6076 32.2142C8.0013 32.2142 1 25.2128 1 16.6076C1 8.0024 8.0013 1 16.6076 1Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_938_24239)"/>
+<path d="M16.6076 1C25.2129 1 32.2142 8.0014 32.2142 16.6076C32.2142 25.2138 25.2128 32.2142 16.6076 32.2142C8.0013 32.2142 1 25.2128 1 16.6076C1 8.0024 8.0013 1 16.6076 1Z" stroke="#A8602A" stroke-opacity="0.2" stroke-width="2" mask="url(#path-1-outside-1_938_24239)"/>
+</g>
+<text id="IL3" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="10.2661" font-weight="bold" letter-spacing="0em"><tspan x="9" y="20.559">IL3</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24239" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(9.8026 8.5171) rotate(180) scale(14.9475)">
+<stop stop-color="#E3D16D"/>
+<stop offset="0.0426" stop-color="#DAC761"/>
+<stop offset="0.1471" stop-color="#C7B44A"/>
+<stop offset="0.2668" stop-color="#B9A537"/>
+<stop offset="0.4091" stop-color="#AF9B2B"/>
+<stop offset="0.5961" stop-color="#A99523"/>
+<stop offset="0.9995" stop-color="#A79321"/>
+</radialGradient>
+</defs>
+</svg>

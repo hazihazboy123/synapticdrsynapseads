@@ -1,0 +1,59 @@
+<svg width="90" height="24" viewBox="0 0 90 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013008">
+<g id="CHEMICAL_OCT">
+<g id="Rectangle 2">
+<mask id="path-1-outside-1_938_24910" maskUnits="userSpaceOnUse" x="8.37988" y="0" width="74" height="24" fill="black">
+<rect fill="white" x="8.37988" width="74" height="24"/>
+<path d="M8.37988 2H81.6208V22H8.37988V2Z"/>
+</mask>
+<path d="M8.37988 2H81.6208V22H8.37988V2Z" fill="#4785D2"/>
+<path d="M8.37988 2V4H81.6208V2V0H8.37988V2ZM81.6208 22V20H8.37988V22V24H81.6208V22Z" fill="url(#paint0_linear_938_24910)" mask="url(#path-1-outside-1_938_24910)"/>
+</g>
+<g id="LEFT CORNER">
+<mask id="mask0_938_24910" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="24">
+<rect id="MASK" width="10" height="24" transform="matrix(-1 8.74228e-08 8.74228e-08 1 10 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_24910)">
+<g id="CORNER">
+<mask id="path-4-outside-2_938_24910" maskUnits="userSpaceOnUse" x="-1.74846e-07" y="-9.61651e-07" width="13" height="24" fill="black">
+<rect fill="white" x="-1.74846e-07" y="-9.61651e-07" width="13" height="24"/>
+<path d="M8 22L2 16L2 8L8 2L11 2L11 22L8 22Z"/>
+</mask>
+<path d="M8 22L2 16L2 8L8 2L11 2L11 22L8 22Z" fill="#4785D2"/>
+<path d="M8 22L2 16L2 8L8 2L11 2L11 22L8 22Z" stroke="url(#paint1_linear_938_24910)" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-4-outside-2_938_24910)"/>
+</g>
+</g>
+</g>
+<g id="RIGHT CORNER">
+<mask id="mask1_938_24910" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="80" y="0" width="10" height="24">
+<rect id="MASK_2" x="80.1553" width="9.84445" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_24910)">
+<g id="CORNER_2">
+<mask id="path-6-outside-3_938_24910" maskUnits="userSpaceOnUse" x="77" y="-7.76718e-07" width="13" height="24" fill="black">
+<rect fill="white" x="77" y="-7.76718e-07" width="13" height="24"/>
+<path d="M82 22L88 16L88 8L82 2L79 2L79 22L82 22Z"/>
+</mask>
+<path d="M82 22L88 16L88 8L82 2L79 2L79 22L82 22Z" fill="#4785D2"/>
+<path d="M82 22L88 16L88 8L82 2L79 2L79 22L82 22Z" stroke="url(#paint2_linear_938_24910)" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-6-outside-3_938_24910)"/>
+</g>
+</g>
+</g>
+<text id="Ch" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="7.36118" y="10.6602">METHIONINE&#10;</tspan><tspan x="10.6952" y="21.6602">SULFOXIDE</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24910" x1="45.0004" y1="2" x2="45.0004" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4785D2"/>
+<stop offset="1" stop-color="#A2317B"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_24910" x1="6.5" y1="2" x2="6.5" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4785D2"/>
+<stop offset="1" stop-color="#A2317B"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_24910" x1="83.5" y1="2" x2="83.5" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4785D2"/>
+<stop offset="1" stop-color="#A2317B"/>
+</linearGradient>
+</defs>
+</svg>

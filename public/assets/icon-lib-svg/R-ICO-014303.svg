@@ -1,0 +1,14 @@
+<svg width="123" height="48" viewBox="0 0 123 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014303">
+<g id="Abstract">
+<path id="bg" d="M61.5 0.5C78.4367 0.5 93.7476 3.17979 104.806 7.49512C110.336 9.65336 114.778 12.211 117.828 15.0254C120.878 17.8394 122.5 20.8728 122.5 24C122.5 27.1272 120.878 30.1606 117.828 32.9746C114.778 35.789 110.336 38.3466 104.806 40.5049C93.7476 44.8202 78.4367 47.5 61.5 47.5C44.5633 47.5 29.2524 44.8202 18.1943 40.5049C12.6639 38.3466 8.2223 35.789 5.17188 32.9746C2.12191 30.1606 0.5 27.1272 0.5 24C0.5 20.8728 2.12191 17.8394 5.17188 15.0254C8.2223 12.211 12.6639 9.65336 18.1943 7.49512C29.2524 3.17979 44.5633 0.5 61.5 0.5Z" fill="url(#paint0_radial_938_24789)" stroke="#106DC4"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="11.209" y="21.1484">GLYCOSYLATION&#10;</tspan><tspan x="19.5527" y="35.1484">PRECURSORS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24789" cx="0" cy="0" r="1" gradientTransform="matrix(39.6519 20.4256 -52.3405 15.4739 42.5376 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7BBFFF"/>
+<stop offset="1" stop-color="#106DC4"/>
+</radialGradient>
+</defs>
+</svg>

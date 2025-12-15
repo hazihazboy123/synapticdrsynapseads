@@ -1,0 +1,21 @@
+<svg width="154" height="44" viewBox="0 0 154 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013354">
+<path id="BG" d="M77.57 43.5573C41.3468 43.5573 18.4411 38.491 7.54453 28.0695C-0.109971 20.748 -0.0290704 12.857 0.00522956 9.4885L0.00882956 9.0261C0.00882956 4.0411 4.27533 0 9.53823 0C14.8011 0 19.0675 4.0411 19.0675 9.0261L19.0632 9.6635C19.041 11.8292 19.0253 13.3954 21.0862 15.3672C24.2739 18.4157 36.1576 11.6181 77.57 11.6181C118.891 11.6181 130.214 18.8862 133.165 16.0398C134.902 14.365 134.954 12.9507 134.9 10.1639C134.892 9.7625 134.886 9.3828 134.886 9.0261C134.886 4.0412 139.152 0 144.415 0C149.678 0 153.944 4.0411 153.944 9.0261C153.944 9.2797 153.95 9.5509 153.956 9.8357C154.028 13.6341 154.18 21.5346 146.763 28.6893C136.246 38.8327 114.259 43.5573 77.57 43.5573Z" fill="url(#paint0_radial_938_23095)"/>
+<text id="SHR" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="63.9863" y="33.4641">SHR</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_23095" cx="0" cy="0" r="1" gradientTransform="matrix(0.901644 93.9212 -124.643 1.20219 77.9258 -42.9548)" gradientUnits="userSpaceOnUse">
+<stop offset="0.5051" stop-color="#531F33"/>
+<stop offset="0.5192" stop-color="#5E1C36"/>
+<stop offset="0.5877" stop-color="#8F1041"/>
+<stop offset="0.6479" stop-color="#B20749"/>
+<stop offset="0.6969" stop-color="#C8024E"/>
+<stop offset="0.7286" stop-color="#D00050"/>
+<stop offset="0.7671" stop-color="#C8024E"/>
+<stop offset="0.8263" stop-color="#B30749"/>
+<stop offset="0.8988" stop-color="#901041"/>
+<stop offset="0.9811" stop-color="#5F1C36"/>
+<stop offset="1" stop-color="#531F33"/>
+</radialGradient>
+</defs>
+</svg>

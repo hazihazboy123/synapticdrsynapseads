@@ -1,0 +1,17 @@
+<svg width="56" height="34" viewBox="0 0 56 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012416">
+<g id="BG">
+<mask id="path-1-inside-1_938_24632" fill="white">
+<path d="M27.9983 33.8292C43.4613 33.8292 55.9966 26.2563 55.9966 16.9146C55.9966 7.57292 43.4613 0 27.9983 0C12.5353 0 0 7.57292 0 16.9146C0 26.2563 12.5353 33.8292 27.9983 33.8292Z"/>
+</mask>
+<path d="M27.9983 33.8292C43.4613 33.8292 55.9966 26.2563 55.9966 16.9146C55.9966 7.57292 43.4613 0 27.9983 0C12.5353 0 0 7.57292 0 16.9146C0 26.2563 12.5353 33.8292 27.9983 33.8292Z" fill="url(#paint0_radial_938_24632)" stroke="#161670" stroke-width="4" stroke-miterlimit="10" mask="url(#path-1-inside-1_938_24632)"/>
+</g>
+<text id="AMINES" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="4.49805" y="21.0747">AMINES</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24632" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20.4888 11.1988) scale(27.9983 16.9138)">
+<stop stop-color="#B2C5B3"/>
+<stop offset="1" stop-color="#8685DE"/>
+</radialGradient>
+</defs>
+</svg>

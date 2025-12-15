@@ -1,0 +1,49 @@
+<svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014111">
+<g id="CHEMICAL_OCT">
+<g id="Rectangle 2">
+<mask id="path-1-outside-1_938_24868" maskUnits="userSpaceOnUse" x="8.37964" y="0" width="32" height="24" fill="black">
+<rect fill="white" x="8.37964" width="32" height="24"/>
+<path d="M8.37964 2H39.6206V22H8.37964V2Z"/>
+</mask>
+<path d="M8.37964 2H39.6206V22H8.37964V2Z" fill="#CEB138"/>
+<path d="M8.37964 2V4H39.6206V2V0H8.37964V2ZM39.6206 22V20H8.37964V22V24H39.6206V22Z" fill="#D38E20" mask="url(#path-1-outside-1_938_24868)"/>
+</g>
+<g id="LEFT CORNER">
+<mask id="mask0_938_24868" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="24">
+<rect id="MASK" width="10" height="24" transform="matrix(-1 8.74228e-08 8.74228e-08 1 10 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_24868)">
+<g id="CORNER">
+<mask id="path-4-outside-2_938_24868" maskUnits="userSpaceOnUse" x="-1.74846e-07" y="-9.61651e-07" width="13" height="24" fill="black">
+<rect fill="white" x="-1.74846e-07" y="-9.61651e-07" width="13" height="24"/>
+<path d="M8 22L2 16L2 8L8 2L11 2L11 22L8 22Z"/>
+</mask>
+<path d="M8 22L2 16L2 8L8 2L11 2L11 22L8 22Z" fill="#CEB138"/>
+<path d="M8 22L2 16L2 8L8 2L11 2L11 22L8 22Z" stroke="#D38E20" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-4-outside-2_938_24868)"/>
+</g>
+</g>
+</g>
+<g id="RIGHT CORNER">
+<mask id="mask1_938_24868" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="38" y="0" width="10" height="24">
+<rect id="MASK_2" x="38.1555" width="9.84445" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_24868)">
+<g id="CORNER_2">
+<mask id="path-6-outside-3_938_24868" maskUnits="userSpaceOnUse" x="35" y="-7.76718e-07" width="13" height="24" fill="black">
+<rect fill="white" x="35" y="-7.76718e-07" width="13" height="24"/>
+<path d="M40 22L46 16L46 8L40 2L37 2L37 22L40 22Z"/>
+</mask>
+<path d="M40 22L46 16L46 8L40 2L37 2L37 22L40 22Z" fill="#CEB138"/>
+<path d="M40 22L46 16L46 8L40 2L37 2L37 22L40 22Z" stroke="#D38E20" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-6-outside-3_938_24868)"/>
+</g>
+</g>
+</g>
+<g id="Ch">
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="4.71471" y="16.1602">HPO</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="30.7303" y="16.1602">&#x2084;</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="34.9542" y="16.1602">&#xb2;&#x2212;</tspan></text>
+</g>
+</g>
+</g>
+</svg>

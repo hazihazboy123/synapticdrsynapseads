@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AbsoluteFill,
   Audio,
+  Video,
   useCurrentFrame,
   useVideoConfig,
   Sequence,
@@ -12,8 +13,8 @@ import { BrainMascot } from './Character/BrainMascot';
 import { TikTokCaptions } from './TikTokCaptions';
 import { MedicalQuestionCard } from './MedicalQuestionCard';
 import StaticMemeOverlay from './StaticMemeOverlay';
-import { TeachingCard } from './TeachingCard';
-import { ContinuousTypewriter } from './ContinuousTypewriter';
+import { BetaBlockerMechanismV2 } from './diagrams/BetaBlockerMechanismV2';
+import SAFE_ZONES from '../constants/safeZones';
 
 const timestampsData = require('../../public/assets/audio/beta-blocker-overdose-timestamps.json');
 
@@ -152,98 +153,10 @@ export const BetaBlockerOverdoseAd = () => {
     { phrase: "62 mg/dL", timestamp: 27.376, isCritical: false },
   ];
 
-  // ===== TEACHING PHASES =====
-  const teachingPhases = [
-    {
-      titleText: "WHY ATROPINE FAILS",
-      startTime: 67.060, // "SHUT UP"
-      layout: 'flow-diagram',
-      elements: [
-        {
-          type: 'bullet',
-          iconName: 'stop',
-          iconColor: '#ef4444',
-          text: 'Beta-blockers CHOKE OUT beta receptors',
-          timestamp: 74.108, // "CHOKE"
-        },
-        {
-          type: 'bullet',
-          iconName: 'warning',
-          iconColor: '#fbbf24',
-          text: 'Atropine = muscarinic pathway (DIFFERENT SYSTEM)',
-          timestamp: 83.082, // "muscarinic"
-        },
-        {
-          type: 'bullet',
-          iconName: 'chart',
-          iconColor: '#ef4444',
-          text: 'Beta receptors BLOCKED = atropine does SQUAT',
-          timestamp: 88.852, // "SQUAT"
-        }
-      ]
-    },
-    {
-      titleText: 'HOW GLUCAGON SAVES THE DAY',
-      startTime: 95.540, // "glucagon?"
-      layout: 'flow-diagram',
-      elements: [
-        {
-          type: 'bullet',
-          iconName: 'microscope',
-          iconColor: '#9333ea',
-          text: 'Bypasses beta receptors entirely',
-          timestamp: 98.767, // "bypasses"
-        },
-        {
-          type: 'bullet',
-          iconName: 'bolt',
-          iconColor: '#22c55e',
-          text: 'Activates OWN receptor → cAMP ROCKETS',
-          timestamp: 103.481, // "ROCKETS"
-        },
-        {
-          type: 'bullet',
-          iconName: 'heart',
-          iconColor: '#ec4899',
-          text: 'Calcium FLOODS cardiac cells (BACK DOOR)',
-          timestamp: 105.257, // "FLOODS"
-        }
-      ]
-    },
-    {
-      titleText: 'CLINICAL PEARL',
-      startTime: 119.514, // "Five"
-      layout: 'pearl-card',
-      elements: [
-        {
-          type: 'text',
-          text: 'Dose: 5-10 mg IV push',
-          timestamp: 119.514,
-          fontSize: 34,
-        },
-        {
-          type: 'text',
-          text: '→',
-          timestamp: 120.432,
-          fontSize: 36,
-        },
-        {
-          type: 'text',
-          text: 'Start a DRIP if needed',
-          timestamp: 122.684,
-          fontSize: 34,
-        },
-        {
-          type: 'text',
-          text: 'Raises HR + BP + Glucose = TRIPLE WIN',
-          timestamp: 116.206, // "BOOST"
-          fontSize: 32,
-        }
-      ]
-    }
-  ];
-
-  const teachingStartFrame = Math.floor((teachingPhases[0].startTime / PLAYBACK_RATE) * fps);
+  // ===== TEACHING PHASE =====
+  // The mechanism diagram is now the star - it handles all teaching visuals
+  const teachingStartTime = 67.060; // "SHUT UP" - when teaching begins
+  const teachingStartFrame = Math.floor((teachingStartTime / PLAYBACK_RATE) * fps);
 
   // (Screen shake removed - keeping it clean)
 
@@ -255,6 +168,29 @@ export const BetaBlockerOverdoseAd = () => {
     <AbsoluteFill style={{
       backgroundColor: '#0a0a0a',
     }}>
+
+        {/* Branding - Left of Practice Question #1 with gradient */}
+        {frame < teachingStartFrame && (
+          <div
+            style={{
+              position: 'absolute',
+              top: 510,
+              left: 120,
+              fontSize: '16px',
+              fontWeight: '600',
+              fontFamily: 'Inter, sans-serif',
+              zIndex: 150,
+              background: 'linear-gradient(135deg, #9333ea, #db2777, #9333ea)',
+              backgroundSize: '200% 200%',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textShadow: 'none',
+            }}
+          >
+            synapticrecall.ai
+          </div>
+        )}
 
         {/* ===== SINGLE CONTINUOUS AUDIO ===== */}
         <Audio src={audioPath} playbackRate={PLAYBACK_RATE} volume={1} />
@@ -354,40 +290,27 @@ export const BetaBlockerOverdoseAd = () => {
           <Audio src={staticFile('assets/sfx/success-answer.mp3')} volume={0.9} />
         </Sequence>
 
-        {/* Teaching phase sounds */}
-        {teachingPhases.map((phase, phaseIdx) => {
-          const phaseStartFrame = Math.floor((phase.startTime / PLAYBACK_RATE) * fps);
-          return (
-            <Sequence key={`phase-whoosh-${phaseIdx}`} from={phaseStartFrame} durationInFrames={20}>
-              <Audio src={staticFile('assets/sfx/whoosh.mp3')} volume={0.35} />
-            </Sequence>
-          );
-        })}
+        {/* Teaching phase transition sound */}
+        <Sequence from={teachingStartFrame} durationInFrames={20}>
+          <Audio src={staticFile('assets/sfx/whoosh.mp3')} volume={0.4} />
+        </Sequence>
 
-        {/* Teaching bullet sounds */}
-        {teachingPhases.flatMap(phase =>
-          phase.elements.filter(el => el.type === 'bullet' || !el.type).map((element, idx) => {
-            const bulletFrame = Math.floor((element.timestamp / PLAYBACK_RATE) * fps);
-            return (
-              <Sequence key={`bullet-pop-${phase.startTime}-${idx}`} from={bulletFrame} durationInFrames={20}>
-                <Audio src={staticFile('assets/sfx/button-click.mp3')} volume={0.45} />
-              </Sequence>
-            );
-          })
-        )}
-
-        {/* ===== BRAIN MASCOT - ABOVE CARD, LEFT SIDE ===== */}
+        {/* ===== BRAIN MASCOT WITH ATTACHED SPEECH BUBBLE ===== */}
         <BrainMascot
           audioPath={audioPath}
           position="top-left"
-          size={180}
+          size={280}
           timestampsSource="beta-blocker-overdose"
           playbackRate={PLAYBACK_RATE}
-          shockMoment={Math.floor((13.874 / PLAYBACK_RATE) * fps)} // "THIRTY-TWO"
+          shockMoment={Math.floor((13.874 / PLAYBACK_RATE) * fps)}
           thinkingPeriod={{ start: questionStartFrame, end: answerRevealFrame }}
           celebrationMoment={answerRevealFrame}
-          customTop={180}
-          customLeft={50}
+          customTop={250}
+          customLeft={120}
+          showSpeechBubble={true}
+          speechBubbleWords={timestampsData.words}
+          speechBubbleSize={{ width: 180, height: 100 }}
+          speechBubbleFontSize={20}
         />
 
         {/* ===== QUESTION CARD WITH CONTINUOUS TYPEWRITER ===== */}
@@ -406,34 +329,40 @@ export const BetaBlockerOverdoseAd = () => {
             cursorHoverOption={highlightedOption}
             clinicalFindingsTimestamp={clinicalFindingsTimestamp}
             labTimestamps={labTimestamps}
-            cardTopOffset={320}
+            cardTopOffset={480}
           />
         )}
 
-        {/* ===== CAPTIONS - Speech bubble next to Dr. Synapse ===== */}
-        <TikTokCaptions
-          words={timestampsData.words}
-          playbackRate={PLAYBACK_RATE}
-          frameOffset={0}
-          position="speech-bubble"
-          fontSize={24}
-          mode="word"
-          maxWords={1}
-          customTop={230}
-          customLeft={250}
-        />
+        {/* ===== PILL CHUGGING VIDEO MEME ===== */}
+        {(() => {
+          const pillTimestamp = 2.276; // "CHUGGED"
+          const pillStartFrame = Math.floor((pillTimestamp / PLAYBACK_RATE) * fps);
+          const pillDuration = 75; // ~2.5 seconds
 
-        {/* ===== CONTEXTUAL MEME: "This is fine" ===== */}
-        <StaticMemeOverlay
-          imagePath="assets/memes/this-is-fine.jpg"
-          timestamp={contextualMemeTimestamp}
-          durationInFrames={50}
-          position="center"
-          scale={0.55}
-          playbackRate={PLAYBACK_RATE}
-          soundEffect={null}
-          frameOffset={0}
-        />
+          return (
+            <Sequence from={pillStartFrame} durationInFrames={pillDuration}>
+              <div style={{
+                position: 'absolute',
+                bottom: '25%',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: '65%',
+                maxWidth: '550px',
+                zIndex: 100,
+                borderRadius: 16,
+                overflow: 'hidden',
+                boxShadow: '0 12px 48px rgba(0, 0, 0, 0.6)',
+                border: '4px solid white',
+              }}>
+                <Video
+                  src={staticFile('assets/memes/pill.mp4')}
+                  style={{ width: '100%', height: 'auto' }}
+                  volume={0}
+                />
+              </div>
+            </Sequence>
+          );
+        })()}
 
         {/* ===== ANSWER REVEAL MEME ===== */}
         <StaticMemeOverlay
@@ -447,28 +376,18 @@ export const BetaBlockerOverdoseAd = () => {
           frameOffset={0}
         />
 
-        {/* ===== TEACHING CARD ===== */}
-        <TeachingCard
-          phases={teachingPhases}
+        {/* ===== MECHANISM DIAGRAM V2 - THE STAR OF THE SHOW ===== */}
+        <BetaBlockerMechanismV2
+          startTime={teachingStartTime}
           playbackRate={PLAYBACK_RATE}
-          frameOffset={0}
-          startFrame={answerRevealFrame + 90}
-          colorScheme={{
-            background: '#0a0a0a',
-            accent: 'linear-gradient(135deg, #9333ea, #db2777)',
-            text: '#e5e7eb',
-            highlight: '#FFD700',
-            success: '#22c55e',
-            warning: '#ef4444',
-          }}
         />
 
         {/* ===== ANXIETY TIMER - TOP RIGHT (same level as brain) ===== */}
         <Sequence from={questionStartFrame} durationInFrames={timerDuration}>
           <div style={{
             position: 'absolute',
-            top: 200,
-            right: 60,
+            top: 250,
+            right: 145,
             zIndex: 150,
           }}>
             {(() => {
@@ -487,19 +406,19 @@ export const BetaBlockerOverdoseAd = () => {
               return (
                 <div style={{
                   position: 'relative',
-                  width: 100,
-                  height: 100,
+                  width: 130,
+                  height: 130,
                   transform: `translate(${shakeX}px, ${shakeY}px) scale(${pulseScale * baseZoom})`,
                   filter: `drop-shadow(0 0 ${20 * progress}px rgba(239, 68, 68, ${redIntensity * 0.8}))`,
                 }}>
-                  <svg width="100" height="100" style={{ transform: 'rotate(-90deg)' }}>
-                    <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(147, 51, 234, 0.2)" strokeWidth="8" />
+                  <svg width="130" height="130" style={{ transform: 'rotate(-90deg)' }}>
+                    <circle cx="65" cy="65" r="52" fill="none" stroke="rgba(147, 51, 234, 0.2)" strokeWidth="10" />
                     <circle
-                      cx="50" cy="50" r="40" fill="none"
+                      cx="65" cy="65" r="52" fill="none"
                       stroke="url(#timerGradientBetaBlocker)"
-                      strokeWidth="8"
-                      strokeDasharray={circumference}
-                      strokeDashoffset={offset}
+                      strokeWidth="10"
+                      strokeDasharray={2 * Math.PI * 52}
+                      strokeDashoffset={2 * Math.PI * 52 * (1 - progress)}
                       strokeLinecap="round"
                     />
                     <defs>
@@ -515,7 +434,7 @@ export const BetaBlockerOverdoseAd = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    fontSize: 40 + (progress * 6),
+                    fontSize: 52 + (progress * 8),
                     fontWeight: 'bold',
                     fontFamily: 'Helvetica, Arial, sans-serif',
                     color: progress < 0.5 ? '#FFFFFF' : `rgb(255, ${255 - progress * 255}, ${255 - progress * 255})`,

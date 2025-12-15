@@ -1,0 +1,20 @@
+<svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012954">
+<path id="Ligand_01" d="M36.1681 72.3362C56.1432 72.3362 72.3362 56.1432 72.3362 36.1681C72.3362 16.193 56.1432 0 36.1681 0C16.193 0 0 16.193 0 36.1681C0 56.1432 16.193 72.3362 36.1681 72.3362Z" fill="url(#paint0_radial_938_24268)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24268" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22.8986 24.6265) scale(53.3556)">
+<stop stop-color="#E8B1D7"/>
+<stop offset="0.0239" stop-color="#E7A0D1"/>
+<stop offset="0.0852" stop-color="#E67BC4"/>
+<stop offset="0.1465" stop-color="#E55EBA"/>
+<stop offset="0.2072" stop-color="#E54AB3"/>
+<stop offset="0.2669" stop-color="#E43DAE"/>
+<stop offset="0.3245" stop-color="#E439AD"/>
+<stop offset="0.5255" stop-color="#E138AA"/>
+<stop offset="0.7021" stop-color="#D635A2"/>
+<stop offset="0.869" stop-color="#C43195"/>
+<stop offset="1" stop-color="#B02C86"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012871">
+<g id="BG">
+<mask id="path-1-outside-1_938_24235" maskUnits="userSpaceOnUse" x="0" y="0" width="43" height="43" fill="black">
+<rect fill="white" width="43" height="43"/>
+<path d="M21.2514 1C10.0851 1 1 10.0851 1 21.2527C1 32.4203 10.0851 41.5042 21.2514 41.5042C32.4191 41.5042 41.5042 32.4191 41.5042 21.2527C41.5042 10.0863 32.4191 1 21.2514 1Z"/>
+</mask>
+<path d="M21.2514 1C10.0851 1 1 10.0851 1 21.2527C1 32.4203 10.0851 41.5042 21.2514 41.5042C32.4191 41.5042 41.5042 32.4191 41.5042 21.2527C41.5042 10.0863 32.4191 1 21.2514 1Z" fill="url(#paint0_radial_938_24235)"/>
+<path d="M21.2514 1C10.0851 1 1 10.0851 1 21.2527C1 32.4203 10.0851 41.5042 21.2514 41.5042C32.4191 41.5042 41.5042 32.4191 41.5042 21.2527C41.5042 10.0863 32.4191 1 21.2514 1Z" stroke="#1A1A5B" stroke-width="2" mask="url(#path-1-outside-1_938_24235)"/>
+</g>
+<text id="IL?" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="12" y="25.1603">IL?</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24235" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.7792 13.0132) scale(19.3962)">
+<stop stop-color="#D2D2D2"/>
+<stop offset="0.0404" stop-color="#C5C5C5"/>
+<stop offset="0.2098" stop-color="#969696"/>
+<stop offset="0.3786" stop-color="#6E6E6E"/>
+<stop offset="0.5439" stop-color="#505050"/>
+<stop offset="0.7048" stop-color="#3A3A3A"/>
+<stop offset="0.8592" stop-color="#2C2C2C"/>
+<stop offset="1" stop-color="#282828"/>
+</radialGradient>
+</defs>
+</svg>

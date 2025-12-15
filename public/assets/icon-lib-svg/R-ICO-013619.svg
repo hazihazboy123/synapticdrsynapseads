@@ -1,0 +1,17 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013619">
+<g id="Nucleolus">
+<mask id="path-1-inside-1_938_25693" fill="white">
+<path d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z"/>
+</mask>
+<path d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z" fill="url(#paint0_radial_938_25693)" stroke="#4B4C96" stroke-width="8" mask="url(#path-1-inside-1_938_25693)"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25693" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.0284 40.1026) rotate(-15.5149) scale(49.6446)">
+<stop stop-color="#B0B7DC"/>
+<stop offset="0.3" stop-color="#B697C6"/>
+<stop offset="0.8032" stop-color="#525281"/>
+</radialGradient>
+</defs>
+</svg>

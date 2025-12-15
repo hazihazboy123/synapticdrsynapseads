@@ -1,0 +1,17 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013288">
+<g id="Abstract" clip-path="url(#clip0_938_25008)">
+<circle id="bg" cx="24" cy="24" r="23.5" fill="url(#paint0_radial_938_25008)" stroke="#F9682E"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="16.0718" y="28.1483">RE</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25008" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.6 15.4593) rotate(52.8533) scale(25.6251)">
+<stop stop-color="#F9FF8B"/>
+<stop offset="1" stop-color="#F9682E"/>
+</radialGradient>
+<clipPath id="clip0_938_25008">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

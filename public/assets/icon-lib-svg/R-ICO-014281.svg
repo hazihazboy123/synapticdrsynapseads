@@ -1,0 +1,44 @@
+<svg width="52" height="136" viewBox="0 0 52 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014281">
+<g id="Group">
+<path id="Vector" d="M15.0108 55.5405H7.83691V90.8896H15.0108V55.5405Z" fill="url(#paint0_linear_938_24432)"/>
+<path id="Tyrosine Kinase" d="M17.848 135.845H5C2.2386 135.845 0 133.606 0 130.845V95.8894C0 93.128 2.2386 90.8894 5 90.8894H17.848C20.6094 90.8894 22.848 93.128 22.848 95.8894V130.845C22.848 133.606 20.6095 135.845 17.848 135.845Z" fill="url(#paint1_linear_938_24432)"/>
+<path id="TM" d="M17.4445 76.1523H5.40332V88.1935H17.4445V76.1523Z" fill="#4B9184"/>
+<path id="FUSION" d="M21.0293 23.5131C21.0293 20.774 19.877 18.3089 18.0378 16.5592C19.8392 14.8454 20.9817 12.4454 21.0279 9.7738C21.1208 4.3989 16.5 0 11.1243 0H5.62585C3.52325 0 1.81885 1.7045 1.81885 3.8071V71.0348C1.81885 73.1374 3.52335 74.8419 5.62585 74.8419H11.1243C16.5001 74.8419 21.1209 70.443 21.0279 65.0679C20.9817 62.3964 19.8392 59.9965 18.0378 58.2827C19.877 56.5329 21.0293 54.0679 21.0293 51.3288C21.0293 48.5897 19.877 46.1247 18.0378 44.3749C19.877 42.6251 21.0293 40.1601 21.0293 37.421C21.0293 34.6819 19.877 32.2168 18.0378 30.4671C19.877 28.7173 21.0293 26.2521 21.0293 23.5131Z" fill="url(#paint2_linear_938_24432)"/>
+</g>
+<g id="Group_2">
+<path id="Vector_2" d="M43.669 55.5405H36.4951V90.8896H43.669V55.5405Z" fill="url(#paint3_linear_938_24432)"/>
+<path id="Tyrosine Kinase_2" d="M46.5062 135.845H33.6582C30.8968 135.845 28.6582 133.606 28.6582 130.845V95.8894C28.6582 93.128 30.8968 90.8894 33.6582 90.8894H46.5062C49.2676 90.8894 51.5062 93.128 51.5062 95.8894V130.845C51.5062 133.606 49.2676 135.845 46.5062 135.845Z" fill="url(#paint4_linear_938_24432)"/>
+<path id="TM_2" d="M46.1027 76.1523H34.0615V88.1935H46.1027V76.1523Z" fill="#4B9184"/>
+<path id="FUSION_2" d="M30.4771 23.5131C30.4771 20.774 31.6294 18.3089 33.4686 16.5592C31.6672 14.8454 30.5247 12.4454 30.4785 9.7738C30.3856 4.3989 35.0063 0 40.382 0H45.8806C47.9832 0 49.6875 1.7045 49.6875 3.8071V71.0348C49.6875 73.1374 47.9831 74.8419 45.8806 74.8419H40.382C35.0062 74.8419 30.3855 70.443 30.4785 65.0679C30.5247 62.3964 31.6672 59.9965 33.4686 58.2827C31.6294 56.5329 30.4771 54.0679 30.4771 51.3288C30.4771 48.5897 31.6294 46.1247 33.4686 44.3749C31.6294 42.6251 30.4771 40.1601 30.4771 37.421C30.4771 34.6819 31.6294 32.2168 33.4686 30.4671C31.6294 28.7173 30.4771 26.2521 30.4771 23.5131Z" fill="url(#paint5_linear_938_24432)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24432" x1="7.83691" y1="73.215" x2="15.0108" y2="73.215" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4B9184"/>
+<stop offset="0.4" stop-color="#B4D4CF"/>
+<stop offset="1" stop-color="#4B9184"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_24432" x1="11.424" y1="135.845" x2="11.424" y2="90.8894" gradientUnits="userSpaceOnUse">
+<stop stop-color="#083675"/>
+<stop offset="1" stop-color="#4B9184"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_24432" x1="1.81875" y1="37.4209" x2="21.0293" y2="37.4209" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00156B"/>
+<stop offset="1" stop-color="#E7D1A2"/>
+</linearGradient>
+<linearGradient id="paint3_linear_938_24432" x1="36.4951" y1="73.215" x2="43.669" y2="73.215" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4B9184"/>
+<stop offset="0.4" stop-color="#B4D4CF"/>
+<stop offset="1" stop-color="#4B9184"/>
+</linearGradient>
+<linearGradient id="paint4_linear_938_24432" x1="40.0822" y1="135.845" x2="40.0822" y2="90.8894" gradientUnits="userSpaceOnUse">
+<stop stop-color="#083675"/>
+<stop offset="1" stop-color="#4B9184"/>
+</linearGradient>
+<linearGradient id="paint5_linear_938_24432" x1="49.6875" y1="37.421" x2="30.4772" y2="37.421" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00156B"/>
+<stop offset="1" stop-color="#E7D1A2"/>
+</linearGradient>
+</defs>
+</svg>

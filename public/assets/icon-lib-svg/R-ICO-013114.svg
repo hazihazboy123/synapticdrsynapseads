@@ -1,0 +1,17 @@
+<svg width="112" height="48" viewBox="0 0 112 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013114">
+<g id="Abstract" clip-path="url(#clip0_938_24951)">
+<path id="bg" d="M56 0.5C71.4129 0.5 85.3432 3.17863 95.4014 7.48926C100.431 9.64492 104.469 12.1992 107.243 15.0098C110.015 17.8182 111.5 20.8554 111.5 24C111.5 27.1446 110.015 30.1818 107.243 32.9902C104.469 35.8008 100.431 38.3551 95.4014 40.5107C85.3432 44.8214 71.4129 47.5 56 47.5C40.5871 47.5 26.6568 44.8214 16.5986 40.5107C11.5689 38.3551 7.53059 35.8008 4.75684 32.9902C1.98521 30.1818 0.5 27.1446 0.5 24C0.5 20.8554 1.98521 17.8182 4.75684 15.0098C7.53059 12.1992 11.5689 9.64492 16.5986 7.48926C26.6568 3.17863 40.5871 0.5 56 0.5Z" fill="url(#paint0_radial_938_24951)" stroke="#17516B"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="16.5527" y="21.1483">NUCLEOSIDE&#10;</tspan><tspan x="8.99414" y="35.1483">DIPHOSPHATES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24951" cx="0" cy="0" r="1" gradientTransform="matrix(36.1058 20.4256 -47.6597 15.4739 38.7334 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BFB2C5"/>
+<stop offset="1" stop-color="#336178"/>
+</radialGradient>
+<clipPath id="clip0_938_24951">
+<rect width="112" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012563">
+<g id="Abstract" clip-path="url(#clip0_938_24725)">
+<ellipse id="bg" cx="50" cy="24" rx="50" ry="24" fill="url(#paint0_radial_938_24725)"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.05273" y="21.1484">CHOLESTEROL&#10;</tspan><tspan x="30.4004" y="35.1484">ESTER</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24725" cx="0" cy="0" r="1" gradientTransform="matrix(32.2373 20.4256 -42.5533 15.4739 34.5834 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9CA35"/>
+<stop offset="1" stop-color="#F95F00"/>
+</radialGradient>
+<clipPath id="clip0_938_24725">
+<rect width="100" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

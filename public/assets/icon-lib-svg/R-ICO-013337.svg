@@ -1,0 +1,30 @@
+<svg width="39" height="156" viewBox="0 0 39 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013337">
+<g id="COILED COIL">
+<path id="Vector" d="M19.1626 11.2151V75.2849" stroke="#2A8F96" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M33.0972 11.2151V24.5312C33.0972 32.9901 9.87744 32.9901 9.87744 41.4491C9.87744 49.9081 23.7949 49.908 23.7949 58.367C23.7949 66.826 19.1623 66.8672 19.1623 75.2849" stroke="#9A8D2B" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M5.22754 11.2151V24.5312C5.22754 32.9901 28.3943 32.9901 28.3943 41.4491C28.3943 49.9081 14.4817 49.9081 14.4817 58.367C14.4817 66.8259 19.1625 66.785 19.1625 75.2849V155.137" stroke="#C2305C" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<g id="C-TYPE-LECTIN">
+<path id="Vector_4" d="M13.9351 9.0557C14.9756 10.5341 16.6953 11.5 18.6405 11.5C21.8161 11.5 24.3905 8.9256 24.3905 5.75C24.3905 2.5744 21.8161 0 18.6405 0C16.6957 0 14.9764 0.9655 13.9358 2.4434L18.6405 5.75L13.9351 9.0557Z" fill="url(#paint0_radial_938_23096)"/>
+<path id="Vector_5" d="M27.8701 9.0557C28.9106 10.5341 30.6303 11.5 32.5755 11.5C35.7511 11.5 38.3255 8.9256 38.3255 5.75C38.3255 2.5744 35.7511 0 32.5754 0C30.6306 0 28.9113 0.9655 27.8707 2.4434L32.5754 5.75L27.8701 9.0557Z" fill="url(#paint1_radial_938_23096)"/>
+<path id="Vector_6" d="M0 9.0557C1.0405 10.5341 2.7602 11.5 4.7054 11.5C7.881 11.5 10.4554 8.9256 10.4554 5.75C10.4554 2.5744 7.881 0 4.7054 0C2.7606 0 1.0413 0.9655 0.0007 2.4434L4.7054 5.75L0 9.0557Z" fill="url(#paint2_radial_938_23096)"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_23096" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.4459 3.3604) scale(5.4951)">
+<stop offset="0.0005" stop-color="#36CED9"/>
+<stop offset="0.5501" stop-color="#2B939A"/>
+<stop offset="1" stop-color="#22666B"/>
+</radialGradient>
+<radialGradient id="paint1_radial_938_23096" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.3809 3.3604) scale(5.4951)">
+<stop offset="0.0005" stop-color="#D9C636"/>
+<stop offset="0.5089" stop-color="#9F912B"/>
+<stop offset="1" stop-color="#6B6222"/>
+</radialGradient>
+<radialGradient id="paint2_radial_938_23096" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.5905 2.6435) scale(8.6187)">
+<stop stop-color="#D93667"/>
+<stop offset="1" stop-color="#6B2238"/>
+</radialGradient>
+</defs>
+</svg>

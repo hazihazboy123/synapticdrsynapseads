@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, Img, staticFile, spring, interpolate, Easing } from 'remotion';
+import { SpeechBubble } from '../SpeechBubble';
 import { useAudioData, visualizeAudio } from '@remotion/media-utils';
 import sarcoidosisTimestamps from '../../assets/audio/aligned-timestamps.json';
 import fluoroquinoloneTimestamps from '../../assets/audio/fluoroquinolone-aligned-timestamps.json';
@@ -32,6 +33,11 @@ export const BrainMascot = ({
   // Custom positioning (overrides position preset)
   customTop = null, // Custom top value in pixels
   customLeft = null, // Custom left value in pixels or string like '50%'
+  // Speech bubble (attached to brain, moves with it)
+  showSpeechBubble = false,
+  speechBubbleWords = null, // Pass words array for speech bubble
+  speechBubbleSize = { width: 140, height: 80 }, // Bubble dimensions
+  speechBubbleFontSize = 16,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -276,12 +282,18 @@ export const BrainMascot = ({
     }
   };
 
+  // Speech bubble position relative to brain (near mouth/mustache area)
+  // Positioned to the right of the brain, with tail pointing under mustache
+  const bubbleOffsetX = size * 0.72; // Further right
+  const bubbleOffsetY = -size * 0.08; // Slightly above center
+
   return (
     <div style={{
       ...getPositionStyle(),
       width: size,
       height: size,
     }}>
+      {/* Brain mascot */}
       <Img
         src={staticFile('assets/character/brain-mascot.png')}
         style={{
@@ -297,12 +309,48 @@ export const BrainMascot = ({
             scale(${finalScale})
             rotate(${reactionRotate + speechRotation}deg)
           `,
-          transformOrigin: 'center center', // Center pivot for natural reactions
-          filter: 'none', // No glow/shadow effects
-          transition: 'none', // INSTANT snap both ways - fast pace energy!
+          transformOrigin: 'center center',
+          filter: 'none',
+          transition: 'none',
           willChange: 'transform',
         }}
       />
+
+      {/* Attached Speech Bubble - moves with the brain! */}
+      {showSpeechBubble && speechBubbleWords && (
+        <div
+          style={{
+            position: 'absolute',
+            top: bubbleOffsetY,
+            left: bubbleOffsetX,
+            transform: `
+              translate(
+                ${reactionTranslateX + speechDriftX + pacingOffset}px,
+                ${reactionTranslateY + speechBounceY}px
+              )
+            `,
+            transformOrigin: 'bottom left',
+            zIndex: 10,
+          }}
+        >
+          <SpeechBubble
+            words={speechBubbleWords}
+            playbackRate={playbackRate}
+            frameOffset={0}
+            top={0}
+            left={0}
+            width={speechBubbleSize.width}
+            height={speechBubbleSize.height}
+            tailDirection="bottom-left"
+            backgroundColor="#FFFFFF"
+            borderColor="#1a1a1a"
+            borderWidth={3}
+            fontSize={speechBubbleFontSize}
+            textColor="#1a1a1a"
+            maxWords={1}
+          />
+        </div>
+      )}
     </div>
   );
 };

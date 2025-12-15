@@ -1,0 +1,17 @@
+<svg width="66" height="34" viewBox="0 0 66 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013807">
+<g id="Abstract" clip-path="url(#clip0_938_24930)">
+<path id="bg" d="M33 0.5C42.0498 0.5 50.218 2.39088 56.1055 5.42383C62.0188 8.47007 65.5 12.5892 65.5 17C65.5 21.4108 62.0188 25.5299 56.1055 28.5762C50.218 31.6091 42.0498 33.5 33 33.5C23.9502 33.5 15.782 31.6091 9.89453 28.5762C3.98123 25.5299 0.5 21.4108 0.5 17C0.5 12.5892 3.98123 8.47007 9.89453 5.42383C15.782 2.39088 23.9502 0.5 33 0.5Z" fill="url(#paint0_radial_938_24930)" stroke="#AF9812"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.39062" y="21.1484">LIPOXINS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24930" cx="0" cy="0" r="1" gradientTransform="matrix(21.2766 14.4681 -28.0852 10.9607 22.825 10.9503)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C5C2B2"/>
+<stop offset="1" stop-color="#AF9812"/>
+</radialGradient>
+<clipPath id="clip0_938_24930">
+<rect width="66" height="34" fill="white"/>
+</clipPath>
+</defs>
+</svg>

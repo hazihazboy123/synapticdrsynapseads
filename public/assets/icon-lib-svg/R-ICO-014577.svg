@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014577">
+<path id="M protein" d="M7.9539 15.9078C12.3467 15.9078 15.9078 12.3467 15.9078 7.9539C15.9078 3.56108 12.3467 0 7.9539 0C3.56108 0 0 3.56108 0 7.9539C0 12.3467 3.56108 15.9078 7.9539 15.9078Z" fill="url(#paint0_radial_938_24271)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24271" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(3.7818 7.9021) scale(12.236)">
+<stop stop-color="#F0C7A5"/>
+<stop offset="1" stop-color="#AC5106"/>
+</radialGradient>
+</defs>
+</svg>

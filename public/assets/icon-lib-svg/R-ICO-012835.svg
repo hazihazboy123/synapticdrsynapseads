@@ -1,0 +1,19 @@
+<svg width="54" height="46" viewBox="0 0 54 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012835">
+<path id="Vector" d="M26.6754 45.965C41.4078 45.965 53.3508 35.6754 53.3508 22.9825C53.3508 10.2896 41.4078 0 26.6754 0C11.943 0 0 10.2896 0 22.9825C0 35.6754 11.943 45.965 26.6754 45.965Z" fill="url(#paint0_radial_938_24260)"/>
+<text id="HOX" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="13" y="27.16">HOX</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24260" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22.4282 14.6763) scale(33.8731 31.0887)">
+<stop stop-color="#F27287"/>
+<stop offset="0.6051" stop-color="#F22D4D"/>
+<stop offset="0.6279" stop-color="#F22A4B"/>
+<stop offset="0.7006" stop-color="#EE294A"/>
+<stop offset="0.7673" stop-color="#E32746"/>
+<stop offset="0.8317" stop-color="#D12441"/>
+<stop offset="0.8946" stop-color="#B62038"/>
+<stop offset="0.9558" stop-color="#951A2E"/>
+<stop offset="1" stop-color="#781525"/>
+</radialGradient>
+</defs>
+</svg>

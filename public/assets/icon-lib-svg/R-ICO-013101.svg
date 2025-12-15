@@ -1,0 +1,16 @@
+<svg width="30" height="158" viewBox="0 0 30 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013101">
+<path id="BG" d="M14.8428 157.757C18.1563 157.757 20.8428 155.07 20.8428 151.757V74.2549C20.8428 70.9414 18.1563 68.2549 14.8428 68.2549C11.5293 68.2549 8.84277 70.9414 8.84277 74.2549V151.757C8.84277 155.07 11.5294 157.757 14.8428 157.757Z" fill="url(#paint0_linear_938_24342)"/>
+<path id="FG" d="M0 39.9838C0 62.0686 4.1974 79.9676 9.3743 79.9676H20.3112C25.4881 79.9676 29.6855 62.0686 29.6855 39.9838C29.6855 17.899 25.4882 0 20.3112 0H9.3743C4.1974 0 0 17.899 0 39.9838Z" fill="url(#paint1_radial_938_24342)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24342" x1="20.963" y1="113.006" x2="8.84707" y2="113.006" gradientUnits="userSpaceOnUse">
+<stop stop-color="#89C441"/>
+<stop offset="1" stop-color="#0A3A4D"/>
+</linearGradient>
+<radialGradient id="paint1_radial_938_24342" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.1519 48.0439) rotate(-90) scale(75.5589 17.7152)">
+<stop stop-color="#CAFF8A"/>
+<stop offset="1" stop-color="#0A3A4D"/>
+</radialGradient>
+</defs>
+</svg>

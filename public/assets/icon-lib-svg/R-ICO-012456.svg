@@ -1,0 +1,13 @@
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012456">
+<path id="BG" d="M22.9852 45.9704C35.6796 45.9704 45.9704 35.6796 45.9704 22.9852C45.9704 10.2908 35.6796 0 22.9852 0C10.2908 0 0 10.2908 0 22.9852C0 35.6796 10.2908 45.9704 22.9852 45.9704Z" fill="url(#paint0_radial_938_24250)"/>
+<text id="AVP" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="11" y="27.1602">AVP</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24250" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.0791 14.7173) scale(22.9494 22.238)">
+<stop stop-color="#B2EBFF"/>
+<stop offset="0.5188" stop-color="#54D8FF"/>
+<stop offset="1" stop-color="#0ABBF2"/>
+</radialGradient>
+</defs>
+</svg>

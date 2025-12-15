@@ -96,27 +96,22 @@ export const MedicalQuestionCard = ({
     <div style={{
       position: 'absolute',
       top: containerTopOffset,
-      left: 0,
-      right: 0,
-      bottom: 200,  // Leave room for captions (matches sarcoidosis 80px gap)
-      display: 'flex',
-      alignItems: 'flex-start',
-      justifyContent: 'center',
+      left: '50%',
+      transform: `translateX(-50%) scale(${containerScale})`,
+      transformOrigin: 'top center',
       padding: '0 20px',
       opacity: entranceOpacity,
-      transform: `scale(${containerScale})`,
-      transformOrigin: 'top center',
-      transition: 'none', // Remotion handles animation via interpolate
+      // No flex - just absolute positioning
     }}>
       <div style={{
         background: '#0a0a0a',
-        padding: '28px 36px',
-        borderRadius: 24,
+        padding: '28px 32px',
+        borderRadius: 22,
         position: 'relative',
-        overflow: 'hidden',
-        maxWidth: '1000px',
-        width: '100%',
+        overflow: 'visible',
+        width: 820,
         boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5)',
+        // No height constraint - pure content sizing
       }}>
         {/* Gradient background overlay */}
         <div style={{
@@ -127,9 +122,9 @@ export const MedicalQuestionCard = ({
         }} />
 
         {/* Content */}
-        <div style={{ position: 'relative', zIndex: 1 }}>
+        <div style={{ position: 'relative', zIndex: 1, display: 'block' }}>
           {/* Header */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
             {/* Question title centered */}
             <h3 style={{
               fontSize: 22,
@@ -156,7 +151,7 @@ export const MedicalQuestionCard = ({
               frameOffset={frameOffset}
               highlightPhrases={highlightPhrases}
               charsPerSecond={20}
-              fontSize={24}
+              fontSize={28}
             />
           ) : vignetteSegments ? (
             <TypewriterVignette
@@ -189,7 +184,8 @@ export const MedicalQuestionCard = ({
             // Calculate if Clinical Findings section should be visible
             const cfTimestamp = clinicalFindingsTimestamp || (labTimestamps ? Math.min(...Object.values(labTimestamps)) - 1 : 0);
             const cfAppearFrame = Math.floor((cfTimestamp / playbackRate) * fps);
-            const showClinicalFindings = !clinicalFindingsTimestamp || adjustedFrame >= cfAppearFrame;
+            // Fix: Only show when frame is reached
+            const showClinicalFindings = adjustedFrame >= cfAppearFrame;
 
             if (!showClinicalFindings) return null;
 
@@ -204,10 +200,10 @@ export const MedicalQuestionCard = ({
                 opacity: cfOpacity,
               }}>
                 <div style={{
-                  fontSize: 18,
+                  fontSize: 22,
                   color: '#c084fc',
                   fontWeight: 600,
-                  marginBottom: 8,
+                  marginBottom: 10,
                   display: 'flex',
                   alignItems: 'center',
                   gap: 6,
@@ -227,7 +223,7 @@ export const MedicalQuestionCard = ({
                   playbackRate={playbackRate}
                   frameOffset={frameOffset}
                   charsPerSecond={35}
-                  fontSize={20}
+                  fontSize={24}
                 />
               </div>
             );
@@ -237,7 +233,8 @@ export const MedicalQuestionCard = ({
           {(() => {
             const qTimestamp = questionTimestamp || (optionTimestamps ? optionTimestamps.A - 3 : 0);
             const qAppearFrame = Math.floor((qTimestamp / playbackRate) * fps);
-            const showQuestion = !questionTimestamp || adjustedFrame >= qAppearFrame;
+            // Fix: Only show question when frame is reached (not always true when timestamp is undefined)
+            const showQuestion = adjustedFrame >= qAppearFrame;
 
             if (!showQuestion) return null;
 
@@ -248,16 +245,16 @@ export const MedicalQuestionCard = ({
             return (
           <div style={{
             background: 'linear-gradient(135deg, #9333ea, #db2777)',
-            padding: 22,
-            borderRadius: 12,
+            padding: 26,
+            borderRadius: 14,
             opacity: qOpacity,
             transform: `scale(${qScale})`,
-            margin: '24px 0',
+            margin: '28px 0',
             boxShadow: '0 10px 40px rgba(147, 51, 234, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.1)',
           }}>
             <div style={{
               color: 'white',
-              fontSize: 24,
+              fontSize: 28,
               fontWeight: 600,
               textAlign: 'center',
               lineHeight: 1.5,
@@ -268,11 +265,17 @@ export const MedicalQuestionCard = ({
             );
           })()}
 
-          {/* Options with Typewriter Effect */}
+          {/* Options with Typewriter Effect - only render container when first option is visible */}
+          {(() => {
+            const firstOptionFrame = optionFrames ? optionFrames.A : 0;
+            const anyOptionVisible = !optionFrames || adjustedFrame >= firstOptionFrame;
+            if (!anyOptionVisible) return null;
+
+            return (
           <div style={{
             color: '#e5e7eb',
-            fontSize: 22,
-            lineHeight: 1.8,
+            fontSize: 26,
+            lineHeight: 1.9,
             paddingLeft: 0,
           }}>
             {questionData.options.map((option, i) => {
@@ -324,7 +327,7 @@ export const MedicalQuestionCard = ({
                   data-option={option.letter}
                   style={{
                     position: 'relative',
-                    padding: '12px 16px',
+                    padding: '14px 18px',
                     borderRadius: 10,
                     marginBottom: 10,
                     background: isRevealed && isCorrect
@@ -411,6 +414,8 @@ export const MedicalQuestionCard = ({
               );
             })}
           </div>
+            );
+          })()}
         </div>
       </div>
     </div>

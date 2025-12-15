@@ -1,0 +1,17 @@
+<svg width="103" height="48" viewBox="0 0 103 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012575">
+<g id="Abstract" clip-path="url(#clip0_938_24722)">
+<ellipse id="bg" cx="51.5" cy="24" rx="51.5" ry="24" fill="url(#paint0_radial_938_24722)"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.38281" y="28.1484">COACTIVATORS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24722" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(51.5 24) rotate(90) scale(24 51.5)">
+<stop stop-color="#CA6C00"/>
+<stop offset="1" stop-color="#730F2C"/>
+</radialGradient>
+<clipPath id="clip0_938_24722">
+<rect width="103" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

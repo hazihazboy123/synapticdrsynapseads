@@ -1,0 +1,13 @@
+<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013000">
+<path id="Melanosome" d="M18.3856 36.7712C28.5397 36.7712 36.7712 28.5397 36.7712 18.3856C36.7712 8.23151 28.5397 0 18.3856 0C8.23151 0 0 8.23151 0 18.3856C0 28.5397 8.23151 36.7712 18.3856 36.7712Z" fill="url(#paint0_radial_938_25649)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25649" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15.0407 11.4729) scale(18.3856)">
+<stop offset="0.0005" stop-color="#92D2EA"/>
+<stop offset="0.2287" stop-color="#82ACBC"/>
+<stop offset="0.7436" stop-color="#594D48"/>
+<stop offset="1" stop-color="#441C0C"/>
+</radialGradient>
+</defs>
+</svg>

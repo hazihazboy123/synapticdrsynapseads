@@ -1,0 +1,36 @@
+<svg width="51" height="58" viewBox="0 0 51 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013520">
+<g id="BG">
+<mask id="path-1-outside-1_938_24378" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="58" fill="black">
+<rect fill="white" width="51" height="58"/>
+<path d="M49.4463 42.9557V14.9852L25.2232 1L1 14.9852V42.9557L25.2232 56.9409L49.4463 42.9557Z"/>
+</mask>
+<path d="M49.4463 42.9557V14.9852L25.2232 1L1 14.9852V42.9557L25.2232 56.9409L49.4463 42.9557Z" fill="#F9C0DA"/>
+<path d="M49.4463 42.9557V14.9852L25.2232 1L1 14.9852V42.9557L25.2232 56.9409L49.4463 42.9557Z" stroke="#DB0E5D" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_938_24378)"/>
+</g>
+<g id="BACK" opacity="0.4">
+<path id="Vector" d="M25.2236 12.6064L11.0518 37.1525H39.3953L25.2236 12.6064Z" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M25.2236 56.941L11.0518 37.1526" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M39.3953 37.1526L25.2236 56.941" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M25.2236 12.6064V1" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M1 14.9852L25.2232 12.6064" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M49.4467 14.9852L25.2236 12.6064" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M11.0514 37.1525L1 14.9852" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M1 42.9558L11.0514 37.1526" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M39.3945 37.1526L49.4459 42.9558" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" d="M49.4459 14.9852L39.3945 37.1525" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="FRONT">
+<path id="Vector_11" d="M25.2236 45.3347L39.3953 20.7885H11.0518L25.2236 45.3347Z" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_12" d="M25.2236 1L39.3953 20.7884" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_13" d="M11.0518 20.7884L25.2236 1" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_14" d="M25.2236 45.3347V56.941" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_15" d="M49.4467 42.9558L25.2236 45.3347" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_16" d="M1 42.9558L25.2232 45.3347" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_17" d="M39.3945 20.7885L49.4459 42.9558" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_18" d="M49.4459 14.9852L39.3945 20.7884" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_19" d="M11.0514 20.7884L1 14.9852" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_20" d="M1 42.9558L11.0514 20.7885" stroke="#DB0E5D" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

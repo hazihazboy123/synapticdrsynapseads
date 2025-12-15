@@ -1,0 +1,16 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014091">
+<g id="Transport vesicle membrane">
+<mask id="path-1-inside-1_938_25721" fill="white">
+<path d="M39.7876 79.5752C61.7617 79.5752 79.5752 61.7617 79.5752 39.7876C79.5752 17.8135 61.7617 0 39.7876 0C17.8135 0 0 17.8135 0 39.7876C0 61.7617 17.8135 79.5752 39.7876 79.5752Z"/>
+</mask>
+<path d="M39.7876 79.5752C61.7617 79.5752 79.5752 61.7617 79.5752 39.7876C79.5752 17.8135 61.7617 0 39.7876 0C17.8135 0 0 17.8135 0 39.7876C0 61.7617 17.8135 79.5752 39.7876 79.5752Z" fill="url(#paint0_radial_938_25721)" stroke="#DFBD00" stroke-width="14" stroke-miterlimit="10" mask="url(#path-1-inside-1_938_25721)"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25721" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.7876 39.7876) scale(39.7876)">
+<stop stop-color="#DFBD00"/>
+<stop offset="1" stop-color="#FD8402"/>
+</radialGradient>
+</defs>
+</svg>

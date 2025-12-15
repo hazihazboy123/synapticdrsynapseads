@@ -1,0 +1,45 @@
+<svg width="52" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013903">
+<g id="CHEMICAL_HEX">
+<g id="LEFT_CORNER">
+<mask id="mask0_938_24938" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="24">
+<rect id="MASK" width="10" height="24" transform="matrix(-1 0 0 1 10 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_24938)">
+<g id="CORNER">
+<mask id="path-2-outside-1_938_24938" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="24" fill="black">
+<rect fill="white" width="12" height="24"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2H10V22H8C6.04738 18.0948 2 12 2 12Z"/>
+</mask>
+<path d="M2 12C2 12 6.04738 5.90524 8 2H10V22H8C6.04738 18.0948 2 12 2 12Z" fill="#D37E31"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2H10V22H8C6.04738 18.0948 2 12 2 12Z" stroke="#CC752E" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-2-outside-1_938_24938)"/>
+</g>
+</g>
+</g>
+<g id="RIGHT CORNER">
+<mask id="mask1_938_24938" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="42" y="0" width="10" height="24">
+<rect id="MASK_2" width="10" height="24" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 42 24)" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_24938)">
+<g id="CORNER_2">
+<mask id="path-4-outside-2_938_24938" maskUnits="userSpaceOnUse" x="40" y="0" width="12" height="24" fill="black">
+<rect fill="white" x="40" width="12" height="24"/>
+<path d="M50 12C50 12 45.9526 5.90524 44 2H42V22H44C45.9526 18.0948 50 12 50 12Z"/>
+</mask>
+<path d="M50 12C50 12 45.9526 5.90524 44 2H42V22H44C45.9526 18.0948 50 12 50 12Z" fill="#D37E31"/>
+<path d="M50 12C50 12 45.9526 5.90524 44 2H42V22H44C45.9526 18.0948 50 12 50 12Z" stroke="#CC752E" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-4-outside-2_938_24938)"/>
+</g>
+</g>
+</g>
+<g id="centre">
+<mask id="path-5-outside-3_938_24938" maskUnits="userSpaceOnUse" x="8" y="0" width="36" height="24" fill="black">
+<rect fill="white" x="8" width="36" height="24"/>
+<path d="M8 2H44V22H8V2Z"/>
+</mask>
+<path d="M8 2H44V22H8V2Z" fill="#D37E31"/>
+<path d="M8 2V4H44V2V0H8V2ZM44 22V20H8V22V24H44V22Z" fill="#CC752E" mask="url(#path-5-outside-3_938_24938)"/>
+<text id="Chemical" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="8.32812" y="16.1602">MoCO</tspan></text>
+</g>
+</g>
+</g>
+</svg>

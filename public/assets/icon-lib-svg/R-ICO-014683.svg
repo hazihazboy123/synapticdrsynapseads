@@ -1,0 +1,19 @@
+<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014683">
+<g id="BG">
+<mask id="path-1-outside-1_938_24257" maskUnits="userSpaceOnUse" x="0" y="0" width="43" height="43" fill="black">
+<rect fill="white" width="43" height="43"/>
+<path d="M21.2521 41.5042C32.437 41.5042 41.5042 32.437 41.5042 21.2521C41.5042 10.0672 32.437 1 21.2521 1C10.0672 1 1 10.0672 1 21.2521C1 32.437 10.0672 41.5042 21.2521 41.5042Z"/>
+</mask>
+<path d="M21.2521 41.5042C32.437 41.5042 41.5042 32.437 41.5042 21.2521C41.5042 10.0672 32.437 1 21.2521 1C10.0672 1 1 10.0672 1 21.2521C1 32.437 10.0672 41.5042 21.2521 41.5042Z" fill="url(#paint0_radial_938_24257)"/>
+<path d="M21.2521 41.5042C32.437 41.5042 41.5042 32.437 41.5042 21.2521C41.5042 10.0672 32.437 1 21.2521 1C10.0672 1 1 10.0672 1 21.2521C1 32.437 10.0672 41.5042 21.2521 41.5042Z" stroke="#943D9D" stroke-width="2" mask="url(#path-1-outside-1_938_24257)"/>
+</g>
+<text id="AP-1" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="8.55664" y="24.7251">AP-1</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24257" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15.3743 16.8928) scale(19.3962)">
+<stop stop-color="#EBC9A1"/>
+<stop offset="1" stop-color="#B68E5F"/>
+</radialGradient>
+</defs>
+</svg>

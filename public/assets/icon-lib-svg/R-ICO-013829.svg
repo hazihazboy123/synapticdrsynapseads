@@ -1,0 +1,17 @@
+<svg width="90" height="40" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013829">
+<g id="Abstract" clip-path="url(#clip0_938_24954)">
+<path id="bg" d="M45 0.5C57.3732 0.5 68.5514 2.72967 76.6172 6.31445C80.6505 8.10708 83.8836 10.229 86.1016 12.5596C88.3172 14.8877 89.5 17.4013 89.5 20C89.5 22.5987 88.3172 25.1123 86.1016 27.4404C83.8836 29.771 80.6505 31.8929 76.6172 33.6855C68.5514 37.2703 57.3732 39.5 45 39.5C32.6268 39.5 21.4486 37.2703 13.3828 33.6855C9.34947 31.8929 6.11643 29.771 3.89844 27.4404C1.68285 25.1123 0.5 22.5987 0.5 20C0.5 17.4013 1.68285 14.8877 3.89844 12.5596C6.11643 10.229 9.34947 8.10708 13.3828 6.31445C21.4486 2.72967 32.6268 0.5 45 0.5Z" fill="url(#paint0_radial_938_24954)" stroke="#71255C"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="12.3921" y="17.1484">ORGANISM&#10;</tspan><tspan x="14.7241" y="31.1484">PROTEINS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24954" cx="0" cy="0" r="1" gradientTransform="matrix(29.0136 17.0213 -38.2979 12.8949 31.1251 12.8828)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F98952"/>
+<stop offset="1" stop-color="#71255C"/>
+</radialGradient>
+<clipPath id="clip0_938_24954">
+<rect width="90" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

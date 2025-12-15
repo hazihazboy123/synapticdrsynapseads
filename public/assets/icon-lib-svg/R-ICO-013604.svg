@@ -1,0 +1,11 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013604">
+<path id="Paraspeckle" d="M14.5981 29.1962C22.6604 29.1962 29.1962 22.6604 29.1962 14.5981C29.1962 6.53579 22.6604 0 14.5981 0C6.53579 0 0 6.53579 0 14.5981C0 22.6604 6.53579 29.1962 14.5981 29.1962Z" fill="url(#paint0_radial_938_25717)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25717" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.2923 10.8791) scale(19.2471)">
+<stop stop-color="#E3C523"/>
+<stop offset="1" stop-color="#D3363B"/>
+</radialGradient>
+</defs>
+</svg>

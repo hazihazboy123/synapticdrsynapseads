@@ -1,0 +1,17 @@
+<svg width="53" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013922">
+<g id="AFXBO" clip-path="url(#clip0_938_24675)">
+<path id="Vector" d="M0 8.75L26.5 0L53 8.75V21.25L26.5 30L0 21.25V8.75Z" fill="url(#paint0_linear_938_24675)"/>
+<text id="T" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.48828" y="19.1602">AFXBO</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24675" x1="26.5" y1="0" x2="26.5" y2="30" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4AB7DE"/>
+<stop offset="1" stop-color="#D11E4D"/>
+</linearGradient>
+<clipPath id="clip0_938_24675">
+<rect width="53" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="67" height="36" viewBox="0 0 67 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013799">
+<g id="Abstract" clip-path="url(#clip0_938_24918)">
+<path id="bg" d="M33.5 0.5C42.6847 0.5 50.9749 2.50179 56.9512 5.71289C62.948 8.93507 66.5 13.3021 66.5 18C66.5 22.6979 62.948 27.0649 56.9512 30.2871C50.9749 33.4982 42.6847 35.5 33.5 35.5C24.3153 35.5 16.0251 33.4982 10.0488 30.2871C4.05199 27.0649 0.5 22.6979 0.5 18C0.5 13.3021 4.05199 8.93507 10.0488 5.71289C16.0251 2.50179 24.3153 0.5 33.5 0.5Z" fill="url(#paint0_radial_938_24918)" stroke="#9B0E54"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="2.22852" y="22.1484">MARESINS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24918" cx="0" cy="0" r="1" gradientTransform="matrix(21.599 15.3192 -28.5107 11.6054 23.1709 11.5945)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFC170"/>
+<stop offset="1" stop-color="#9B0E54"/>
+</radialGradient>
+<clipPath id="clip0_938_24918">
+<rect width="67" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>

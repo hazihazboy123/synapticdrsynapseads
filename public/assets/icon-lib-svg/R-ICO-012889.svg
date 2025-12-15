@@ -1,0 +1,17 @@
+<svg width="88" height="48" viewBox="0 0 88 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012889">
+<g id="Abstract" clip-path="url(#clip0_938_24864)">
+<path id="bg" d="M44 0.5C56.0831 0.5 66.9973 3.17289 74.873 7.46875C82.7677 11.7749 87.5 17.6413 87.5 24C87.5 30.3587 82.7677 36.2251 74.873 40.5312C66.9973 44.8271 56.0831 47.5 44 47.5C31.9169 47.5 21.0027 44.8271 13.127 40.5312C5.23228 36.2251 0.5 30.3587 0.5 24C0.5 17.6413 5.23228 11.7749 13.127 7.46875C21.0027 3.17289 31.9169 0.5 44 0.5Z" fill="url(#paint0_radial_938_24864)" stroke="#337778"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="10.0503" y="21.1483">INORGANIC&#10;</tspan><tspan x="17.8374" y="35.1483">CATIONS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24864" cx="0" cy="0" r="1" gradientTransform="matrix(28.3689 20.4256 -37.4469 15.4739 30.4334 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B2C5B3"/>
+<stop offset="1" stop-color="#337778"/>
+</radialGradient>
+<clipPath id="clip0_938_24864">
+<rect width="88" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

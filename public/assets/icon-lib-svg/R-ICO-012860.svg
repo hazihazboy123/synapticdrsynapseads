@@ -1,0 +1,24 @@
+<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012860">
+<g id="BG">
+<mask id="path-1-outside-1_938_24246" maskUnits="userSpaceOnUse" x="0" y="0" width="39" height="39" fill="black">
+<rect fill="white" width="39" height="39"/>
+<path d="M19.2437 1C29.3023 1 37.4862 9.1839 37.4862 19.2437C37.4862 29.3035 29.3023 37.4862 19.2437 37.4862C9.1839 37.4862 1 29.3023 1 19.2437C1 9.185 9.1838 1 19.2437 1Z"/>
+</mask>
+<path d="M19.2437 1C29.3023 1 37.4862 9.1839 37.4862 19.2437C37.4862 29.3035 29.3023 37.4862 19.2437 37.4862C9.1839 37.4862 1 29.3023 1 19.2437C1 9.185 9.1838 1 19.2437 1Z" fill="url(#paint0_radial_938_24246)"/>
+<path d="M19.2437 1C29.3023 1 37.4862 9.1839 37.4862 19.2437C37.4862 29.3035 29.3023 37.4862 19.2437 37.4862C9.1839 37.4862 1 29.3023 1 19.2437C1 9.185 9.1838 1 19.2437 1Z" stroke="#312BA5" stroke-width="2" mask="url(#path-1-outside-1_938_24246)"/>
+</g>
+<text id="IL13" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="6" y="23.1602">IL13</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24246" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.2894 9.7867) rotate(180) scale(17.472)">
+<stop stop-color="#6DAEE3"/>
+<stop offset="0.0426" stop-color="#61A3DA"/>
+<stop offset="0.1471" stop-color="#4A8FC7"/>
+<stop offset="0.2668" stop-color="#377FB9"/>
+<stop offset="0.4091" stop-color="#2B73AF"/>
+<stop offset="0.5961" stop-color="#236DA9"/>
+<stop offset="0.9995" stop-color="#216BA7"/>
+</radialGradient>
+</defs>
+</svg>

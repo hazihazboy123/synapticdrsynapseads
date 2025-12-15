@@ -1,0 +1,20 @@
+<svg width="25" height="63" viewBox="0 0 25 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013447">
+<g id="R-ICO-013445">
+<path id="TNFRSF9" d="M10.181 62.4835L10.18 43.9035H6.928V37.3415L0 31.2415H6.928L12.006 24.7115L17.085 31.2415H24.012L17.085 37.3405V43.9035H13.83V62.4835H10.181Z" fill="url(#paint0_linear_938_23072)"/>
+</g>
+<g id="R-ICO-013448">
+<path id="TNFSF9" d="M10.1822 6.48499e-05V18.5501L0.000207901 31.2421H6.92821L12.0062 24.7121L17.0852 31.2421H24.0122L13.8312 18.5501V6.48499e-05H10.1822Z" fill="url(#paint1_linear_938_23072)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_23072" x1="12.006" y1="25.6182" x2="12.006" y2="63.041" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7E2E87"/>
+<stop offset="1" stop-color="#D4882A"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_23072" x1="12.0062" y1="30.492" x2="12.0062" y2="-0.460934" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007CC7"/>
+<stop offset="1" stop-color="#539B38"/>
+</linearGradient>
+</defs>
+</svg>

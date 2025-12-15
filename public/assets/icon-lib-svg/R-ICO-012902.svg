@@ -1,0 +1,15 @@
+<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012902">
+<path id="BG" d="M24.0061 0.5C11.0453 0.5 0.5 11.0453 0.5 24.0061C0.5 36.9669 11.0453 47.5112 24.0061 47.5112C36.9679 47.5112 47.5122 36.9669 47.5122 24.0061C47.5122 11.0453 36.9679 0.5 24.0061 0.5Z" fill="url(#paint0_radial_938_24255)" stroke="#3A5EAD" stroke-miterlimit="10"/>
+<g id="Interferon_gamma">
+<text id="IFN-" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="11.8653" font-weight="bold" letter-spacing="0em"><tspan x="12.7407" y="20.6133">IFN-</tspan></text>
+<text id="gamma" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="11.8653" font-weight="bold" letter-spacing="0em"><tspan x="3.5" y="34.8521">gamma</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.8155 14.4432) scale(22.5128 22.5128)">
+<stop stop-color="#FFD4C7"/>
+<stop offset="1" stop-color="#FFA051"/>
+</radialGradient>
+</defs>
+</svg>

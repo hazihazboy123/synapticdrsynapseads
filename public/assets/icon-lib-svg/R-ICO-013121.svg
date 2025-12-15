@@ -1,0 +1,30 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013121">
+<g id="Nucleus">
+<mask id="path-1-inside-1_938_25704" fill="white">
+<path d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z"/>
+</mask>
+<path d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z" fill="url(#paint0_radial_938_25704)" stroke="#5656A5" stroke-width="6" mask="url(#path-1-inside-1_938_25704)"/>
+</g>
+<g id="R-ICO-013619">
+<g id="Nucleolus">
+<mask id="path-2-inside-2_938_25704" fill="white">
+<path d="M21.1904 64.3795C25.0564 64.3795 28.1904 61.2455 28.1904 57.3795C28.1904 53.5135 25.0564 50.3795 21.1904 50.3795C17.3244 50.3795 14.1904 53.5135 14.1904 57.3795C14.1904 61.2455 17.3244 64.3795 21.1904 64.3795Z"/>
+</mask>
+<path d="M21.1904 64.3795C25.0564 64.3795 28.1904 61.2455 28.1904 57.3795C28.1904 53.5135 25.0564 50.3795 21.1904 50.3795C17.3244 50.3795 14.1904 53.5135 14.1904 57.3795C14.1904 61.2455 17.3244 64.3795 21.1904 64.3795Z" fill="url(#paint1_radial_938_25704)" stroke="#4B4C96" stroke-width="1.4" mask="url(#path-2-inside-2_938_25704)"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25704" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(29.5991 23.3445) scale(52.5724)">
+<stop stop-color="#AFBAF7"/>
+<stop offset="0.3111" stop-color="#6D96CE"/>
+<stop offset="0.8032" stop-color="#285FCC"/>
+</radialGradient>
+<radialGradient id="paint1_radial_938_25704" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21.1954 57.3975) rotate(-15.5149) scale(8.6878)">
+<stop stop-color="#B0B7DC"/>
+<stop offset="0.3" stop-color="#B697C6"/>
+<stop offset="0.8032" stop-color="#525281"/>
+</radialGradient>
+</defs>
+</svg>

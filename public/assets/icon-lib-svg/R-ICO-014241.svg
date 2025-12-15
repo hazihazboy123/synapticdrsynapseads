@@ -1,0 +1,14 @@
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014241">
+<path id="PHOTON" d="M8.1468 16.2936C12.6462 16.2936 16.2936 12.6462 16.2936 8.1468C16.2936 3.64745 12.6462 0 8.1468 0C3.64745 0 0 3.64745 0 8.1468C0 12.6462 3.64745 16.2936 8.1468 16.2936Z" fill="url(#paint0_radial_938_24985)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24985" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.1468 8.1468) scale(8.1468)">
+<stop offset="0.16" stop-color="white"/>
+<stop offset="0.32" stop-color="#FF8080"/>
+<stop offset="0.5" stop-color="#80FF80"/>
+<stop offset="0.66" stop-color="#8080FF"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

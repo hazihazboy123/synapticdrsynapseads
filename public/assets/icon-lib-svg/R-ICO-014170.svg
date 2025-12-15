@@ -1,0 +1,68 @@
+<svg width="69" height="24" viewBox="0 0 69 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014170">
+<g id="NRTI">
+<g id="LEFT_ELEMENT">
+<mask id="mask0_938_22910" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="8" height="24">
+<rect id="MASK" width="8" height="24" transform="matrix(-1 0 0 1 8 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_22910)">
+<g id="LEFT_CORNER">
+<mask id="path-2-outside-1_938_22910" maskUnits="userSpaceOnUse" x="0" y="-1" width="10" height="26" fill="black">
+<rect fill="white" y="-1" width="10" height="26"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2V22C6.04738 18.0948 2 12 2 12Z"/>
+</mask>
+<path d="M2 12C2 12 6.04738 5.90524 8 2V22C6.04738 18.0948 2 12 2 12Z" fill="#CC6600"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2V22C6.04738 18.0948 2 12 2 12Z" stroke="#946BE6" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-2-outside-1_938_22910)"/>
+</g>
+</g>
+</g>
+<g id="CENTRE shape">
+<mask id="path-3-outside-2_938_22910" maskUnits="userSpaceOnUse" x="8" y="0" width="29" height="24" fill="black">
+<rect fill="white" x="8" width="29" height="24"/>
+<path d="M8 2H37V22H8V2Z"/>
+</mask>
+<path d="M8 2H37V22H8V2Z" fill="#CC6600"/>
+<path d="M8 2V4H37V2V0H8V2ZM37 22V20H8V22V24H37V22Z" fill="#946BE6" mask="url(#path-3-outside-2_938_22910)"/>
+<text id="Chemical" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="8.49023" y="16.1602">NRTI</tspan></text>
+</g>
+<g id="RIGHT_ELEMENT">
+<mask id="mask1_938_22910" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="37" y="0" width="32" height="24">
+<path id="MASK_2" d="M37 24L69 24L69 -8.90181e-07L37 1.90735e-06L37 24Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_22910)">
+<g id="Mask group">
+<g id="ELEMENT">
+<g id="BG">
+<mask id="path-7-outside-3_938_22910" maskUnits="userSpaceOnUse" x="35" y="-1.74846e-07" width="34" height="24" fill="black">
+<rect fill="white" x="35" y="-1.74846e-07" width="34" height="24"/>
+<path d="M67 12C67 12 62.9526 18.0948 61 22L37 21.9999L37 2L61 2C62.9526 5.90524 67 12 67 12Z"/>
+</mask>
+<path d="M67 12C67 12 62.9526 18.0948 61 22L37 21.9999L37 2L61 2C62.9526 5.90524 67 12 67 12Z" fill="#946BE6"/>
+<path d="M67 12C67 12 62.9526 18.0948 61 22L37 21.9999L37 2L61 2C62.9526 5.90524 67 12 67 12Z" stroke="#946BE6" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-7-outside-3_938_22910)"/>
+</g>
+<g id="RX">
+<path id="Vector" d="M46 22V14H49.3071C50.1387 14 50.743 14.0718 51.1199 14.2155C51.4968 14.3592 51.7984 14.6148 52.0249 14.9822C52.2514 15.3496 52.3647 15.7698 52.3647 16.2428C52.3647 16.843 52.193 17.3388 51.8497 17.7298C51.5064 18.1209 50.9933 18.3675 50.3103 18.4693C50.6501 18.6731 50.9305 18.8968 51.1517 19.1405C51.3728 19.3842 51.671 19.8172 52.0461 20.4393L52.9963 22H51.1172L49.9812 20.2592C49.5778 19.6371 49.3017 19.2451 49.1531 19.0832C49.0044 18.9214 48.847 18.8104 48.6807 18.7504C48.5144 18.6904 48.2507 18.6603 47.8898 18.6603H47.5713V22H46ZM47.5713 17.3834H48.7338C49.4875 17.3834 49.9583 17.3506 50.1458 17.2851C50.3333 17.2196 50.4802 17.1068 50.5864 16.9468C50.6925 16.7867 50.7456 16.5866 50.7456 16.3465C50.7456 16.0773 50.6758 15.8599 50.536 15.6944C50.3962 15.5289 50.1989 15.4243 49.9441 15.3806C49.8167 15.3625 49.4345 15.3533 48.7975 15.3533H47.5713V17.3834Z" fill="white"/>
+<path id="Vector_2" d="M52.9961 21.9999L55.0291 19.0149L53.0811 16.2046H54.9018L55.8998 17.798L56.9509 16.2046H58.7027L56.7917 18.9495L58.8778 22H57.0464L55.8998 20.2047L54.7426 21.9999H52.9961Z" fill="white"/>
+</g>
+</g>
+<g id="RIGHT_ELEMENT_2">
+<mask id="mask2_938_22910" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="37" y="0" width="8" height="24">
+<rect id="MASK_3" x="37" width="8" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask2_938_22910)">
+<g id="LEFT_CORNER_2">
+<mask id="path-11-outside-4_938_22910" maskUnits="userSpaceOnUse" x="35" y="-1" width="10" height="26" fill="black">
+<rect fill="white" x="35" y="-1" width="10" height="26"/>
+<path d="M43 12C43 12 38.9526 5.90524 37 2V22C38.9526 18.0948 43 12 43 12Z"/>
+</mask>
+<path d="M43 12C43 12 38.9526 5.90524 37 2V22C38.9526 18.0948 43 12 43 12Z" fill="#CC6600"/>
+<path d="M43 12C43 12 38.9526 5.90524 37 2V22C38.9526 18.0948 43 12 43 12Z" stroke="#946BE6" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-11-outside-4_938_22910)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

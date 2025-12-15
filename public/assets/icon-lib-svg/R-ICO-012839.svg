@@ -1,0 +1,17 @@
+<svg width="19" height="63" viewBox="0 0 19 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012839">
+<path id="HSPG" d="M17.1288 57.4914C15.1088 63.6806 3.64561 63.6835 1.62581 57.4984C-0.541187 50.8626 -0.541987 11.2763 1.62371 4.64086C3.64371 -1.54804 15.1095 -1.54684 17.1296 4.64376C19.2948 11.2791 19.2944 50.856 17.1288 57.4914Z" fill="url(#paint0_radial_938_24319)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24319" cx="0" cy="0" r="1" gradientTransform="matrix(15.263 0.0732624 -0.0900517 26.3271 7.31775 15.5072)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB2B2"/>
+<stop offset="0.036" stop-color="#F6A7A7"/>
+<stop offset="0.1994" stop-color="#D07A7A"/>
+<stop offset="0.3639" stop-color="#B05454"/>
+<stop offset="0.527" stop-color="#983737"/>
+<stop offset="0.6882" stop-color="#862323"/>
+<stop offset="0.8469" stop-color="#7C1616"/>
+<stop offset="1" stop-color="#781212"/>
+</radialGradient>
+</defs>
+</svg>

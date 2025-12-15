@@ -1,0 +1,17 @@
+<svg width="78" height="31" viewBox="0 0 78 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013797">
+<g id="Abstract" clip-path="url(#clip0_938_25011)">
+<path id="bg" d="M39 0.5C49.7226 0.5 59.4071 2.22862 66.3926 5.00488C69.8866 6.39356 72.6806 8.03433 74.5928 9.83105C76.504 11.627 77.5 13.5429 77.5 15.5C77.5 17.4571 76.504 19.373 74.5928 21.1689C72.6806 22.9657 69.8866 24.6064 66.3926 25.9951C59.4071 28.7714 49.7226 30.5 39 30.5C28.2774 30.5 18.5929 28.7714 11.6074 25.9951C8.11338 24.6064 5.31937 22.9657 3.40723 21.1689C1.49597 19.373 0.5 17.4571 0.5 15.5C0.5 13.5429 1.49597 11.627 3.40723 9.83105C5.31937 8.03433 8.11338 6.39356 11.6074 5.00488C18.5929 2.22862 28.2774 0.5 39 0.5Z" fill="url(#paint0_radial_938_25011)" stroke="#2B6817"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.16797" y="20.1484">RESOLVINS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25011" cx="0" cy="0" r="1" gradientTransform="matrix(25.1451 13.1915 -33.1916 9.99357 26.9751 9.98414)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B7C5B2"/>
+<stop offset="1" stop-color="#447833"/>
+</radialGradient>
+<clipPath id="clip0_938_25011">
+<rect width="78" height="31" fill="white"/>
+</clipPath>
+</defs>
+</svg>

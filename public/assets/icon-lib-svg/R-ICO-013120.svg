@@ -1,0 +1,17 @@
+<svg width="92" height="36" viewBox="0 0 92 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013120">
+<g id="Abstract" clip-path="url(#clip0_938_24956)">
+<path id="bg" d="M46 0.5C58.6563 0.5 70.0918 2.50792 78.3447 5.7373C82.4727 7.35262 85.7797 9.26381 88.0459 11.3604C90.3115 13.4563 91.5 15.7007 91.5 18C91.5 20.2993 90.3115 22.5437 88.0459 24.6396C85.7797 26.7362 82.4727 28.6474 78.3447 30.2627C70.0918 33.4921 58.6563 35.5 46 35.5C33.3437 35.5 21.9082 33.4921 13.6553 30.2627C9.52725 28.6474 6.22027 26.7362 3.9541 24.6396C1.68855 22.5437 0.5 20.2993 0.5 18C0.5 15.7007 1.68855 13.4563 3.9541 11.3604C6.22027 9.26381 9.52725 7.35262 13.6553 5.7373C21.9082 2.50792 33.3437 0.5 46 0.5Z" fill="url(#paint0_radial_938_24956)" stroke="#521672"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="3.38477" y="22.1483">NUCLEOTIDES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24956" cx="0" cy="0" r="1" gradientTransform="matrix(29.6583 15.3192 -39.149 11.6054 31.8167 11.5945)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BFB2C5"/>
+<stop offset="1" stop-color="#623378"/>
+</radialGradient>
+<clipPath id="clip0_938_24956">
+<rect width="92" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>

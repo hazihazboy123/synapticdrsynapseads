@@ -1,0 +1,24 @@
+<svg width="14" height="63" viewBox="0 0 14 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013427">
+<g id="R-ICO-013012">
+<path id="MHC II" d="M2 46.8571V62.4761H0V31.2341H2C2 34.0791 4.221 36.0821 6.951 36.0821C9.68 36.0821 11.901 34.0791 11.901 31.2701V31.2341H13.901V62.4761H11.901V46.8531L2 46.8571Z" fill="url(#paint0_linear_938_23085)"/>
+</g>
+<g id="R-ICO-013428">
+<path id="TCR" d="M11.9014 15.6191V8.7738e-05H13.9014V31.2421H11.9014C11.9014 34.0871 9.68037 36.0901 6.95037 36.0901C4.22137 36.0901 2.00037 34.0871 2.00037 31.2051V31.2411H0.000367165V8.7738e-05H2.00037V15.6231L11.9014 15.6191Z" fill="url(#paint1_linear_938_23085)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_23085" x1="6.9505" y1="31.3839" x2="6.9505" y2="62.6259" gradientUnits="userSpaceOnUse">
+<stop offset="0.0015" stop-color="#C6BA00"/>
+<stop offset="1" stop-color="#003A3C"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_23085" x1="6.95087" y1="35.9176" x2="6.95087" y2="-0.172412" gradientUnits="userSpaceOnUse">
+<stop offset="0.0015" stop-color="#7000BF"/>
+<stop offset="0.2061" stop-color="#95219F"/>
+<stop offset="0.4273" stop-color="#B73E84"/>
+<stop offset="0.639" stop-color="#CF536F"/>
+<stop offset="0.835" stop-color="#DD6063"/>
+<stop offset="1" stop-color="#E2645F"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,87 @@
+<svg width="119" height="24" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014815">
+<g id="BASE/SMALL-MOLECULE_THERAPEUTIC">
+<g id="LEFT_ELEMENT">
+<mask id="mask0_938_22929" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="8" height="24">
+<rect id="MASK" width="8" height="24" transform="matrix(-1 0 0 1 8 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_22929)">
+<g id="LEFT_CORNER">
+<mask id="path-2-outside-1_938_22929" maskUnits="userSpaceOnUse" x="0" y="-1" width="10" height="26" fill="black">
+<rect fill="white" y="-1" width="10" height="26"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2V22C6.04738 18.0948 2 12 2 12Z"/>
+</mask>
+<path d="M2 12C2 12 6.04738 5.90524 8 2V22C6.04738 18.0948 2 12 2 12Z" fill="url(#paint0_linear_938_22929)"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2V22C6.04738 18.0948 2 12 2 12Z" stroke="#946BE6" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-2-outside-1_938_22929)"/>
+</g>
+</g>
+</g>
+<g id="CENTRE shape">
+<g clip-path="url(#clip0_938_22929)">
+<mask id="path-3-outside-2_938_22929" maskUnits="userSpaceOnUse" x="8" y="0" width="79" height="24" fill="black">
+<rect fill="white" x="8" width="79" height="24"/>
+<path d="M8 2H87V22H8V2Z"/>
+</mask>
+<path d="M8 2H87V22H8V2Z" fill="url(#paint1_linear_938_22929)"/>
+<text id="Chemical" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="8.14258" y="16.1602">OSIMERTINIB</tspan></text>
+</g>
+<path d="M8 2V4H87V2V0H8V2ZM87 22V20H8V22V24H87V22Z" fill="#946BE6" mask="url(#path-3-outside-2_938_22929)"/>
+</g>
+<g id="RIGHT_ELEMENT">
+<mask id="mask1_938_22929" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="87" y="0" width="32" height="24">
+<path id="MASK_2" d="M87 24L119 24L119 -8.90181e-07L87 1.90735e-06L87 24Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_22929)">
+<g id="Mask group">
+<g id="ELEMENT">
+<g id="BG">
+<mask id="path-7-outside-3_938_22929" maskUnits="userSpaceOnUse" x="85" y="-1.74846e-07" width="34" height="24" fill="black">
+<rect fill="white" x="85" y="-1.74846e-07" width="34" height="24"/>
+<path d="M117 12C117 12 112.953 18.0948 111 22L87 21.9999L87 2L111 2C112.953 5.90524 117 12 117 12Z"/>
+</mask>
+<path d="M117 12C117 12 112.953 18.0948 111 22L87 21.9999L87 2L111 2C112.953 5.90524 117 12 117 12Z" fill="#946BE6"/>
+<path d="M117 12C117 12 112.953 18.0948 111 22L87 21.9999L87 2L111 2C112.953 5.90524 117 12 117 12Z" stroke="#946BE6" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-7-outside-3_938_22929)"/>
+</g>
+<g id="RX">
+<path id="Vector" d="M96 22V14H99.3071C100.139 14 100.743 14.0718 101.12 14.2155C101.497 14.3592 101.798 14.6148 102.025 14.9822C102.251 15.3496 102.365 15.7698 102.365 16.2428C102.365 16.843 102.193 17.3388 101.85 17.7298C101.506 18.1209 100.993 18.3675 100.31 18.4693C100.65 18.6731 100.931 18.8968 101.152 19.1405C101.373 19.3842 101.671 19.8172 102.046 20.4393L102.996 22H101.117L99.9812 20.2592C99.5778 19.6371 99.3017 19.2451 99.1531 19.0832C99.0044 18.9214 98.847 18.8104 98.6807 18.7504C98.5144 18.6904 98.2507 18.6603 97.8898 18.6603H97.5713V22H96ZM97.5713 17.3834H98.7338C99.4875 17.3834 99.9583 17.3506 100.146 17.2851C100.333 17.2196 100.48 17.1068 100.586 16.9468C100.693 16.7867 100.746 16.5866 100.746 16.3465C100.746 16.0773 100.676 15.8599 100.536 15.6944C100.396 15.5289 100.199 15.4243 99.9441 15.3806C99.8167 15.3625 99.4345 15.3533 98.7975 15.3533H97.5713V17.3834Z" fill="white"/>
+<path id="Vector_2" d="M102.996 21.9999L105.029 19.0149L103.081 16.2046H104.902L105.9 17.798L106.951 16.2046H108.703L106.792 18.9495L108.878 22H107.046L105.9 20.2047L104.743 21.9999H102.996Z" fill="white"/>
+</g>
+</g>
+<g id="RIGHT_ELEMENT_2">
+<mask id="mask2_938_22929" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="87" y="0" width="8" height="24">
+<rect id="MASK_3" x="87" width="8" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask2_938_22929)">
+<g id="LEFT_CORNER_2">
+<mask id="path-11-outside-4_938_22929" maskUnits="userSpaceOnUse" x="85" y="-1" width="10" height="26" fill="black">
+<rect fill="white" x="85" y="-1" width="10" height="26"/>
+<path d="M93 12C93 12 88.9526 5.90524 87 2V22C88.9526 18.0948 93 12 93 12Z"/>
+</mask>
+<path d="M93 12C93 12 88.9526 5.90524 87 2V22C88.9526 18.0948 93 12 93 12Z" fill="url(#paint2_linear_938_22929)"/>
+<path d="M93 12C93 12 88.9526 5.90524 87 2V22C88.9526 18.0948 93 12 93 12Z" stroke="#946BE6" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-11-outside-4_938_22929)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_22929" x1="5" y1="2" x2="5" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B35D2A"/>
+<stop offset="1" stop-color="#BD9AB6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_22929" x1="47.5" y1="2" x2="47.5" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B35D2A"/>
+<stop offset="1" stop-color="#BD9AB6"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_22929" x1="90" y1="2" x2="90" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B35D2A"/>
+<stop offset="1" stop-color="#BD9AB6"/>
+</linearGradient>
+<clipPath id="clip0_938_22929">
+<path d="M8 2H87V22H8V2Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

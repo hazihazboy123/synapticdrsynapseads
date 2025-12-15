@@ -1,0 +1,17 @@
+<svg width="110" height="44" viewBox="0 0 110 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012368">
+<g id="BG">
+<mask id="path-1-inside-1_938_24613" fill="white">
+<path d="M54.5073 43.0122C84.6109 43.0122 109.015 33.3836 109.015 21.5061C109.015 9.62861 84.6109 0 54.5073 0C24.4038 0 0 9.62861 0 21.5061C0 33.3836 24.4038 43.0122 54.5073 43.0122Z"/>
+</mask>
+<path d="M54.5073 43.0122C84.6109 43.0122 109.015 33.3836 109.015 21.5061C109.015 9.62861 84.6109 0 54.5073 0C24.4038 0 0 9.62861 0 21.5061C0 33.3836 24.4038 43.0122 54.5073 43.0122Z" fill="url(#paint0_radial_938_24613)" stroke="#16266D" stroke-width="4" stroke-miterlimit="10" mask="url(#path-1-inside-1_938_24613)"/>
+</g>
+<text id="5&#39; NUCLEOTIDES" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5" y="26.1602">5&#39; NUCLEOTIDES</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24613" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.8879 14.2387) scale(54.5071 21.5055)">
+<stop stop-color="#BFB2C5"/>
+<stop offset="1" stop-color="#333E78"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="58" height="23" viewBox="0 0 58 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012454">
+<g id="A">
+<g id="Vector">
+<mask id="path-1-inside-1_938_24635" fill="white">
+<path d="M0 5.2181V17.0252L9.5554 22.2321L19.0813 17.0252V5.2181L9.5766 0L0 5.2181Z"/>
+</mask>
+<path d="M0 5.2181V17.0252L9.5554 22.2321L19.0813 17.0252V5.2181L9.5766 0L0 5.2181Z" fill="url(#paint0_linear_938_24635)" stroke="#73BABF" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" mask="url(#path-1-inside-1_938_24635)"/>
+</g>
+<text id="A_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.04102" y="15.2763">A</tspan></text>
+</g>
+<g id="U">
+<g id="Vector_2">
+<mask id="path-3-inside-2_938_24635" fill="white">
+<path d="M19.0811 5.2181V17.0252L28.6364 22.2321L38.1624 17.0252V5.2181L28.6577 0L19.0811 5.2181Z"/>
+</mask>
+<path d="M19.0811 5.2181V17.0252L28.6364 22.2321L38.1624 17.0252V5.2181L28.6577 0L19.0811 5.2181Z" fill="url(#paint1_linear_938_24635)" stroke="#A2BF73" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" mask="url(#path-3-inside-2_938_24635)"/>
+</g>
+<text id="U_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="24.1221" y="15.2763">U</tspan></text>
+</g>
+<g id="G">
+<g id="Vector_3">
+<mask id="path-5-inside-3_938_24635" fill="white">
+<path d="M38.1631 5.2181V17.0252L47.7184 22.2321L57.2444 17.0252V5.2181L47.7397 0L38.1631 5.2181Z"/>
+</mask>
+<path d="M38.1631 5.2181V17.0252L47.7184 22.2321L57.2444 17.0252V5.2181L47.7397 0L38.1631 5.2181Z" fill="url(#paint2_linear_938_24635)" stroke="#BF728E" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" mask="url(#path-5-inside-3_938_24635)"/>
+</g>
+<text id="G_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="42.7041" y="15.2762">G</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24635" x1="9.5406" y1="22.2321" x2="9.5406" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#041330"/>
+<stop offset="1" stop-color="#73BABF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_24635" x1="28.6217" y1="22.2321" x2="28.6217" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1F3004"/>
+<stop offset="1" stop-color="#A2BF73"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_24635" x1="47.7037" y1="22.2321" x2="47.7037" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#300414"/>
+<stop offset="1" stop-color="#BF728E"/>
+</linearGradient>
+</defs>
+</svg>

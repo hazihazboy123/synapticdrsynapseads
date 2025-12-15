@@ -1,0 +1,17 @@
+<svg width="122" height="36" viewBox="0 0 122 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014872">
+<g id="Abstract" clip-path="url(#clip0_938_24957)">
+<ellipse id="bg" cx="61" cy="18" rx="61" ry="18" fill="url(#paint0_radial_938_24957)"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="3.37305" y="22.1484">RIBONUCLEOTIDES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24957" cx="0" cy="0" r="1" gradientTransform="matrix(39.3295 15.3192 -51.915 11.6054 42.1918 11.5945)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B5B2C5"/>
+<stop offset="1" stop-color="#3F3378"/>
+</radialGradient>
+<clipPath id="clip0_938_24957">
+<rect width="122" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>

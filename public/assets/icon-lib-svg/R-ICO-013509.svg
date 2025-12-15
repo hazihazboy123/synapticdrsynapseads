@@ -1,0 +1,19 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013509">
+<path id="Vector" d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="url(#paint0_radial_938_24259)"/>
+<text id="Ub" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="2.99609" y="15.1602">Ub</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24259" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 11) scale(11)">
+<stop stop-color="#DABF68"/>
+<stop offset="0.0962" stop-color="#AC9D68"/>
+<stop offset="0.2063" stop-color="#807B67"/>
+<stop offset="0.3213" stop-color="#595E67"/>
+<stop offset="0.4395" stop-color="#3A4667"/>
+<stop offset="0.5623" stop-color="#223466"/>
+<stop offset="0.6913" stop-color="#112766"/>
+<stop offset="0.8309" stop-color="#061F66"/>
+<stop offset="1" stop-color="#031D66"/>
+</radialGradient>
+</defs>
+</svg>

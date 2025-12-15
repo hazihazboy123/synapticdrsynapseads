@@ -1,0 +1,17 @@
+<svg width="109" height="48" viewBox="0 0 109 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012580">
+<g id="Abstract" clip-path="url(#clip0_938_24714)">
+<ellipse id="bg" cx="54.5" cy="24" rx="54.5" ry="24" fill="url(#paint0_radial_938_24714)"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="4.21484" y="28.1484">COREPRESSORS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24714" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54.5 24) rotate(90) scale(24 54.5)">
+<stop stop-color="#8499DB"/>
+<stop offset="1" stop-color="#5C2B53"/>
+</radialGradient>
+<clipPath id="clip0_938_24714">
+<rect width="109" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

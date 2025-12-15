@@ -1,0 +1,46 @@
+<svg width="98" height="25" viewBox="0 0 98 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014853">
+<g id="A">
+<path id="Vector" d="M1 6.35775V18.1649L10.5553 23.3717L20.0813 18.1649V6.35775L10.5766 1.13965L1 6.35775Z" fill="#72B8BD" stroke="url(#paint0_linear_938_24980)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="A_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.85645" y="15.5522">A</tspan></text>
+</g>
+<g id="A_3">
+<path id="Vector_2" d="M20.0811 6.35775V18.1649L29.6364 23.3717L39.1623 18.1649V6.35775L29.6577 1.13965L20.0811 6.35775Z" fill="#72B8BD" stroke="url(#paint1_linear_938_24980)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="A_4" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="24.9375" y="15.5522">A</tspan></text>
+</g>
+<g id="Uridine">
+<path id="Vector_3" d="M39.1621 6.35775V18.1649L48.7175 23.3717L58.2434 18.1649V6.35775L48.7388 1.13965L39.1621 6.35775Z" fill="#A0BD74" stroke="url(#paint2_linear_938_24980)" stroke-width="2" stroke-miterlimit="10"/>
+<text id="U" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="44.0186" y="15.5522">U</tspan></text>
+</g>
+<g id="Uridine_2">
+<path id="Vector_4" d="M58.2441 6.35775V18.1649L67.7995 23.3717L77.3255 18.1649V6.35775L67.8208 1.13965L58.2441 6.35775Z" fill="#A0BD74" stroke="url(#paint3_linear_938_24980)" stroke-width="2" stroke-miterlimit="10"/>
+<text id="U_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="63.1006" y="15.5522">U</tspan></text>
+</g>
+<g id="Uridine_3">
+<path id="Vector_5" d="M77.3252 6.35775V18.1649L86.8806 23.3717L96.4065 18.1649V6.35775L86.9019 1.13965L77.3252 6.35775Z" fill="#A0BD74" stroke="url(#paint4_linear_938_24980)" stroke-width="2" stroke-miterlimit="10"/>
+<text id="U_3" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="82.1816" y="15.5522">U</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24980" x1="10.5406" y1="24.3717" x2="10.5406" y2="0.139648" gradientUnits="userSpaceOnUse">
+<stop stop-color="#041330"/>
+<stop offset="1" stop-color="#72B8BD"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_24980" x1="29.6217" y1="24.3717" x2="29.6217" y2="0.139648" gradientUnits="userSpaceOnUse">
+<stop stop-color="#041330"/>
+<stop offset="1" stop-color="#72B8BD"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_24980" x1="48.7028" y1="24.5109" x2="48.7028" y2="-0.000152074" gradientUnits="userSpaceOnUse">
+<stop stop-color="#001347"/>
+<stop offset="0.9995" stop-color="#A0BD74"/>
+</linearGradient>
+<linearGradient id="paint3_linear_938_24980" x1="67.7848" y1="24.5109" x2="67.7848" y2="-0.000152074" gradientUnits="userSpaceOnUse">
+<stop stop-color="#001347"/>
+<stop offset="0.9995" stop-color="#A0BD74"/>
+</linearGradient>
+<linearGradient id="paint4_linear_938_24980" x1="86.8659" y1="24.5109" x2="86.8659" y2="-0.000152074" gradientUnits="userSpaceOnUse">
+<stop stop-color="#001347"/>
+<stop offset="0.9995" stop-color="#A0BD74"/>
+</linearGradient>
+</defs>
+</svg>

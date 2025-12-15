@@ -1,0 +1,17 @@
+<svg width="70" height="30" viewBox="0 0 70 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013169">
+<g id="R-ICO-013169_2" clip-path="url(#clip0_938_24975)">
+<path id="bg" d="M35 0.5C44.6138 0.5 53.2939 2.17064 59.5518 4.85254C62.6816 6.19389 65.1824 7.77884 66.8936 9.5127C68.6026 11.2444 69.5 13.098 69.5 15C69.5 16.902 68.6026 18.7556 66.8936 20.4873C65.1824 22.2212 62.6816 23.8061 59.5518 25.1475C53.2939 27.8294 44.6138 29.5 35 29.5C25.3862 29.5 16.7061 27.8294 10.4482 25.1475C7.31842 23.8061 4.81761 22.2212 3.10645 20.4873C1.39742 18.7556 0.5 16.902 0.5 15C0.5 13.098 1.39742 11.2444 3.10645 9.5127C4.81761 7.77884 7.31842 6.19389 10.4482 4.85254C16.7061 2.17064 25.3862 0.5 35 0.5Z" fill="url(#paint0_radial_938_24975)" stroke="#704E16"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="5.22607" y="19.1483">PEPTIDES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24975" cx="0" cy="0" r="1" gradientTransform="matrix(22.5661 12.766 -29.7873 9.6712 24.2084 9.66207)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C5BEB2"/>
+<stop offset="1" stop-color="#B87A15"/>
+</radialGradient>
+<clipPath id="clip0_938_24975">
+<rect width="70" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

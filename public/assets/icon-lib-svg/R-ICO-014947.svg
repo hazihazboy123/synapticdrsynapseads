@@ -1,0 +1,30 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014947">
+<path id="Vector" d="M35.7381 35.7381H8C3.5817 35.7381 0 32.1564 0 27.7381V15C0 6.7157 6.7157 0 15 0H27.7381C32.1564 0 35.7381 3.5817 35.7381 8V35.7381Z" fill="url(#paint0_radial_941_74015)"/>
+<path id="Vector_2" d="M63.476 35.7381H35.738V8C35.738 3.5817 39.3197 0 43.738 0H56.4761C64.7604 0 71.4761 6.7157 71.4761 15V27.7381C71.476 32.1563 67.8943 35.7381 63.476 35.7381Z" fill="url(#paint1_radial_941_74015)"/>
+<path id="Vector_3" d="M27.7381 71.4763H15C6.7157 71.4763 0 64.7606 0 56.4763V43.7383C0 39.32 3.5817 35.7383 8 35.7383H35.7381V63.4764C35.7381 67.8946 32.1563 71.4763 27.7381 71.4763Z" fill="url(#paint2_radial_941_74015)"/>
+<path id="Vector_4" d="M56.476 71.4763H43.738C39.3197 71.4763 35.738 67.8946 35.738 63.4763V35.7383H63.4761C67.8944 35.7383 71.4761 39.32 71.4761 43.7383V56.4764C71.476 64.7606 64.7603 71.4763 56.476 71.4763Z" fill="url(#paint3_radial_941_74015)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_941_74015" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.5633 17.5992) scale(20.1501 20.1502)">
+<stop stop-color="#CDACD1"/>
+<stop offset="0.4" stop-color="#9B6CAD"/>
+<stop offset="1" stop-color="#6E4384"/>
+</radialGradient>
+<radialGradient id="paint1_radial_941_74015" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.3013 17.5992) scale(20.1501 20.1502)">
+<stop stop-color="#CDACD1"/>
+<stop offset="0.4" stop-color="#9B6CAD"/>
+<stop offset="1" stop-color="#6E4384"/>
+</radialGradient>
+<radialGradient id="paint2_radial_941_74015" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.5633 53.3375) scale(20.1501)">
+<stop stop-color="#CDACD1"/>
+<stop offset="0.4" stop-color="#9B6CAD"/>
+<stop offset="1" stop-color="#6E4384"/>
+</radialGradient>
+<radialGradient id="paint3_radial_941_74015" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.3013 53.3375) scale(20.1501)">
+<stop stop-color="#CDACD1"/>
+<stop offset="0.4" stop-color="#9B6CAD"/>
+<stop offset="1" stop-color="#6E4384"/>
+</radialGradient>
+</defs>
+</svg>

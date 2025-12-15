@@ -1,0 +1,18 @@
+<svg width="37" height="94" viewBox="0 0 37 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012653">
+<path id="Vector" d="M18.0791 40.7349C16.6982 40.7349 15.5791 39.6158 15.5791 38.2349V2.5C15.5791 1.1191 16.6982 0 18.0791 0C19.46 0 20.5791 1.1191 20.5791 2.5V38.2349C20.5791 39.6157 19.4599 40.7349 18.0791 40.7349Z" fill="url(#paint0_linear_938_24313)"/>
+<path id="Vector_2" d="M18.0793 93.671C28.0642 93.671 36.1586 81.2245 36.1586 65.8709C36.1586 50.5174 28.0642 38.0708 18.0793 38.0708C8.09438 38.0708 0 50.5174 0 65.8709C0 81.2245 8.09438 93.671 18.0793 93.671Z" fill="url(#paint1_radial_938_24313)"/>
+<text id="EFNA" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="1.74609" y="70.2309">EFNA</tspan></text>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24313" x1="15.5791" y1="20.3674" x2="20.5791" y2="20.3674" gradientUnits="userSpaceOnUse">
+<stop stop-color="#001E2A"/>
+<stop offset="0.2727" stop-color="#4FA63F"/>
+<stop offset="1" stop-color="#001E2A"/>
+</linearGradient>
+<radialGradient id="paint1_radial_938_24313" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.915 56.6934) scale(18.9788 29.922)">
+<stop stop-color="#4FA63F"/>
+<stop offset="1" stop-color="#001E2A"/>
+</radialGradient>
+</defs>
+</svg>

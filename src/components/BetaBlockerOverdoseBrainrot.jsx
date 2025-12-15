@@ -272,7 +272,7 @@ export const BetaBlockerOverdoseBrainrot = () => {
             <Audio src={staticFile('assets/sfx/success-answer.mp3')} volume={0.9} />
           </Sequence>
 
-          {/* ===== BRAIN MASCOT ===== */}
+          {/* ===== BRAIN MASCOT WITH ATTACHED SPEECH BUBBLE ===== */}
           <BrainMascot
             audioPath={audioPath}
             position="top-left"
@@ -284,6 +284,10 @@ export const BetaBlockerOverdoseBrainrot = () => {
             celebrationMoment={answerRevealFrame}
             customTop={30}
             customLeft={40}
+            showSpeechBubble={true}
+            speechBubbleWords={timestampsData.words}
+            speechBubbleSize={{ width: 140, height: 80 }}
+            speechBubbleFontSize={18}
           />
 
           {/* ===== QUESTION CARD ===== */}
@@ -305,19 +309,6 @@ export const BetaBlockerOverdoseBrainrot = () => {
               cardTopOffset={140}
             />
           )}
-
-          {/* ===== CAPTIONS ===== */}
-          <TikTokCaptions
-            words={timestampsData.words}
-            playbackRate={PLAYBACK_RATE}
-            frameOffset={0}
-            position="speech-bubble"
-            fontSize={22}
-            mode="word"
-            maxWords={1}
-            customTop={50}
-            customLeft={180}
-          />
 
           {/* ===== MEMES ===== */}
           <StaticMemeOverlay

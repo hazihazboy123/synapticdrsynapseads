@@ -1,0 +1,17 @@
+<svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013116">
+<g id="Abstract" clip-path="url(#clip0_938_24953)">
+<path id="bg" d="M50 0.5C63.7725 0.5 76.2221 2.17511 85.2119 4.87207C89.7099 6.22148 93.3133 7.81887 95.7812 9.56934C98.2622 11.3291 99.5 13.1713 99.5 15C99.5 16.8287 98.2622 18.6709 95.7812 20.4307C93.3133 22.1811 89.7099 23.7785 85.2119 25.1279C76.2221 27.8249 63.7725 29.5 50 29.5C36.2275 29.5 23.7779 27.8249 14.7881 25.1279C10.2901 23.7785 6.68673 22.1811 4.21875 20.4307C1.73775 18.6709 0.5 16.8287 0.5 15C0.5 13.1713 1.73775 11.3291 4.21875 9.56934C6.68673 7.81887 10.2901 6.22148 14.7881 4.87207C23.7779 2.17511 36.2275 0.5 50 0.5Z" fill="url(#paint0_radial_938_24953)" stroke="#701632"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="7.05078" y="19.1483">NUCLEOSIDES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24953" cx="0" cy="0" r="1" gradientTransform="matrix(32.2373 12.766 -42.5533 9.6712 34.5834 9.66207)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BFB2C5"/>
+<stop offset="1" stop-color="#783348"/>
+</radialGradient>
+<clipPath id="clip0_938_24953">
+<rect width="100" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

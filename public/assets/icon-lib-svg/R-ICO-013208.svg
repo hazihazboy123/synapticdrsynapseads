@@ -1,0 +1,17 @@
+<svg width="100" height="34" viewBox="0 0 100 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013208">
+<g id="Abstract" clip-path="url(#clip0_938_24979)">
+<path id="bg" d="M50 0.5C63.7674 0.5 76.2106 2.3977 85.1943 5.45215C89.6887 6.98024 93.2903 8.78894 95.7578 10.7725C98.2298 12.7596 99.5 14.8674 99.5 17C99.5 19.1326 98.2298 21.2404 95.7578 23.2275C93.2903 25.2111 89.6887 27.0198 85.1943 28.5479C76.2106 31.6023 63.7674 33.5 50 33.5C36.2326 33.5 23.7894 31.6023 14.8057 28.5479C10.3113 27.0198 6.70971 25.2111 4.24219 23.2275C1.7702 21.2404 0.5 19.1326 0.5 17C0.5 14.8674 1.7702 12.7596 4.24219 10.7725C6.70971 8.78894 10.3113 6.98024 14.8057 5.45215C23.7894 2.3977 36.2326 0.5 50 0.5Z" fill="url(#paint0_radial_938_24979)" stroke="#704E16"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="4.93506" y="21.1483">POLYPEPTIDES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24979" cx="0" cy="0" r="1" gradientTransform="matrix(32.2373 14.4681 -42.5533 10.9607 34.5834 10.9503)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C5BEB2"/>
+<stop offset="1" stop-color="#FF7A15"/>
+</radialGradient>
+<clipPath id="clip0_938_24979">
+<rect width="100" height="34" fill="white"/>
+</clipPath>
+</defs>
+</svg>

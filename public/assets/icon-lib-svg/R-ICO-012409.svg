@@ -1,0 +1,13 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012409">
+<path id="BG" d="M17.3481 34.6962C26.9292 34.6962 34.6962 26.9292 34.6962 17.3481C34.6962 7.76701 26.9292 0 17.3481 0C7.76701 0 0 7.76701 0 17.3481C0 26.9292 7.76701 34.6962 17.3481 34.6962Z" fill="url(#paint0_radial_938_24628)"/>
+<text id="ROH" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="11.8653" font-weight="bold" letter-spacing="0em"><tspan x="4" y="21.1135">ROH</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24628" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.3695 10.1143) scale(19.7614)">
+<stop offset="0.0059" stop-color="#CFBA7B"/>
+<stop offset="0.5859" stop-color="#4D7C68"/>
+<stop offset="1" stop-color="#17363F"/>
+</radialGradient>
+</defs>
+</svg>

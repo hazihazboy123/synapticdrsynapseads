@@ -36,11 +36,10 @@ export const ContinuousTypewriter = ({
     return (
       <div style={{
         fontSize,
-        lineHeight: 1.8,
+        lineHeight: 1.6,
         color: '#e5e7eb',
-        margin: '24px 0',
+        margin: 0,
         textAlign: 'left',
-        minHeight: fontSize * 3, // Reserve space
       }}>
         {/* Blinking cursor waiting to start */}
         <span style={{
@@ -137,9 +136,9 @@ export const ContinuousTypewriter = ({
   return (
     <div style={{
       fontSize,
-      lineHeight: 1.8,
+      lineHeight: 1.6,
       color: '#e5e7eb',
-      margin: '24px 0',
+      margin: 0,
       textAlign: 'left',
       fontFamily: 'system-ui, -apple-system, sans-serif',
     }}>

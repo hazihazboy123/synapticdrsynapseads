@@ -1,0 +1,52 @@
+<svg width="71" height="24" viewBox="0 0 71 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013881">
+<g id="ACA-CoA">
+<g id="LEFT_CORNER">
+<mask id="mask0_938_24662" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="24">
+<rect id="MASK" width="10" height="24" transform="matrix(-1 0 0 1 10 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_24662)">
+<g id="CORNER">
+<mask id="path-2-outside-1_938_24662" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="24" fill="black">
+<rect fill="white" width="12" height="24"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2H10V22H8C6.04738 18.0948 2 12 2 12Z"/>
+</mask>
+<path d="M2 12C2 12 6.04738 5.90524 8 2H10V22H8C6.04738 18.0948 2 12 2 12Z" fill="#D16D2A"/>
+<path d="M2 12C2 12 6.04738 5.90524 8 2H10V22H8C6.04738 18.0948 2 12 2 12Z" stroke="#AA6231" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-2-outside-1_938_24662)"/>
+</g>
+</g>
+</g>
+<g id="RIGHT CORNER">
+<mask id="mask1_938_24662" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="61" y="0" width="10" height="24">
+<rect id="MASK_2" width="10" height="24" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 61 24)" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_24662)">
+<g id="CORNER_2">
+<mask id="path-4-outside-2_938_24662" maskUnits="userSpaceOnUse" x="59" y="0" width="12" height="24" fill="black">
+<rect fill="white" x="59" width="12" height="24"/>
+<path d="M69 12C69 12 64.9526 5.90524 63 2H61V22H63C64.9526 18.0948 69 12 69 12Z"/>
+</mask>
+<path d="M69 12C69 12 64.9526 5.90524 63 2H61V22H63C64.9526 18.0948 69 12 69 12Z" fill="#D16D2A"/>
+<path d="M69 12C69 12 64.9526 5.90524 63 2H61V22H63C64.9526 18.0948 69 12 69 12Z" stroke="#AA6231" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-4-outside-2_938_24662)"/>
+</g>
+</g>
+</g>
+<g id="ACA-CoA_2">
+<g clip-path="url(#clip0_938_24662)">
+<mask id="path-5-outside-3_938_24662" maskUnits="userSpaceOnUse" x="8" y="0" width="55" height="24" fill="black">
+<rect fill="white" x="8" width="55" height="24"/>
+<path d="M8 2H63V22H8V2Z"/>
+</mask>
+<path d="M8 2H63V22H8V2Z" fill="#D16D2A"/>
+<text id="Chemical" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="8.1543" y="16.1602">ACA-CoA</tspan></text>
+</g>
+<path d="M8 2V4H63V2V0H8V2ZM63 22V20H8V22V24H63V22Z" fill="#AA6231" mask="url(#path-5-outside-3_938_24662)"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_938_24662">
+<path d="M8 2H63V22H8V2Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

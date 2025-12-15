@@ -1,0 +1,17 @@
+<svg width="96" height="28" viewBox="0 0 96 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013838">
+<g id="Abstract" clip-path="url(#clip0_938_25020)">
+<path id="bg" d="M48 0.5C61.221 0.5 73.1716 2.06329 81.8008 4.58008C86.1187 5.83948 89.5773 7.32963 91.9443 8.96191C94.3269 10.6049 95.5 12.3159 95.5 14C95.5 15.6841 94.3269 17.3951 91.9443 19.0381C89.5773 20.6704 86.1187 22.1605 81.8008 23.4199C73.1716 25.9367 61.221 27.5 48 27.5C34.779 27.5 22.8284 25.9367 14.1992 23.4199C9.88128 22.1605 6.42275 20.6704 4.05566 19.0381C1.67313 17.3951 0.5 15.6841 0.5 14C0.5 12.3159 1.67313 10.6049 4.05566 8.96191C6.42275 7.32963 9.88128 5.83948 14.1992 4.58008C22.8284 2.06329 34.779 0.5 48 0.5Z" fill="url(#paint0_radial_938_25020)" stroke="#323232"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="7.04834" y="18.1484">XENOBIOTICS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_25020" cx="0" cy="0" r="1" gradientTransform="matrix(30.9478 11.9149 -40.8511 9.02645 33.2001 9.01793)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C8C8C8"/>
+<stop offset="1" stop-color="#323232"/>
+</radialGradient>
+<clipPath id="clip0_938_25020">
+<rect width="96" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>

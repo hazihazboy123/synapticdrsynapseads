@@ -1,0 +1,19 @@
+<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013243">
+<g id="BG">
+<mask id="path-1-outside-1_938_24258" maskUnits="userSpaceOnUse" x="0" y="0" width="43" height="44" fill="black">
+<rect fill="white" width="43" height="44"/>
+<path d="M21.3966 1C10.1502 1 1 10.197 1 21.5023C1 32.8076 10.1502 42.0032 21.3966 42.0032C32.6443 42.0032 41.7946 32.8062 41.7946 21.5023C41.7946 10.1984 32.6444 1 21.3966 1Z"/>
+</mask>
+<path d="M21.3966 1C10.1502 1 1 10.197 1 21.5023C1 32.8076 10.1502 42.0032 21.3966 42.0032C32.6443 42.0032 41.7946 32.8062 41.7946 21.5023C41.7946 10.1984 32.6444 1 21.3966 1Z" fill="url(#paint0_radial_938_24258)"/>
+<path d="M21.3966 1C10.1502 1 1 10.197 1 21.5023C1 32.8076 10.1502 42.0032 21.3966 42.0032C32.6443 42.0032 41.7946 32.8062 41.7946 21.5023C41.7946 10.1984 32.6444 1 21.3966 1Z" stroke="#82297C" stroke-width="2" mask="url(#path-1-outside-1_938_24258)"/>
+</g>
+<text id="PRL" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12.0306" font-weight="bold" letter-spacing="0em"><tspan x="9" y="25.1708">PRL</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24258" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.8924 13.1617) scale(19.5352 19.6348)">
+<stop stop-color="#FFB9F6"/>
+<stop offset="1" stop-color="#C782BE"/>
+</radialGradient>
+</defs>
+</svg>

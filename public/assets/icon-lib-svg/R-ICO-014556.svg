@@ -1,0 +1,16 @@
+<svg width="33" height="17" viewBox="0 0 33 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014556">
+<path id="L PROTEIN" d="M16.1223 16.8958C25.0264 16.8958 32.2446 13.1135 32.2446 8.4479C32.2446 3.78225 25.0264 0 16.1223 0C7.2182 0 0 3.78225 0 8.4479C0 13.1135 7.2182 16.8958 16.1223 16.8958Z" fill="url(#paint0_radial_938_24445)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24445" cx="0" cy="0" r="1" gradientTransform="matrix(16.1065 -0.0918071 0.0467088 8.35122 16.1231 8.44653)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#73FFE8"/>
+<stop offset="0.1594" stop-color="#70FBE4"/>
+<stop offset="0.3245" stop-color="#67EED8"/>
+<stop offset="0.4924" stop-color="#58DAC4"/>
+<stop offset="0.6622" stop-color="#43BDA8"/>
+<stop offset="0.8315" stop-color="#289884"/>
+<stop offset="1" stop-color="#086B59"/>
+</radialGradient>
+</defs>
+</svg>

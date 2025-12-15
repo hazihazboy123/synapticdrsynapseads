@@ -1,0 +1,59 @@
+<svg width="61" height="24" viewBox="0 0 61 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-014472">
+<g id="6-TGNs">
+<g id="Rectangle 2">
+<mask id="path-1-outside-1_938_24693" maskUnits="userSpaceOnUse" x="9.37988" y="0" width="43" height="24" fill="black">
+<rect fill="white" x="9.37988" width="43" height="24"/>
+<path d="M9.37988 2H51.6208V22H9.37988V2Z"/>
+</mask>
+<path d="M9.37988 2H51.6208V22H9.37988V2Z" fill="url(#paint0_linear_938_24693)"/>
+<path d="M9.37988 2V4H51.6208V2V0H9.37988V2ZM51.6208 22V20H9.37988V22V24H51.6208V22Z" fill="#BF6282" mask="url(#path-1-outside-1_938_24693)"/>
+</g>
+<g id="LEFT CORNER">
+<mask id="mask0_938_24693" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="0" width="10" height="24">
+<rect id="MASK" width="10" height="24" transform="matrix(-1 8.74228e-08 8.74228e-08 1 11 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0_938_24693)">
+<g id="CORNER">
+<mask id="path-4-outside-2_938_24693" maskUnits="userSpaceOnUse" x="1" y="-9.61651e-07" width="13" height="24" fill="black">
+<rect fill="white" x="1" y="-9.61651e-07" width="13" height="24"/>
+<path d="M9 22L3 16L3 8L9 2L12 2L12 22L9 22Z"/>
+</mask>
+<path d="M9 22L3 16L3 8L9 2L12 2L12 22L9 22Z" fill="url(#paint1_linear_938_24693)"/>
+<path d="M9 22L3 16L3 8L9 2L12 2L12 22L9 22Z" stroke="#BF6282" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-4-outside-2_938_24693)"/>
+</g>
+</g>
+</g>
+<g id="RIGHT CORNER">
+<mask id="mask1_938_24693" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="50" y="0" width="10" height="24">
+<rect id="MASK_2" x="50.1553" width="9.84445" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask1_938_24693)">
+<g id="CORNER_2">
+<mask id="path-6-outside-3_938_24693" maskUnits="userSpaceOnUse" x="47" y="-7.76718e-07" width="13" height="24" fill="black">
+<rect fill="white" x="47" y="-7.76718e-07" width="13" height="24"/>
+<path d="M52 22L58 16L58 8L52 2L49 2L49 22L52 22Z"/>
+</mask>
+<path d="M52 22L58 16L58 8L52 2L49 2L49 22L52 22Z" fill="url(#paint2_linear_938_24693)"/>
+<path d="M52 22L58 16L58 8L52 2L49 2L49 22L52 22Z" stroke="#BF6282" stroke-width="4" stroke-miterlimit="3.99933" stroke-linejoin="round" mask="url(#path-6-outside-3_938_24693)"/>
+</g>
+</g>
+</g>
+<text id="Ch" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="9.19712" y="16.1602">6-TGNs</tspan></text>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_24693" x1="23.4602" y1="2" x2="23.4602" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BF6282"/>
+<stop offset="1" stop-color="#ED7CE5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_938_24693" x1="6" y1="2" x2="6" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BF6282"/>
+<stop offset="1" stop-color="#ED7CE5"/>
+</linearGradient>
+<linearGradient id="paint2_linear_938_24693" x1="55" y1="2" x2="55" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BF6282"/>
+<stop offset="1" stop-color="#ED7CE5"/>
+</linearGradient>
+</defs>
+</svg>

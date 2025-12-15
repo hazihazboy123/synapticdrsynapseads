@@ -1,0 +1,11 @@
+<svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013012">
+<path id="MHC II" d="M2 15.623V31.242H0V0H2C2 2.845 4.221 4.848 6.951 4.848C9.68 4.848 11.901 2.845 11.901 0.036V0H13.901V31.242H11.901V15.619L2 15.623Z" fill="url(#paint0_linear_938_23082)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_938_23082" x1="6.9505" y1="0.1498" x2="6.9505" y2="31.3918" gradientUnits="userSpaceOnUse">
+<stop offset="0.0015" stop-color="#C6BA00"/>
+<stop offset="1" stop-color="#003A3C"/>
+</linearGradient>
+</defs>
+</svg>

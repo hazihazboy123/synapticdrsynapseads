@@ -1,0 +1,17 @@
+<svg width="116" height="48" viewBox="0 0 116 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013115">
+<g id="Abstract" clip-path="url(#clip0_938_24952)">
+<path id="bg" d="M58 0.5C73.9671 0.5 88.3995 3.17876 98.8213 7.49121C104.033 9.6479 108.218 12.2037 111.093 15.0156C113.965 17.8259 115.5 20.8618 115.5 24C115.5 27.1382 113.965 30.1741 111.093 32.9844C108.218 35.7963 104.033 38.3521 98.8213 40.5088C88.3995 44.8212 73.9671 47.5 58 47.5C42.0329 47.5 27.6005 44.8212 17.1787 40.5088C11.9668 38.3521 7.78152 35.7963 4.90723 32.9844C2.03472 30.1741 0.5 27.1382 0.5 24C0.5 20.8618 2.03472 17.8259 4.90723 15.0156C7.78152 12.2037 11.9668 9.6479 17.1787 7.49121C27.6005 3.17876 42.0329 0.5 58 0.5Z" fill="url(#paint0_radial_938_24952)" stroke="#176B5D"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="18.5527" y="21.1483">NUCLEOSIDE&#10;</tspan><tspan x="7.32617" y="35.1483">TRIPHOSPHATES</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24952" cx="0" cy="0" r="1" gradientTransform="matrix(37.3953 20.4256 -49.3618 15.4739 40.1168 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BFB2C5"/>
+<stop offset="1" stop-color="#33786D"/>
+</radialGradient>
+<clipPath id="clip0_938_24952">
+<rect width="116" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

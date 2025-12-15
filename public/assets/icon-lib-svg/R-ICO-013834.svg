@@ -1,0 +1,17 @@
+<svg width="114" height="48" viewBox="0 0 114 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-013834">
+<g id="Abstract" clip-path="url(#clip0_938_24933)">
+<path id="bg" d="M57 0.5C72.69 0.5 86.8714 3.17868 97.1113 7.49023C102.232 9.64642 106.344 12.2014 109.168 15.0127C111.99 17.822 113.5 20.8586 113.5 24C113.5 27.1414 111.99 30.178 109.168 32.9873C106.344 35.7986 102.232 38.3536 97.1113 40.5098C86.8714 44.8213 72.69 47.5 57 47.5C41.31 47.5 27.1286 44.8213 16.8887 40.5098C11.7678 38.3536 7.65604 35.7986 4.83203 32.9873C2.00998 30.178 0.5 27.1414 0.5 24C0.5 20.8586 2.00998 17.822 4.83203 15.0127C7.65604 12.2014 11.7678 9.64642 16.8887 7.49023C27.1286 3.17868 41.31 0.5 57 0.5Z" fill="url(#paint0_radial_938_24933)" stroke="#F97400"/>
+<text id="label" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="22.0659" y="21.1484">MEMBRANE&#10;</tspan><tspan x="8.04443" y="35.1484">PHOSPHOLIPIDS</tspan></text>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24933" cx="0" cy="0" r="1" gradientTransform="matrix(36.7506 20.4256 -48.5107 15.4739 39.4251 15.4593)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FDD538"/>
+<stop offset="1" stop-color="#F97400"/>
+</radialGradient>
+<clipPath id="clip0_938_24933">
+<rect width="114" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

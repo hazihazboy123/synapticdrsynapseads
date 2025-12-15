@@ -1,0 +1,25 @@
+<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="R-ICO-012680">
+<g id="BG">
+<mask id="path-1-outside-1_938_24251" maskUnits="userSpaceOnUse" x="0" y="0" width="39" height="39" fill="black">
+<rect fill="white" width="39" height="39"/>
+<path d="M19.2437 1C29.3023 1 37.4862 9.1839 37.4862 19.2437C37.4862 29.3035 29.3023 37.4862 19.2437 37.4862C9.1839 37.4862 1 29.3023 1 19.2437C1 9.185 9.1838 1 19.2437 1Z"/>
+</mask>
+<path d="M19.2437 1C29.3023 1 37.4862 9.1839 37.4862 19.2437C37.4862 29.3035 29.3023 37.4862 19.2437 37.4862C9.1839 37.4862 1 29.3023 1 19.2437C1 9.185 9.1838 1 19.2437 1Z" fill="url(#paint0_radial_938_24251)"/>
+<path d="M19.2437 1C29.3023 1 37.4862 9.1839 37.4862 19.2437C37.4862 29.3035 29.3023 37.4862 19.2437 37.4862C9.1839 37.4862 1 29.3023 1 19.2437C1 9.185 9.1838 1 19.2437 1Z" stroke="#006E87" stroke-width="2" mask="url(#path-1-outside-1_938_24251)"/>
+</g>
+<text id="EPO" fill="white" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="6" y="23.1601">EPO</tspan></text>
+</g>
+<defs>
+<radialGradient id="paint0_radial_938_24251" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.2891 9.7867) rotate(180) scale(17.472)">
+<stop stop-color="#A1EDFF"/>
+<stop offset="0.0801" stop-color="#82DCF1"/>
+<stop offset="0.1818" stop-color="#63CAE3"/>
+<stop offset="0.2927" stop-color="#48BCD7"/>
+<stop offset="0.4143" stop-color="#34B1CE"/>
+<stop offset="0.552" stop-color="#26A9C8"/>
+<stop offset="0.7193" stop-color="#1EA4C4"/>
+<stop offset="1" stop-color="#1BA3C3"/>
+</radialGradient>
+</defs>
+</svg>
