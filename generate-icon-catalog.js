@@ -15,55 +15,267 @@ const GENERIC_PATTERNS = [
   /^Ellipse(_\d+)?$/i,
   /^Line(_\d+)?$/i,
   /^Polygon(_\d+)?$/i,
-  /^BG$/i,
-  /^FG$/i,
+  /^BG(_\d+)?$/i,
+  /^FG(_\d+)?$/i,
   /^Layer(_\d+)?$/i,
   /^Shape(_\d+)?$/i,
   /^Clip(_\d+)?$/i,
   /^Mask(_\d+)?$/i,
   /^LEFT[\s_]CORNER$/i,
   /^RIGHT[\s_]CORNER$/i,
+  /^CORNER(_\d+)?$/i,
   /^R-ICO-\d+$/i, // File ID itself
   /^paint\d+/i,  // Gradient IDs
   /^path-\d+/i,  // Generic path IDs
   /^g\d+$/i,     // Generic group IDs
   /^defs$/i,
-  /^\d+$/,        // Just numbers
+  /^mask\d+/i,   // Mask IDs
+  /^clip\d+/i,   // Clip path IDs
+  /^Union$/i,    // Generic union shapes
+  /^centre$/i,   // Generic labels
+  /^Chemical$/i, // Too generic alone
+  /^Ch$/i,       // Too generic
+  /^GRID$/i,
+  /^TEXTURE$/i,
+  /^OUTLINE$/i,
+  /^LOGO(_\d+)?$/i,
+  /^ICON$/i,
+  /^\d+\]?$/,    // Just numbers or numbers with bracket
+  /^PLATELET(_\d+)?$/i,
+  /^STRIPES(_\d+)?$/i,
+  /^SECTION\s+BG$/i,
+  /^BG\s+OUTLINE$/i,
 ];
 
-// Category classification based on keywords
+// Improved category classification with more specific patterns
+// Order matters - more specific categories first!
 const CATEGORY_KEYWORDS = {
-  'cell-type': ['neuron', 'cell', 'lymphocyte', 'erythrocyte', 'leukocyte', 'platelet', 'macrophage', 'dendrite', 'axon', 'nucleus', 'cytoplasm', 'membrane'],
-  'receptor': ['receptor', 'binding', 'ligand', 'adrenergic', 'cholinergic', 'dopamine', 'serotonin', 'gaba', 'glutamate', 'nicotinic', 'muscarinic'],
-  'molecule': ['molecule', 'compound', 'chemical', 'substrate', 'product', 'metabolite', 'atp', 'adp', 'nad', 'fad', 'coenzyme'],
-  'protein': ['protein', 'enzyme', 'kinase', 'phosphatase', 'ligase', 'peptide', 'antibody', 'immunoglobulin', 'collagen', 'actin', 'myosin'],
-  'organ': ['heart', 'lung', 'liver', 'kidney', 'brain', 'spleen', 'pancreas', 'stomach', 'intestine', 'bladder', 'organ'],
-  'anatomy': ['bone', 'muscle', 'tissue', 'artery', 'vein', 'vessel', 'nerve', 'gland', 'duct', 'valve', 'chamber', 'lobe'],
-  'pathogen': ['virus', 'bacteria', 'pathogen', 'microbe', 'fungus', 'parasite', 'infection', 'viral', 'bacterial'],
-  'signal': ['signal', 'cascade', 'pathway', 'transduction', 'activation', 'inhibition', 'modulation', 'regulation'],
-  'ion-channel': ['channel', 'pump', 'transporter', 'exchanger', 'calcium', 'sodium', 'potassium', 'chloride', 'ion'],
-  'structure': ['structure', 'complex', 'domain', 'motif', 'helix', 'sheet', 'loop', 'fold', 'tertiary', 'quaternary'],
-  'chemical': ['carbohydrate', 'lipid', 'nucleotide', 'amino acid', 'fatty acid', 'glucose', 'glycogen', 'steroid', 'phosphate', 'phosphatidyl'],
-  'immune': ['immune', 'antibody', 'antigen', 'complement', 'cytokine', 'interferon', 'interleukin', 'lymph', 'mhc', 'tcr', 'bcr'],
-  'metabolic': ['metabolism', 'glycolysis', 'krebs', 'citric', 'oxidative', 'phosphorylation', 'catabolism', 'anabolism'],
+  // Very specific categories first
+  'receptor': [
+    'receptor',
+    'scavenger receptor',
+    'olfactory receptor',
+    'adrenergic receptor',
+    'cholinergic receptor',
+    'dopamine receptor',
+    'serotonin receptor',
+    'gaba receptor',
+    'glutamate receptor',
+    'nicotinic receptor',
+    'muscarinic receptor',
+    'g protein-coupled',
+    'gpcr'
+  ],
+
+  'ion-channel': [
+    'ion channel',
+    'sodium channel',
+    'potassium channel',
+    'calcium channel',
+    'chloride channel',
+    'voltage-gated',
+    'ligand-gated',
+    'aquaporin',
+    'ion pump',
+    'na+/k+ atpase',
+    'proton pump'
+  ],
+
+  'pathogen': [
+    'virus',
+    'virion',
+    'viral',
+    'bacteria',
+    'bacterial',
+    'pathogen',
+    'microbe',
+    'fungus',
+    'parasite'
+  ],
+
+  'immune': [
+    'antibody',
+    'immunoglobulin',
+    'antigen',
+    'complement',
+    'cytokine',
+    'interferon',
+    'interleukin',
+    'lymphocyte',
+    'macrophage',
+    't cell',
+    'b cell',
+    'mhc',
+    'tcr',
+    'bcr',
+    'immune'
+  ],
+
+  'anatomy': [
+    'organ',
+    'heart',
+    'lung',
+    'liver',
+    'kidney',
+    'brain',
+    'spleen',
+    'pancreas',
+    'stomach',
+    'intestine',
+    'vessel section',
+    'blood vessel',
+    'artery',
+    'vein',
+    'duct',
+    'tissue section',
+    'skin section',
+    'nail',
+    'bone',
+    'muscle tissue',
+    'epidermis',
+    'dermis'
+  ],
+
+  'cell-type': [
+    'neuron',
+    'nerve cell',
+    'erythrocyte',
+    'leukocyte',
+    'platelet',
+    'dendrite',
+    'axon',
+    'myelin',
+    'astrocyte',
+    'oligodendrocyte',
+    'microglia',
+    'stem cell',
+    'progenitor cell'
+  ],
+
+  'organelle': [
+    'nucleus',
+    'mitochondria',
+    'mitochondrion',
+    'ribosome',
+    'endoplasmic reticulum',
+    'golgi',
+    'lysosome',
+    'peroxisome',
+    'vacuole',
+    'chloroplast',
+    'cytoplasm',
+    'membrane',
+    'cell membrane',
+    'nuclear membrane',
+    'peroxisomal membrane'
+  ],
+
+  'protein': [
+    'actin',
+    'myosin',
+    'tubulin',
+    'collagen',
+    'keratin',
+    'fibrin',
+    'histone',
+    'kinase',
+    'phosphatase',
+    'ligase',
+    'polymerase',
+    'helicase',
+    'peptidase',
+    'protease',
+    'enzyme complex',
+    'protein complex',
+    'binding protein'
+  ],
+
+  'structure': [
+    'complex',
+    'apc/c',
+    'ccr4-not',
+    'gins complex',
+    'destruction complex',
+    'coiled-coil',
+    'protein structure',
+    'quaternary structure',
+    'tertiary structure',
+    'domain',
+    'motif'
+  ],
+
+  'signal': [
+    'signal cascade',
+    'signaling pathway',
+    'signal transduction',
+    'second messenger',
+    'kinase cascade',
+    'phosphorylation cascade'
+  ],
+
+  'chemical': [
+    'phosphatidyl',
+    'phosphatidylinositol',
+    'inositol phosphate',
+    'glycerol',
+    'fatty acid',
+    'lipid',
+    'steroid',
+    'cholesterol',
+    'carbohydrate',
+    'glucose',
+    'glycogen',
+    'starch'
+  ],
+
+  'molecule': [
+    'nucleotide',
+    'adenosine',
+    'guanosine',
+    'cytidine',
+    'thymidine',
+    'atp',
+    'adp',
+    'amp',
+    'gtp',
+    'gdp',
+    'nad',
+    'nadh',
+    'nadp',
+    'fad',
+    'coenzyme',
+    'acetyl',
+    'ribose',
+    'diphosphate',
+    'triphosphate',
+    'tetrahydrobiopterin',
+    'cation',
+    'substrate',
+    'product',
+    'metabolite',
+    'compound'
+  ],
+
   'generic': []  // Default category
 };
 
 // Use case classification
 const USE_CASE_KEYWORDS = {
-  'neurological': ['neuron', 'brain', 'nerve', 'neural', 'synapse', 'neurotransmitter', 'dopamine', 'serotonin', 'gaba'],
+  'neurological': ['neuron', 'brain', 'nerve', 'neural', 'synapse', 'neurotransmitter', 'dopamine', 'serotonin', 'gaba', 'myelin', 'axon', 'dendrite'],
   'cardiovascular': ['heart', 'cardiac', 'vessel', 'artery', 'vein', 'blood', 'circulation', 'vascular'],
   'respiratory': ['lung', 'alveoli', 'bronchi', 'respiratory', 'breathing', 'oxygen', 'gas exchange'],
-  'immunology': ['immune', 'antibody', 'antigen', 'lymphocyte', 'macrophage', 'cytokine', 'inflammation'],
+  'immunology': ['immune', 'antibody', 'antigen', 'lymphocyte', 'macrophage', 'cytokine', 'inflammation', 'interferon', 'complement'],
   'endocrine': ['hormone', 'gland', 'insulin', 'glucagon', 'thyroid', 'adrenal', 'pituitary', 'endocrine'],
-  'signal-transduction': ['signal', 'cascade', 'pathway', 'transduction', 'receptor', 'kinase', 'phosphorylation'],
-  'metabolism': ['metabolism', 'glycolysis', 'atp', 'enzyme', 'substrate', 'catalysis', 'oxidation', 'reduction'],
-  'molecular-biology': ['dna', 'rna', 'protein', 'gene', 'transcription', 'translation', 'replication'],
-  'pharmacology': ['drug', 'receptor', 'agonist', 'antagonist', 'inhibitor', 'blocker', 'channel'],
-  'anatomy': ['organ', 'tissue', 'bone', 'muscle', 'structure', 'anatomical'],
-  'cellular': ['cell', 'membrane', 'organelle', 'nucleus', 'mitochondria', 'cytoplasm', 'transport'],
-  'receptor-binding': ['receptor', 'binding', 'ligand', 'affinity', 'attachment'],
-  'ion-transport': ['ion', 'channel', 'pump', 'transporter', 'calcium', 'sodium', 'potassium'],
+  'signal-transduction': ['signal', 'cascade', 'pathway', 'transduction', 'kinase', 'phosphorylation', 'second messenger'],
+  'metabolism': ['metabolism', 'glycolysis', 'atp', 'substrate', 'catalysis', 'oxidation', 'reduction', 'krebs', 'citric acid'],
+  'molecular-biology': ['dna', 'rna', 'nucleotide', 'gene', 'transcription', 'translation', 'replication', 'polymerase'],
+  'pharmacology': ['drug', 'agonist', 'antagonist', 'inhibitor', 'blocker'],
+  'anatomy': ['organ', 'tissue', 'bone', 'muscle', 'structure', 'anatomical', 'section', 'duct', 'vessel'],
+  'cellular': ['cell', 'membrane', 'organelle', 'nucleus', 'mitochondria', 'cytoplasm', 'ribosome', 'peroxisome'],
+  'receptor-binding': ['receptor', 'ligand', 'binding', 'affinity'],
+  'ion-transport': ['ion', 'channel', 'pump', 'transporter', 'calcium', 'sodium', 'potassium', 'chloride'],
+  'protein-synthesis': ['ribosome', 'translation', 'amino acid', 'peptide', 'protein synthesis'],
+  'lipid-metabolism': ['phosphatidyl', 'lipid', 'fatty acid', 'cholesterol', 'membrane lipid'],
 };
 
 /**
@@ -94,21 +306,25 @@ function isGenericId(id) {
  * Clean and normalize a name
  */
 function cleanName(name) {
+  // Decode HTML entities
+  name = name.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+
   // Replace underscores and multiple spaces with single space
   let cleaned = name.replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
 
-  // Convert to title case for better readability
+  // Convert to lowercase for consistency
   cleaned = cleaned.toLowerCase();
 
   return cleaned;
 }
 
 /**
- * Determine category based on name keywords
+ * Determine category based on name keywords (order-sensitive)
  */
 function categorizeIcon(name) {
   const lowerName = name.toLowerCase();
 
+  // Check each category in order (most specific first)
   for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
     if (category === 'generic') continue;
 
@@ -162,13 +378,12 @@ function processSVGFile(filename, svgContent) {
   }
 
   // Use the first meaningful ID as the primary name
-  // (could be enhanced to pick the "best" one)
   const primaryName = cleanName(meaningfulIds[0]);
   const category = categorizeIcon(primaryName);
   const useCases = determineUseCases(primaryName);
 
   // Include all meaningful IDs as aliases
-  const aliases = meaningfulIds.slice(1).map(cleanName);
+  const aliases = meaningfulIds.slice(1).map(cleanName).filter(alias => alias !== primaryName);
 
   return {
     name: primaryName,
