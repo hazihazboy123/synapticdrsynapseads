@@ -21,6 +21,8 @@ import { DkaPotassiumManagementAd } from './components/DkaPotassiumManagementAd'
 import { DkaPotassiumManagementAdV2 } from './components/DkaPotassiumManagementAdV2';
 import { BetaBlockerOverdoseAd } from './components/BetaBlockerOverdoseAd';
 import { BetaBlockerOverdoseBrainrot } from './components/BetaBlockerOverdoseBrainrot';
+import { PenicillinAnaphylaxisAd } from './components/PenicillinAnaphylaxisAd';
+import { PenicillinAnaphylaxisAdEnhanced } from './components/PenicillinAnaphylaxisAdEnhanced';
 import { ZoomTypewriter } from './components/ZoomTypewriter';
 
 // Test wrapper for ZoomTypewriter
@@ -411,6 +413,26 @@ export const RemotionRoot = () => {
         id="beta-blocker-brainrot"
         component={BetaBlockerOverdoseBrainrot}
         durationInFrames={2159}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* NEW: Penicillin Anaphylaxis - First-Line Epinephrine! */}
+      <Composition
+        id="penicillin-anaphylaxis"
+        component={PenicillinAnaphylaxisAd}
+        durationInFrames={1722}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* ENHANCED: Penicillin Anaphylaxis - 10X BETTER with ParticleFlow! */}
+      <Composition
+        id="penicillin-anaphylaxis-enhanced"
+        component={PenicillinAnaphylaxisAdEnhanced}
+        durationInFrames={1722}
         fps={30}
         width={1080}
         height={1920}

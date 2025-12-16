@@ -23,15 +23,20 @@
   "dependencies": {
     "@deepgram/sdk": "^4.11.2",
     "@elevenlabs/elevenlabs-js": "^2.25.0",
+    "@react-three/fiber": "^9.4.2",
     "@remotion/cli": "^4.0.377",
+    "@remotion/lottie": "^4.0.390",
     "@remotion/paths": "^4.0.390",
+    "@remotion/three": "^4.0.390",
     "axios": "^1.13.2",
     "dotenv": "^17.2.3",
+    "gsap": "^3.14.2",
     "openai": "^6.9.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "remotion": "^4.0.377",
     "remotion-animated": "^2.2.0",
+    "three": "^0.182.0",
     "zod": "^4.1.12"
   }
 }

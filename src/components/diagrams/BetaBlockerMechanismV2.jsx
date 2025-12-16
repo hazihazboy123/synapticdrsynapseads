@@ -174,7 +174,7 @@ export const BetaBlockerMechanismV2 = ({ startTime, playbackRate = 1.9 }) => {
 
   // ===== ENTRANCE ANIMATION =====
   const containerProgress = getProgress(0, 25);
-  const containerScale = getSpring(0);
+  // REMOVED containerScale spring - was causing labels to pulse/scale rapidly
   const slideUp = interpolate(localFrame, [0, 20], [100, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
@@ -184,13 +184,13 @@ export const BetaBlockerMechanismV2 = ({ startTime, playbackRate = 1.9 }) => {
   // ===== RENDER =====
   return (
     <>
-      {/* Branding - Inside card at top-left */}
+      {/* Branding - Top left of teaching card - fades in with card */}
       <div
         style={{
           position: 'absolute',
-          top: 500,
-          left: 210,
-          fontSize: '14px',
+          top: 515,
+          left: 200,
+          fontSize: '16px',
           fontWeight: '600',
           fontFamily: 'Inter, sans-serif',
           zIndex: 200,
@@ -199,7 +199,7 @@ export const BetaBlockerMechanismV2 = ({ startTime, playbackRate = 1.9 }) => {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
-          opacity: containerProgress,
+          opacity: containerProgress, // Already fades in with teaching card
         }}
       >
         synapticrecall.ai
@@ -210,7 +210,7 @@ export const BetaBlockerMechanismV2 = ({ startTime, playbackRate = 1.9 }) => {
           position: 'absolute',
           top: 480 + slideUp,
           left: '50%',
-          transform: `translateX(-50%) scale(${Math.min(1, containerScale)})`,
+          transform: 'translateX(-50%)',
           width: 700,
           height: 1000,
           opacity: containerProgress,

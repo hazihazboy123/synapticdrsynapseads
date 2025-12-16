@@ -169,13 +169,13 @@ export const BetaBlockerOverdoseAd = () => {
       backgroundColor: '#0a0a0a',
     }}>
 
-        {/* Branding - Left of Practice Question #1 with gradient */}
+        {/* Branding - Left of Practice Question #1 */}
         {frame < teachingStartFrame && (
           <div
             style={{
               position: 'absolute',
-              top: 510,
-              left: 120,
+              top: 515,
+              left: 150,
               fontSize: '16px',
               fontWeight: '600',
               fontFamily: 'Inter, sans-serif',
@@ -186,6 +186,7 @@ export const BetaBlockerOverdoseAd = () => {
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
               textShadow: 'none',
+              opacity: interpolate(frame, [0, 20], [0, 1], { extrapolateRight: 'clamp' }),
             }}
           >
             synapticrecall.ai
