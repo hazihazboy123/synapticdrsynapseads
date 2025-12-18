@@ -1,0 +1,1560 @@
+{
+  "script": "GOOD LORD, this girl's been dealing with sickle cell her WHOLE life, but TODAY her own blood's fixin' to KILL HER. Mama thought it was just the FLU - fever, chest pain, little cough. Now she's GASPING like a fish outta water, oxygen's TANKING, and her lungs are DROWNING in her own BENT-UP blood cells. Nineteen years old and about to DIE because her hemoglobin decided to fold up like a BUSTED LAWN CHAIR. X-ray shows a new INFILTRATE, O2 sat's SEVENTY-EIGHT on room air, and her reticulocyte count's through the ROOF 'cause her body's DESPERATE to make new blood. What do you do, hotshot? A) Simple blood transfusion. B) Exchange transfusion. C) High-flow oxygen only. D) IV antibiotics and observation. E) Hydroxyurea. This girl ain't got time for you to DILLY-DALLY. It's B, exchange transfusion! And I KNOW some of you knuckleheads picked simple transfusion thinking \"she's anemic, give her blood!\" You just KILLED your patient, congratulations. Now SHUT YOUR TRAP and listen. Her hemoglobin S is POLYMERIZING when oxygen gets low - folding up into RIGID RODS that WARP the red cells into little SICKLES. These BENT-UP cells don't flow through capillaries - they JAM UP like LOGS in a river, creating a MASSIVE LOGJAM in her lungs. Oxygen can't get through, tissue starts DYING, and here's the NASTY part - hypoxia makes MORE cells sickle. It's a DEATH SPIRAL. Simple transfusion? You're just ADDING more fluid to an already CLOGGED system - viscosity goes UP, logjam gets WORSE. Exchange transfusion REMOVES the sickled cells while REPLACING 'em with normal blood. You're UNCLOGGING that river, breaking the death spiral, and buying her lungs time to HEAL. Target that HbS below THIRTY percent. This is STEP 1 material and the difference between a LIVING patient and a BODY BAG. Now get OUT of here before you jam up MY ICU.",
+  "words": [
+    {
+      "word": "GOOD",
+      "start": 0,
+      "end": 0.534
+    },
+    {
+      "word": "LORD,",
+      "start": 0.639,
+      "end": 1.184
+    },
+    {
+      "word": "this",
+      "start": 1.347,
+      "end": 1.556
+    },
+    {
+      "word": "girl's",
+      "start": 1.625,
+      "end": 1.916
+    },
+    {
+      "word": "been",
+      "start": 1.95,
+      "end": 2.101
+    },
+    {
+      "word": "dealing",
+      "start": 2.171,
+      "end": 2.473
+    },
+    {
+      "word": "with",
+      "start": 2.519,
+      "end": 2.647
+    },
+    {
+      "word": "sickle",
+      "start": 2.717,
+      "end": 3.065
+    },
+    {
+      "word": "cell",
+      "start": 3.088,
+      "end": 3.355
+    },
+    {
+      "word": "her",
+      "start": 3.425,
+      "end": 3.529
+    },
+    {
+      "word": "WHOLE",
+      "start": 3.599,
+      "end": 3.947
+    },
+    {
+      "word": "life,",
+      "start": 4.005,
+      "end": 4.47
+    },
+    {
+      "word": "but",
+      "start": 4.899,
+      "end": 5.074
+    },
+    {
+      "word": "TODAY",
+      "start": 5.108,
+      "end": 5.677
+    },
+    {
+      "word": "her",
+      "start": 5.991,
+      "end": 6.142
+    },
+    {
+      "word": "own",
+      "start": 6.211,
+      "end": 6.478
+    },
+    {
+      "word": "blood's",
+      "start": 6.618,
+      "end": 7.117
+    },
+    {
+      "word": "fixin'",
+      "start": 7.198,
+      "end": 7.605
+    },
+    {
+      "word": "to",
+      "start": 7.639,
+      "end": 7.709
+    },
+    {
+      "word": "KILL",
+      "start": 7.814,
+      "end": 8.127
+    },
+    {
+      "word": "HER.",
+      "start": 8.22,
+      "end": 8.649
+    },
+    {
+      "word": "Mama",
+      "start": 9.427,
+      "end": 9.671
+    },
+    {
+      "word": "thought",
+      "start": 9.706,
+      "end": 9.892
+    },
+    {
+      "word": "it",
+      "start": 9.927,
+      "end": 9.973
+    },
+    {
+      "word": "was",
+      "start": 10.008,
+      "end": 10.101
+    },
+    {
+      "word": "just",
+      "start": 10.17,
+      "end": 10.414
+    },
+    {
+      "word": "the",
+      "start": 10.437,
+      "end": 10.519
+    },
+    {
+      "word": "FLU",
+      "start": 10.658,
+      "end": 11.053
+    },
+    {
+      "word": "-",
+      "start": 11.424,
+      "end": 11.482
+    },
+    {
+      "word": "fever,",
+      "start": 11.842,
+      "end": 12.353
+    },
+    {
+      "word": "chest",
+      "start": 12.388,
+      "end": 12.69
+    },
+    {
+      "word": "pain,",
+      "start": 12.748,
+      "end": 13.108
+    },
+    {
+      "word": "little",
+      "start": 13.154,
+      "end": 13.41
+    },
+    {
+      "word": "cough.",
+      "start": 13.468,
+      "end": 14.153
+    },
+    {
+      "word": "Now",
+      "start": 14.93,
+      "end": 15.128
+    },
+    {
+      "word": "she's",
+      "start": 15.197,
+      "end": 15.488
+    },
+    {
+      "word": "GASPING",
+      "start": 15.627,
+      "end": 16.219
+    },
+    {
+      "word": "like",
+      "start": 16.266,
+      "end": 16.463
+    },
+    {
+      "word": "a",
+      "start": 16.509,
+      "end": 16.544
+    },
+    {
+      "word": "fish",
+      "start": 16.695,
+      "end": 16.985
+    },
+    {
+      "word": "outta",
+      "start": 17.043,
+      "end": 17.252
+    },
+    {
+      "word": "water,",
+      "start": 17.334,
+      "end": 17.798
+    },
+    {
+      "word": "oxygen's",
+      "start": 18.007,
+      "end": 18.646
+    },
+    {
+      "word": "TANKING,",
+      "start": 18.75,
+      "end": 19.424
+    },
+    {
+      "word": "and",
+      "start": 19.737,
+      "end": 19.923
+    },
+    {
+      "word": "her",
+      "start": 20.004,
+      "end": 20.097
+    },
+    {
+      "word": "lungs",
+      "start": 20.178,
+      "end": 20.469
+    },
+    {
+      "word": "are",
+      "start": 20.515,
+      "end": 20.62
+    },
+    {
+      "word": "DROWNING",
+      "start": 20.678,
+      "end": 21.13
+    },
+    {
+      "word": "in",
+      "start": 21.525,
+      "end": 21.676
+    },
+    {
+      "word": "her",
+      "start": 21.769,
+      "end": 21.862
+    },
+    {
+      "word": "own",
+      "start": 21.955,
+      "end": 22.222
+    },
+    {
+      "word": "BENT-UP",
+      "start": 22.373,
+      "end": 22.976
+    },
+    {
+      "word": "blood",
+      "start": 23.046,
+      "end": 23.313
+    },
+    {
+      "word": "cells.",
+      "start": 23.371,
+      "end": 23.986
+    },
+    {
+      "word": "Nineteen",
+      "start": 24.729,
+      "end": 25.356
+    },
+    {
+      "word": "years",
+      "start": 25.438,
+      "end": 25.681
+    },
+    {
+      "word": "old",
+      "start": 25.763,
+      "end": 25.983
+    },
+    {
+      "word": "and",
+      "start": 26.018,
+      "end": 26.088
+    },
+    {
+      "word": "about",
+      "start": 26.134,
+      "end": 26.378
+    },
+    {
+      "word": "to",
+      "start": 26.425,
+      "end": 26.483
+    },
+    {
+      "word": "DIE",
+      "start": 26.552,
+      "end": 26.947
+    },
+    {
+      "word": "because",
+      "start": 27.249,
+      "end": 27.702
+    },
+    {
+      "word": "her",
+      "start": 27.76,
+      "end": 27.876
+    },
+    {
+      "word": "hemoglobin",
+      "start": 27.957,
+      "end": 28.607
+    },
+    {
+      "word": "decided",
+      "start": 28.665,
+      "end": 29.106
+    },
+    {
+      "word": "to",
+      "start": 29.13,
+      "end": 29.188
+    },
+    {
+      "word": "fold",
+      "start": 29.257,
+      "end": 29.501
+    },
+    {
+      "word": "up",
+      "start": 29.559,
+      "end": 29.675
+    },
+    {
+      "word": "like",
+      "start": 30.082,
+      "end": 30.267
+    },
+    {
+      "word": "a",
+      "start": 30.302,
+      "end": 30.325
+    },
+    {
+      "word": "BUSTED",
+      "start": 30.465,
+      "end": 30.918
+    },
+    {
+      "word": "LAWN",
+      "start": 31.045,
+      "end": 31.452
+    },
+    {
+      "word": "CHAIR.",
+      "start": 31.556,
+      "end": 32.148
+    },
+    {
+      "word": "X-ray",
+      "start": 32.891,
+      "end": 33.286
+    },
+    {
+      "word": "shows",
+      "start": 33.344,
+      "end": 33.634
+    },
+    {
+      "word": "a",
+      "start": 33.704,
+      "end": 33.727
+    },
+    {
+      "word": "new",
+      "start": 33.832,
+      "end": 33.971
+    },
+    {
+      "word": "INFILTRATE,",
+      "start": 34.017,
+      "end": 34.888
+    },
+    {
+      "word": "O2",
+      "start": 35.19,
+      "end": 35.747
+    },
+    {
+      "word": "sat's",
+      "start": 35.852,
+      "end": 36.13
+    },
+    {
+      "word": "SEVENTY-EIGHT",
+      "start": 36.269,
+      "end": 36.943
+    },
+    {
+      "word": "on",
+      "start": 37.175,
+      "end": 37.349
+    },
+    {
+      "word": "room",
+      "start": 37.43,
+      "end": 37.639
+    },
+    {
+      "word": "air,",
+      "start": 37.721,
+      "end": 38.104
+    },
+    {
+      "word": "and",
+      "start": 38.51,
+      "end": 38.777
+    },
+    {
+      "word": "her",
+      "start": 38.858,
+      "end": 38.986
+    },
+    {
+      "word": "reticulocyte",
+      "start": 39.044,
+      "end": 39.81
+    },
+    {
+      "word": "count's",
+      "start": 39.845,
+      "end": 40.101
+    },
+    {
+      "word": "through",
+      "start": 40.159,
+      "end": 40.379
+    },
+    {
+      "word": "the",
+      "start": 40.414,
+      "end": 40.461
+    },
+    {
+      "word": "ROOF",
+      "start": 40.53,
+      "end": 40.809
+    },
+    {
+      "word": "'cause",
+      "start": 41.006,
+      "end": 41.262
+    },
+    {
+      "word": "her",
+      "start": 41.285,
+      "end": 41.366
+    },
+    {
+      "word": "body's",
+      "start": 41.424,
+      "end": 41.726
+    },
+    {
+      "word": "DESPERATE",
+      "start": 41.854,
+      "end": 42.376
+    },
+    {
+      "word": "to",
+      "start": 42.388,
+      "end": 42.446
+    },
+    {
+      "word": "make",
+      "start": 42.504,
+      "end": 42.678
+    },
+    {
+      "word": "new",
+      "start": 42.771,
+      "end": 42.933
+    },
+    {
+      "word": "blood.",
+      "start": 43.026,
+      "end": 43.491
+    },
+    {
+      "word": "What",
+      "start": 43.851,
+      "end": 44.013
+    },
+    {
+      "word": "do",
+      "start": 44.025,
+      "end": 44.06
+    },
+    {
+      "word": "you",
+      "start": 44.106,
+      "end": 44.176
+    },
+    {
+      "word": "do,",
+      "start": 44.222,
+      "end": 44.501
+    },
+    {
+      "word": "hotshot?",
+      "start": 44.547,
+      "end": 45.186
+    },
+    {
+      "word": "A)",
+      "start": 45.604,
+      "end": 46.033
+    },
+    {
+      "word": "Simple",
+      "start": 46.451,
+      "end": 46.718
+    },
+    {
+      "word": "blood",
+      "start": 46.742,
+      "end": 46.939
+    },
+    {
+      "word": "transfusion.",
+      "start": 46.962,
+      "end": 47.717
+    },
+    {
+      "word": "B)",
+      "start": 47.984,
+      "end": 48.355
+    },
+    {
+      "word": "Exchange",
+      "start": 48.576,
+      "end": 49.423
+    },
+    {
+      "word": "transfusion.",
+      "start": 49.447,
+      "end": 50.271
+    },
+    {
+      "word": "C)",
+      "start": 50.84,
+      "end": 51.304
+    },
+    {
+      "word": "High-flow",
+      "start": 51.618,
+      "end": 52.198
+    },
+    {
+      "word": "oxygen",
+      "start": 52.291,
+      "end": 52.79
+    },
+    {
+      "word": "only.",
+      "start": 52.86,
+      "end": 53.324
+    },
+    {
+      "word": "D)",
+      "start": 53.824,
+      "end": 54.23
+    },
+    {
+      "word": "IV",
+      "start": 54.288,
+      "end": 54.671
+    },
+    {
+      "word": "antibiotics",
+      "start": 54.903,
+      "end": 55.623
+    },
+    {
+      "word": "and",
+      "start": 55.646,
+      "end": 55.728
+    },
+    {
+      "word": "observation.",
+      "start": 55.774,
+      "end": 56.436
+    },
+    {
+      "word": "E)",
+      "start": 56.575,
+      "end": 57.051
+    },
+    {
+      "word": "Hydroxyurea.",
+      "start": 57.225,
+      "end": 58.944
+    },
+    {
+      "word": "This",
+      "start": 59.64,
+      "end": 59.838
+    },
+    {
+      "word": "girl",
+      "start": 59.919,
+      "end": 60.256
+    },
+    {
+      "word": "ain't",
+      "start": 60.337,
+      "end": 60.546
+    },
+    {
+      "word": "got",
+      "start": 60.604,
+      "end": 60.813
+    },
+    {
+      "word": "time",
+      "start": 60.871,
+      "end": 61.196
+    },
+    {
+      "word": "for",
+      "start": 61.254,
+      "end": 61.382
+    },
+    {
+      "word": "you",
+      "start": 61.44,
+      "end": 61.579
+    },
+    {
+      "word": "to",
+      "start": 61.695,
+      "end": 61.8
+    },
+    {
+      "word": "DILLY-DALLY.",
+      "start": 61.916,
+      "end": 63.1
+    },
+    {
+      "word": "It's",
+      "start": 63.599,
+      "end": 63.843
+    },
+    {
+      "word": "B,",
+      "start": 63.913,
+      "end": 64.563
+    },
+    {
+      "word": "exchange",
+      "start": 64.888,
+      "end": 65.921
+    },
+    {
+      "word": "transfusion!",
+      "start": 65.944,
+      "end": 67.117
+    },
+    {
+      "word": "And",
+      "start": 67.721,
+      "end": 67.918
+    },
+    {
+      "word": "I",
+      "start": 67.999,
+      "end": 68.034
+    },
+    {
+      "word": "KNOW",
+      "start": 68.127,
+      "end": 68.336
+    },
+    {
+      "word": "some",
+      "start": 68.417,
+      "end": 68.603
+    },
+    {
+      "word": "of",
+      "start": 68.638,
+      "end": 68.684
+    },
+    {
+      "word": "you",
+      "start": 68.731,
+      "end": 68.824
+    },
+    {
+      "word": "knuckleheads",
+      "start": 68.893,
+      "end": 69.509
+    },
+    {
+      "word": "picked",
+      "start": 69.567,
+      "end": 69.799
+    },
+    {
+      "word": "simple",
+      "start": 69.845,
+      "end": 70.159
+    },
+    {
+      "word": "transfusion",
+      "start": 70.182,
+      "end": 70.855
+    },
+    {
+      "word": "thinking",
+      "start": 70.902,
+      "end": 71.215
+    },
+    {
+      "word": "\"she's",
+      "start": 71.494,
+      "end": 71.924
+    },
+    {
+      "word": "anemic,",
+      "start": 71.982,
+      "end": 72.434
+    },
+    {
+      "word": "give",
+      "start": 72.469,
+      "end": 72.667
+    },
+    {
+      "word": "her",
+      "start": 72.69,
+      "end": 72.771
+    },
+    {
+      "word": "blood!\"",
+      "start": 72.829,
+      "end": 73.398
+    },
+    {
+      "word": "You",
+      "start": 73.723,
+      "end": 73.874
+    },
+    {
+      "word": "just",
+      "start": 73.967,
+      "end": 74.141
+    },
+    {
+      "word": "KILLED",
+      "start": 74.211,
+      "end": 74.536
+    },
+    {
+      "word": "your",
+      "start": 74.571,
+      "end": 74.675
+    },
+    {
+      "word": "patient,",
+      "start": 74.733,
+      "end": 75.163
+    },
+    {
+      "word": "congratulations.",
+      "start": 75.186,
+      "end": 76.184
+    },
+    {
+      "word": "Now",
+      "start": 76.219,
+      "end": 76.382
+    },
+    {
+      "word": "SHUT",
+      "start": 76.463,
+      "end": 76.776
+    },
+    {
+      "word": "YOUR",
+      "start": 76.834,
+      "end": 77.032
+    },
+    {
+      "word": "TRAP",
+      "start": 77.09,
+      "end": 77.427
+    },
+    {
+      "word": "and",
+      "start": 77.485,
+      "end": 77.566
+    },
+    {
+      "word": "listen.",
+      "start": 77.647,
+      "end": 78.17
+    },
+    {
+      "word": "Her",
+      "start": 79.156,
+      "end": 79.307
+    },
+    {
+      "word": "hemoglobin",
+      "start": 79.377,
+      "end": 80.074
+    },
+    {
+      "word": "S",
+      "start": 80.155,
+      "end": 80.283
+    },
+    {
+      "word": "is",
+      "start": 80.352,
+      "end": 80.468
+    },
+    {
+      "word": "POLYMERIZING",
+      "start": 80.619,
+      "end": 81.548
+    },
+    {
+      "word": "when",
+      "start": 81.583,
+      "end": 81.699
+    },
+    {
+      "word": "oxygen",
+      "start": 81.792,
+      "end": 82.303
+    },
+    {
+      "word": "gets",
+      "start": 82.349,
+      "end": 82.547
+    },
+    {
+      "word": "low",
+      "start": 82.605,
+      "end": 82.802
+    },
+    {
+      "word": "-",
+      "start": 83.057,
+      "end": 83.081
+    },
+    {
+      "word": "folding",
+      "start": 83.417,
+      "end": 83.812
+    },
+    {
+      "word": "up",
+      "start": 83.882,
+      "end": 83.998
+    },
+    {
+      "word": "into",
+      "start": 84.091,
+      "end": 84.288
+    },
+    {
+      "word": "RIGID",
+      "start": 84.404,
+      "end": 84.764
+    },
+    {
+      "word": "RODS",
+      "start": 84.822,
+      "end": 85.182
+    },
+    {
+      "word": "that",
+      "start": 85.217,
+      "end": 85.368
+    },
+    {
+      "word": "WARP",
+      "start": 85.484,
+      "end": 85.855
+    },
+    {
+      "word": "the",
+      "start": 85.948,
+      "end": 86.041
+    },
+    {
+      "word": "red",
+      "start": 86.122,
+      "end": 86.32
+    },
+    {
+      "word": "cells",
+      "start": 86.378,
+      "end": 86.773
+    },
+    {
+      "word": "into",
+      "start": 87.167,
+      "end": 87.527
+    },
+    {
+      "word": "little",
+      "start": 87.655,
+      "end": 88.05
+    },
+    {
+      "word": "SICKLES.",
+      "start": 88.166,
+      "end": 89.037
+    },
+    {
+      "word": "These",
+      "start": 90.023,
+      "end": 90.372
+    },
+    {
+      "word": "BENT-UP",
+      "start": 90.465,
+      "end": 91.08
+    },
+    {
+      "word": "cells",
+      "start": 91.15,
+      "end": 91.498
+    },
+    {
+      "word": "don't",
+      "start": 91.544,
+      "end": 91.765
+    },
+    {
+      "word": "flow",
+      "start": 91.811,
+      "end": 92.055
+    },
+    {
+      "word": "through",
+      "start": 92.102,
+      "end": 92.334
+    },
+    {
+      "word": "capillaries",
+      "start": 92.38,
+      "end": 93.24
+    },
+    {
+      "word": "-",
+      "start": 93.414,
+      "end": 93.437
+    },
+    {
+      "word": "they",
+      "start": 93.588,
+      "end": 93.774
+    },
+    {
+      "word": "JAM",
+      "start": 93.89,
+      "end": 94.238
+    },
+    {
+      "word": "UP",
+      "start": 94.308,
+      "end": 94.424
+    },
+    {
+      "word": "like",
+      "start": 94.482,
+      "end": 94.702
+    },
+    {
+      "word": "LOGS",
+      "start": 94.772,
+      "end": 95.178
+    },
+    {
+      "word": "in",
+      "start": 95.213,
+      "end": 95.283
+    },
+    {
+      "word": "a",
+      "start": 95.329,
+      "end": 95.353
+    },
+    {
+      "word": "river,",
+      "start": 95.422,
+      "end": 95.736
+    },
+    {
+      "word": "creating",
+      "start": 95.887,
+      "end": 96.351
+    },
+    {
+      "word": "a",
+      "start": 96.409,
+      "end": 96.432
+    },
+    {
+      "word": "MASSIVE",
+      "start": 96.606,
+      "end": 97.199
+    },
+    {
+      "word": "LOGJAM",
+      "start": 97.245,
+      "end": 97.849
+    },
+    {
+      "word": "in",
+      "start": 97.895,
+      "end": 97.953
+    },
+    {
+      "word": "her",
+      "start": 98.011,
+      "end": 98.081
+    },
+    {
+      "word": "lungs.",
+      "start": 98.139,
+      "end": 98.673
+    },
+    {
+      "word": "Oxygen",
+      "start": 99.195,
+      "end": 99.776
+    },
+    {
+      "word": "can't",
+      "start": 99.846,
+      "end": 100.101
+    },
+    {
+      "word": "get",
+      "start": 100.159,
+      "end": 100.31
+    },
+    {
+      "word": "through,",
+      "start": 100.356,
+      "end": 100.844
+    },
+    {
+      "word": "tissue",
+      "start": 101.099,
+      "end": 101.552
+    },
+    {
+      "word": "starts",
+      "start": 101.599,
+      "end": 101.959
+    },
+    {
+      "word": "DYING,",
+      "start": 102.051,
+      "end": 102.539
+    },
+    {
+      "word": "and",
+      "start": 102.713,
+      "end": 102.899
+    },
+    {
+      "word": "here's",
+      "start": 102.957,
+      "end": 103.212
+    },
+    {
+      "word": "the",
+      "start": 103.259,
+      "end": 103.34
+    },
+    {
+      "word": "NASTY",
+      "start": 103.456,
+      "end": 103.921
+    },
+    {
+      "word": "part",
+      "start": 103.979,
+      "end": 104.292
+    },
+    {
+      "word": "-",
+      "start": 104.443,
+      "end": 104.559
+    },
+    {
+      "word": "hypoxia",
+      "start": 104.896,
+      "end": 105.558
+    },
+    {
+      "word": "makes",
+      "start": 105.627,
+      "end": 105.894
+    },
+    {
+      "word": "MORE",
+      "start": 106.045,
+      "end": 106.359
+    },
+    {
+      "word": "cells",
+      "start": 106.394,
+      "end": 106.765
+    },
+    {
+      "word": "sickle.",
+      "start": 106.823,
+      "end": 107.334
+    },
+    {
+      "word": "It's",
+      "start": 107.508,
+      "end": 107.74
+    },
+    {
+      "word": "a",
+      "start": 107.775,
+      "end": 107.81
+    },
+    {
+      "word": "DEATH",
+      "start": 107.891,
+      "end": 108.135
+    },
+    {
+      "word": "SPIRAL.",
+      "start": 108.193,
+      "end": 108.959
+    },
+    {
+      "word": "Simple",
+      "start": 109.412,
+      "end": 109.807
+    },
+    {
+      "word": "transfusion?",
+      "start": 109.842,
+      "end": 110.689
+    },
+    {
+      "word": "You're",
+      "start": 110.84,
+      "end": 111.037
+    },
+    {
+      "word": "just",
+      "start": 111.072,
+      "end": 111.235
+    },
+    {
+      "word": "ADDING",
+      "start": 111.304,
+      "end": 111.688
+    },
+    {
+      "word": "more",
+      "start": 111.769,
+      "end": 111.978
+    },
+    {
+      "word": "fluid",
+      "start": 112.059,
+      "end": 112.477
+    },
+    {
+      "word": "to",
+      "start": 112.512,
+      "end": 112.593
+    },
+    {
+      "word": "an",
+      "start": 112.674,
+      "end": 112.732
+    },
+    {
+      "word": "already",
+      "start": 112.802,
+      "end": 113.267
+    },
+    {
+      "word": "CLOGGED",
+      "start": 113.348,
+      "end": 113.905
+    },
+    {
+      "word": "system",
+      "start": 113.975,
+      "end": 114.439
+    },
+    {
+      "word": "-",
+      "start": 114.66,
+      "end": 114.695
+    },
+    {
+      "word": "viscosity",
+      "start": 114.869,
+      "end": 115.647
+    },
+    {
+      "word": "goes",
+      "start": 115.705,
+      "end": 115.96
+    },
+    {
+      "word": "UP,",
+      "start": 116.053,
+      "end": 116.401
+    },
+    {
+      "word": "logjam",
+      "start": 116.726,
+      "end": 117.376
+    },
+    {
+      "word": "gets",
+      "start": 117.446,
+      "end": 117.702
+    },
+    {
+      "word": "WORSE.",
+      "start": 117.783,
+      "end": 118.433
+    },
+    {
+      "word": "Exchange",
+      "start": 119.257,
+      "end": 120.151
+    },
+    {
+      "word": "transfusion",
+      "start": 120.186,
+      "end": 121.138
+    },
+    {
+      "word": "REMOVES",
+      "start": 121.475,
+      "end": 122.102
+    },
+    {
+      "word": "the",
+      "start": 122.171,
+      "end": 122.287
+    },
+    {
+      "word": "sickled",
+      "start": 122.38,
+      "end": 122.81
+    },
+    {
+      "word": "cells",
+      "start": 122.856,
+      "end": 123.274
+    },
+    {
+      "word": "while",
+      "start": 123.321,
+      "end": 123.53
+    },
+    {
+      "word": "REPLACING",
+      "start": 123.576,
+      "end": 124.296
+    },
+    {
+      "word": "'em",
+      "start": 124.366,
+      "end": 124.505
+    },
+    {
+      "word": "with",
+      "start": 124.958,
+      "end": 125.167
+    },
+    {
+      "word": "normal",
+      "start": 125.248,
+      "end": 125.608
+    },
+    {
+      "word": "blood.",
+      "start": 125.666,
+      "end": 126.119
+    },
+    {
+      "word": "You're",
+      "start": 126.513,
+      "end": 126.711
+    },
+    {
+      "word": "UNCLOGGING",
+      "start": 126.781,
+      "end": 127.605
+    },
+    {
+      "word": "that",
+      "start": 127.675,
+      "end": 127.872
+    },
+    {
+      "word": "river,",
+      "start": 127.965,
+      "end": 128.406
+    },
+    {
+      "word": "breaking",
+      "start": 128.557,
+      "end": 128.998
+    },
+    {
+      "word": "the",
+      "start": 129.068,
+      "end": 129.161
+    },
+    {
+      "word": "death",
+      "start": 129.242,
+      "end": 129.509
+    },
+    {
+      "word": "spiral,",
+      "start": 129.567,
+      "end": 130.229
+    },
+    {
+      "word": "and",
+      "start": 130.45,
+      "end": 130.647
+    },
+    {
+      "word": "buying",
+      "start": 130.717,
+      "end": 131.088
+    },
+    {
+      "word": "her",
+      "start": 131.169,
+      "end": 131.309
+    },
+    {
+      "word": "lungs",
+      "start": 131.402,
+      "end": 131.738
+    },
+    {
+      "word": "time",
+      "start": 131.808,
+      "end": 132.168
+    },
+    {
+      "word": "to",
+      "start": 132.203,
+      "end": 132.272
+    },
+    {
+      "word": "HEAL.",
+      "start": 132.388,
+      "end": 133.027
+    },
+    {
+      "word": "Target",
+      "start": 133.549,
+      "end": 133.991
+    },
+    {
+      "word": "that",
+      "start": 134.037,
+      "end": 134.293
+    },
+    {
+      "word": "HbS",
+      "start": 134.42,
+      "end": 135.14
+    },
+    {
+      "word": "below",
+      "start": 135.256,
+      "end": 135.546
+    },
+    {
+      "word": "THIRTY",
+      "start": 135.663,
+      "end": 135.988
+    },
+    {
+      "word": "percent.",
+      "start": 136.069,
+      "end": 136.731
+    },
+    {
+      "word": "This",
+      "start": 137.45,
+      "end": 137.81
+    },
+    {
+      "word": "is",
+      "start": 137.926,
+      "end": 138.112
+    },
+    {
+      "word": "STEP",
+      "start": 138.159,
+      "end": 138.472
+    },
+    {
+      "word": "1",
+      "start": 138.565,
+      "end": 138.716
+    },
+    {
+      "word": "material",
+      "start": 138.786,
+      "end": 139.343
+    },
+    {
+      "word": "and",
+      "start": 139.563,
+      "end": 139.912
+    },
+    {
+      "word": "the",
+      "start": 139.97,
+      "end": 140.051
+    },
+    {
+      "word": "difference",
+      "start": 140.121,
+      "end": 140.527
+    },
+    {
+      "word": "between",
+      "start": 140.562,
+      "end": 140.945
+    },
+    {
+      "word": "a",
+      "start": 141.003,
+      "end": 141.038
+    },
+    {
+      "word": "LIVING",
+      "start": 141.189,
+      "end": 141.514
+    },
+    {
+      "word": "patient",
+      "start": 141.584,
+      "end": 142.013
+    },
+    {
+      "word": "and",
+      "start": 142.071,
+      "end": 142.303
+    },
+    {
+      "word": "a",
+      "start": 142.385,
+      "end": 142.42
+    },
+    {
+      "word": "BODY",
+      "start": 142.57,
+      "end": 142.942
+    },
+    {
+      "word": "BAG.",
+      "start": 143.012,
+      "end": 143.499
+    },
+    {
+      "word": "Now",
+      "start": 144.022,
+      "end": 144.207
+    },
+    {
+      "word": "get",
+      "start": 144.3,
+      "end": 144.521
+    },
+    {
+      "word": "OUT",
+      "start": 144.614,
+      "end": 144.834
+    },
+    {
+      "word": "of",
+      "start": 144.869,
+      "end": 144.927
+    },
+    {
+      "word": "here",
+      "start": 144.997,
+      "end": 145.194
+    },
+    {
+      "word": "before",
+      "start": 145.252,
+      "end": 145.577
+    },
+    {
+      "word": "you",
+      "start": 145.624,
+      "end": 145.717
+    },
+    {
+      "word": "jam",
+      "start": 145.81,
+      "end": 146.042
+    },
+    {
+      "word": "up",
+      "start": 146.1,
+      "end": 146.181
+    },
+    {
+      "word": "MY",
+      "start": 146.251,
+      "end": 146.355
+    },
+    {
+      "word": "ICU.",
+      "start": 146.413,
+      "end": 147.307
+    }
+  ]
+}

@@ -123,8 +123,29 @@ export const MedicalQuestionCard = ({
 
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 1, display: 'block' }}>
-          {/* Header */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+          {/* Header with Branding */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+            {/* Branding - Left aligned */}
+            {optionFrames && adjustedFrame >= optionFrames.A && (
+              <div
+                style={{
+                  fontSize: '16px',
+                  fontWeight: '600',
+                  fontFamily: 'Inter, sans-serif',
+                  background: 'linear-gradient(135deg, #9333ea, #db2777, #9333ea)',
+                  backgroundSize: '200% 200%',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  opacity: interpolate(adjustedFrame - optionFrames.A, [0, 15], [0, 1], {
+                    extrapolateRight: 'clamp',
+                    extrapolateLeft: 'clamp',
+                  }),
+                }}
+              >
+                synapticrecall.ai
+              </div>
+            )}
             {/* Question title centered */}
             <h3 style={{
               fontSize: 22,
@@ -137,9 +158,12 @@ export const MedicalQuestionCard = ({
               backgroundClip: 'text',
               margin: 0,
               textAlign: 'center',
+              flex: 1,
             }}>
               🩺 Practice Question #{questionData.card_id}
             </h3>
+            {/* Spacer for balance */}
+            <div style={{ width: '150px' }}></div>
           </div>
 
           {/* Vignette with highlights or typewriter */}

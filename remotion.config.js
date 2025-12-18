@@ -1,88 +1,90 @@
 import { Config } from '@remotion/cli/config';
 
-// ===== MAXIMUM QUALITY SETTINGS FOR CRISP MOBILE PLAYBACK =====
-// Optimized for iOS/Android with perfect color reproduction and sharpness
+// ===== SOCIAL MEDIA OPTIMIZED SETTINGS =====
+// Optimized for Instagram Reels & TikTok with sharp text on mobile
 
-// Frame rendering quality
-Config.setVideoImageFormat('png'); // LOSSLESS - No compression artifacts!
-// Config.setJpegQuality(100); // Not needed with PNG
+// Frame rendering - PNG = lossless intermediates (no compression during render)
+Config.setVideoImageFormat('png');
 Config.setOverwriteOutput(true);
 
-// 🔥 CRITICAL FOR SHARP TEXT ON MOBILE 🔥
-// Scale=2 renders text at 2x resolution for high-DPI screens (iPhone, Android flagships)
-// This makes TEXT/CAPTIONS perfectly crisp on mobile!
+// Scale=2 renders at 2x resolution (2160x3840 from 1080x1920 composition)
+// CRITICAL for sharp text on high-DPI mobile screens (iPhone, Android flagships)
 Config.setScale(2);
 
-// Video encoding quality
-Config.setCodec('h264'); // Best mobile compatibility
-Config.setCrf(15); // ULTRA HIGH quality (lower = better, 15 is near-lossless, default is 18)
+// Video codec
+Config.setCodec('h264');
 
-// H.264 encoding preset - 'slow' gives best quality/compression balance
-Config.setX264Preset('slow'); // Takes longer but produces sharper, better compressed output
+// CRF 18 = high quality baseline (will be used with capped bitrate below)
+// Note: CRF 15 is overkill - creates huge files with minimal visual difference
+Config.setCrf(18);
 
-// Audio quality (Instagram/TikTok spec: 128kbps AAC)
+// Slow preset = best quality/compression ratio (worth the extra render time)
+Config.setX264Preset('slow');
+
+// Audio: AAC 192kbps (above Instagram's 128k minimum, not wasteful)
 Config.setAudioCodec('aac');
-Config.setAudioBitrate('192k'); // Sweet spot: higher than their 128k, not overkill
+Config.setAudioBitrate('192k');
 
-// Pixel format
-Config.setPixelFormat('yuv420p'); // Standard H.264 format (ensures mobile compatibility)
+// Pixel format: yuv420p is required for universal compatibility
+Config.setPixelFormat('yuv420p');
 
-// CRITICAL: Override FFmpeg command for INSTAGRAM/TIKTOK OPTIMIZED QUALITY
+// FFmpeg override for social-media-specific optimizations
 Config.overrideFfmpegCommand(({ args }) => {
-  console.log('🔧 INSTAGRAM/TIKTOK OPTIMIZED ENCODING!');
-  console.log('Full args:', args.join(' '));
+  console.log('🎬 SOCIAL MEDIA OPTIMIZED ENCODING');
 
-  // Find the pixel format argument and replace yuvj420p with yuv420p
+  // Fix pixel format (Remotion sometimes outputs yuvj420p)
   const pixFmtIndex = args.findIndex(arg => arg === '-pix_fmt');
-  if (pixFmtIndex !== -1) {
+  if (pixFmtIndex !== -1 && args[pixFmtIndex + 1] === 'yuvj420p') {
     args[pixFmtIndex + 1] = 'yuv420p';
-    console.log(`✅ Pixel format: yuv420p`);
   }
 
-  // Remove CRF (we'll use bitrate instead for more predictable quality)
-  const crfIndex = args.findIndex(arg => arg === '-crf');
-  if (crfIndex !== -1) {
-    args.splice(crfIndex, 2); // Remove -crf and its value
-    console.log('✅ Removed CRF (using bitrate instead)');
-  }
+  // CAPPED CRF APPROACH:
+  // - CRF controls quality (set above via Config.setCrf)
+  // - maxrate/bufsize cap bitrate peaks so platforms don't crush it harder
+  //
+  // Why this works better than pure bitrate:
+  // - CRF adapts to content complexity (static slides need fewer bits than animations)
+  // - The cap prevents bitrate spikes that trigger aggressive platform re-encoding
+  // - Result: consistent quality that survives Instagram/TikTok compression
 
-  // INSTAGRAM/TIKTOK OPTIMIZED SETTINGS
-  // High bitrate survives their re-encoding better
   const socialMediaOptions = [
-    // Video bitrate: 12 Mbps (higher than their 8-10 Mbps = quality buffer)
-    '-b:v', '12M',
-    '-maxrate', '15M',
-    '-bufsize', '20M',
+    // Capped bitrate (works WITH CRF, not instead of it)
+    // 12 Mbps is the sweet spot - high enough for quality, low enough to avoid aggressive re-encode
+    '-maxrate', '12M',
+    '-bufsize', '24M',  // 2x maxrate = standard VBV buffer
 
-    // H.264 High Profile (better compression, supported by all phones)
+    // H.264 High Profile Level 4.2 (all modern phones support this)
     '-profile:v', 'high',
     '-level', '4.2',
 
-    // Keyframe every 2 seconds (Instagram/TikTok standard)
-    '-g', '60', // 60 frames = 2 seconds at 30fps
-    '-keyint_min', '60',
+    // Keyframes every 2 seconds at 30fps (social media standard for seeking)
+    '-g', '60',
+    '-keyint_min', '30',  // Allow closer keyframes if scene changes
 
-    // No B-frames (better for streaming, TikTok compatible)
-    '-bf', '0',
+    // B-frames: KEEP THEM (bframes=3 is x264 default)
+    // B-frames IMPROVE compression efficiency - TikTok handles them fine
+    // Setting bf=0 was hurting your quality-per-bitrate
+    // (Removed the -bf 0 that was here)
 
-    // Color space (critical for accurate colors after re-encode)
+    // BT.709 color space (web/mobile standard)
     '-colorspace', 'bt709',
     '-color_primaries', 'bt709',
     '-color_trc', 'bt709',
-    '-color_range', 'tv',
+    '-color_range', 'tv',  // "tv" range (16-235) is standard for H.264
 
-    // Encoding flags for quality
-    '-movflags', '+faststart', // Optimize for streaming
-    '-pix_fmt', 'yuv420p',
+    // Fast start: moves moov atom to beginning for quick playback start
+    '-movflags', '+faststart',
   ];
 
-  // Insert before the final output file argument
-  args.splice(args.length - 1, 0, ...socialMediaOptions);
+  // Insert options before the output filename (last argument)
+  const outputIndex = args.length - 1;
+  args.splice(outputIndex, 0, ...socialMediaOptions);
 
-  console.log('✅ Instagram/TikTok optimized settings applied');
-  console.log('📊 Video bitrate: 12 Mbps');
-  console.log('📊 Maxrate: 15 Mbps');
-  console.log('📊 Profile: High, Level 4.2');
+  console.log('✅ Capped CRF encoding (quality-targeted with bitrate ceiling)');
+  console.log('📊 CRF: 18 | Max bitrate: 12 Mbps | Buffer: 24 Mbps');
+  console.log('📊 Profile: High | Level: 4.2');
+  console.log('📊 Scale: 2x (2160x3840 output for sharp text)');
+  console.log('📊 Color: BT.709 | Pixel format: yuv420p');
 
   return args;
 });

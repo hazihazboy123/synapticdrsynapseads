@@ -2,6 +2,7 @@ import React from 'react';
 import { Composition } from 'remotion';
 import { BetaBlockerOverdoseAd } from './components/BetaBlockerOverdoseAd';
 import { PenicillinAnaphylaxisAd } from './components/PenicillinAnaphylaxisAd';
+import { SickleCellAcuteChestAd } from './components/SickleCellAcuteChestAd';
 
 export const RemotionRoot = () => {
   return (
@@ -31,6 +32,20 @@ export const RemotionRoot = () => {
         id="penicillin-anaphylaxis"
         component={PenicillinAnaphylaxisAd}
         durationInFrames={1722}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* Sickle Cell Acute Chest Syndrome - Exchange Transfusion
+          - Demonstrates sickling mechanism and logjam
+          - Exchange transfusion vs simple transfusion teaching
+          - Death spiral concept visualization
+      */}
+      <Composition
+        id="sickle-cell-acute-chest"
+        component={SickleCellAcuteChestAd}
+        durationInFrames={2210}
         fps={30}
         width={1080}
         height={1920}

@@ -20,6 +20,7 @@ import epiduralHematomaTimestamps from '../../../public/assets/audio/epidural-he
 import dkaPotassiumManagementTimestamps from '../../../public/assets/audio/dka-potassium-management-timestamps.json';
 import betaBlockerOverdoseTimestamps from '../../../public/assets/audio/beta-blocker-overdose-timestamps.json';
 import penicillinAnaphylaxisTimestamps from '../../../public/assets/audio/penicillin-anaphylaxis-timestamps.json';
+import sickleCellAcuteChestTimestamps from '../../../public/assets/audio/sickle-cell-acute-chest-timestamps.json';
 
 export const BrainMascot = ({
   audioPath,
@@ -48,7 +49,9 @@ export const BrainMascot = ({
 
   // Select the correct timestamps based on which ad is playing
   const timestampsData =
-    timestampsSource === 'beta-blocker-overdose'
+    timestampsSource === 'sickle-cell-acute-chest'
+      ? sickleCellAcuteChestTimestamps
+      : timestampsSource === 'beta-blocker-overdose'
       ? betaBlockerOverdoseTimestamps
       : timestampsSource === 'penicillin-anaphylaxis'
       ? penicillinAnaphylaxisTimestamps
