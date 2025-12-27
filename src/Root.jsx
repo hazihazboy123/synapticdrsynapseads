@@ -3,6 +3,7 @@ import { Composition } from 'remotion';
 import { BetaBlockerOverdoseAd } from './components/BetaBlockerOverdoseAd';
 import { PenicillinAnaphylaxisAd } from './components/PenicillinAnaphylaxisAd';
 import { SickleCellAcuteChestAd } from './components/SickleCellAcuteChestAd';
+import { DKAPotassiumAd } from './components/DKAPotassiumAd';
 
 export const RemotionRoot = () => {
   return (
@@ -46,6 +47,21 @@ export const RemotionRoot = () => {
         id="sickle-cell-acute-chest"
         component={SickleCellAcuteChestAd}
         durationInFrames={2210}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* DKA Potassium Management - The Classic Gotcha
+          - Students rush to slam insulin without checking K+
+          - Serum K+ looks normal but total body is depleted
+          - Insulin shoves K+ into cells → serum drops → cardiac arrest
+          - Check first, replace if low, THEN insulin
+      */}
+      <Composition
+        id="dka-potassium-management"
+        component={DKAPotassiumAd}
+        durationInFrames={1940}
         fps={30}
         width={1080}
         height={1920}
