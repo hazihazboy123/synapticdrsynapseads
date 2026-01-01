@@ -1,0 +1,810 @@
+{
+  "script": "Good LORD, this man walked in for a HERNIA repair. A HERNIA. Routine as a HAIRCUT. Now his temperature's ONE HUNDRED AND SEVEN and his muscles are HARDER than my ex-wife's HEART. Anesthesiologist gave him succinylcholine and this fella went RIGID as a FENCE POST. Temperature's CLIMBING faster than my blood pressure at a FAMILY REUNION, and the OR is in full PANIC mode. What do you SLAM into this man before he COOKS alive on the table? A) Tylenol. B) Cooling blankets. C) Dantrolene. D) Beta blockers. E) Epinephrine. Clock's TICKIN'. It's C, DANTROLENE! And PLEASE tell me none of you BUFFOONS picked cooling BLANKETS. His muscles are COOKING themselves from the INSIDE. A blanket? That's like fighting a HOUSE FIRE with a SQUIRT GUN. Dantrolene blocks the calcium channels, muscles RELAX, temperature DROPS. Two point five milligrams per kilo, IV push, and PRAY you caught it in time. Now GET OUT and read a CHART once in a while.",
+  "words": [
+    {
+      "word": "Good",
+      "start": 0,
+      "end": 0.406
+    },
+    {
+      "word": "LORD,",
+      "start": 0.499,
+      "end": 0.964
+    },
+    {
+      "word": "this",
+      "start": 1.254,
+      "end": 1.451
+    },
+    {
+      "word": "man",
+      "start": 1.544,
+      "end": 1.765
+    },
+    {
+      "word": "walked",
+      "start": 1.834,
+      "end": 2.148
+    },
+    {
+      "word": "in",
+      "start": 2.206,
+      "end": 2.299
+    },
+    {
+      "word": "for",
+      "start": 2.368,
+      "end": 2.508
+    },
+    {
+      "word": "a",
+      "start": 2.577,
+      "end": 2.612
+    },
+    {
+      "word": "HERNIA",
+      "start": 3.053,
+      "end": 3.529
+    },
+    {
+      "word": "repair.",
+      "start": 3.587,
+      "end": 4.296
+    },
+    {
+      "word": "A",
+      "start": 4.458,
+      "end": 4.54
+    },
+    {
+      "word": "HERNIA.",
+      "start": 4.656,
+      "end": 5.294
+    },
+    {
+      "word": "Routine",
+      "start": 5.677,
+      "end": 6.13
+    },
+    {
+      "word": "as",
+      "start": 6.165,
+      "end": 6.258
+    },
+    {
+      "word": "a",
+      "start": 6.304,
+      "end": 6.339
+    },
+    {
+      "word": "HAIRCUT.",
+      "start": 6.42,
+      "end": 7.094
+    },
+    {
+      "word": "Now",
+      "start": 7.906,
+      "end": 8.115
+    },
+    {
+      "word": "his",
+      "start": 8.185,
+      "end": 8.324
+    },
+    {
+      "word": "temperature's",
+      "start": 8.394,
+      "end": 8.975
+    },
+    {
+      "word": "ONE",
+      "start": 9.067,
+      "end": 9.323
+    },
+    {
+      "word": "HUNDRED",
+      "start": 9.346,
+      "end": 9.671
+    },
+    {
+      "word": "AND",
+      "start": 9.706,
+      "end": 9.787
+    },
+    {
+      "word": "SEVEN",
+      "start": 9.903,
+      "end": 10.252
+    },
+    {
+      "word": "and",
+      "start": 10.53,
+      "end": 10.774
+    },
+    {
+      "word": "his",
+      "start": 10.832,
+      "end": 10.995
+    },
+    {
+      "word": "muscles",
+      "start": 11.111,
+      "end": 11.598
+    },
+    {
+      "word": "are",
+      "start": 11.842,
+      "end": 12.028
+    },
+    {
+      "word": "HARDER",
+      "start": 12.144,
+      "end": 12.585
+    },
+    {
+      "word": "than",
+      "start": 12.62,
+      "end": 12.736
+    },
+    {
+      "word": "my",
+      "start": 12.783,
+      "end": 12.875
+    },
+    {
+      "word": "ex-wife's",
+      "start": 12.945,
+      "end": 13.514
+    },
+    {
+      "word": "HEART.",
+      "start": 13.56,
+      "end": 14.083
+    },
+    {
+      "word": "Anesthesiologist",
+      "start": 14.896,
+      "end": 16.115
+    },
+    {
+      "word": "gave",
+      "start": 16.173,
+      "end": 16.382
+    },
+    {
+      "word": "him",
+      "start": 16.416,
+      "end": 16.521
+    },
+    {
+      "word": "succinylcholine",
+      "start": 16.602,
+      "end": 17.879
+    },
+    {
+      "word": "and",
+      "start": 17.914,
+      "end": 18.03
+    },
+    {
+      "word": "this",
+      "start": 18.355,
+      "end": 18.587
+    },
+    {
+      "word": "fella",
+      "start": 18.68,
+      "end": 18.947
+    },
+    {
+      "word": "went",
+      "start": 19.005,
+      "end": 19.191
+    },
+    {
+      "word": "RIGID",
+      "start": 19.4,
+      "end": 19.911
+    },
+    {
+      "word": "as",
+      "start": 19.981,
+      "end": 20.073
+    },
+    {
+      "word": "a",
+      "start": 20.131,
+      "end": 20.155
+    },
+    {
+      "word": "FENCE",
+      "start": 20.271,
+      "end": 20.549
+    },
+    {
+      "word": "POST.",
+      "start": 20.596,
+      "end": 21.072
+    },
+    {
+      "word": "Temperature's",
+      "start": 21.594,
+      "end": 22.094
+    },
+    {
+      "word": "CLIMBING",
+      "start": 22.163,
+      "end": 22.535
+    },
+    {
+      "word": "faster",
+      "start": 22.616,
+      "end": 22.999
+    },
+    {
+      "word": "than",
+      "start": 23.034,
+      "end": 23.127
+    },
+    {
+      "word": "my",
+      "start": 23.185,
+      "end": 23.266
+    },
+    {
+      "word": "blood",
+      "start": 23.347,
+      "end": 23.556
+    },
+    {
+      "word": "pressure",
+      "start": 23.603,
+      "end": 23.893
+    },
+    {
+      "word": "at",
+      "start": 23.905,
+      "end": 23.963
+    },
+    {
+      "word": "a",
+      "start": 23.986,
+      "end": 24.021
+    },
+    {
+      "word": "FAMILY",
+      "start": 24.09,
+      "end": 24.392
+    },
+    {
+      "word": "REUNION,",
+      "start": 24.45,
+      "end": 24.996
+    },
+    {
+      "word": "and",
+      "start": 25.147,
+      "end": 25.31
+    },
+    {
+      "word": "the",
+      "start": 25.368,
+      "end": 25.426
+    },
+    {
+      "word": "OR",
+      "start": 25.495,
+      "end": 25.878
+    },
+    {
+      "word": "is",
+      "start": 26.203,
+      "end": 26.343
+    },
+    {
+      "word": "in",
+      "start": 26.401,
+      "end": 26.47
+    },
+    {
+      "word": "full",
+      "start": 26.575,
+      "end": 26.842
+    },
+    {
+      "word": "PANIC",
+      "start": 26.97,
+      "end": 27.306
+    },
+    {
+      "word": "mode.",
+      "start": 27.364,
+      "end": 27.852
+    },
+    {
+      "word": "What",
+      "start": 28.56,
+      "end": 28.711
+    },
+    {
+      "word": "do",
+      "start": 28.723,
+      "end": 28.769
+    },
+    {
+      "word": "you",
+      "start": 28.792,
+      "end": 28.862
+    },
+    {
+      "word": "SLAM",
+      "start": 28.99,
+      "end": 29.547
+    },
+    {
+      "word": "into",
+      "start": 29.605,
+      "end": 29.721
+    },
+    {
+      "word": "this",
+      "start": 29.768,
+      "end": 29.884
+    },
+    {
+      "word": "man",
+      "start": 29.953,
+      "end": 30.104
+    },
+    {
+      "word": "before",
+      "start": 30.151,
+      "end": 30.371
+    },
+    {
+      "word": "he",
+      "start": 30.418,
+      "end": 30.499
+    },
+    {
+      "word": "COOKS",
+      "start": 30.569,
+      "end": 30.847
+    },
+    {
+      "word": "alive",
+      "start": 30.894,
+      "end": 31.207
+    },
+    {
+      "word": "on",
+      "start": 31.231,
+      "end": 31.289
+    },
+    {
+      "word": "the",
+      "start": 31.323,
+      "end": 31.382
+    },
+    {
+      "word": "table?",
+      "start": 31.428,
+      "end": 31.823
+    },
+    {
+      "word": "A)",
+      "start": 32.159,
+      "end": 32.786
+    },
+    {
+      "word": "Tylenol.",
+      "start": 33.169,
+      "end": 34.029
+    },
+    {
+      "word": "B)",
+      "start": 34.412,
+      "end": 34.911
+    },
+    {
+      "word": "Cooling",
+      "start": 35.097,
+      "end": 35.434
+    },
+    {
+      "word": "blankets.",
+      "start": 35.492,
+      "end": 36.084
+    },
+    {
+      "word": "C)",
+      "start": 36.235,
+      "end": 36.804
+    },
+    {
+      "word": "Dantrolene.",
+      "start": 36.955,
+      "end": 37.721
+    },
+    {
+      "word": "D)",
+      "start": 37.965,
+      "end": 38.499
+    },
+    {
+      "word": "Beta",
+      "start": 38.708,
+      "end": 38.975
+    },
+    {
+      "word": "blockers.",
+      "start": 39.033,
+      "end": 39.718
+    },
+    {
+      "word": "E)",
+      "start": 39.938,
+      "end": 40.565
+    },
+    {
+      "word": "Epinephrine.",
+      "start": 40.716,
+      "end": 41.796
+    },
+    {
+      "word": "Clock's",
+      "start": 42.04,
+      "end": 42.527
+    },
+    {
+      "word": "TICKIN'.",
+      "start": 42.783,
+      "end": 43.549
+    },
+    {
+      "word": "It's",
+      "start": 44.164,
+      "end": 44.455
+    },
+    {
+      "word": "C,",
+      "start": 44.478,
+      "end": 45.209
+    },
+    {
+      "word": "DANTROLENE!",
+      "start": 45.488,
+      "end": 46.742
+    },
+    {
+      "word": "And",
+      "start": 46.997,
+      "end": 47.171
+    },
+    {
+      "word": "PLEASE",
+      "start": 47.287,
+      "end": 47.613
+    },
+    {
+      "word": "tell",
+      "start": 47.659,
+      "end": 47.926
+    },
+    {
+      "word": "me",
+      "start": 47.984,
+      "end": 48.193
+    },
+    {
+      "word": "none",
+      "start": 48.448,
+      "end": 48.692
+    },
+    {
+      "word": "of",
+      "start": 48.727,
+      "end": 48.774
+    },
+    {
+      "word": "you",
+      "start": 48.843,
+      "end": 48.959
+    },
+    {
+      "word": "BUFFOONS",
+      "start": 49.075,
+      "end": 49.853
+    },
+    {
+      "word": "picked",
+      "start": 49.9,
+      "end": 50.144
+    },
+    {
+      "word": "cooling",
+      "start": 50.202,
+      "end": 50.561
+    },
+    {
+      "word": "BLANKETS.",
+      "start": 50.643,
+      "end": 51.305
+    },
+    {
+      "word": "His",
+      "start": 51.56,
+      "end": 51.769
+    },
+    {
+      "word": "muscles",
+      "start": 51.839,
+      "end": 52.21
+    },
+    {
+      "word": "are",
+      "start": 52.245,
+      "end": 52.361
+    },
+    {
+      "word": "COOKING",
+      "start": 52.419,
+      "end": 52.779
+    },
+    {
+      "word": "themselves",
+      "start": 52.825,
+      "end": 53.267
+    },
+    {
+      "word": "from",
+      "start": 53.29,
+      "end": 53.429
+    },
+    {
+      "word": "the",
+      "start": 53.476,
+      "end": 53.545
+    },
+    {
+      "word": "INSIDE.",
+      "start": 53.627,
+      "end": 54.358
+    },
+    {
+      "word": "A",
+      "start": 54.474,
+      "end": 54.567
+    },
+    {
+      "word": "blanket?",
+      "start": 54.648,
+      "end": 55.275
+    },
+    {
+      "word": "That's",
+      "start": 55.786,
+      "end": 56.007
+    },
+    {
+      "word": "like",
+      "start": 56.041,
+      "end": 56.192
+    },
+    {
+      "word": "fighting",
+      "start": 56.239,
+      "end": 56.529
+    },
+    {
+      "word": "a",
+      "start": 56.587,
+      "end": 56.61
+    },
+    {
+      "word": "HOUSE",
+      "start": 56.668,
+      "end": 56.901
+    },
+    {
+      "word": "FIRE",
+      "start": 56.947,
+      "end": 57.179
+    },
+    {
+      "word": "with",
+      "start": 57.214,
+      "end": 57.33
+    },
+    {
+      "word": "a",
+      "start": 57.365,
+      "end": 57.4
+    },
+    {
+      "word": "SQUIRT",
+      "start": 57.458,
+      "end": 57.771
+    },
+    {
+      "word": "GUN.",
+      "start": 57.818,
+      "end": 58.329
+    },
+    {
+      "word": "Dantrolene",
+      "start": 58.851,
+      "end": 59.571
+    },
+    {
+      "word": "blocks",
+      "start": 59.629,
+      "end": 60.012
+    },
+    {
+      "word": "the",
+      "start": 60.07,
+      "end": 60.151
+    },
+    {
+      "word": "calcium",
+      "start": 60.221,
+      "end": 60.72
+    },
+    {
+      "word": "channels,",
+      "start": 60.778,
+      "end": 61.498
+    },
+    {
+      "word": "muscles",
+      "start": 61.788,
+      "end": 62.241
+    },
+    {
+      "word": "RELAX,",
+      "start": 62.531,
+      "end": 63.669
+    },
+    {
+      "word": "temperature",
+      "start": 63.843,
+      "end": 64.366
+    },
+    {
+      "word": "DROPS.",
+      "start": 64.412,
+      "end": 65.202
+    },
+    {
+      "word": "Two",
+      "start": 65.457,
+      "end": 65.643
+    },
+    {
+      "word": "point",
+      "start": 65.724,
+      "end": 65.956
+    },
+    {
+      "word": "five",
+      "start": 66.038,
+      "end": 66.386
+    },
+    {
+      "word": "milligrams",
+      "start": 66.432,
+      "end": 66.99
+    },
+    {
+      "word": "per",
+      "start": 67.048,
+      "end": 67.175
+    },
+    {
+      "word": "kilo,",
+      "start": 67.222,
+      "end": 67.895
+    },
+    {
+      "word": "IV",
+      "start": 68.011,
+      "end": 68.302
+    },
+    {
+      "word": "push,",
+      "start": 68.476,
+      "end": 69.056
+    },
+    {
+      "word": "and",
+      "start": 69.451,
+      "end": 69.695
+    },
+    {
+      "word": "PRAY",
+      "start": 69.811,
+      "end": 70.113
+    },
+    {
+      "word": "you",
+      "start": 70.159,
+      "end": 70.264
+    },
+    {
+      "word": "caught",
+      "start": 70.38,
+      "end": 70.635
+    },
+    {
+      "word": "it",
+      "start": 70.67,
+      "end": 70.751
+    },
+    {
+      "word": "in",
+      "start": 70.798,
+      "end": 70.867
+    },
+    {
+      "word": "time.",
+      "start": 70.949,
+      "end": 71.46
+    },
+    {
+      "word": "Now",
+      "start": 72.086,
+      "end": 72.284
+    },
+    {
+      "word": "GET",
+      "start": 72.377,
+      "end": 72.551
+    },
+    {
+      "word": "OUT",
+      "start": 72.586,
+      "end": 72.795
+    },
+    {
+      "word": "and",
+      "start": 72.946,
+      "end": 73.166
+    },
+    {
+      "word": "read",
+      "start": 73.236,
+      "end": 73.41
+    },
+    {
+      "word": "a",
+      "start": 73.456,
+      "end": 73.48
+    },
+    {
+      "word": "CHART",
+      "start": 73.573,
+      "end": 73.932
+    },
+    {
+      "word": "once",
+      "start": 74.002,
+      "end": 74.223
+    },
+    {
+      "word": "in",
+      "start": 74.246,
+      "end": 74.304
+    },
+    {
+      "word": "a",
+      "start": 74.339,
+      "end": 74.362
+    },
+    {
+      "word": "while.",
+      "start": 74.408,
+      "end": 75.047
+    }
+  ]
+}

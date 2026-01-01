@@ -1,0 +1,61 @@
+{
+  "videoName": "Hyperkalemia Ad",
+  "searches": [
+    {
+      "name": "Hook - Peaked T-Waves",
+      "timestamp": 1.5,
+      "context": "This patient's EKG looks like Mount Everest - peaked T-waves everywhere",
+      "emotion": "PANIC",
+      "suggestedMemes": ["mr incredible uncanny", "this is fine", "its joever"]
+    },
+    {
+      "name": "Vignette - Potassium Crisis",
+      "timestamp": 5.2,
+      "context": "Potassium level comes back at 7.2 - kidney's on strike",
+      "emotion": "DEATH",
+      "suggestedMemes": ["coffin dance", "windows xp shutdown", "flatline"]
+    },
+    {
+      "name": "Danger - Heart Stopping",
+      "timestamp": 9.0,
+      "context": "The heart is about to throw in the towel - ventricular fibrillation incoming",
+      "emotion": "CHAOS",
+      "suggestedMemes": ["elmo fire", "among us emergency", "panik kalm panik"]
+    },
+    {
+      "name": "Question - What Do You Do",
+      "timestamp": 14.0,
+      "context": "TICK TOCK future doctors - what's your move?",
+      "emotion": "SHOCK",
+      "suggestedMemes": ["the rock eyebrow", "thinking", "confused math lady"]
+    },
+    {
+      "name": "Answer Reveal - Calcium Gluconate",
+      "timestamp": 18.5,
+      "context": "It's CALCIUM GLUCONATE baby! Stabilize that cardiac membrane!",
+      "emotion": "CELEBRATION",
+      "suggestedMemes": ["lets gooo", "were so back", "gigachad"]
+    },
+    {
+      "name": "Wrong Answer Roast",
+      "timestamp": 22.0,
+      "context": "Half of you reached for insulin first - that shifts potassium but doesn't stabilize the heart!",
+      "emotion": "ROAST",
+      "suggestedMemes": ["emotional damage", "clown makeup", "skill issue"]
+    },
+    {
+      "name": "Mechanism Explanation",
+      "timestamp": 26.0,
+      "context": "Calcium acts like a bodyguard for the heart - stabilizes the membrane while other treatments work",
+      "emotion": "TEACHING",
+      "suggestedMemes": ["galaxy brain", "big brain time", "write that down"]
+    },
+    {
+      "name": "Exit - Peace Out",
+      "timestamp": 30.0,
+      "context": "Now get outta here and save some lives",
+      "emotion": "SIGMA",
+      "suggestedMemes": ["gigachad", "zyzz", "thomas shelby"]
+    }
+  ]
+}

@@ -1,0 +1,3145 @@
+{
+  "script": "This girl is gonna DIE in forty-eight hours and she doesn't even KNOW it yet. Took a whole BOTTLE of Tylenol eight hours ago, and now she's sittin' there tellin' me she feels FINE. FINE! That's the TRAP. That's how acetaminophen KILLS you - you feel NOTHING while your liver MELTS from the inside. And I GUARANTEE eighty percent of you are about to pick the WRONG answer and let her walk out of here to DIE at home. Labs just came back - AST? TWENTY-EIGHT FORTY-SEVEN. Normal is FORTY. Her liver enzymes are SEVENTY TIMES normal and she's askin' if she can go get CHIPOTLE. ALT? THIRTY-ONE FIFTY-SIX. INR 2.8 - her blood forgot how to CLOT. In forty-eight hours without treatment? Fulminant hepatic failure. Encephalopathy. DEATH. So what're you gonna do, hotshot? A) Activated charcoal. B) Fomepizole. C) N-Acetylcysteine. D) Hemodialysis. E) Supportive care only. Clock's tickin' and her liver's MELTING. Well HOT DAMN, it's C, N-Acetylcysteine! And I KNOW at least half you picked activated charcoal because that's what EVERY medical student picks and that's why EVERY medical student would've just KILLED this patient. Charcoal works if you give it within ONE TO TWO HOURS. She came in at EIGHT HOURS. The Tylenol's already ABSORBED and is MURDERING hepatocytes as we SPEAK. Charcoal at this point is like puttin' on a seatbelt AFTER the car crash. USELESS. Now SHUT UP and let me teach you why this is the SILENT KILLER hiding in everyone's medicine cabinet. Normally when you take Tylenol, your liver handles it like a CHAMP. Ninety-five percent gets glucuronidated - made water-soluble, peed out. Easy. But five percent goes through CYP450 and becomes this TOXIC metabolite called NAPQI. N-A-P-Q-I. Sounds scary because it IS scary. Now normally? No problem! Your liver's got GLUTATHIONE - think of it as your liver's BODYGUARD. Glutathione TACKLES that NAPQI before it can do damage. You're fine, go about your day. But when someone eats the WHOLE BOTTLE? The safe pathway gets OVERWHELMED. Can't keep up. More and more Tylenol gets shunted to CYP450. NAPQI starts PILING UP. And your glutathione? DEPLETED. EXHAUSTED. GONE. Now NAPQI has NOTHING stopping it. It latches onto hepatocytes and just DESTROYS them. Zone 3 necrosis - CENTRILOBULAR pattern - that's your buzzword for the boards. And HERE'S the terrifying part that makes this a KILLER - for the first TWENTY-FOUR HOURS? Patient feels FINE. Maybe mildly nauseous. Wants to go home. The liver is being DESTROYED and they feel NOTHING. By hour seventy-two? Fulminant hepatic failure. Yellow skin. Confused. Bleeding everywhere. DEAD without a transplant. Enter N-ACETYLCYSTEINE - NAC - the ANTIDOTE! NAC provides CYSTEINE - the building block your liver needs to REBUILD glutathione! Glutathione comes back ONLINE, starts NEUTRALIZING that NAPQI before it can kill more cells! The liver SURVIVES! TIMING is EVERYTHING! Within EIGHT HOURS? NAC is nearly ONE HUNDRED PERCENT effective. Don't even THINK, just GIVE IT. Eight to TWENTY-FOUR hours? Still helps significantly. GIVE IT. After twenty-four hours? Liver damage may be permanent but NAC STILL reduces mortality. GIVE IT ANYWAY. Use the RUMACK-MATTHEW NOMOGRAM - plot the acetaminophen level against time since ingestion. Above the treatment line? TREAT. Don't wait for symptoms - by the time symptoms show up you're already behind. Loading dose: one-fifty milligrams per kilogram over one hour. Then fifty per kilogram over four hours. Then one hundred per kilogram over sixteen hours. Twenty-one hour protocol. That's how you SAVE this patient. Tylenol - looks harmless, KILLS silently. NAC - the cure if you're SMART enough to give it in time. Now you know. Don't let YOUR patient be the one who walks out feelin' fine and comes back in a body bag. Get OUT of here and go study your ANTIDOTES.",
+  "words": [
+    {
+      "word": "This",
+      "start": 0,
+      "end": 0.221
+    },
+    {
+      "word": "girl",
+      "start": 0.302,
+      "end": 0.58
+    },
+    {
+      "word": "is",
+      "start": 0.604,
+      "end": 0.639
+    },
+    {
+      "word": "gonna",
+      "start": 0.685,
+      "end": 0.906
+    },
+    {
+      "word": "DIE",
+      "start": 1.057,
+      "end": 1.486
+    },
+    {
+      "word": "in",
+      "start": 1.544,
+      "end": 1.637
+    },
+    {
+      "word": "forty-eight",
+      "start": 1.8,
+      "end": 2.438
+    },
+    {
+      "word": "hours",
+      "start": 2.473,
+      "end": 2.891
+    },
+    {
+      "word": "and",
+      "start": 3.309,
+      "end": 3.541
+    },
+    {
+      "word": "she",
+      "start": 3.611,
+      "end": 3.727
+    },
+    {
+      "word": "doesn't",
+      "start": 3.796,
+      "end": 4.087
+    },
+    {
+      "word": "even",
+      "start": 4.133,
+      "end": 4.342
+    },
+    {
+      "word": "KNOW",
+      "start": 4.4,
+      "end": 4.621
+    },
+    {
+      "word": "it",
+      "start": 4.69,
+      "end": 4.772
+    },
+    {
+      "word": "yet.",
+      "start": 4.841,
+      "end": 5.283
+    },
+    {
+      "word": "Took",
+      "start": 5.851,
+      "end": 6.095
+    },
+    {
+      "word": "a",
+      "start": 6.153,
+      "end": 6.223
+    },
+    {
+      "word": "whole",
+      "start": 6.327,
+      "end": 6.664
+    },
+    {
+      "word": "BOTTLE",
+      "start": 6.711,
+      "end": 7.07
+    },
+    {
+      "word": "of",
+      "start": 7.105,
+      "end": 7.175
+    },
+    {
+      "word": "Tylenol",
+      "start": 7.256,
+      "end": 7.988
+    },
+    {
+      "word": "eight",
+      "start": 8.301,
+      "end": 8.533
+    },
+    {
+      "word": "hours",
+      "start": 8.568,
+      "end": 8.882
+    },
+    {
+      "word": "ago,",
+      "start": 8.916,
+      "end": 9.381
+    },
+    {
+      "word": "and",
+      "start": 9.683,
+      "end": 9.868
+    },
+    {
+      "word": "now",
+      "start": 9.95,
+      "end": 10.159
+    },
+    {
+      "word": "she's",
+      "start": 10.263,
+      "end": 10.519
+    },
+    {
+      "word": "sittin'",
+      "start": 10.577,
+      "end": 10.902
+    },
+    {
+      "word": "there",
+      "start": 10.925,
+      "end": 11.227
+    },
+    {
+      "word": "tellin'",
+      "start": 11.436,
+      "end": 11.784
+    },
+    {
+      "word": "me",
+      "start": 11.819,
+      "end": 11.923
+    },
+    {
+      "word": "she",
+      "start": 11.981,
+      "end": 12.144
+    },
+    {
+      "word": "feels",
+      "start": 12.307,
+      "end": 12.759
+    },
+    {
+      "word": "FINE.",
+      "start": 12.899,
+      "end": 13.642
+    },
+    {
+      "word": "FINE!",
+      "start": 14.222,
+      "end": 15.047
+    },
+    {
+      "word": "That's",
+      "start": 15.418,
+      "end": 15.72
+    },
+    {
+      "word": "the",
+      "start": 15.801,
+      "end": 15.906
+    },
+    {
+      "word": "TRAP.",
+      "start": 15.999,
+      "end": 16.602
+    },
+    {
+      "word": "That's",
+      "start": 17.02,
+      "end": 17.345
+    },
+    {
+      "word": "how",
+      "start": 17.392,
+      "end": 17.554
+    },
+    {
+      "word": "acetaminophen",
+      "start": 17.624,
+      "end": 18.576
+    },
+    {
+      "word": "KILLS",
+      "start": 18.692,
+      "end": 19.133
+    },
+    {
+      "word": "you",
+      "start": 19.203,
+      "end": 19.331
+    },
+    {
+      "word": "-",
+      "start": 19.493,
+      "end": 19.516
+    },
+    {
+      "word": "you",
+      "start": 19.876,
+      "end": 19.981
+    },
+    {
+      "word": "feel",
+      "start": 20.074,
+      "end": 20.294
+    },
+    {
+      "word": "NOTHING",
+      "start": 20.503,
+      "end": 20.968
+    },
+    {
+      "word": "while",
+      "start": 21.339,
+      "end": 21.595
+    },
+    {
+      "word": "your",
+      "start": 21.629,
+      "end": 21.734
+    },
+    {
+      "word": "liver",
+      "start": 21.804,
+      "end": 22.059
+    },
+    {
+      "word": "MELTS",
+      "start": 22.175,
+      "end": 22.465
+    },
+    {
+      "word": "from",
+      "start": 22.512,
+      "end": 22.651
+    },
+    {
+      "word": "the",
+      "start": 22.686,
+      "end": 22.756
+    },
+    {
+      "word": "inside.",
+      "start": 22.825,
+      "end": 23.464
+    },
+    {
+      "word": "And",
+      "start": 24.044,
+      "end": 24.207
+    },
+    {
+      "word": "I",
+      "start": 24.276,
+      "end": 24.311
+    },
+    {
+      "word": "GUARANTEE",
+      "start": 24.451,
+      "end": 25.24
+    },
+    {
+      "word": "eighty",
+      "start": 25.554,
+      "end": 25.844
+    },
+    {
+      "word": "percent",
+      "start": 25.925,
+      "end": 26.436
+    },
+    {
+      "word": "of",
+      "start": 26.471,
+      "end": 26.517
+    },
+    {
+      "word": "you",
+      "start": 26.587,
+      "end": 26.68
+    },
+    {
+      "word": "are",
+      "start": 26.703,
+      "end": 26.819
+    },
+    {
+      "word": "about",
+      "start": 26.842,
+      "end": 27.063
+    },
+    {
+      "word": "to",
+      "start": 27.098,
+      "end": 27.156
+    },
+    {
+      "word": "pick",
+      "start": 27.214,
+      "end": 27.388
+    },
+    {
+      "word": "the",
+      "start": 27.434,
+      "end": 27.516
+    },
+    {
+      "word": "WRONG",
+      "start": 27.551,
+      "end": 27.852
+    },
+    {
+      "word": "answer",
+      "start": 27.934,
+      "end": 28.282
+    },
+    {
+      "word": "and",
+      "start": 28.421,
+      "end": 28.665
+    },
+    {
+      "word": "let",
+      "start": 28.723,
+      "end": 28.897
+    },
+    {
+      "word": "her",
+      "start": 28.944,
+      "end": 29.037
+    },
+    {
+      "word": "walk",
+      "start": 29.118,
+      "end": 29.327
+    },
+    {
+      "word": "out",
+      "start": 29.385,
+      "end": 29.513
+    },
+    {
+      "word": "of",
+      "start": 29.536,
+      "end": 29.594
+    },
+    {
+      "word": "here",
+      "start": 29.629,
+      "end": 29.814
+    },
+    {
+      "word": "to",
+      "start": 29.849,
+      "end": 29.931
+    },
+    {
+      "word": "DIE",
+      "start": 30.012,
+      "end": 30.244
+    },
+    {
+      "word": "at",
+      "start": 30.279,
+      "end": 30.349
+    },
+    {
+      "word": "home.",
+      "start": 30.395,
+      "end": 30.836
+    },
+    {
+      "word": "Labs",
+      "start": 31.417,
+      "end": 31.962
+    },
+    {
+      "word": "just",
+      "start": 32.125,
+      "end": 32.508
+    },
+    {
+      "word": "came",
+      "start": 32.589,
+      "end": 32.938
+    },
+    {
+      "word": "back",
+      "start": 32.996,
+      "end": 33.332
+    },
+    {
+      "word": "-",
+      "start": 33.448,
+      "end": 33.495
+    },
+    {
+      "word": "AST?",
+      "start": 33.808,
+      "end": 34.818
+    },
+    {
+      "word": "TWENTY-EIGHT",
+      "start": 35.736,
+      "end": 36.479
+    },
+    {
+      "word": "FORTY-SEVEN.",
+      "start": 36.793,
+      "end": 37.779
+    },
+    {
+      "word": "Normal",
+      "start": 38.046,
+      "end": 38.557
+    },
+    {
+      "word": "is",
+      "start": 38.639,
+      "end": 38.789
+    },
+    {
+      "word": "FORTY.",
+      "start": 38.929,
+      "end": 39.521
+    },
+    {
+      "word": "Her",
+      "start": 39.892,
+      "end": 40.043
+    },
+    {
+      "word": "liver",
+      "start": 40.113,
+      "end": 40.38
+    },
+    {
+      "word": "enzymes",
+      "start": 40.461,
+      "end": 40.972
+    },
+    {
+      "word": "are",
+      "start": 41.03,
+      "end": 41.239
+    },
+    {
+      "word": "SEVENTY",
+      "start": 41.425,
+      "end": 42.005
+    },
+    {
+      "word": "TIMES",
+      "start": 42.342,
+      "end": 42.69
+    },
+    {
+      "word": "normal",
+      "start": 42.772,
+      "end": 43.143
+    },
+    {
+      "word": "and",
+      "start": 43.271,
+      "end": 43.457
+    },
+    {
+      "word": "she's",
+      "start": 43.503,
+      "end": 43.7
+    },
+    {
+      "word": "askin'",
+      "start": 43.759,
+      "end": 44.095
+    },
+    {
+      "word": "if",
+      "start": 44.13,
+      "end": 44.2
+    },
+    {
+      "word": "she",
+      "start": 44.246,
+      "end": 44.339
+    },
+    {
+      "word": "can",
+      "start": 44.397,
+      "end": 44.502
+    },
+    {
+      "word": "go",
+      "start": 44.56,
+      "end": 44.699
+    },
+    {
+      "word": "get",
+      "start": 44.769,
+      "end": 44.908
+    },
+    {
+      "word": "CHIPOTLE.",
+      "start": 44.954,
+      "end": 45.744
+    },
+    {
+      "word": "ALT?",
+      "start": 46.034,
+      "end": 46.603
+    },
+    {
+      "word": "THIRTY-ONE",
+      "start": 47.056,
+      "end": 47.555
+    },
+    {
+      "word": "FIFTY-SIX.",
+      "start": 47.601,
+      "end": 48.484
+    },
+    {
+      "word": "INR",
+      "start": 48.82,
+      "end": 49.343
+    },
+    {
+      "word": "2.8",
+      "start": 49.436,
+      "end": 50.028
+    },
+    {
+      "word": "-",
+      "start": 50.248,
+      "end": 50.318
+    },
+    {
+      "word": "her",
+      "start": 50.504,
+      "end": 50.643
+    },
+    {
+      "word": "blood",
+      "start": 50.701,
+      "end": 50.933
+    },
+    {
+      "word": "forgot",
+      "start": 50.992,
+      "end": 51.305
+    },
+    {
+      "word": "how",
+      "start": 51.351,
+      "end": 51.468
+    },
+    {
+      "word": "to",
+      "start": 51.526,
+      "end": 51.572
+    },
+    {
+      "word": "CLOT.",
+      "start": 51.665,
+      "end": 52.211
+    },
+    {
+      "word": "In",
+      "start": 52.594,
+      "end": 52.768
+    },
+    {
+      "word": "forty-eight",
+      "start": 52.838,
+      "end": 53.29
+    },
+    {
+      "word": "hours",
+      "start": 53.314,
+      "end": 53.581
+    },
+    {
+      "word": "without",
+      "start": 53.615,
+      "end": 53.871
+    },
+    {
+      "word": "treatment?",
+      "start": 53.894,
+      "end": 54.358
+    },
+    {
+      "word": "Fulminant",
+      "start": 54.649,
+      "end": 55.159
+    },
+    {
+      "word": "hepatic",
+      "start": 55.229,
+      "end": 55.728
+    },
+    {
+      "word": "failure.",
+      "start": 55.856,
+      "end": 56.425
+    },
+    {
+      "word": "Encephalopathy.",
+      "start": 56.808,
+      "end": 57.853
+    },
+    {
+      "word": "DEATH.",
+      "start": 58.132,
+      "end": 58.642
+    },
+    {
+      "word": "So",
+      "start": 59.142,
+      "end": 59.269
+    },
+    {
+      "word": "what're",
+      "start": 59.304,
+      "end": 59.443
+    },
+    {
+      "word": "you",
+      "start": 59.455,
+      "end": 59.501
+    },
+    {
+      "word": "gonna",
+      "start": 59.548,
+      "end": 59.699
+    },
+    {
+      "word": "do,",
+      "start": 59.734,
+      "end": 59.896
+    },
+    {
+      "word": "hotshot?",
+      "start": 59.919,
+      "end": 60.43
+    },
+    {
+      "word": "A)",
+      "start": 60.871,
+      "end": 61.324
+    },
+    {
+      "word": "Activated",
+      "start": 61.556,
+      "end": 62.021
+    },
+    {
+      "word": "charcoal.",
+      "start": 62.044,
+      "end": 62.555
+    },
+    {
+      "word": "B)",
+      "start": 62.996,
+      "end": 63.437
+    },
+    {
+      "word": "Fomepizole.",
+      "start": 63.751,
+      "end": 64.587
+    },
+    {
+      "word": "C)",
+      "start": 64.9,
+      "end": 65.423
+    },
+    {
+      "word": "N-Acetylcysteine.",
+      "start": 65.782,
+      "end": 67.071
+    },
+    {
+      "word": "D)",
+      "start": 67.512,
+      "end": 67.965
+    },
+    {
+      "word": "Hemodialysis.",
+      "start": 68.197,
+      "end": 69.138
+    },
+    {
+      "word": "E)",
+      "start": 69.451,
+      "end": 69.869
+    },
+    {
+      "word": "Supportive",
+      "start": 70.148,
+      "end": 70.589
+    },
+    {
+      "word": "care",
+      "start": 70.612,
+      "end": 70.868
+    },
+    {
+      "word": "only.",
+      "start": 70.926,
+      "end": 71.355
+    },
+    {
+      "word": "Clock's",
+      "start": 71.564,
+      "end": 71.878
+    },
+    {
+      "word": "tickin'",
+      "start": 71.947,
+      "end": 72.296
+    },
+    {
+      "word": "and",
+      "start": 72.354,
+      "end": 72.505
+    },
+    {
+      "word": "her",
+      "start": 72.539,
+      "end": 72.609
+    },
+    {
+      "word": "liver's",
+      "start": 72.656,
+      "end": 72.876
+    },
+    {
+      "word": "MELTING.",
+      "start": 72.946,
+      "end": 73.387
+    },
+    {
+      "word": "Well",
+      "start": 73.712,
+      "end": 73.875
+    },
+    {
+      "word": "HOT",
+      "start": 73.91,
+      "end": 74.061
+    },
+    {
+      "word": "DAMN,",
+      "start": 74.095,
+      "end": 74.339
+    },
+    {
+      "word": "it's",
+      "start": 74.351,
+      "end": 74.467
+    },
+    {
+      "word": "C,",
+      "start": 74.571,
+      "end": 74.931
+    },
+    {
+      "word": "N-Acetylcysteine!",
+      "start": 75.256,
+      "end": 76.58
+    },
+    {
+      "word": "And",
+      "start": 77.102,
+      "end": 77.358
+    },
+    {
+      "word": "I",
+      "start": 77.578,
+      "end": 77.706
+    },
+    {
+      "word": "KNOW",
+      "start": 77.857,
+      "end": 78.147
+    },
+    {
+      "word": "at",
+      "start": 78.275,
+      "end": 78.391
+    },
+    {
+      "word": "least",
+      "start": 78.484,
+      "end": 78.774
+    },
+    {
+      "word": "half",
+      "start": 78.89,
+      "end": 79.215
+    },
+    {
+      "word": "you",
+      "start": 79.308,
+      "end": 79.459
+    },
+    {
+      "word": "picked",
+      "start": 79.575,
+      "end": 79.889
+    },
+    {
+      "word": "activated",
+      "start": 79.935,
+      "end": 80.551
+    },
+    {
+      "word": "charcoal",
+      "start": 80.609,
+      "end": 81.073
+    },
+    {
+      "word": "because",
+      "start": 81.41,
+      "end": 81.712
+    },
+    {
+      "word": "that's",
+      "start": 81.735,
+      "end": 81.955
+    },
+    {
+      "word": "what",
+      "start": 82.002,
+      "end": 82.153
+    },
+    {
+      "word": "EVERY",
+      "start": 82.246,
+      "end": 82.548
+    },
+    {
+      "word": "medical",
+      "start": 82.617,
+      "end": 83
+    },
+    {
+      "word": "student",
+      "start": 83.058,
+      "end": 83.407
+    },
+    {
+      "word": "picks",
+      "start": 83.453,
+      "end": 83.778
+    },
+    {
+      "word": "and",
+      "start": 83.929,
+      "end": 84.138
+    },
+    {
+      "word": "that's",
+      "start": 84.196,
+      "end": 84.452
+    },
+    {
+      "word": "why",
+      "start": 84.51,
+      "end": 84.811
+    },
+    {
+      "word": "EVERY",
+      "start": 85.148,
+      "end": 85.508
+    },
+    {
+      "word": "medical",
+      "start": 85.601,
+      "end": 86.007
+    },
+    {
+      "word": "student",
+      "start": 86.054,
+      "end": 86.414
+    },
+    {
+      "word": "would've",
+      "start": 86.437,
+      "end": 86.716
+    },
+    {
+      "word": "just",
+      "start": 86.774,
+      "end": 87.145
+    },
+    {
+      "word": "KILLED",
+      "start": 87.319,
+      "end": 87.877
+    },
+    {
+      "word": "this",
+      "start": 87.923,
+      "end": 88.062
+    },
+    {
+      "word": "patient.",
+      "start": 88.132,
+      "end": 88.666
+    },
+    {
+      "word": "Charcoal",
+      "start": 89.502,
+      "end": 89.99
+    },
+    {
+      "word": "works",
+      "start": 90.059,
+      "end": 90.408
+    },
+    {
+      "word": "if",
+      "start": 90.454,
+      "end": 90.524
+    },
+    {
+      "word": "you",
+      "start": 90.57,
+      "end": 90.663
+    },
+    {
+      "word": "give",
+      "start": 90.744,
+      "end": 90.907
+    },
+    {
+      "word": "it",
+      "start": 90.942,
+      "end": 91
+    },
+    {
+      "word": "within",
+      "start": 91.023,
+      "end": 91.279
+    },
+    {
+      "word": "ONE",
+      "start": 91.348,
+      "end": 91.522
+    },
+    {
+      "word": "TO",
+      "start": 91.546,
+      "end": 91.592
+    },
+    {
+      "word": "TWO",
+      "start": 91.65,
+      "end": 91.789
+    },
+    {
+      "word": "HOURS.",
+      "start": 91.859,
+      "end": 92.416
+    },
+    {
+      "word": "She",
+      "start": 92.927,
+      "end": 93.101
+    },
+    {
+      "word": "came",
+      "start": 93.183,
+      "end": 93.508
+    },
+    {
+      "word": "in",
+      "start": 93.577,
+      "end": 93.751
+    },
+    {
+      "word": "at",
+      "start": 93.821,
+      "end": 93.937
+    },
+    {
+      "word": "EIGHT",
+      "start": 94.053,
+      "end": 94.286
+    },
+    {
+      "word": "HOURS.",
+      "start": 94.32,
+      "end": 95.005
+    },
+    {
+      "word": "The",
+      "start": 95.505,
+      "end": 95.644
+    },
+    {
+      "word": "Tylenol's",
+      "start": 95.737,
+      "end": 96.549
+    },
+    {
+      "word": "already",
+      "start": 96.619,
+      "end": 97.037
+    },
+    {
+      "word": "ABSORBED",
+      "start": 97.095,
+      "end": 97.641
+    },
+    {
+      "word": "and",
+      "start": 97.687,
+      "end": 97.769
+    },
+    {
+      "word": "is",
+      "start": 97.827,
+      "end": 97.943
+    },
+    {
+      "word": "MURDERING",
+      "start": 98.07,
+      "end": 98.593
+    },
+    {
+      "word": "hepatocytes",
+      "start": 98.662,
+      "end": 99.707
+    },
+    {
+      "word": "as",
+      "start": 99.765,
+      "end": 99.87
+    },
+    {
+      "word": "we",
+      "start": 99.94,
+      "end": 100.056
+    },
+    {
+      "word": "SPEAK.",
+      "start": 100.125,
+      "end": 100.834
+    },
+    {
+      "word": "Charcoal",
+      "start": 101.437,
+      "end": 101.925
+    },
+    {
+      "word": "at",
+      "start": 101.971,
+      "end": 102.041
+    },
+    {
+      "word": "this",
+      "start": 102.076,
+      "end": 102.227
+    },
+    {
+      "word": "point",
+      "start": 102.285,
+      "end": 102.598
+    },
+    {
+      "word": "is",
+      "start": 102.97,
+      "end": 103.132
+    },
+    {
+      "word": "like",
+      "start": 103.214,
+      "end": 103.399
+    },
+    {
+      "word": "puttin'",
+      "start": 103.457,
+      "end": 103.771
+    },
+    {
+      "word": "on",
+      "start": 103.817,
+      "end": 103.945
+    },
+    {
+      "word": "a",
+      "start": 103.991,
+      "end": 104.026
+    },
+    {
+      "word": "seatbelt",
+      "start": 104.2,
+      "end": 104.827
+    },
+    {
+      "word": "AFTER",
+      "start": 105.036,
+      "end": 105.478
+    },
+    {
+      "word": "the",
+      "start": 105.524,
+      "end": 105.594
+    },
+    {
+      "word": "car",
+      "start": 105.652,
+      "end": 105.849
+    },
+    {
+      "word": "crash.",
+      "start": 105.919,
+      "end": 106.534
+    },
+    {
+      "word": "USELESS.",
+      "start": 107.138,
+      "end": 107.927
+    },
+    {
+      "word": "Now",
+      "start": 108.31,
+      "end": 108.496
+    },
+    {
+      "word": "SHUT",
+      "start": 108.647,
+      "end": 109.146
+    },
+    {
+      "word": "UP",
+      "start": 109.32,
+      "end": 109.518
+    },
+    {
+      "word": "and",
+      "start": 109.901,
+      "end": 110.133
+    },
+    {
+      "word": "let",
+      "start": 110.203,
+      "end": 110.354
+    },
+    {
+      "word": "me",
+      "start": 110.412,
+      "end": 110.528
+    },
+    {
+      "word": "teach",
+      "start": 110.644,
+      "end": 110.934
+    },
+    {
+      "word": "you",
+      "start": 110.969,
+      "end": 111.062
+    },
+    {
+      "word": "why",
+      "start": 111.132,
+      "end": 111.352
+    },
+    {
+      "word": "this",
+      "start": 111.422,
+      "end": 111.573
+    },
+    {
+      "word": "is",
+      "start": 111.642,
+      "end": 111.724
+    },
+    {
+      "word": "the",
+      "start": 111.782,
+      "end": 111.851
+    },
+    {
+      "word": "SILENT",
+      "start": 111.909,
+      "end": 112.293
+    },
+    {
+      "word": "KILLER",
+      "start": 112.351,
+      "end": 112.711
+    },
+    {
+      "word": "hiding",
+      "start": 113.012,
+      "end": 113.361
+    },
+    {
+      "word": "in",
+      "start": 113.419,
+      "end": 113.465
+    },
+    {
+      "word": "everyone's",
+      "start": 113.546,
+      "end": 113.988
+    },
+    {
+      "word": "medicine",
+      "start": 114.046,
+      "end": 114.406
+    },
+    {
+      "word": "cabinet.",
+      "start": 114.452,
+      "end": 114.998
+    },
+    {
+      "word": "Normally",
+      "start": 115.659,
+      "end": 116.077
+    },
+    {
+      "word": "when",
+      "start": 116.193,
+      "end": 116.333
+    },
+    {
+      "word": "you",
+      "start": 116.368,
+      "end": 116.437
+    },
+    {
+      "word": "take",
+      "start": 116.495,
+      "end": 116.67
+    },
+    {
+      "word": "Tylenol,",
+      "start": 116.716,
+      "end": 117.354
+    },
+    {
+      "word": "your",
+      "start": 117.471,
+      "end": 117.61
+    },
+    {
+      "word": "liver",
+      "start": 117.668,
+      "end": 117.923
+    },
+    {
+      "word": "handles",
+      "start": 117.981,
+      "end": 118.295
+    },
+    {
+      "word": "it",
+      "start": 118.341,
+      "end": 118.446
+    },
+    {
+      "word": "like",
+      "start": 118.527,
+      "end": 118.701
+    },
+    {
+      "word": "a",
+      "start": 118.724,
+      "end": 118.759
+    },
+    {
+      "word": "CHAMP.",
+      "start": 118.922,
+      "end": 119.618
+    },
+    {
+      "word": "Ninety-five",
+      "start": 120.512,
+      "end": 121.163
+    },
+    {
+      "word": "percent",
+      "start": 121.209,
+      "end": 121.557
+    },
+    {
+      "word": "gets",
+      "start": 121.604,
+      "end": 121.778
+    },
+    {
+      "word": "glucuronidated",
+      "start": 121.824,
+      "end": 122.765
+    },
+    {
+      "word": "-",
+      "start": 122.904,
+      "end": 122.927
+    },
+    {
+      "word": "made",
+      "start": 123.067,
+      "end": 123.276
+    },
+    {
+      "word": "water-soluble,",
+      "start": 123.334,
+      "end": 124.123
+    },
+    {
+      "word": "peed",
+      "start": 124.321,
+      "end": 124.623
+    },
+    {
+      "word": "out.",
+      "start": 124.669,
+      "end": 125.064
+    },
+    {
+      "word": "Easy.",
+      "start": 125.726,
+      "end": 126.341
+    },
+    {
+      "word": "But",
+      "start": 126.747,
+      "end": 126.91
+    },
+    {
+      "word": "five",
+      "start": 126.968,
+      "end": 127.177
+    },
+    {
+      "word": "percent",
+      "start": 127.212,
+      "end": 127.502
+    },
+    {
+      "word": "goes",
+      "start": 127.56,
+      "end": 127.746
+    },
+    {
+      "word": "through",
+      "start": 127.792,
+      "end": 128.001
+    },
+    {
+      "word": "CYP450",
+      "start": 128.048,
+      "end": 129.104
+    },
+    {
+      "word": "and",
+      "start": 129.162,
+      "end": 129.22
+    },
+    {
+      "word": "becomes",
+      "start": 129.255,
+      "end": 129.522
+    },
+    {
+      "word": "this",
+      "start": 129.557,
+      "end": 129.719
+    },
+    {
+      "word": "TOXIC",
+      "start": 129.986,
+      "end": 130.486
+    },
+    {
+      "word": "metabolite",
+      "start": 130.567,
+      "end": 131.194
+    },
+    {
+      "word": "called",
+      "start": 131.217,
+      "end": 131.461
+    },
+    {
+      "word": "NAPQI.",
+      "start": 131.728,
+      "end": 133.028
+    },
+    {
+      "word": "N-A-P-Q-I.",
+      "start": 133.377,
+      "end": 135.257
+    },
+    {
+      "word": "Sounds",
+      "start": 135.675,
+      "end": 135.907
+    },
+    {
+      "word": "scary",
+      "start": 135.931,
+      "end": 136.233
+    },
+    {
+      "word": "because",
+      "start": 136.279,
+      "end": 136.604
+    },
+    {
+      "word": "it",
+      "start": 136.743,
+      "end": 136.894
+    },
+    {
+      "word": "IS",
+      "start": 136.987,
+      "end": 137.219
+    },
+    {
+      "word": "scary.",
+      "start": 137.266,
+      "end": 137.8
+    },
+    {
+      "word": "Now",
+      "start": 138.16,
+      "end": 138.311
+    },
+    {
+      "word": "normally?",
+      "start": 138.485,
+      "end": 138.914
+    },
+    {
+      "word": "No",
+      "start": 139.054,
+      "end": 139.181
+    },
+    {
+      "word": "problem!",
+      "start": 139.251,
+      "end": 139.669
+    },
+    {
+      "word": "Your",
+      "start": 139.89,
+      "end": 140.017
+    },
+    {
+      "word": "liver's",
+      "start": 140.052,
+      "end": 140.25
+    },
+    {
+      "word": "got",
+      "start": 140.284,
+      "end": 140.424
+    },
+    {
+      "word": "GLUTATHIONE",
+      "start": 140.493,
+      "end": 141.678
+    },
+    {
+      "word": "-",
+      "start": 141.736,
+      "end": 141.875
+    },
+    {
+      "word": "think",
+      "start": 142.107,
+      "end": 142.258
+    },
+    {
+      "word": "of",
+      "start": 142.293,
+      "end": 142.328
+    },
+    {
+      "word": "it",
+      "start": 142.374,
+      "end": 142.421
+    },
+    {
+      "word": "as",
+      "start": 142.467,
+      "end": 142.548
+    },
+    {
+      "word": "your",
+      "start": 142.606,
+      "end": 142.699
+    },
+    {
+      "word": "liver's",
+      "start": 142.734,
+      "end": 142.943
+    },
+    {
+      "word": "BODYGUARD.",
+      "start": 143.071,
+      "end": 143.872
+    },
+    {
+      "word": "Glutathione",
+      "start": 144.371,
+      "end": 145.079
+    },
+    {
+      "word": "TACKLES",
+      "start": 145.103,
+      "end": 145.463
+    },
+    {
+      "word": "that",
+      "start": 145.486,
+      "end": 145.613
+    },
+    {
+      "word": "NAPQI",
+      "start": 145.706,
+      "end": 146.124
+    },
+    {
+      "word": "before",
+      "start": 146.194,
+      "end": 146.507
+    },
+    {
+      "word": "it",
+      "start": 146.554,
+      "end": 146.612
+    },
+    {
+      "word": "can",
+      "start": 146.658,
+      "end": 146.774
+    },
+    {
+      "word": "do",
+      "start": 146.833,
+      "end": 146.937
+    },
+    {
+      "word": "damage.",
+      "start": 147.007,
+      "end": 147.483
+    },
+    {
+      "word": "You're",
+      "start": 147.819,
+      "end": 148.017
+    },
+    {
+      "word": "fine,",
+      "start": 148.052,
+      "end": 148.504
+    },
+    {
+      "word": "go",
+      "start": 148.62,
+      "end": 148.771
+    },
+    {
+      "word": "about",
+      "start": 148.806,
+      "end": 149.004
+    },
+    {
+      "word": "your",
+      "start": 149.05,
+      "end": 149.143
+    },
+    {
+      "word": "day.",
+      "start": 149.178,
+      "end": 149.514
+    },
+    {
+      "word": "But",
+      "start": 150.141,
+      "end": 150.292
+    },
+    {
+      "word": "when",
+      "start": 150.327,
+      "end": 150.49
+    },
+    {
+      "word": "someone",
+      "start": 150.583,
+      "end": 151.047
+    },
+    {
+      "word": "eats",
+      "start": 151.128,
+      "end": 151.395
+    },
+    {
+      "word": "the",
+      "start": 151.453,
+      "end": 151.593
+    },
+    {
+      "word": "WHOLE",
+      "start": 151.662,
+      "end": 152.069
+    },
+    {
+      "word": "BOTTLE?",
+      "start": 152.138,
+      "end": 152.754
+    },
+    {
+      "word": "The",
+      "start": 153.473,
+      "end": 153.636
+    },
+    {
+      "word": "safe",
+      "start": 153.717,
+      "end": 154.042
+    },
+    {
+      "word": "pathway",
+      "start": 154.1,
+      "end": 154.797
+    },
+    {
+      "word": "gets",
+      "start": 154.971,
+      "end": 155.227
+    },
+    {
+      "word": "OVERWHELMED.",
+      "start": 155.296,
+      "end": 156.26
+    },
+    {
+      "word": "Can't",
+      "start": 156.713,
+      "end": 156.956
+    },
+    {
+      "word": "keep",
+      "start": 156.991,
+      "end": 157.177
+    },
+    {
+      "word": "up.",
+      "start": 157.258,
+      "end": 157.537
+    },
+    {
+      "word": "More",
+      "start": 157.99,
+      "end": 158.199
+    },
+    {
+      "word": "and",
+      "start": 158.233,
+      "end": 158.303
+    },
+    {
+      "word": "more",
+      "start": 158.361,
+      "end": 158.767
+    },
+    {
+      "word": "Tylenol",
+      "start": 159.023,
+      "end": 159.626
+    },
+    {
+      "word": "gets",
+      "start": 159.696,
+      "end": 159.858
+    },
+    {
+      "word": "shunted",
+      "start": 159.882,
+      "end": 160.195
+    },
+    {
+      "word": "to",
+      "start": 160.242,
+      "end": 160.311
+    },
+    {
+      "word": "CYP450.",
+      "start": 160.381,
+      "end": 161.972
+    },
+    {
+      "word": "NAPQI",
+      "start": 162.366,
+      "end": 163.121
+    },
+    {
+      "word": "starts",
+      "start": 163.214,
+      "end": 163.469
+    },
+    {
+      "word": "PILING",
+      "start": 163.516,
+      "end": 163.817
+    },
+    {
+      "word": "UP.",
+      "start": 163.864,
+      "end": 164.119
+    },
+    {
+      "word": "And",
+      "start": 164.711,
+      "end": 164.886
+    },
+    {
+      "word": "your",
+      "start": 164.932,
+      "end": 165.037
+    },
+    {
+      "word": "glutathione?",
+      "start": 165.06,
+      "end": 165.838
+    },
+    {
+      "word": "DEPLETED.",
+      "start": 166.163,
+      "end": 166.883
+    },
+    {
+      "word": "EXHAUSTED.",
+      "start": 166.987,
+      "end": 167.893
+    },
+    {
+      "word": "GONE.",
+      "start": 168.067,
+      "end": 168.694
+    },
+    {
+      "word": "Now",
+      "start": 169.065,
+      "end": 169.228
+    },
+    {
+      "word": "NAPQI",
+      "start": 169.46,
+      "end": 170.249
+    },
+    {
+      "word": "has",
+      "start": 170.296,
+      "end": 170.435
+    },
+    {
+      "word": "NOTHING",
+      "start": 170.516,
+      "end": 170.842
+    },
+    {
+      "word": "stopping",
+      "start": 170.911,
+      "end": 171.294
+    },
+    {
+      "word": "it.",
+      "start": 171.341,
+      "end": 171.561
+    },
+    {
+      "word": "It",
+      "start": 171.689,
+      "end": 171.805
+    },
+    {
+      "word": "latches",
+      "start": 171.875,
+      "end": 172.211
+    },
+    {
+      "word": "onto",
+      "start": 172.281,
+      "end": 172.455
+    },
+    {
+      "word": "hepatocytes",
+      "start": 172.525,
+      "end": 173.187
+    },
+    {
+      "word": "and",
+      "start": 173.372,
+      "end": 173.57
+    },
+    {
+      "word": "just",
+      "start": 173.628,
+      "end": 173.837
+    },
+    {
+      "word": "DESTROYS",
+      "start": 173.883,
+      "end": 174.487
+    },
+    {
+      "word": "them.",
+      "start": 174.533,
+      "end": 174.882
+    },
+    {
+      "word": "Zone",
+      "start": 175.694,
+      "end": 175.973
+    },
+    {
+      "word": "3",
+      "start": 176.043,
+      "end": 176.287
+    },
+    {
+      "word": "necrosis",
+      "start": 176.716,
+      "end": 177.366
+    },
+    {
+      "word": "-",
+      "start": 177.599,
+      "end": 177.622
+    },
+    {
+      "word": "CENTRILOBULAR",
+      "start": 177.866,
+      "end": 178.701
+    },
+    {
+      "word": "pattern",
+      "start": 178.759,
+      "end": 179.084
+    },
+    {
+      "word": "-",
+      "start": 179.154,
+      "end": 179.2
+    },
+    {
+      "word": "that's",
+      "start": 179.258,
+      "end": 179.467
+    },
+    {
+      "word": "your",
+      "start": 179.502,
+      "end": 179.63
+    },
+    {
+      "word": "buzzword",
+      "start": 179.688,
+      "end": 180.071
+    },
+    {
+      "word": "for",
+      "start": 180.106,
+      "end": 180.199
+    },
+    {
+      "word": "the",
+      "start": 180.234,
+      "end": 180.303
+    },
+    {
+      "word": "boards.",
+      "start": 180.338,
+      "end": 180.826
+    },
+    {
+      "word": "And",
+      "start": 180.988,
+      "end": 181.139
+    },
+    {
+      "word": "HERE'S",
+      "start": 181.209,
+      "end": 181.429
+    },
+    {
+      "word": "the",
+      "start": 181.464,
+      "end": 181.534
+    },
+    {
+      "word": "terrifying",
+      "start": 181.569,
+      "end": 182.08
+    },
+    {
+      "word": "part",
+      "start": 182.138,
+      "end": 182.335
+    },
+    {
+      "word": "that",
+      "start": 182.37,
+      "end": 182.474
+    },
+    {
+      "word": "makes",
+      "start": 182.521,
+      "end": 182.73
+    },
+    {
+      "word": "this",
+      "start": 182.764,
+      "end": 182.904
+    },
+    {
+      "word": "a",
+      "start": 182.973,
+      "end": 182.997
+    },
+    {
+      "word": "KILLER",
+      "start": 183.043,
+      "end": 183.333
+    },
+    {
+      "word": "-",
+      "start": 183.612,
+      "end": 183.717
+    },
+    {
+      "word": "for",
+      "start": 184.494,
+      "end": 184.622
+    },
+    {
+      "word": "the",
+      "start": 184.669,
+      "end": 184.738
+    },
+    {
+      "word": "first",
+      "start": 184.854,
+      "end": 185.295
+    },
+    {
+      "word": "TWENTY-FOUR",
+      "start": 185.504,
+      "end": 186.503
+    },
+    {
+      "word": "HOURS?",
+      "start": 186.619,
+      "end": 187.42
+    },
+    {
+      "word": "Patient",
+      "start": 188.198,
+      "end": 188.697
+    },
+    {
+      "word": "feels",
+      "start": 188.813,
+      "end": 189.243
+    },
+    {
+      "word": "FINE.",
+      "start": 189.405,
+      "end": 190.206
+    },
+    {
+      "word": "Maybe",
+      "start": 190.624,
+      "end": 190.915
+    },
+    {
+      "word": "mildly",
+      "start": 190.996,
+      "end": 191.46
+    },
+    {
+      "word": "nauseous.",
+      "start": 191.542,
+      "end": 192.296
+    },
+    {
+      "word": "Wants",
+      "start": 192.784,
+      "end": 193.074
+    },
+    {
+      "word": "to",
+      "start": 193.132,
+      "end": 193.213
+    },
+    {
+      "word": "go",
+      "start": 193.283,
+      "end": 193.446
+    },
+    {
+      "word": "home.",
+      "start": 193.527,
+      "end": 194.107
+    },
+    {
+      "word": "The",
+      "start": 194.316,
+      "end": 194.433
+    },
+    {
+      "word": "liver",
+      "start": 194.502,
+      "end": 194.734
+    },
+    {
+      "word": "is",
+      "start": 194.804,
+      "end": 194.885
+    },
+    {
+      "word": "being",
+      "start": 194.955,
+      "end": 195.164
+    },
+    {
+      "word": "DESTROYED",
+      "start": 195.21,
+      "end": 195.965
+    },
+    {
+      "word": "and",
+      "start": 196.127,
+      "end": 196.313
+    },
+    {
+      "word": "they",
+      "start": 196.371,
+      "end": 196.51
+    },
+    {
+      "word": "feel",
+      "start": 196.626,
+      "end": 197.044
+    },
+    {
+      "word": "NOTHING.",
+      "start": 197.242,
+      "end": 197.962
+    },
+    {
+      "word": "By",
+      "start": 198.449,
+      "end": 198.6
+    },
+    {
+      "word": "hour",
+      "start": 198.67,
+      "end": 198.902
+    },
+    {
+      "word": "seventy-two?",
+      "start": 198.972,
+      "end": 199.761
+    },
+    {
+      "word": "Fulminant",
+      "start": 200.167,
+      "end": 200.736
+    },
+    {
+      "word": "hepatic",
+      "start": 200.794,
+      "end": 201.363
+    },
+    {
+      "word": "failure.",
+      "start": 201.445,
+      "end": 201.967
+    },
+    {
+      "word": "Yellow",
+      "start": 202.106,
+      "end": 202.408
+    },
+    {
+      "word": "skin.",
+      "start": 202.455,
+      "end": 202.873
+    },
+    {
+      "word": "Confused.",
+      "start": 202.907,
+      "end": 203.511
+    },
+    {
+      "word": "Bleeding",
+      "start": 203.558,
+      "end": 203.894
+    },
+    {
+      "word": "everywhere.",
+      "start": 203.941,
+      "end": 204.335
+    },
+    {
+      "word": "DEAD",
+      "start": 204.452,
+      "end": 204.8
+    },
+    {
+      "word": "without",
+      "start": 204.858,
+      "end": 205.137
+    },
+    {
+      "word": "a",
+      "start": 205.16,
+      "end": 205.195
+    },
+    {
+      "word": "transplant.",
+      "start": 205.229,
+      "end": 205.996
+    },
+    {
+      "word": "Enter",
+      "start": 206.553,
+      "end": 206.971
+    },
+    {
+      "word": "N-ACETYLCYSTEINE",
+      "start": 207.319,
+      "end": 208.875
+    },
+    {
+      "word": "-",
+      "start": 208.979,
+      "end": 209.142
+    },
+    {
+      "word": "NAC",
+      "start": 209.223,
+      "end": 209.676
+    },
+    {
+      "word": "-",
+      "start": 209.908,
+      "end": 210.013
+    },
+    {
+      "word": "the",
+      "start": 210.361,
+      "end": 210.466
+    },
+    {
+      "word": "ANTIDOTE!",
+      "start": 210.547,
+      "end": 211.313
+    },
+    {
+      "word": "NAC",
+      "start": 211.719,
+      "end": 212.149
+    },
+    {
+      "word": "provides",
+      "start": 212.3,
+      "end": 212.648
+    },
+    {
+      "word": "CYSTEINE",
+      "start": 212.671,
+      "end": 213.38
+    },
+    {
+      "word": "-",
+      "start": 213.484,
+      "end": 213.589
+    },
+    {
+      "word": "the",
+      "start": 213.995,
+      "end": 214.088
+    },
+    {
+      "word": "building",
+      "start": 214.157,
+      "end": 214.482
+    },
+    {
+      "word": "block",
+      "start": 214.552,
+      "end": 214.819
+    },
+    {
+      "word": "your",
+      "start": 214.9,
+      "end": 215.074
+    },
+    {
+      "word": "liver",
+      "start": 215.144,
+      "end": 215.376
+    },
+    {
+      "word": "needs",
+      "start": 215.434,
+      "end": 215.701
+    },
+    {
+      "word": "to",
+      "start": 215.748,
+      "end": 215.852
+    },
+    {
+      "word": "REBUILD",
+      "start": 215.933,
+      "end": 216.479
+    },
+    {
+      "word": "glutathione!",
+      "start": 216.56,
+      "end": 217.629
+    },
+    {
+      "word": "Glutathione",
+      "start": 217.907,
+      "end": 218.836
+    },
+    {
+      "word": "comes",
+      "start": 218.882,
+      "end": 219.138
+    },
+    {
+      "word": "back",
+      "start": 219.207,
+      "end": 219.463
+    },
+    {
+      "word": "ONLINE,",
+      "start": 219.591,
+      "end": 220.554
+    },
+    {
+      "word": "starts",
+      "start": 220.763,
+      "end": 221.135
+    },
+    {
+      "word": "NEUTRALIZING",
+      "start": 221.251,
+      "end": 222.133
+    },
+    {
+      "word": "that",
+      "start": 222.18,
+      "end": 222.342
+    },
+    {
+      "word": "NAPQI",
+      "start": 222.423,
+      "end": 222.899
+    },
+    {
+      "word": "before",
+      "start": 222.969,
+      "end": 223.259
+    },
+    {
+      "word": "it",
+      "start": 223.306,
+      "end": 223.364
+    },
+    {
+      "word": "can",
+      "start": 223.41,
+      "end": 223.538
+    },
+    {
+      "word": "kill",
+      "start": 223.608,
+      "end": 223.863
+    },
+    {
+      "word": "more",
+      "start": 223.944,
+      "end": 224.211
+    },
+    {
+      "word": "cells!",
+      "start": 224.258,
+      "end": 224.896
+    },
+    {
+      "word": "The",
+      "start": 225.338,
+      "end": 225.465
+    },
+    {
+      "word": "liver",
+      "start": 225.523,
+      "end": 225.814
+    },
+    {
+      "word": "SURVIVES!",
+      "start": 225.872,
+      "end": 226.812
+    },
+    {
+      "word": "TIMING",
+      "start": 227.033,
+      "end": 227.509
+    },
+    {
+      "word": "is",
+      "start": 227.578,
+      "end": 227.706
+    },
+    {
+      "word": "EVERYTHING!",
+      "start": 227.822,
+      "end": 228.612
+    },
+    {
+      "word": "Within",
+      "start": 228.937,
+      "end": 229.297
+    },
+    {
+      "word": "EIGHT",
+      "start": 229.413,
+      "end": 229.68
+    },
+    {
+      "word": "HOURS?",
+      "start": 229.726,
+      "end": 230.341
+    },
+    {
+      "word": "NAC",
+      "start": 230.678,
+      "end": 231.201
+    },
+    {
+      "word": "is",
+      "start": 231.491,
+      "end": 231.63
+    },
+    {
+      "word": "nearly",
+      "start": 231.688,
+      "end": 231.955
+    },
+    {
+      "word": "ONE",
+      "start": 232.025,
+      "end": 232.234
+    },
+    {
+      "word": "HUNDRED",
+      "start": 232.269,
+      "end": 232.594
+    },
+    {
+      "word": "PERCENT",
+      "start": 232.641,
+      "end": 232.977
+    },
+    {
+      "word": "effective.",
+      "start": 233.024,
+      "end": 233.662
+    },
+    {
+      "word": "Don't",
+      "start": 233.941,
+      "end": 234.185
+    },
+    {
+      "word": "even",
+      "start": 234.231,
+      "end": 234.452
+    },
+    {
+      "word": "THINK,",
+      "start": 234.591,
+      "end": 235.125
+    },
+    {
+      "word": "just",
+      "start": 235.299,
+      "end": 235.555
+    },
+    {
+      "word": "GIVE",
+      "start": 235.706,
+      "end": 235.961
+    },
+    {
+      "word": "IT.",
+      "start": 235.984,
+      "end": 236.379
+    },
+    {
+      "word": "Eight",
+      "start": 236.809,
+      "end": 237.099
+    },
+    {
+      "word": "to",
+      "start": 237.308,
+      "end": 237.436
+    },
+    {
+      "word": "TWENTY-FOUR",
+      "start": 237.494,
+      "end": 238.004
+    },
+    {
+      "word": "hours?",
+      "start": 238.051,
+      "end": 238.562
+    },
+    {
+      "word": "Still",
+      "start": 238.724,
+      "end": 239.015
+    },
+    {
+      "word": "helps",
+      "start": 239.096,
+      "end": 239.444
+    },
+    {
+      "word": "significantly.",
+      "start": 239.595,
+      "end": 240.512
+    },
+    {
+      "word": "GIVE",
+      "start": 240.652,
+      "end": 240.907
+    },
+    {
+      "word": "IT.",
+      "start": 240.93,
+      "end": 241.174
+    },
+    {
+      "word": "After",
+      "start": 241.383,
+      "end": 241.662
+    },
+    {
+      "word": "twenty-four",
+      "start": 241.708,
+      "end": 242.126
+    },
+    {
+      "word": "hours?",
+      "start": 242.172,
+      "end": 242.695
+    },
+    {
+      "word": "Liver",
+      "start": 243.124,
+      "end": 243.403
+    },
+    {
+      "word": "damage",
+      "start": 243.461,
+      "end": 243.833
+    },
+    {
+      "word": "may",
+      "start": 243.879,
+      "end": 244.007
+    },
+    {
+      "word": "be",
+      "start": 244.065,
+      "end": 244.181
+    },
+    {
+      "word": "permanent",
+      "start": 244.262,
+      "end": 244.773
+    },
+    {
+      "word": "but",
+      "start": 245.017,
+      "end": 245.214
+    },
+    {
+      "word": "NAC",
+      "start": 245.272,
+      "end": 245.713
+    },
+    {
+      "word": "STILL",
+      "start": 246.155,
+      "end": 246.526
+    },
+    {
+      "word": "reduces",
+      "start": 246.619,
+      "end": 247.234
+    },
+    {
+      "word": "mortality.",
+      "start": 247.316,
+      "end": 248.279
+    },
+    {
+      "word": "GIVE",
+      "start": 248.709,
+      "end": 248.953
+    },
+    {
+      "word": "IT",
+      "start": 248.976,
+      "end": 249.092
+    },
+    {
+      "word": "ANYWAY.",
+      "start": 249.255,
+      "end": 250.009
+    },
+    {
+      "word": "Use",
+      "start": 250.288,
+      "end": 250.625
+    },
+    {
+      "word": "the",
+      "start": 250.648,
+      "end": 250.729
+    },
+    {
+      "word": "RUMACK-MATTHEW",
+      "start": 250.787,
+      "end": 251.774
+    },
+    {
+      "word": "NOMOGRAM",
+      "start": 251.855,
+      "end": 252.587
+    },
+    {
+      "word": "-",
+      "start": 252.749,
+      "end": 252.865
+    },
+    {
+      "word": "plot",
+      "start": 253.109,
+      "end": 253.423
+    },
+    {
+      "word": "the",
+      "start": 253.469,
+      "end": 253.573
+    },
+    {
+      "word": "acetaminophen",
+      "start": 253.655,
+      "end": 254.467
+    },
+    {
+      "word": "level",
+      "start": 254.525,
+      "end": 254.804
+    },
+    {
+      "word": "against",
+      "start": 254.862,
+      "end": 255.176
+    },
+    {
+      "word": "time",
+      "start": 255.222,
+      "end": 255.559
+    },
+    {
+      "word": "since",
+      "start": 255.594,
+      "end": 255.849
+    },
+    {
+      "word": "ingestion.",
+      "start": 255.884,
+      "end": 256.685
+    },
+    {
+      "word": "Above",
+      "start": 257.022,
+      "end": 257.428
+    },
+    {
+      "word": "the",
+      "start": 257.463,
+      "end": 257.532
+    },
+    {
+      "word": "treatment",
+      "start": 257.59,
+      "end": 258.008
+    },
+    {
+      "word": "line?",
+      "start": 258.055,
+      "end": 258.473
+    },
+    {
+      "word": "TREAT.",
+      "start": 258.926,
+      "end": 259.669
+    },
+    {
+      "word": "Don't",
+      "start": 259.924,
+      "end": 260.226
+    },
+    {
+      "word": "wait",
+      "start": 260.307,
+      "end": 260.563
+    },
+    {
+      "word": "for",
+      "start": 260.644,
+      "end": 260.783
+    },
+    {
+      "word": "symptoms",
+      "start": 260.841,
+      "end": 261.375
+    },
+    {
+      "word": "-",
+      "start": 261.549,
+      "end": 261.608
+    },
+    {
+      "word": "by",
+      "start": 261.782,
+      "end": 261.933
+    },
+    {
+      "word": "the",
+      "start": 261.991,
+      "end": 262.06
+    },
+    {
+      "word": "time",
+      "start": 262.13,
+      "end": 262.443
+    },
+    {
+      "word": "symptoms",
+      "start": 262.525,
+      "end": 263.059
+    },
+    {
+      "word": "show",
+      "start": 263.105,
+      "end": 263.407
+    },
+    {
+      "word": "up",
+      "start": 263.5,
+      "end": 263.639
+    },
+    {
+      "word": "you're",
+      "start": 263.976,
+      "end": 264.208
+    },
+    {
+      "word": "already",
+      "start": 264.266,
+      "end": 264.742
+    },
+    {
+      "word": "behind.",
+      "start": 264.8,
+      "end": 265.427
+    },
+    {
+      "word": "Loading",
+      "start": 265.95,
+      "end": 266.321
+    },
+    {
+      "word": "dose:",
+      "start": 266.379,
+      "end": 266.844
+    },
+    {
+      "word": "one-fifty",
+      "start": 267.099,
+      "end": 267.726
+    },
+    {
+      "word": "milligrams",
+      "start": 267.819,
+      "end": 268.423
+    },
+    {
+      "word": "per",
+      "start": 268.492,
+      "end": 268.632
+    },
+    {
+      "word": "kilogram",
+      "start": 268.724,
+      "end": 269.293
+    },
+    {
+      "word": "over",
+      "start": 269.514,
+      "end": 269.816
+    },
+    {
+      "word": "one",
+      "start": 269.932,
+      "end": 270.222
+    },
+    {
+      "word": "hour.",
+      "start": 270.303,
+      "end": 270.779
+    },
+    {
+      "word": "Then",
+      "start": 271.07,
+      "end": 271.279
+    },
+    {
+      "word": "fifty",
+      "start": 271.406,
+      "end": 271.766
+    },
+    {
+      "word": "per",
+      "start": 271.836,
+      "end": 271.94
+    },
+    {
+      "word": "kilogram",
+      "start": 271.998,
+      "end": 272.463
+    },
+    {
+      "word": "over",
+      "start": 272.509,
+      "end": 272.683
+    },
+    {
+      "word": "four",
+      "start": 272.776,
+      "end": 273.02
+    },
+    {
+      "word": "hours.",
+      "start": 273.067,
+      "end": 273.485
+    },
+    {
+      "word": "Then",
+      "start": 273.786,
+      "end": 273.995
+    },
+    {
+      "word": "one",
+      "start": 274.065,
+      "end": 274.274
+    },
+    {
+      "word": "hundred",
+      "start": 274.379,
+      "end": 274.715
+    },
+    {
+      "word": "per",
+      "start": 274.75,
+      "end": 274.866
+    },
+    {
+      "word": "kilogram",
+      "start": 274.924,
+      "end": 275.389
+    },
+    {
+      "word": "over",
+      "start": 275.458,
+      "end": 275.644
+    },
+    {
+      "word": "sixteen",
+      "start": 275.702,
+      "end": 276.236
+    },
+    {
+      "word": "hours.",
+      "start": 276.306,
+      "end": 276.886
+    },
+    {
+      "word": "Twenty-one",
+      "start": 277.235,
+      "end": 277.722
+    },
+    {
+      "word": "hour",
+      "start": 277.757,
+      "end": 277.954
+    },
+    {
+      "word": "protocol.",
+      "start": 278.036,
+      "end": 278.837
+    },
+    {
+      "word": "That's",
+      "start": 279.696,
+      "end": 279.998
+    },
+    {
+      "word": "how",
+      "start": 280.033,
+      "end": 280.184
+    },
+    {
+      "word": "you",
+      "start": 280.265,
+      "end": 280.381
+    },
+    {
+      "word": "SAVE",
+      "start": 280.532,
+      "end": 280.985
+    },
+    {
+      "word": "this",
+      "start": 281.019,
+      "end": 281.17
+    },
+    {
+      "word": "patient.",
+      "start": 281.252,
+      "end": 281.855
+    },
+    {
+      "word": "Tylenol",
+      "start": 282.192,
+      "end": 282.819
+    },
+    {
+      "word": "-",
+      "start": 283.016,
+      "end": 283.051
+    },
+    {
+      "word": "looks",
+      "start": 283.388,
+      "end": 283.632
+    },
+    {
+      "word": "harmless,",
+      "start": 283.69,
+      "end": 284.468
+    },
+    {
+      "word": "KILLS",
+      "start": 284.932,
+      "end": 285.512
+    },
+    {
+      "word": "silently.",
+      "start": 285.663,
+      "end": 286.441
+    },
+    {
+      "word": "NAC",
+      "start": 287.172,
+      "end": 287.764
+    },
+    {
+      "word": "-",
+      "start": 288.066,
+      "end": 288.101
+    },
+    {
+      "word": "the",
+      "start": 288.554,
+      "end": 288.67
+    },
+    {
+      "word": "cure",
+      "start": 288.751,
+      "end": 289.181
+    },
+    {
+      "word": "if",
+      "start": 289.262,
+      "end": 289.413
+    },
+    {
+      "word": "you're",
+      "start": 289.471,
+      "end": 289.657
+    },
+    {
+      "word": "SMART",
+      "start": 289.726,
+      "end": 290.075
+    },
+    {
+      "word": "enough",
+      "start": 290.121,
+      "end": 290.377
+    },
+    {
+      "word": "to",
+      "start": 290.411,
+      "end": 290.458
+    },
+    {
+      "word": "give",
+      "start": 290.516,
+      "end": 290.702
+    },
+    {
+      "word": "it",
+      "start": 290.725,
+      "end": 290.783
+    },
+    {
+      "word": "in",
+      "start": 290.841,
+      "end": 290.911
+    },
+    {
+      "word": "time.",
+      "start": 290.992,
+      "end": 291.456
+    },
+    {
+      "word": "Now",
+      "start": 291.607,
+      "end": 291.758
+    },
+    {
+      "word": "you",
+      "start": 291.828,
+      "end": 291.921
+    },
+    {
+      "word": "know.",
+      "start": 291.967,
+      "end": 292.408
+    },
+    {
+      "word": "Don't",
+      "start": 292.582,
+      "end": 292.838
+    },
+    {
+      "word": "let",
+      "start": 292.884,
+      "end": 293.082
+    },
+    {
+      "word": "YOUR",
+      "start": 293.163,
+      "end": 293.384
+    },
+    {
+      "word": "patient",
+      "start": 293.465,
+      "end": 293.86
+    },
+    {
+      "word": "be",
+      "start": 293.906,
+      "end": 294.022
+    },
+    {
+      "word": "the",
+      "start": 294.057,
+      "end": 294.127
+    },
+    {
+      "word": "one",
+      "start": 294.185,
+      "end": 294.324
+    },
+    {
+      "word": "who",
+      "start": 294.347,
+      "end": 294.44
+    },
+    {
+      "word": "walks",
+      "start": 294.51,
+      "end": 294.8
+    },
+    {
+      "word": "out",
+      "start": 294.846,
+      "end": 294.997
+    },
+    {
+      "word": "feelin'",
+      "start": 295.067,
+      "end": 295.38
+    },
+    {
+      "word": "fine",
+      "start": 295.45,
+      "end": 295.764
+    },
+    {
+      "word": "and",
+      "start": 295.798,
+      "end": 295.88
+    },
+    {
+      "word": "comes",
+      "start": 295.961,
+      "end": 296.24
+    },
+    {
+      "word": "back",
+      "start": 296.321,
+      "end": 296.611
+    },
+    {
+      "word": "in",
+      "start": 296.692,
+      "end": 296.774
+    },
+    {
+      "word": "a",
+      "start": 296.832,
+      "end": 296.867
+    },
+    {
+      "word": "body",
+      "start": 297.017,
+      "end": 297.389
+    },
+    {
+      "word": "bag.",
+      "start": 297.482,
+      "end": 297.923
+    },
+    {
+      "word": "Get",
+      "start": 298.178,
+      "end": 298.434
+    },
+    {
+      "word": "OUT",
+      "start": 298.55,
+      "end": 298.782
+    },
+    {
+      "word": "of",
+      "start": 298.829,
+      "end": 298.887
+    },
+    {
+      "word": "here",
+      "start": 298.956,
+      "end": 299.189
+    },
+    {
+      "word": "and",
+      "start": 299.235,
+      "end": 299.456
+    },
+    {
+      "word": "go",
+      "start": 299.514,
+      "end": 299.641
+    },
+    {
+      "word": "study",
+      "start": 299.769,
+      "end": 300.141
+    },
+    {
+      "word": "your",
+      "start": 300.21,
+      "end": 300.338
+    },
+    {
+      "word": "ANTIDOTES.",
+      "start": 300.431,
+      "end": 301.812
+    }
+  ]
+}

@@ -10,7 +10,12 @@
     "generate-script": "node src/utils/scriptGenerator.js",
     "generate-timestamps": "node src/utils/generateTimestamps.js",
     "align-script": "node src/utils/forcedAlignment.js",
-    "reparse": "node src/utils/reparseTimestamps.js"
+    "reparse": "node src/utils/reparseTimestamps.js",
+    "meme:search": "node scripts/meme-search.js --interactive",
+    "meme:validate": "node scripts/meme-validator-v2.js",
+    "meme:validate:old": "node scripts/meme-validator.js",
+    "meme:v3": "node scripts/meme-validator-v3.js",
+    "meme:list": "node scripts/meme-search.js --list-memes"
   },
   "keywords": [
     "remotion",
@@ -25,6 +30,7 @@
     "@elevenlabs/elevenlabs-js": "^2.25.0",
     "@react-three/fiber": "^9.4.2",
     "@remotion/cli": "^4.0.377",
+    "@remotion/gif": "^4.0.377",
     "@remotion/lottie": "^4.0.390",
     "@remotion/paths": "^4.0.390",
     "@remotion/three": "^4.0.390",

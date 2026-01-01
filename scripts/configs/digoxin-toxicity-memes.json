@@ -1,0 +1,83 @@
+{
+  "videoName": "Digoxin Toxicity",
+  "topic": "digoxin-toxicity",
+  "searches": [
+    {
+      "name": "Grandma Double-Dosed",
+      "timestamp": 1,
+      "context": "grandma doubled her heart pills cause she FORGOT she already took em",
+      "emotion": "CHAOS",
+      "suggestedMemes": ["grandma pills", "forgetful elderly", "double dose", "oops mistake"]
+    },
+    {
+      "name": "Yellow Halos Acid Trip",
+      "timestamp": 4,
+      "context": "seeing YELLOW HALOS around the TV like she's on an ACID TRIP - digoxin visual disturbance",
+      "emotion": "CHAOS",
+      "suggestedMemes": ["trippy vision", "yellow filter", "psychedelic", "seeing things", "hallucination"]
+    },
+    {
+      "name": "Heart Rate 38",
+      "timestamp": 7,
+      "context": "heart's beatin THIRTY-EIGHT times a minute - severe bradycardia",
+      "emotion": "PANIC",
+      "suggestedMemes": ["slow motion", "heartbeat slow", "barely alive", "turtle speed"]
+    },
+    {
+      "name": "Closed Casket Warning",
+      "timestamp": 9,
+      "context": "one bad rhythm away from a CLOSED CASKET",
+      "emotion": "DEATH",
+      "suggestedMemes": ["coffin dance", "funeral", "rip", "grim reaper"]
+    },
+    {
+      "name": "Vomiting Chaos",
+      "timestamp": 11,
+      "context": "Vomitin EVERYWHERE confused as HELL potassium TWO POINT NINE",
+      "emotion": "CHAOS",
+      "suggestedMemes": ["vomit chaos", "confused screaming", "everything wrong", "disaster"]
+    },
+    {
+      "name": "EKG Modern Art",
+      "timestamp": 13,
+      "context": "her EKG looks like modern ART - bizarre rhythm digoxin effect",
+      "emotion": "IRONY",
+      "suggestedMemes": ["modern art", "abstract painting", "squiggly lines", "artistic chaos"]
+    },
+    {
+      "name": "Tick Tock Dying",
+      "timestamp": 15,
+      "context": "TICK TOCK grandma's DYIN before she FLATLINES on the kitchen floor",
+      "emotion": "DEATH",
+      "suggestedMemes": ["countdown timer", "clock ticking", "time running out", "flatline"]
+    },
+    {
+      "name": "Morons Reached for Calcium",
+      "timestamp": 17,
+      "context": "I KNOW half you MORONS reached for calcium - wrong answer roast",
+      "emotion": "ROAST",
+      "suggestedMemes": ["disappointed", "wrong answer", "you fool", "face palm"]
+    },
+    {
+      "name": "Murdered Grandma",
+      "timestamp": 19,
+      "context": "CONGRATULATIONS you just MURDERED someones GRANDMOTHER - calcium makes dig tox WORSE",
+      "emotion": "DARK_HUMOR",
+      "suggestedMemes": ["emotional damage", "you killed her", "murderer", "congratulations you played yourself"]
+    },
+    {
+      "name": "Absolute Walnut Insult",
+      "timestamp": 21,
+      "context": "you ABSOLUTE WALNUT - roasting wrong answer",
+      "emotion": "ROAST",
+      "suggestedMemes": ["walnut brain", "smooth brain", "idiot", "insult"]
+    },
+    {
+      "name": "DigiFab Saves Grandma",
+      "timestamp": 23,
+      "context": "Its C DigiFab! Binds the digoxin YANKS it out grandma LIVES - correct answer celebration",
+      "emotion": "CELEBRATION",
+      "suggestedMemes": ["lets go", "victory", "saved", "antidote hero", "clutch save"]
+    }
+  ]
+}

@@ -21,6 +21,13 @@ import dkaPotassiumManagementTimestamps from '../../../public/assets/audio/dka-p
 import betaBlockerOverdoseTimestamps from '../../../public/assets/audio/beta-blocker-overdose-timestamps.json';
 import penicillinAnaphylaxisTimestamps from '../../../public/assets/audio/penicillin-anaphylaxis-timestamps.json';
 import sickleCellAcuteChestTimestamps from '../../../public/assets/audio/sickle-cell-acute-chest-timestamps.json';
+import opioidOverdoseTimestamps from '../../../public/assets/audio/opioid-overdose-timestamps.json';
+import hyperkalemiaTimestamps from '../../../public/assets/audio/hyperkalemia-timestamps.json';
+import malignantHyperthermiaTimestamps from '../../../public/assets/audio/malignant-hyperthermia-narration-timestamps.json';
+import organophosphatePoisoningTimestamps from '../../../public/assets/audio/organophosphate-poisoning-timestamps.json';
+import acetaminophenOverdoseTimestamps from '../../../public/assets/audio/acetaminophen-overdose-timestamps.json';
+import digoxinTimestamps from '../../../public/assets/audio/digoxin-narration-timestamps.json';
+import tensionPneumothoraxTimestamps from '../../../public/assets/audio/tension-pneumothorax-timestamps.json';
 
 export const BrainMascot = ({
   audioPath,
@@ -49,7 +56,21 @@ export const BrainMascot = ({
 
   // Select the correct timestamps based on which ad is playing
   const timestampsData =
-    timestampsSource === 'sickle-cell-acute-chest'
+    timestampsSource === 'tension-pneumothorax'
+      ? tensionPneumothoraxTimestamps
+      : timestampsSource === 'acetaminophen-overdose'
+      ? acetaminophenOverdoseTimestamps
+      : timestampsSource === 'digoxin'
+      ? digoxinTimestamps
+      : timestampsSource === 'organophosphate-poisoning'
+      ? organophosphatePoisoningTimestamps
+      : timestampsSource === 'malignant-hyperthermia'
+      ? malignantHyperthermiaTimestamps
+      : timestampsSource === 'hyperkalemia'
+      ? hyperkalemiaTimestamps
+      : timestampsSource === 'opioid-overdose'
+      ? opioidOverdoseTimestamps
+      : timestampsSource === 'sickle-cell-acute-chest'
       ? sickleCellAcuteChestTimestamps
       : timestampsSource === 'beta-blocker-overdose'
       ? betaBlockerOverdoseTimestamps

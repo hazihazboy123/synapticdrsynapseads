@@ -1,0 +1,1635 @@
+{
+  "script": "OH FOR CRYING OUT LOUD, this farmer just got DRENCHED in pesticide and he's got more DROOL coming out of him than a SAINT BERNARD in July! Pupils? PINPOINT. Sweating like he ran a marathon in a SAUNA. Breathing like he's UNDERWATER, wheezing so bad I can hear it from the PARKING LOT. Heart rate's in the FORTIES, blood pressure CRASHING, and his pants are... well, let's just say he LOST CONTROL of the plumbing. This is TEXTBOOK cholinergic crisis, people! SLUDGE syndrome - Salivation, Lacrimation, Urination, Defecation, GI distress, Emesis! So what're you gonna do, hotshot? A) Activated charcoal. B) Atropine. C) Epinephrine. D) Naloxone. E) Physostigmine. Clock's tickin', this man's DROWNING in his own secretions! Well I'll be DAMNED, it's B, ATROPINE! And LOOK AT THAT, half you absolute MORONS picked physostigmine - you wanna ACCELERATE his death? That ADDS more acetylcholine, you GENIUSES! Now SHUT UP and I'll learn you why atropine saves lives while physostigmine ENDS them. Organophosphates IRREVERSIBLY bind to acetylcholinesterase, the enzyme that's supposed to BREAK DOWN acetylcholine. So acetylcholine just PILES UP at every receptor, DROWNING the nervous system. Muscarinic receptors go HAYWIRE - that's your SLUDGE symptoms, the drooling, the diarrhea, the pinpoint pupils. Nicotinic receptors go CRAZY - muscle fasciculations, then PARALYSIS, including the diaphragm. Atropine BLOCKS the muscarinic receptors, stops the SLUDGE, stops the bronchorrhea so he can BREATHE. But here's the PEARL - you ALSO need pralidoxime within the first 24 to 48 hours BEFORE the enzyme ages and becomes permanently destroyed. Pralidoxime actually UNBINDS the organophosphate and REACTIVATES the enzyme! Atropine for symptoms, pralidoxime for the CURE. Start atropine immediately, two milligrams IV push, repeat every 5 minutes until secretions DRY UP. Then pralidoxime one to two grams IV over 30 minutes. This is STEP 1 material, and half of you just picked a drug that would've KILLED your patient FASTER. Now get OUT and go review your TOXICOLOGY before you murder a farmer!",
+  "words": [
+    {
+      "word": "OH",
+      "start": 0,
+      "end": 0.29
+    },
+    {
+      "word": "FOR",
+      "start": 0.325,
+      "end": 0.476
+    },
+    {
+      "word": "CRYING",
+      "start": 0.557,
+      "end": 0.987
+    },
+    {
+      "word": "OUT",
+      "start": 1.045,
+      "end": 1.196
+    },
+    {
+      "word": "LOUD,",
+      "start": 1.265,
+      "end": 1.788
+    },
+    {
+      "word": "this",
+      "start": 2.241,
+      "end": 2.461
+    },
+    {
+      "word": "farmer",
+      "start": 2.531,
+      "end": 2.879
+    },
+    {
+      "word": "just",
+      "start": 2.926,
+      "end": 3.111
+    },
+    {
+      "word": "got",
+      "start": 3.17,
+      "end": 3.379
+    },
+    {
+      "word": "DRENCHED",
+      "start": 3.448,
+      "end": 3.843
+    },
+    {
+      "word": "in",
+      "start": 3.901,
+      "end": 3.994
+    },
+    {
+      "word": "pesticide",
+      "start": 4.11,
+      "end": 4.923
+    },
+    {
+      "word": "and",
+      "start": 4.946,
+      "end": 5.016
+    },
+    {
+      "word": "he's",
+      "start": 5.062,
+      "end": 5.19
+    },
+    {
+      "word": "got",
+      "start": 5.236,
+      "end": 5.422
+    },
+    {
+      "word": "more",
+      "start": 5.492,
+      "end": 5.724
+    },
+    {
+      "word": "DROOL",
+      "start": 5.84,
+      "end": 6.432
+    },
+    {
+      "word": "coming",
+      "start": 6.548,
+      "end": 6.85
+    },
+    {
+      "word": "out",
+      "start": 6.908,
+      "end": 7.059
+    },
+    {
+      "word": "of",
+      "start": 7.105,
+      "end": 7.163
+    },
+    {
+      "word": "him",
+      "start": 7.221,
+      "end": 7.361
+    },
+    {
+      "word": "than",
+      "start": 7.651,
+      "end": 7.86
+    },
+    {
+      "word": "a",
+      "start": 7.918,
+      "end": 7.941
+    },
+    {
+      "word": "SAINT",
+      "start": 8.092,
+      "end": 8.406
+    },
+    {
+      "word": "BERNARD",
+      "start": 8.522,
+      "end": 8.975
+    },
+    {
+      "word": "in",
+      "start": 9.009,
+      "end": 9.114
+    },
+    {
+      "word": "July!",
+      "start": 9.23,
+      "end": 10.112
+    },
+    {
+      "word": "Pupils?",
+      "start": 10.635,
+      "end": 11.401
+    },
+    {
+      "word": "PINPOINT.",
+      "start": 11.575,
+      "end": 12.539
+    },
+    {
+      "word": "Sweating",
+      "start": 12.829,
+      "end": 13.27
+    },
+    {
+      "word": "like",
+      "start": 13.328,
+      "end": 13.502
+    },
+    {
+      "word": "he",
+      "start": 13.549,
+      "end": 13.642
+    },
+    {
+      "word": "ran",
+      "start": 13.758,
+      "end": 13.932
+    },
+    {
+      "word": "a",
+      "start": 13.978,
+      "end": 14.002
+    },
+    {
+      "word": "marathon",
+      "start": 14.153,
+      "end": 14.721
+    },
+    {
+      "word": "in",
+      "start": 14.779,
+      "end": 14.849
+    },
+    {
+      "word": "a",
+      "start": 14.919,
+      "end": 14.942
+    },
+    {
+      "word": "SAUNA.",
+      "start": 15.07,
+      "end": 15.778
+    },
+    {
+      "word": "Breathing",
+      "start": 16.231,
+      "end": 16.637
+    },
+    {
+      "word": "like",
+      "start": 16.707,
+      "end": 16.893
+    },
+    {
+      "word": "he's",
+      "start": 16.927,
+      "end": 17.136
+    },
+    {
+      "word": "UNDERWATER,",
+      "start": 17.252,
+      "end": 18.123
+    },
+    {
+      "word": "wheezing",
+      "start": 18.297,
+      "end": 18.761
+    },
+    {
+      "word": "so",
+      "start": 18.877,
+      "end": 19.063
+    },
+    {
+      "word": "bad",
+      "start": 19.133,
+      "end": 19.342
+    },
+    {
+      "word": "I",
+      "start": 19.4,
+      "end": 19.423
+    },
+    {
+      "word": "can",
+      "start": 19.504,
+      "end": 19.69
+    },
+    {
+      "word": "hear",
+      "start": 19.818,
+      "end": 20.073
+    },
+    {
+      "word": "it",
+      "start": 20.131,
+      "end": 20.201
+    },
+    {
+      "word": "from",
+      "start": 20.247,
+      "end": 20.375
+    },
+    {
+      "word": "the",
+      "start": 20.41,
+      "end": 20.48
+    },
+    {
+      "word": "PARKING",
+      "start": 20.526,
+      "end": 20.898
+    },
+    {
+      "word": "LOT.",
+      "start": 20.956,
+      "end": 21.525
+    },
+    {
+      "word": "Heart",
+      "start": 21.977,
+      "end": 22.244
+    },
+    {
+      "word": "rate's",
+      "start": 22.314,
+      "end": 22.616
+    },
+    {
+      "word": "in",
+      "start": 22.674,
+      "end": 22.755
+    },
+    {
+      "word": "the",
+      "start": 22.802,
+      "end": 22.871
+    },
+    {
+      "word": "FORTIES,",
+      "start": 22.964,
+      "end": 23.754
+    },
+    {
+      "word": "blood",
+      "start": 23.974,
+      "end": 24.276
+    },
+    {
+      "word": "pressure",
+      "start": 24.346,
+      "end": 24.764
+    },
+    {
+      "word": "CRASHING,",
+      "start": 24.822,
+      "end": 25.6
+    },
+    {
+      "word": "and",
+      "start": 25.89,
+      "end": 26.145
+    },
+    {
+      "word": "his",
+      "start": 26.238,
+      "end": 26.424
+    },
+    {
+      "word": "pants",
+      "start": 26.552,
+      "end": 27.051
+    },
+    {
+      "word": "are...",
+      "start": 27.144,
+      "end": 27.55
+    },
+    {
+      "word": "well,",
+      "start": 27.666,
+      "end": 28.038
+    },
+    {
+      "word": "let's",
+      "start": 28.154,
+      "end": 28.421
+    },
+    {
+      "word": "just",
+      "start": 28.491,
+      "end": 28.7
+    },
+    {
+      "word": "say",
+      "start": 28.734,
+      "end": 28.909
+    },
+    {
+      "word": "he",
+      "start": 28.99,
+      "end": 29.094
+    },
+    {
+      "word": "LOST",
+      "start": 29.222,
+      "end": 29.593
+    },
+    {
+      "word": "CONTROL",
+      "start": 29.64,
+      "end": 30.174
+    },
+    {
+      "word": "of",
+      "start": 30.244,
+      "end": 30.302
+    },
+    {
+      "word": "the",
+      "start": 30.36,
+      "end": 30.429
+    },
+    {
+      "word": "plumbing.",
+      "start": 30.499,
+      "end": 31.022
+    },
+    {
+      "word": "This",
+      "start": 31.277,
+      "end": 31.637
+    },
+    {
+      "word": "is",
+      "start": 31.974,
+      "end": 32.194
+    },
+    {
+      "word": "TEXTBOOK",
+      "start": 32.287,
+      "end": 32.984
+    },
+    {
+      "word": "cholinergic",
+      "start": 33.32,
+      "end": 34.051
+    },
+    {
+      "word": "crisis,",
+      "start": 34.133,
+      "end": 34.644
+    },
+    {
+      "word": "people!",
+      "start": 34.678,
+      "end": 35.189
+    },
+    {
+      "word": "SLUDGE",
+      "start": 35.584,
+      "end": 36.06
+    },
+    {
+      "word": "syndrome",
+      "start": 36.106,
+      "end": 36.548
+    },
+    {
+      "word": "-",
+      "start": 36.652,
+      "end": 36.699
+    },
+    {
+      "word": "Salivation,",
+      "start": 36.757,
+      "end": 37.418
+    },
+    {
+      "word": "Lacrimation,",
+      "start": 37.465,
+      "end": 38.254
+    },
+    {
+      "word": "Urination,",
+      "start": 38.394,
+      "end": 39.113
+    },
+    {
+      "word": "Defecation,",
+      "start": 39.218,
+      "end": 40.007
+    },
+    {
+      "word": "GI",
+      "start": 40.158,
+      "end": 40.541
+    },
+    {
+      "word": "distress,",
+      "start": 40.599,
+      "end": 41.18
+    },
+    {
+      "word": "Emesis!",
+      "start": 41.319,
+      "end": 42.004
+    },
+    {
+      "word": "So",
+      "start": 42.283,
+      "end": 42.376
+    },
+    {
+      "word": "what're",
+      "start": 42.422,
+      "end": 42.562
+    },
+    {
+      "word": "you",
+      "start": 42.585,
+      "end": 42.643
+    },
+    {
+      "word": "gonna",
+      "start": 42.689,
+      "end": 42.852
+    },
+    {
+      "word": "do,",
+      "start": 42.921,
+      "end": 43.107
+    },
+    {
+      "word": "hotshot?",
+      "start": 43.154,
+      "end": 43.734
+    },
+    {
+      "word": "A)",
+      "start": 43.978,
+      "end": 44.373
+    },
+    {
+      "word": "Activated",
+      "start": 44.524,
+      "end": 45.046
+    },
+    {
+      "word": "charcoal.",
+      "start": 45.069,
+      "end": 45.534
+    },
+    {
+      "word": "B)",
+      "start": 45.719,
+      "end": 46.079
+    },
+    {
+      "word": "Atropine.",
+      "start": 46.3,
+      "end": 46.962
+    },
+    {
+      "word": "C)",
+      "start": 47.24,
+      "end": 47.67
+    },
+    {
+      "word": "Epinephrine.",
+      "start": 47.809,
+      "end": 48.587
+    },
+    {
+      "word": "D)",
+      "start": 48.808,
+      "end": 49.226
+    },
+    {
+      "word": "Naloxone.",
+      "start": 49.353,
+      "end": 50.154
+    },
+    {
+      "word": "E)",
+      "start": 50.433,
+      "end": 50.909
+    },
+    {
+      "word": "Physostigmine.",
+      "start": 51.095,
+      "end": 52.209
+    },
+    {
+      "word": "Clock's",
+      "start": 52.546,
+      "end": 52.871
+    },
+    {
+      "word": "tickin',",
+      "start": 52.929,
+      "end": 53.347
+    },
+    {
+      "word": "this",
+      "start": 53.428,
+      "end": 53.603
+    },
+    {
+      "word": "man's",
+      "start": 53.672,
+      "end": 53.963
+    },
+    {
+      "word": "DROWNING",
+      "start": 54.055,
+      "end": 54.508
+    },
+    {
+      "word": "in",
+      "start": 54.578,
+      "end": 54.682
+    },
+    {
+      "word": "his",
+      "start": 54.764,
+      "end": 54.926
+    },
+    {
+      "word": "own",
+      "start": 55.007,
+      "end": 55.263
+    },
+    {
+      "word": "secretions!",
+      "start": 55.356,
+      "end": 56.424
+    },
+    {
+      "word": "Well",
+      "start": 56.679,
+      "end": 56.9
+    },
+    {
+      "word": "I'll",
+      "start": 56.97,
+      "end": 57.109
+    },
+    {
+      "word": "be",
+      "start": 57.167,
+      "end": 57.271
+    },
+    {
+      "word": "DAMNED,",
+      "start": 57.341,
+      "end": 58.026
+    },
+    {
+      "word": "it's",
+      "start": 58.2,
+      "end": 58.432
+    },
+    {
+      "word": "B,",
+      "start": 58.548,
+      "end": 59.233
+    },
+    {
+      "word": "ATROPINE!",
+      "start": 59.384,
+      "end": 60.545
+    },
+    {
+      "word": "And",
+      "start": 60.998,
+      "end": 61.219
+    },
+    {
+      "word": "LOOK",
+      "start": 61.312,
+      "end": 61.567
+    },
+    {
+      "word": "AT",
+      "start": 61.614,
+      "end": 61.695
+    },
+    {
+      "word": "THAT,",
+      "start": 61.788,
+      "end": 62.368
+    },
+    {
+      "word": "half",
+      "start": 62.705,
+      "end": 62.949
+    },
+    {
+      "word": "you",
+      "start": 63.018,
+      "end": 63.134
+    },
+    {
+      "word": "absolute",
+      "start": 63.227,
+      "end": 63.668
+    },
+    {
+      "word": "MORONS",
+      "start": 63.703,
+      "end": 64.098
+    },
+    {
+      "word": "picked",
+      "start": 64.156,
+      "end": 64.377
+    },
+    {
+      "word": "physostigmine",
+      "start": 64.423,
+      "end": 65.306
+    },
+    {
+      "word": "-",
+      "start": 65.433,
+      "end": 65.468
+    },
+    {
+      "word": "you",
+      "start": 65.805,
+      "end": 65.898
+    },
+    {
+      "word": "wanna",
+      "start": 65.956,
+      "end": 66.188
+    },
+    {
+      "word": "ACCELERATE",
+      "start": 66.246,
+      "end": 66.977
+    },
+    {
+      "word": "his",
+      "start": 67.012,
+      "end": 67.198
+    },
+    {
+      "word": "death?",
+      "start": 67.291,
+      "end": 67.825
+    },
+    {
+      "word": "That",
+      "start": 68.545,
+      "end": 68.893
+    },
+    {
+      "word": "ADDS",
+      "start": 69.009,
+      "end": 69.334
+    },
+    {
+      "word": "more",
+      "start": 69.427,
+      "end": 69.671
+    },
+    {
+      "word": "acetylcholine,",
+      "start": 69.729,
+      "end": 70.867
+    },
+    {
+      "word": "you",
+      "start": 70.902,
+      "end": 71.017
+    },
+    {
+      "word": "GENIUSES!",
+      "start": 71.134,
+      "end": 72.039
+    },
+    {
+      "word": "Now",
+      "start": 72.654,
+      "end": 72.817
+    },
+    {
+      "word": "SHUT",
+      "start": 72.933,
+      "end": 73.258
+    },
+    {
+      "word": "UP",
+      "start": 73.305,
+      "end": 73.397
+    },
+    {
+      "word": "and",
+      "start": 73.444,
+      "end": 73.514
+    },
+    {
+      "word": "I'll",
+      "start": 73.572,
+      "end": 73.711
+    },
+    {
+      "word": "learn",
+      "start": 73.757,
+      "end": 73.955
+    },
+    {
+      "word": "you",
+      "start": 74.001,
+      "end": 74.106
+    },
+    {
+      "word": "why",
+      "start": 74.384,
+      "end": 74.57
+    },
+    {
+      "word": "atropine",
+      "start": 74.651,
+      "end": 75.197
+    },
+    {
+      "word": "saves",
+      "start": 75.255,
+      "end": 75.534
+    },
+    {
+      "word": "lives",
+      "start": 75.58,
+      "end": 75.894
+    },
+    {
+      "word": "while",
+      "start": 75.928,
+      "end": 76.23
+    },
+    {
+      "word": "physostigmine",
+      "start": 76.381,
+      "end": 77.774
+    },
+    {
+      "word": "ENDS",
+      "start": 77.949,
+      "end": 78.332
+    },
+    {
+      "word": "them.",
+      "start": 78.39,
+      "end": 78.761
+    },
+    {
+      "word": "Organophosphates",
+      "start": 79.377,
+      "end": 80.828
+    },
+    {
+      "word": "IRREVERSIBLY",
+      "start": 81.223,
+      "end": 82.279
+    },
+    {
+      "word": "bind",
+      "start": 82.337,
+      "end": 82.651
+    },
+    {
+      "word": "to",
+      "start": 82.709,
+      "end": 82.918
+    },
+    {
+      "word": "acetylcholinesterase,",
+      "start": 83.301,
+      "end": 85.321
+    },
+    {
+      "word": "the",
+      "start": 85.774,
+      "end": 85.89
+    },
+    {
+      "word": "enzyme",
+      "start": 85.983,
+      "end": 86.575
+    },
+    {
+      "word": "that's",
+      "start": 86.598,
+      "end": 86.772
+    },
+    {
+      "word": "supposed",
+      "start": 86.795,
+      "end": 87.248
+    },
+    {
+      "word": "to",
+      "start": 87.283,
+      "end": 87.353
+    },
+    {
+      "word": "BREAK",
+      "start": 87.48,
+      "end": 87.794
+    },
+    {
+      "word": "DOWN",
+      "start": 87.84,
+      "end": 88.096
+    },
+    {
+      "word": "acetylcholine.",
+      "start": 88.142,
+      "end": 89.048
+    },
+    {
+      "word": "So",
+      "start": 89.117,
+      "end": 89.35
+    },
+    {
+      "word": "acetylcholine",
+      "start": 89.861,
+      "end": 90.883
+    },
+    {
+      "word": "just",
+      "start": 90.917,
+      "end": 91.126
+    },
+    {
+      "word": "PILES",
+      "start": 91.277,
+      "end": 91.753
+    },
+    {
+      "word": "UP",
+      "start": 91.835,
+      "end": 91.962
+    },
+    {
+      "word": "at",
+      "start": 92.032,
+      "end": 92.125
+    },
+    {
+      "word": "every",
+      "start": 92.241,
+      "end": 92.508
+    },
+    {
+      "word": "receptor,",
+      "start": 92.578,
+      "end": 93.158
+    },
+    {
+      "word": "DROWNING",
+      "start": 93.39,
+      "end": 93.948
+    },
+    {
+      "word": "the",
+      "start": 94.006,
+      "end": 94.087
+    },
+    {
+      "word": "nervous",
+      "start": 94.133,
+      "end": 94.47
+    },
+    {
+      "word": "system.",
+      "start": 94.505,
+      "end": 94.969
+    },
+    {
+      "word": "Muscarinic",
+      "start": 95.236,
+      "end": 95.91
+    },
+    {
+      "word": "receptors",
+      "start": 95.956,
+      "end": 96.42
+    },
+    {
+      "word": "go",
+      "start": 96.467,
+      "end": 96.629
+    },
+    {
+      "word": "HAYWIRE",
+      "start": 96.827,
+      "end": 97.674
+    },
+    {
+      "word": "-",
+      "start": 97.732,
+      "end": 97.756
+    },
+    {
+      "word": "that's",
+      "start": 97.999,
+      "end": 98.255
+    },
+    {
+      "word": "your",
+      "start": 98.336,
+      "end": 98.568
+    },
+    {
+      "word": "SLUDGE",
+      "start": 98.766,
+      "end": 99.288
+    },
+    {
+      "word": "symptoms,",
+      "start": 99.311,
+      "end": 99.811
+    },
+    {
+      "word": "the",
+      "start": 99.834,
+      "end": 99.927
+    },
+    {
+      "word": "drooling,",
+      "start": 99.985,
+      "end": 100.472
+    },
+    {
+      "word": "the",
+      "start": 100.496,
+      "end": 100.565
+    },
+    {
+      "word": "diarrhea,",
+      "start": 100.635,
+      "end": 101.273
+    },
+    {
+      "word": "the",
+      "start": 101.506,
+      "end": 101.61
+    },
+    {
+      "word": "pinpoint",
+      "start": 101.668,
+      "end": 102.214
+    },
+    {
+      "word": "pupils.",
+      "start": 102.295,
+      "end": 102.876
+    },
+    {
+      "word": "Nicotinic",
+      "start": 103.247,
+      "end": 103.967
+    },
+    {
+      "word": "receptors",
+      "start": 104.037,
+      "end": 104.594
+    },
+    {
+      "word": "go",
+      "start": 104.826,
+      "end": 105.116
+    },
+    {
+      "word": "CRAZY",
+      "start": 105.534,
+      "end": 106.266
+    },
+    {
+      "word": "-",
+      "start": 106.405,
+      "end": 106.44
+    },
+    {
+      "word": "muscle",
+      "start": 106.8,
+      "end": 107.148
+    },
+    {
+      "word": "fasciculations,",
+      "start": 107.217,
+      "end": 108.286
+    },
+    {
+      "word": "then",
+      "start": 108.32,
+      "end": 108.553
+    },
+    {
+      "word": "PARALYSIS,",
+      "start": 108.82,
+      "end": 109.888
+    },
+    {
+      "word": "including",
+      "start": 110.155,
+      "end": 110.642
+    },
+    {
+      "word": "the",
+      "start": 110.689,
+      "end": 110.747
+    },
+    {
+      "word": "diaphragm.",
+      "start": 110.793,
+      "end": 111.525
+    },
+    {
+      "word": "Atropine",
+      "start": 111.885,
+      "end": 112.488
+    },
+    {
+      "word": "BLOCKS",
+      "start": 112.512,
+      "end": 112.825
+    },
+    {
+      "word": "the",
+      "start": 112.883,
+      "end": 112.953
+    },
+    {
+      "word": "muscarinic",
+      "start": 112.999,
+      "end": 113.522
+    },
+    {
+      "word": "receptors,",
+      "start": 113.58,
+      "end": 114.183
+    },
+    {
+      "word": "stops",
+      "start": 114.451,
+      "end": 114.799
+    },
+    {
+      "word": "the",
+      "start": 114.868,
+      "end": 114.996
+    },
+    {
+      "word": "SLUDGE,",
+      "start": 115.066,
+      "end": 115.762
+    },
+    {
+      "word": "stops",
+      "start": 115.995,
+      "end": 116.366
+    },
+    {
+      "word": "the",
+      "start": 116.424,
+      "end": 116.505
+    },
+    {
+      "word": "bronchorrhea",
+      "start": 116.552,
+      "end": 117.283
+    },
+    {
+      "word": "so",
+      "start": 117.585,
+      "end": 117.748
+    },
+    {
+      "word": "he",
+      "start": 117.817,
+      "end": 117.922
+    },
+    {
+      "word": "can",
+      "start": 117.98,
+      "end": 118.131
+    },
+    {
+      "word": "BREATHE.",
+      "start": 118.235,
+      "end": 119.071
+    },
+    {
+      "word": "But",
+      "start": 119.338,
+      "end": 119.512
+    },
+    {
+      "word": "here's",
+      "start": 119.571,
+      "end": 119.849
+    },
+    {
+      "word": "the",
+      "start": 119.907,
+      "end": 119.977
+    },
+    {
+      "word": "PEARL",
+      "start": 120.07,
+      "end": 120.511
+    },
+    {
+      "word": "-",
+      "start": 120.673,
+      "end": 120.836
+    },
+    {
+      "word": "you",
+      "start": 121.138,
+      "end": 121.254
+    },
+    {
+      "word": "ALSO",
+      "start": 121.405,
+      "end": 121.974
+    },
+    {
+      "word": "need",
+      "start": 122.043,
+      "end": 122.322
+    },
+    {
+      "word": "pralidoxime",
+      "start": 122.682,
+      "end": 123.715
+    },
+    {
+      "word": "within",
+      "start": 123.947,
+      "end": 124.261
+    },
+    {
+      "word": "the",
+      "start": 124.296,
+      "end": 124.365
+    },
+    {
+      "word": "first",
+      "start": 124.423,
+      "end": 124.667
+    },
+    {
+      "word": "24",
+      "start": 124.725,
+      "end": 125.236
+    },
+    {
+      "word": "to",
+      "start": 125.306,
+      "end": 125.353
+    },
+    {
+      "word": "48",
+      "start": 125.434,
+      "end": 125.956
+    },
+    {
+      "word": "hours",
+      "start": 126.003,
+      "end": 126.363
+    },
+    {
+      "word": "BEFORE",
+      "start": 126.781,
+      "end": 127.524
+    },
+    {
+      "word": "the",
+      "start": 127.57,
+      "end": 127.675
+    },
+    {
+      "word": "enzyme",
+      "start": 127.756,
+      "end": 128.29
+    },
+    {
+      "word": "ages",
+      "start": 128.348,
+      "end": 128.743
+    },
+    {
+      "word": "and",
+      "start": 128.789,
+      "end": 128.894
+    },
+    {
+      "word": "becomes",
+      "start": 128.94,
+      "end": 129.346
+    },
+    {
+      "word": "permanently",
+      "start": 129.463,
+      "end": 130.02
+    },
+    {
+      "word": "destroyed.",
+      "start": 130.078,
+      "end": 130.705
+    },
+    {
+      "word": "Pralidoxime",
+      "start": 130.798,
+      "end": 131.668
+    },
+    {
+      "word": "actually",
+      "start": 131.703,
+      "end": 132.191
+    },
+    {
+      "word": "UNBINDS",
+      "start": 132.272,
+      "end": 133.363
+    },
+    {
+      "word": "the",
+      "start": 133.445,
+      "end": 133.549
+    },
+    {
+      "word": "organophosphate",
+      "start": 133.63,
+      "end": 134.757
+    },
+    {
+      "word": "and",
+      "start": 134.803,
+      "end": 135.024
+    },
+    {
+      "word": "REACTIVATES",
+      "start": 135.14,
+      "end": 135.929
+    },
+    {
+      "word": "the",
+      "start": 135.987,
+      "end": 136.069
+    },
+    {
+      "word": "enzyme!",
+      "start": 136.127,
+      "end": 136.696
+    },
+    {
+      "word": "Atropine",
+      "start": 136.951,
+      "end": 137.682
+    },
+    {
+      "word": "for",
+      "start": 137.717,
+      "end": 137.845
+    },
+    {
+      "word": "symptoms,",
+      "start": 137.915,
+      "end": 138.495
+    },
+    {
+      "word": "pralidoxime",
+      "start": 138.646,
+      "end": 139.482
+    },
+    {
+      "word": "for",
+      "start": 139.517,
+      "end": 139.621
+    },
+    {
+      "word": "the",
+      "start": 139.668,
+      "end": 139.737
+    },
+    {
+      "word": "CURE.",
+      "start": 139.784,
+      "end": 140.225
+    },
+    {
+      "word": "Start",
+      "start": 140.48,
+      "end": 140.829
+    },
+    {
+      "word": "atropine",
+      "start": 140.887,
+      "end": 141.456
+    },
+    {
+      "word": "immediately,",
+      "start": 141.49,
+      "end": 142.175
+    },
+    {
+      "word": "two",
+      "start": 142.292,
+      "end": 142.489
+    },
+    {
+      "word": "milligrams",
+      "start": 142.57,
+      "end": 143.162
+    },
+    {
+      "word": "IV",
+      "start": 143.243,
+      "end": 143.452
+    },
+    {
+      "word": "push,",
+      "start": 143.626,
+      "end": 144.021
+    },
+    {
+      "word": "repeat",
+      "start": 144.195,
+      "end": 144.567
+    },
+    {
+      "word": "every",
+      "start": 144.637,
+      "end": 144.892
+    },
+    {
+      "word": "5",
+      "start": 144.973,
+      "end": 145.147
+    },
+    {
+      "word": "minutes",
+      "start": 145.205,
+      "end": 145.53
+    },
+    {
+      "word": "until",
+      "start": 145.786,
+      "end": 146.157
+    },
+    {
+      "word": "secretions",
+      "start": 146.227,
+      "end": 147.04
+    },
+    {
+      "word": "DRY",
+      "start": 147.26,
+      "end": 147.771
+    },
+    {
+      "word": "UP.",
+      "start": 147.818,
+      "end": 148.259
+    },
+    {
+      "word": "Then",
+      "start": 148.886,
+      "end": 149.199
+    },
+    {
+      "word": "pralidoxime",
+      "start": 149.489,
+      "end": 150.36
+    },
+    {
+      "word": "one",
+      "start": 150.395,
+      "end": 150.592
+    },
+    {
+      "word": "to",
+      "start": 150.627,
+      "end": 150.685
+    },
+    {
+      "word": "two",
+      "start": 150.732,
+      "end": 150.883
+    },
+    {
+      "word": "grams",
+      "start": 150.941,
+      "end": 151.254
+    },
+    {
+      "word": "IV",
+      "start": 151.324,
+      "end": 151.556
+    },
+    {
+      "word": "over",
+      "start": 151.707,
+      "end": 151.87
+    },
+    {
+      "word": "30",
+      "start": 151.928,
+      "end": 152.148
+    },
+    {
+      "word": "minutes.",
+      "start": 152.206,
+      "end": 152.613
+    },
+    {
+      "word": "This",
+      "start": 153.007,
+      "end": 153.274
+    },
+    {
+      "word": "is",
+      "start": 153.356,
+      "end": 153.518
+    },
+    {
+      "word": "STEP",
+      "start": 153.565,
+      "end": 153.89
+    },
+    {
+      "word": "1",
+      "start": 154.006,
+      "end": 154.18
+    },
+    {
+      "word": "material,",
+      "start": 154.261,
+      "end": 154.958
+    },
+    {
+      "word": "and",
+      "start": 155.353,
+      "end": 155.561
+    },
+    {
+      "word": "half",
+      "start": 155.654,
+      "end": 155.863
+    },
+    {
+      "word": "of",
+      "start": 155.921,
+      "end": 155.968
+    },
+    {
+      "word": "you",
+      "start": 156.026,
+      "end": 156.142
+    },
+    {
+      "word": "just",
+      "start": 156.235,
+      "end": 156.409
+    },
+    {
+      "word": "picked",
+      "start": 156.455,
+      "end": 156.688
+    },
+    {
+      "word": "a",
+      "start": 156.722,
+      "end": 156.757
+    },
+    {
+      "word": "drug",
+      "start": 156.815,
+      "end": 157.106
+    },
+    {
+      "word": "that",
+      "start": 157.152,
+      "end": 157.257
+    },
+    {
+      "word": "would've",
+      "start": 157.303,
+      "end": 157.593
+    },
+    {
+      "word": "KILLED",
+      "start": 157.663,
+      "end": 158.058
+    },
+    {
+      "word": "your",
+      "start": 158.104,
+      "end": 158.22
+    },
+    {
+      "word": "patient",
+      "start": 158.29,
+      "end": 158.673
+    },
+    {
+      "word": "FASTER.",
+      "start": 158.731,
+      "end": 159.404
+    },
+    {
+      "word": "Now",
+      "start": 160.031,
+      "end": 160.24
+    },
+    {
+      "word": "get",
+      "start": 160.322,
+      "end": 160.542
+    },
+    {
+      "word": "OUT",
+      "start": 160.6,
+      "end": 160.832
+    },
+    {
+      "word": "and",
+      "start": 161.007,
+      "end": 161.227
+    },
+    {
+      "word": "go",
+      "start": 161.297,
+      "end": 161.459
+    },
+    {
+      "word": "review",
+      "start": 161.552,
+      "end": 161.924
+    },
+    {
+      "word": "your",
+      "start": 162.017,
+      "end": 162.133
+    },
+    {
+      "word": "TOXICOLOGY",
+      "start": 162.191,
+      "end": 163.329
+    },
+    {
+      "word": "before",
+      "start": 163.619,
+      "end": 164.176
+    },
+    {
+      "word": "you",
+      "start": 164.246,
+      "end": 164.385
+    },
+    {
+      "word": "murder",
+      "start": 164.501,
+      "end": 164.861
+    },
+    {
+      "word": "a",
+      "start": 164.931,
+      "end": 164.966
+    },
+    {
+      "word": "farmer!",
+      "start": 165.093,
+      "end": 165.883
+    }
+  ]
+}

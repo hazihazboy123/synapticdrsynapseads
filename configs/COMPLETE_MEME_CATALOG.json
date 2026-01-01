@@ -1,0 +1,680 @@
+{
+  "meta": {
+    "title": "Synaptic Recall Ads - Complete Meme Catalog",
+    "version": "2.0",
+    "created": "2025-12-19",
+    "purpose": "Master catalog of all memes for viral medical education videos",
+    "total_memes": 158
+  },
+
+  "vlipsy_videos": {
+    "description": "Video reaction memes downloaded from Vlipsy.com (Dec 19, 2024)",
+    "location": "/Users/haziq/synaptic-recall-ads/vlipsy-videos/",
+    "quality": "480p",
+    "count": 46,
+    "clips": [
+      {
+        "id": "5-minutes-later-spongebob",
+        "filename": "5-minutes-later-spongebob.mp4",
+        "duration_sec": 2,
+        "source": "SpongeBob SquarePants",
+        "character": "Time card narrator",
+        "vibe": "Time skip transition - comedic pause after setup",
+        "category": "TIME_SKIP",
+        "use_case": "Waiting for lab results, treatment to work, or after 'let's see what happens'"
+      },
+      {
+        "id": "a-few-moments-later",
+        "filename": "a-few-moments-later.mp4",
+        "duration_sec": 2,
+        "source": "SpongeBob SquarePants",
+        "character": "French narrator",
+        "vibe": "Classic time skip with fancy French voice",
+        "category": "TIME_SKIP",
+        "use_case": "Quick transition between clinical events"
+      },
+      {
+        "id": "awkward-crickets",
+        "filename": "awkward-crickets.mp4",
+        "duration_sec": 4,
+        "source": "Sound Effect",
+        "character": "N/A",
+        "vibe": "Uncomfortable silence, awkward moment",
+        "category": "SOUND_EFFECT",
+        "use_case": "After wrong answer reveal, awkward diagnosis moments"
+      },
+      {
+        "id": "black-guy-crying",
+        "filename": "black-guy-crying.mp4",
+        "duration_sec": 8,
+        "source": "Meme - Jaden Smith type",
+        "character": "Crying man",
+        "vibe": "Intense emotional crying, exaggerated sadness",
+        "category": "SADNESS",
+        "use_case": "Wrong answer devastation, terminal diagnosis reveals"
+      },
+      {
+        "id": "bone-crack",
+        "filename": "bone-crack.mp4",
+        "duration_sec": 1,
+        "source": "Sound Effect",
+        "character": "N/A",
+        "vibe": "Satisfying/disturbing crack sound",
+        "category": "SOUND_EFFECT",
+        "use_case": "Fractures, bone-related conditions, osteoporosis"
+      },
+      {
+        "id": "cars-thank-you-no-thank-you",
+        "filename": "cars-thank-you-no-thank-you.mp4",
+        "duration_sec": 5,
+        "source": "Cars (Pixar)",
+        "character": "Mater",
+        "vibe": "Polite rejection, 'nah I'm good'",
+        "category": "REJECTION",
+        "use_case": "Wrong treatment options, patient refusing care"
+      },
+      {
+        "id": "censor-screen-beep",
+        "filename": "censor-screen-beep.mp4",
+        "duration_sec": 3,
+        "source": "Generic TV censor",
+        "character": "N/A",
+        "vibe": "Bleeping out bad words, censored moment",
+        "category": "SOUND_EFFECT",
+        "use_case": "When you want to imply something too shocking to show"
+      },
+      {
+        "id": "crying-then-laughing",
+        "filename": "crying-then-laughing.mp4",
+        "duration_sec": 5,
+        "source": "Meme compilation",
+        "character": "Various",
+        "vibe": "Emotional whiplash - sad then maniacal laugh",
+        "category": "CHAOS",
+        "use_case": "When the diagnosis goes from bad to absurd"
+      },
+      {
+        "id": "daaammnnn-friday",
+        "filename": "daaammnnn-friday.mp4",
+        "duration_sec": 5,
+        "source": "Friday (1995)",
+        "character": "Craig/Smokey",
+        "vibe": "Impressed reaction, 'DAMN!'",
+        "category": "SHOCK",
+        "use_case": "Shocking lab values, impressive pathology"
+      },
+      {
+        "id": "dame-tu-cosita-ok",
+        "filename": "dame-tu-cosita-ok.mp4",
+        "duration_sec": 4,
+        "source": "Dame Tu Cosita meme",
+        "character": "Green alien",
+        "vibe": "Weird dancing alien, absurdist energy",
+        "category": "CHAOS",
+        "use_case": "When things get weird, bizarre symptoms"
+      },
+      {
+        "id": "dancing-kid",
+        "filename": "dancing-kid.mp4",
+        "duration_sec": 10,
+        "source": "Internet meme",
+        "character": "Kid dancing",
+        "vibe": "Victory dance, celebration energy",
+        "category": "CELEBRATION",
+        "use_case": "Correct answer celebration, successful treatment"
+      },
+      {
+        "id": "dun-dun-duuuun",
+        "filename": "dun-dun-duuuun.mp4",
+        "duration_sec": 3,
+        "source": "Dramatic sound effect",
+        "character": "N/A",
+        "vibe": "Dramatic reveal, plot twist moment",
+        "category": "SOUND_EFFECT",
+        "use_case": "Ominous findings, bad news incoming"
+      },
+      {
+        "id": "epic-cry-guy",
+        "filename": "epic-cry-guy.mp4",
+        "duration_sec": 8,
+        "source": "Internet meme",
+        "character": "Crying man",
+        "vibe": "Exaggerated ugly cry, devastating",
+        "category": "SADNESS",
+        "use_case": "When you get the question wrong, patient death"
+      },
+      {
+        "id": "explosion-meme",
+        "filename": "explosion-meme.mp4",
+        "duration_sec": 3,
+        "source": "Action movie clips",
+        "character": "N/A",
+        "vibe": "Big explosion, catastrophic destruction",
+        "category": "CHAOS",
+        "use_case": "Multi-organ failure, catastrophic events"
+      },
+      {
+        "id": "extreme-laugh-mutahar",
+        "filename": "extreme-laugh-mutahar.mp4",
+        "duration_sec": 7,
+        "source": "SomeOrdinaryGamers",
+        "character": "Mutahar",
+        "vibe": "Intense laugh that keeps escalating",
+        "category": "ROAST",
+        "use_case": "When wrong answer is hilariously wrong"
+      },
+      {
+        "id": "forehead-slap",
+        "filename": "forehead-slap.mp4",
+        "duration_sec": 3,
+        "source": "Meme",
+        "character": "Various",
+        "vibe": "Facepalm moment, obvious mistake",
+        "category": "DISAPPOINTMENT",
+        "use_case": "When answer was obvious, missed diagnosis"
+      },
+      {
+        "id": "he-he-boy",
+        "filename": "he-he-boy.mp4",
+        "duration_sec": 2,
+        "source": "Internet meme",
+        "character": "Kid",
+        "vibe": "Cheeky grin, mischievous 'hehe'",
+        "category": "PLAYFUL",
+        "use_case": "Clever teaching point, trick question revealed"
+      },
+      {
+        "id": "i-know-your-secret-pennywise",
+        "filename": "i-know-your-secret-pennywise.mp4",
+        "duration_sec": 8,
+        "source": "IT (2017)",
+        "character": "Pennywise",
+        "vibe": "Creepy 'I know what you did' energy",
+        "category": "MENACING",
+        "use_case": "Hidden pathology, occult disease"
+      },
+      {
+        "id": "interstellar-crying",
+        "filename": "interstellar-crying.mp4",
+        "duration_sec": 5,
+        "source": "Interstellar",
+        "character": "Cooper (Matthew McConaughey)",
+        "vibe": "Emotional devastation, years lost",
+        "category": "SADNESS",
+        "use_case": "Long-term complications, chronic disease reveals"
+      },
+      {
+        "id": "keyboard-smash",
+        "filename": "keyboard-smash.mp4",
+        "duration_sec": 5,
+        "source": "Office rage",
+        "character": "Angry office worker",
+        "vibe": "Frustration explosion, rage quit",
+        "category": "RAGE",
+        "use_case": "When everything goes wrong, treatment failure"
+      },
+      {
+        "id": "laughing-cat-meme",
+        "filename": "laughing-cat-meme.mp4",
+        "duration_sec": 4,
+        "source": "Cat video",
+        "character": "Orange tabby cat",
+        "vibe": "Cat with human laugh dubbed over",
+        "category": "ROAST",
+        "use_case": "Laughing at wrong answers, absurd scenarios"
+      },
+      {
+        "id": "laughing-donkey-kong",
+        "filename": "laughing-donkey-kong.mp4",
+        "duration_sec": 4,
+        "source": "Donkey Kong",
+        "character": "Donkey Kong",
+        "vibe": "Belly laugh, rolling laughter",
+        "category": "CELEBRATION",
+        "use_case": "Celebrating correct answer, roasting wrong choice"
+      },
+      {
+        "id": "laughing-lion",
+        "filename": "laughing-lion.mp4",
+        "duration_sec": 8,
+        "source": "Nature documentary edit",
+        "character": "Lion",
+        "vibe": "Lion appearing to laugh, deep belly laugh",
+        "category": "ROAST",
+        "use_case": "Major roast moment, laughing at common mistakes"
+      },
+      {
+        "id": "leonardo-dicaprio-pointing",
+        "filename": "leonardo-dicaprio-pointing.mp4",
+        "duration_sec": 4,
+        "source": "Once Upon a Time in Hollywood",
+        "character": "Rick Dalton (Leonardo DiCaprio)",
+        "vibe": "Excited recognition, 'THAT'S IT!'",
+        "category": "RECOGNITION",
+        "use_case": "When answer clicks, recognizing pattern"
+      },
+      {
+        "id": "man-crying",
+        "filename": "man-crying.mp4",
+        "duration_sec": 5,
+        "source": "Various",
+        "character": "Crying man",
+        "vibe": "Ugly cry, genuine sadness",
+        "category": "SADNESS",
+        "use_case": "Wrong answer reveal, patient death"
+      },
+      {
+        "id": "meow",
+        "filename": "meow.mp4",
+        "duration_sec": 2,
+        "source": "Cat video",
+        "character": "Cat",
+        "vibe": "Random cat meow, non-sequitur",
+        "category": "SOUND_EFFECT",
+        "use_case": "Comedic interruption, random punctuation"
+      },
+      {
+        "id": "mr-bean-waiting",
+        "filename": "mr-bean-waiting.mp4",
+        "duration_sec": 6,
+        "source": "Mr. Bean",
+        "character": "Mr. Bean (Rowan Atkinson)",
+        "vibe": "Impatient waiting, checking watch",
+        "category": "WAITING",
+        "use_case": "Waiting for diagnosis, slow processes"
+      },
+      {
+        "id": "mustache-man-laugh",
+        "filename": "mustache-man-laugh.mp4",
+        "duration_sec": 4,
+        "source": "Internet meme",
+        "character": "Man with mustache",
+        "vibe": "Contagious laugh, getting more intense",
+        "category": "ROAST",
+        "use_case": "Building laughter, escalating comedy"
+      },
+      {
+        "id": "noice-michael-rosen",
+        "filename": "noice-michael-rosen.mp4",
+        "duration_sec": 2,
+        "source": "Michael Rosen poetry",
+        "character": "Michael Rosen",
+        "vibe": "Satisfying 'NOICE', approval",
+        "category": "APPROVAL",
+        "use_case": "Correct answer, good clinical decision"
+      },
+      {
+        "id": "oh-no-mr-bean",
+        "filename": "oh-no-mr-bean.mp4",
+        "duration_sec": 5,
+        "source": "Mr. Bean",
+        "character": "Mr. Bean",
+        "vibe": "Dawning realization of mistake",
+        "category": "PANIC",
+        "use_case": "When you realize the answer was wrong"
+      },
+      {
+        "id": "russell-westbrook-what-bro",
+        "filename": "russell-westbrook-what-bro.mp4",
+        "duration_sec": 4,
+        "source": "NBA Press Conference",
+        "character": "Russell Westbrook",
+        "vibe": "Confused disgust, 'what are you talking about?'",
+        "category": "CONFUSION",
+        "use_case": "When wrong answer is confusingly wrong"
+      },
+      {
+        "id": "sad-violin",
+        "filename": "sad-violin.mp4",
+        "duration_sec": 6,
+        "source": "Meme",
+        "character": "Mr. Krabs playing violin",
+        "vibe": "Mock sadness, tiny violin energy",
+        "category": "MOCK_SAD",
+        "use_case": "Sarcastic sympathy for poor choices"
+      },
+      {
+        "id": "scared-dog",
+        "filename": "scared-dog.mp4",
+        "duration_sec": 3,
+        "source": "Dog video",
+        "character": "Scared dog",
+        "vibe": "Wide-eyed panic, fear",
+        "category": "PANIC",
+        "use_case": "Medical emergency, scary findings"
+      },
+      {
+        "id": "shocked-cat",
+        "filename": "shocked-cat.mp4",
+        "duration_sec": 3,
+        "source": "Cat video",
+        "character": "Wide-eyed cat",
+        "vibe": "Pure shock, frozen in surprise",
+        "category": "SHOCK",
+        "use_case": "Shocking lab values, unexpected findings"
+      },
+      {
+        "id": "shrek-devilish-grin",
+        "filename": "shrek-devilish-grin.mp4",
+        "duration_sec": 3,
+        "source": "Shrek",
+        "character": "Shrek",
+        "vibe": "Evil smirk, mischievous satisfaction",
+        "category": "MENACING",
+        "use_case": "Trick questions, gotcha moments"
+      },
+      {
+        "id": "sus-dog",
+        "filename": "sus-dog.mp4",
+        "duration_sec": 2,
+        "source": "Dog video",
+        "character": "Suspicious dog",
+        "vibe": "Side-eye, suspicion",
+        "category": "SUSPICION",
+        "use_case": "Questionable history, unreliable narrator patient"
+      },
+      {
+        "id": "tom-cruise-i-will-be-there",
+        "filename": "tom-cruise-i-will-be-there.mp4",
+        "duration_sec": 3,
+        "source": "Jerry Maguire",
+        "character": "Tom Cruise",
+        "vibe": "Intense promise, 'I got you'",
+        "category": "HEROIC",
+        "use_case": "Treatment coming to save the day"
+      },
+      {
+        "id": "trying-not-to-laugh",
+        "filename": "trying-not-to-laugh.mp4",
+        "duration_sec": 7,
+        "source": "Meme compilation",
+        "character": "Various",
+        "vibe": "Holding back laughter, failing to stay serious",
+        "category": "ROAST",
+        "use_case": "When wrong answer is almost comically wrong"
+      },
+      {
+        "id": "wake-up-to-reality-naruto",
+        "filename": "wake-up-to-reality-naruto.mp4",
+        "duration_sec": 4,
+        "source": "Naruto",
+        "character": "Madara Uchiha",
+        "vibe": "Harsh truth bomb, reality check",
+        "category": "REALITY_CHECK",
+        "use_case": "When student answer ignores key facts"
+      },
+      {
+        "id": "what-ishowspeed",
+        "filename": "what-ishowspeed.mp4",
+        "duration_sec": 10,
+        "source": "IShowSpeed streams",
+        "character": "IShowSpeed",
+        "vibe": "Extreme 'WHAT?!' reaction, escalating shock",
+        "category": "SHOCK",
+        "use_case": "Shocking findings, extreme lab values"
+      },
+      {
+        "id": "wicked-unlimited",
+        "filename": "wicked-unlimited.mp4",
+        "duration_sec": 8,
+        "source": "Wicked (Broadway)",
+        "character": "Elphaba",
+        "vibe": "Defying expectations, breaking free",
+        "category": "TRIUMPHANT",
+        "use_case": "Breakthrough treatment, defying prognosis"
+      },
+      {
+        "id": "willem-dafoe-looking-up",
+        "filename": "willem-dafoe-looking-up.mp4",
+        "duration_sec": 6,
+        "source": "Various films",
+        "character": "Willem Dafoe",
+        "vibe": "Menacing upward glance, 'you know what's coming'",
+        "category": "MENACING",
+        "use_case": "Ominous foreshadowing, complications incoming"
+      },
+      {
+        "id": "wwe-shocked-fan",
+        "filename": "wwe-shocked-fan.mp4",
+        "duration_sec": 5,
+        "source": "WWE",
+        "character": "Shocked wrestling fan",
+        "vibe": "Jaw-drop moment, pure disbelief",
+        "category": "SHOCK",
+        "use_case": "Plot twist in diagnosis, unexpected turn"
+      },
+      {
+        "id": "you-didnt-have-to-cut-me-off",
+        "filename": "you-didnt-have-to-cut-me-off.mp4",
+        "duration_sec": 8,
+        "source": "Gotye - Somebody That I Used to Know",
+        "character": "Gotye",
+        "vibe": "Dramatic betrayal, relationship ended",
+        "category": "BETRAYAL",
+        "use_case": "When treatment fails patient, organ gives up"
+      },
+      {
+        "id": "zias-laughing-meme",
+        "filename": "zias-laughing-meme.mp4",
+        "duration_sec": 4,
+        "source": "ZIAS!",
+        "character": "ZIAS",
+        "vibe": "Infectious laugh, rolling with laughter",
+        "category": "ROAST",
+        "use_case": "Major roast moment, laughing at wrong answers"
+      }
+    ],
+    "emotion_categories": {
+      "PANIC": ["shocked-cat", "scared-dog", "oh-no-mr-bean"],
+      "SHOCK": ["what-ishowspeed", "russell-westbrook-what-bro", "daaammnnn-friday", "wwe-shocked-fan"],
+      "CELEBRATION": ["zias-laughing-meme", "laughing-donkey-kong", "dancing-kid", "noice-michael-rosen"],
+      "ROAST": ["man-crying", "you-didnt-have-to-cut-me-off", "extreme-laugh-mutahar", "laughing-cat-meme", "laughing-lion", "trying-not-to-laugh", "mustache-man-laugh"],
+      "TEACHING": ["noice-michael-rosen", "leonardo-dicaprio-pointing"],
+      "CHAOS": ["explosion-meme", "crying-then-laughing", "dame-tu-cosita-ok", "keyboard-smash"],
+      "SOUND_EFFECTS": ["awkward-crickets", "meow", "bone-crack", "censor-screen-beep", "dun-dun-duuuun"],
+      "SADNESS": ["black-guy-crying", "epic-cry-guy", "interstellar-crying", "man-crying"],
+      "TIME_SKIP": ["5-minutes-later-spongebob", "a-few-moments-later"],
+      "CONFUSION": ["russell-westbrook-what-bro"],
+      "WAITING": ["mr-bean-waiting"],
+      "MENACING": ["i-know-your-secret-pennywise", "shrek-devilish-grin", "willem-dafoe-looking-up"],
+      "RECOGNITION": ["leonardo-dicaprio-pointing"]
+    }
+  },
+
+  "static_memes": {
+    "description": "Static image memes (JPG/PNG) in src/assets/memes/",
+    "count": 50,
+    "categories": {
+      "disaster_shock": {
+        "description": "Patient death, organ failure, catastrophic outcomes",
+        "memes": [
+          {"id": "surprised-pikachu", "name": "Surprised Pikachu", "format": "png", "use_case": "Unexpected bad outcomes"},
+          {"id": "dramatic-chipmunk", "name": "Dramatic Chipmunk", "format": "gif/mp4", "use_case": "Dramatic reveals"},
+          {"id": "shocked-cat", "name": "Shocked Cat", "format": "jpg", "use_case": "Bad test results"},
+          {"id": "unsettled-tom", "name": "Unsettled Tom", "format": "jpg", "use_case": "Concerning findings on imaging"},
+          {"id": "scared-hamster", "name": "Scared Hamster", "format": "jpg", "use_case": "Medical emergencies"},
+          {"id": "disaster-girl", "name": "Disaster Girl", "format": "jpg", "use_case": "Iatrogenic complications"},
+          {"id": "blinking-white-guy", "name": "Blinking White Guy (Drew Scanlon)", "format": "gif/mp4", "use_case": "Confusing symptoms"},
+          {"id": "michael-jordan-crying", "name": "Michael Jordan Crying", "format": "jpg", "use_case": "Terminal diagnosis"},
+          {"id": "woman-yelling-at-cat", "name": "Woman Yelling at Cat", "format": "jpg", "use_case": "Conflicting opinions"},
+          {"id": "monkey-puppet", "name": "Monkey Puppet", "format": "jpg", "use_case": "Awkward medical errors"},
+          {"id": "pepe-sad", "name": "Pepe Sad", "format": "png", "use_case": "Poor prognosis"},
+          {"id": "press-f", "name": "Press F to Pay Respects", "format": "jpg", "use_case": "Patient/organ death"},
+          {"id": "coffin-dance", "name": "Coffin Dance", "format": "gif/mp4", "use_case": "Failed resuscitation"},
+          {"id": "arthurs-fist", "name": "Arthur's Fist", "format": "jpg", "use_case": "Frustration"},
+          {"id": "mind-blown", "name": "Mind Blown", "format": "gif/mp4", "use_case": "Shocking revelations"}
+        ]
+      },
+      "leaving_quitting": {
+        "description": "Organ failure, system shutdown, cell death",
+        "memes": [
+          {"id": "spongebob-head-out", "name": "SpongeBob Head Out", "format": "jpg", "use_case": "Organ failure"},
+          {"id": "homer-bushes", "name": "Homer Bushes", "format": "gif/mp4", "use_case": "System retreat"},
+          {"id": "elmo-fire", "name": "Elmo Fire", "format": "gif/mp4", "use_case": "Multi-organ failure"},
+          {"id": "im-out", "name": "I'm Out", "format": "gif/mp4", "use_case": "Cellular necrosis"},
+          {"id": "interstellar-51-years", "name": "Interstellar 51 Years", "format": "jpg", "use_case": "Long-term complications"},
+          {"id": "patrick-push-it", "name": "Patrick Push It", "format": "jpg", "use_case": "Metastasis"},
+          {"id": "pablo-escobar", "name": "Pablo Escobar Waiting", "format": "gif/mp4", "use_case": "Transplant waitlist"},
+          {"id": "waiting-skeleton", "name": "Waiting Skeleton", "format": "jpg", "use_case": "Long wait times"}
+        ]
+      },
+      "confusion_thinking": {
+        "description": "Complex pathophysiology, paradoxes",
+        "memes": [
+          {"id": "confused-math-lady", "name": "Confused Math Lady", "format": "jpg", "use_case": "Complex pathways"},
+          {"id": "roll-safe", "name": "Roll Safe Thinking", "format": "jpg", "use_case": "Counterintuitive treatments"},
+          {"id": "is-this-a-pigeon", "name": "Is This a Pigeon?", "format": "jpg", "use_case": "Misdiagnosis"},
+          {"id": "confused-nick-young", "name": "Confused Nick Young", "format": "jpg", "use_case": "Unexpected responses"},
+          {"id": "futurama-fry", "name": "Futurama Fry", "format": "jpg", "use_case": "Differential diagnosis"},
+          {"id": "expanding-brain", "name": "Expanding Brain", "format": "png", "use_case": "Complex reasoning"},
+          {"id": "two-buttons", "name": "Two Buttons", "format": "jpg", "use_case": "Treatment dilemmas"},
+          {"id": "change-my-mind", "name": "Change My Mind", "format": "jpg", "use_case": "Controversial opinions"},
+          {"id": "american-chopper-argument", "name": "American Chopper Argument", "format": "jpg", "use_case": "Team disagreements"},
+          {"id": "same-picture", "name": "They're the Same Picture", "format": "jpg", "use_case": "Similar conditions"}
+        ]
+      },
+      "success_obvious": {
+        "description": "Answer reveals, obvious diagnoses",
+        "memes": [
+          {"id": "drake-hotline-bling", "name": "Drake Hotline Bling", "format": "jpg", "use_case": "Correct vs incorrect"},
+          {"id": "tuxedo-winnie-pooh", "name": "Tuxedo Winnie Pooh", "format": "jpg", "use_case": "Basic vs advanced"},
+          {"id": "well-yes-but-no", "name": "Well Yes But Actually No", "format": "jpg", "use_case": "Paradoxical answers"},
+          {"id": "success-kid", "name": "Success Kid", "format": "jpg", "use_case": "Treatment success"},
+          {"id": "leonardo-dicaprio-cheers", "name": "DiCaprio Cheers", "format": "jpg", "use_case": "Diagnosis milestone"},
+          {"id": "one-does-not-simply", "name": "One Does Not Simply", "format": "jpg", "use_case": "Medical impossibilities"},
+          {"id": "doge", "name": "Doge", "format": "jpg", "use_case": "Amazing results"},
+          {"id": "anakin-padme", "name": "Anakin Padme", "format": "jpg", "use_case": "Good intentions bad outcomes"}
+        ]
+      },
+      "suffering_chronic": {
+        "description": "Chronic diseases, patient suffering",
+        "memes": [
+          {"id": "hide-the-pain-harold", "name": "Hide the Pain Harold", "format": "jpg", "use_case": "Chronic pain"},
+          {"id": "this-is-fine", "name": "This Is Fine", "format": "jpg", "use_case": "Disease denial"},
+          {"id": "spongebob-tired", "name": "SpongeBob Tired", "format": "jpg", "use_case": "Chronic fatigue"},
+          {"id": "kermit-tea", "name": "Kermit Tea", "format": "jpg", "use_case": "Patient non-compliance"},
+          {"id": "evil-kermit", "name": "Evil Kermit", "format": "jpg", "use_case": "Medication temptation"}
+        ]
+      },
+      "comparison_choice": {
+        "description": "Wrong vs right diagnosis, treatment choices",
+        "memes": [
+          {"id": "distracted-boyfriend", "name": "Distracted Boyfriend", "format": "jpg", "use_case": "Choosing wrong over right"},
+          {"id": "left-exit-12", "name": "Left Exit 12", "format": "jpg", "use_case": "Treatment path choices"},
+          {"id": "buff-doge-vs-cheems", "name": "Buff Doge vs Cheems", "format": "jpg", "use_case": "Past vs present health"},
+          {"id": "spiderman-pointing", "name": "Spider-Man Pointing", "format": "jpg", "use_case": "Similar diseases"}
+        ]
+      }
+    }
+  },
+
+  "video_memes_library": {
+    "description": "Video memes with audio in library.json for MemeCutaway component",
+    "location": "src/assets/memes/library.json",
+    "memes": [
+      {"id": "coffin-dance", "duration": 2.5, "hasAudio": true, "audio": "Astronomia by Tony Igy", "triggers": ["dead", "death", "goner", "died", "killed", "funeral", "rip", "coded"]},
+      {"id": "elmo-fire", "duration": 2.0, "hasAudio": true, "audio": "Fire crackling", "triggers": ["chaos", "fire", "burning", "destroyed", "sepsis", "DIC"]},
+      {"id": "tactical-nuke", "duration": 3.0, "hasAudio": true, "audio": "Explosion + tactical nuke", "triggers": ["nuke", "obliterate", "destroy", "massive", "catastrophic"]},
+      {"id": "surprised-pikachu", "duration": 1.5, "hasAudio": false, "triggers": ["shocked", "surprised", "unexpected", "tanked", "crashed", "pop"]},
+      {"id": "unsettled-tom", "duration": 1.5, "hasAudio": false, "triggers": ["concerning", "worried", "ominous", "positive test", "mass on CT", "hollowed"]},
+      {"id": "roll-safe", "duration": 2.0, "hasAudio": false, "triggers": ["tricks", "smart", "clever", "workaround"]},
+      {"id": "hide-the-pain-harold", "duration": 1.5, "hasAudio": false, "triggers": ["suffering", "pain", "student", "boards", "exam"]},
+      {"id": "windows-error", "duration": 2.0, "hasAudio": true, "audio": "Windows XP error", "triggers": ["crash", "failure", "error", "stopped", "shutdown"]},
+      {"id": "to-be-continued", "duration": 4.0, "hasAudio": true, "audio": "Roundabout by Yes", "triggers": ["cliffhanger", "ominous", "about to", "then"]},
+      {"id": "my-leg", "duration": 1.5, "hasAudio": true, "audio": "MY LEG scream", "triggers": ["leg", "tendon", "bone", "fracture", "rupture"]},
+      {"id": "bruh", "duration": 1.0, "hasAudio": true, "audio": "Bruh sound", "triggers": ["bruh", "really", "seriously", "obvious mistake"]},
+      {"id": "fbi-open-up", "duration": 2.0, "hasAudio": true, "audio": "FBI OPEN UP", "triggers": ["attack", "immune", "raid", "invasion", "autoimmune"]},
+      {"id": "sad-violin", "duration": 3.0, "hasAudio": true, "audio": "Sad violin music", "triggers": ["sad", "poor prognosis", "chronic", "terminal", "unfortunately"]},
+      {"id": "confused-math-lady", "duration": 2.5, "hasAudio": false, "triggers": ["confused", "calculating", "anion gap", "formula", "equation"]},
+      {"id": "drunk-man-falling", "duration": 2.4, "hasAudio": true, "audio": "Man falling down stairs", "triggers": ["alcohol", "vodka", "drunk", "drinking", "alcoholic"]},
+      {"id": "this-is-fine", "duration": 2.0, "hasAudio": false, "triggers": ["fine", "denial", "chaos", "fire", "everything is fine"]}
+    ]
+  },
+
+  "sound_effects": {
+    "description": "Sound effects for meme overlays",
+    "location": "src/assets/sfx/memes/",
+    "effects": [
+      {"name": "DING.mp3", "use": "Success moments, correct answers"},
+      {"name": "BRUH.mp3", "use": "Facepalm moments"},
+      {"name": "WOW.mp3", "use": "Impressive facts"},
+      {"name": "HUH.mp3", "use": "Confusion"},
+      {"name": "Metal Boom.mp3", "use": "Impact moments"},
+      {"name": "RIMSHOT.mp3", "use": "Punchlines"},
+      {"name": "OH!!!!!!!.mp3", "use": "Shock/surprise"},
+      {"name": "MINECRAFT OOF.mp3", "use": "Pain/failure"},
+      {"name": "BOOMBAMBOP.mp3", "use": "Celebration"},
+      {"name": "TBC.mp3", "use": "To Be Continued moment"},
+      {"name": "YEET.mp3", "use": "Throwing/removing"},
+      {"name": "TACTICAL NUKE.mp3", "use": "Massive events"},
+      {"name": "FBI OPEN UP.mp3", "use": "Immune attacks"},
+      {"name": "WINDOWS-ERROR.mp3", "use": "System failures"},
+      {"name": "WINDOWS-STARTUP.mp3", "use": "Recovery"},
+      {"name": "NO GOD PLEASE NO.mp3", "use": "Dread"},
+      {"name": "OH NO NO NO.mp3", "use": "Things going wrong"},
+      {"name": "The Screaming Sheep.mp3", "use": "Panic"},
+      {"name": "Wait a minute....mp3", "use": "Realization"},
+      {"name": "Hello There.mp3", "use": "Greeting/intro"},
+      {"name": "Sadness-1.mp3", "use": "Sad moments"},
+      {"name": "Sadness-2.mp3", "use": "Sad moments"},
+      {"name": "Sadness-3.mp3", "use": "Sad moments"},
+      {"name": "MY LEG.mp3", "use": "Leg injuries"},
+      {"name": "HA!GOTEE!HA!.mp3", "use": "Gotcha moments"},
+      {"name": "NOPE.mp3", "use": "Rejection"},
+      {"name": "INCEPTION.mp3", "use": "Deep reveal"},
+      {"name": "SHREK-SWAMP.mp3", "use": "Swampy/gross"},
+      {"name": "MEANWHILE.mp3", "use": "Time transition"},
+      {"name": "Titanic-Paroday.mp3", "use": "Tragic moments"},
+      {"name": "Hi How Are Ya.mp3", "use": "Casual intro"}
+    ]
+  },
+
+  "vlipsy_to_download": {
+    "description": "Additional clips from Vlipsy list that could be downloaded",
+    "clips": [
+      {"name": "Homer into Hedges", "source": "The Simpsons", "duration": "4 SEC", "vibe": "Backing away, disappearing"},
+      {"name": "Yea Boi", "source": "Cooking Show", "duration": "4 SEC", "vibe": "Celebration, approval"},
+      {"name": "Not sure if...", "source": "Futurama", "duration": "4 SEC", "vibe": "Suspicion, uncertainty"},
+      {"name": "Woo Yeah Baby", "source": "PENGUINZ0", "duration": "7 SEC", "vibe": "Celebration, excited"},
+      {"name": "LOL", "source": "Dinner for Schmucks", "duration": "5 SEC", "vibe": "Genuine laughter"},
+      {"name": "Boy if you don't", "source": "Vine", "duration": "2 SEC", "vibe": "Warning, 'watch yourself'"},
+      {"name": "YES. Definitely.", "source": "JonTron", "duration": "2 SEC", "vibe": "Strong approval"},
+      {"name": "Ugly Cry", "source": "Spider-Man", "duration": "8 SEC", "vibe": "Dramatic crying"},
+      {"name": "Imagination rainbow", "source": "SpongeBob", "duration": "5 SEC", "vibe": "Wonder, creativity"},
+      {"name": "Yes Sir", "source": "Sound Effect", "duration": "7 SEC", "vibe": "Military approval"},
+      {"name": "Jump Scare", "source": "Grave Encounters", "duration": "5 SEC", "vibe": "Horror jump scare"},
+      {"name": "No, no, no, no, no!", "source": "The Punisher", "duration": "3 SEC", "vibe": "Desperate denial"},
+      {"name": "Hours later", "source": "SpongeBob", "duration": "9 SEC", "vibe": "Long time skip"},
+      {"name": "Awkward smile", "source": "The Boys", "duration": "8 SEC", "vibe": "Uncomfortable moment"},
+      {"name": "Stop it. Get some help.", "source": "Michael Jordan", "duration": "3 SEC", "vibe": "Intervention advice"},
+      {"name": "FINALLY!", "source": "SpongeBob", "duration": "4 SEC", "vibe": "Relief, completion"},
+      {"name": "Jaw Dropper", "source": "Australia's Got Talent", "duration": "8 SEC", "vibe": "Amazement"},
+      {"name": "Cheers", "source": "The Great Gatsby", "duration": "4 SEC", "vibe": "Celebration, toast"},
+      {"name": "Another One!", "source": "DJ Khaled", "duration": "9 SEC", "vibe": "Repetition, more coming"},
+      {"name": "Evil Baby Laugh", "source": "Vine", "duration": "2 SEC", "vibe": "Menacing, villainous"},
+      {"name": "Hell no", "source": "Friday", "duration": "2 SEC", "vibe": "Strong rejection"},
+      {"name": "Blue Screen Of Death", "source": "Windows XP", "duration": "6 SEC", "vibe": "System crash"},
+      {"name": "This is all I got", "source": "Tyrese Gibson", "duration": "8 SEC", "vibe": "Desperation"},
+      {"name": "Complete Shock", "source": "WWE", "duration": "6 SEC", "vibe": "Wrestling reaction"},
+      {"name": "Bring it Bitch", "source": "The Rock", "duration": "3 SEC", "vibe": "Challenge accepted"},
+      {"name": "Light Yagami's evil laugh", "source": "Death Note", "duration": "23 SEC", "vibe": "Maniacal villain laugh"},
+      {"name": "Wait a minute", "source": "Kazoo Kid", "duration": "4 SEC", "vibe": "Realization dawning"},
+      {"name": "NOOOOOO", "source": "Martin Lawrence", "duration": "8 SEC", "vibe": "Dramatic denial"},
+      {"name": "Yes! Yes!", "source": "Street Fighter", "duration": "6 SEC", "vibe": "Victory celebration"},
+      {"name": "Drake Dancing: Cossack Dance", "source": "Vine", "duration": "4 SEC", "vibe": "Silly celebration"},
+      {"name": "Falls out of chair", "source": "Vince McMahon", "duration": "4 SEC", "vibe": "Dramatic shock"},
+      {"name": "Funny laugh", "source": "Kawhi Leonard", "duration": "4 SEC", "vibe": "Robotic awkward laugh"},
+      {"name": "Mission Passed + Respect", "source": "GTA", "duration": "10 SEC", "vibe": "Achievement unlocked"},
+      {"name": "Joyless Laughing Guy", "source": "Steve Carell", "duration": "11 SEC", "vibe": "Forced uncomfortable laugh"},
+      {"name": "Smiley Laughing", "source": "Emoji", "duration": "5 SEC", "vibe": "Pure joy"},
+      {"name": "Sweating", "source": "Key and Peele", "duration": "1 SEC", "vibe": "Nervous, pressure"},
+      {"name": "I'm ok", "source": "Girl Pretending to Like Food", "duration": "19 SEC", "vibe": "Forced acceptance"},
+      {"name": "I am Iron Man", "source": "Iron Man", "duration": "17 SEC", "vibe": "Epic reveal"},
+      {"name": "Stairs Dancing Scene", "source": "Joker", "duration": "28 SEC", "vibe": "Triumphant chaos"},
+      {"name": "Rick Rolled", "source": "Rick Astley", "duration": "9 SEC", "vibe": "Classic prank"},
+      {"name": "Explaining on a whiteboard", "source": "Avengers Meme", "duration": "10 SEC", "vibe": "Teaching moment"},
+      {"name": "That's a great idea! I'm with that", "source": "Meech & Lo", "duration": "4 SEC", "vibe": "Enthusiastic agreement"},
+      {"name": "Steve Gives Dustin Girl Advice", "source": "Stranger Things", "duration": "4 SEC", "vibe": "Mentorship moment"}
+    ]
+  }
+}

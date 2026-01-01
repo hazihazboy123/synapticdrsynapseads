@@ -1,0 +1,665 @@
+{
+  "script": "GOOD LORD, grandma doubled her heart pills 'cause she FORGOT she already took 'em, and now she's seein' YELLOW HALOS around the TV like she's on an ACID TRIP and her heart's beatin' THIRTY-EIGHT times a minute. BLESS HER HEART, she's one bad rhythm away from a CLOSED CASKET. Vomitin' EVERYWHERE, confused as HELL, potassium's TWO POINT NINE, and her EKG looks like modern ART. So what do you give her before she FLATLINES on the kitchen floor? A) Calcium gluconate. B) Atropine. C) Digoxin immune Fab. D) Lidocaine. E) Magnesium sulfate. TICK TOCK, grandma's DYIN'. And I KNOW half you MORONS reached for calcium. CONGRATULATIONS, you just MURDERED someone's GRANDMOTHER. Calcium makes dig tox WORSE, you ABSOLUTE WALNUT. It's C, DigiFab! Binds the digoxin, YANKS it out, grandma LIVES. Now SCRAM.",
+  "words": [
+    {
+      "word": "GOOD",
+      "start": 0,
+      "end": 0.348
+    },
+    {
+      "word": "LORD,",
+      "start": 0.43,
+      "end": 1.022
+    },
+    {
+      "word": "grandma",
+      "start": 1.242,
+      "end": 1.707
+    },
+    {
+      "word": "doubled",
+      "start": 1.881,
+      "end": 2.264
+    },
+    {
+      "word": "her",
+      "start": 2.31,
+      "end": 2.392
+    },
+    {
+      "word": "heart",
+      "start": 2.461,
+      "end": 2.717
+    },
+    {
+      "word": "pills",
+      "start": 2.775,
+      "end": 3.1
+    },
+    {
+      "word": "'cause",
+      "start": 3.123,
+      "end": 3.344
+    },
+    {
+      "word": "she",
+      "start": 3.367,
+      "end": 3.518
+    },
+    {
+      "word": "FORGOT",
+      "start": 3.669,
+      "end": 4.284
+    },
+    {
+      "word": "she",
+      "start": 4.342,
+      "end": 4.458
+    },
+    {
+      "word": "already",
+      "start": 4.528,
+      "end": 4.783
+    },
+    {
+      "word": "took",
+      "start": 4.841,
+      "end": 5.062
+    },
+    {
+      "word": "'em,",
+      "start": 5.12,
+      "end": 5.352
+    },
+    {
+      "word": "and",
+      "start": 5.805,
+      "end": 5.956
+    },
+    {
+      "word": "now",
+      "start": 6.014,
+      "end": 6.153
+    },
+    {
+      "word": "she's",
+      "start": 6.246,
+      "end": 6.42
+    },
+    {
+      "word": "seein'",
+      "start": 6.444,
+      "end": 6.769
+    },
+    {
+      "word": "YELLOW",
+      "start": 6.827,
+      "end": 7.175
+    },
+    {
+      "word": "HALOS",
+      "start": 7.233,
+      "end": 7.674
+    },
+    {
+      "word": "around",
+      "start": 7.732,
+      "end": 8.011
+    },
+    {
+      "word": "the",
+      "start": 8.034,
+      "end": 8.104
+    },
+    {
+      "word": "TV",
+      "start": 8.162,
+      "end": 8.452
+    },
+    {
+      "word": "like",
+      "start": 8.58,
+      "end": 8.731
+    },
+    {
+      "word": "she's",
+      "start": 8.754,
+      "end": 8.916
+    },
+    {
+      "word": "on",
+      "start": 8.975,
+      "end": 9.079
+    },
+    {
+      "word": "an",
+      "start": 9.137,
+      "end": 9.195
+    },
+    {
+      "word": "ACID",
+      "start": 9.311,
+      "end": 9.892
+    },
+    {
+      "word": "TRIP",
+      "start": 9.95,
+      "end": 10.263
+    },
+    {
+      "word": "and",
+      "start": 10.519,
+      "end": 10.786
+    },
+    {
+      "word": "her",
+      "start": 10.844,
+      "end": 10.937
+    },
+    {
+      "word": "heart's",
+      "start": 11.029,
+      "end": 11.366
+    },
+    {
+      "word": "beatin'",
+      "start": 11.459,
+      "end": 11.889
+    },
+    {
+      "word": "THIRTY-EIGHT",
+      "start": 11.947,
+      "end": 12.632
+    },
+    {
+      "word": "times",
+      "start": 12.655,
+      "end": 13.119
+    },
+    {
+      "word": "a",
+      "start": 13.166,
+      "end": 13.201
+    },
+    {
+      "word": "minute.",
+      "start": 13.351,
+      "end": 13.839
+    },
+    {
+      "word": "BLESS",
+      "start": 14.675,
+      "end": 14.988
+    },
+    {
+      "word": "HER",
+      "start": 15.023,
+      "end": 15.128
+    },
+    {
+      "word": "HEART,",
+      "start": 15.197,
+      "end": 15.708
+    },
+    {
+      "word": "she's",
+      "start": 16.161,
+      "end": 16.428
+    },
+    {
+      "word": "one",
+      "start": 16.509,
+      "end": 16.823
+    },
+    {
+      "word": "bad",
+      "start": 16.892,
+      "end": 17.171
+    },
+    {
+      "word": "rhythm",
+      "start": 17.229,
+      "end": 17.531
+    },
+    {
+      "word": "away",
+      "start": 17.577,
+      "end": 17.844
+    },
+    {
+      "word": "from",
+      "start": 17.914,
+      "end": 18.065
+    },
+    {
+      "word": "a",
+      "start": 18.135,
+      "end": 18.169
+    },
+    {
+      "word": "CLOSED",
+      "start": 18.262,
+      "end": 18.587
+    },
+    {
+      "word": "CASKET.",
+      "start": 18.669,
+      "end": 19.296
+    },
+    {
+      "word": "Vomitin'",
+      "start": 19.505,
+      "end": 19.957
+    },
+    {
+      "word": "EVERYWHERE,",
+      "start": 20.004,
+      "end": 20.433
+    },
+    {
+      "word": "confused",
+      "start": 20.457,
+      "end": 20.921
+    },
+    {
+      "word": "as",
+      "start": 20.967,
+      "end": 21.049
+    },
+    {
+      "word": "HELL,",
+      "start": 21.107,
+      "end": 21.49
+    },
+    {
+      "word": "potassium's",
+      "start": 21.699,
+      "end": 22.395
+    },
+    {
+      "word": "TWO",
+      "start": 22.442,
+      "end": 22.616
+    },
+    {
+      "word": "POINT",
+      "start": 22.709,
+      "end": 22.988
+    },
+    {
+      "word": "NINE,",
+      "start": 23.046,
+      "end": 23.533
+    },
+    {
+      "word": "and",
+      "start": 23.777,
+      "end": 23.974
+    },
+    {
+      "word": "her",
+      "start": 24.033,
+      "end": 24.137
+    },
+    {
+      "word": "EKG",
+      "start": 24.207,
+      "end": 24.787
+    },
+    {
+      "word": "looks",
+      "start": 24.973,
+      "end": 25.159
+    },
+    {
+      "word": "like",
+      "start": 25.193,
+      "end": 25.344
+    },
+    {
+      "word": "modern",
+      "start": 25.414,
+      "end": 25.786
+    },
+    {
+      "word": "ART.",
+      "start": 25.844,
+      "end": 26.378
+    },
+    {
+      "word": "So",
+      "start": 26.807,
+      "end": 26.912
+    },
+    {
+      "word": "what",
+      "start": 26.947,
+      "end": 27.039
+    },
+    {
+      "word": "do",
+      "start": 27.063,
+      "end": 27.098
+    },
+    {
+      "word": "you",
+      "start": 27.121,
+      "end": 27.19
+    },
+    {
+      "word": "give",
+      "start": 27.248,
+      "end": 27.399
+    },
+    {
+      "word": "her",
+      "start": 27.411,
+      "end": 27.504
+    },
+    {
+      "word": "before",
+      "start": 27.632,
+      "end": 27.922
+    },
+    {
+      "word": "she",
+      "start": 27.957,
+      "end": 28.061
+    },
+    {
+      "word": "FLATLINES",
+      "start": 28.212,
+      "end": 28.897
+    },
+    {
+      "word": "on",
+      "start": 28.944,
+      "end": 29.025
+    },
+    {
+      "word": "the",
+      "start": 29.06,
+      "end": 29.118
+    },
+    {
+      "word": "kitchen",
+      "start": 29.152,
+      "end": 29.42
+    },
+    {
+      "word": "floor?",
+      "start": 29.466,
+      "end": 29.907
+    },
+    {
+      "word": "A)",
+      "start": 30.116,
+      "end": 30.708
+    },
+    {
+      "word": "Calcium",
+      "start": 30.987,
+      "end": 31.451
+    },
+    {
+      "word": "gluconate.",
+      "start": 31.509,
+      "end": 32.182
+    },
+    {
+      "word": "B)",
+      "start": 32.461,
+      "end": 32.96
+    },
+    {
+      "word": "Atropine.",
+      "start": 33.204,
+      "end": 34.063
+    },
+    {
+      "word": "C)",
+      "start": 34.342,
+      "end": 34.945
+    },
+    {
+      "word": "Digoxin",
+      "start": 35.166,
+      "end": 35.77
+    },
+    {
+      "word": "immune",
+      "start": 35.816,
+      "end": 36.106
+    },
+    {
+      "word": "Fab.",
+      "start": 36.141,
+      "end": 36.64
+    },
+    {
+      "word": "D)",
+      "start": 36.954,
+      "end": 37.453
+    },
+    {
+      "word": "Lidocaine.",
+      "start": 37.778,
+      "end": 38.521
+    },
+    {
+      "word": "E)",
+      "start": 38.8,
+      "end": 39.299
+    },
+    {
+      "word": "Magnesium",
+      "start": 39.508,
+      "end": 40.193
+    },
+    {
+      "word": "sulfate.",
+      "start": 40.298,
+      "end": 40.936
+    },
+    {
+      "word": "TICK",
+      "start": 41.203,
+      "end": 41.447
+    },
+    {
+      "word": "TOCK,",
+      "start": 41.493,
+      "end": 41.923
+    },
+    {
+      "word": "grandma's",
+      "start": 42.155,
+      "end": 42.631
+    },
+    {
+      "word": "DYIN'.",
+      "start": 42.678,
+      "end": 43.235
+    },
+    {
+      "word": "And",
+      "start": 43.56,
+      "end": 43.723
+    },
+    {
+      "word": "I",
+      "start": 43.781,
+      "end": 43.804
+    },
+    {
+      "word": "KNOW",
+      "start": 43.874,
+      "end": 44.036
+    },
+    {
+      "word": "half",
+      "start": 44.175,
+      "end": 44.361
+    },
+    {
+      "word": "you",
+      "start": 44.419,
+      "end": 44.489
+    },
+    {
+      "word": "MORONS",
+      "start": 44.558,
+      "end": 44.942
+    },
+    {
+      "word": "reached",
+      "start": 45,
+      "end": 45.209
+    },
+    {
+      "word": "for",
+      "start": 45.243,
+      "end": 45.336
+    },
+    {
+      "word": "calcium.",
+      "start": 45.383,
+      "end": 45.94
+    },
+    {
+      "word": "CONGRATULATIONS,",
+      "start": 46.079,
+      "end": 46.985
+    },
+    {
+      "word": "you",
+      "start": 47.113,
+      "end": 47.206
+    },
+    {
+      "word": "just",
+      "start": 47.275,
+      "end": 47.426
+    },
+    {
+      "word": "MURDERED",
+      "start": 47.542,
+      "end": 47.867
+    },
+    {
+      "word": "someone's",
+      "start": 47.902,
+      "end": 48.192
+    },
+    {
+      "word": "GRANDMOTHER.",
+      "start": 48.227,
+      "end": 48.866
+    },
+    {
+      "word": "Calcium",
+      "start": 49.133,
+      "end": 49.563
+    },
+    {
+      "word": "makes",
+      "start": 49.609,
+      "end": 49.772
+    },
+    {
+      "word": "dig",
+      "start": 49.818,
+      "end": 49.957
+    },
+    {
+      "word": "tox",
+      "start": 50.004,
+      "end": 50.213
+    },
+    {
+      "word": "WORSE,",
+      "start": 50.282,
+      "end": 50.549
+    },
+    {
+      "word": "you",
+      "start": 50.584,
+      "end": 50.666
+    },
+    {
+      "word": "ABSOLUTE",
+      "start": 50.735,
+      "end": 51.165
+    },
+    {
+      "word": "WALNUT.",
+      "start": 51.2,
+      "end": 51.652
+    },
+    {
+      "word": "It's",
+      "start": 51.943,
+      "end": 52.14
+    },
+    {
+      "word": "C,",
+      "start": 52.163,
+      "end": 52.535
+    },
+    {
+      "word": "DigiFab!",
+      "start": 52.686,
+      "end": 53.614
+    },
+    {
+      "word": "Binds",
+      "start": 54.009,
+      "end": 54.323
+    },
+    {
+      "word": "the",
+      "start": 54.358,
+      "end": 54.427
+    },
+    {
+      "word": "digoxin,",
+      "start": 54.485,
+      "end": 55.205
+    },
+    {
+      "word": "YANKS",
+      "start": 55.379,
+      "end": 55.681
+    },
+    {
+      "word": "it",
+      "start": 55.728,
+      "end": 55.797
+    },
+    {
+      "word": "out,",
+      "start": 55.844,
+      "end": 56.157
+    },
+    {
+      "word": "grandma",
+      "start": 56.378,
+      "end": 56.807
+    },
+    {
+      "word": "LIVES.",
+      "start": 56.889,
+      "end": 57.457
+    },
+    {
+      "word": "Now",
+      "start": 57.852,
+      "end": 58.038
+    },
+    {
+      "word": "SCRAM.",
+      "start": 58.096,
+      "end": 58.932
+    }
+  ]
+}

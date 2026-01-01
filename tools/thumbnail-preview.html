@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Synapse Thumbnail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      font-family: system-ui, sans-serif;
+    }
+
+    h1 { color: white; margin-bottom: 10px; font-size: 20px; }
+    .subtitle { color: #666; margin-bottom: 30px; font-size: 13px; }
+
+    /* Full size 9:16 - 1080x1920 */
+    .thumbnail {
+      width: 1080px;
+      height: 1920px;
+      border-radius: 0;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(160deg, #0f0a1a 0%, #050208 40%, #0a0505 100%);
+      transform: scale(0.35);
+      transform-origin: top center;
+    }
+
+    /* Corner accents */
+    .corner-tl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(135deg, rgba(147, 51, 234, 0.25) 0%, transparent 70%);
+    }
+
+    .corner-br {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 700px;
+      height: 700px;
+      background: linear-gradient(-45deg, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+    }
+
+    /* Subtle glow behind mascot */
+    .mascot-glow {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(ellipse, rgba(147, 51, 234, 0.35) 0%, transparent 65%);
+      z-index: 1;
+    }
+
+    /* Dr. Synapse */
+    .mascot {
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 680px;
+      height: 680px;
+      filter: drop-shadow(0 0 140px rgba(147, 51, 234, 0.5));
+      z-index: 10;
+    }
+
+    /* Gradient divider line */
+    .divider {
+      position: absolute;
+      top: 880px;
+      left: 70px;
+      right: 70px;
+      height: 8px;
+      background: linear-gradient(90deg, transparent 0%, #9333ea 20%, #db2777 50%, #ef4444 80%, transparent 100%);
+      border-radius: 4px;
+      z-index: 15;
+    }
+
+    /* Main text container */
+    .text-container {
+      position: absolute;
+      top: 960px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 20;
+    }
+
+    .line-1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 270px;
+      color: white;
+      line-height: 0.85;
+      letter-spacing: 12px;
+      text-shadow: 0 12px 0 #000, 0 0 170px rgba(255,255,255,0.15);
+    }
+
+    .line-2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 140px;
+      background: linear-gradient(90deg, #9333ea, #db2777, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 22px;
+      margin-top: 40px;
+    }
+
+    /* Emoji row */
+    .emoji-row {
+      margin-top: 70px;
+      font-size: 115px;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      filter: drop-shadow(0 12px 40px rgba(0,0,0,0.8));
+    }
+
+    /* Download button */
+    .download-btn {
+      margin-top: -290px;
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #9333ea, #db2777);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 10px 40px rgba(147, 51, 234, 0.4);
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 50px rgba(147, 51, 234, 0.6);
+    }
+
+    .size-info {
+      color: #444;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dr. Synapse - Universal Thumbnail</h1>
+  <p class="subtitle">9:16 aspect ratio (1080 x 1920)</p>
+
+  <div class="thumbnail" id="thumbnail">
+    <div class="corner-tl"></div>
+    <div class="corner-br"></div>
+    <div class="mascot-glow"></div>
+
+    <img src="./public/assets/character/brain-mascot.png" class="mascot" alt="Dr. Synapse" crossorigin="anonymous" onerror="this.src='/Users/haziq/synaptic-recall-ads/public/assets/character/brain-mascot.png'">
+
+    <div class="divider"></div>
+
+    <div class="text-container">
+      <div class="line-1">MEDICAL<br>EMERGENCY</div>
+      <div class="line-2">DR. SYNAPSE</div>
+      <div class="emoji-row">
+        <span>🏥</span>
+        <span>💉</span>
+        <span>⚡</span>
+      </div>
+    </div>
+  </div>
+
+  <button class="download-btn" onclick="downloadThumbnail()">Download Thumbnail (1080x1920)</button>
+  <p class="size-info">Click to download as PNG - perfect for TikTok/Reels/Shorts</p>
+
+  <script>
+    async function downloadThumbnail() {
+      const thumbnail = document.getElementById('thumbnail');
+      const btn = document.querySelector('.download-btn');
+
+      btn.textContent = 'Generating...';
+      btn.disabled = true;
+
+      // Reset transform for capture
+      const originalTransform = thumbnail.style.transform;
+      thumbnail.style.transform = 'none';
+
+      try {
+        const canvas = await html2canvas(thumbnail, {
+          scale: 1,
+          useCORS: true,
+          allowTaint: true,
+          width: 1080,
+          height: 1920,
+          backgroundColor: null
+        });
+
+        // Restore transform
+        thumbnail.style.transform = originalTransform;
+
+        // Download
+        const link = document.createElement('a');
+        link.download = 'dr-synapse-thumbnail-1080x1920.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+
+        btn.textContent = 'Downloaded!';
+        setTimeout(() => {
+          btn.textContent = 'Download Thumbnail (1080x1920)';
+          btn.disabled = false;
+        }, 2000);
+
+      } catch (error) {
+        console.error('Error:', error);
+        thumbnail.style.transform = originalTransform;
+        btn.textContent = 'Error - Try Again';
+        btn.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>

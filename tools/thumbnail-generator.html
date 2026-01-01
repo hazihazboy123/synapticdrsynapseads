@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viral Thumbnail Generator - Dr. Synapse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 60px;
+    }
+
+    h1 {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      grid-column: 1 / -1;
+      color: #666;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    /* Form Styling */
+    .form-panel {
+      background: #111;
+      border-radius: 16px;
+      padding: 25px;
+      border: 1px solid #1a1a1a;
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+    }
+
+    .form-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #9333ea;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 12px;
+      background: #0a0a0a;
+      border: 1px solid #222;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #9333ea;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .preset-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .preset-btn {
+      padding: 6px 10px;
+      background: #1a1a1a;
+      border: 1px solid #222;
+      border-radius: 6px;
+      color: #888;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .preset-btn:hover {
+      background: #9333ea;
+      border-color: #9333ea;
+      color: white;
+    }
+
+    .download-btn {
+      width: 100%;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #9333ea, #db2777);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 16px;
+      font-family: inherit;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(147, 51, 234, 0.3);
+    }
+
+    /* Preview Panel */
+    .preview-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       THUMBNAIL - Clean, Premium Design
+       ═══════════════════════════════════════════════════════════════ */
+    .thumbnail {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      transform: scale(0.4);
+      transform-origin: top center;
+      margin-bottom: -1150px;
+      border-radius: 0;
+    }
+
+    /* Background layers */
+    .thumb-bg {
+      position: absolute;
+      inset: 0;
+      background: #030303;
+    }
+
+    .thumb-gradient-1 {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 120% 60% at 50% 0%, rgba(147, 51, 234, 0.12) 0%, transparent 60%);
+    }
+
+    .thumb-gradient-2 {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 100% 50% at 50% 100%, rgba(239, 68, 68, 0.08) 0%, transparent 50%);
+    }
+
+    .thumb-gradient-3 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(147, 51, 234, 0.08) 0%, transparent 70%);
+    }
+
+    /* Subtle grid pattern */
+    .thumb-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.5;
+    }
+
+    /* Top section - Stat + Vital */
+    .top-section {
+      position: absolute;
+      top: 80px;
+      left: 60px;
+      right: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      z-index: 30;
+    }
+
+    .stat-badge {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid rgba(239, 68, 68, 0.4);
+      border-radius: 12px;
+      padding: 16px 28px;
+      backdrop-filter: blur(10px);
+    }
+
+    .stat-badge-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: #ef4444;
+      letter-spacing: -0.5px;
+    }
+
+    .vital-box {
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid rgba(239, 68, 68, 0.5);
+      border-radius: 16px;
+      padding: 20px 35px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .vital-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+
+    .vital-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 100px;
+      color: #ef4444;
+      line-height: 1;
+      text-shadow: 0 0 60px rgba(239, 68, 68, 0.5);
+    }
+
+    /* EKG Line - Subtle and elegant */
+    .ekg-container {
+      position: absolute;
+      top: 280px;
+      left: 0;
+      right: 0;
+      height: 180px;
+      z-index: 10;
+      opacity: 0.6;
+    }
+
+    .ekg-container svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      position: absolute;
+      top: 500px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 20;
+    }
+
+    .condition-line1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 100px;
+      font-weight: 900;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    .condition-line2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 115px;
+      font-weight: 900;
+      color: #ef4444;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-top: 10px;
+      text-shadow: 0 0 80px rgba(239, 68, 68, 0.4);
+    }
+
+    /* Divider */
+    .divider {
+      position: absolute;
+      top: 920px;
+      left: 100px;
+      right: 100px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.5), rgba(219, 39, 119, 0.5), transparent);
+      z-index: 20;
+    }
+
+    /* Hook Question */
+    .hook-container {
+      position: absolute;
+      top: 980px;
+      left: 60px;
+      right: 60px;
+      z-index: 25;
+    }
+
+    .hook-box {
+      background: rgba(147, 51, 234, 0.1);
+      border: 2px solid rgba(147, 51, 234, 0.3);
+      border-radius: 20px;
+      padding: 45px 50px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hook-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: white;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    /* Bottom Section - Mascot + Brand (Centered) */
+    .bottom-section {
+      position: absolute;
+      bottom: 180px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      z-index: 30;
+    }
+
+    .mascot {
+      width: 520px;
+      filter: drop-shadow(0 0 100px rgba(147, 51, 234, 0.6));
+    }
+
+    .brand-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-top: -30px;
+    }
+
+    .brand-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      color: #c026d3;
+      letter-spacing: 2px;
+      text-shadow: 0 0 40px rgba(192, 38, 211, 0.5);
+    }
+
+    .brand-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* Corner accents */
+    .corner-accent {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid rgba(147, 51, 234, 0.2);
+      z-index: 5;
+    }
+
+    .corner-tl {
+      top: 40px;
+      left: 40px;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 20px 0 0 0;
+    }
+
+    .corner-br {
+      bottom: 40px;
+      right: 40px;
+      border-left: none;
+      border-top: none;
+      border-radius: 0 0 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thumbnail Generator</h1>
+    <p class="subtitle">Create topic-specific viral thumbnails</p>
+
+    <!-- Form Panel -->
+    <div class="form-panel">
+      <div class="form-title">Customize</div>
+
+      <div class="form-group">
+        <label>Condition (Line 1)</label>
+        <input type="text" id="line1" value="BETA BLOCKER" oninput="updatePreview()">
+      </div>
+
+      <div class="form-group">
+        <label>Condition (Line 2 - Red)</label>
+        <input type="text" id="line2" value="OVERDOSE" oninput="updatePreview()">
+      </div>
+
+      <div class="form-group">
+        <label>Hook Question</label>
+        <textarea id="hookText" oninput="updatePreview()">WHAT DRUG SAVES HER LIFE?</textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Vital Label</label>
+          <input type="text" id="vitalLabel" value="Heart Rate" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+          <label>Vital Value</label>
+          <input type="text" id="vitalValue" value="32" oninput="updatePreview()">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Stat Badge</label>
+        <input type="text" id="statText" value="70% GET THIS WRONG" oninput="updatePreview()">
+      </div>
+
+      <div class="form-group">
+        <label>Quick Presets</label>
+        <div class="preset-buttons">
+          <button class="preset-btn" onclick="loadPreset('betablocker')">Beta Blocker</button>
+          <button class="preset-btn" onclick="loadPreset('hyperkalemia')">Hyperkalemia</button>
+          <button class="preset-btn" onclick="loadPreset('opioid')">Opioid OD</button>
+          <button class="preset-btn" onclick="loadPreset('acetaminophen')">Tylenol OD</button>
+          <button class="preset-btn" onclick="loadPreset('pneumothorax')">Pneumothorax</button>
+          <button class="preset-btn" onclick="loadPreset('anaphylaxis')">Anaphylaxis</button>
+          <button class="preset-btn" onclick="loadPreset('digoxin')">Digoxin</button>
+          <button class="preset-btn" onclick="loadPreset('mi')">Heart Attack</button>
+          <button class="preset-btn" onclick="loadPreset('sickle')">Sickle Cell</button>
+          <button class="preset-btn" onclick="loadPreset('dka')">DKA</button>
+          <button class="preset-btn" onclick="loadPreset('malignant')">Mal. Hyperthermia</button>
+          <button class="preset-btn" onclick="loadPreset('organophosphate')">Organophosphate</button>
+        </div>
+      </div>
+
+      <button class="download-btn" onclick="downloadThumbnail()">
+        Download PNG (1080×1920)
+      </button>
+    </div>
+
+    <!-- Preview Panel -->
+    <div class="preview-panel">
+      <div class="thumbnail" id="thumbnail">
+        <!-- Background layers -->
+        <div class="thumb-bg"></div>
+        <div class="thumb-gradient-1"></div>
+        <div class="thumb-gradient-2"></div>
+        <div class="thumb-gradient-3"></div>
+        <div class="thumb-grid"></div>
+
+        <!-- Corner accents -->
+        <div class="corner-accent corner-tl"></div>
+        <div class="corner-accent corner-br"></div>
+
+        <!-- Top Section -->
+        <div class="top-section">
+          <div class="stat-badge">
+            <div class="stat-badge-text" id="statDisplay">70% GET THIS WRONG</div>
+          </div>
+          <div class="vital-box">
+            <div class="vital-label" id="vitalLabelDisplay">Heart Rate</div>
+            <div class="vital-value" id="vitalValueDisplay">32</div>
+          </div>
+        </div>
+
+        <!-- EKG Line -->
+        <div class="ekg-container">
+          <svg viewBox="0 0 1080 180" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="ekgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ef4444" stop-opacity="0"/>
+                <stop offset="20%" stop-color="#ef4444" stop-opacity="1"/>
+                <stop offset="80%" stop-color="#ef4444" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+              </linearGradient>
+              <filter id="ekgGlow">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feFlood flood-color="#ef4444" flood-opacity="0.6"/>
+                <feComposite in2="blur" operator="in"/>
+                <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M0 90 L150 90 L200 90 L230 30 L260 150 L290 90 L450 90 L500 90 L530 30 L560 150 L590 90 L750 90 L800 90 L830 30 L860 150 L890 90 L1080 90"
+                  stroke="url(#ekgGradient)" stroke-width="3" fill="none" filter="url(#ekgGlow)"/>
+          </svg>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+          <div class="condition-line1" id="conditionLine1">BETA BLOCKER</div>
+          <div class="condition-line2" id="conditionLine2">OVERDOSE</div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Hook Question -->
+        <div class="hook-container">
+          <div class="hook-box">
+            <div class="hook-text" id="hookDisplay">WHAT DRUG SAVES HER LIFE?</div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+          <img src="./public/assets/character/brain-mascot.png" class="mascot" alt="Dr. Synapse">
+          <div class="brand-container">
+            <div class="brand-text">DR. SYNAPSE</div>
+            <div class="brand-sub">MEDICAL EDUCATION</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const presets = {
+      betablocker: {
+        line1: 'BETA BLOCKER',
+        line2: 'OVERDOSE',
+        hookText: 'WHAT DRUG SAVES HER LIFE?',
+        vitalLabel: 'Heart Rate',
+        vitalValue: '32',
+        statText: '70% GET THIS WRONG'
+      },
+      hyperkalemia: {
+        line1: 'HYPERKALEMIA',
+        line2: 'EMERGENCY',
+        hookText: 'K+ IS 7.2 — WHAT DO YOU DO FIRST?',
+        vitalLabel: 'Potassium',
+        vitalValue: '7.2',
+        statText: 'KILLS IN MINUTES'
+      },
+      opioid: {
+        line1: 'OPIOID',
+        line2: 'OVERDOSE',
+        hookText: "SHE STOPPED BREATHING. NOW WHAT?",
+        vitalLabel: 'Resp Rate',
+        vitalValue: '4',
+        statText: 'SECONDS MATTER'
+      },
+      acetaminophen: {
+        line1: 'TYLENOL',
+        line2: 'OVERDOSE',
+        hookText: 'FEELS FINE NOW. DEAD IN 72 HOURS.',
+        vitalLabel: 'Hours Post',
+        vitalValue: '4',
+        statText: 'THE SILENT KILLER'
+      },
+      pneumothorax: {
+        line1: 'TENSION',
+        line2: 'PNEUMOTHORAX',
+        hookText: "HIS LUNG IS A ONE-WAY DEATH TRAP",
+        vitalLabel: 'O2 Sat',
+        vitalValue: '82%',
+        statText: '60 SECONDS TO LIVE'
+      },
+      anaphylaxis: {
+        line1: 'ANAPHYLAXIS',
+        line2: 'SHOCK',
+        hookText: 'THROAT IS CLOSING. WHAT FIRST?',
+        vitalLabel: 'Blood Pressure',
+        vitalValue: '60/40',
+        statText: 'ACT OR DIE'
+      },
+      digoxin: {
+        line1: 'DIGOXIN',
+        line2: 'TOXICITY',
+        hookText: 'YELLOW VISION + SLOW HR = ???',
+        vitalLabel: 'Heart Rate',
+        vitalValue: '38',
+        statText: 'BOARDS FAVORITE'
+      },
+      mi: {
+        line1: 'HEART',
+        line2: 'ATTACK',
+        hookText: 'STEMI ON ECG. WHAT KILLS HIM?',
+        vitalLabel: 'Troponin',
+        vitalValue: '↑↑↑',
+        statText: 'TIME IS MUSCLE'
+      },
+      sickle: {
+        line1: 'SICKLE CELL',
+        line2: 'CRISIS',
+        hookText: 'ACUTE CHEST SYNDROME. NOW WHAT?',
+        vitalLabel: 'Pain Score',
+        vitalValue: '10',
+        statText: 'DEADLY IF MISSED'
+      },
+      dka: {
+        line1: 'DIABETIC',
+        line2: 'KETOACIDOSIS',
+        hookText: 'GLUCOSE 580. FIRST MOVE?',
+        vitalLabel: 'Glucose',
+        vitalValue: '580',
+        statText: 'FLUIDS OR INSULIN?'
+      },
+      malignant: {
+        line1: 'MALIGNANT',
+        line2: 'HYPERTHERMIA',
+        hookText: 'TEMP RISING FAST. WHAT STOPS IT?',
+        vitalLabel: 'Temp',
+        vitalValue: '106°F',
+        statText: 'ANESTHESIA NIGHTMARE'
+      },
+      organophosphate: {
+        line1: 'ORGANOPHOSPHATE',
+        line2: 'POISONING',
+        hookText: 'SLUDGE SYNDROME. ANTIDOTE?',
+        vitalLabel: 'Heart Rate',
+        vitalValue: '45',
+        statText: 'KNOW YOUR TOXIDROMES'
+      }
+    };
+
+    function updatePreview() {
+      document.getElementById('conditionLine1').textContent = document.getElementById('line1').value;
+      document.getElementById('conditionLine2').textContent = document.getElementById('line2').value;
+      document.getElementById('hookDisplay').textContent = document.getElementById('hookText').value;
+      document.getElementById('vitalLabelDisplay').textContent = document.getElementById('vitalLabel').value;
+      document.getElementById('vitalValueDisplay').textContent = document.getElementById('vitalValue').value;
+      document.getElementById('statDisplay').textContent = document.getElementById('statText').value;
+    }
+
+    function loadPreset(presetName) {
+      const preset = presets[presetName];
+      if (!preset) return;
+
+      document.getElementById('line1').value = preset.line1;
+      document.getElementById('line2').value = preset.line2;
+      document.getElementById('hookText').value = preset.hookText;
+      document.getElementById('vitalLabel').value = preset.vitalLabel;
+      document.getElementById('vitalValue').value = preset.vitalValue;
+      document.getElementById('statText').value = preset.statText;
+
+      updatePreview();
+    }
+
+    async function downloadThumbnail() {
+      const thumbnail = document.getElementById('thumbnail');
+      const btn = document.querySelector('.download-btn');
+
+      btn.textContent = 'Generating...';
+      btn.disabled = true;
+
+      const originalTransform = thumbnail.style.transform;
+      thumbnail.style.transform = 'none';
+
+      try {
+        const canvas = await html2canvas(thumbnail, {
+          scale: 1,
+          useCORS: true,
+          allowTaint: true,
+          width: 1080,
+          height: 1920,
+          backgroundColor: null
+        });
+
+        thumbnail.style.transform = originalTransform;
+
+        const line1 = document.getElementById('line1').value.toLowerCase().replace(/\s+/g, '-');
+        const line2 = document.getElementById('line2').value.toLowerCase().replace(/\s+/g, '-');
+        const filename = `dr-synapse-${line1}-${line2}.png`;
+
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+
+        btn.textContent = 'Downloaded!';
+        setTimeout(() => {
+          btn.textContent = 'Download PNG (1080×1920)';
+          btn.disabled = false;
+        }, 2000);
+
+      } catch (error) {
+        console.error('Error:', error);
+        thumbnail.style.transform = originalTransform;
+        btn.textContent = 'Error - Try Again';
+        btn.disabled = false;
+      }
+    }
+
+    updatePreview();
+  </script>
+</body>
+</html>

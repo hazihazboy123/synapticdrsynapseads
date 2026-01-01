@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DR. SYNAPSE MEME MATCHING SYSTEM
+  Synaptic Recall Ads - Viral Medical Education
+
+  This document enables AI-powered meme placement by matching
+  Dr. Synapse's narration timestamps to reaction clip cutaways.
+
+  Location: ~/synaptic-recall-ads/vlipsy-videos/
+  Total Clips: 78
+-->
+
+<meme_matching_system>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       SECTION 1: DR. SYNAPSE CHARACTER DEFINITION
+       ═══════════════════════════════════════════════════════════════════════════ -->
+
+  <character_profile>
+    <name>Dr. Synapse (Grandpa Spuds)</name>
+    <voice_id>NOpBlnGInO9m6vDvFkFC</voice_id>
+    <persona>
+      Grumpy, experienced medical educator who roasts wrong answers with
+      vivid analogies while genuinely caring about teaching life-saving medicine.
+      Southern-inflected speech with CAPS emphasis on key concepts.
+    </persona>
+
+    <speech_patterns>
+      <pattern name="CAPS_EMPHASIS">Key medical terms and dramatic moments in ALL CAPS</pattern>
+      <pattern name="ABSURD_ANALOGY">Wild comparisons: "EKG looks like my signature after twelve hours on call"</pattern>
+      <pattern name="SOUTHERN_COLLOQUIAL">Phrases like "DADGUM", "fixin' to", "ain't", "hollerin'"</pattern>
+      <pattern name="ROAST_MOMENT">Direct attacks on wrong choices: "You just KILLED your patient"</pattern>
+      <pattern name="URGENCY_PRESSURE">"TICK TOCK", "DILLY-DALLY", countdown energy</pattern>
+      <pattern name="CARING_PIVOT">Shifts from roasting to genuine teaching</pattern>
+      <pattern name="DISMISSAL_SIGN_OFF">"Now get OUT of here", "get outta here"</pattern>
+    </speech_patterns>
+
+    <script_structure>
+      <phase name="HOOK">Dramatic patient presentation with vivid imagery</phase>
+      <phase name="QUESTION">Multiple choice options with time pressure</phase>
+      <phase name="ANSWER_REVEAL">Correct answer + roast of common wrong picks</phase>
+      <phase name="TEACHING">Mechanism explanation with analogies</phase>
+      <phase name="SIGN_OFF">Dismissive ending with clinical wisdom</phase>
+    </script_structure>
+
+    <example_scripts>
+      <script topic="Hyperkalemia">
+        "His heart is playing JAZZ right now. Improvising. Skipped dialysis THREE WEEKS
+        for a trip to the BAHAMAS and now his potassium is SEVEN POINT EIGHT. That's not
+        a number, that's a THREAT. EKG looks like my signature after twelve hours on call.
+        QRS wider than a CHEESECAKE FACTORY MENU."
+      </script>
+      <script topic="Opioid Overdose">
+        "Opioids LATCH onto mu receptors in the brainstem like a DRUNK passed out on your COUCH.
+        Naloxone's got HIGHER AFFINITY - it straight up BOOTS the opioid molecule OFF like a
+        bouncer throwin' out a TROUBLEMAKER."
+      </script>
+      <script topic="Sickle Cell">
+        "Her hemoglobin decided to fold up like a BUSTED LAWN CHAIR. These BENT-UP cells
+        don't flow through capillaries - they JAM UP like LOGS in a river, creating a
+        MASSIVE LOGJAM in her lungs."
+      </script>
+      <script topic="Malignant Hyperthermia">
+        "His muscles are COOKING themselves from the INSIDE. A blanket? That's like
+        fighting a HOUSE FIRE with a SQUIRT GUN."
+      </script>
+    </example_scripts>
+  </character_profile>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       SECTION 2: TRIGGER TYPES
+       ═══════════════════════════════════════════════════════════════════════════ -->
+
+  <trigger_types>
+    <type id="CAPS_EMPHASIS">
+      <description>Words in ALL CAPS that emphasize key medical concepts or dramatic moments</description>
+      <examples>["FLATLINE", "JAZZ", "THREAT", "BOUNCER", "LOGJAM", "COOKING"]</examples>
+      <meme_fit>Shocked reactions, dramatic reveals, recognition moments</meme_fit>
+    </type>
+
+    <type id="ABSURD_ANALOGY">
+      <description>Wild, vivid comparisons that make complex concepts memorable</description>
+      <examples>["CHEESECAKE FACTORY MENU", "BUSTED LAWN CHAIR", "DRUNK on your COUCH", "SQUIRT GUN"]</examples>
+      <meme_fit>Laughing reactions, shocked faces, "did he just say that?" moments</meme_fit>
+    </type>
+
+    <type id="WRONG_ANSWER_ROAST">
+      <description>Direct attacks on incorrect answer choices</description>
+      <examples>["You just KILLED your patient", "you BUFFOONS", "you knuckleheads"]</examples>
+      <meme_fit>Laughing/roast memes, facepalm, crying reactions</meme_fit>
+    </type>
+
+    <type id="PATIENT_DEATH_CONSEQUENCE">
+      <description>Statements about fatal outcomes from wrong choices</description>
+      <examples>["BODY BAG", "gonna be ROOM TEMPERATURE", "about to DIE"]</examples>
+      <meme_fit>Coffin dance, sad violin, crying memes, dramatic reveals</meme_fit>
+    </type>
+
+    <type id="DRAMATIC_REVEAL">
+      <description>Answer reveals or shocking clinical findings</description>
+      <examples>["It's B!", "potassium is SEVEN POINT EIGHT", "temperature's ONE HUNDRED AND SEVEN"]</examples>
+      <meme_fit>Shocked reactions, dramatic sound effects, recognition pointing</meme_fit>
+    </type>
+
+    <type id="MECHANISM_EXPLANATION">
+      <description>How drugs or pathophysiology work - teaching moments</description>
+      <examples>["BOOTS the opioid OFF", "UNCLOGGING that river", "blocks the calcium channels"]</examples>
+      <meme_fit>Whiteboard explaining, recognition moments, approval nods</meme_fit>
+    </type>
+
+    <type id="URGENCY_COUNTDOWN">
+      <description>Time pressure and countdown moments</description>
+      <examples>["TICK TOCK", "FORTY FIVE SECONDS", "Clock's TICKIN'"]</examples>
+      <meme_fit>Panic reactions, dramatic music stings, scared faces</meme_fit>
+    </type>
+
+    <type id="VIVID_IMAGERY">
+      <description>Graphic descriptions of clinical scenarios</description>
+      <examples>["GASPING like a fish outta water", "BLUER than a SMURF", "muscles HARDER than"]</examples>
+      <meme_fit>Shocked reactions, dramatic reveals, confused faces</meme_fit>
+    </type>
+
+    <type id="DISMISSAL">
+      <description>Sign-off and ending statements</description>
+      <examples>["Now get OUT of here", "get outta here", "read a CHART once in a while"]</examples>
+      <meme_fit>Get out memes, dismissive waves, approval for survivors</meme_fit>
+    </type>
+
+    <type id="APPROVAL_MOMENT">
+      <description>Rare positive acknowledgments or successful outcomes</description>
+      <examples>["BEAUTIFUL thing", "SAVE A LIFE", "buying her lungs time to HEAL"]</examples>
+      <meme_fit>Celebration, approval nods, clapping</meme_fit>
+    </type>
+  </trigger_types>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       SECTION 3: COMPLETE MEME CATALOG (78 CLIPS)
+       ═══════════════════════════════════════════════════════════════════════════ -->
+
+  <meme_catalog>
+    <meta>
+      <total_clips>78</total_clips>
+      <location>/Users/haziq/synaptic-recall-ads/vlipsy-videos/</location>
+      <quality>480p</quality>
+      <last_updated>2025-12-20</last_updated>
+    </meta>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: LAUGHING / ROAST (15 clips)
+         Use for: Wrong answer roasts, absurd analogies, peak comedy moments
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="LAUGHING" count="15">
+      <meme>
+        <id>zias-laughing-meme</id>
+        <filename>zias-laughing-meme.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>ZIAS!</source>
+        <triggers>["CAPS_EMPHASIS", "ABSURD_ANALOGY", "WRONG_ANSWER_ROAST"]</triggers>
+        <description>Two guys losing it laughing - uncontrollable peak comedy reaction</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "that potassium is a DADGUM LIE",
+          "QRS wider than a CHEESECAKE FACTORY MENU",
+          "You just KILLED your patient, congratulations"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>extreme-laugh-mutahar</id>
+        <filename>extreme-laugh-mutahar.mp4</filename>
+        <duration_sec>7</duration_sec>
+        <source>SomeOrdinaryGamers</source>
+        <triggers>["WRONG_ANSWER_ROAST", "ABSURD_ANALOGY"]</triggers>
+        <description>Mutahar's laugh that keeps escalating - building hysteria</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "picked cooling BLANKETS. His muscles are COOKING themselves",
+          "fighting a HOUSE FIRE with a SQUIRT GUN",
+          "EKG looks like my signature after twelve hours on call"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>risitas-laughing</id>
+        <filename>risitas-laughing.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Spanish TV Interview</source>
+        <triggers>["ABSURD_ANALOGY", "CAPS_EMPHASIS"]</triggers>
+        <description>El Risitas classic wheeze laugh - infectious absurdity reaction</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "hemoglobin decided to fold up like a BUSTED LAWN CHAIR",
+          "DRUNK passed out on your COUCH",
+          "improvising like JAZZ"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>supa-hot-fire-ohhhhh</id>
+        <filename>supa-hot-fire-ohhhhh.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Supa Hot Fire</source>
+        <triggers>["WRONG_ANSWER_ROAST", "DRAMATIC_REVEAL"]</triggers>
+        <description>Crowd "OHHHHH" reaction - sick burn acknowledgment</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "You just KILLED your patient",
+          "straight up BOOTS the opioid molecule OFF",
+          "It's B, DANTROLENE!"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>jjj-laughing</id>
+        <filename>jjj-laughing.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Spider-Man (J. Jonah Jameson)</source>
+        <triggers>["WRONG_ANSWER_ROAST", "CAPS_EMPHASIS"]</triggers>
+        <description>J. Jonah Jameson sharp editorial laugh - quick punchy mockery</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "A) Tylenol",
+          "none of you BUFFOONS",
+          "you sweet summer children"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>laughing-cat-meme</id>
+        <filename>laughing-cat-meme.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Cat Video Meme</source>
+        <triggers>["ABSURD_ANALOGY", "WRONG_ANSWER_ROAST"]</triggers>
+        <description>Cat with human laugh dubbed - absurdist humor</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "LOGS in a river",
+          "might as well be hollering at a brick wall",
+          "Cooling blankets"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>mustache-man-laugh</id>
+        <filename>mustache-man-laugh.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Internet Meme</source>
+        <triggers>["ABSURD_ANALOGY"]</triggers>
+        <description>Contagious mustache man laugh - building escalation</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "RIGID as a FENCE POST",
+          "muscles HARDER than my ex-wife's HEART"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>trying-not-to-laugh</id>
+        <filename>trying-not-to-laugh.mp4</filename>
+        <duration_sec>7</duration_sec>
+        <source>Meme Compilation</source>
+        <triggers>["ABSURD_ANALOGY", "WRONG_ANSWER_ROAST"]</triggers>
+        <description>Holding back laughter, failing to stay serious</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Temperature's CLIMBING faster than my blood pressure at a FAMILY REUNION",
+          "read a CHART once in a while"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>big-narstie-laugh</id>
+        <filename>big-narstie-laugh.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Big Narstie Show</source>
+        <triggers>["CAPS_EMPHASIS", "ABSURD_ANALOGY"]</triggers>
+        <description>Deep belly laugh - major comedic moments</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "CHEESECAKE FACTORY MENU",
+          "bouncer throwin' out a TROUBLEMAKER"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>kawhi-leonard-funny-laugh</id>
+        <filename>kawhi-leonard-funny-laugh.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>NBA Press Conference</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Kawhi's robotic awkward laugh - uncomfortable "you picked THAT?"</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "reached for flumazenil",
+          "picked simple transfusion thinking"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>he-he-boy-2</id>
+        <filename>he-he-boy-2.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Internet Meme</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>Cheeky "hehe" grin - trick question revealed</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "Here's the CATCH",
+          "But wait"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>noice-michael-rosen</id>
+        <filename>noice-michael-rosen.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Michael Rosen Poetry</source>
+        <triggers>["APPROVAL_MOMENT", "MECHANISM_EXPLANATION"]</triggers>
+        <description>Satisfying "NOICE" - approval and satisfaction</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "BEAUTIFUL thing",
+          "buying her lungs time to HEAL",
+          "muscles RELAX, temperature DROPS"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>kevin-hart-alright-alright-alright</id>
+        <filename>kevin-hart-alright-alright-alright.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>Kevin Hart</source>
+        <triggers>["APPROVAL_MOMENT"]</triggers>
+        <description>Kevin Hart approval energy - when student nails it</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Two point five milligrams per kilo",
+          "SAVE A LIFE"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>vine-angry-kid</id>
+        <filename>vine-angry-kid.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Vine</source>
+        <triggers>["URGENCY_COUNTDOWN", "CAPS_EMPHASIS"]</triggers>
+        <description>Kid freaking out - chaotic emergency energy</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "full PANIC mode",
+          "TICK TOCK",
+          "about to DIE"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>woah-hey-hey-hey</id>
+        <filename>woah-hey-hey-hey.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Meme</source>
+        <triggers>["WRONG_ANSWER_ROAST", "CAPS_EMPHASIS"]</triggers>
+        <description>"Woah woah woah hold up" - stop right there energy</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Now SHUT YOUR TRAP",
+          "LISTEN UP"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: SHOCKED / REACTION (12 clips)
+         Use for: Shocking lab values, dramatic reveals, disbelief
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="SHOCKED" count="12">
+      <meme>
+        <id>shocked-cat</id>
+        <filename>shocked-cat.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Cat Video</source>
+        <triggers>["DRAMATIC_REVEAL", "VIVID_IMAGERY"]</triggers>
+        <description>Wide-eyed cat frozen in pure shock - perfect for "X is a lie" reveals</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "potassium is SEVEN POINT EIGHT",
+          "temperature's ONE HUNDRED AND SEVEN",
+          "O2 sat's SEVENTY-EIGHT"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>joe-rogan-shocked</id>
+        <filename>joe-rogan-shocked.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Joe Rogan Podcast</source>
+        <triggers>["DRAMATIC_REVEAL", "MECHANISM_EXPLANATION"]</triggers>
+        <description>Joe Rogan genuine surprise - counterintuitive medical facts</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "it straight up BOOTS the opioid molecule OFF",
+          "naloxone only lasts thirty to ninety minutes",
+          "That's not a number, that's a THREAT"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>what-ishowspeed</id>
+        <filename>what-ishowspeed.mp4</filename>
+        <duration_sec>10</duration_sec>
+        <source>IShowSpeed Streams</source>
+        <triggers>["DRAMATIC_REVEAL", "CAPS_EMPHASIS", "VIVID_IMAGERY"]</triggers>
+        <description>IShowSpeed escalating "WHAT?!" - extreme shock for extreme values</description>
+        <intensity>VERY_HIGH</intensity>
+        <example_moments>[
+          "SEVEN POINT EIGHT",
+          "FOUR breaths a minute",
+          "FLATLINE"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>wwe-shocked-fan</id>
+        <filename>wwe-shocked-fan.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>WWE</source>
+        <triggers>["DRAMATIC_REVEAL"]</triggers>
+        <description>Wrestling fan jaw drop - plot twist diagnoses</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "It's B!",
+          "You just KILLED your patient"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>john-cena-are-you-sure-about-that</id>
+        <filename>john-cena-are-you-sure-about-that.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>John Cena</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>John Cena "Are you sure about that?" - questioning wrong picks</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "picked simple transfusion",
+          "reached for flumazenil"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>russell-westbrook-what-bro</id>
+        <filename>russell-westbrook-what-bro.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>NBA Press Conference</source>
+        <triggers>["WRONG_ANSWER_ROAST", "ABSURD_ANALOGY"]</triggers>
+        <description>Russell Westbrook confused disgust - "what are you talking about?"</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "can't tell the difference between an OPIOID and a BENZO",
+          "his GABA receptors"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>daaammnnn-friday</id>
+        <filename>daaammnnn-friday.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Friday (1995)</source>
+        <triggers>["CAPS_EMPHASIS", "DRAMATIC_REVEAL"]</triggers>
+        <description>"DAMN!" impressed reaction - shocking pathology</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "SEVEN POINT EIGHT",
+          "reticulocyte count's through the ROOF",
+          "MASSIVE LOGJAM"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>vince-mcmahon-falls-out-of-chair</id>
+        <filename>vince-mcmahon-falls-out-of-chair.mp4</filename>
+        <duration_sec>7</duration_sec>
+        <source>WWE</source>
+        <triggers>["DRAMATIC_REVEAL", "ABSURD_ANALOGY"]</triggers>
+        <description>Vince McMahon dramatic chair fall - extreme reaction to reveals</description>
+        <intensity>VERY_HIGH</intensity>
+        <example_moments>[
+          "COOKING themselves from the INSIDE",
+          "DEATH SPIRAL"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>awkward-black-kid</id>
+        <filename>awkward-black-kid.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Meme</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Awkward confused kid - uncomfortable silence after wrong pick</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "And I KNOW some of you",
+          "half you GENIUSES"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>kitchen-nightmares-dramatic</id>
+        <filename>kitchen-nightmares-dramatic.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Kitchen Nightmares</source>
+        <triggers>["VIVID_IMAGERY", "DRAMATIC_REVEAL"]</triggers>
+        <description>Gordon Ramsay dramatic sting - horrifying findings</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "X-ray shows a new INFILTRATE",
+          "QRS wider than"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>doge-dun-dun-duuun-dramatic</id>
+        <filename>doge-dun-dun-duuun-dramatic.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Doge Meme</source>
+        <triggers>["DRAMATIC_REVEAL", "URGENCY_COUNTDOWN"]</triggers>
+        <description>Dramatic "dun dun duuun" reveal sting</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "That's not a number, that's a THREAT",
+          "about four minutes"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>vine-boom-sound-effect</id>
+        <filename>vine-boom-sound-effect.mp4</filename>
+        <duration_sec>1</duration_sec>
+        <source>Vine</source>
+        <triggers>["CAPS_EMPHASIS", "DRAMATIC_REVEAL"]</triggers>
+        <description>Impact boom - punctuating shocking statements</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "FLATLINE",
+          "DEAD",
+          "THREAT"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: SADNESS / DEVASTATION (8 clips)
+         Use for: Patient death, wrong answer consequences, terminal outcomes
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="SADNESS" count="8">
+      <meme>
+        <id>coffin-dance</id>
+        <filename>coffin-dance.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Coffin Dance Meme</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Coffin dancers - iconic patient death consequence</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "You just KILLED your patient",
+          "BODY BAG",
+          "gonna be ROOM TEMPERATURE"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>sad-violin</id>
+        <filename>sad-violin.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>SpongeBob (Mr. Krabs)</source>
+        <triggers>["WRONG_ANSWER_ROAST", "PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Tiny violin - sarcastic sympathy for poor choices</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "logjam gets WORSE",
+          "viscosity goes UP",
+          "patient wakes up, feels fine"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>black-guy-crying</id>
+        <filename>black-guy-crying.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Meme</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "WRONG_ANSWER_ROAST"]</triggers>
+        <description>Intense emotional crying - wrong answer devastation</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "You just KILLED your patient, congratulations",
+          "about to DIE"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>epic-cry-guy</id>
+        <filename>epic-cry-guy.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Internet Meme</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Exaggerated ugly cry - when you killed the patient</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "BODY BAG",
+          "tissue starts DYING"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>man-crying</id>
+        <filename>man-crying.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Various</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "VIVID_IMAGERY"]</triggers>
+        <description>Genuine ugly cry - terminal diagnosis reveals</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "watchin' his best friend DIE",
+          "Nineteen years old and about to DIE"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>crying-then-laughing</id>
+        <filename>crying-then-laughing.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Meme Compilation</source>
+        <triggers>["ABSURD_ANALOGY", "PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Emotional whiplash - when diagnosis goes from bad to absurd</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "It's a DEATH SPIRAL",
+          "hypoxia makes MORE cells sickle"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>curb-your-enthusiasm</id>
+        <filename>curb-your-enthusiasm.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Curb Your Enthusiasm</source>
+        <triggers>["WRONG_ANSWER_ROAST", "PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Larry David theme - everything just went wrong</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "two hours later he's BLUE again",
+          "naloxone wore off but the fentanyl didn't"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>sully-groan</id>
+        <filename>sully-groan.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Monsters Inc</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Sully exhausted groan - disappointed reaction</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "And I KNOW half you",
+          "you knuckleheads picked"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: PANIC / EMERGENCY (7 clips)
+         Use for: Crashing patients, urgency, medical emergencies
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="PANIC" count="7">
+      <meme>
+        <id>scared-dog</id>
+        <filename>scared-dog.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Dog Video</source>
+        <triggers>["URGENCY_COUNTDOWN", "VIVID_IMAGERY"]</triggers>
+        <description>Wide-eyed panic dog - medical emergency energy</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "full PANIC mode",
+          "GASPING like a fish outta water"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>oh-no-mr-bean</id>
+        <filename>oh-no-mr-bean.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Mr. Bean</source>
+        <triggers>["WRONG_ANSWER_ROAST", "PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Mr. Bean dawning realization - when you realize answer was wrong</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Simple transfusion?",
+          "You're just ADDING more fluid"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>michael-scott-no-god-please-no</id>
+        <filename>michael-scott-no-god-please-no.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>The Office</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "URGENCY_COUNTDOWN"]</triggers>
+        <description>"NO GOD PLEASE NO" - watching patient crash</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "about to COOKS alive",
+          "gonna be ROOM TEMPERATURE in about four minutes"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>gamer-crash-out-laptop-throw</id>
+        <filename>gamer-crash-out-laptop-throw.mp4</filename>
+        <duration_sec>7</duration_sec>
+        <source>Gamer Rage</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "CAPS_EMPHASIS"]</triggers>
+        <description>Gamer throws laptop - complete system failure rage</description>
+        <intensity>VERY_HIGH</intensity>
+        <example_moments>[
+          "multi-organ failure",
+          "DEATH SPIRAL"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>gamer-smashes-computer</id>
+        <filename>gamer-smashes-computer.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>Gamer Rage</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Gamer destroys PC - catastrophic failure</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "logjam gets WORSE",
+          "system CRASH"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>keyboard-smash</id>
+        <filename>keyboard-smash.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Office Rage</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "CAPS_EMPHASIS"]</triggers>
+        <description>Office keyboard smash - treatment failure frustration</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Everything going wrong",
+          "MASSIVE LOGJAM"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>explosion-meme</id>
+        <filename>explosion-meme.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Action Movie</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "VIVID_IMAGERY"]</triggers>
+        <description>Big explosion - catastrophic events</description>
+        <intensity>HIGH</intensity>
+        <example_moments>[
+          "DEATH SPIRAL",
+          "multi-organ failure",
+          "COOKING themselves"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: FACEPALM / DISAPPOINTMENT (6 clips)
+         Use for: Obvious mistakes, missed diagnoses, common errors
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="FACEPALM" count="6">
+      <meme>
+        <id>forehead-slap</id>
+        <filename>forehead-slap.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Meme</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Classic facepalm - obvious mistake reaction</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "wanted to fix the number",
+          "The NUMBER don't matter"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>naked-gun-forehead-slap</id>
+        <filename>naked-gun-forehead-slap.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Naked Gun</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Leslie Nielsen facepalm - classic "duh" moment</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "can't tell the difference",
+          "picked Tylenol"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>phil-swift-thats-a-lot-of-damage</id>
+        <filename>phil-swift-thats-a-lot-of-damage.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Flex Tape</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "VIVID_IMAGERY"]</triggers>
+        <description>"That's a lot of damage!" - severe pathology</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "MASSIVE LOGJAM",
+          "tissue starts DYING"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>shrek-really</id>
+        <filename>shrek-really.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Shrek</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Shrek "really?" face - judging poor decisions</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "picked cooling BLANKETS",
+          "A) Tylenol"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>sus-dog</id>
+        <filename>sus-dog.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Dog Video</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>Suspicious side-eye dog - unreliable patient history</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "Mama thought it was just the FLU",
+          "just wanted to take the edge off"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>awkward-crickets</id>
+        <filename>awkward-crickets.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Sound Effect</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Cricket silence - awkward after wrong answer</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "And I KNOW half you",
+          "And I BET half you GENIUSES"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: TEACHING / RECOGNITION (6 clips)
+         Use for: Aha moments, pattern recognition, explanation beats
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="TEACHING" count="6">
+      <meme>
+        <id>leonardo-dicaprio-pointing</id>
+        <filename>leonardo-dicaprio-pointing.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Once Upon a Time in Hollywood</source>
+        <triggers>["MECHANISM_EXPLANATION", "APPROVAL_MOMENT"]</triggers>
+        <description>Leo excited pointing "THAT'S IT!" - pattern recognition click</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "straight up BOOTS the opioid molecule OFF",
+          "UNCLOGGING that river",
+          "breaking the death spiral"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>explaining-on-whiteboard</id>
+        <filename>explaining-on-whiteboard.mp4</filename>
+        <duration_sec>10</duration_sec>
+        <source>Avengers Meme</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>Whiteboard explanation meme - teaching moment</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Now LISTEN UP, 'cause this is how",
+          "Here's where naloxone",
+          "Now SHUT YOUR TRAP and listen"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>trump-pointing-meme</id>
+        <filename>trump-pointing-meme.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Meme</source>
+        <triggers>["APPROVAL_MOMENT", "DRAMATIC_REVEAL"]</triggers>
+        <description>Pointing recognition - identifying correct answer</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "It's B!",
+          "It's C, DANTROLENE!"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>jim-carrey-typing</id>
+        <filename>jim-carrey-typing.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Bruce Almighty</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>Intense typing - looking up diagnosis energy</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "EKG looks like",
+          "X-ray shows"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>kazoo-kid</id>
+        <filename>kazoo-kid.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Kazoo Kid</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>"Wait a minute..." - realization dawning</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "But here's the CATCH",
+          "here's the NASTY part"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>thanos-i-am-inevitable</id>
+        <filename>thanos-i-am-inevitable.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>Avengers: Endgame</source>
+        <triggers>["MECHANISM_EXPLANATION", "VIVID_IMAGERY"]</triggers>
+        <description>"I am inevitable" - disease progression, unstoppable cascade</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "DEATH SPIRAL",
+          "hypoxia makes MORE cells sickle"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: DRAMATIC / OMINOUS (5 clips)
+         Use for: Bad news, complications, menacing foreshadowing
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="DRAMATIC" count="5">
+      <meme>
+        <id>willem-dafoe-looking-up</id>
+        <filename>willem-dafoe-looking-up.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>Various Films</source>
+        <triggers>["VIVID_IMAGERY", "PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Willem Dafoe menacing upward glance - complications incoming</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "here's the NASTY part",
+          "some of these long-acting opioids hang around for HOURS"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>to-be-continued-meme</id>
+        <filename>to-be-continued-meme.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>JoJo's Bizarre Adventure</source>
+        <triggers>["URGENCY_COUNTDOWN", "PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>"To Be Continued" JoJo meme - cliffhanger energy</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "about four minutes",
+          "FORTY FIVE SECONDS"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>trailer-park-boys-falling-stairs</id>
+        <filename>trailer-park-boys-falling-stairs.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Trailer Park Boys</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE", "ABSURD_ANALOGY"]</triggers>
+        <description>Falling down stairs - cascading failure</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "DEATH SPIRAL",
+          "Everything cascading wrong"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>mandalorian-sipping-soup</id>
+        <filename>mandalorian-sipping-soup.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>The Mandalorian</source>
+        <triggers>["WRONG_ANSWER_ROAST", "MECHANISM_EXPLANATION"]</triggers>
+        <description>Mando casually sipping - "I'll wait while you reconsider"</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "Now SHUT YOUR TRAP and listen",
+          "This is STEP 1 material"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>tv-color-bars</id>
+        <filename>tv-color-bars.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Technical Difficulties</source>
+        <triggers>["PATIENT_DEATH_CONSEQUENCE"]</triggers>
+        <description>Technical difficulties screen - system crash</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "respiratory drive is FLATLINED",
+          "brain FORGETS"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: TIME TRANSITIONS (6 clips)
+         Use for: Time skips, waiting, between clinical events
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="TIME_SKIP" count="6">
+      <meme>
+        <id>5-minutes-later-spongebob</id>
+        <filename>5-minutes-later-spongebob.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>SpongeBob SquarePants</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>"5 minutes later" time card - waiting for treatment</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "patient wakes up, feels fine",
+          "two hours later"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>a-few-moments-later</id>
+        <filename>a-few-moments-later.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>SpongeBob SquarePants</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>"A few moments later" French narrator - quick transition</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "suddenly that man's brain REMEMBERS",
+          "then two hours later"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>spongebob-next-day</id>
+        <filename>spongebob-next-day.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>SpongeBob SquarePants</source>
+        <triggers>["MECHANISM_EXPLANATION"]</triggers>
+        <description>"The next day" time card - follow-up</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "two hours later",
+          "thirty to ninety minutes"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>mr-bean-waiting</id>
+        <filename>mr-bean-waiting.mp4</filename>
+        <duration_sec>6</duration_sec>
+        <source>Mr. Bean</source>
+        <triggers>["URGENCY_COUNTDOWN"]</triggers>
+        <description>Mr. Bean checking watch - waiting for labs</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "TICK TOCK",
+          "Every second you DILLY-DALLY"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>club-vibes</id>
+        <filename>club-vibes.mp4</filename>
+        <duration_sec>8</duration_sec>
+        <source>Club Video</source>
+        <triggers>["APPROVAL_MOMENT"]</triggers>
+        <description>Club celebration energy - victory moment</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "SAVE A LIFE",
+          "muscles RELAX, temperature DROPS"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>dancing-kid</id>
+        <filename>dancing-kid.mp4</filename>
+        <duration_sec>10</duration_sec>
+        <source>Internet Meme</source>
+        <triggers>["APPROVAL_MOMENT"]</triggers>
+        <description>Victory dance celebration - got the right answer</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "It's B!",
+          "SAVE A LIFE"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: DISMISSIVE / SIGN-OFF (7 clips)
+         Use for: Ending dismissals, rejection of wrong answers
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="DISMISSIVE" count="7">
+      <meme>
+        <id>get-out</id>
+        <filename>get-out.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Meme</source>
+        <triggers>["DISMISSAL", "WRONG_ANSWER_ROAST"]</triggers>
+        <description>"Get out" dismissal - rejecting wrong answer</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Now get OUT of here",
+          "Now GET OUT"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>rhobh-no-you-dont</id>
+        <filename>rhobh-no-you-dont.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Real Housewives</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>"No, you don't!" - shutting down wrong choice</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "can't tell the difference",
+          "That man's respiratory drive is FLATLINED, not his GABA receptors"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>michael-jordan-stop-it-get-help</id>
+        <filename>michael-jordan-stop-it-get-help.mp4</filename>
+        <duration_sec>5</duration_sec>
+        <source>Michael Jordan PSA</source>
+        <triggers>["WRONG_ANSWER_ROAST", "DISMISSAL"]</triggers>
+        <description>"Stop it. Get some help." - intervention for bad choices</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "read a CHART once in a while",
+          "none of you BUFFOONS"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>boy-if-you-dont</id>
+        <filename>boy-if-you-dont.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Vine</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>"Boy if you don't..." - warning/threatening wrong picker</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "And I KNOW some of you",
+          "PLEASE tell me none of you"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>shiver-me-timbers</id>
+        <filename>shiver-me-timbers.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Meme</source>
+        <triggers>["WRONG_ANSWER_ROAST"]</triggers>
+        <description>Sarcastic "shiver me timbers" - mock fear response</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "Cooling blankets",
+          "Tylenol"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>shia-labeouf-clapping</id>
+        <filename>shia-labeouf-clapping.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Shia LaBeouf</source>
+        <triggers>["APPROVAL_MOMENT", "DISMISSAL"]</triggers>
+        <description>Shia slow clap - approving correct answer</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "Learn it, carry it, SAVE A LIFE",
+          "Now get outta here"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>minions-cheer</id>
+        <filename>minions-cheer.mp4</filename>
+        <duration_sec>4</duration_sec>
+        <source>Despicable Me</source>
+        <triggers>["APPROVAL_MOMENT"]</triggers>
+        <description>Minions celebrating - treatment success</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "breaking the death spiral",
+          "buying her lungs time to HEAL"
+        ]</example_moments>
+      </meme>
+    </category>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         CATEGORY: SOUND EFFECTS (6 clips)
+         Use for: Punctuation, impacts, comedic beats
+         ───────────────────────────────────────────────────────────────────────── -->
+
+    <category name="SOUND_EFFECTS" count="6">
+      <meme>
+        <id>bone-crack</id>
+        <filename>bone-crack.mp4</filename>
+        <duration_sec>1</duration_sec>
+        <source>Sound Effect</source>
+        <triggers>["VIVID_IMAGERY"]</triggers>
+        <description>Satisfying/disturbing crack - fractures, bone conditions</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "RIGID as a FENCE POST",
+          "muscles are HARDER"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>censor-screen-beep</id>
+        <filename>censor-screen-beep.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>TV Censor</source>
+        <triggers>["ABSURD_ANALOGY"]</triggers>
+        <description>TV censor bleep - implying something too shocking</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "muscles HARDER than my ex-wife's HEART",
+          "You just KILLED your patient"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>meow</id>
+        <filename>meow.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Cat Video</source>
+        <triggers>["ABSURD_ANALOGY"]</triggers>
+        <description>Random cat meow - comedic interruption</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "BAHAMAS",
+          "CHEESECAKE FACTORY"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>fahhh-sound-effect</id>
+        <filename>fahhh-sound-effect.mp4</filename>
+        <duration_sec>2</duration_sec>
+        <source>Sound Effect</source>
+        <triggers>["CAPS_EMPHASIS"]</triggers>
+        <description>"Fahhh" sound - weird moment punctuation</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "sweet summer children",
+          "you GENIUSES"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>shocked-cat-audio</id>
+        <filename>shocked-cat-audio.m4a</filename>
+        <duration_sec>2</duration_sec>
+        <source>Cat Video</source>
+        <triggers>["DRAMATIC_REVEAL"]</triggers>
+        <description>Shocked cat sound - audio overlay only</description>
+        <intensity>LOW</intensity>
+        <example_moments>[
+          "SEVEN POINT EIGHT",
+          "ONE HUNDRED AND SEVEN"
+        ]</example_moments>
+      </meme>
+
+      <meme>
+        <id>tom-cruise-i-will-be-there</id>
+        <filename>tom-cruise-i-will-be-there.mp4</filename>
+        <duration_sec>3</duration_sec>
+        <source>Jerry Maguire</source>
+        <triggers>["MECHANISM_EXPLANATION", "APPROVAL_MOMENT"]</triggers>
+        <description>Tom Cruise "I got you" intensity - treatment coming to rescue</description>
+        <intensity>MEDIUM</intensity>
+        <example_moments>[
+          "Naloxone is a BEAUTIFUL thing",
+          "Dantrolene blocks the calcium channels"
+        ]</example_moments>
+      </meme>
+    </category>
+  </meme_catalog>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       SECTION 4: MEME SELECTION GUIDELINES
+       ═══════════════════════════════════════════════════════════════════════════ -->
+
+  <selection_guidelines>
+
+    <variety_principle>
+      As you place memes throughout the video, favor variety in selection.
+      If you've already used a meme, prefer others from the same category
+      unless this moment is a significantly better fit.
+
+      Trust your judgment — variety matters but FIT matters more.
+
+      NEVER use the same meme twice in one video unless the script is
+      exceptionally long (3+ minutes).
+    </variety_principle>
+
+    <intensity_matching>
+      Match meme intensity to script intensity:
+
+      - LOW intensity: Casual teaching moments, minor emphasis
+      - MEDIUM intensity: Standard CAPS emphasis, analogies, moderate roasts
+      - HIGH intensity: Major roasts, shocking reveals, death consequences
+      - VERY_HIGH intensity: Peak moments only - "DEATH SPIRAL", extreme lab values
+
+      Don't waste HIGH intensity memes on LOW intensity moments.
+    </intensity_matching>
+
+    <punchline_clarity>
+      When identifying meme placement points, land them on tight, quotable phrases.
+      These become natural meme placement beats.
+
+      STRONG punchlines (meme-worthy):
+      - "that potassium is a DADGUM LIE"
+      - "Glucagon takes the BACK DOOR"
+      - "her heart stops"
+      - "You just KILLED your patient"
+      - "COOKING themselves from the INSIDE"
+
+      WEAK punchlines (don't place memes here):
+      - "Glucagon works through an alternative pathway mechanism"
+      - "the lab value is not representative of total body stores"
+      - "Consider the differential diagnosis"
+    </punchline_clarity>
+
+    <timing_precision>
+      The trigger_phrase MUST be VERBATIM text from the script.
+      Exact characters, exact caps, exact punctuation.
+
+      The frontend uses trigger_phrase to match against ElevenLabs timestamps
+      for precise meme cutaway timing. Close matches work but exact is best.
+
+      CORRECT: "potassium is SEVEN POINT EIGHT"
+      WRONG: "potassium is 7.8"
+      WRONG: "Potassium is seven point eight"
+    </timing_precision>
+
+    <placement_density>
+      Target 3-6 meme placements per 60 seconds of narration.
+
+      More placements for:
+      - Scripts with heavy CAPS emphasis
+      - Multiple absurd analogies
+      - Strong roast moments
+
+      Fewer placements for:
+      - Dense mechanism explanations
+      - Serious clinical teaching
+      - Dosing/protocol information
+    </placement_density>
+
+    <category_flow>
+      Follow the emotional arc of Dr. Synapse's scripts:
+
+      1. HOOK → SHOCKED/PANIC memes (patient presentation)
+      2. QUESTION → TIME_SKIP or DRAMATIC (countdown pressure)
+      3. ANSWER REVEAL → CELEBRATION or SHOCKED (correct reveal)
+      4. WRONG ANSWER ROAST → LAUGHING/FACEPALM/SADNESS
+      5. TEACHING → TEACHING/RECOGNITION memes
+      6. SIGN-OFF → DISMISSIVE/CELEBRATION memes
+    </category_flow>
+
+  </selection_guidelines>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       SECTION 5: OUTPUT FORMAT
+       ═══════════════════════════════════════════════════════════════════════════ -->
+
+  <output_format>
+    <description>
+      When matching memes to script timestamps, output in this JSON structure.
+      Each meme_moment must include the trigger_phrase (VERBATIM from script),
+      trigger_type (why this is a meme moment), and meme_id (from catalog).
+    </description>
+
+    <example_output>
+{
+  "script_id": "hyperkalemia-v1",
+  "total_meme_placements": 5,
+  "meme_moments": [
+    {
+      "trigger_phrase": "potassium is SEVEN POINT EIGHT",
+      "trigger_type": "DRAMATIC_REVEAL",
+      "meme_id": "shocked-cat",
+      "category": "SHOCKED",
+      "rationale": "Shocking lab value reveal - frozen disbelief reaction"
+    },
+    {
+      "trigger_phrase": "QRS wider than a CHEESECAKE FACTORY MENU",
+      "trigger_type": "ABSURD_ANALOGY",
+      "meme_id": "risitas-laughing",
+      "category": "LAUGHING",
+      "rationale": "Peak absurd analogy - infectious wheeze laugh fits"
+    },
+    {
+      "trigger_phrase": "You just KILLED your patient, congratulations",
+      "trigger_type": "WRONG_ANSWER_ROAST",
+      "meme_id": "coffin-dance",
+      "category": "SADNESS",
+      "rationale": "Patient death consequence - iconic coffin dance"
+    },
+    {
+      "trigger_phrase": "like a bouncer throwin' out a TROUBLEMAKER",
+      "trigger_type": "ABSURD_ANALOGY",
+      "meme_id": "leonardo-dicaprio-pointing",
+      "category": "TEACHING",
+      "rationale": "Mechanism explanation with vivid imagery - recognition moment"
+    },
+    {
+      "trigger_phrase": "Now get OUT of here",
+      "trigger_type": "DISMISSAL",
+      "meme_id": "get-out",
+      "category": "DISMISSIVE",
+      "rationale": "Classic Dr. Synapse sign-off"
+    }
+  ]
+}
+    </example_output>
+  </output_format>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════
+       SECTION 6: QUICK REFERENCE - TOP 25 MEMES
+       ═══════════════════════════════════════════════════════════════════════════ -->
+
+  <quick_reference>
+    <description>
+      Curated starter set for most common Dr. Synapse script moments.
+      When in doubt, pull from this list first.
+    </description>
+
+    <tier_s title="Always Works">
+      <meme id="coffin-dance" use="Patient death consequences" />
+      <meme id="shocked-cat" use="Shocking lab values" />
+      <meme id="risitas-laughing" use="Absurd analogies" />
+      <meme id="zias-laughing-meme" use="Peak roast moments" />
+      <meme id="leonardo-dicaprio-pointing" use="Mechanism explanations" />
+    </tier_s>
+
+    <tier_a title="Very Reliable">
+      <meme id="supa-hot-fire-ohhhhh" use="Sick burns, answer reveals" />
+      <meme id="extreme-laugh-mutahar" use="Escalating absurdity" />
+      <meme id="joe-rogan-shocked" use="Counterintuitive facts" />
+      <meme id="what-ishowspeed" use="Extreme values (7.8, 107°F)" />
+      <meme id="forehead-slap" use="Common mistakes" />
+      <meme id="curb-your-enthusiasm" use="Things going wrong" />
+      <meme id="get-out" use="Sign-off dismissals" />
+    </tier_a>
+
+    <tier_b title="Situational">
+      <meme id="michael-scott-no-god-please-no" use="Crashing patients" />
+      <meme id="sad-violin" use="Sarcastic sympathy" />
+      <meme id="vince-mcmahon-falls-out-of-chair" use="Extreme reactions" />
+      <meme id="willem-dafoe-looking-up" use="Ominous foreshadowing" />
+      <meme id="explaining-on-whiteboard" use="Teaching transitions" />
+      <meme id="john-cena-are-you-sure-about-that" use="Questioning wrong picks" />
+      <meme id="michael-jordan-stop-it-get-help" use="Intervention moments" />
+      <meme id="noice-michael-rosen" use="Quick approval" />
+      <meme id="doge-dun-dun-duuun-dramatic" use="Dramatic reveals" />
+      <meme id="oh-no-mr-bean" use="Realization of error" />
+      <meme id="shia-labeouf-clapping" use="Final approval" />
+      <meme id="dancing-kid" use="Victory celebration" />
+      <meme id="5-minutes-later-spongebob" use="Time transitions" />
+    </tier_b>
+  </quick_reference>
+
+</meme_matching_system>

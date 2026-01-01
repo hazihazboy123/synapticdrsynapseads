@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viral Thumbnails - Dr. Synapse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Bangers&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: system-ui, sans-serif;
+    }
+
+    h1 { color: white; text-align: center; margin-bottom: 10px; }
+    .subtitle { color: #666; text-align: center; margin-bottom: 40px; font-size: 14px; }
+
+    .thumbnails-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .thumb-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .thumb-label {
+      color: #9333ea;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Base thumbnail - scaled down for preview */
+    .thumbnail {
+      width: 1080px;
+      height: 1920px;
+      border-radius: 0;
+      overflow: hidden;
+      position: relative;
+      transform: scale(0.25);
+      transform-origin: top center;
+      margin-bottom: -1440px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       STYLE A: "SHOCKING STAT" - Numbers create urgency
+       ═══════════════════════════════════════════════════════════════ */
+    .thumb-stat {
+      background: linear-gradient(160deg, #0f0a1a 0%, #1a0505 50%, #0a0505 100%);
+    }
+
+    .thumb-stat .danger-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+    }
+
+    .thumb-stat .top-banner {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ef4444;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      font-size: 72px;
+      padding: 20px 60px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      box-shadow: 0 10px 60px rgba(239, 68, 68, 0.6);
+      z-index: 50;
+    }
+
+    .thumb-stat .stat-number {
+      position: absolute;
+      top: 280px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 400px;
+      color: white;
+      text-shadow: 0 0 100px rgba(239, 68, 68, 0.8), 0 20px 0 #000;
+      z-index: 20;
+      line-height: 0.8;
+    }
+
+    .thumb-stat .stat-label {
+      position: absolute;
+      top: 680px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Anton', sans-serif;
+      font-size: 120px;
+      color: #fbbf24;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      z-index: 20;
+    }
+
+    .thumb-stat .mascot {
+      position: absolute;
+      bottom: 350px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      z-index: 30;
+      filter: drop-shadow(0 0 80px rgba(147, 51, 234, 0.6));
+    }
+
+    .thumb-stat .hook-text {
+      position: absolute;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 100px;
+      color: white;
+      text-align: center;
+      line-height: 1.1;
+      text-shadow: 0 8px 0 #000;
+      z-index: 40;
+    }
+
+    .thumb-stat .hook-text span {
+      color: #ef4444;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       STYLE B: "QUIZ CHALLENGE" - Show options, create FOMO
+       ═══════════════════════════════════════════════════════════════ */
+    .thumb-quiz {
+      background: linear-gradient(160deg, #0a0a1a 0%, #050510 100%);
+    }
+
+    .thumb-quiz .question-box {
+      position: absolute;
+      top: 100px;
+      left: 60px;
+      right: 60px;
+      background: rgba(255,255,255,0.05);
+      border: 3px solid rgba(255,255,255,0.1);
+      border-radius: 30px;
+      padding: 50px;
+      z-index: 20;
+    }
+
+    .thumb-quiz .question-text {
+      font-family: 'Anton', sans-serif;
+      font-size: 72px;
+      color: white;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .thumb-quiz .question-text .highlight {
+      color: #ef4444;
+      text-decoration: underline;
+      text-decoration-color: #ef4444;
+    }
+
+    .thumb-quiz .options-container {
+      position: absolute;
+      top: 520px;
+      left: 60px;
+      right: 60px;
+      z-index: 20;
+    }
+
+    .thumb-quiz .option {
+      background: rgba(255,255,255,0.08);
+      border: 3px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 35px 50px;
+      margin-bottom: 25px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 64px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .thumb-quiz .option-letter {
+      background: rgba(147, 51, 234, 0.3);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      flex-shrink: 0;
+    }
+
+    .thumb-quiz .option.trap {
+      border-color: #fbbf24;
+      box-shadow: 0 0 40px rgba(251, 191, 36, 0.3);
+    }
+
+    .thumb-quiz .option.trap .option-letter {
+      background: #fbbf24;
+      color: #000;
+    }
+
+    .thumb-quiz .option.hidden-answer {
+      background: linear-gradient(90deg, #22c55e33, #22c55e11);
+      border-color: #22c55e;
+    }
+
+    .thumb-quiz .option.hidden-answer .option-letter {
+      background: #22c55e;
+      color: #000;
+    }
+
+    .thumb-quiz .option .blur-text {
+      filter: blur(12px);
+      color: #22c55e;
+    }
+
+    .thumb-quiz .fail-stat {
+      position: absolute;
+      bottom: 280px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ef4444;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      font-size: 64px;
+      padding: 25px 60px;
+      border-radius: 20px;
+      white-space: nowrap;
+      z-index: 30;
+    }
+
+    .thumb-quiz .mascot-small {
+      position: absolute;
+      bottom: 60px;
+      right: 60px;
+      width: 280px;
+      z-index: 30;
+      filter: drop-shadow(0 0 40px rgba(147, 51, 234, 0.5));
+    }
+
+    .thumb-quiz .brand {
+      position: absolute;
+      bottom: 100px;
+      left: 60px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 56px;
+      background: linear-gradient(90deg, #9333ea, #db2777);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 6px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       STYLE C: "DEATH CLOCK" - Urgency + Fear
+       ═══════════════════════════════════════════════════════════════ */
+    .thumb-clock {
+      background: linear-gradient(180deg, #1a0505 0%, #0a0a0a 50%, #050505 100%);
+    }
+
+    .thumb-clock .red-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, transparent 30%, rgba(239, 68, 68, 0.2) 100%);
+      z-index: 5;
+    }
+
+    .thumb-clock .clock-container {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 20;
+    }
+
+    .thumb-clock .clock-time {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 350px;
+      color: #ef4444;
+      text-shadow: 0 0 120px rgba(239, 68, 68, 0.8), 0 0 200px rgba(239, 68, 68, 0.4);
+      line-height: 0.85;
+      animation: pulse 1s infinite;
+    }
+
+    .thumb-clock .clock-label {
+      font-family: 'Anton', sans-serif;
+      font-size: 100px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 15px;
+      margin-top: 20px;
+    }
+
+    .thumb-clock .death-text {
+      position: absolute;
+      top: 700px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Anton', sans-serif;
+      font-size: 140px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1;
+      z-index: 20;
+    }
+
+    .thumb-clock .death-text .red {
+      color: #ef4444;
+    }
+
+    .thumb-clock .mascot {
+      position: absolute;
+      bottom: 280px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 450px;
+      z-index: 30;
+      filter: drop-shadow(0 0 60px rgba(147, 51, 234, 0.5));
+    }
+
+    .thumb-clock .question-mark {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Bangers', sans-serif;
+      font-size: 200px;
+      color: #fbbf24;
+      text-shadow: 0 0 60px rgba(251, 191, 36, 0.6);
+      z-index: 20;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       STYLE D: "TOPIC SPECIFIC" - Beta Blocker Example
+       ═══════════════════════════════════════════════════════════════ */
+    .thumb-specific {
+      background: linear-gradient(160deg, #0a0a1a 0%, #0a1a0a 50%, #0a0a0a 100%);
+    }
+
+    .thumb-specific .ekg-line {
+      position: absolute;
+      top: 200px;
+      left: 0;
+      right: 0;
+      height: 300px;
+      z-index: 10;
+    }
+
+    .thumb-specific .ekg-line svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .thumb-specific .hr-display {
+      position: absolute;
+      top: 100px;
+      right: 80px;
+      background: rgba(0,0,0,0.8);
+      border: 4px solid #ef4444;
+      border-radius: 20px;
+      padding: 30px 50px;
+      z-index: 20;
+    }
+
+    .thumb-specific .hr-label {
+      font-family: system-ui, sans-serif;
+      font-size: 36px;
+      color: #888;
+      text-transform: uppercase;
+    }
+
+    .thumb-specific .hr-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 140px;
+      color: #ef4444;
+      line-height: 1;
+    }
+
+    .thumb-specific .condition-name {
+      position: absolute;
+      top: 550px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Anton', sans-serif;
+      font-size: 130px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.1;
+      text-shadow: 0 10px 0 #000;
+      z-index: 20;
+    }
+
+    .thumb-specific .condition-name .danger {
+      color: #ef4444;
+    }
+
+    .thumb-specific .pill-icon {
+      position: absolute;
+      top: 900px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 180px;
+      z-index: 20;
+    }
+
+    .thumb-specific .hook-question {
+      position: absolute;
+      bottom: 450px;
+      left: 60px;
+      right: 60px;
+      background: rgba(147, 51, 234, 0.2);
+      border: 3px solid #9333ea;
+      border-radius: 25px;
+      padding: 40px;
+      text-align: center;
+      z-index: 20;
+    }
+
+    .thumb-specific .hook-question-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 80px;
+      color: white;
+    }
+
+    .thumb-specific .mascot {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      z-index: 30;
+      filter: drop-shadow(0 0 60px rgba(147, 51, 234, 0.5));
+    }
+
+    /* Download buttons */
+    .download-row {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .download-btn {
+      padding: 12px 25px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #9333ea, #db2777);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(147, 51, 234, 0.4);
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Viral Thumbnail Variants</h1>
+  <p class="subtitle">Click to download any style - Test which gets more clicks!</p>
+
+  <div class="thumbnails-grid">
+
+    <!-- STYLE A: Shocking Stat -->
+    <div class="thumb-container">
+      <div class="thumb-label">A: "Shocking Stat"</div>
+      <div class="thumbnail thumb-stat" id="thumb-stat">
+        <div class="danger-overlay"></div>
+        <div class="top-banner">ONLY</div>
+        <div class="stat-number">23%</div>
+        <div class="stat-label">GET THIS RIGHT</div>
+        <img src="./public/assets/character/brain-mascot.png" class="mascot" alt="Dr. Synapse">
+        <div class="hook-text">CAN <span>YOU</span> SAVE HER?</div>
+      </div>
+      <div class="download-row">
+        <button class="download-btn" onclick="downloadThumb('thumb-stat', 'viral-stat')">Download PNG</button>
+      </div>
+    </div>
+
+    <!-- STYLE B: Quiz Challenge -->
+    <div class="thumb-container">
+      <div class="thumb-label">B: "Quiz Challenge"</div>
+      <div class="thumbnail thumb-quiz" id="thumb-quiz">
+        <div class="question-box">
+          <div class="question-text">
+            Patient OD'd on <span class="highlight">PROPRANOLOL</span><br>
+            HR: 32 &nbsp; BP: 70/40
+          </div>
+        </div>
+        <div class="options-container">
+          <div class="option">
+            <span class="option-letter">A</span>
+            <span>Epinephrine</span>
+          </div>
+          <div class="option trap">
+            <span class="option-letter">B</span>
+            <span>Atropine</span>
+          </div>
+          <div class="option">
+            <span class="option-letter">C</span>
+            <span>Dopamine</span>
+          </div>
+          <div class="option hidden-answer">
+            <span class="option-letter">D</span>
+            <span class="blur-text">????????</span>
+          </div>
+        </div>
+        <div class="fail-stat">70% PICK THE WRONG ANSWER</div>
+        <img src="./public/assets/character/brain-mascot.png" class="mascot-small" alt="Dr. Synapse">
+        <div class="brand">DR. SYNAPSE</div>
+      </div>
+      <div class="download-row">
+        <button class="download-btn" onclick="downloadThumb('thumb-quiz', 'viral-quiz')">Download PNG</button>
+      </div>
+    </div>
+
+    <!-- STYLE C: Death Clock -->
+    <div class="thumb-container">
+      <div class="thumb-label">C: "Death Clock"</div>
+      <div class="thumbnail thumb-clock" id="thumb-clock">
+        <div class="red-vignette"></div>
+        <div class="clock-container">
+          <div class="clock-time">0:45</div>
+          <div class="clock-label">SECONDS LEFT</div>
+        </div>
+        <div class="death-text">
+          SHE'S <span class="red">DYING</span><br>
+          WHAT DO YOU DO?
+        </div>
+        <img src="./public/assets/character/brain-mascot.png" class="mascot" alt="Dr. Synapse">
+        <div class="question-mark">???</div>
+      </div>
+      <div class="download-row">
+        <button class="download-btn" onclick="downloadThumb('thumb-clock', 'viral-clock')">Download PNG</button>
+      </div>
+    </div>
+
+    <!-- STYLE D: Topic Specific -->
+    <div class="thumb-container">
+      <div class="thumb-label">D: "Topic Specific"</div>
+      <div class="thumbnail thumb-specific" id="thumb-specific">
+        <div class="hr-display">
+          <div class="hr-label">Heart Rate</div>
+          <div class="hr-value">32</div>
+        </div>
+        <div class="ekg-line">
+          <svg viewBox="0 0 1080 300" preserveAspectRatio="none">
+            <defs>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feFlood flood-color="#ef4444" flood-opacity="0.8"/>
+                <feComposite in2="blur" operator="in"/>
+                <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M0 150 L200 150 L250 150 L280 50 L310 250 L340 150 L500 150 L550 150 L580 50 L610 250 L640 150 L1080 150"
+                  stroke="#ef4444" stroke-width="6" fill="none" filter="url(#glow)"/>
+          </svg>
+        </div>
+        <div class="condition-name">
+          BETA BLOCKER<br>
+          <span class="danger">OVERDOSE</span>
+        </div>
+        <div class="pill-icon">💊</div>
+        <div class="hook-question">
+          <div class="hook-question-text">WHAT DRUG SAVES HER LIFE?</div>
+        </div>
+        <img src="./public/assets/character/brain-mascot.png" class="mascot" alt="Dr. Synapse">
+      </div>
+      <div class="download-row">
+        <button class="download-btn" onclick="downloadThumb('thumb-specific', 'viral-specific')">Download PNG</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    async function downloadThumb(id, filename) {
+      const thumbnail = document.getElementById(id);
+      const btn = event.target;
+
+      btn.textContent = 'Generating...';
+      btn.disabled = true;
+
+      const originalTransform = thumbnail.style.transform;
+      thumbnail.style.transform = 'none';
+
+      try {
+        const canvas = await html2canvas(thumbnail, {
+          scale: 1,
+          useCORS: true,
+          allowTaint: true,
+          width: 1080,
+          height: 1920,
+          backgroundColor: null
+        });
+
+        thumbnail.style.transform = originalTransform;
+
+        const link = document.createElement('a');
+        link.download = `${filename}-1080x1920.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+
+        btn.textContent = 'Downloaded!';
+        setTimeout(() => {
+          btn.textContent = 'Download PNG';
+          btn.disabled = false;
+        }, 2000);
+
+      } catch (error) {
+        console.error('Error:', error);
+        thumbnail.style.transform = originalTransform;
+        btn.textContent = 'Error - Try Again';
+        btn.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyperkalemia - Meme Picker</title>
+  <style>
+    :root {
+      --bg-dark: #050508;
+      --bg-card: #0d0d12;
+      --purple: #8b5cf6;
+      --pink: #ec4899;
+      --green: #10b981;
+      --cyan: #06b6d4;
+      --text: #e5e5e5;
+      --text-muted: #6b7280;
+      --border: #1f1f2e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 20px;
+      padding-bottom: 150px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 2rem;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .api-stats {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: rgba(16, 185, 129, 0.1);
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--green);
+    }
+    .beat-section {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 2px solid var(--border);
+    }
+    .beat-section.selected { border-color: var(--green); }
+    .beat-header {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .beat-number {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--purple);
+      min-width: 30px;
+    }
+    .beat-info h3 { font-size: 0.9rem; margin-bottom: 3px; }
+    .beat-meta { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tag {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .tag-phase { background: rgba(139, 92, 246, 0.2); color: var(--purple); }
+    .tag-category { background: rgba(236, 72, 153, 0.2); color: var(--pink); }
+    .tag-mode { background: rgba(6, 182, 212, 0.2); color: var(--cyan); }
+    .beat-context {
+      display: none;
+    }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 5px;
+    }
+    .result-card {
+      background: var(--bg-dark);
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.1s;
+      border: 2px solid transparent;
+    }
+    .result-card:hover {
+      border-color: var(--purple);
+      opacity: 0.9;
+    }
+    .result-card.selected {
+      border-color: var(--green);
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+    }
+    .result-preview {
+      aspect-ratio: 1/1;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .result-preview img, .result-preview video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .has-sound-badge {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: var(--green);
+      color: #000;
+      font-size: 0.65rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .result-info { display: none; }
+    .result-title { display: none; }
+    .result-meta { display: none; }
+    .no-results {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-muted);
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--bg-card);
+      padding: 15px 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--green); color: #000; }
+    .btn-secondary { background: var(--purple); color: #fff; margin-right: 10px; }
+    .progress { display: flex; gap: 5px; align-items: center; }
+    .progress-dot {
+      width: 20px;
+      height: 8px;
+      background: var(--border);
+      border-radius: 4px;
+    }
+    .progress-dot.done { background: var(--green); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎬 hyperkalemia - Meme Picker</h1>
+    <p style="color: var(--text-muted); margin-top: 10px;">Hover to preview, click to select</p>
+    <div class="api-stats">🔑 KLIPY API Calls: 9/20</div>
+  </div>
+
+  <div id="beats-container"></div>
+
+  <div class="bottom-bar">
+    <div class="progress" id="progress">
+      <span id="progress-text">0/9 selected</span>
+    </div>
+    <div>
+      <button class="btn btn-secondary" onclick="clearAll()">Clear All</button>
+      <button class="btn btn-primary" onclick="exportSelections()">Export Selections</button>
+    </div>
+  </div>
+
+  <script>
+    const beats = [
+  {
+    "id": 1,
+    "phase": "HOOK",
+    "triggerWord": "ATTENTION",
+    "triggerPhrase": "Opening hook",
+    "timestamp": null,
+    "category": "SHOCK",
+    "displayMode": "OVERLAY",
+    "searchQueries": [
+      "shocked",
+      "surprised",
+      "omg"
+    ],
+    "context": "Grab attention at the start",
+    "durationFrames": 45
+  },
+  {
+    "id": 2,
+    "phase": "VIGNETTE",
+    "triggerWord": "DANGER",
+    "triggerPhrase": "Patient in danger",
+    "timestamp": null,
+    "category": "WORRIED",
+    "displayMode": "FULL_CUT",
+    "searchQueries": [
+      "worried",
+      "nervous",
+      "oh no"
+    ],
+    "context": "Show the severity",
+    "durationFrames": 40
+  },
+  {
+    "id": 3,
+    "phase": "VIGNETTE",
+    "triggerWord": "SYMPTOMS",
+    "triggerPhrase": "Classic symptoms",
+    "timestamp": null,
+    "category": "SERIOUS",
+    "displayMode": "OVERLAY",
+    "searchQueries": [
+      "look",
+      "stare",
+      "eyes"
+    ],
+    "context": "Key clinical findings",
+    "durationFrames": 35
+  },
+  {
+    "id": 4,
+    "phase": "VIGNETTE",
+    "triggerWord": "CRITICAL",
+    "triggerPhrase": "Critical situation",
+    "timestamp": null,
+    "category": "BAD_NEWS",
+    "displayMode": "FULL_CUT",
+    "searchQueries": [
+      "disaster",
+      "terrible",
+      "bad"
+    ],
+    "context": "Urgency of the situation",
+    "durationFrames": 50
+  },
+  {
+    "id": 5,
+    "phase": "QUESTION",
+    "triggerWord": "THINK",
+    "triggerPhrase": "What do you do?",
+    "timestamp": null,
+    "category": "THINKING",
+    "displayMode": "OVERLAY",
+    "searchQueries": [
+      "thinking",
+      "hmm",
+      "confused"
+    ],
+    "context": "Challenge the viewer",
+    "durationFrames": 40
+  },
+  {
+    "id": 6,
+    "phase": "ANSWER",
+    "triggerWord": "CORRECT",
+    "triggerPhrase": "The answer is...",
+    "timestamp": null,
+    "category": "CELEBRATION",
+    "displayMode": "FULL_CUT",
+    "searchQueries": [
+      "celebration",
+      "winner",
+      "yes"
+    ],
+    "context": "Reveal correct answer",
+    "durationFrames": 50
+  },
+  {
+    "id": 7,
+    "phase": "ANSWER",
+    "triggerWord": "WRONG",
+    "triggerPhrase": "If you picked wrong...",
+    "timestamp": null,
+    "category": "FACEPALM",
+    "displayMode": "OVERLAY",
+    "searchQueries": [
+      "really",
+      "disappointed",
+      "smh"
+    ],
+    "context": "Roast wrong answers",
+    "durationFrames": 45
+  },
+  {
+    "id": 8,
+    "phase": "EXPLANATION",
+    "triggerWord": "MECHANISM",
+    "triggerPhrase": "Here's why it works",
+    "timestamp": null,
+    "category": "MIND_BLOWN",
+    "displayMode": "OVERLAY",
+    "searchQueries": [
+      "mind blown",
+      "wow",
+      "amazing"
+    ],
+    "context": "Explain the mechanism",
+    "durationFrames": 45
+  },
+  {
+    "id": 9,
+    "phase": "EXIT",
+    "triggerWord": "BYE",
+    "triggerPhrase": "Now get outta here",
+    "timestamp": null,
+    "category": "BYE",
+    "displayMode": "OVERLAY",
+    "searchQueries": [
+      "bye",
+      "peace",
+      "later"
+    ],
+    "context": "Classic exit",
+    "durationFrames": 35
+  }
+];
+    const searchResults = {
+  "1": [
+    {
+      "url": "https://klipy.com/clips/shocked-omg",
+      "title": "Shocked OMG",
+      "slug": "shocked-omg",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/6d/12/NniV6fCH.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/6d/12/NaeBAZUL.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/6d/12/OTknRosY.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdgABAAMBAAAAAAAAAAAAAAAABQIEBgMBAAMBAQAAAAAAAAAAAAAAAAIBAwQAEAABAwMCAwcFAQAAAAAAAAABBAMCAAURIRIxBlFhcXI1wRQTIjRzQzJCEQACAgIBBQEAAAAAAAAAAAAAAQIREiFxYQNCMTOB/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8Ay87untaNxqbTcy4NCf6jjpVnlbmVCrTKUYjtecB2wJ41kOaJOqS0oaMi3wO3Oa58pJ3FN9aMZPAN6k6jh1qauykcYtSraN7dbopRWr4osfEZANCRx9OaBZWPp7q2jffm81OBliZztl2VDmW6K1i+FuayYRlEk65oJcuUpeYwYTLmwCPXvFPypMOaU4N47ZpL0wxKBwP80T7WFX7utk7bG3OGdoIHGh/cS6yp/pCq00SXPNWqUk4jJzbPbk4qq3dXE6rcxuaJIyRjNdOZfvXfy0f++PeKaSxT6Dt5UaK5K1KeLS0GJnNvB014UKhUly7tOTiJGU9c0tevLE/g9KEt/mSfxChjuDZqXqPApc1r/vHWQRsGuKrfNPsqdy8ye7vSuNdFaMvd+kuT/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/shocked-11",
+      "title": "Shocked",
+      "slug": "shocked-11",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/c5/5b/0mgDdI1V.mp4",
+        "gif": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/c5/5b/McrH5slx.gif",
+        "webp": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/c5/5b/11o88p1k.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 719,
+          "height": 352
+        },
+        "gif": {
+          "width": 320,
+          "height": 157
+        },
+        "webp": {
+          "width": 320,
+          "height": 157
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAN7w2uAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAawABAQEAAAAAAAAAAAAAAAAABQYHAQADAQAAAAAAAAAAAAAAAAABAwIEEAACAQQBBQEBAQAAAAAAAAADAQIABREEEkFRBiIhgTFSEQABAwIHAQAAAAAAAAAAAAADAgABMRFxQRKxIgTRYf/AABEIAA8AHgMBIgACEQADEQD/2gAMAwEAAhEDEQA/AMRBskHIfs3GLTS6VZ2+OvtAERjg+UVn5URD+pd6tfH4OFvAn/lUjtUifroWeD0C07vi9ms1rDvoMDbeYiThlt560bdNcBdkg+EXCM3wWPiz2os+4zGtLMMZI6s/RNftJbWwyHmTGObzhdKJlwQSItTx5hAUE616p533f//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/shocked-face-1",
+      "title": "Shocked face",
+      "slug": "shocked-face-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/3f/d7/RED7nPAl.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/3f/d7/kBipSz5F.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/3f/d7/9WBc9M3I.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAeAAAAwEBAQAAAAAAAAAAAAAAAwQFAQcCAQEBAQEAAAAAAAAAAAAAAAADAgQBEAABAwMCBAYDAQEAAAAAAAABAgMEAAUREiEiMXFRFGETNZEyM4FBFUIRAAEEAQIHAQAAAAAAAAAAAAEAAwIRIQQyUUExwXEiBRL/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDn607jnTUqRIg2xDzCfVOrjH9SO9Jz3/DIGBxKOBTCvUixBlzPqJBwe5qItTcJIFrWZiOL5KjbbgqIpmYE5OkKxW3qbMuIU/r1BQyU45CkLJcFyLkxDcCVA/G1OXq+M2d1bLkcrKuFCk/TB86N1kxcojKqDv6bOcd1KfiNORAVc96S8BHqtd3WtDQbSAHEBQx5ip+lVcoIy3G+loN2k5nNN42TxVrsx55fEo7DYUG6+5p6Vv8A1W3TbD5UvH2Srd4lRL20WzjG3zT6pc0yFqU4HEHctuDUn9dqive9N9RVg/dXSg1W4pfnRjMkSFjK8Trw884nhCdCcADlQf8AUeoMj8h6UOiClzDkgOK//9k="
+    },
+    {
+      "url": "https://klipy.com/clips/are-you-shocked",
+      "title": "Are you shocked?",
+      "slug": "are-you-shocked",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/4f/5b/HyFqerNt.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/4f/5b/J9rYZcew.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/4f/5b/BSBvx84F.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdQAAAwADAQAAAAAAAAAAAAAABQMCBwQGAAEBAQEBAAAAAAAAAAAAAAAABAADARAAAQMCBAQGAwEBAAAAAAAAAQIAAwQFQRESITEiBhNhcVGBMjQ2QnIUMxEAAgIDAAMBAAAAAAAAAAAAAgEAESESAxNhMXH/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDAX6nfF2hIXKgHFzIE82nhm6R80nwfHJQlbbGK+QgyactgyCbOu3dymk5hInlXg19OmKWTLmBKSNsSyvUdRDQWymBBVKc8s+IDwPofk1++okOIeLb57nJyoFHULjVgS/f6U+DiqPfkKyWrtD1eySrMO07j0U0S4tRUvP2yb7PQRVdWESFWnhtxcRf8fZ7XTv3h5u6YF1O8lZq50NDZ4aORMkW2jD1Z2o6etl5sctTVRkyQpOgg5MdH8FeTPUP4zV/yWRE97vMahWlViYqutAKOqUhKyU75PW7fiWS6h+6fdj2oG9VCGKRl+z//2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/omg-6",
+      "title": "OMG",
+      "slug": "omg-6",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/90/ea/Qp3FcjOm.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/90/ea/1GJ86m9u.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/90/ea/hVuCIIA5.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfAAAAgMBAQAAAAAAAAAAAAAABAMGAQIHBQEBAQEBAAAAAAAAAAAAAAAAAwIBBBAAAgEDAwIDAw0BAAAAAAAAAgEDAAQRBTEhBhJxMxMiQbE1gXKRkhQ0YhWhYVFUUxEBAAICAgMBAQAAAAAAAAAAAQADIRExAgQSUSJB/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8A43FfRw23q78Yx/NDWTPUdTAiw+c4e2KxNCYwdgomly3jin9N2xT3ZdhYIRb8aizHR1Gq6LZ1EdSX6FHFHfmMYIEVuuFs3VDDmY1+Z/Gh+liuy1EjuBYvsIUsYWFXpQDFLdGJkofaLJF76ynHPyXd1fdwksLIThLPHG9L/T4/+g/XQnU2ouC3drDI33bmHuVR717n/TP+9LoYS6eJrVJUMMiEUlttQnTs3oXZGlnCojVfLkoPRPOk8KHitnXb+bqNYxJho+oHdn6nYIIHjjd1Wv3104X7QJRlkcCkXg3SOmvLP6da178NL89bXkGJ5YPTo/1HcJtyhvtNcjiFEQrnG3FD/cY/6D7NN0f5JXgvhWqv2fs5QNcT/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/oh-my-god-30",
+      "title": "Oh My God!",
+      "slug": "oh-my-god-30",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/ad/1e/bsY59imp.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/ad/1e/Ki2iYqOc.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/ad/1e/wnbqfpVt.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAgAAAAgMBAQEAAAAAAAAAAAAABAUHBgMBAAIBAAMBAQAAAAAAAAAAAAAAAAQDBQAGEAABAgUCAwgDAQEAAAAAAAACAwEFBAASESEGYZETcVJRM0ExMrEkFHJTFhEAAgEDAgUFAQAAAAAAAAAAAQIDAAQRIRJRMUETBVIUImGSMv/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AHu390TEsadx9VAsMXeHjVsWBKelmUFcbCHOrtiohhsan4OZOtKLEx6W2vgeNOIRu8ydkVzMWN3tHVm5US17CRvV13Dh1qFYNNHi3kUurnA+qtLS8MOIfrGszk7+7fHnTmXgcogLPYzM2tz+1RzO7lTkZ0sXF9jRMR3bHZ5BKWRmVLCBnwGbscXalQeTvZZCs5VEP8EHpVS68V46whWWJe4+m4cyCauUT3HB4a7pHMgZ4xaOHxQH/aQrvfVUGeTm7VBwsoTi7mTMWWftpd0Jvwm+RVpb23VyO9H+hWhtbyaMONqA8lIqQDhsllhISN/F8V0oTCGMfxRu8dK1U81q+lPMGuX9xOuMSMNONLSNBrtHOsH2/CFHuKVAnd/XV6NRg0smN6SaSdo+g6868PxbtoxPyD/mki7uW3gyucA41NFQgOfkM0vWBFgJumGcPra1DdJP/MOTUUv69j0PU1ppWYkyOdfUaIyRoNK//9k="
+    },
+    {
+      "url": "https://klipy.com/clips/omg-9",
+      "title": "OMG",
+      "slug": "omg-9",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/7a/cc/R2pcPB8w.mp4",
+        "gif": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/7a/cc/QbOV42p6.gif",
+        "webp": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/7a/cc/602V3giv.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 719,
+          "height": 298
+        },
+        "gif": {
+          "width": 320,
+          "height": 133
+        },
+        "webp": {
+          "width": 320,
+          "height": 133
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgDrJvRPAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAZwABAAMBAAAAAAAAAAAAAAAABQMBBwYBAQEBAAAAAAAAAAAAAAAAAAMCBBAAAgIBBAMBAQEAAAAAAAAAAQIDBBEhABIFMWEiE0EUEQACAgIDAQAAAAAAAAAAAAACAQARIQMScTEE/8AAEQgADAAeAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8AzelUUdj/ALbLc8nlwXxtKDuYbSvJKVYLYWONT5Az4GxBZmarI3LVU0I/m766BG60z5bmLC4IO87AndvqX8tkLbzc7a92RFZa1c/bgZCDGmyew7C9xSNo3kK+icety1rc3JdQT+S6412n1Vh7DvHIsZCryHwM5zjU7JbGiY+1B2oubzP/2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/shocked-will-smith",
+      "title": "Shocked Will Smith",
+      "slug": "shocked-will-smith",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/98/3f/VSR8ilft.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/98/3f/yFReiSfa.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/98/3f/PulMy8qU.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgASWRLAAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdgABAQEBAQEAAAAAAAAAAAAABQYEAwIHAQEBAQAAAAAAAAAAAAAAAAADBAIQAAEEAQMCBQQDAQAAAAAAAAEABAMCERIGBSIxNHJRMiE1cXNhFFKBExEAAgEDBAMBAQAAAAAAAAAAAAECMhEDMQRxEmEhgVFB/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8A+E8THWVzpscDBVbtGUDkYotORpPVhRzO5pISO+FV7LeE1lJ98YOD+kea422lFehlxE+HJSS0ikvDSpJr6/ZJ8K/avWmf43/G/VXFj85C4xP7uILHOBW1Qi+XfTt+Wa0gOmmckVHfPfKxjn1/ibEyu/6l4JDd1RXm3IH9yi0pu62vmZ7epRadO6uTTqZ1be4p3ac8lbuI6nHTnKBb9ym9qeJceQrGXR8G9vWinDgtGPyNeuSuf9Wflczci0sOnFQvbzwEf5KLw98c28oQLUpml0+khuMk8nNn56isC37i+pzeYrAqYUrgjnXLk//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/wow-thats-insane",
+      "title": "Wow that's insane!",
+      "slug": "wow-thats-insane",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/f6/ae/membq9dL.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/f6/ae/A7k7AEzV.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/f6/ae/msUr9yZg.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAgAABAAMBAQAAAAAAAAAAAAAABAUGBwMBAQADAQEAAAAAAAAAAAAAAAAEAwUCBhAAAQMCBAQGAAcBAAAAAAAAAQQDAgAFBhIRIUFRMXE1ciITBxR0czMjkUOxNhEAAgECBAYDAQAAAAAAAAAAAQIABAMhExIRMjEiBZFRUhXRQf/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/ANA60r6bTTBm5PfTYUWR9sZpbAb15K5IlzEZEzBEvbAGuhI51IudtrqvY2hcFteMqDL5qKdCA1xATyxnG5XJJaUbitU4G2mxqSairH8g4cvygp0yjK5wE/Tm7a0H5HgkUKLOiuChxOjfUCL2QEmXIEcqdijAWDUyO2s2qAZWOSam04ySHTDbWR0p9umUWxr1avyDX+4OtQETSVw3k06f2pdqJrSG0006KLRM55GxHNLqdBxrhllyNL0MP4fEJzEIHUPMffoEoZS10EPUQNs2nCq1HEH15toQ1u5IOCe3p0qz3zw1/wAhqjP+MpPJXYdhVfrLvSOL0Jy1a7569TcvZknha42/F+OiLoj95u3Tg0w2SDDOf7JCtBuFrt70XFkUzcHWJltuQA2hyrL/AIu/7m5/i2v9rV1Hh6v841EqwBVMABtqaEK77JicRId6RLU+nQ8KJr2/ilPfpT7GiVnYehN5j/I+Z//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/wow-27",
+      "title": "Wow",
+      "slug": "wow-27",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1e/75/CMY93vxp.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1e/75/sQAwUaQ3.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1e/75/PsfBnhFC.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 852,
+          "height": 459
+        },
+        "gif": {
+          "width": 320,
+          "height": 172
+        },
+        "webp": {
+          "width": 320,
+          "height": 172
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgDzVvUrAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAbAABAQEAAAAAAAAAAAAAAAAABgIEAQEBAQAAAAAAAAAAAAAAAAAEAQIQAAEDAwMEAwEAAAAAAAAAAAIDBAEGBREhEgATUUExBxSBcREAAgEEAgMBAQAAAAAAAAAAAwEEIRECEgAFUTFBcRP/wAARCAAQAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwBOlStN2tBrNuYoAfVguoOpadyngT5Qp+61ZemqQnKLcIPEayO/drM/nnjdo6T+gMSpAbZKZ35z68cP11UlttVnRMxJRVQtkRnbMx5LPjHIKYKD1pOvDIzn40QzvJNp+6+VzIhxexmwppNIxlsyhV3uvS/OR8bUnfKNcv2hPo+o4bpnEjOnUz6x3x54ssVwJa6PYUcEp0UkkhKIzM65nP8AOFKar+2vm4tm6GFUgGINWc7h7/nNlkcXZK5P1g29NXbIyOMe+GhmKPLIuzxzto2r1r4+cX2kqCFqLkAhML/0Xq1Vaj+8/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/shocked-9",
+      "title": "Shocked",
+      "slug": "shocked-9",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b7/9d/rGmOweDf.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b7/9d/HUHBwdOl.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b7/9d/qUr0M3sF.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 637,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 242
+        },
+        "webp": {
+          "width": 320,
+          "height": 242
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgDskOj/AAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdwABAQEBAQAAAAAAAAAAAAAABgUDAAcBAQEBAQAAAAAAAAAAAAAAAAQDAgUQAAIBAgQEBAcBAAAAAAAAAAECAwQAEhEFBnFBMiE1BzGBUXIiNBQjsRMRAAEEAgAHAQAAAAAAAAAAAAEAAwIRBCFBNDEScQVyMv/AABEIABcAHgMBIgACEQADEQD/2gAMAwEAAhEDEQA/ANt4RxxbOiYDMkiyFJFO4imVirp0ANkLQbz1ELseFy2XcZZ87E028IoKZTh/bHnhHJuNlqTzdwB/StjuNwnc+MdJpq/59VoKiqjSPMr9Yb19vjdHbegQ1VEGbM9hYSi35VanH/hWPngbEi55KL9A2FrlLX6cwWZHZOzAHuvG8PDsIjVKjUDNsuXe6QbzI1ZI9saZSxFuo5+vKwolLC1XmP4PpvzNZJen2tGIKZ0iT6jwt6NXqKoRK2EkXY2vuio21VVKjEQ64SAeYYd7k6P4nHfTfezcW/t5yADIWuj6rlZfS//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/say-what-4",
+      "title": "Say what?",
+      "slug": "say-what-4",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/a8/df/vQEzXrSX.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/a8/df/OAAcGLqx.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/a8/df/hq9UcZZa.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 623,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 247
+        },
+        "webp": {
+          "width": 320,
+          "height": 247
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAb8RwgAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAeAABAAMBAQAAAAAAAAAAAAAABQECBAMGAQEBAQAAAAAAAAAAAAAAAAADBQYQAAEDAgQEBgMBAAAAAAAAAAEAAgMEERIFMSFxIrEGcnNRgUI1NjITQREAAQIFBAMBAQAAAAAAAAAAAQIDABEFEgQxQQYhkRRREyL/wAARCAAXAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwB0uN1R0zWfs4DiVZyLrIZZqs4jhDTcXdtZXq1VhR8X9/zLncpCMHx2iKruZ64dDXU5neE2yYxcG49QpxFYcslJlmjA5QdiNLrbdJTs9FRxG8hItvGnyCq9LcpOe7irVdYZXDeONcKgsH8SAb78EZDG+pzJzJLkxDE7m+I1S82nujKL7mr8l/RSOSuOewlFxtMv528Re4ay16ynLReNFaK8x6fJqDLKztvMKmGLA6Ih7XW5rDY34ogVDD/hTHaP4dmvgd1QLdSn484sY6kgyAV0PkBy5ltWU0spmoo7PczH/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/aha",
+      "title": "Aha!",
+      "slug": "aha",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/f0/fc/qFpbaCe7.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/f0/fc/jiLRVckA.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/f0/fc/KiplImjC.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAggAAAwEBAQAAAAAAAAAAAAAABwYDBQQCAQEBAQEBAAAAAAAAAAAAAAAFBAEHBhAAAQMDAAUHDQEAAAAAAAAAAQQDAgUAERMxEiEGcjRhcxRRkoFSU5EjQQcVQhaxNSKyEQACAQMDBQEBAAAAAAAAAAABAgAhEQMFBAYxMiJxgRNR/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8AGzKZx44Ax03sULh1RUHop0zRkSRtSxq6Td0qDSuQbabyZEAYHfZO4F4VaoqRwPiM3nBCZON4BGq92CneZLKPEdTEdX3g0/Be/m1FEUH+BVCVyGEzsZCAiDEbQPTcT8Pai8FC18aFtO0ZjI/qZ7sWTuwqe36bT+w2cBrA3G/U6azNt6E8zi7Egg3QdFxl3cljQ2EFTU8i5ke4vcG/2CFNQaishItMnZH1HcL9fadU7oeIXrVyqPo1CintSjFlqcokw1+W8z5hP00vEbNbasrMCQLEz1CDO+PG4xMwZFa4r1jlTKWgTKXw0xCOxOIG7eLaGk+FEHhLALQBja8j50q6yNsrWpvkC7eN1XLf+iCctJ/TD6MpclzsmUjzkdcYSI9V1uFT5go6uX4tWDL3D3AwHn1NbqMnZZ2nJmQ92u+jRw80XzJ/3FQ5c/8ARvqsXUqbt/k6JxHy0Pblq93Wf//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/shocked-face",
+      "title": "Shocked face",
+      "slug": "shocked-face",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/40/eb/HizKoLSm.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/40/eb/sBx31RSo.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/40/eb/gaH1pd4G.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgASWRLAAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfQABAQEBAQAAAAAAAAAAAAAABwYFBAgBAQEBAQAAAAAAAAAAAAAAAAQABQMQAAEDAgMGBgIDAQAAAAAAAAIEAQMAEQYFElEhFAhxE1RBNpF0IjEWQgdhMxEAAgIBAgQHAQAAAAAAAAAAAgEDABExBEEyEiFjE3IFIoEGUf/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AJLlRjjkx3OxixNwpfmnTNkaeR1LdoN57KC+VEmbHc9/ClTquUjASozNtIk79KzP0nePaLxxqPb0/Mk9NwzTZfMs4IYwY2C97N7VRYdQwJ0EYOnErE+/TReOf5mGMeLN5RSd/Te300O9r0sZDOEqVpQkvGX4bbfzpkItSx5a04W3YIY8LL/t87804Rx49jYBYW4YNzUY0nc05CWPo7eGGjGkFq6ZaVC5dI5JMXzME0kL8OX2jez04qcvNWjkTSKZrHe57tT32vQjy3esZvjFTw3n1ou9hilIOsUWHlZ4Op2pkA/F4s9+jxuHYJbKUbv5s2r3rrngzHKE0aZGvmbdZnN9zW6VqfzbrXHm/wD0jq6RHGO16mTLXv8ASoZ/f/ffFcLzylNI6YNRPt/yoOr7mD9Ww/GCoGkByqkk53f/2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/its-alive",
+      "title": "It's alive",
+      "slug": "its-alive",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b5/3f/y0IgcZRl.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b5/3f/9NJX1SR1.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b5/3f/qSTNVCHE.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 852,
+          "height": 430
+        },
+        "gif": {
+          "width": 320,
+          "height": 162
+        },
+        "webp": {
+          "width": 320,
+          "height": 162
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCOAI9HAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAawABAQEBAQAAAAAAAAAAAAAAAgQBBgUBAQEBAAAAAAAAAAAAAAAAAAQAAhAAAgEDAwQDAQEAAAAAAAAAAQIDBQQRIRMAEjEGcWEUIgdSEQACAgIDAQEAAAAAAAAAAAACAQMAQRMhMVEiBP/AABEIAA8AHgMBIgACEQADEQD/2gAMAwEAAhEDEQA/AOBq8Fiy7kMez+AFQMSSR345LVKZa2jyOM3HSxX/ACPnm+MeD1irWP25LyNY2Yfp8sR6A5b/AELxi8oFPsXkmSZXXbVhnIbv2PN6iUUkjHHHNopB3CObBWbeCaLbjKsWTr0HbHPJqVmht7csnTkAjHo8EdTe3mXOSw011B98NVvfslC7kAaKFBGNOHEvprrxVH6I2wUuOr//2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/spit-take-1",
+      "title": "Spit take",
+      "slug": "spit-take-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9e/9c/f2B9eXZ8.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9e/9c/wKdTexTT.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9e/9c/MOtfFSpS.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 638,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 241
+        },
+        "webp": {
+          "width": 320,
+          "height": 241
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAcqRwgAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAcgABAQEBAAAAAAAAAAAAAAAABwgGBQEBAQEBAAAAAAAAAAAAAAAAAgEDABAAAgEDBAIBAwUBAAAAAAAAAQIDAAQFBhIRITEHE7FRFHJBNTNzNhEAAAYDAAMBAQAAAAAAAAAAACEDEQECIhIEgjRSQQX/wAARCAAXAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwB7uSIbeaQKCUjdwOP3VSalDWuY1nqjWN9fi5eIQXbpAinpdjdAVUuXyuItLKf829gto3idSzOBwGUgkVO+q20pYZiRMNk47mIzb5Zdw6Yty1RfoUipRIH87mTm87yTEGf0tl8rmNFWzZVOLqA/CzHy4A6JrXbV+wrAesNe6Bt7FMdbZmJ7mTYZFY8DfxxwK3qzxOoZZEIPYO4d11V7tDu4C/LEKWaScgC+8M5ODfR/I+2KMqoBIHdBTTy72O9uySezTL7y/tydC7eTTQzurseQ3UrFEktSx/B1dJ5SfH5m3kV2HLqDwT96rXRU1zkdMY253By0K8lvPio/wv8AI2/61+oqwPWf/FYr/FfpVsXRDfMjNf1/If/Z"
+    },
+    {
+      "url": "https://klipy.com/clips/oh-m-goodness",
+      "title": "Oh, M, Goodness.",
+      "slug": "oh-m-goodness",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/46/6a/o4yE6iG4.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/46/6a/gO85DTrX.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/46/6a/xZcJyLxH.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 852,
+          "height": 354
+        },
+        "gif": {
+          "width": 320,
+          "height": 133
+        },
+        "webp": {
+          "width": 320,
+          "height": 133
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgDW898wAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAcgABAQEBAQAAAAAAAAAAAAAABgQDBQcBAAMBAAAAAAAAAAAAAAAAAAEEAgUQAAEDAgQGAAcBAAAAAAAAAAECAwQAERIhBQZRYTFBIhSBkTMTU5JC0REAAgICAwEBAAAAAAAAAAAAAQIRAwQAUTFBMhT/wAARCAAMAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwCwaRBaW2Q8lV80kYwD8bUi0bXIkNha7LShsZ4Xl/z1sDnflXIMGOztiQUYwpouuNqxErSrkrrQWRqE4oJ9l7yC7+ZFzxy70krZKM4ZqyBwN078LEArKq4kT9TriZu465rTa1MOiFcsh1z6jJVliAVnh41kvaOy3pjzkuU04tVjj+4n5AXytXmaJctcdRVJfPl3cV/tS+xI/M7+5qfyrcxYMyH2D3pqyGoUKVV+JHQ3/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/shock",
+      "title": "Shock",
+      "slug": "shock",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b0/5c/kARFuDzM.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b0/5c/eQWD42eF.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/b0/5c/rtlh71nJ.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfgABAQEBAQAAAAAAAAAAAAAABAUDAQIBAAIDAQEAAAAAAAAAAAAAAAABBAUDAgYQAAIBAwIEBAILAQAAAAAAAAIBAwARBCEFUXExEjIjM2FUQYKBBnKRFUIioTTBFhEAAgEFAAMBAQEAAAAAAAAAAgEDABJREQQFITEUQYH/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwCmt0lYruuQ8Vre9dxYHuRtNFZFqXyFVOjkMYRs2Avi70uPcSxITHH0bHnd1Mgi54VaAoBwq9V5To7wjP8AHGPv48VYDZMGQjxYM3zCBNXtYKHn4I7OYlJM5HrqvC1wtUnb82eHJWRJ39zL5PT3vW+55eVucsaXlgHhvpfjTjESAiP171rNVcPd5mHyAQDdMiG4m07E8brk+4OMSOIyhv8Ar9qP+cZHx5fgq7kGEWKUckZON3uWmj50C+3cCrGbj4pTZHCJPLVXcfQyjFzAr9K7XyiYm/nlQ9zBrglbrTcbdDTQEKf7lrxqDtX9f61VOD11zVdJvdYOQ9/XTj3XvMgAOxK/8Vi99nQtkKJdF7ViHrSfSox+k/vf7Rc80hJrb/v+Vpn/AGmmiiISjRpro+lTv+nXwo143fwPlUyk26LzzX//2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/speechless-1",
+      "title": "Speechless",
+      "slug": "speechless-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/01/a3/MR67wsF2.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/01/a3/4LRYNw3x.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/01/a3/wCFpfaLI.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAgQAAAwEBAQEAAAAAAAAAAAAABwUGBAADAQEBAQEBAAAAAAAAAAAAAAAABAMFBhAAAQMDAgIJAQkBAAAAAAAAAQQDAhEFABIGFCFzEzVBYSJxMVEVdJGhkjTRVcE2QhEAAgICAgIBBQEAAAAAAAAAAQIRAwQAEiFhMRNiFCJxkVH/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwCReR6VHkbiSZEUFfY57Xu4N7Ysc4VHFqoaRHvhA/vnXFq4IF8YGvWACRAFTXxySvapbdL1KKkzMusEaGvIV+MLXR9w1f5TWpDHzrbn+FGgGW637ZU6dYvHFRM4y5nu5nKa12mDcVEIROmIJj6Yw2/Z7QyjIknb1BsVPfqxsrLLZAaTiMJsikogAVp7ZrU5y/MqGeBAWP8ADsKONa9r3JM6Kdxw0LnR8E4txruipuSjl/3LFdDjMula7Y+kH+6dmBZj5OmTa6hOGn7gra4mZqRqoSPzYp3NG2/XGXIIWYlQIz1U8wJ/DN9h7Fd9Di3cfa9u6OGY+GiDJcACOJ1+cZxV/Y3kjk4LXmQTSUwPTLJdtQuWSC2KowLTQnpp7+GRaftSfSDCa/8A5Fz7N/WTuZlurgx3sa1BrOiu5fT+IdjO3JXDXnOQOon5OZNFs/jEn3HNFz/Vu5lzrsLGotxaWetWYosk+/W4uRbYt9gDEDkd/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/luoiai",
+      "title": "LUOIAI",
+      "slug": "luoiai",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/cd/31/KCsvj87N.mp4",
+        "gif": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/cd/31/Q9g2acXM.gif",
+        "webp": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/cd/31/6sBJ1otK.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 1280,
+          "height": 694
+        },
+        "gif": {
+          "width": 320,
+          "height": 173
+        },
+        "webp": {
+          "width": 320,
+          "height": 173
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgABYAFbAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdAAAAgMBAAAAAAAAAAAAAAAABwYFAAIEAQEBAQAAAAAAAAAAAAAAAAAFBAMQAAEDAwIDBwUBAAAAAAAAAAEAAwIFBBEGIXJBMVEzYRWxEwdxUhI2FDIRAAEEAwEBAQEAAAAAAAAAAAEAAwUCBBEhURJxQf/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AAbb3LQlHfmmaiadjV4e684It7JMiRGQPYUSfjR+mVSynbydEXRg/gTjP0W0lIPPtD6/ni2jMduz3ySO+roe0dRmrQtwmBPG8krVmieWOkEggjMT4IgRos3LmUHIGEPvJ2wlD5EuqfazNvB0OORjjY9FLg5Fm36np0dqySxKVZJ0K8Sw4ByIWMeK527rG0hlb/qb7E5WXaIG6oUs3BOlqFmweRUrRaY5bOs3NtcTZkZj/JI9FHtqcpPcscaOzaUDHAFTFEnJ6U8Vi9u5aYhGLsoOlsAujr0Qsr9i4zP3nHpOymTkyySifVP15vgHohzqju4cRUWNwn9SUp1sb8UGqqqttlGL/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/shock-1",
+      "title": "Shock",
+      "slug": "shock-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/13/8e/yRfq7rtT.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/13/8e/wFQhWfcD.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/13/8e/Q0kceD3f.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QASwABAQAAAAAAAAAAAAAAAAAAAAcBAQAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAARAQAAAAAAAAAAAAAAAAAAAAD/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwCAAAAAAAAAAAAA/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/oh-5e1",
+      "title": "Oh",
+      "slug": "oh-5e1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/fb27cbec3d6194f40b9890e25aad54a3/40/f8/d5LXbrCu.mp4",
+        "gif": "https://static.klipy.com/ii/fb27cbec3d6194f40b9890e25aad54a3/40/f8/JEod7Sit.gif",
+        "webp": "https://static.klipy.com/ii/fb27cbec3d6194f40b9890e25aad54a3/40/f8/0LzDl4mV.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 1280,
+          "height": 692
+        },
+        "gif": {
+          "width": 320,
+          "height": 173
+        },
+        "webp": {
+          "width": 320,
+          "height": 173
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAsACtAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdgAAAwEBAQAAAAAAAAAAAAAABAMFBgIHAQEBAQEAAAAAAAAAAAAAAAADBAACEAABAwIEBQQDAQEAAAAAAAABAAIDBAUhERIGMTNxFCI0YYETFRZTUlERAAEEAgMAAwEAAAAAAAAAAAEAAxECBCESBSIxQTIU/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8AylHZpJjlGxzj7BHQWepb4ubp9iu7FuPsZdbRGcMtJAVMbgpqp7nTsDS4+OkKTPu+ABasK3rqNejQ8tLzfe8N5tVzMrS768MslUsVX31simlHkcCl73qpa64yYER8ACMCjtt0kUNuibIBkcck2LN26gj6UeVk0L96gGQUmqtdZUvH1jJvHqlfr9x/4VomVETahmlrSAMkT3kX+GpxiyJlcf0wsP30jJWZZ8FbttyqGtacD1xWdfzWdFZt3LYi7CoJEhVdbY1mDCXul8lcWyHS3ThgMkmjuM0FGGnHRwTb1y/lBM9K75WbHFusa0pB7z3uW9pTNwVrqqRrHFozTvzVx/qpVP62Tqi0gvaPkpS3SfyF/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/oh-my-my-my",
+      "title": "Oh my my my...",
+      "slug": "oh-my-my-my",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/c9/d5/XuNBkjXm.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/c9/d5/vyZK7Qnh.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/c9/d5/aRnyuZ8s.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAhAABAAMBAQAAAAAAAAAAAAAABQcEBgMIAQEBAQAAAAAAAAAAAAAAAAAEAwUQAAECBAIFCAgHAQAAAAAAAAECAwARBQQSBkExIQcTFVGRFME1cSKCsZKToYFz0TQyM3JCVVNhEQACAQQCAgMBAAAAAAAAAAABAhEABAMhMRJBIhQyBRP/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwCPLti+ZbQktnF/JB1x3p9FqbrrCnLQIaUpOJXMISZpNUvFKHDXcuJlMoBX8RC7NDzchxM6c8LZIniwqmNkIa3X+GQyZEwJo2G5b5OIEDqYkxS1OzRa0e1VaN265tt606YyuY7hys3yXWW+GfMVThKqVcW1ngWnCsbFENznLQTzwW31+ov8e2aWpsAghKZ7JQKxUNcqrDRO61/1T1sGKsJC6qjcW9ymlvFUsWjZBGG7/wCdEadum1FVKuOOw4DMy8p1dEHck3P+a/ZP2hWXBjGRo4msrDmc417cxUx7r6UxSqEwSlDrjgxrWUgkz8YSzlvAt8r2Lg6iX1qbUEywBImNMzHDJHcln9MRnt8P4YeBiTs29mrYUX10KjHNVYqbrTl426G0PKW6WpbEzOoRb3XZ6qlLcWkJauGnDNaXUAn0TogvMXc6P2H1xXyJ+b5mJW32Y+aVeGVRTxHFegcs5ro9ftxbu0dpKynarC2UnthPk+if1tv7tEYzdz+uPDsjaxRmaeTRuqjwK//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/oh-my-god-52",
+      "title": "Oh my god",
+      "slug": "oh-my-god-52",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/7e/9b/AZB4pLzA.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/7e/9b/3Tz5v82u.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/7e/9b/tHoo18Ny.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAeQAAAgMBAQAAAAAAAAAAAAAABAUGAgMBBwEBAQEBAQAAAAAAAAAAAAAAAQMAAgQQAAEDAwMBCAEFAQAAAAAAAAEEAgMAESEFEjETQSJRFBUGklOBcnEWMqFhEQACAQQCAwEAAAAAAAAAAAAAARExEgMCBCFhQROh/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8A8h0OTprA7OBfHNSV+qlRC3rvlcwWtcVFtKlMKxhAB/fipAVzlAuRG7ZbAbjFc7KT1cLJbo+zSSRsrfLsc8tB3548aLepb/FWzxMe0wzubK8DkUKrlUnTvMMhZ1b27rbd23JqzPeCKD2co0F6e6qZ92yADF6LZKvOtG5dV+i5iqRkD5oQdj8E2vWXqSjwf8a5p7lKaCznCMNuRvGCfzW3qSj7U/xFME/o34EIJabg2pohUKCxobJbxxSqmencNpZDj1Zsn1hchfK7cJG5aWPyDSyed5U9W+d24f8AO2iZ+Jf1Gg5v71kOfZwu/YYVavUr73gAdlqr5WT7P8quncPomkLtnVn/2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/gasp-2",
+      "title": "Gasp",
+      "slug": "gasp-2",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/86/c9/AZ2uYYDi.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/86/c9/9ZOKUu7Z.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/86/c9/TEbRhSeF.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgASWRLAAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAewABAQEBAQEAAAAAAAAAAAAABgUHBAIDAQEBAQEBAAAAAAAAAAAAAAACAwEABBAAAQIFAgIGCwEAAAAAAAAAAQIDABEGBQQSByFxE0FRNDYxgXJzdJHRQhRSIqEjEQACAgIDAQEBAAAAAAAAAAACAQADETESBCETQQX/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDMdl7Pb7zUbrGawh9sMKISoTE40C7UFSOOy8+MVoFIP6y64E7BeKnvd1Qprm5ZRfebSFJYQvSrSfMx5v6P34g6i44fsp1qqrTwanHj0tY8kuNfYtJWhIPbwMVrDQ9OrYfLuAyshBlMdcQ6duC8fN1qCyh7/NSlGcuyGliILeRL8DD6thHUmW/2d2axrtwOpj+6dsw7XUAZxWkso6MHSkSEGIYbzeJx7IQPi0nE+1tTN0xe3cpxlb4UypGlBAPHmRFKs69OZIYjDjOtwrXrKTP4GC1Pd7V6pj6336IFyTxmMG0Da89lqnKz0B1GYwp5PBSdBAkRzMJbRuhjYyXAcLIM0y4KR84zu0+a+UUsTyVyjKxSWoSJt5bzPG4d+bqC8jJQ0tkdGEyUQT/IgR2XrvXojjii1Mn/2Q=="
+    }
+  ],
+  "2": [
+    {
+      "url": "https://klipy.com/clips/uh-oh-7",
+      "title": "Uh oh",
+      "slug": "uh-oh-7",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/cd/5d/b8CAFRNg.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/cd/5d/Z9HnnvqJ.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/cd/5d/gt7o0f8F.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 852,
+          "height": 404
+        },
+        "gif": {
+          "width": 320,
+          "height": 152
+        },
+        "webp": {
+          "width": 320,
+          "height": 152
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgD5T/05AAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAcAABAQEBAAAAAAAAAAAAAAAABwQCBgEAAwEAAAAAAAAAAAAAAAAAAQMCBBAAAQMCBAUFAQAAAAAAAAAAAgMBBAARIQgSBZNRFZGBQiUHEwYxEQACAQQCAwEAAAAAAAAAAAABAgQRFQAhA0MSkpFh/8AAEQgADgAeAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8ASlIrc2qZRJB3cfsC/LU1+16KizORiv7JJ46dccPzNuaX69TeXCQqiRlpiGs+kQf04YYVlSRLbyoiigrthvGtH4NVc7/MflIYFexC/lqmV29O+JC3mjQcyEPRbochr/2ywVkswsIseiyOMFRcZ46V9xgt8Q9jfDn/2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/no-way-bad-idea-oh-man",
+      "title": "No way, bad idea, oh man",
+      "slug": "no-way-bad-idea-oh-man",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/96/4d/nkJGEXEl.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/96/4d/BFc3MtU0.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/96/4d/JmOLGaY6.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 740,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 208
+        },
+        "webp": {
+          "width": 320,
+          "height": 208
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgBX4Fn3AAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAewABAQEBAQAAAAAAAAAAAAAABQQCBgcBAQEBAQAAAAAAAAAAAAAAAAMEAAIQAAIBAwIEBAYDAQAAAAAAAAECAwARBCEFEwYxEjJBgXFhM7FRc3IiFME1EQABAwMDBAMBAAAAAAAAAAACAwABIRIEEYExMzRxURSxQRP/wAARCAATAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwDxnYsh1xHju1u+9h0rotn3Lc4giniLASO0kaVByJC0+OyRwxysXN+4Am1q6WHJGUP6bxwokTH7KdPLSg+QSeQVhWz+14h4MGVYJSCr6cuLl5cubLwXJZ2spbS9T7smcuc3FXvlKgsE1sPSt5iOs8ggutif5Dy9qzhZs8LudHYgAs4udKX+mQY2wpJJxW3WmvtriBEpkiSYyWvM80Y3KU8uLtU00LmOQSW7x16UpsDvkSZjSsXNwbk+fpRHLP8AxJvy/wCUty148v0qJfuF/EPvE6e7uYDjILaMuvxo3cJHhccMlevSk2+fF+p+lFbr4x7mq8XpR4hmPdFv9P8A/9k="
+    }
+  ],
+  "3": [
+    {
+      "url": "https://klipy.com/clips/puppy-eyes",
+      "title": "Puppy eyes",
+      "slug": "puppy-eyes",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/50/80/BJI1ygLy.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/50/80/chailucC.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/50/80/KjRX7Ju3.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 477,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 323
+        },
+        "webp": {
+          "width": 320,
+          "height": 323
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAdwB39AAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAaQABAAMBAQAAAAAAAAAAAAAABgUHBAIDAQEBAQEAAAAAAAAAAAAAAAADAQIAEAACAQQCAwEAAwEAAAAAAAABAgMEAAUREgZBIRMxMhUUUREBAAMBAQEBAAAAAAAAAAAAAQACERIxIiH/wAARCAAeAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwDjD9bEC8OGrSYPoNRXjmFKp/2/SCKJJE5ehsW6xuRx1DjoQCuyosuxt7FRCDMh0WqgG1XkFuLfGfFyjLoi7IqcvjXpnBkj58SdbF1n2DssBycyQ6IUkHV9fM3ZaauTfVwyvEQno+Dcrh6TL1uBlhICtoqkh/ReCkqRUrvjq0eHq/nQGMLYF/rf2bR5hz+izOPxU3+h2mnUPxfZ3o+LA00dWK6r+6MDyP8ALz7u5qOJqtJvs3Ie9CxvY8ZTtkH4KqaPgft6tbsHZKPKmT//2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/look-at-this",
+      "title": "look at this",
+      "slug": "look-at-this",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/d380f470fd6f02e4d0fd8427071155d9/2e/1a/Ww5Pm2bo.mp4",
+        "gif": "https://static.klipy.com/ii/d380f470fd6f02e4d0fd8427071155d9/2e/1a/jtI7Lu0B.gif",
+        "webp": "https://static.klipy.com/ii/d380f470fd6f02e4d0fd8427071155d9/2e/1a/GCcFdFTO.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 1280,
+          "height": 720
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAALgAtAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAiAAAAwEBAQEAAAAAAAAAAAAABwUGBAEDAgEBAQEBAAAAAAAAAAAAAAAABAUDAhAAAQMDAgMDCAsBAAAAAAAAAQQDAgUAESEGExJBYQdRcUJ0NTLCIjGDkbGBCHIUsjYkN1IRAAIBAgQFBQEAAAAAAAAAAAECAwARBQQhciJhMjEScROBJAbw/8AAEQgAFwAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8ApPw9NwG0lGQDlR7tze+tqtrt4Vj9Nw4ECM4t6DJ0yB5bc9ytTTIO76pyKiDLzfFk3kgSyGzggHtuTSsV/dtebeDj83H3BxFOJckeU6kmOmlzCzJPKV73tVbLIfckkOigCvSoVthFt4oSl5VUf64SCGQ5I6CWvTxserCrZWTi/GTTrczmBGOQ5+VmarUNBGadWrTxemhcg46CeXjQa9oE9oGRm4LvYrWxq0tSqdtoFKVyQkVU3PhbcOcfCNckdZWrISrIDwnyvxcqPiYaJwVchW1HOlMmzJLKY89oHPlxeLhH/q9zKtOspbhbiYFqHIYn56Y1++8P13o3Ua1jPkinvcCiBs6qoaTsBS48zxZvuyYb0+UpwOpPgL1bTrlb24kkU7jbjGQS1OI5YGeuR5xNo6d/n7Xp8f2G2yP1Y79D9lhtfMS7jVPDoIpkIkQMBH/dqY7h3Aant+tO6wkE7nNp1lHpYck7OcQJSJEfZ7NbJ6v+NV70f3TYu6G04UBaXcKkfoVCZhFXQAGw+aZ0qUQgVnx5RfOaPbfKZ6vVfmjfzer9betdZU/Xj21//9k="
+    },
+    {
+      "url": "https://klipy.com/clips/look-at-my-handsome-face-and-youll-be-cured-for-sure",
+      "title": "Look at my handsome face and you'll be cured for sure",
+      "slug": "look-at-my-handsome-face-and-youll-be-cured-for-sure",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1d/cf/XtaPDA6l.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1d/cf/QMT8RlVX.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1d/cf/mk8Tn5yW.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAgwABAQEBAQEAAAAAAAAAAAAABgUDBAECAQEBAQEBAAAAAAAAAAAAAAADBAEFAhAAAgEDAgIGBQ0BAAAAAAAAAQIDBAAFESEGElFhcTQxFIGSMlMjEwdzsZEiQtEzFhXhNUERAQACAQQBBQEAAAAAAAAAAAECABEiMSFREhQEUgNxQf/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AGNfjkSpRZCJU6HAOnpvWj4chq6hUSFIlI8eQHe+ieGnfLDzDc0YGy9d2sZ5SWf4TaCMBuzS4D4f1voNNn/sWILqzRAdcYuNn48Jw7ULDVSKGIDArECN7s8a8W+Xgip6OKd2aZUkZVIAXp16LG8b5GjqqmArKtS6QKp315W13+y1+j24yPJbj5HWK4pZEkoImQ6qyKV2/wCEX5reWKkQYWjJYD4KeO34b+/loPeJ6w/O+gARPynTmE4PzM1XBkavLmTmfVolDcpHRvauPFutSBDO0SFOVlA9rr1vmwvcafturF3hey4Jxj62BjjG1VdErlHhlVWE8pnHgOZRsLizfNjw9UPLMRKC7FiAevXa07eybzT9Ju264xiHAFLL3YmfwtKmFNOjzIIIxylTofuiy38ZD7+p9f8Au2vEP+fU/Rn6rJXkpzHepCIx2v8A/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/starring-contest",
+      "title": "Starring contest",
+      "slug": "starring-contest",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/897c719aa634cf537cbe94f47c7e4d17/84/54/L3RBBlub.mp4",
+        "gif": "https://static.klipy.com/ii/897c719aa634cf537cbe94f47c7e4d17/84/54/DlvVMILc.gif",
+        "webp": "https://static.klipy.com/ii/897c719aa634cf537cbe94f47c7e4d17/84/54/Hkn7UMKS.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 540,
+          "height": 360
+        },
+        "gif": {
+          "width": 320,
+          "height": 213
+        },
+        "webp": {
+          "width": 320,
+          "height": 213
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAUQBQAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAbgABAQEBAQAAAAAAAAAAAAAABgcEBQMBAQEAAAAAAAAAAAAAAAAAAAUGEAABAwMEAQUBAQEAAAAAAAACAwQBBQARITESBgdRMmETIkFxFBEAAQQCAwEBAQAAAAAAAAAAAQAEAwIFESESMQYiJf/AABEIABsAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AAXSomaRGL5faHdZp7mcZlM9I0vuePWwL0sYk4i1anXaC/Tbg6GCUg4/m92D87wdettWAUwxP9cg12CVKKKFXbO4di2UIMwR/mcYunsKkw7HSm//ACwILAMQoH9zFt1ul9aQ69MJtkxmUt+MZ2uZU/rtVYdiUVpYz9AnMkM7TGbnsJl5mmQ0Of1op/M4ak+P7+cLz8gU2UqEZyWsbxc++r5uqeT3jI+skJJ8F8Ry/wBuXc0rWfu5JnBvr0BDs21Y4RXfhKd+Km6LlNumqXEZLXOlp+21On0F0gqlPMEiHlEfFhaGqo2oDdREpTPl7h0m91UVUc0ZQ1ilQuO5azZn0eQcxxtoqXNa24ICf+Tw7OcuJZKi1q8jYTZXzF114yFGDmCgccfnFknvdXjd+azTIgc6D62M68AnVIgozHLabW09uipX2SZgJBJjkZ2seaW7R7EYyd20SU8zZwPGU4lqCKggBZe215xVKGpLlAkznaZjGbGcx9LqvmZm1bUVP6UQT/Me2MXKbdo9kkpS1hz1Cl3WOhicSVrwOxX/2Q=="
+    }
+  ],
+  "4": [
+    {
+      "url": "https://klipy.com/clips/a-guaranteed-disaster",
+      "title": "A guaranteed disaster",
+      "slug": "a-guaranteed-disaster",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/96/03/6TlmQcyq.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/96/03/LHniOODl.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/96/03/GxU90DnV.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfQAAAgMBAQAAAAAAAAAAAAAABQYHAQQDCAEAAwEBAQAAAAAAAAAAAAAAAAMEBQIBEAACAQICBwgCAwEAAAAAAAACAQMAEQUEMXEhEyISBhRSQTVRBzOxYSNigqFzEQABBAIDAAMBAAAAAAAAAAABAAIDIREEMRITYTJRIv/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/ABuMdC4nLghZjc/rZc97rQnQyQiysYxMLCEenUqkbFc/C+mRiGKBti0rEXNfVUdY8c8cR2DwtqqDWMkgPZuBmlswdGEnP9YSv1GPbAbQW4tl6xBzRjw7WhojnhzGYhTEGXKuKyvahzIoyLY720VQQfM0kTlpmLs2Vj374kxd7u9Vv33KpzO58Hi6re/xpfX4SCb5XpDCMvBLu4iATESWwktu2k73o7FhuMbrKwOId0Jmlazb9F4U6YH8v9h+6R/fXz8v+AfVamzDE2EYY0LjVlkOx9jYKxdCw5TOZKYigC5PS9rt+a7430PhOIAcggoJO8Ct/lcPbjy8tdMOY+E6GxRmC2jheSPf6Gzyog6iwdYPmJYlJztO90qFc5etMfX3mE1LVRPY0ONIyf1f/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/is-your-life-just-terrible-i-know-how-that-feels",
+      "title": "Is your life just terrible? I know how that feels",
+      "slug": "is-your-life-just-terrible-i-know-how-that-feels",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/52/eb/9GYYv2Yg.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/52/eb/bTipEOiL.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/52/eb/udk0daA6.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAbwAAAgMBAQAAAAAAAAAAAAAABgEAAgUDBwEBAQEBAAAAAAAAAAAAAAAAAgADARAAAQMDAwIHAQAAAAAAAAAAAQADAhEFBAYxEiFycVJCFEEzEzYRAAIBBQEBAAAAAAAAAAAAAAABAiExEXEDEhP/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDwBSiYTUWSQblOYjHcmgRTdbm5iaHxbQa8ovFyRA6dVgWV1lm5Y8noicP0jUHxWxrlxlnJZabmDGQEzEbRB2Rk36SNOSj85SbrYGlFd0R5HhsqUKQGsMatVVTCmFjiSCCNwaog1Fb4vaet11lMl2cQ3IdqH/lFN9/hLX3lGV47Hyqp6MK04beTDIlP0RqAu3ssfypWH6MzsXZdDk//2Q=="
+    }
+  ],
+  "5": [
+    {
+      "url": "https://klipy.com/clips/confused-thinking-1",
+      "title": "Confused Thinking",
+      "slug": "confused-thinking-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/19/92/Yc9RN5dS.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/19/92/ZLKq6d3A.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/19/92/5D3j5q7q.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 635,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 242
+        },
+        "webp": {
+          "width": 320,
+          "height": 242
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAcexwgAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAawABAQEBAQAAAAAAAAAAAAAAAwQCBQcBAAIDAQAAAAAAAAAAAAAAAAMBAAIFBBAAAgEEAgICAwEAAAAAAAAAAQIDBQQAETESMiETYSJRQQYRAAEFAQEBAAAAAAAAAAAAAAEAEQMEAiFBMf/AABEIABcAHgMBIgACEQADEQD/2gAMAwEAAhEDEQA/APJSrH+HKrOhXFTgaRJljC7BVgfyyG8grVlZyXTyRlUYLoDnO9/l6wstGdZ/jjcDyPreD3ZGsvgv1GrV3kbb/EFCqklGElt0VpEBAI40c5VTtKpf3DSoANsT7Obrd1OhkvLR4iAerAeR+9YVPu63eW/zLKiL26+xl8XiIBk64ClPHKJGDt4mE80sLQzP3iLbCH9/eFcDa9EYxjWtL6GbXxGYl5Oc7DOiBxa1OCLVMaOASffUUSLChA975373gXN5cQaW3b41J2QON5QeDkV35ZGBPQndijFfLZA+L//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/thinking-1",
+      "title": "Thinking",
+      "slug": "thinking-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/0c/7b/Ka5YPHVa.mp4",
+        "gif": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/0c/7b/66PiAS4b.gif",
+        "webp": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/0c/7b/CCd7CDhT.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 534,
+          "height": 404
+        },
+        "gif": {
+          "width": 320,
+          "height": 242
+        },
+        "webp": {
+          "width": 320,
+          "height": 242
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAsSyvEAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAegABAAMBAAAAAAAAAAAAAAAABwYBBAUBAQEBAAAAAAAAAAAAAAAAAAMCBBAAAQMDAgMECwEAAAAAAAAAAQMCBAUAERIhBlEHcTIUMUJyQTczsRM0FSKBIxEAAgECBQUBAAAAAAAAAAAAAAECAxEiFCEScTJRI0FSMf/AABEIABcAHgMBIgACEQADEQD/2gAMAwEAAhEDEQA/ACaspKeKIAJB5XvoPTyo1xF6ih8O0N1M1elet0UTpDWIM+o87AAZOblcGjcQw6QsJLXJEJZQHkdhZQrXw2NOXhucpMLKlENPlLQFExrScWk3SMJ72bNu6x4/8zIVmBweXnOr273tp1TipJYUZk2n4gZdT7CR0bpUORMkSV2hR6J/UHyzck6mTHinx9H+bsnu8uV8Pov35/rG+t1N+xQ7TY0l5kXXbs9SG8X8Hxq3wwnWUMMXRGFs7axzs6CYD3NJO3K2BX3dy/7ZC/46vafnbfXIa9H/2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/ah-no-jennifer-lawrence",
+      "title": "Ah ... no. (Jennifer Lawrence)",
+      "slug": "ah-no-jennifer-lawrence",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/06/58/ZSlt25Gd.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/06/58/MIu7Jb5W.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/06/58/20VTzymD.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAiAAAAgMBAQAAAAAAAAAAAAAABAIGAwUHAAEBAQEBAAAAAAAAAAAAAAAAAwIBBBAAAQMCAwUEBgsBAAAAAAAAAQQDAgAFBgcRIiETEkFhNRRxVHJRktEyFZEzoXQ0cyMWU8ExEQACAQMDAwUBAQAAAAAAAAABAhEEAAMSQQVRIyFhMRRxE5EV/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8A5UntwXPsMRjKMnvlJ6VTiHDL+G7skbeci5xQJgx6a9K6TkLl/wDyFLiDx0YOKW0p8FKe0W3NNxFYcsIrMW3Fc0vPhVlrU8E6g6TjHd19tPyXL1tewXKV0LsL6uJ+NSMxMywgG4moY4Zk7v2vvo3DqOFxWJ2nxJtuTgEj2dlexegkhUFKwZGTZIlu0B7RSYeS3ZxoqeE5FlgGXEOuhkP+DWjw11RixFEylRsOlxlwK2XXokTP3ZuJkrdtuM2ETcnGxHqd4NZfFW+jypw9c1K5x2cXJSOp2oyINXc9z/qj7hrf9KtUR+hPrNk+HGzEhY8+0XNXseXbLZC6ssTbDbylybczMHQDToB7Kj+Xd8xFjPFa1UsXmHNMvPwgOUOSPlVmY3crP4idCZFd+LvVrnc9snfrbooNWFjx0s7ND9i2SdiIh+DhHFA3nfQeGbu45ZU6eXPtyiJbxy/VRua/dT/6v+1jYW/JJfXhUsO2ptqfzlYbCYuS/Rzuhk26I+cR8KXwaz0iPuD4Ua39kfKlrCALTSp2H8F//9k="
+    }
+  ],
+  "6": [
+    {
+      "url": "https://klipy.com/clips/yes-90",
+      "title": "Yes!",
+      "slug": "yes-90",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/fc/bb/PBVgbvTV.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/fc/bb/6kgF9AS2.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/fc/bb/Z8lXZ9k0.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAgQAAAwEBAAAAAAAAAAAAAAAABQQGAgcBAQEBAQEAAAAAAAAAAAAAAAUCBAEDEAABAwMBBAgDCQEAAAAAAAABBAMCAAURBiEHEnFRckGBNLEiE1IyNpKRdHMUFqE1YTERAAIBBAICAwEBAAAAAAAAAAECEQAEAyExEkEiFAVRMnH/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwCR16r4pMoW+z1z51CXTjCkxkMY2VX3cTeURWPDa9MERPw9FDdVC2qE05pk5i6DHjkeXZT1zl+NcLgZZlZkftH/AF5t2xE94edChGn7c5c7k0zFlx4E+oQBOB3UVuWhLwmVSlFM62nmcNuEHGeiiG62+2+yqIxm0JqH5iGTH5YmrneJen0FsTPIw3LMgTHAI2/5XngzZzfrjQD29RJ1SKYbc2hZmEjeua4upTuJX5tODhlCRiRWKbvalxZcHVDkRGTkyZAf8pWkWt+h6vAbzWWQf548V2We7JBK3pnly1S8THIEMADlmhGr93lutennrkkUOngmIybdweL7qvln9Qk6lAte/Qiz82NDl2YhmJLTyeaw4/XJA0KkN22jEuo/1Klx0sewNntj1HvqnloVDcSExXLjtIHuGMoggdGaT3JeBufKqi3ePHWPlXO7B+wJkcHyKtsuQMAGaDyJrj18tMUd9ftxMJmDpgHMfzWP2+Pib+zRDVf1sr/EnzrdW1xnbZyMT/tX3YRs1//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/yeah-51",
+      "title": "YEAH!",
+      "slug": "yeah-51",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/2c/d2/JAFlJP3H.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/2c/d2/jvetMm8q.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/2c/d2/vBDpry6M.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAgAABAQEBAQEAAAAAAAAAAAAABQcEBgIDAQACAwEAAAAAAAAAAAAAAAACAwQAAQYQAAECBQIEBgEFAQAAAAAAAAIBAwASEQUEBiExExRRYZFxckHBIyI3sjUyNBEAAgEDAwQCAwEAAAAAAAAAAgEDABIRYQUEMjETcXJRIhQGIf/AABEIABYAKAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AIbc0Z61/pymbn/QvdIaYwGrna7YAqicmpOkvrw8oACiEiruld47Cx3YHLc4KYUmMjfLFUGtSpus0dRNtkYBemX5vBaKo7AcR3Po7PWjMJ3AUL2CEITDK0irStO0G6exnFuzJSTC2Uxdto+OQNH3FHZJ1SnzxhHTmNm5BZHTpNywnNeGyRi2xHHK0yL9VpjjX7q2Rjfc8I+p1hvjbp3F81bkmJSRPCMfKPtCV4ccPJXmAQmibzRjpDx/lItwAeTIZiUiTaowJAKEMWrtXgd4o1oxWMXQGM4g/kUicm+lich8RSsP9vsT2FByNrjD7VI3BtAPyVTzOEizHFrSpqvmsdDodzphzRUUJXUBuvZFKAMz/qL3fcO6S/0972v5Rm3t2czVjmrO88deqx6rbRb3kDwQaJt4JBnKHusKaq/vsv1+oNiX55gEBE2lav8AKZx0vCPqv//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/victory-screech",
+      "title": "Victory Screech!",
+      "slug": "victory-screech",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/fb27cbec3d6194f40b9890e25aad54a3/3f/b0/UIJoA3LN.mp4",
+        "gif": "https://static.klipy.com/ii/fb27cbec3d6194f40b9890e25aad54a3/3f/b0/tOXJRPeo.gif",
+        "webp": "https://static.klipy.com/ii/fb27cbec3d6194f40b9890e25aad54a3/3f/b0/ioY7vdN8.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 558,
+          "height": 404
+        },
+        "gif": {
+          "width": 320,
+          "height": 232
+        },
+        "webp": {
+          "width": 320,
+          "height": 232
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgB6pnlbAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAcgAAAgIDAQAAAAAAAAAAAAAAAAYEAwECBQcBAQEBAQEAAAAAAAAAAAAAAAQDAgEFEAABBAIBAwUBAQAAAAAAAAABEQMCBAUAEmEHMzEGIRNRIoERAAIBBAIDAQAAAAAAAAAAAAIBACEFEQMEElExcUH/wAARCAAWAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwBwpZGxXvstfZKcXFEuX6N78L9JqCuKSB6dd89d7iYi7kas2YORDZJkkdk3u42LdbnGsZifEpKQ+AdXcOfo16iLUYs+tEoXSaW0fwW8ZjlHLVjLlOMoCRSIOp/vWiL+WLnBww4jjxXYGK96ANrbfm+RIkIEERsl3uPilQtSkn6NhZr0TAi5LSLNPk1cCED6CSa8xKqtGpIuxIVE+Ouj/wDEVRV2w+M7Xb8Y/wA3yW2y9wAGb6pt0cw08hi3EJz9TulsybmgQ6NednS/5N4m0cqNSrWf/9k="
+    }
+  ],
+  "7": [
+    {
+      "url": "https://klipy.com/clips/yall-killing-me-with-this-sht",
+      "title": "Y'all killing me with this sh*t!",
+      "slug": "yall-killing-me-with-this-sht",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/11/e1/TaXYf5mE.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/11/e1/6ASQDdW4.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/11/e1/SkXSUJcP.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfgABAQEBAQAAAAAAAAAAAAAABQYEAwcBAQEBAQEAAAAAAAAAAAAAAAIDAQAEEAABAwIDBAcJAQEAAAAAAAABBAMCBQATIREiEgZBUWFyNTMxI3MVkYFxF1RSsTJCEQEAAgIBAwUBAAAAAAAAAAABAAIRAyFBBBIxEyJRYSP/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDzXhx3h99O4nVtCCjdOC7yMuQN9naiogkknDTfp7IlzIuepYk4oaEIzMtevO0qy68mYz2CTnrkb8/t/PB6Stn+eQwzRT6qriunPwzhYeVoInfUO/rtSBz52JQHYqVrE3CDpOOo6c7TrNWBVuERjANnDhu5Wq6E/IXb5Vw8v3GlXFTvDiGeEzBwOHzPXZv3SV/jNfGyK7VQ5TW2ZbUpHXXosPEsW7LTZW1csVe42VALcT0rh2pcPxprcDQk5UNwO8/rnI9PlcFXF79SqSrFlliS3Y8ogHIXV0DwZ9g3HKu81PtJ/wBumgPCCyrjM0pgEM2jAy1AB+ZtySamqUyd+bThlISLuY2zyIsR3/UOzG22e7mezK9spU56xVqeTx0hFTYbUx3YDcECdOd4fdp/cWi9/wBfU3xvlcw4J//Z"
+    }
+  ],
+  "8": [
+    {
+      "url": "https://klipy.com/clips/mind-blown-7",
+      "title": "Mind blown",
+      "slug": "mind-blown-7",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1b/bf/Cpb79WjA.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1b/bf/BY4AzINm.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/1b/bf/0ZfosL78.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAewAAAgMBAQAAAAAAAAAAAAAABwYABQMECAEAAwEBAAAAAAAAAAAAAAAAAAECAwQQAAEDAwIDBwQDAQAAAAAAAAEEAwIFABESBjEHIZEiVBWSCBQToVMyIxcWGBEAAgICAgIDAQAAAAAAAAAAAgEDAAQRQVISFDIxISL/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwAbIuWadSng5IuZIyb7tq8nEVbWqIq13xWGs8f2Pbb7SEZTpG2S1GRiMZxeEdqwVr5BxVJOJyLn8ZIOBxHS8RySk0hS3eoMSISfk3qpO6eSbtHUx+BKS1NKOoOxtZqG0Hkk9EW5E36EdT06jbeZcai8raIx3wZSzwuoeoCJSHFckLUWtGvOnr2YunmsP5OMU7MuAJFuM3qgRVQVaUDWzIE8Lw8uUfjNlLcFPptbecYQNy+uzE93TgdLp/8AFVbw8vTYsoXwlc/Ul4/bJ+4SvFqUIU5FAkY1CPUXWtc5Nwtvl7Q3KRzxz0zafctxxgP0KVHLJ2dJCH3IblRom0pQo3YQGO+M5vT/AKX3Fp0+VoccMaeljO5bkACe2k6KWTs69qud61TOboo6Bl2YwXGxpl9r5v7jq/hWvUbTblw4o+qrU0qXzd//2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/you-just-blew-my-mind",
+      "title": "You just blew my mind",
+      "slug": "you-just-blew-my-mind",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9f/ec/3vIvx1g7.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9f/ec/AMLAWHJg.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9f/ec/2ReMVgj7.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 635,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 242
+        },
+        "webp": {
+          "width": 320,
+          "height": 242
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAcexwgAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAcQABAQEBAQAAAAAAAAAAAAAABgQFAwcBAQEBAQAAAAAAAAAAAAAAAAMCBAEQAAEDAwIFBAMBAAAAAAAAAAECAwQAEhEFBkExIRMHUXI0cWFSgSMRAAICAgIDAQAAAAAAAAAAAAIBAAMRIUEzMoExEv/AABEIABcAHgMBIgACEQADEQD/2gAMAwEAAhEDEQA/APKIGlKbkIMboonBI62ikzYZidtDy1HKLg4oHF3ocVbt3StMjQIyu0FSZIuIJzaDSfXWND0LYksux23He2ooUoAqStXLB59KkCJHlP4tx2CVD/S23qBJOqS4zCHW7SFKKfqpZ24JbVlzhGRWG3uKQpYZcILRVnHpVUicyq3utlY4V07jfMA68RJsZ5+dqAOf82kgYJq/ypuOzSFafb0IGTWf40+S9/K4+V+P0KOnrmuzy9QAXMKB/Nb0HsPMIK/1HA0eVzrd0347ftq2k8TKTe5//9k="
+    }
+  ],
+  "9": [
+    {
+      "url": "https://klipy.com/clips/later-dude-1",
+      "title": "Later Dude",
+      "slug": "later-dude-1",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/e2/c4/ZjZD1NY7.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/e2/c4/6Lmk3982.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/e2/c4/yjOvfJGm.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 377
+        },
+        "gif": {
+          "width": 320,
+          "height": 141
+        },
+        "webp": {
+          "width": 320,
+          "height": 141
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAF+AYPAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAbAABAQEBAAAAAAAAAAAAAAAABgQFAAEBAQAAAAAAAAAAAAAAAAAAAgQQAAEDAwMEAgMBAAAAAAAAAAEEAgMAESEFBmExURITUkEHMnEUEQACAQUAAwEAAAAAAAAAAAACAQMAIRIRBEExYSL/wAARCAANAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwAbunfqdGwoUKJnsOHT+NyOGc81iaXvGeBRK6SE2LPFpfKbRn5kXyeK2tKjS6g5sapPFKD8hnPPWu1jYOiPZJJH7IbtOAbgHv8AVUdHT0TSJ5L4teqAAIju9TpvyFDMj8XRP9kTyyRRGbNf5fpZv961ar05HqkMCmYex7m9Tg2OfqiTk7dKngTR2kBkc5xe0ZLelxSWFbL/AJor2NwD2oKUp0xLVnTSx/W3fxX/2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/peace-out-hombres",
+      "title": "Peace out, hombres",
+      "slug": "peace-out-hombres",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/89/1a/i0yoSans.mp4",
+        "gif": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/89/1a/4OkeD6eM.gif",
+        "webp": "https://static.klipy.com/ii/5f4490a4db1fdf9c4afcf2de5b693c31/89/1a/RdkCPXl4.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 720,
+          "height": 404
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdgABAQEBAQEAAAAAAAAAAAAAAwQFAQYHAQEBAQEBAAAAAAAAAAAAAAACAwEABBAAAgEEAQIFAgcBAAAAAAAAAgEDABEFBBIxQTRRIiETcaFDgTIzU5EGBxEAAwACAgMBAQAAAAAAAAAAAAECIRESA1GBQSOh/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8A+EzIox+Ni00+9JCWzEC4HZUmY3pMhuHMYRgyfQFZflSaes5ULd+KoZaQ+K5PR6DBYbVyWPR7NzlNNJ+XlVep/wAUzW/jdjJxbEYxR8nxb9VlRYPc1NPVHrzHk0l3pz/2uWHTl1o55YYyvcbtJ1PsXdOZa0ej8amdr4eQyWHmx5GJFfi2qi+Mq2stO5tdkyu2/esu9KOynOSNxKrB2YBUKP3vV+lmY4ca9da4sj/EfVVDP4VVyD9saSyvY2lLx4LdXKSwGMtr8e3Z1XNnlkg9UAg+lxsqyR/R/dLp9HXNL+BlvRVIg+FEY8lfoqPlp/wfekm8KvqqmopGn//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/peaces",
+      "title": "Peaces",
+      "slug": "peaces",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/c3/01/VYEmdPd6.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/c3/01/nJeMmZxD.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/c3/01/3qXQymt2.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAeAAAAgMBAQAAAAAAAAAAAAAABAYDAQIFBwEBAAMBAQAAAAAAAAAAAAAABAACAQMFEAABAwMCBAUFAQAAAAAAAAABAwIEBQAREiEGQTEygXGSgiIVNGFRMwcRAAIDAAICAwEAAAAAAAAAAAIBABEDQSETBEJhMyL/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwBP46pUmTGZJjhpYzGscz5XFSoapMV6EdrCA0vUcflfUFSSkRii5usOFhvkPp6jTuGux4WYm0NT0/QyAyImVNQWtRy6qEKuI1DFhzqJESiKYA+QO/M2TWainOXTcmM9ATfPmTnklhccAc7qK0X1EaBg0RNX1FyNT2qSVWu7WkiyPpUb83MjpBULRuSd71qd+r7ptqCDDGu1y56xT6VwqlGS1RJbiQMnW3r6rXePhGjqFOKxzE9tOo5cLYY/26Pk21z/AED+3puuiVLqT0m/KaviL6AwGjPU5sespEDION7JS6p3DWezxF58orb8IIjHamw43yM3ei9jt9our24cV/Kn/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/goodbye-friends",
+      "title": "Goodbye friends!",
+      "slug": "goodbye-friends",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9f/64/fx6mxcpI.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9f/64/LLnGFbQ2.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9f/64/lnT8GYvp.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 637,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 242
+        },
+        "webp": {
+          "width": 320,
+          "height": 242
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAEwwSwAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAeAAAAwEBAQAAAAAAAAAAAAAABAUGBwIDAQEAAwEAAAAAAAAAAAAAAAAEAgEGBRAAAgICAQMCBgMBAAAAAAAAAgEDBAARBSExEkE0UXIyInEGEwexMxEAAQMDAwUBAQAAAAAAAAAAAREDAgUABBJBITFRBmEHE3H/wAARCAAXAB4DASIAAhEAAxEA/9oADAMBAAIRAxEAPwDLKzKHXnGtF22u+N4qMB8YTIUBzPQ/HEd6zI5Bj7KNPSyi4k4uZ42IBbCSHpv03lvcJ7tvi9OllvZMm0Lv5EQidyetk8X/AF4FGsVu5HHKBivEkafiyW10zmx+uUrUYiwEfBvXT0wiCC5XjYy3DKPu039qw+lRlvQ/yw6ME9b2u+BzHSy5qB0xRF93osGkM01kDKjGPHJl1JXtebzSlPe+5/VrfT45ZcSNSjTjjDvpMnp9XkUPvh+Zf7ljX/5D8qxuTtYvnMInKfmQNQiEPayLs9exWIDMxH1aT3jL9b5qlw9RKvuYTXaUH0e++I7Ht5Pxnpxvsovw851WCtD+3Pzd50VdmImQC0Sm1//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/goodbye-17",
+      "title": "Goodbye",
+      "slug": "goodbye-17",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/51/67/fgZaJxQB.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/51/67/f7amRcCm.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/51/67/3HeEDj1G.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdgAAAQUBAAAAAAAAAAAAAAAABAYFAwECAAEAAwEBAQAAAAAAAAAAAAAAAgEDAAUEEAABAwMDAgYDAQAAAAAAAAABAAIDBBIREzEhYUFRFAYicQUyQoE1EQACAgIDAAMBAAAAAAAAAAACAQARAyESBQQUEzFB/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8ATkU7JyS2S4Y2CHsEs1t1ozumikqK6ndhh34RDa6YPdCQWyNAcXbAdF6MeD4rNi7tak+57p9x5ca4MCBtlFJT+j62qpteElzcZzjhNEsT4ZXxu3aSD/E+0Xq6oofrYoxUMbHZi3ALsndJ2v8AsNSolcObnE5+U/JmzGR/Z+fyckEVu9zb/wASolF532kFZ84Fe1DSciHByFUhfI7fk9+6tV+wQ1HbqpiybgapUg28V3dcs4hhLKaGShdJ7tQE89sIbQ6oyn/z5PkodTbdvcuIjxWp/9k="
+    },
+    {
+      "url": "https://klipy.com/clips/ill-see-yall-soon",
+      "title": "I'll see y'all soon",
+      "slug": "ill-see-yall-soon",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/36/6b/uPhypXzK.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/36/6b/zCsnQcE5.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/36/6b/efTS2hpC.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfgAAAwEBAQAAAAAAAAAAAAAABwYEAgUDAQEBAQAAAAAAAAAAAAAAAAACAwQQAAEDAQUFBQYHAQAAAAAAAAECAwQAEhEFBiFhQTEVB3FyE1Eyc5GxsqKSIiNTMzY0FjURAAEEAgMBAQEAAAAAAAAAAAIhAAERAwQUEjFxIhP/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwAxcu2V5T4whw35BH7Tal/aL63z1CRebrqROo/XDCoMObhEJpcqS4hbKlJ0Q2SLuOytc7OSvXUtfr7L5uXc+ZnxbHb1JbVEVKLIYCDaCbVwINEnl1pINniL6CHTHOSsvTxInN+KyCpRToSCT6tfKjJg+fMJx2IJMNaVp4EaXpPkaOvs5v12K1RvJhxlA/zRF+v2k4b+UvTdUPL9lXycfY8FfDgai57H2e+q8o2eOTWMVzBMi4PMkOG0UJcsWdN2+gNPxOVKnSXVrVet1ajr5mjVmT+OTu658tAx3+w53z8axa5EQrNt7qTDpYnSEJUA4vXbTp0ezPJgvzoyrbjZQXLr+BHbSK3TN0w/6Ez2C6pKW54pntDfJXUV1dtAjEbh+Kpf93I/Q+quE961dtYoiRV7LrJTb//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/see-ya-3",
+      "title": "See ya!",
+      "slug": "see-ya-3",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9e/3c/uya2dP09.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9e/3c/uMq4O5zT.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/9e/3c/RxehoNbx.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAewAAAgMBAQAAAAAAAAAAAAAABAUGAgMBBwEBAAMBAAAAAAAAAAAAAAAAAwQCAQAQAAEDAgMECAcBAQAAAAAAAAECAwQAESESBVFBEwY0kXEzIjEWMoEVc2FCoVQU0REAAgMBAAMBAQAAAAAAAAAAAgEDACERgVEiBBL/wAARCAAWACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDxPV1ztRnOvPvrfULJzuHxW3UOzFVxMRmtuG81vMLhWtSjgrEHaapHkFopA3G5NU62OVxEFJvunany3LiwI8hbXif9iU+dvvVI+nh1lthMJQfuczija/wpjC5iIcj/AOxXFaRhlVjbsox1yFPdMmKlYAV+INh20f8AcgJol5qyRxnImGLMocDldp9F3n0tqzWyAXNttFejdP8A6v1VH9REZrAG+bzrD56vYeuqqSR3SjBOhamy22G2kC195xpW8nhOG1NtU75ulczvD20kLfKf6Uk8vEOlWCsQKkvJ0xhKXYy2SrjION/bbfUXbp/yl0tH01Vsy+b0JOynSuU9N1eK8tefM1e1zgeqtPQWnbE9av8AlMOUehzKPqIZEifG7Ij0d2//2Q=="
+    },
+    {
+      "url": "https://klipy.com/clips/and-i-will-be-at-your-place-later-ted",
+      "title": "and I will be at your place later, Ted.",
+      "slug": "and-i-will-be-at-your-place-later-ted",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/4e/dc/kf6Gs2jx.mp4",
+        "gif": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/4e/dc/mxVYmy0h.gif",
+        "webp": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/4e/dc/ISqL3frK.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 1280,
+          "height": 536
+        },
+        "gif": {
+          "width": 320,
+          "height": 134
+        },
+        "webp": {
+          "width": 320,
+          "height": 134
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAARABDAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAewABAQEBAQEAAAAAAAAAAAAABgUDBwIEAQEBAQEBAAAAAAAAAAAAAAADAgEFBBAAAAUCAwUHBQEAAAAAAAAAAAQCAwEFEQchBkExEhOBRHE1NiIXMhRhwVSRUxEAAgIABgMBAAAAAAAAAAAAAAEDAjIhcRIEEUEiwSP/wAARCAARACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDn2IlSjUtacOcKoQtd4id8QHDupNPafwrIkyCfqDD+TsbUq23Aw24TQXuqEyrZcSmq8pKH2bp4Ym6Yn8Dxr949jWR0Jo6wyK+7MSlKNJqGXVRwc+L22xcWU6OJkmWocc9Tkxlum0glR9Wn3UtMMsy44iYhMxnIR1qonm6WwdOIdVyozlE5pn72EVhlp696GOSKy7LJjCSmmGEuc5UwqL/0fL7PUz/VYjlsb3ihCC/J45RkmZkePfU1+skUq8hBtxdhypbkCB2lzqL9S3IEDtLnUVx/ovO8CLD/AMVQGde8t1HqBmH/AIqgM695bqPUJfEAsD0OUPfJXfIzGj3yV3yMxpB//9k="
+    },
+    {
+      "url": "https://klipy.com/clips/long-wave-goodbye",
+      "title": "Long Wave Goodbye",
+      "slug": "long-wave-goodbye",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/e3/54/PRLSqAJO.mp4",
+        "gif": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/e3/54/dcbNIbvt.gif",
+        "webp": "https://static.klipy.com/ii/7e6c1411ae693211e30afcc600396815/e3/54/5Q0qMPe2.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 854,
+          "height": 480
+        },
+        "gif": {
+          "width": 320,
+          "height": 180
+        },
+        "webp": {
+          "width": 320,
+          "height": 180
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgCSyJXxAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAfwAAAwEBAQAAAAAAAAAAAAAABAYFAwIHAQEBAQEBAAAAAAAAAAAAAAAEAwACARAAAQIEAwUGBQUBAAAAAAAAAQIDBQQAERIhBjFhBxMUNEFxcoEiNbFRkWLBM1IjMiQRAAIBBQEAAwEBAAAAAAAAAAIBACESEQQDMUEiBVEy/8AAEQgAFgAoAwEiAAIRAAMRAP/aAAwDAQACEQMRAD8AR+IOnom5FOobQp5tVgkJF7UTDNDx1uDJnBKkDIgW9194rjUPEOYcmQmHthKUqHvULk+leiQjWsrPaGXNL6dLzLB5+G1wcNr2ou2tjnZaqN4jfz1r9GVzqlmL+itIxx51+ZJaV/zLQlIWCpKj3Ed1ZwDSMdkIhOPPNBhPvQrmG2Mn+P1pUluJuo4I7MJhz7aApazzMN1KBO+mvSXEEa1hb8Jj0ymVnEguS02Dy7qtsOyt3X6PPmC5kKw6U+H7PLdHqZ/6y/f5SKGsJjlxNbJIui4Oe+o/U/kPvWcfS4iNTja3+owuKHMvfFY7b0Lauw12Qpk6v2RLta2kvKRjiMDEpMrZUsKKe8Cgy9NSrbjLT7iG3BhWkKOFQ3irmoPib3iahzP+vU0tfZVrJH9TdtINKyYfdw32Z51VXDWnZe6f61hOSk5fKgYb2hXlNV0fsHy0TdIl1HDiNQU+ZZUWZqTVKvqSpeM7b5/rWeGjIv2w+FCVUHkVIklc5//Z"
+    },
+    {
+      "url": "https://klipy.com/clips/by-gods-gift-through-water-and-the-holy-spirit",
+      "title": "By God's gift, through water and the Holy Spirit,",
+      "slug": "by-gods-gift-through-water-and-the-holy-spirit",
+      "file": {
+        "mp4": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/b2/d3/pk8jidCf.mp4",
+        "gif": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/b2/d3/NYHhdJCX.gif",
+        "webp": "https://static.klipy.com/ii/48a9760ecdd5307ed701eb96ba85d319/b2/d3/LTqKOsKq.webp"
+      },
+      "file_meta": {
+        "mp4": {
+          "width": 1280,
+          "height": 534
+        },
+        "gif": {
+          "width": 320,
+          "height": 133
+        },
+        "webp": {
+          "width": 320,
+          "height": 133
+        }
+      },
+      "tags": [],
+      "type": "clip",
+      "blur_preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgABEAELAAD//gARTGF2YzU4LjEzNC4xMDAA/9sAQwAIBAQEBAQFBQUFBQUGBgYGBgYGBgYGBgYGBwcHCAgIBwcHBgYHBwgICAgJCQkICAgICQkKCgoMDAsLDg4OEREU/8QAdQAAAgMBAQAAAAAAAAAAAAAABwUGAQIEAwEBAQEAAAAAAAAAAAAAAAAAAwIBEAAABQIEAwgDAQAAAAAAAAAAAQIDBAYFERITMYFycUFRITUzNDJSkRZhIhEAAgICAwEBAAAAAAAAAAAAAAECEQNBMhJxITH/wAARCAARACgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwBpV0JM2KpOXYgOJFitGss5GoS8x7bA0PRbe6Rktxs/wF0ikKbdzLU0woz8ewDjaUm2ROEmvnwE0SChMkkNEeTD/OPcGd2pu1y6WlSJDppeQRmkugY3+2Q41RaccibbQ32bBPU1wbjwHoubxcSosOA1q5qicFx7WLbGSW6IkpL7mQVYq7h7W2S7+vKiko0lqGZ/0c2i59jF9WZNq/0NrvyMWnbgKd+Ri07cAK2MyK37ztzkIRerPWLoJRfvO3OQhF6s9YugSPJeBx2LIXtT5hsYhe1PmGwi36Hk5H//2Q=="
+    }
+  ]
+};
+    const selections = {};
+
+    function renderBeats() {
+      const container = document.getElementById('beats-container');
+      container.innerHTML = beats.map((beat) => {
+        const results = searchResults[beat.id] || [];
+        return `
+          <div class="beat-section" id="beat-${beat.id}" data-beat-id="${beat.id}">
+            <div class="beat-header">
+              <div class="beat-number">${beat.id}</div>
+              <div class="beat-info">
+                <h3>"${beat.triggerPhrase}"</h3>
+                <div class="beat-meta">
+                  <span class="tag tag-phase">${beat.phase}</span>
+                  <span class="tag tag-category">${beat.category}</span>
+                  <span class="tag tag-mode">${beat.displayMode}</span>
+                </div>
+                <p class="beat-context">${beat.context}</p>
+              </div>
+            </div>
+            ${results.length > 0 ? `
+              <div class="results-grid">
+                ${results.map((result, rIdx) => {
+                  // KLIPY uses "file" (singular) with direct URLs
+                  // Use blur_preview (base64) first as it works without CORS
+                  const previewUrl = result.blur_preview
+                    || result.file?.gif
+                    || result.file?.webp
+                    || result.file?.mp4
+                    || '';
+                  const gifUrl = result.file?.gif || result.file?.webp || '';
+                  const mp4Url = result.file?.mp4 || '';
+                  const hasSound = result.type === 'clip';
+
+                  return `
+                    <div class="result-card"
+                         data-beat-id="${beat.id}"
+                         data-result-idx="${rIdx}"
+                         data-preview="${previewUrl}"
+                         data-mp4="${mp4Url}"
+                         onclick="selectResult(${beat.id}, ${rIdx}, this)"
+                         onmouseenter="previewVideo(this, '${mp4Url}')"
+                         onmouseleave="stopPreview(this)">
+                      <div class="result-preview">
+                        ${hasSound ? '<span class="has-sound-badge">🔊 SOUND</span>' : ''}
+                        <img src="${previewUrl}" alt="${result.title || 'Meme'}" loading="lazy" onerror="this.style.display='none'; this.parentNode.innerHTML+='<div style=\\"color:#666;font-size:12px;padding:20px;\\">Preview unavailable</div>'" />
+                      </div>
+                      <div class="result-info">
+                        <div class="result-title">${result.title || 'Untitled'}</div>
+                        <div class="result-meta">${result.duration ? result.duration.toFixed(1) + 's' : 'GIF'}</div>
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            ` : `
+              <div class="no-results">
+                <p>😔 No results found</p>
+              </div>
+            `}
+          </div>
+        `;
+      }).join('');
+    }
+
+    function previewVideo(element, url) {
+      if (!url || !url.includes('.mp4')) return;
+      const img = element.querySelector('img');
+      const existing = element.querySelector('video');
+      if (existing) return;
+
+      const video = document.createElement('video');
+      video.src = url;
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+      img.style.display = 'none';
+      img.parentNode.appendChild(video);
+    }
+
+    function stopPreview(element) {
+      const video = element.querySelector('video');
+      const img = element.querySelector('img');
+      if (video) {
+        video.remove();
+        img.style.display = 'block';
+      }
+    }
+
+    function selectResult(beatId, resultIdx, element) {
+      document.querySelectorAll(`[data-beat-id="${beatId}"].result-card`).forEach(el => {
+        el.classList.remove('selected');
+      });
+
+      element.classList.add('selected');
+      document.getElementById(`beat-${beatId}`).classList.add('selected');
+
+      const beat = beats.find(b => b.id === beatId);
+      const result = searchResults[beatId][resultIdx];
+
+      selections[beatId] = {
+        beatId: beatId,
+        timestamp: beat.timestamp,
+        triggerWord: beat.triggerWord,
+        displayMode: beat.displayMode,
+        durationFrames: beat.durationFrames,
+        klipySlug: result.slug || '',
+        mp4Url: result.file?.mp4 || '',
+        gifUrl: result.file?.gif || '',
+        title: result.title || 'Untitled',
+        type: result.type || 'clip',
+        hasBuiltInSound: result.type === 'clip'
+      };
+
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const count = Object.keys(selections).length;
+      document.getElementById('progress-text').textContent = `${count}/${beats.length} selected`;
+    }
+
+    function clearAll() {
+      Object.keys(selections).forEach(k => delete selections[k]);
+      document.querySelectorAll('.result-card').forEach(el => el.classList.remove('selected'));
+      document.querySelectorAll('.beat-section').forEach(el => el.classList.remove('selected'));
+      updateProgress();
+    }
+
+    function exportSelections() {
+      if (Object.keys(selections).length === 0) {
+        alert('Please select at least one meme!');
+        return;
+      }
+
+      const output = {
+        videoName: 'hyperkalemia',
+        playbackRate: 2.0,
+        generatedAt: new Date().toISOString(),
+        source: 'KLIPY',
+        selections: Object.values(selections).sort((a, b) => a.beatId - b.beatId)
+      };
+
+      const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'hyperkalemia-meme-selections.json';
+      a.click();
+      URL.revokeObjectURL(url);
+
+      alert(`✅ Exported ${Object.keys(selections).length} selections!\n\nNext step:\nnode video-generator.js assemble hyperkalemia ./${a.download}`);
+    }
+
+    renderBeats();
+  </script>
+</body>
+</html>

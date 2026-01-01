@@ -1,0 +1,1890 @@
+{
+  "script": "This patient's lung just became a ONE-WAY DEATH TRAP and I GUARANTEE most of you are about to order the ONE thing that KILLS him. Twenty-two year old male, motorcycle accident, intubated in the field. He was STABLE, then SUDDENLY his oxygen drops to EIGHTY-TWO percent, blood pressure TANKS to seventy over nothing, and you notice his trachea is shifted to the LEFT. Breath sounds? GONE on the right. Neck veins? BULGING like he's about to EXPLODE. What do you do FIRST? A) Chest X-ray to confirm diagnosis. B) Needle decompression. C) Emergent intubation. D) Pericardiocentesis. E) IV fluid bolus. Better choose quick because this man's got about SIXTY SECONDS before he's DEAD. If you said chest X-ray, CONGRATULATIONS, you just KILLED your patient waiting for a PICTURE. The answer is B, needle decompression. And if you don't understand WHY, listen up you JACKASSES. Here's what happened. That broken rib PUNCTURED the lung and created a ONE-WAY VALVE. Air goes IN with every breath, but it CAN'T get out. It's like a roach motel for air, checks in, NEVER checks out. Now that trapped air BUILDS and BUILDS. It CRUSHES the lung flat. Then it starts SHOVING the entire mediastinum to the opposite side. Heart gets KINKED. Vena cava gets PINCHED. Blood can't get back to the heart, that's your JVD. Heart can't pump out, that's your crashing blood pressure. This is called TENSION physiology and it will KILL your patient in MINUTES. Needle decompression POPS that pressure. You're converting a TENSION pneumo to a SIMPLE pneumo. Fourteen to sixteen gauge needle, SECOND intercostal space, midclavicular line, that's two finger-widths below the clavicle. You'll hear a HISS of air and watch that blood pressure CLIMB back from the dead. Now why do the other answers FAIL? Chest X-ray? Takes too LONG, this is a CLINICAL diagnosis. You see the triad, you ACT. Pericardiocentesis? That's for cardiac TAMPONADE, different triad, no breath sound changes. IV fluids? Can't fill a heart that's being CRUSHED. And intubation? He's ALREADY intubated, you MORON. Remember the TENSION TRIAD: tracheal deviation, JVD, absent breath sounds. Don't think. Don't image. DECOMPRESS. Second intercostal space midclavicular line, or fifth intercostal space anterior axillary line if they're muscular. Now you won't KILL your patients. You're welcome.",
+  "words": [
+    {
+      "word": "This",
+      "start": 0,
+      "end": 0.255
+    },
+    {
+      "word": "patient's",
+      "start": 0.348,
+      "end": 0.824
+    },
+    {
+      "word": "lung",
+      "start": 0.882,
+      "end": 1.161
+    },
+    {
+      "word": "just",
+      "start": 1.231,
+      "end": 1.405
+    },
+    {
+      "word": "became",
+      "start": 1.463,
+      "end": 1.962
+    },
+    {
+      "word": "a",
+      "start": 2.171,
+      "end": 2.322
+    },
+    {
+      "word": "ONE-WAY",
+      "start": 2.496,
+      "end": 3.042
+    },
+    {
+      "word": "DEATH",
+      "start": 3.251,
+      "end": 3.553
+    },
+    {
+      "word": "TRAP",
+      "start": 3.622,
+      "end": 4.029
+    },
+    {
+      "word": "and",
+      "start": 4.412,
+      "end": 4.656
+    },
+    {
+      "word": "I",
+      "start": 4.725,
+      "end": 4.76
+    },
+    {
+      "word": "GUARANTEE",
+      "start": 4.923,
+      "end": 5.584
+    },
+    {
+      "word": "most",
+      "start": 5.7,
+      "end": 6.002
+    },
+    {
+      "word": "of",
+      "start": 6.072,
+      "end": 6.142
+    },
+    {
+      "word": "you",
+      "start": 6.211,
+      "end": 6.374
+    },
+    {
+      "word": "are",
+      "start": 6.757,
+      "end": 6.978
+    },
+    {
+      "word": "about",
+      "start": 7.012,
+      "end": 7.268
+    },
+    {
+      "word": "to",
+      "start": 7.303,
+      "end": 7.372
+    },
+    {
+      "word": "order",
+      "start": 7.465,
+      "end": 7.744
+    },
+    {
+      "word": "the",
+      "start": 7.79,
+      "end": 7.848
+    },
+    {
+      "word": "ONE",
+      "start": 7.941,
+      "end": 8.162
+    },
+    {
+      "word": "thing",
+      "start": 8.208,
+      "end": 8.487
+    },
+    {
+      "word": "that",
+      "start": 8.545,
+      "end": 8.707
+    },
+    {
+      "word": "KILLS",
+      "start": 8.824,
+      "end": 9.242
+    },
+    {
+      "word": "him.",
+      "start": 9.311,
+      "end": 9.764
+    },
+    {
+      "word": "Twenty-two",
+      "start": 10.565,
+      "end": 11.088
+    },
+    {
+      "word": "year",
+      "start": 11.169,
+      "end": 11.331
+    },
+    {
+      "word": "old",
+      "start": 11.401,
+      "end": 11.61
+    },
+    {
+      "word": "male,",
+      "start": 11.703,
+      "end": 12.237
+    },
+    {
+      "word": "motorcycle",
+      "start": 12.516,
+      "end": 13.282
+    },
+    {
+      "word": "accident,",
+      "start": 13.317,
+      "end": 14.048
+    },
+    {
+      "word": "intubated",
+      "start": 14.431,
+      "end": 15.232
+    },
+    {
+      "word": "in",
+      "start": 15.348,
+      "end": 15.546
+    },
+    {
+      "word": "the",
+      "start": 15.604,
+      "end": 15.673
+    },
+    {
+      "word": "field.",
+      "start": 15.755,
+      "end": 16.393
+    },
+    {
+      "word": "He",
+      "start": 16.556,
+      "end": 16.753
+    },
+    {
+      "word": "was",
+      "start": 16.846,
+      "end": 17.101
+    },
+    {
+      "word": "STABLE,",
+      "start": 17.241,
+      "end": 17.995
+    },
+    {
+      "word": "then",
+      "start": 18.274,
+      "end": 18.518
+    },
+    {
+      "word": "SUDDENLY",
+      "start": 18.623,
+      "end": 19.18
+    },
+    {
+      "word": "his",
+      "start": 19.517,
+      "end": 19.702
+    },
+    {
+      "word": "oxygen",
+      "start": 19.784,
+      "end": 20.318
+    },
+    {
+      "word": "drops",
+      "start": 20.376,
+      "end": 20.712
+    },
+    {
+      "word": "to",
+      "start": 20.759,
+      "end": 20.84
+    },
+    {
+      "word": "EIGHTY-TWO",
+      "start": 20.945,
+      "end": 21.479
+    },
+    {
+      "word": "percent,",
+      "start": 21.571,
+      "end": 22.28
+    },
+    {
+      "word": "blood",
+      "start": 22.57,
+      "end": 22.837
+    },
+    {
+      "word": "pressure",
+      "start": 22.883,
+      "end": 23.232
+    },
+    {
+      "word": "TANKS",
+      "start": 23.29,
+      "end": 23.65
+    },
+    {
+      "word": "to",
+      "start": 23.708,
+      "end": 23.882
+    },
+    {
+      "word": "seventy",
+      "start": 24.126,
+      "end": 24.544
+    },
+    {
+      "word": "over",
+      "start": 24.602,
+      "end": 24.776
+    },
+    {
+      "word": "nothing,",
+      "start": 24.857,
+      "end": 25.391
+    },
+    {
+      "word": "and",
+      "start": 25.635,
+      "end": 25.809
+    },
+    {
+      "word": "you",
+      "start": 25.879,
+      "end": 25.948
+    },
+    {
+      "word": "notice",
+      "start": 26.03,
+      "end": 26.355
+    },
+    {
+      "word": "his",
+      "start": 26.413,
+      "end": 26.564
+    },
+    {
+      "word": "trachea",
+      "start": 26.622,
+      "end": 27.214
+    },
+    {
+      "word": "is",
+      "start": 27.458,
+      "end": 27.643
+    },
+    {
+      "word": "shifted",
+      "start": 27.713,
+      "end": 28.12
+    },
+    {
+      "word": "to",
+      "start": 28.178,
+      "end": 28.317
+    },
+    {
+      "word": "the",
+      "start": 28.387,
+      "end": 28.445
+    },
+    {
+      "word": "LEFT.",
+      "start": 28.514,
+      "end": 29.083
+    },
+    {
+      "word": "Breath",
+      "start": 29.466,
+      "end": 29.698
+    },
+    {
+      "word": "sounds?",
+      "start": 29.733,
+      "end": 30.256
+    },
+    {
+      "word": "GONE",
+      "start": 30.511,
+      "end": 30.836
+    },
+    {
+      "word": "on",
+      "start": 30.871,
+      "end": 30.952
+    },
+    {
+      "word": "the",
+      "start": 30.987,
+      "end": 31.045
+    },
+    {
+      "word": "right.",
+      "start": 31.103,
+      "end": 31.568
+    },
+    {
+      "word": "Neck",
+      "start": 31.788,
+      "end": 32.009
+    },
+    {
+      "word": "veins?",
+      "start": 32.067,
+      "end": 32.682
+    },
+    {
+      "word": "BULGING",
+      "start": 33.019,
+      "end": 33.588
+    },
+    {
+      "word": "like",
+      "start": 33.646,
+      "end": 33.82
+    },
+    {
+      "word": "he's",
+      "start": 33.866,
+      "end": 34.075
+    },
+    {
+      "word": "about",
+      "start": 34.099,
+      "end": 34.296
+    },
+    {
+      "word": "to",
+      "start": 34.331,
+      "end": 34.366
+    },
+    {
+      "word": "EXPLODE.",
+      "start": 34.424,
+      "end": 35.12
+    },
+    {
+      "word": "What",
+      "start": 35.457,
+      "end": 35.608
+    },
+    {
+      "word": "do",
+      "start": 35.619,
+      "end": 35.666
+    },
+    {
+      "word": "you",
+      "start": 35.689,
+      "end": 35.747
+    },
+    {
+      "word": "do",
+      "start": 35.782,
+      "end": 35.875
+    },
+    {
+      "word": "FIRST?",
+      "start": 35.945,
+      "end": 36.49
+    },
+    {
+      "word": "A)",
+      "start": 36.885,
+      "end": 37.315
+    },
+    {
+      "word": "Chest",
+      "start": 37.605,
+      "end": 37.918
+    },
+    {
+      "word": "X-ray",
+      "start": 37.976,
+      "end": 38.441
+    },
+    {
+      "word": "to",
+      "start": 38.673,
+      "end": 38.766
+    },
+    {
+      "word": "confirm",
+      "start": 38.824,
+      "end": 39.126
+    },
+    {
+      "word": "diagnosis.",
+      "start": 39.195,
+      "end": 40.043
+    },
+    {
+      "word": "B)",
+      "start": 40.403,
+      "end": 40.89
+    },
+    {
+      "word": "Needle",
+      "start": 41.204,
+      "end": 41.471
+    },
+    {
+      "word": "decompression.",
+      "start": 41.506,
+      "end": 42.272
+    },
+    {
+      "word": "C)",
+      "start": 42.388,
+      "end": 42.841
+    },
+    {
+      "word": "Emergent",
+      "start": 43.096,
+      "end": 43.596
+    },
+    {
+      "word": "intubation.",
+      "start": 43.63,
+      "end": 44.385
+    },
+    {
+      "word": "D)",
+      "start": 44.64,
+      "end": 45.093
+    },
+    {
+      "word": "Pericardiocentesis.",
+      "start": 45.314,
+      "end": 46.928
+    },
+    {
+      "word": "E)",
+      "start": 47.183,
+      "end": 47.647
+    },
+    {
+      "word": "IV",
+      "start": 47.961,
+      "end": 48.216
+    },
+    {
+      "word": "fluid",
+      "start": 48.704,
+      "end": 49.064
+    },
+    {
+      "word": "bolus.",
+      "start": 49.134,
+      "end": 49.865
+    },
+    {
+      "word": "Better",
+      "start": 49.993,
+      "end": 50.202
+    },
+    {
+      "word": "choose",
+      "start": 50.248,
+      "end": 50.48
+    },
+    {
+      "word": "quick",
+      "start": 50.527,
+      "end": 50.759
+    },
+    {
+      "word": "because",
+      "start": 50.863,
+      "end": 51.084
+    },
+    {
+      "word": "this",
+      "start": 51.107,
+      "end": 51.212
+    },
+    {
+      "word": "man's",
+      "start": 51.281,
+      "end": 51.49
+    },
+    {
+      "word": "got",
+      "start": 51.525,
+      "end": 51.664
+    },
+    {
+      "word": "about",
+      "start": 51.688,
+      "end": 51.85
+    },
+    {
+      "word": "SIXTY",
+      "start": 51.943,
+      "end": 52.454
+    },
+    {
+      "word": "SECONDS",
+      "start": 52.547,
+      "end": 52.965
+    },
+    {
+      "word": "before",
+      "start": 53.325,
+      "end": 53.754
+    },
+    {
+      "word": "he's",
+      "start": 53.801,
+      "end": 54.021
+    },
+    {
+      "word": "DEAD.",
+      "start": 54.137,
+      "end": 54.753
+    },
+    {
+      "word": "If",
+      "start": 55.171,
+      "end": 55.287
+    },
+    {
+      "word": "you",
+      "start": 55.333,
+      "end": 55.403
+    },
+    {
+      "word": "said",
+      "start": 55.449,
+      "end": 55.589
+    },
+    {
+      "word": "chest",
+      "start": 55.623,
+      "end": 55.844
+    },
+    {
+      "word": "X-ray,",
+      "start": 55.89,
+      "end": 56.239
+    },
+    {
+      "word": "CONGRATULATIONS,",
+      "start": 56.274,
+      "end": 57.156
+    },
+    {
+      "word": "you",
+      "start": 57.272,
+      "end": 57.377
+    },
+    {
+      "word": "just",
+      "start": 57.458,
+      "end": 57.644
+    },
+    {
+      "word": "KILLED",
+      "start": 57.713,
+      "end": 57.98
+    },
+    {
+      "word": "your",
+      "start": 58.015,
+      "end": 58.131
+    },
+    {
+      "word": "patient",
+      "start": 58.189,
+      "end": 58.572
+    },
+    {
+      "word": "waiting",
+      "start": 58.619,
+      "end": 58.897
+    },
+    {
+      "word": "for",
+      "start": 58.955,
+      "end": 59.072
+    },
+    {
+      "word": "a",
+      "start": 59.13,
+      "end": 59.153
+    },
+    {
+      "word": "PICTURE.",
+      "start": 59.304,
+      "end": 59.873
+    },
+    {
+      "word": "The",
+      "start": 60,
+      "end": 60.093
+    },
+    {
+      "word": "answer",
+      "start": 60.151,
+      "end": 60.395
+    },
+    {
+      "word": "is",
+      "start": 60.442,
+      "end": 60.523
+    },
+    {
+      "word": "B,",
+      "start": 60.581,
+      "end": 61.045
+    },
+    {
+      "word": "needle",
+      "start": 61.301,
+      "end": 61.8
+    },
+    {
+      "word": "decompression.",
+      "start": 61.858,
+      "end": 63.054
+    },
+    {
+      "word": "And",
+      "start": 63.39,
+      "end": 63.588
+    },
+    {
+      "word": "if",
+      "start": 63.646,
+      "end": 63.727
+    },
+    {
+      "word": "you",
+      "start": 63.785,
+      "end": 63.866
+    },
+    {
+      "word": "don't",
+      "start": 63.913,
+      "end": 64.099
+    },
+    {
+      "word": "understand",
+      "start": 64.145,
+      "end": 64.714
+    },
+    {
+      "word": "WHY,",
+      "start": 64.83,
+      "end": 65.596
+    },
+    {
+      "word": "listen",
+      "start": 65.933,
+      "end": 66.235
+    },
+    {
+      "word": "up",
+      "start": 66.293,
+      "end": 66.409
+    },
+    {
+      "word": "you",
+      "start": 66.479,
+      "end": 66.595
+    },
+    {
+      "word": "JACKASSES.",
+      "start": 66.711,
+      "end": 67.884
+    },
+    {
+      "word": "Here's",
+      "start": 68.174,
+      "end": 68.464
+    },
+    {
+      "word": "what",
+      "start": 68.499,
+      "end": 68.627
+    },
+    {
+      "word": "happened.",
+      "start": 68.685,
+      "end": 69.265
+    },
+    {
+      "word": "That",
+      "start": 69.602,
+      "end": 69.846
+    },
+    {
+      "word": "broken",
+      "start": 69.927,
+      "end": 70.334
+    },
+    {
+      "word": "rib",
+      "start": 70.403,
+      "end": 70.601
+    },
+    {
+      "word": "PUNCTURED",
+      "start": 70.694,
+      "end": 71.17
+    },
+    {
+      "word": "the",
+      "start": 71.193,
+      "end": 71.262
+    },
+    {
+      "word": "lung",
+      "start": 71.32,
+      "end": 71.576
+    },
+    {
+      "word": "and",
+      "start": 71.634,
+      "end": 71.715
+    },
+    {
+      "word": "created",
+      "start": 71.773,
+      "end": 72.249
+    },
+    {
+      "word": "a",
+      "start": 72.296,
+      "end": 72.331
+    },
+    {
+      "word": "ONE-WAY",
+      "start": 72.423,
+      "end": 72.841
+    },
+    {
+      "word": "VALVE.",
+      "start": 72.934,
+      "end": 73.631
+    },
+    {
+      "word": "Air",
+      "start": 74.084,
+      "end": 74.386
+    },
+    {
+      "word": "goes",
+      "start": 74.444,
+      "end": 74.722
+    },
+    {
+      "word": "IN",
+      "start": 74.803,
+      "end": 74.92
+    },
+    {
+      "word": "with",
+      "start": 74.978,
+      "end": 75.14
+    },
+    {
+      "word": "every",
+      "start": 75.233,
+      "end": 75.558
+    },
+    {
+      "word": "breath,",
+      "start": 75.616,
+      "end": 75.941
+    },
+    {
+      "word": "but",
+      "start": 75.964,
+      "end": 76.104
+    },
+    {
+      "word": "it",
+      "start": 76.15,
+      "end": 76.266
+    },
+    {
+      "word": "CAN'T",
+      "start": 76.487,
+      "end": 76.963
+    },
+    {
+      "word": "get",
+      "start": 77.033,
+      "end": 77.253
+    },
+    {
+      "word": "out.",
+      "start": 77.311,
+      "end": 77.718
+    },
+    {
+      "word": "It's",
+      "start": 78.345,
+      "end": 78.577
+    },
+    {
+      "word": "like",
+      "start": 78.623,
+      "end": 78.821
+    },
+    {
+      "word": "a",
+      "start": 78.867,
+      "end": 78.902
+    },
+    {
+      "word": "roach",
+      "start": 79.018,
+      "end": 79.32
+    },
+    {
+      "word": "motel",
+      "start": 79.401,
+      "end": 79.982
+    },
+    {
+      "word": "for",
+      "start": 80.074,
+      "end": 80.237
+    },
+    {
+      "word": "air,",
+      "start": 80.318,
+      "end": 80.701
+    },
+    {
+      "word": "checks",
+      "start": 80.759,
+      "end": 81.166
+    },
+    {
+      "word": "in,",
+      "start": 81.235,
+      "end": 81.595
+    },
+    {
+      "word": "NEVER",
+      "start": 81.769,
+      "end": 82.118
+    },
+    {
+      "word": "checks",
+      "start": 82.176,
+      "end": 82.536
+    },
+    {
+      "word": "out.",
+      "start": 82.594,
+      "end": 83.023
+    },
+    {
+      "word": "Now",
+      "start": 83.743,
+      "end": 83.929
+    },
+    {
+      "word": "that",
+      "start": 83.987,
+      "end": 84.161
+    },
+    {
+      "word": "trapped",
+      "start": 84.208,
+      "end": 84.614
+    },
+    {
+      "word": "air",
+      "start": 84.672,
+      "end": 84.893
+    },
+    {
+      "word": "BUILDS",
+      "start": 84.974,
+      "end": 85.38
+    },
+    {
+      "word": "and",
+      "start": 85.427,
+      "end": 85.531
+    },
+    {
+      "word": "BUILDS.",
+      "start": 85.601,
+      "end": 86.216
+    },
+    {
+      "word": "It",
+      "start": 86.669,
+      "end": 86.901
+    },
+    {
+      "word": "CRUSHES",
+      "start": 87.075,
+      "end": 87.679
+    },
+    {
+      "word": "the",
+      "start": 87.749,
+      "end": 87.842
+    },
+    {
+      "word": "lung",
+      "start": 87.911,
+      "end": 88.144
+    },
+    {
+      "word": "flat.",
+      "start": 88.26,
+      "end": 88.817
+    },
+    {
+      "word": "Then",
+      "start": 89.27,
+      "end": 89.479
+    },
+    {
+      "word": "it",
+      "start": 89.537,
+      "end": 89.607
+    },
+    {
+      "word": "starts",
+      "start": 89.665,
+      "end": 90.013
+    },
+    {
+      "word": "SHOVING",
+      "start": 90.071,
+      "end": 90.477
+    },
+    {
+      "word": "the",
+      "start": 90.547,
+      "end": 90.617
+    },
+    {
+      "word": "entire",
+      "start": 90.675,
+      "end": 91.151
+    },
+    {
+      "word": "mediastinum",
+      "start": 91.232,
+      "end": 92.207
+    },
+    {
+      "word": "to",
+      "start": 92.381,
+      "end": 92.509
+    },
+    {
+      "word": "the",
+      "start": 92.567,
+      "end": 92.637
+    },
+    {
+      "word": "opposite",
+      "start": 92.706,
+      "end": 93.148
+    },
+    {
+      "word": "side.",
+      "start": 93.182,
+      "end": 93.716
+    },
+    {
+      "word": "Heart",
+      "start": 94.227,
+      "end": 94.587
+    },
+    {
+      "word": "gets",
+      "start": 94.808,
+      "end": 95.052
+    },
+    {
+      "word": "KINKED.",
+      "start": 95.168,
+      "end": 95.713
+    },
+    {
+      "word": "Vena",
+      "start": 96.097,
+      "end": 96.41
+    },
+    {
+      "word": "cava",
+      "start": 96.491,
+      "end": 96.886
+    },
+    {
+      "word": "gets",
+      "start": 96.956,
+      "end": 97.188
+    },
+    {
+      "word": "PINCHED.",
+      "start": 97.443,
+      "end": 98.14
+    },
+    {
+      "word": "Blood",
+      "start": 98.744,
+      "end": 99.138
+    },
+    {
+      "word": "can't",
+      "start": 99.417,
+      "end": 99.719
+    },
+    {
+      "word": "get",
+      "start": 99.777,
+      "end": 99.939
+    },
+    {
+      "word": "back",
+      "start": 100.009,
+      "end": 100.195
+    },
+    {
+      "word": "to",
+      "start": 100.253,
+      "end": 100.311
+    },
+    {
+      "word": "the",
+      "start": 100.381,
+      "end": 100.45
+    },
+    {
+      "word": "heart,",
+      "start": 100.508,
+      "end": 100.926
+    },
+    {
+      "word": "that's",
+      "start": 101.17,
+      "end": 101.449
+    },
+    {
+      "word": "your",
+      "start": 101.495,
+      "end": 101.623
+    },
+    {
+      "word": "JVD.",
+      "start": 101.704,
+      "end": 102.633
+    },
+    {
+      "word": "Heart",
+      "start": 103.144,
+      "end": 103.411
+    },
+    {
+      "word": "can't",
+      "start": 103.48,
+      "end": 103.736
+    },
+    {
+      "word": "pump",
+      "start": 103.817,
+      "end": 104.061
+    },
+    {
+      "word": "out,",
+      "start": 104.131,
+      "end": 104.421
+    },
+    {
+      "word": "that's",
+      "start": 104.572,
+      "end": 104.804
+    },
+    {
+      "word": "your",
+      "start": 104.839,
+      "end": 104.955
+    },
+    {
+      "word": "crashing",
+      "start": 105.013,
+      "end": 105.443
+    },
+    {
+      "word": "blood",
+      "start": 105.535,
+      "end": 105.779
+    },
+    {
+      "word": "pressure.",
+      "start": 105.837,
+      "end": 106.336
+    },
+    {
+      "word": "This",
+      "start": 106.673,
+      "end": 106.975
+    },
+    {
+      "word": "is",
+      "start": 107.056,
+      "end": 107.23
+    },
+    {
+      "word": "called",
+      "start": 107.311,
+      "end": 107.66
+    },
+    {
+      "word": "TENSION",
+      "start": 107.718,
+      "end": 108.205
+    },
+    {
+      "word": "physiology",
+      "start": 108.275,
+      "end": 109.134
+    },
+    {
+      "word": "and",
+      "start": 109.39,
+      "end": 109.668
+    },
+    {
+      "word": "it",
+      "start": 109.738,
+      "end": 109.807
+    },
+    {
+      "word": "will",
+      "start": 109.866,
+      "end": 110.04
+    },
+    {
+      "word": "KILL",
+      "start": 110.121,
+      "end": 110.423
+    },
+    {
+      "word": "your",
+      "start": 110.492,
+      "end": 110.655
+    },
+    {
+      "word": "patient",
+      "start": 110.725,
+      "end": 111.131
+    },
+    {
+      "word": "in",
+      "start": 111.177,
+      "end": 111.259
+    },
+    {
+      "word": "MINUTES.",
+      "start": 111.352,
+      "end": 112.106
+    },
+    {
+      "word": "Needle",
+      "start": 112.733,
+      "end": 113.093
+    },
+    {
+      "word": "decompression",
+      "start": 113.151,
+      "end": 113.941
+    },
+    {
+      "word": "POPS",
+      "start": 114.022,
+      "end": 114.463
+    },
+    {
+      "word": "that",
+      "start": 114.521,
+      "end": 114.695
+    },
+    {
+      "word": "pressure.",
+      "start": 114.777,
+      "end": 115.241
+    },
+    {
+      "word": "You're",
+      "start": 115.357,
+      "end": 115.578
+    },
+    {
+      "word": "converting",
+      "start": 115.612,
+      "end": 116.1
+    },
+    {
+      "word": "a",
+      "start": 116.158,
+      "end": 116.193
+    },
+    {
+      "word": "TENSION",
+      "start": 116.263,
+      "end": 116.739
+    },
+    {
+      "word": "pneumo",
+      "start": 116.797,
+      "end": 117.191
+    },
+    {
+      "word": "to",
+      "start": 117.261,
+      "end": 117.366
+    },
+    {
+      "word": "a",
+      "start": 117.482,
+      "end": 117.517
+    },
+    {
+      "word": "SIMPLE",
+      "start": 117.691,
+      "end": 118.364
+    },
+    {
+      "word": "pneumo.",
+      "start": 118.457,
+      "end": 119.223
+    },
+    {
+      "word": "Fourteen",
+      "start": 119.618,
+      "end": 120.384
+    },
+    {
+      "word": "to",
+      "start": 120.465,
+      "end": 120.582
+    },
+    {
+      "word": "sixteen",
+      "start": 120.732,
+      "end": 121.406
+    },
+    {
+      "word": "gauge",
+      "start": 121.522,
+      "end": 121.975
+    },
+    {
+      "word": "needle,",
+      "start": 122.044,
+      "end": 122.567
+    },
+    {
+      "word": "SECOND",
+      "start": 122.962,
+      "end": 123.402
+    },
+    {
+      "word": "intercostal",
+      "start": 123.519,
+      "end": 124.296
+    },
+    {
+      "word": "space,",
+      "start": 124.354,
+      "end": 124.877
+    },
+    {
+      "word": "midclavicular",
+      "start": 125.214,
+      "end": 126.363
+    },
+    {
+      "word": "line,",
+      "start": 126.421,
+      "end": 126.862
+    },
+    {
+      "word": "that's",
+      "start": 126.978,
+      "end": 127.234
+    },
+    {
+      "word": "two",
+      "start": 127.292,
+      "end": 127.536
+    },
+    {
+      "word": "finger-widths",
+      "start": 127.652,
+      "end": 128.209
+    },
+    {
+      "word": "below",
+      "start": 128.267,
+      "end": 128.58
+    },
+    {
+      "word": "the",
+      "start": 128.639,
+      "end": 128.708
+    },
+    {
+      "word": "clavicle.",
+      "start": 128.766,
+      "end": 129.37
+    },
+    {
+      "word": "You'll",
+      "start": 129.625,
+      "end": 129.858
+    },
+    {
+      "word": "hear",
+      "start": 129.904,
+      "end": 130.078
+    },
+    {
+      "word": "a",
+      "start": 130.125,
+      "end": 130.148
+    },
+    {
+      "word": "HISS",
+      "start": 130.264,
+      "end": 130.589
+    },
+    {
+      "word": "of",
+      "start": 130.647,
+      "end": 130.717
+    },
+    {
+      "word": "air",
+      "start": 130.798,
+      "end": 131.053
+    },
+    {
+      "word": "and",
+      "start": 131.228,
+      "end": 131.413
+    },
+    {
+      "word": "watch",
+      "start": 131.495,
+      "end": 131.75
+    },
+    {
+      "word": "that",
+      "start": 131.82,
+      "end": 131.994
+    },
+    {
+      "word": "blood",
+      "start": 132.087,
+      "end": 132.354
+    },
+    {
+      "word": "pressure",
+      "start": 132.412,
+      "end": 132.795
+    },
+    {
+      "word": "CLIMB",
+      "start": 132.865,
+      "end": 133.352
+    },
+    {
+      "word": "back",
+      "start": 133.375,
+      "end": 133.619
+    },
+    {
+      "word": "from",
+      "start": 133.712,
+      "end": 133.886
+    },
+    {
+      "word": "the",
+      "start": 133.944,
+      "end": 134.014
+    },
+    {
+      "word": "dead.",
+      "start": 134.095,
+      "end": 134.536
+    },
+    {
+      "word": "Now",
+      "start": 134.873,
+      "end": 135.024
+    },
+    {
+      "word": "why",
+      "start": 135.059,
+      "end": 135.198
+    },
+    {
+      "word": "do",
+      "start": 135.245,
+      "end": 135.326
+    },
+    {
+      "word": "the",
+      "start": 135.384,
+      "end": 135.454
+    },
+    {
+      "word": "other",
+      "start": 135.523,
+      "end": 135.721
+    },
+    {
+      "word": "answers",
+      "start": 135.79,
+      "end": 136.127
+    },
+    {
+      "word": "FAIL?",
+      "start": 136.197,
+      "end": 136.766
+    },
+    {
+      "word": "Chest",
+      "start": 137.218,
+      "end": 137.555
+    },
+    {
+      "word": "X-ray?",
+      "start": 137.625,
+      "end": 138.217
+    },
+    {
+      "word": "Takes",
+      "start": 138.472,
+      "end": 138.82
+    },
+    {
+      "word": "too",
+      "start": 138.913,
+      "end": 139.331
+    },
+    {
+      "word": "LONG,",
+      "start": 139.482,
+      "end": 140.086
+    },
+    {
+      "word": "this",
+      "start": 140.26,
+      "end": 140.515
+    },
+    {
+      "word": "is",
+      "start": 140.631,
+      "end": 140.805
+    },
+    {
+      "word": "a",
+      "start": 140.887,
+      "end": 140.921
+    },
+    {
+      "word": "CLINICAL",
+      "start": 141.038,
+      "end": 141.56
+    },
+    {
+      "word": "diagnosis.",
+      "start": 141.641,
+      "end": 142.582
+    },
+    {
+      "word": "You",
+      "start": 142.628,
+      "end": 142.744
+    },
+    {
+      "word": "see",
+      "start": 142.814,
+      "end": 142.953
+    },
+    {
+      "word": "the",
+      "start": 142.976,
+      "end": 143.046
+    },
+    {
+      "word": "triad,",
+      "start": 143.093,
+      "end": 143.592
+    },
+    {
+      "word": "you",
+      "start": 143.627,
+      "end": 143.731
+    },
+    {
+      "word": "ACT.",
+      "start": 144.045,
+      "end": 144.927
+    },
+    {
+      "word": "Pericardiocentesis?",
+      "start": 145.507,
+      "end": 146.959
+    },
+    {
+      "word": "That's",
+      "start": 147.063,
+      "end": 147.319
+    },
+    {
+      "word": "for",
+      "start": 147.353,
+      "end": 147.516
+    },
+    {
+      "word": "cardiac",
+      "start": 147.632,
+      "end": 148.178
+    },
+    {
+      "word": "TAMPONADE,",
+      "start": 148.247,
+      "end": 149.037
+    },
+    {
+      "word": "different",
+      "start": 149.199,
+      "end": 149.594
+    },
+    {
+      "word": "triad,",
+      "start": 149.629,
+      "end": 150.198
+    },
+    {
+      "word": "no",
+      "start": 150.268,
+      "end": 150.453
+    },
+    {
+      "word": "breath",
+      "start": 150.535,
+      "end": 150.79
+    },
+    {
+      "word": "sound",
+      "start": 150.836,
+      "end": 151.161
+    },
+    {
+      "word": "changes.",
+      "start": 151.22,
+      "end": 151.87
+    },
+    {
+      "word": "IV",
+      "start": 152.009,
+      "end": 152.369
+    },
+    {
+      "word": "fluids?",
+      "start": 152.578,
+      "end": 153.205
+    },
+    {
+      "word": "Can't",
+      "start": 153.518,
+      "end": 153.762
+    },
+    {
+      "word": "fill",
+      "start": 153.809,
+      "end": 153.971
+    },
+    {
+      "word": "a",
+      "start": 154.018,
+      "end": 154.041
+    },
+    {
+      "word": "heart",
+      "start": 154.099,
+      "end": 154.308
+    },
+    {
+      "word": "that's",
+      "start": 154.331,
+      "end": 154.528
+    },
+    {
+      "word": "being",
+      "start": 154.563,
+      "end": 154.761
+    },
+    {
+      "word": "CRUSHED.",
+      "start": 154.865,
+      "end": 155.469
+    },
+    {
+      "word": "And",
+      "start": 156.374,
+      "end": 156.63
+    },
+    {
+      "word": "intubation?",
+      "start": 156.699,
+      "end": 157.501
+    },
+    {
+      "word": "He's",
+      "start": 157.64,
+      "end": 157.884
+    },
+    {
+      "word": "ALREADY",
+      "start": 157.965,
+      "end": 158.557
+    },
+    {
+      "word": "intubated,",
+      "start": 158.662,
+      "end": 159.347
+    },
+    {
+      "word": "you",
+      "start": 159.37,
+      "end": 159.451
+    },
+    {
+      "word": "MORON.",
+      "start": 159.521,
+      "end": 160.159
+    },
+    {
+      "word": "Remember",
+      "start": 160.31,
+      "end": 160.717
+    },
+    {
+      "word": "the",
+      "start": 160.775,
+      "end": 160.833
+    },
+    {
+      "word": "TENSION",
+      "start": 160.891,
+      "end": 161.274
+    },
+    {
+      "word": "TRIAD:",
+      "start": 161.32,
+      "end": 161.924
+    },
+    {
+      "word": "tracheal",
+      "start": 162.133,
+      "end": 162.725
+    },
+    {
+      "word": "deviation,",
+      "start": 162.806,
+      "end": 163.538
+    },
+    {
+      "word": "JVD,",
+      "start": 163.747,
+      "end": 164.885
+    },
+    {
+      "word": "absent",
+      "start": 164.989,
+      "end": 165.43
+    },
+    {
+      "word": "breath",
+      "start": 165.488,
+      "end": 165.744
+    },
+    {
+      "word": "sounds.",
+      "start": 165.79,
+      "end": 166.324
+    },
+    {
+      "word": "Don't",
+      "start": 166.556,
+      "end": 166.835
+    },
+    {
+      "word": "think.",
+      "start": 166.882,
+      "end": 167.323
+    },
+    {
+      "word": "Don't",
+      "start": 167.636,
+      "end": 167.961
+    },
+    {
+      "word": "image.",
+      "start": 168.019,
+      "end": 168.577
+    },
+    {
+      "word": "DECOMPRESS.",
+      "start": 168.948,
+      "end": 170.214
+    },
+    {
+      "word": "Second",
+      "start": 170.701,
+      "end": 171.108
+    },
+    {
+      "word": "intercostal",
+      "start": 171.166,
+      "end": 171.909
+    },
+    {
+      "word": "space",
+      "start": 171.99,
+      "end": 172.42
+    },
+    {
+      "word": "midclavicular",
+      "start": 172.512,
+      "end": 173.499
+    },
+    {
+      "word": "line,",
+      "start": 173.557,
+      "end": 173.975
+    },
+    {
+      "word": "or",
+      "start": 174.184,
+      "end": 174.37
+    },
+    {
+      "word": "fifth",
+      "start": 174.474,
+      "end": 174.776
+    },
+    {
+      "word": "intercostal",
+      "start": 174.846,
+      "end": 175.577
+    },
+    {
+      "word": "space",
+      "start": 175.635,
+      "end": 176.019
+    },
+    {
+      "word": "anterior",
+      "start": 176.053,
+      "end": 176.75
+    },
+    {
+      "word": "axillary",
+      "start": 176.831,
+      "end": 177.458
+    },
+    {
+      "word": "line",
+      "start": 177.516,
+      "end": 177.865
+    },
+    {
+      "word": "if",
+      "start": 178.027,
+      "end": 178.236
+    },
+    {
+      "word": "they're",
+      "start": 178.294,
+      "end": 178.48
+    },
+    {
+      "word": "muscular.",
+      "start": 178.503,
+      "end": 179.107
+    },
+    {
+      "word": "Now",
+      "start": 179.629,
+      "end": 179.815
+    },
+    {
+      "word": "you",
+      "start": 179.896,
+      "end": 179.989
+    },
+    {
+      "word": "won't",
+      "start": 180.047,
+      "end": 180.291
+    },
+    {
+      "word": "KILL",
+      "start": 180.407,
+      "end": 180.709
+    },
+    {
+      "word": "your",
+      "start": 180.79,
+      "end": 180.918
+    },
+    {
+      "word": "patients.",
+      "start": 180.988,
+      "end": 181.615
+    },
+    {
+      "word": "You're",
+      "start": 182.067,
+      "end": 182.334
+    },
+    {
+      "word": "welcome.",
+      "start": 182.369,
+      "end": 183.159
+    }
+  ]
+}

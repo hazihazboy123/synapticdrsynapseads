@@ -1,0 +1,271 @@
+{
+  "videoName": "Hyperkalemia Emergency Management",
+  "generatedAt": "2025-12-19T18:50:00.000Z",
+  "agentVersion": "1.0",
+  "searches": [
+    {
+      "name": "Hook - Peaked T-Waves",
+      "timestamp": 1.5,
+      "context": "This patient's EKG looks like Mount Everest - peaked T-waves screaming hyperkalemia, and you've got about 60 seconds before this heart goes into V-fib.",
+      "emotion": "PANIC",
+      "analysis": {
+        "medicalConcept": "Peaked T-waves indicating hyperkalemia",
+        "metaphorUsed": "Mount Everest - mountain peak visual",
+        "emotionalBeat": "PANIC",
+        "whyThisMeme": "Mountain/peak visual + countdown urgency + impending doom"
+      },
+      "suggestedMemes": [
+        "Mr Incredible Becoming Uncanny",
+        "Chuckles I'm In Danger",
+        "This Is Fine Dog Fire",
+        "It's Joever",
+        "Walter White Falling"
+      ],
+      "searchQueries": [
+        "mr incredible becoming uncanny",
+        "chuckles im in danger ralph",
+        "this is fine dog fire",
+        "its joever meme",
+        "mountain peak danger meme",
+        "60 seconds countdown panic",
+        "heart attack panic meme",
+        "we're so cooked meme"
+      ],
+      "backupSearches": [
+        "panic meme reaction",
+        "oh no anyway meme"
+      ]
+    },
+    {
+      "name": "The Crisis - Potassium Level",
+      "timestamp": 5.2,
+      "context": "Potassium comes back at 7.2 - the kidney said 'I quit' and now the heart's about to follow. This is a CODE situation people.",
+      "emotion": "DEATH",
+      "analysis": {
+        "medicalConcept": "Critical potassium level 7.2, renal failure",
+        "metaphorUsed": "Kidney quit job, heart following - organ personification",
+        "emotionalBeat": "DEATH",
+        "whyThisMeme": "Quitting/resignation meme + doom + code blue energy"
+      },
+      "suggestedMemes": [
+        "Coffin Dance",
+        "I Quit Resignation Meme",
+        "Windows XP Shutdown",
+        "Grim Reaper Knocking Door",
+        "Its Joever"
+      ],
+      "searchQueries": [
+        "coffin dance astronomia",
+        "i quit meme resignation",
+        "windows xp shutdown sound",
+        "grim reaper door knock meme",
+        "ight imma head out spongebob",
+        "this is a code meme",
+        "flatline heart monitor meme",
+        "guess ill die meme"
+      ],
+      "backupSearches": [
+        "death meme reaction",
+        "rip meme funeral"
+      ]
+    },
+    {
+      "name": "Danger - Heart Stopping",
+      "timestamp": 9.0,
+      "context": "The heart is doing the electrical equivalent of a washing machine on spin cycle - ventricular fibrillation is knocking on the door.",
+      "emotion": "CHAOS",
+      "analysis": {
+        "medicalConcept": "Ventricular fibrillation, cardiac chaos",
+        "metaphorUsed": "Washing machine spin cycle - chaotic spinning visual",
+        "emotionalBeat": "CHAOS",
+        "whyThisMeme": "Spinning/chaos visual + impending doom + something knocking"
+      },
+      "suggestedMemes": [
+        "Maxwell Spinning Cat",
+        "Elmo Fire Rise",
+        "Among Us Emergency Meeting",
+        "Cat In Washing Machine",
+        "Spinning Meme Chaos"
+      ],
+      "searchQueries": [
+        "maxwell cat spinning",
+        "washing machine spin cycle meme",
+        "elmo fire chaos rise",
+        "among us emergency meeting",
+        "spinning out of control meme",
+        "cat spinning meme",
+        "something knocking door meme",
+        "chaos meme reaction"
+      ],
+      "backupSearches": [
+        "spinning meme",
+        "chaos panic meme"
+      ]
+    },
+    {
+      "name": "Question - What's Your Move",
+      "timestamp": 14.0,
+      "context": "TICK TOCK future doctors - what's your move? The patient's looking at you like you're supposed to know what to do.",
+      "emotion": "SHOCK",
+      "analysis": {
+        "medicalConcept": "Clinical decision pressure moment",
+        "metaphorUsed": "Tick tock countdown, being stared at expecting answer",
+        "emotionalBeat": "SHOCK",
+        "whyThisMeme": "Countdown pressure + confused/thinking + being watched"
+      },
+      "suggestedMemes": [
+        "Confused Math Lady",
+        "The Rock Eyebrow Raise",
+        "Nick Young Question Marks",
+        "Thinking Meme",
+        "John Cena Are You Sure"
+      ],
+      "searchQueries": [
+        "confused math lady calculating",
+        "the rock eyebrow raise sus",
+        "nick young question marks confused",
+        "thinking hard meme",
+        "tick tock countdown meme",
+        "everyone staring at me meme",
+        "pressure decision meme",
+        "what do i do meme"
+      ],
+      "backupSearches": [
+        "confused meme reaction",
+        "thinking meme"
+      ]
+    },
+    {
+      "name": "Answer - Calcium Gluconate",
+      "timestamp": 18.5,
+      "context": "It's CALCIUM GLUCONATE baby! Slam that IV push - stabilize the cardiac membrane before everything goes sideways.",
+      "emotion": "CELEBRATION",
+      "analysis": {
+        "medicalConcept": "Calcium gluconate as cardiac membrane stabilizer",
+        "metaphorUsed": "Slam it, celebration energy, hero moment",
+        "emotionalBeat": "CELEBRATION",
+        "whyThisMeme": "Answer reveal + victory + heroic save moment"
+      },
+      "suggestedMemes": [
+        "Lets Gooo",
+        "We're So Back",
+        "Gigachad Yes",
+        "Leonardo DiCaprio Pointing",
+        "Victory Royale"
+      ],
+      "searchQueries": [
+        "lets gooo meme dababy",
+        "were so back meme",
+        "gigachad yes meme",
+        "leonardo dicaprio pointing",
+        "slam dunk meme",
+        "victory royale fortnite",
+        "correct answer meme celebration",
+        "hero saves the day meme"
+      ],
+      "backupSearches": [
+        "celebration meme",
+        "winner meme reaction"
+      ]
+    },
+    {
+      "name": "Wrong Answer Roast",
+      "timestamp": 22.0,
+      "context": "Half of you reached for insulin first - that's cute but insulin just shifts the potassium, it doesn't protect the heart. You played yourself.",
+      "emotion": "ROAST",
+      "analysis": {
+        "medicalConcept": "Insulin shifts K intracellularly but doesn't protect heart",
+        "metaphorUsed": "You played yourself - DJ Khaled reference",
+        "emotionalBeat": "ROAST",
+        "whyThisMeme": "Roasting wrong answer + clown energy + played yourself"
+      },
+      "suggestedMemes": [
+        "Congratulations You Played Yourself DJ Khaled",
+        "Clown Applying Makeup",
+        "Emotional Damage",
+        "Skill Issue",
+        "L + Ratio"
+      ],
+      "searchQueries": [
+        "congratulations you played yourself dj khaled",
+        "clown applying makeup stages",
+        "emotional damage steven he",
+        "skill issue meme",
+        "wrong answer buzzer meme",
+        "thats cute meme patronizing",
+        "thats not how it works meme",
+        "nice try but no meme"
+      ],
+      "backupSearches": [
+        "roast meme reaction",
+        "wrong answer meme"
+      ]
+    },
+    {
+      "name": "Mechanism - How It Works",
+      "timestamp": 26.0,
+      "context": "Calcium acts like a bodyguard for the heart - it doesn't lower potassium, it just says 'not today' to the arrhythmia trying to kill your patient.",
+      "emotion": "TEACHING",
+      "analysis": {
+        "medicalConcept": "Calcium stabilizes cardiac membrane without lowering K",
+        "metaphorUsed": "Bodyguard protecting heart, 'not today' reference",
+        "emotionalBeat": "TEACHING",
+        "whyThisMeme": "Bodyguard visual + not today death + protection meme"
+      },
+      "suggestedMemes": [
+        "Gigachad Bodyguard",
+        "Not Today Death Arya",
+        "Galaxy Brain",
+        "Write That Down Patrick",
+        "Bouncer Security Meme"
+      ],
+      "searchQueries": [
+        "bodyguard protecting meme",
+        "not today death arya stark",
+        "security bouncer meme",
+        "gigachad protector meme",
+        "galaxy brain expanding",
+        "write that down patrick star",
+        "shield protection meme",
+        "big brain time meme"
+      ],
+      "backupSearches": [
+        "learning meme",
+        "smart meme reaction"
+      ]
+    },
+    {
+      "name": "Exit - Peace Out",
+      "timestamp": 30.0,
+      "context": "Now get outta here and save some lives. You're welcome.",
+      "emotion": "SIGMA",
+      "analysis": {
+        "medicalConcept": "Outro, call to action",
+        "metaphorUsed": "Confident dismissal, you're welcome Maui reference",
+        "emotionalBeat": "SIGMA",
+        "whyThisMeme": "Sigma exit energy + confident + you're welcome"
+      },
+      "suggestedMemes": [
+        "Gigachad Leaves",
+        "Zyzz Dancing",
+        "Thomas Shelby Walking Away",
+        "You're Welcome Maui",
+        "Mic Drop"
+      ],
+      "searchQueries": [
+        "gigachad walking away",
+        "zyzz pose dancing",
+        "thomas shelby walking smoking",
+        "youre welcome maui moana",
+        "mic drop meme exit",
+        "sigma male leaves",
+        "cool guys dont look at explosions",
+        "peace out meme bye"
+      ],
+      "backupSearches": [
+        "exit meme confident",
+        "goodbye meme cool"
+      ]
+    }
+  ]
+}

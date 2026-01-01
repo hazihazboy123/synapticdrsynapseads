@@ -47,24 +47,22 @@ Config.overrideFfmpegCommand(({ args }) => {
   // - The cap prevents bitrate spikes that trigger aggressive platform re-encoding
   // - Result: consistent quality that survives Instagram/TikTok compression
 
-  const socialMediaOptions = [
+  // Check if this is the copy/mux phase (has -c:v copy) or encode phase
+  const isCopyPhase = args.includes('copy') || args.some(arg => arg === '-c:v' && args[args.indexOf(arg) + 1] === 'copy');
+
+  // Only apply encoding options during actual encoding, not during stream copy
+  const socialMediaOptions = isCopyPhase ? [
+    // Only movflags for copy phase
+    '-movflags', '+faststart',
+  ] : [
     // Capped bitrate (works WITH CRF, not instead of it)
     // 12 Mbps is the sweet spot - high enough for quality, low enough to avoid aggressive re-encode
     '-maxrate', '12M',
     '-bufsize', '24M',  // 2x maxrate = standard VBV buffer
 
-    // H.264 High Profile Level 4.2 (all modern phones support this)
-    '-profile:v', 'high',
-    '-level', '4.2',
-
     // Keyframes every 2 seconds at 30fps (social media standard for seeking)
     '-g', '60',
     '-keyint_min', '30',  // Allow closer keyframes if scene changes
-
-    // B-frames: KEEP THEM (bframes=3 is x264 default)
-    // B-frames IMPROVE compression efficiency - TikTok handles them fine
-    // Setting bf=0 was hurting your quality-per-bitrate
-    // (Removed the -bf 0 that was here)
 
     // BT.709 color space (web/mobile standard)
     '-colorspace', 'bt709',

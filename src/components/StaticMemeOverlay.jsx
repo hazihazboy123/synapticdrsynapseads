@@ -1,75 +1,85 @@
 import React from 'react';
-import { AbsoluteFill, Img, Audio, useCurrentFrame, interpolate, staticFile } from 'remotion';
+import { AbsoluteFill, Audio, useCurrentFrame, staticFile, OffthreadVideo, Sequence } from 'remotion';
+
+// NOTE: <Gif> component removed - causes flashing during render
+// Now using OffthreadVideo with MP4 files for stable rendering
+
+// Detect if source is a video file
+const isVideoFile = (src) => {
+  if (!src) return false;
+  const lower = src.toLowerCase();
+  return lower.endsWith('.mp4') || lower.endsWith('.webm') || lower.endsWith('.mov');
+};
 
 /**
- * StaticMemeOverlay - Static meme image overlay with optional sound
+ * StaticMemeOverlay - Video-compatible meme overlay
  *
- * This overlays a meme image on top of the content WITHOUT interrupting audio.
- * For full-screen video cutaways that pause audio, use MemeCutaway instead.
+ * Updated to use OffthreadVideo for MP4 files for stable rendering.
+ * GIF support removed due to flashing issues with @remotion/gif.
  */
 const StaticMemeOverlay = ({
-  imagePath, // Direct path to image in public folder (e.g., 'assets/memes/success-kid.jpg')
-  timestamp, // Raw timestamp in seconds when meme should appear
+  src, // Can be URL or path to local asset
+  imagePath, // Legacy: path to local asset (use src instead)
+  timestamp,
   durationInFrames = 50,
   position = 'center',
   scale = 0.55,
-  playbackRate = 1.85,
-  soundEffect = null, // Sound file in public/assets/sfx/memes/ (e.g., 'Wait a minute....mp3')
+  playbackRate = 2.0,
+  soundEffect = null,
   soundVolume = 0.4,
-  frameOffset = 0 // Offset for meme cutaway timing
+  frameOffset = 0,
 }) => {
   const frame = useCurrentFrame();
   const fps = 30;
 
-  // Adjust timestamp for playback rate
+  // Calculate when to show
   const adjustedTimestamp = timestamp / playbackRate;
   const startFrame = Math.floor(adjustedTimestamp * fps) + frameOffset;
   const endFrame = startFrame + durationInFrames;
 
-  // Don't render if outside time window
+  // Simple: show or don't show
   if (frame < startFrame || frame > endFrame) {
     return null;
   }
 
-  // Calculate opacity (fade in/out)
-  const fadeFrames = 5;
-  const framesIntoMeme = frame - startFrame;
+  // Fixed dimensions for the container
+  const containerWidth = Math.floor(scale * 700);
+  const containerHeight = Math.floor(scale * 500);
 
-  const opacity = interpolate(
-    framesIntoMeme,
-    [0, fadeFrames, durationInFrames - fadeFrames, durationInFrames],
-    [0, 1, 1, 0],
-    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
-  );
+  // Determine the source - prefer src (URL) over imagePath (local)
+  const mediaSource = src || staticFile(imagePath);
+  const isVideo = isVideoFile(mediaSource);
 
-  // Pop-in scale animation
-  const popScale = interpolate(
-    framesIntoMeme,
-    [0, 8],
-    [0.8, 1],
-    { extrapolateRight: 'clamp' }
-  );
+  // Position styles based on position prop
+  const getPositionStyles = () => {
+    const base = {
+      position: 'absolute',
+      zIndex: 100,
+    };
 
-  // Position presets - optimized for TikTok vertical format
-  const positions = {
-    'bottom-right': { bottom: '20%', right: '5%' },
-    'bottom-left': { bottom: '20%', left: '5%' },
-    'top-right': { top: '25%', right: '5%' },
-    'top-left': { top: '25%', left: '5%' },
-    'center': { top: '45%', left: '50%', transform: `translate(-50%, -50%) scale(${popScale})` },
-    'center-low': { top: '55%', left: '50%', transform: `translate(-50%, -50%) scale(${popScale})` },
+    switch (position) {
+      case 'top-left':
+        return { ...base, top: 100, left: 50 };
+      case 'top-right':
+        return { ...base, top: 100, right: 50 };
+      case 'bottom-left':
+        return { ...base, bottom: 100, left: 50 };
+      case 'bottom-right':
+        return { ...base, bottom: 100, right: 50 };
+      case 'center':
+      default:
+        return {
+          ...base,
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        };
+    }
   };
 
-  const positionStyle = positions[position] || positions['center'];
-
-  // For non-center positions, add the popScale to transform
-  const finalPositionStyle = position.includes('center')
-    ? positionStyle
-    : { ...positionStyle, transform: `scale(${popScale})` };
-
   return (
-    <AbsoluteFill style={{ pointerEvents: 'none', zIndex: 100 }}>
-      {/* Sound effect - plays once when meme appears */}
+    <AbsoluteFill style={{ pointerEvents: 'none' }}>
+      {/* Sound effect - only on first frame */}
       {soundEffect && frame === startFrame && (
         <Audio
           src={staticFile(`assets/sfx/memes/${soundEffect}`)}
@@ -77,25 +87,48 @@ const StaticMemeOverlay = ({
         />
       )}
 
+      {/* Fixed-size container */}
       <div
         style={{
-          position: 'absolute',
-          ...finalPositionStyle,
-          opacity,
-          width: `${scale * 100}%`,
-          maxWidth: '500px',
+          ...getPositionStyles(),
+          width: containerWidth,
+          height: containerHeight,
+          borderRadius: 16,
+          boxShadow: '0 12px 48px rgba(0, 0, 0, 0.7)',
+          border: '4px solid white',
+          backgroundColor: '#000',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        <Img
-          src={staticFile(imagePath)}
-          style={{
-            width: '100%',
-            height: 'auto',
-            borderRadius: '16px',
-            boxShadow: '0 12px 48px rgba(0, 0, 0, 0.6)',
-            border: '4px solid white',
-          }}
-        />
+        {isVideo ? (
+          <Sequence from={startFrame} layout="none">
+            <OffthreadVideo
+              src={mediaSource}
+              style={{
+                width: containerWidth,
+                height: containerHeight,
+                objectFit: 'contain',
+                display: 'block',
+              }}
+              muted
+              loop
+            />
+          </Sequence>
+        ) : (
+          <img
+            src={mediaSource}
+            style={{
+              width: containerWidth,
+              height: containerHeight,
+              objectFit: 'contain',
+              display: 'block',
+            }}
+            alt=""
+          />
+        )}
       </div>
     </AbsoluteFill>
   );

@@ -1,0 +1,40 @@
+ACETAMINOPHEN OVERDOSE - DR. SYNAPSE SCRIPT
+============================================
+Hook Strategy: FEAR + PARADOX ("feels fine but dying")
+============================================
+
+This girl is gonna DIE in forty-eight hours and she doesn't even KNOW it yet. Took a whole BOTTLE of Tylenol eight hours ago, and now she's sittin' there tellin' me she feels FINE. FINE! That's the TRAP. That's how acetaminophen KILLS you - you feel NOTHING while your liver MELTS from the inside. And I GUARANTEE eighty percent of you are about to pick the WRONG answer and let her walk out of here to DIE at home. Labs just came back - AST? TWENTY-EIGHT FORTY-SEVEN. Normal is FORTY. Her liver enzymes are SEVENTY TIMES normal and she's askin' if she can go get CHIPOTLE. ALT? THIRTY-ONE FIFTY-SIX. INR 2.8 - her blood forgot how to CLOT. In forty-eight hours without treatment? Fulminant hepatic failure. Encephalopathy. DEATH. So what're you gonna do, hotshot? A) Activated charcoal. B) Fomepizole. C) N-Acetylcysteine. D) Hemodialysis. E) Supportive care only. Clock's tickin' and her liver's MELTING. Well HOT DAMN, it's C, N-Acetylcysteine! And I KNOW at least half you picked activated charcoal because that's what EVERY medical student picks and that's why EVERY medical student would've just KILLED this patient. Charcoal works if you give it within ONE TO TWO HOURS. She came in at EIGHT HOURS. The Tylenol's already ABSORBED and is MURDERING hepatocytes as we SPEAK. Charcoal at this point is like puttin' on a seatbelt AFTER the car crash. USELESS. Now SHUT UP and let me teach you why this is the SILENT KILLER hiding in everyone's medicine cabinet. Normally when you take Tylenol, your liver handles it like a CHAMP. Ninety-five percent gets glucuronidated - made water-soluble, peed out. Easy. But five percent goes through CYP450 and becomes this TOXIC metabolite called NAPQI. N-A-P-Q-I. Sounds scary because it IS scary. Now normally? No problem! Your liver's got GLUTATHIONE - think of it as your liver's BODYGUARD. Glutathione TACKLES that NAPQI before it can do damage. You're fine, go about your day. But when someone eats the WHOLE BOTTLE? The safe pathway gets OVERWHELMED. Can't keep up. More and more Tylenol gets shunted to CYP450. NAPQI starts PILING UP. And your glutathione? DEPLETED. EXHAUSTED. GONE. Now NAPQI has NOTHING stopping it. It latches onto hepatocytes and just DESTROYS them. Zone 3 necrosis - CENTRILOBULAR pattern - that's your buzzword for the boards. And HERE'S the terrifying part that makes this a KILLER - for the first TWENTY-FOUR HOURS? Patient feels FINE. Maybe mildly nauseous. Wants to go home. The liver is being DESTROYED and they feel NOTHING. By hour seventy-two? Fulminant hepatic failure. Yellow skin. Confused. Bleeding everywhere. DEAD without a transplant. Enter N-ACETYLCYSTEINE - NAC - the ANTIDOTE! NAC provides CYSTEINE - the building block your liver needs to REBUILD glutathione! Glutathione comes back ONLINE, starts NEUTRALIZING that NAPQI before it can kill more cells! The liver SURVIVES! TIMING is EVERYTHING! Within EIGHT HOURS? NAC is nearly ONE HUNDRED PERCENT effective. Don't even THINK, just GIVE IT. Eight to TWENTY-FOUR hours? Still helps significantly. GIVE IT. After twenty-four hours? Liver damage may be permanent but NAC STILL reduces mortality. GIVE IT ANYWAY. Use the RUMACK-MATTHEW NOMOGRAM - plot the acetaminophen level against time since ingestion. Above the treatment line? TREAT. Don't wait for symptoms - by the time symptoms show up you're already behind. Loading dose: one-fifty milligrams per kilogram over one hour. Then fifty per kilogram over four hours. Then one hundred per kilogram over sixteen hours. Twenty-one hour protocol. That's how you SAVE this patient. Tylenol - looks harmless, KILLS silently. NAC - the cure if you're SMART enough to give it in time. Now you know. Don't let YOUR patient be the one who walks out feelin' fine and comes back in a body bag. Get OUT of here and go study your ANTIDOTES.
+
+============================================
+KEY TIMESTAMPS TO MARK:
+============================================
+- "gonna DIE in forty-eight hours" - HOOK (0:00)
+- "feels FINE" - PARADOX moment
+- "TWENTY-EIGHT FORTY-SEVEN" - AST reveal (shock)
+- "THIRTY-ONE FIFTY-SIX" - ALT reveal
+- "A) Activated charcoal" - Option A
+- "B) Fomepizole" - Option B
+- "C) N-Acetylcysteine" - Option C
+- "D) Hemodialysis" - Option D
+- "E) Supportive care" - Option E
+- "it's C, N-Acetylcysteine!" - ANSWER REVEAL
+- "SHUT UP and let me teach" - TEACHING STARTS
+- "NAPQI" - Key term
+- "GLUTATHIONE" - Key term
+- "Zone 3 necrosis" - USMLE buzzword
+- "CENTRILOBULAR" - USMLE buzzword
+- "RUMACK-MATTHEW NOMOGRAM" - Clinical pearl
+- "one-fifty milligrams per kilogram" - Dosing
+
+============================================
+MEME PLACEMENTS:
+============================================
+1. "whole BOTTLE" → pill.mp4 (1.5s)
+2. "feels FINE" → this-is-fine.jpg (2s)
+3. "TWENTY-EIGHT FORTY-SEVEN" → blinking-white-guy.mp4 (1.5s)
+4. "MELTING from inside" → screaming-internal.mp4 (2s)
+5. ANSWER REVEAL → roll-safe.jpg (2s)
+6. "MURDERING hepatocytes" → elmo-fire.mp4 (2s)
+7. "first TWENTY-FOUR HOURS feels FINE" → this-is-fine.jpg (1.5s)
+8. "TIMING is EVERYTHING" → clock-panic.mp4 (1.5s)
+9. "activated charcoal" wrong answer → charcoal.mp4 (1.5s)

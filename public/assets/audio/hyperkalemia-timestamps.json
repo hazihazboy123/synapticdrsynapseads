@@ -1,0 +1,925 @@
+{
+  "script": "This man's heart is about to FLATLINE and he just asked me if he'll make his CRUISE on Thursday. Sir. SIR. Your heart is playing JAZZ right now. Improvising. Skipped dialysis THREE WEEKS for a trip to the BAHAMAS and now his potassium is SEVEN POINT EIGHT. That's not a number, that's a THREAT. EKG looks like my signature after twelve hours on call. QRS wider than a CHEESECAKE FACTORY MENU. I've seen better rhythms from a BROKEN WASHING MACHINE. What do you slam into this man first? A) Insulin. B) Calcium gluconate. C) Kayexalate. D) Albuterol. E) Furosemide. TICK TOCK. His heart ain't got ALL DAY. Actually it's got about FORTY FIVE SECONDS. It's B, calcium gluconate! And I KNOW half you picked insulin because you wanted to fix the number. Oh you sweet summer children. The NUMBER don't matter if his heart's doing the HARLEM SHAKE into asystole. Calcium's a BOUNCER. Stands at the door, keeps the heart from LOSING ITS MIND while you actually fix the problem. Now get out there. And somebody tell this man he ain't making that cruise.",
+  "words": [
+    {
+      "word": "This",
+      "start": 0,
+      "end": 0.267
+    },
+    {
+      "word": "man's",
+      "start": 0.348,
+      "end": 0.662
+    },
+    {
+      "word": "heart",
+      "start": 0.697,
+      "end": 0.917
+    },
+    {
+      "word": "is",
+      "start": 0.964,
+      "end": 1.057
+    },
+    {
+      "word": "about",
+      "start": 1.103,
+      "end": 1.335
+    },
+    {
+      "word": "to",
+      "start": 1.37,
+      "end": 1.428
+    },
+    {
+      "word": "FLATLINE",
+      "start": 1.486,
+      "end": 2.183
+    },
+    {
+      "word": "and",
+      "start": 2.206,
+      "end": 2.601
+    },
+    {
+      "word": "he",
+      "start": 2.682,
+      "end": 2.763
+    },
+    {
+      "word": "just",
+      "start": 2.868,
+      "end": 3.065
+    },
+    {
+      "word": "asked",
+      "start": 3.111,
+      "end": 3.402
+    },
+    {
+      "word": "me",
+      "start": 3.437,
+      "end": 3.611
+    },
+    {
+      "word": "if",
+      "start": 4.005,
+      "end": 4.156
+    },
+    {
+      "word": "he'll",
+      "start": 4.203,
+      "end": 4.389
+    },
+    {
+      "word": "make",
+      "start": 4.435,
+      "end": 4.632
+    },
+    {
+      "word": "his",
+      "start": 4.69,
+      "end": 4.876
+    },
+    {
+      "word": "CRUISE",
+      "start": 4.957,
+      "end": 5.526
+    },
+    {
+      "word": "on",
+      "start": 5.573,
+      "end": 5.805
+    },
+    {
+      "word": "Thursday.",
+      "start": 5.863,
+      "end": 6.711
+    },
+    {
+      "word": "Sir.",
+      "start": 7.256,
+      "end": 7.732
+    },
+    {
+      "word": "SIR.",
+      "start": 8.127,
+      "end": 8.731
+    },
+    {
+      "word": "Your",
+      "start": 9.079,
+      "end": 9.253
+    },
+    {
+      "word": "heart",
+      "start": 9.323,
+      "end": 9.52
+    },
+    {
+      "word": "is",
+      "start": 9.567,
+      "end": 9.66
+    },
+    {
+      "word": "playing",
+      "start": 9.718,
+      "end": 10.043
+    },
+    {
+      "word": "JAZZ",
+      "start": 10.101,
+      "end": 10.507
+    },
+    {
+      "word": "right",
+      "start": 10.6,
+      "end": 10.809
+    },
+    {
+      "word": "now.",
+      "start": 10.855,
+      "end": 11.273
+    },
+    {
+      "word": "Improvising.",
+      "start": 11.819,
+      "end": 13.038
+    },
+    {
+      "word": "Skipped",
+      "start": 13.235,
+      "end": 13.677
+    },
+    {
+      "word": "dialysis",
+      "start": 13.874,
+      "end": 14.64
+    },
+    {
+      "word": "THREE",
+      "start": 15.372,
+      "end": 15.673
+    },
+    {
+      "word": "WEEKS",
+      "start": 15.72,
+      "end": 15.975
+    },
+    {
+      "word": "for",
+      "start": 16.033,
+      "end": 16.184
+    },
+    {
+      "word": "a",
+      "start": 16.219,
+      "end": 16.266
+    },
+    {
+      "word": "trip",
+      "start": 16.312,
+      "end": 16.544
+    },
+    {
+      "word": "to",
+      "start": 16.602,
+      "end": 16.672
+    },
+    {
+      "word": "the",
+      "start": 16.73,
+      "end": 16.788
+    },
+    {
+      "word": "BAHAMAS",
+      "start": 16.846,
+      "end": 17.554
+    },
+    {
+      "word": "and",
+      "start": 18.007,
+      "end": 18.216
+    },
+    {
+      "word": "now",
+      "start": 18.286,
+      "end": 18.437
+    },
+    {
+      "word": "his",
+      "start": 18.506,
+      "end": 18.645
+    },
+    {
+      "word": "potassium",
+      "start": 18.715,
+      "end": 19.423
+    },
+    {
+      "word": "is",
+      "start": 19.493,
+      "end": 19.644
+    },
+    {
+      "word": "SEVEN",
+      "start": 20.039,
+      "end": 20.422
+    },
+    {
+      "word": "POINT",
+      "start": 20.526,
+      "end": 20.84
+    },
+    {
+      "word": "EIGHT.",
+      "start": 20.921,
+      "end": 21.397
+    },
+    {
+      "word": "That's",
+      "start": 21.699,
+      "end": 21.919
+    },
+    {
+      "word": "not",
+      "start": 21.978,
+      "end": 22.14
+    },
+    {
+      "word": "a",
+      "start": 22.186,
+      "end": 22.21
+    },
+    {
+      "word": "number,",
+      "start": 22.268,
+      "end": 22.628
+    },
+    {
+      "word": "that's",
+      "start": 22.697,
+      "end": 22.918
+    },
+    {
+      "word": "a",
+      "start": 22.964,
+      "end": 22.988
+    },
+    {
+      "word": "THREAT.",
+      "start": 23.139,
+      "end": 23.812
+    },
+    {
+      "word": "EKG",
+      "start": 24.369,
+      "end": 25.135
+    },
+    {
+      "word": "looks",
+      "start": 25.356,
+      "end": 25.553
+    },
+    {
+      "word": "like",
+      "start": 25.588,
+      "end": 25.739
+    },
+    {
+      "word": "my",
+      "start": 25.786,
+      "end": 25.937
+    },
+    {
+      "word": "signature",
+      "start": 26.041,
+      "end": 26.529
+    },
+    {
+      "word": "after",
+      "start": 26.563,
+      "end": 26.784
+    },
+    {
+      "word": "twelve",
+      "start": 26.819,
+      "end": 27.098
+    },
+    {
+      "word": "hours",
+      "start": 27.132,
+      "end": 27.353
+    },
+    {
+      "word": "on",
+      "start": 27.399,
+      "end": 27.504
+    },
+    {
+      "word": "call.",
+      "start": 27.562,
+      "end": 28.026
+    },
+    {
+      "word": "QRS",
+      "start": 28.375,
+      "end": 29.048
+    },
+    {
+      "word": "wider",
+      "start": 29.141,
+      "end": 29.396
+    },
+    {
+      "word": "than",
+      "start": 29.431,
+      "end": 29.547
+    },
+    {
+      "word": "a",
+      "start": 29.594,
+      "end": 29.628
+    },
+    {
+      "word": "CHEESECAKE",
+      "start": 29.698,
+      "end": 30.29
+    },
+    {
+      "word": "FACTORY",
+      "start": 30.325,
+      "end": 30.72
+    },
+    {
+      "word": "MENU.",
+      "start": 30.778,
+      "end": 31.289
+    },
+    {
+      "word": "I've",
+      "start": 31.834,
+      "end": 32.055
+    },
+    {
+      "word": "seen",
+      "start": 32.101,
+      "end": 32.345
+    },
+    {
+      "word": "better",
+      "start": 32.45,
+      "end": 32.705
+    },
+    {
+      "word": "rhythms",
+      "start": 32.74,
+      "end": 33.03
+    },
+    {
+      "word": "from",
+      "start": 33.077,
+      "end": 33.228
+    },
+    {
+      "word": "a",
+      "start": 33.286,
+      "end": 33.32
+    },
+    {
+      "word": "BROKEN",
+      "start": 33.471,
+      "end": 33.959
+    },
+    {
+      "word": "WASHING",
+      "start": 34.063,
+      "end": 34.551
+    },
+    {
+      "word": "MACHINE.",
+      "start": 34.609,
+      "end": 35.259
+    },
+    {
+      "word": "What",
+      "start": 35.712,
+      "end": 35.863
+    },
+    {
+      "word": "do",
+      "start": 35.886,
+      "end": 35.944
+    },
+    {
+      "word": "you",
+      "start": 36.002,
+      "end": 36.095
+    },
+    {
+      "word": "slam",
+      "start": 36.153,
+      "end": 36.397
+    },
+    {
+      "word": "into",
+      "start": 36.443,
+      "end": 36.559
+    },
+    {
+      "word": "this",
+      "start": 36.606,
+      "end": 36.733
+    },
+    {
+      "word": "man",
+      "start": 36.791,
+      "end": 36.977
+    },
+    {
+      "word": "first?",
+      "start": 37.047,
+      "end": 37.523
+    },
+    {
+      "word": "A)",
+      "start": 37.871,
+      "end": 38.347
+    },
+    {
+      "word": "Insulin.",
+      "start": 38.486,
+      "end": 39.148
+    },
+    {
+      "word": "B)",
+      "start": 39.624,
+      "end": 40.135
+    },
+    {
+      "word": "Calcium",
+      "start": 40.437,
+      "end": 40.971
+    },
+    {
+      "word": "gluconate.",
+      "start": 41.041,
+      "end": 41.668
+    },
+    {
+      "word": "C)",
+      "start": 42.213,
+      "end": 42.91
+    },
+    {
+      "word": "Kayexalate.",
+      "start": 43.258,
+      "end": 44.233
+    },
+    {
+      "word": "D)",
+      "start": 44.709,
+      "end": 45.278
+    },
+    {
+      "word": "Albuterol.",
+      "start": 45.685,
+      "end": 46.59
+    },
+    {
+      "word": "E)",
+      "start": 47.078,
+      "end": 47.565
+    },
+    {
+      "word": "Furosemide.",
+      "start": 47.972,
+      "end": 48.877
+    },
+    {
+      "word": "TICK",
+      "start": 49.353,
+      "end": 49.574
+    },
+    {
+      "word": "TOCK.",
+      "start": 49.632,
+      "end": 49.992
+    },
+    {
+      "word": "His",
+      "start": 50.131,
+      "end": 50.282
+    },
+    {
+      "word": "heart",
+      "start": 50.329,
+      "end": 50.48
+    },
+    {
+      "word": "ain't",
+      "start": 50.503,
+      "end": 50.619
+    },
+    {
+      "word": "got",
+      "start": 50.642,
+      "end": 50.747
+    },
+    {
+      "word": "ALL",
+      "start": 50.781,
+      "end": 50.921
+    },
+    {
+      "word": "DAY.",
+      "start": 50.967,
+      "end": 51.374
+    },
+    {
+      "word": "Actually",
+      "start": 51.675,
+      "end": 52.128
+    },
+    {
+      "word": "it's",
+      "start": 52.221,
+      "end": 52.384
+    },
+    {
+      "word": "got",
+      "start": 52.43,
+      "end": 52.593
+    },
+    {
+      "word": "about",
+      "start": 52.616,
+      "end": 52.848
+    },
+    {
+      "word": "FORTY",
+      "start": 52.918,
+      "end": 53.22
+    },
+    {
+      "word": "FIVE",
+      "start": 53.289,
+      "end": 53.533
+    },
+    {
+      "word": "SECONDS.",
+      "start": 53.568,
+      "end": 54.16
+    },
+    {
+      "word": "It's",
+      "start": 54.566,
+      "end": 54.81
+    },
+    {
+      "word": "B,",
+      "start": 54.868,
+      "end": 55.425
+    },
+    {
+      "word": "calcium",
+      "start": 55.727,
+      "end": 56.25
+    },
+    {
+      "word": "gluconate!",
+      "start": 56.308,
+      "end": 56.865
+    },
+    {
+      "word": "And",
+      "start": 56.981,
+      "end": 57.12
+    },
+    {
+      "word": "I",
+      "start": 57.19,
+      "end": 57.213
+    },
+    {
+      "word": "KNOW",
+      "start": 57.271,
+      "end": 57.399
+    },
+    {
+      "word": "half",
+      "start": 57.457,
+      "end": 57.573
+    },
+    {
+      "word": "you",
+      "start": 57.608,
+      "end": 57.666
+    },
+    {
+      "word": "picked",
+      "start": 57.712,
+      "end": 57.863
+    },
+    {
+      "word": "insulin",
+      "start": 57.898,
+      "end": 58.153
+    },
+    {
+      "word": "because",
+      "start": 58.188,
+      "end": 58.386
+    },
+    {
+      "word": "you",
+      "start": 58.409,
+      "end": 58.478
+    },
+    {
+      "word": "wanted",
+      "start": 58.513,
+      "end": 58.711
+    },
+    {
+      "word": "to",
+      "start": 58.734,
+      "end": 58.78
+    },
+    {
+      "word": "fix",
+      "start": 58.827,
+      "end": 58.989
+    },
+    {
+      "word": "the",
+      "start": 59.024,
+      "end": 59.094
+    },
+    {
+      "word": "number.",
+      "start": 59.14,
+      "end": 59.477
+    },
+    {
+      "word": "Oh",
+      "start": 59.999,
+      "end": 60.417
+    },
+    {
+      "word": "you",
+      "start": 60.487,
+      "end": 60.638
+    },
+    {
+      "word": "sweet",
+      "start": 60.766,
+      "end": 61.091
+    },
+    {
+      "word": "summer",
+      "start": 61.184,
+      "end": 61.509
+    },
+    {
+      "word": "children.",
+      "start": 61.578,
+      "end": 62.194
+    },
+    {
+      "word": "The",
+      "start": 62.53,
+      "end": 62.658
+    },
+    {
+      "word": "NUMBER",
+      "start": 62.728,
+      "end": 63.146
+    },
+    {
+      "word": "don't",
+      "start": 63.366,
+      "end": 63.633
+    },
+    {
+      "word": "matter",
+      "start": 63.749,
+      "end": 64.144
+    },
+    {
+      "word": "if",
+      "start": 64.202,
+      "end": 64.283
+    },
+    {
+      "word": "his",
+      "start": 64.353,
+      "end": 64.504
+    },
+    {
+      "word": "heart's",
+      "start": 64.574,
+      "end": 64.887
+    },
+    {
+      "word": "doing",
+      "start": 64.945,
+      "end": 65.259
+    },
+    {
+      "word": "the",
+      "start": 65.317,
+      "end": 65.386
+    },
+    {
+      "word": "HARLEM",
+      "start": 65.479,
+      "end": 65.932
+    },
+    {
+      "word": "SHAKE",
+      "start": 66.048,
+      "end": 66.431
+    },
+    {
+      "word": "into",
+      "start": 66.466,
+      "end": 66.652
+    },
+    {
+      "word": "asystole.",
+      "start": 66.745,
+      "end": 67.952
+    },
+    {
+      "word": "Calcium's",
+      "start": 68.475,
+      "end": 69.357
+    },
+    {
+      "word": "a",
+      "start": 69.427,
+      "end": 69.462
+    },
+    {
+      "word": "BOUNCER.",
+      "start": 69.636,
+      "end": 70.39
+    },
+    {
+      "word": "Stands",
+      "start": 70.843,
+      "end": 71.226
+    },
+    {
+      "word": "at",
+      "start": 71.261,
+      "end": 71.331
+    },
+    {
+      "word": "the",
+      "start": 71.377,
+      "end": 71.447
+    },
+    {
+      "word": "door,",
+      "start": 71.516,
+      "end": 71.992
+    },
+    {
+      "word": "keeps",
+      "start": 72.248,
+      "end": 72.503
+    },
+    {
+      "word": "the",
+      "start": 72.538,
+      "end": 72.608
+    },
+    {
+      "word": "heart",
+      "start": 72.655,
+      "end": 72.84
+    },
+    {
+      "word": "from",
+      "start": 72.875,
+      "end": 73.003
+    },
+    {
+      "word": "LOSING",
+      "start": 73.061,
+      "end": 73.351
+    },
+    {
+      "word": "ITS",
+      "start": 73.409,
+      "end": 73.502
+    },
+    {
+      "word": "MIND",
+      "start": 73.56,
+      "end": 73.827
+    },
+    {
+      "word": "while",
+      "start": 73.85,
+      "end": 74.001
+    },
+    {
+      "word": "you",
+      "start": 74.025,
+      "end": 74.106
+    },
+    {
+      "word": "actually",
+      "start": 74.176,
+      "end": 74.617
+    },
+    {
+      "word": "fix",
+      "start": 74.686,
+      "end": 74.884
+    },
+    {
+      "word": "the",
+      "start": 74.942,
+      "end": 75.011
+    },
+    {
+      "word": "problem.",
+      "start": 75.058,
+      "end": 75.557
+    },
+    {
+      "word": "Now",
+      "start": 75.673,
+      "end": 75.824
+    },
+    {
+      "word": "get",
+      "start": 75.917,
+      "end": 76.103
+    },
+    {
+      "word": "out",
+      "start": 76.161,
+      "end": 76.323
+    },
+    {
+      "word": "there.",
+      "start": 76.37,
+      "end": 76.753
+    },
+    {
+      "word": "And",
+      "start": 77.206,
+      "end": 77.415
+    },
+    {
+      "word": "somebody",
+      "start": 77.484,
+      "end": 77.96
+    },
+    {
+      "word": "tell",
+      "start": 78.03,
+      "end": 78.251
+    },
+    {
+      "word": "this",
+      "start": 78.297,
+      "end": 78.46
+    },
+    {
+      "word": "man",
+      "start": 78.541,
+      "end": 78.796
+    },
+    {
+      "word": "he",
+      "start": 78.866,
+      "end": 78.994
+    },
+    {
+      "word": "ain't",
+      "start": 79.075,
+      "end": 79.423
+    },
+    {
+      "word": "making",
+      "start": 79.597,
+      "end": 79.969
+    },
+    {
+      "word": "that",
+      "start": 80.015,
+      "end": 80.213
+    },
+    {
+      "word": "cruise.",
+      "start": 80.294,
+      "end": 81.269
+    }
+  ]
+}

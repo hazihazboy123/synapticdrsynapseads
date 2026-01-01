@@ -1,0 +1,924 @@
+{
+  "words": [
+    {
+      "word": "You",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "word": "ever",
+      "start": 0.313,
+      "end": 0.522
+    },
+    {
+      "word": "wonder",
+      "start": 0.592,
+      "end": 0.882
+    },
+    {
+      "word": "what",
+      "start": 0.929,
+      "end": 1.068
+    },
+    {
+      "word": "a",
+      "start": 1.115,
+      "end": 1.138
+    },
+    {
+      "word": "heart",
+      "start": 1.254,
+      "end": 1.498
+    },
+    {
+      "word": "attack",
+      "start": 1.533,
+      "end": 1.962
+    },
+    {
+      "word": "ACTUALLY",
+      "start": 2.206,
+      "end": 2.926
+    },
+    {
+      "word": "looks",
+      "start": 3.007,
+      "end": 3.262
+    },
+    {
+      "word": "like?",
+      "start": 3.332,
+      "end": 3.889
+    },
+    {
+      "word": "Well",
+      "start": 4.168,
+      "end": 4.4
+    },
+    {
+      "word": "buckle",
+      "start": 4.481,
+      "end": 4.899
+    },
+    {
+      "word": "up,",
+      "start": 4.946,
+      "end": 5.248
+    },
+    {
+      "word": "cause",
+      "start": 5.399,
+      "end": 5.619
+    },
+    {
+      "word": "I",
+      "start": 5.666,
+      "end": 5.7
+    },
+    {
+      "word": "am",
+      "start": 5.735,
+      "end": 5.817
+    },
+    {
+      "word": "about",
+      "start": 5.909,
+      "end": 6.188
+    },
+    {
+      "word": "to",
+      "start": 6.235,
+      "end": 6.304
+    },
+    {
+      "word": "show",
+      "start": 6.397,
+      "end": 6.664
+    },
+    {
+      "word": "you.",
+      "start": 6.734,
+      "end": 7.082
+    },
+    {
+      "word": "See",
+      "start": 7.593,
+      "end": 7.825
+    },
+    {
+      "word": "this",
+      "start": 7.86,
+      "end": 8.034
+    },
+    {
+      "word": "right",
+      "start": 8.115,
+      "end": 8.359
+    },
+    {
+      "word": "here?",
+      "start": 8.406,
+      "end": 8.812
+    },
+    {
+      "word": "This",
+      "start": 9.137,
+      "end": 9.381
+    },
+    {
+      "word": "is",
+      "start": 9.451,
+      "end": 9.543
+    },
+    {
+      "word": "your",
+      "start": 9.601,
+      "end": 9.776
+    },
+    {
+      "word": "coronary",
+      "start": 9.845,
+      "end": 10.542
+    },
+    {
+      "word": "artery.",
+      "start": 10.612,
+      "end": 11.239
+    },
+    {
+      "word": "Beautiful,",
+      "start": 11.68,
+      "end": 12.225
+    },
+    {
+      "word": "ain't",
+      "start": 12.249,
+      "end": 12.434
+    },
+    {
+      "word": "it?",
+      "start": 12.458,
+      "end": 12.632
+    },
+    {
+      "word": "Blood",
+      "start": 12.841,
+      "end": 13.119
+    },
+    {
+      "word": "cells",
+      "start": 13.166,
+      "end": 13.514
+    },
+    {
+      "word": "flowing",
+      "start": 13.584,
+      "end": 13.967
+    },
+    {
+      "word": "smooth",
+      "start": 14.037,
+      "end": 14.513
+    },
+    {
+      "word": "like",
+      "start": 14.594,
+      "end": 14.803
+    },
+    {
+      "word": "traffic",
+      "start": 14.849,
+      "end": 15.325
+    },
+    {
+      "word": "on",
+      "start": 15.476,
+      "end": 15.639
+    },
+    {
+      "word": "an",
+      "start": 15.685,
+      "end": 15.743
+    },
+    {
+      "word": "open",
+      "start": 15.836,
+      "end": 16.138
+    },
+    {
+      "word": "highway.",
+      "start": 16.219,
+      "end": 17.009
+    },
+    {
+      "word": "But",
+      "start": 17.961,
+      "end": 18.228
+    },
+    {
+      "word": "WAIT.",
+      "start": 18.297,
+      "end": 19.133
+    },
+    {
+      "word": "You",
+      "start": 19.946,
+      "end": 20.109
+    },
+    {
+      "word": "see",
+      "start": 20.225,
+      "end": 20.41
+    },
+    {
+      "word": "that",
+      "start": 20.445,
+      "end": 20.619
+    },
+    {
+      "word": "yellow",
+      "start": 20.828,
+      "end": 21.2
+    },
+    {
+      "word": "mess",
+      "start": 21.258,
+      "end": 21.56
+    },
+    {
+      "word": "building",
+      "start": 21.641,
+      "end": 21.966
+    },
+    {
+      "word": "up",
+      "start": 22.013,
+      "end": 22.117
+    },
+    {
+      "word": "on",
+      "start": 22.175,
+      "end": 22.256
+    },
+    {
+      "word": "the",
+      "start": 22.303,
+      "end": 22.373
+    },
+    {
+      "word": "wall?",
+      "start": 22.407,
+      "end": 22.941
+    },
+    {
+      "word": "That",
+      "start": 23.754,
+      "end": 24.033
+    },
+    {
+      "word": "is",
+      "start": 24.102,
+      "end": 24.219
+    },
+    {
+      "word": "plaque,",
+      "start": 24.311,
+      "end": 24.706
+    },
+    {
+      "word": "folks.",
+      "start": 24.753,
+      "end": 25.461
+    },
+    {
+      "word": "Years",
+      "start": 26.157,
+      "end": 26.599
+    },
+    {
+      "word": "of",
+      "start": 26.668,
+      "end": 26.761
+    },
+    {
+      "word": "bad",
+      "start": 26.877,
+      "end": 27.226
+    },
+    {
+      "word": "choices",
+      "start": 27.307,
+      "end": 27.876
+    },
+    {
+      "word": "just",
+      "start": 27.945,
+      "end": 28.212
+    },
+    {
+      "word": "sitting",
+      "start": 28.27,
+      "end": 28.596
+    },
+    {
+      "word": "there.",
+      "start": 28.642,
+      "end": 29.048
+    },
+    {
+      "word": "And",
+      "start": 29.106,
+      "end": 29.373
+    },
+    {
+      "word": "that",
+      "start": 29.431,
+      "end": 29.629
+    },
+    {
+      "word": "thin",
+      "start": 29.71,
+      "end": 29.965
+    },
+    {
+      "word": "little",
+      "start": 30.035,
+      "end": 30.302
+    },
+    {
+      "word": "cap",
+      "start": 30.36,
+      "end": 30.627
+    },
+    {
+      "word": "holding",
+      "start": 30.697,
+      "end": 31.022
+    },
+    {
+      "word": "it",
+      "start": 31.08,
+      "end": 31.15
+    },
+    {
+      "word": "all",
+      "start": 31.196,
+      "end": 31.428
+    },
+    {
+      "word": "in?",
+      "start": 31.545,
+      "end": 31.951
+    },
+    {
+      "word": "It",
+      "start": 32.334,
+      "end": 32.508
+    },
+    {
+      "word": "is",
+      "start": 32.566,
+      "end": 32.671
+    },
+    {
+      "word": "about",
+      "start": 32.729,
+      "end": 33.042
+    },
+    {
+      "word": "to",
+      "start": 33.089,
+      "end": 33.17
+    },
+    {
+      "word": "BLOW.",
+      "start": 33.251,
+      "end": 34.029
+    },
+    {
+      "word": "THERE",
+      "start": 34.412,
+      "end": 34.714
+    },
+    {
+      "word": "IT",
+      "start": 34.761,
+      "end": 34.877
+    },
+    {
+      "word": "GOES!",
+      "start": 34.935,
+      "end": 35.747
+    },
+    {
+      "word": "Plaque",
+      "start": 36.189,
+      "end": 36.572
+    },
+    {
+      "word": "ruptures,",
+      "start": 36.63,
+      "end": 37.477
+    },
+    {
+      "word": "and",
+      "start": 37.721,
+      "end": 37.907
+    },
+    {
+      "word": "now",
+      "start": 37.976,
+      "end": 38.139
+    },
+    {
+      "word": "your",
+      "start": 38.22,
+      "end": 38.371
+    },
+    {
+      "word": "body",
+      "start": 38.441,
+      "end": 38.708
+    },
+    {
+      "word": "thinks",
+      "start": 38.766,
+      "end": 39.01
+    },
+    {
+      "word": "it",
+      "start": 39.056,
+      "end": 39.137
+    },
+    {
+      "word": "is",
+      "start": 39.184,
+      "end": 39.288
+    },
+    {
+      "word": "bleeding",
+      "start": 39.358,
+      "end": 39.706
+    },
+    {
+      "word": "out!",
+      "start": 39.788,
+      "end": 40.101
+    },
+    {
+      "word": "Every",
+      "start": 40.171,
+      "end": 40.449
+    },
+    {
+      "word": "platelet",
+      "start": 40.519,
+      "end": 40.949
+    },
+    {
+      "word": "in",
+      "start": 40.983,
+      "end": 41.042
+    },
+    {
+      "word": "the",
+      "start": 41.076,
+      "end": 41.146
+    },
+    {
+      "word": "neighborhood",
+      "start": 41.192,
+      "end": 41.703
+    },
+    {
+      "word": "comes",
+      "start": 41.773,
+      "end": 42.028
+    },
+    {
+      "word": "RUSHING",
+      "start": 42.179,
+      "end": 42.609
+    },
+    {
+      "word": "in!",
+      "start": 42.69,
+      "end": 43.131
+    },
+    {
+      "word": "They",
+      "start": 43.514,
+      "end": 43.735
+    },
+    {
+      "word": "are",
+      "start": 43.781,
+      "end": 43.909
+    },
+    {
+      "word": "stacking",
+      "start": 43.967,
+      "end": 44.49
+    },
+    {
+      "word": "up,",
+      "start": 44.583,
+      "end": 44.931
+    },
+    {
+      "word": "building",
+      "start": 45.082,
+      "end": 45.465
+    },
+    {
+      "word": "a",
+      "start": 45.535,
+      "end": 45.558
+    },
+    {
+      "word": "clot,",
+      "start": 45.674,
+      "end": 46.173
+    },
+    {
+      "word": "and",
+      "start": 46.243,
+      "end": 46.429
+    },
+    {
+      "word": "GOOD",
+      "start": 46.579,
+      "end": 47.055
+    },
+    {
+      "word": "LORD",
+      "start": 47.172,
+      "end": 47.555
+    },
+    {
+      "word": "ALMIGHTY",
+      "start": 47.613,
+      "end": 48.205
+    },
+    {
+      "word": "that",
+      "start": 48.449,
+      "end": 48.693
+    },
+    {
+      "word": "artery",
+      "start": 48.762,
+      "end": 49.273
+    },
+    {
+      "word": "is",
+      "start": 49.389,
+      "end": 49.575
+    },
+    {
+      "word": "closing",
+      "start": 49.691,
+      "end": 50.271
+    },
+    {
+      "word": "FAST!",
+      "start": 50.422,
+      "end": 51.165
+    },
+    {
+      "word": "And",
+      "start": 51.862,
+      "end": 52.106
+    },
+    {
+      "word": "just",
+      "start": 52.222,
+      "end": 52.489
+    },
+    {
+      "word": "like",
+      "start": 52.559,
+      "end": 52.814
+    },
+    {
+      "word": "that...",
+      "start": 52.86,
+      "end": 53.476
+    },
+    {
+      "word": "complete",
+      "start": 53.685,
+      "end": 54.289
+    },
+    {
+      "word": "blockage.",
+      "start": 54.463,
+      "end": 55.357
+    },
+    {
+      "word": "Zero",
+      "start": 56.169,
+      "end": 56.68
+    },
+    {
+      "word": "blood",
+      "start": 56.796,
+      "end": 57.075
+    },
+    {
+      "word": "flow.",
+      "start": 57.145,
+      "end": 57.841
+    },
+    {
+      "word": "Your",
+      "start": 58.085,
+      "end": 58.282
+    },
+    {
+      "word": "heart",
+      "start": 58.352,
+      "end": 58.561
+    },
+    {
+      "word": "muscle",
+      "start": 58.631,
+      "end": 59.014
+    },
+    {
+      "word": "downstream?",
+      "start": 59.072,
+      "end": 60.175
+    },
+    {
+      "word": "It",
+      "start": 60.871,
+      "end": 61.092
+    },
+    {
+      "word": "is",
+      "start": 61.162,
+      "end": 61.301
+    },
+    {
+      "word": "STARVING",
+      "start": 61.394,
+      "end": 62.032
+    },
+    {
+      "word": "for",
+      "start": 62.114,
+      "end": 62.265
+    },
+    {
+      "word": "oxygen",
+      "start": 62.323,
+      "end": 62.915
+    },
+    {
+      "word": "right",
+      "start": 62.984,
+      "end": 63.228
+    },
+    {
+      "word": "now.",
+      "start": 63.298,
+      "end": 63.855
+    },
+    {
+      "word": "Watch",
+      "start": 64.064,
+      "end": 64.354
+    },
+    {
+      "word": "the",
+      "start": 64.424,
+      "end": 64.54
+    },
+    {
+      "word": "cells.",
+      "start": 64.598,
+      "end": 65.272
+    },
+    {
+      "word": "See",
+      "start": 65.388,
+      "end": 65.573
+    },
+    {
+      "word": "them",
+      "start": 65.608,
+      "end": 65.736
+    },
+    {
+      "word": "flickering",
+      "start": 65.771,
+      "end": 66.2
+    },
+    {
+      "word": "out?",
+      "start": 66.293,
+      "end": 66.99
+    },
+    {
+      "word": "That",
+      "start": 67.803,
+      "end": 68.104
+    },
+    {
+      "word": "is",
+      "start": 68.186,
+      "end": 68.313
+    },
+    {
+      "word": "tissue",
+      "start": 68.406,
+      "end": 68.906
+    },
+    {
+      "word": "DYING.",
+      "start": 68.964,
+      "end": 69.788
+    },
+    {
+      "word": "Every",
+      "start": 69.962,
+      "end": 70.345
+    },
+    {
+      "word": "second",
+      "start": 70.496,
+      "end": 70.949
+    },
+    {
+      "word": "without",
+      "start": 71.065,
+      "end": 71.553
+    },
+    {
+      "word": "blood,",
+      "start": 71.634,
+      "end": 72.075
+    },
+    {
+      "word": "more",
+      "start": 72.249,
+      "end": 72.539
+    },
+    {
+      "word": "of",
+      "start": 72.563,
+      "end": 72.621
+    },
+    {
+      "word": "your",
+      "start": 72.679,
+      "end": 72.841
+    },
+    {
+      "word": "heart",
+      "start": 72.923,
+      "end": 73.178
+    },
+    {
+      "word": "is",
+      "start": 73.259,
+      "end": 73.375
+    },
+    {
+      "word": "just...",
+      "start": 73.468,
+      "end": 74.095
+    },
+    {
+      "word": "gone.",
+      "start": 74.908,
+      "end": 75.604
+    },
+    {
+      "word": "That",
+      "start": 76.417,
+      "end": 76.707
+    },
+    {
+      "word": "gray",
+      "start": 76.789,
+      "end": 77.091
+    },
+    {
+      "word": "zone?",
+      "start": 77.172,
+      "end": 77.776
+    },
+    {
+      "word": "That",
+      "start": 77.834,
+      "end": 78.077
+    },
+    {
+      "word": "ain't",
+      "start": 78.124,
+      "end": 78.321
+    },
+    {
+      "word": "coming",
+      "start": 78.379,
+      "end": 78.704
+    },
+    {
+      "word": "back.",
+      "start": 78.786,
+      "end": 79.262
+    },
+    {
+      "word": "Ever.",
+      "start": 79.32,
+      "end": 80.005
+    },
+    {
+      "word": "THAT",
+      "start": 80.214,
+      "end": 80.666
+    },
+    {
+      "word": "is",
+      "start": 80.736,
+      "end": 80.945
+    },
+    {
+      "word": "a",
+      "start": 81.003,
+      "end": 81.038
+    },
+    {
+      "word": "heart",
+      "start": 81.154,
+      "end": 81.409
+    },
+    {
+      "word": "attack.",
+      "start": 81.456,
+      "end": 82.106
+    },
+    {
+      "word": "Do",
+      "start": 82.199,
+      "end": 82.362
+    },
+    {
+      "word": "not",
+      "start": 82.454,
+      "end": 82.675
+    },
+    {
+      "word": "ignore",
+      "start": 82.721,
+      "end": 83.116
+    },
+    {
+      "word": "chest",
+      "start": 83.163,
+      "end": 83.476
+    },
+    {
+      "word": "pain,",
+      "start": 83.534,
+      "end": 83.848
+    },
+    {
+      "word": "folks.",
+      "start": 83.906,
+      "end": 84.3
+    },
+    {
+      "word": "Your",
+      "start": 84.428,
+      "end": 84.637
+    },
+    {
+      "word": "heart",
+      "start": 84.718,
+      "end": 84.985
+    },
+    {
+      "word": "does",
+      "start": 85.055,
+      "end": 85.241
+    },
+    {
+      "word": "not",
+      "start": 85.31,
+      "end": 85.519
+    },
+    {
+      "word": "get",
+      "start": 85.589,
+      "end": 85.786
+    },
+    {
+      "word": "do-overs.",
+      "start": 85.845,
+      "end": 86.889
+    }
+  ]
+}
